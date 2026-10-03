@@ -701,4 +701,4 @@ python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(41 模块合并)
 - **关窗时退出码 -1073740791**:服务器已走完干净关机(日志已落盘),随后 Steam 的 crashhandler 在清理阶段 fail-fast —— 无害,可忽略。
 - **`Unknown command heartbeat`**:Black Mesa 引擎在 `mp_restartgame` 时自发执行 GoldSrc 遗留命令产生的噪音,无害。
 - **`plugins/` 中 2022 年的逐插件 smx 已过时**:当前部署的是合并后的 `BMAG.smx`,旧文件仅作参照,不要同时加载。
-- **`configs/admins.cfg` 里的 SteamID 是占位值**,部署前必须换成真实 SteamID;该文件的 `MXYLR` 条目存在引号不闭合的语法错误,需要一并修正。
+- **`configs/admins.cfg`、`configs/sourcebans/sb_admins.cfg` 里的 SteamID 是占位值**,部署前必须换成真实 SteamID。
