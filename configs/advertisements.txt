@@ -1,6 +1,20 @@
 // Advertisements 2.1
 // by Tsunami
 //
+// ============================================================================
+// 滚动广告文案(被 BMAG 的 advertisements 模块读取)。
+//
+// ★★ 部署前必须改:下面两条广告里写的是本服的群号和 B 站账号,
+//     直接开服等于帮原服主打广告。换成你自己的,或者整段清空。
+//
+//   写法:每个 "编号" 块就是一条广告,编号只是标识,重复也没关系。
+//      "chat" / "center" / "hint" / "menu" / "top"  —— 显示方式(五选一)
+//      "flags" —— 拥有这些权限字母的管理员看不到这条广告
+//                 (想给所有人看就删掉 flags 行;想只给管理员看就留空 "flags" "")
+//   广告出现的间隔由服务器 cvar sm_advertisements_interval 控制
+//   (单位秒,默认值见 cfg/server.cfg)。
+// ============================================================================
+//
 // Types
 // -----
 // center: Center message
@@ -19,12 +33,12 @@
 {
     "1"
     {
-        "chat"			"[CN]BMS Fake AG server; Contact : Bilibili MXYLR"
+        "chat"			"[CN]BMS Fake AG server; Contact : Bilibili MXYLR"   // >>> 本站专属文案,换成你自己的
         "flags"			"cft"
     }
-    "1"
+    "2"
     {
-        "chat"          "QQ group : 1015295897"
+        "chat"          "QQ group : 1015295897"   // >>> 本站群号,换成你自己的
         "flags"         "cft"
     }
 

@@ -1,6 +1,11 @@
 ; mapcycle_tdm.txt - TDM 模式地图列表(bms_match 比赛插件)
 ; 每行一个地图名;以 ; 或 / 开头的行会被忽略
 ; 服务器 bms/maps 目录的 12 张官方 DM 图,按喜好删减即可
+;
+; >>> 部署前检查:名单里的地图必须真的存在于你服务器的 bms/maps/ 下,
+;     否则玩家投到这张图时服务器会换图失败。没有的图请直接删掉对应行。
+; >>> 增删图之后记得同步 smx_analysis/src/scripting/configs/bms_match.cfg
+;     的 Maps/Abbreviations(简称)和 Gamemodes/tdm/Defaultmap(默认图)。
 dm_boom
 dm_bounce
 dm_chopper

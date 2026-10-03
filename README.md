@@ -9,6 +9,41 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 
 ---
 
+## ⚠️ 部署前必改清单
+
+本仓库是从一台**已经在跑的**服务器上整理出来的,配置里仍带着原服的服务器名、
+群号、域名、账号和**占位 SteamID**。直接照抄开服,你的服务器会顶着别人的名字、
+把玩家引到别人的群和网站,而你本人拿不到任何管理员权限。
+
+下表是全部需要动手的地方;每个文件的顶部也都写了同样的提示,
+搜 `>>>` 就能在文件里定位到具体那一行。
+
+| 文件 | 改什么 | 怎么改 |
+|---|---|---|
+| `cfg/server.cfg` | `hostname`、`sv_region`、`tv_title`/`tv_name`、`maxplayers`、`sv_password` | 改成你自己服务器的信息 |
+| `cfg/server.cfg` | `sv_downloadurl`、`sm_motd_url` | 换成你的域名;**没有 FastDL 就把 `sv_downloadurl` 整行注释掉**(玩家回退 srcds 直传,慢但能连) |
+| `cfg/server.cfg` | `is_weaponfix_saddr` | 填**外网玩家能连到的**公网 `IP:端口`,不能留 `127.0.0.1`,否则武器动画修复静默失效 |
+| `cfg/server.cfg` | `rcon_password` | **该文件里没有这一行**,需自行在启动参数加 `+rcon_password "你的密码"`,且**绝不要提交进 git** |
+| `configs/admins.cfg` | `identity`(两条 `STEAM_0:x:1000000xx`) | 换成真实 SteamID,否则你没有任何管理员权限 |
+| `configs/sourcebans/sb_admins.cfg` | 同上,4 条占位 SteamID | 与上一份**保持同一批人的同一组 ID** |
+| `configs/sourcebans/sourcebans.cfg` | `Website`、`ServerID` | 你的申诉网站、你后台里的服务器 ID |
+| `configs/sourcebans/sourcecomms.cfg` | `ServersWhiteList` 的 `id` | 多台服共享封禁库时,把各服 `ServerID` 加进去 |
+| `configs/sourcebans/sourcesleuth_whitelist.cfg` | 全文件 | 占位值,换成你要豁免的 SteamID(格式 `STEAM_1:x:y`) |
+| `configs/databases.cfg` | **本仓库没有这个文件** | 装 SourceBans++ 的话必须自建(里面是数据库密码,故意不入库);模板见 `sourcebans.cfg` 顶部注释 |
+| `configs/advertisements.txt` | 两条 `chat` 文案 | 原服的群号和 B 站账号,换成你的 |
+| `smx_analysis/src/scripting/configs/bms_match.cfg` | `SourceTV` → `DownloadBase` | 改成你的地址,或留空 `""`(录像仍会录,只是下载链接不可用) |
+| `smx_analysis/src/scripting/cfg/mapcycle_*.txt` | 地图名单 | 删掉你服务器上**没有**的地图,否则换图失败 |
+| `motd/index.html` | QQ 群 / B 站 / Discord / 服务器列表 | 三个语言段各出现一次,都要改 |
+
+**不需要改**(照抄即可):`cfg/autoexec.cfg`、`cfg/listenserver.cfg`、
+`configs/admin_levels.cfg`、`configs/admin_groups.cfg`、`configs/maplists.cfg`、
+`configs/core.cfg`、`configs/player_models.cfg`、`configs/banreasons.txt` 等。
+
+> `configs/core.cfg` 的 `ServerLang` 请保持 `"en"`:BMAG 各插件的
+> `translations/*.phrases.txt` 把中文写在 `"en"` 这个 key 下,改成 `chi` 反而会变回英文。
+
+---
+
 ## 目录结构
 
 ```
@@ -84,7 +119,9 @@ copy /Y smx_analysis\src\scripting\cfg\*.cfg             F:\BMServer\bms\cfg\
 
 ### RCON
 
-`rcon_password` 需在服务器本地 `cfg/server.cfg` 中自行设置,**不随本仓库分发**。
+`rcon_password` 需自行在**启动参数**里设置(例如 `+rcon_password "你的密码"`),
+**不随本仓库分发**,`cfg/server.cfg` 里也没有这一行 —— 历史上曾经把密码写进该文件
+并提交过,所以现在刻意不提供,避免再次泄露。
 仓库内的调试客户端从环境变量读取连接信息:
 
 ```bash

@@ -1,6 +1,29 @@
 <!doctype html>
 <html>
 <head>
+<!--
+  ==========================================================================
+  !motd 面板页面(玩家在游戏里输入 !motd 时看到的东西)
+  ★★ 部署前必须改 —— 这份 HTML 是原服用 Typora 导出的成品,里面写死了
+     原服的联络方式和服务器列表,照抄会引导玩家去别人的服务器:
+
+       QQ 群 : 1015295897                   -> 改成你的群号
+       Bilibili : MXYLR_ / BrightSu02       -> 改成你的账号
+       Discord : MXYLR#1547 / BrightSu#4711 -> 改成你的
+       [CN Match Server]1.116.76.45:27015 等 -> 改成你的服务器地址
+
+     这些字符串在文件里各出现三次(中文 / English / русский 三个语言段),
+     搜索替换时注意三个段落都要改。
+
+  ⚠ 两件容易踩的事:
+     1) 本文件是 Typora 导出的 HTML,整篇正文挤在少数几行里,结构是自动生成的。
+        手改文字可以,想改排版建议重新用 Typora 导出,不要手撕标签。
+     2) 服务器实际播放哪个页面由 cfg/server.cfg 的 sm_motd_url 决定 ——
+        那里填的如果是一个网址,玩家看到的就不是本文件;本文件只在
+        sm_motd_url 指向本地(或留空、由 Motd 插件读本地)时才生效。
+        改一个地方就好。
+  ==========================================================================
+-->
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 
 <link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
