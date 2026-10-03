@@ -1,0 +1,63 @@
+"Phrases"
+{
+	"spm_spawned"
+	{
+		"schinese"		"敌人 %s 已复活 —— 复活点已标记"
+		"zh"		"敌人 %s 已复活 —— 复活点已标记"
+		"en"		"Enemy %s respawned — spawn point marked"
+	}
+	"spm_on"
+	{
+		"schinese"		"复活点标记:开启"
+		"zh"		"复活点标记:开启"
+		"en"		"Spawn marker ON"
+	}
+	"spm_off"
+	{
+		"schinese"		"复活点标记:关闭"
+		"zh"		"复活点标记:关闭"
+		"en"		"Spawn marker OFF"
+	}
+	"spm_target_set"
+	{
+		"schinese"		"现在追踪 %s 的复活点"
+		"zh"		"现在追踪 %s 的复活点"
+		"en"		"Now tracking respawns of: %s"
+	}
+	"spm_target_auto"
+	{
+		"schinese"		"目标已清除 —— 自动探测(优先 bot,否则另一玩家)"
+		"zh"		"目标已清除 —— 自动探测(优先 bot,否则另一玩家)"
+		"en"		"Target cleared — auto-detect (first bot, else other player)"
+	}
+	"spm_target_none"
+	{
+		"schinese"		"未找到目标(没有 bot 或其他玩家)"
+		"zh"		"未找到目标(没有 bot 或其他玩家)"
+		"en"		"No target found (no bot or other player)"
+	}
+	"spm_map_on"
+	{
+		"schinese"		"出生点常显:开启(%d 个点)"
+		"zh"		"出生点常显:开启(%d 个点)"
+		"en"		"Spawn-point map ON (%d points)"
+	}
+	"spm_map_off"
+	{
+		"schinese"		"出生点常显:关闭"
+		"zh"		"出生点常显:关闭"
+		"en"		"Spawn-point map OFF"
+	}
+	"spm_map_none"
+	{
+		"schinese"		"本图没有 deathmatch 出生点"
+		"zh"		"本图没有 deathmatch 出生点"
+		"en"		"No deathmatch spawn points on this map"
+	}
+	"spm_usage"
+	{
+		"schinese"		"用法: sm_spawnmarker [on|off|none|<名字|#userid|bot>]"
+		"zh"		"用法: sm_spawnmarker [on|off|none|<名字|#userid|bot>]"
+		"en"		"Usage: sm_spawnmarker [on|off|none|<name|#userid|bot>]"
+	}
+}

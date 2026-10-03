@@ -1,0 +1,84 @@
+// tau_mp.games.txt — gamedata for tau_mp.smx
+//
+// 让单人战役的 tau cannon 拥有多人模式行为所需的三个入口（Black Mesa server.dll）：
+//
+//  1. CMultiplayRules::IsMultiplayer  —— gamerules 虚函数（vtable 索引 34 = 字节偏移 0x88）。
+//     BM 的 tau 代码在开火时读 [g_pGameRules]->vtable[0x88] 判定单人/多人分支。
+//     插件仅在 tau 的两个函数执行期间覆盖它的返回值。
+//
+//  2. CWeapon_Tau::FireBeam (0x1048c780) —— 击退分支。单人分支把垂直分量清零
+//     （mov dword ptr [ebp-0x18], 0 @ 0x1048ca18）→ 单人无高斯跳；多人分支保留三轴。
+//
+//  3. CWeapon_Tau::ChargeFire (0x1048d6e0) —— 蓄力副攻的开火/冷却分支。
+//     单人把副攻冷却设成「当前时间 + 开火动画时长」，多人设成「立即可再射」。
+//     BM 未导出该函数名，此处按行为命名。
+//
+// 签名与 vtable 索引来源：SourceCoop (ampreeT/SourceCoop) gamedata/srccoop.games.txt，
+// 已用本地 F:\BMServer\bms\bin\server.dll (md5 68278cc0c3a1e23d96c2b9d722ae7670) 复核唯一命中。
+
+"Games"
+{
+	"#default"
+	{
+		"Functions"
+		{
+			"CMultiplayRules::IsMultiplayer"
+			{
+				"offset"	"CMultiplayRules::IsMultiplayer"
+				"hooktype"	"gamerules"
+				"return"	"bool"
+				"this"		"ignore"
+			}
+			"CWeapon_Tau::FireBeam"
+			{
+				"signature"	"CWeapon_Tau::FireBeam"
+				"callconv"	"thiscall"
+				"return"	"void"
+				"this"		"entity"
+				"arguments"
+				{
+					"pfUnknown1"
+					{
+						// the real type is float*
+						"type"	"int"
+					}
+					"bUnknown2"
+					{
+						"type"	"bool"
+					}
+				}
+			}
+			"CWeapon_Tau::ChargeFire"
+			{
+				"signature"	"CWeapon_Tau::ChargeFire"
+				"callconv"	"thiscall"
+				"return"	"void"
+				"this"		"entity"
+			}
+		}
+
+		"Offsets"
+		{
+			"CMultiplayRules::IsMultiplayer"
+			{
+				"windows"	"34"
+				"linux"		"35"
+			}
+		}
+
+		"Signatures"
+		{
+			"CWeapon_Tau::FireBeam"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x5C\x56\x57\x8B\xF9\x2A\x2A\x2A\x2A\x2A\x8B\xF0\x85\xF6\x2A\x2A\x2A\x2A\x2A\x2A"
+			}
+			"CWeapon_Tau::ChargeFire"
+			{
+				"library"	"server"
+				// 55 8B EC 83 EC 08 56 57 8B F1 | E8 rel32 | 8B 8E B8 04 00 00 8B F8 81
+				"windows"	"\x55\x8B\xEC\x83\xEC\x08\x56\x57\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x8B\x8E\xB8\x04\x00\x00\x8B\xF8\x81"
+			}
+		}
+	}
+}

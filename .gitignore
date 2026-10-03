@@ -1,0 +1,27 @@
+# 交付包(构建产物,可从服务器取回或用 merge.py 重建)
+bms_match_delivery/
+bms_match_delivery.7z
+
+# 逆向工作区:下载的编译器/镜像/网站存档、证据 dump(体积大,不入库)
+smx_analysis/dl/
+smx_analysis/out/
+smx_analysis/mvf_wb.html
+
+# merge.py 的中间产物,源码在 src/scripting/plugins/
+smx_analysis/src/scripting/BMAG/*.sp
+
+# 已被 BMAG.smx 取代的旧版平铺产物
+smx_analysis/plugins/
+smx_analysis/partial.sp
+smx_analysis/bctest.smx
+
+# 自定义准星客户端 mod(暂时搁置,暂不入库)
+client_mod/
+smx_analysis/REVERSE_CROSSHAIR.md
+
+__pycache__/
+*.pyc
+
+# 备份文件
+*.bak
+*.orig

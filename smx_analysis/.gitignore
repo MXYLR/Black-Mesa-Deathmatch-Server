@@ -1,0 +1,6 @@
+# Build-time downloads and caches (not part of the source tree)
+dl/
+__pycache__/
+
+# Local forensic copy of Huorong logs (machine-specific)
+hr_log_copy.db

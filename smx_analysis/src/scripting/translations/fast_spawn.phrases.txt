@@ -1,0 +1,33 @@
+﻿"Phrases"
+{
+	"fs_status_on"
+	{
+		"en"		"Fast spawn is ON (respawn after %.1f s)"
+		"zh"		"快速重生:开启(死亡 %.1f 秒后复活)"
+	}
+	"fs_status_off"
+	{
+		"en"		"Fast spawn is OFF"
+		"zh"		"快速重生:关闭"
+	}
+	"fs_usage"
+	{
+		"en"		"Usage: !fastspawn [on|off|toggle] (admins can change it)"
+		"zh"		"用法:!fastspawn [on|off|toggle](仅管理员可修改)"
+	}
+	"fs_no_admin"
+	{
+		"en"		"You must be an admin to toggle fast spawn"
+		"zh"		"只有管理员可以修改快速重生开关"
+	}
+	"fs_changed_on"
+	{
+		"en"		"Admin %s enabled fast spawn"
+		"zh"		"管理员 %s 开启了快速重生"
+	}
+	"fs_changed_off"
+	{
+		"en"		"Admin %s disabled fast spawn"
+		"zh"		"管理员 %s 关闭了快速重生"
+	}
+}

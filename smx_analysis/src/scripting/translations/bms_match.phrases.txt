@@ -1,0 +1,523 @@
+﻿"Phrases"
+{
+	"bms_allow_fail"
+	{
+		"schinese"		"[比赛] %s 不在观战队伍!"
+		"en"		"[比赛] %s 不在观战队伍!"
+	}
+	"bms_allow_success"
+	{
+		"schinese"		"[比赛] %s 已被允许加入比赛!"
+		"en"		"[比赛] %s 已被允许加入比赛!"
+	}
+	"bms_allow_usage"
+	{
+		"schinese"		"[比赛] 用法: !allow <名字>"
+		"en"		"[比赛] 用法: !allow <名字>"
+	}
+	"bms_auto_pause"
+	{
+		"schinese"		"[比赛] 有参赛玩家掉线, 比赛已自动暂停!"
+		"en"		"[比赛] 有参赛玩家掉线, 比赛已自动暂停!"
+	}
+	"bms_auto_spectate"
+	{
+		"schinese"		"[比赛] 你上次是以观战者身份离开的, 已自动归入观战!"
+		"en"		"[比赛] 你上次是以观战者身份离开的, 已自动归入观战!"
+	}
+	"bms_autovote"
+	{
+		"schinese"		"自动换图投票"
+		"en"		"自动换图投票"
+	}
+	"bms_deny_changing"
+	{
+		"schinese"		"[比赛] 地图正在切换中, 请稍候!"
+		"en"		"[比赛] 地图正在切换中, 请稍候!"
+	}
+	"bms_deny_match"
+	{
+		"schinese"		"[比赛] 比赛进行中, 此操作不可用!"
+		"en"		"[比赛] 比赛进行中, 此操作不可用!"
+	}
+	"bms_deny_nomatch"
+	{
+		"schinese"		"[比赛] 当前没有进行中的比赛!"
+		"en"		"[比赛] 当前没有进行中的比赛!"
+	}
+	"bms_deny_over"
+	{
+		"schinese"		"[比赛] 本局即将结束, 请等待下一局!"
+		"en"		"[比赛] 本局即将结束, 请等待下一局!"
+	}
+	"bms_deny_overtime_cancel"
+	{
+		"schinese"		"[比赛] 加时赛不能取消!"
+		"en"		"[比赛] 加时赛不能取消!"
+	}
+	"bms_deny_overtime_pause"
+	{
+		"schinese"		"[比赛] 加时赛不能暂停!"
+		"en"		"[比赛] 加时赛不能暂停!"
+	}
+	"bms_deny_paused"
+	{
+		"schinese"		"[比赛] 比赛已暂停, 先恢复比赛!"
+		"en"		"[比赛] 比赛已暂停, 先恢复比赛!"
+	}
+	"bms_deny_spectator"
+	{
+		"schinese"		"[比赛] 观战者不能执行此操作!"
+		"en"		"[比赛] 观战者不能执行此操作!"
+	}
+	"bms_deny_suicide_countdown"
+	{
+		"schinese"		"[比赛] 比赛倒计时中, 请等待开始!"
+		"en"		"[比赛] 比赛倒计时中, 请等待开始!"
+	}
+	"bms_deny_teamplay"
+	{
+		"schinese"		"[比赛] 此操作仅限团队模式!"
+		"en"		"[比赛] 此操作仅限团队模式!"
+	}
+	"bms_forcespec_all"
+	{
+		"schinese"		"[比赛] 已将所有玩家移入观战"
+		"en"		"[比赛] 已将所有玩家移入观战"
+	}
+	"bms_forcespec_success"
+	{
+		"schinese"		"[比赛] 已将 %s 强制移入观战"
+		"en"		"[比赛] 已将 %s 强制移入观战"
+	}
+	"bms_forcespec_usage"
+	{
+		"schinese"		"[比赛] 用法: !forcespec <名字|@all>"
+		"en"		"[比赛] 用法: !forcespec <名字|@all>"
+	}
+	"bms_list_empty"
+	{
+		"schinese"		"[比赛] 模式 %s 没有可用地图!"
+		"en"		"[比赛] 模式 %s 没有可用地图!"
+	}
+	"bms_list_header"
+	{
+		"schinese"		"[比赛] 模式 %s 的地图列表:"
+		"en"		"[比赛] 模式 %s 的地图列表:"
+	}
+	"bms_list_invalid"
+	{
+		"schinese"		"[比赛] 无效的模式: %s"
+		"en"		"[比赛] 无效的模式: %s"
+	}
+	"bms_list_total"
+	{
+		"schinese"		"[比赛] 共 %i 张地图"
+		"en"		"[比赛] 共 %i 张地图"
+	}
+	"bms_map_loading"
+	{
+		"schinese"		"[比赛] 正在加载 %s, %i 秒后切换..."
+		"en"		"[比赛] 正在加载 %s, %i 秒后切换..."
+	}
+	"bms_map_notfound"
+	{
+		"schinese"		"[比赛] 找不到地图: %s"
+		"en"		"[比赛] 找不到地图: %s"
+	}
+	"bms_match_cancelled"
+	{
+		"schinese"		"[比赛] 比赛已取消!"
+		"en"		"[比赛] 比赛已取消!"
+	}
+	"bms_postmatch_resume"
+	{
+		"schinese"		"[比赛] 比赛结束, 在本图继续游戏!"
+		"en"		"[比赛] 比赛结束, 在本图继续游戏!"
+	}
+	"bms_match_draw"
+	{
+		"schinese"		"[比赛] 本场比赛以平局结束!"
+		"en"		"[比赛] 本场比赛以平局结束!"
+	}
+	"bms_match_paused"
+	{
+		"schinese"		"[比赛] 比赛已暂停!"
+		"en"		"[比赛] 比赛已暂停!"
+	}
+	"bms_match_resumed"
+	{
+		"schinese"		"[比赛] 比赛已继续!"
+		"en"		"[比赛] 比赛已继续!"
+	}
+	"bms_match_score"
+	{
+		"schinese"		"[比赛] 最终比分: %s %i : %i %s"
+		"en"		"[比赛] 最终比分: %s %i : %i %s"
+	}
+	"bms_match_starting"
+	{
+		"schinese"		"比赛将在 %i 秒后开始!"
+		"en"		"比赛将在 %i 秒后开始!"
+	}
+	"bms_match_top2"
+	{
+		"schinese"		"[比赛] 第二名: %s (%i 击杀)"
+		"en"		"[比赛] 第二名: %s (%i 击杀)"
+	}
+	"bms_match_top3"
+	{
+		"schinese"		"[比赛] 第三名: %s (%i 击杀)"
+		"en"		"[比赛] 第三名: %s (%i 击杀)"
+	}
+	"bms_match_win_player"
+	{
+		"schinese"		"[比赛] %s 以 %i 击杀赢得本场比赛!"
+		"en"		"[比赛] %s 以 %i 击杀赢得本场比赛!"
+	}
+	"bms_match_win_team"
+	{
+		"schinese"		"[比赛] %s 赢得本场比赛!"
+		"en"		"[比赛] %s 赢得本场比赛!"
+	}
+	"bms_nominate_deny"
+	{
+		"schinese"		"[比赛] 比赛进行中, 不能提名地图!"
+		"en"		"[比赛] 比赛进行中, 不能提名地图!"
+	}
+	"bms_overtime_draw"
+	{
+		"schinese"		"[比赛] 加时赛仍未分出胜负, 本局以平局结束!"
+		"en"		"[比赛] 加时赛仍未分出胜负, 本局以平局结束!"
+	}
+	"bms_overtime_start"
+	{
+		"schinese"		"[比赛] 双方平局, 进入加时赛! 先进球/先领先的一方获胜!"
+		"en"		"[比赛] 双方平局, 进入加时赛! 先进球/先领先的一方获胜!"
+	}
+	"bms_overtime_win_player"
+	{
+		"schinese"		"[比赛] 加时赛结束, %s 获胜!"
+		"en"		"[比赛] 加时赛结束, %s 获胜!"
+	}
+	"bms_overtime_win_team"
+	{
+		"schinese"		"[比赛] 加时赛结束, %s 获胜!"
+		"en"		"[比赛] 加时赛结束, %s 获胜!"
+	}
+	"bms_pause_deny"
+	{
+		"schinese"		"[比赛] 服务器已禁用暂停功能!"
+		"en"		"[比赛] 服务器已禁用暂停功能!"
+	}
+	"bms_pause_deny_pauser"
+	{
+		"schinese"		"[比赛] 只有暂停发起人 (或管理员) 可以恢复/暂停比赛!"
+		"en"		"[比赛] 只有暂停发起人 (或管理员) 可以恢复/暂停比赛!"
+	}
+	"bms_rtv_deny"
+	{
+		"schinese"		"[比赛] 比赛进行中, 不能发起换图投票! 请使用 !runrandom"
+		"en"		"[比赛] 比赛进行中, 不能发起换图投票! 请使用 !runrandom"
+	}
+	"bms_run_denymode"
+	{
+		"schinese"		"[比赛] 当前已经是 %s 模式!"
+		"en"		"[比赛] 当前已经是 %s 模式!"
+	}
+	"bms_run_found"
+	{
+		"schinese"		"[比赛] 匹配到多个地图: %s"
+		"en"		"[比赛] 匹配到多个地图: %s"
+	}
+	"bms_run_keep"
+	{
+		"schinese"		"[比赛] 票选结果: 保持当前地图!"
+		"en"		"[比赛] 票选结果: 保持当前地图!"
+	}
+	"bms_run_next"
+	{
+		"schinese"		"[比赛] 下一张地图: %s (模式: %s)"
+		"en"		"[比赛] 下一张地图: %s (模式: %s)"
+	}
+	"bms_run_now"
+	{
+		"schinese"		"[比赛] 正在切换到 %s (模式: %s)"
+		"en"		"[比赛] 正在切换到 %s (模式: %s)"
+	}
+	"bms_run_usage"
+	{
+		"schinese"		"[比赛] 用法: !run <地图> 或 !run <模式:地图>, 可用 !maplist 查看地图"
+		"en"		"[比赛] 用法: !run <地图> 或 !run <模式:地图>, 可用 !maplist 查看地图"
+	}
+	"bms_runnext_usage"
+	{
+		"schinese"		"[比赛] 用法: !runnext <地图> 或 !runnext <模式:地图>"
+		"en"		"[比赛] 用法: !runnext <地图> 或 !runnext <模式:地图>"
+	}
+	"bms_start_deny"
+	{
+		"schinese"		"[比赛] 至少需要 2 名玩家才能开始比赛!"
+		"en"		"[比赛] 至少需要 2 名玩家才能开始比赛!"
+	}
+	"bms_start_deny_mode"
+	{
+		"schinese"		"[比赛] 当前模式 (%s) 不可用于比赛!"
+		"en"		"[比赛] 当前模式 (%s) 不可用于比赛!"
+	}
+	"bms_start_deny_over"
+	{
+		"schinese"		"[比赛] 本局剩余时间不足, 无法开始比赛!"
+		"en"		"[比赛] 本局剩余时间不足, 无法开始比赛!"
+	}
+	"bms_target_notfound"
+	{
+		"schinese"		"[比赛] 找不到目标玩家!"
+		"en"		"[比赛] 找不到目标玩家!"
+	}
+	"bms_team_assigned"
+	{
+		"schinese"		"[比赛] 你已被分配到队伍: %s"
+		"en"		"[比赛] 你已被分配到队伍: %s"
+	}
+	"bms_team_same"
+	{
+		"schinese"		"[比赛] 你已经在 %s 队伍!"
+		"en"		"[比赛] 你已经在 %s 队伍!"
+	}
+	"bms_teamchange_deny"
+	{
+		"schinese"		"[比赛] 比赛进行中, 不能更换队伍!"
+		"en"		"[比赛] 比赛进行中, 不能更换队伍!"
+	}
+	"bms_teamchange_deny_overtime"
+	{
+		"schinese"		"[比赛] 加时赛进行中, 不能更换队伍!"
+		"en"		"[比赛] 加时赛进行中, 不能更换队伍!"
+	}
+	"bms_vote"
+	{
+		"schinese"		"比赛投票"
+		"en"		"比赛投票"
+	}
+	"bms_vote_called"
+	{
+		"schinese"		"[比赛] 服务器发起了一次投票! 聊天框输入 !yes / !no (或点击菜单) 投票"
+		"en"		"[比赛] 服务器发起了一次投票! 聊天框输入 !yes / !no (或点击菜单) 投票"
+	}
+	"bms_vote_called_from"
+	{
+		"schinese"		"[比赛] %s 发起了一次投票! 聊天框输入 !yes / !no (或点击菜单) 投票"
+		"en"		"[比赛] %s 发起了一次投票! 聊天框输入 !yes / !no (或点击菜单) 投票"
+	}
+	"bms_vote_deny"
+	{
+		"schinese"		"[比赛] 已有一场投票在进行中!"
+		"en"		"[比赛] 已有一场投票在进行中!"
+	}
+	"bms_vote_deny_spec"
+	{
+		"schinese"		"[比赛] 观战者不能参与比赛投票!"
+		"en"		"[比赛] 观战者不能参与比赛投票!"
+	}
+	"bms_vote_draw"
+	{
+		"schinese"		"[比赛] 选项 %i (%s) 与另一选项票数相同, 随机选择结果"
+		"en"		"[比赛] 选项 %i (%s) 与另一选项票数相同, 随机选择结果"
+	}
+	"bms_vote_fail"
+	{
+		"schinese"		"[比赛] 投票未通过"
+		"en"		"[比赛] 投票未通过"
+	}
+	"bms_vote_invalid"
+	{
+		"schinese"		"[比赛] 无效的投票选项!"
+		"en"		"[比赛] 无效的投票选项!"
+	}
+	"bms_vote_menu_title"
+	{
+		"schinese"		"比赛投票"
+		"en"		"比赛投票"
+	}
+	"bms_vote_none"
+	{
+		"schinese"		"[比赛] 当前没有进行中的投票!"
+		"en"		"[比赛] 当前没有进行中的投票!"
+	}
+	"bms_vote_success"
+	{
+		"schinese"		"[比赛] 投票通过"
+		"en"		"[比赛] 投票通过"
+	}
+	"bms_vote_timeout"
+	{
+		"schinese"		"[比赛] 还有 %i 秒冷却时间!"
+		"en"		"[比赛] 还有 %i 秒冷却时间!"
+	}
+	"bms_vote_usage"
+	{
+		"schinese"		"[比赛] 用法: !vote <内容>"
+		"en"		"[比赛] 用法: !vote <内容>"
+	}
+	"bms_vote_victory"
+	{
+		"schinese"		"[比赛] 选项 %i (%s) 获得通过!"
+		"en"		"[比赛] 选项 %i (%s) 获得通过!"
+	}
+	"bms_demo_recording"
+	{
+		"schinese"		"[比赛] SourceTV 录像已开始录制"
+		"en"		"[比赛] SourceTV 录像已开始录制"
+	}
+	"bms_demo_recorded"
+	{
+		"schinese"		"[比赛] 比赛录像已保存,下载: {1}"
+		"en"		"[比赛] 比赛录像已保存,下载: {1}"
+	}
+	"bms_page_title"
+	{
+		"schinese"		"Black Mesa 比赛"
+		"en"		"Black Mesa Match"
+	}
+	"bms_page_cancel_hint"
+	{
+		"schinese"		"输入 !help 查看指令, 输入 cancel 取消比赛"
+		"en"		"Type !help for commands, type cancel to abort"
+	}
+	"bms_page_info_map"
+	{
+		"schinese"		"地图: %s"
+		"en"		"Map: %s"
+	}
+	"bms_page_info_mode"
+	{
+		"schinese"		"模式: %s"
+		"en"		"Mode: %s"
+	}
+	"bms_page_info_players"
+	{
+		"schinese"		"参赛人数: %i"
+		"en"		"Players: %i"
+	}
+	"bms_page_info_length"
+	{
+		"schinese"		"比赛时长: %i 分钟"
+		"en"		"Match length: %i min"
+	}
+	"bms_page_results_title"
+	{
+		"schinese"		"比赛结束"
+		"en"		"Match Over"
+	}
+	"bms_help_title"
+	{
+		"schinese"		"比赛指令列表"
+		"en"		"Match Commands"
+	}
+	"bms_help_start"
+	{
+		"schinese"		"开始比赛 (!start)"
+		"en"		"Start a match (!start)"
+	}
+	"bms_help_cancel"
+	{
+		"schinese"		"取消比赛 (!cancel)"
+		"en"		"Cancel the match (!cancel)"
+	}
+	"bms_help_maplist"
+	{
+		"schinese"		"查看地图列表 (!maplist)"
+		"en"		"List maps (!maplist)"
+	}
+	"bms_help_runrandom"
+	{
+		"schinese"		"随机换图投票 (!runrandom)"
+		"en"		"Random map/mode vote (!runrandom)"
+	}
+	"bms_help_run"
+	{
+		"schinese"		"投票换图 (!run <地图>)"
+		"en"		"Vote to change map (!run <map>)"
+	}
+	"bms_help_runnext"
+	{
+		"schinese"		"设置下一张地图 (!runnext <地图>)"
+		"en"		"Set next map (!runnext <map>)"
+	}
+	"bms_help_shuffle"
+	{
+		"schinese"		"洗牌分队 (!shuffle)"
+		"en"		"Shuffle teams (!shuffle)"
+	}
+	"bms_help_invert"
+	{
+		"schinese"		"交换队伍 (!invert)"
+		"en"		"Swap teams (!invert)"
+	}
+	"bms_help_vote"
+	{
+		"schinese"		"发起自定义投票 (!vote <内容>)"
+		"en"		"Start a custom vote (!vote <text>)"
+	}
+	"bms_help_panel"
+	{
+		"schinese"		"打开控制面板 (!panel)"
+		"en"		"Open the control panel (!panel)"
+	}
+	"bms_panel_title"
+	{
+		"schinese"		"插件控制台"
+		"en"		"Plugin Console"
+	}
+	"bms_panel_unavailable"
+	{
+		"schinese"		"网页面板未启用: 请在 server.cfg 设置 sm_bms_webpanel_enabled 1 并安装 socket 扩展后重启"
+		"en"		"Web panel disabled: set sm_bms_webpanel_enabled 1 and install the socket extension, then restart"
+	}
+	"bms_state_default"
+	{
+		"schinese"		"空闲"
+		"en"		"空闲"
+	}
+	"bms_state_matchwait"
+	{
+		"schinese"		"等待开局"
+		"en"		"等待开局"
+	}
+	"bms_state_match"
+	{
+		"schinese"		"比赛中"
+		"en"		"比赛中"
+	}
+	"bms_state_matchex"
+	{
+		"schinese"		"加时赛"
+		"en"		"加时赛"
+	}
+	"bms_state_overtime"
+	{
+		"schinese"		"加时赛"
+		"en"		"加时赛"
+	}
+	"bms_state_paused"
+	{
+		"schinese"		"已暂停"
+		"en"		"已暂停"
+	}
+	"bms_state_over"
+	{
+		"schinese"		"已结束"
+		"en"		"已结束"
+	}
+	"bms_state_changing"
+	{
+		"schinese"		"换图中"
+		"en"		"换图中"
+	}
+	"bms_panel_noresult"
+	{
+		"schinese"		"尚未执行任何指令"
+		"en"		"尚未执行任何指令"
+	}
+}
