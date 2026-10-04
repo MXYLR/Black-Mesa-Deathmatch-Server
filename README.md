@@ -105,10 +105,15 @@ copy /Y plugins\BMAG.smx            %SRV%\bms\addons\sourcemod\plugins\
 copy /Y plugins\tau_mp.smx          %SRV%\bms\addons\sourcemod\plugins\
 copy /Y plugins\hl1tau.smx          %SRV%\bms\addons\sourcemod\plugins\
 copy /Y gamedata\tau_mp.games.txt   %SRV%\bms\addons\sourcemod\gamedata\
+copy /Y smx_analysis\src\scripting\translations\*.txt %SRV%\bms\addons\sourcemod\translations\
 copy /Y smx_analysis\src\scripting\configs\bms_match.cfg %SRV%\bms\addons\sourcemod\configs\
 copy /Y smx_analysis\src\scripting\cfg\*.txt             %SRV%\bms\cfg\
 copy /Y smx_analysis\src\scripting\cfg\*.cfg             %SRV%\bms\cfg\
 ```
+
+> `translations\*.txt` 那行别漏:**这三份短语文件是运行时读取的,不编进 `BMAG.smx`**。
+> 漏了的话聊天框里所有 `[比赛]` 提示都会显示成短语键名。改文案(不动代码)
+> 只需重传这三个文件 + 换图或 `sm plugins reload BMAG`,不必重新编译。
 
 单人战役环境是另一套 `addons/sourcemod`(Steam 客户端目录下的 Black Mesa),
 只部署 `tau_mp.smx` + `hl1tau.smx` + `tau_mp.games.txt`。
