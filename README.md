@@ -116,8 +116,12 @@ copy /Y smx_analysis\src\scripting\cfg\*.cfg             %SRV%\bms\cfg\
 
 ### 启动
 
-- **命令行 / 双击**:srcds 根目录下的 `start_server.bat` — 自动重试启动器:每 60 秒检测 27015 端口,未起则杀进程重试(最多 10 次)
-- **手动**:`srcds.exe -game bms +map dm_boom +maxplayers 16 -condebug`(日志追加写入 `bms\console.log`)
+```bat
+srcds.exe -game bms +map dm_boom +maxplayers 16 -condebug
+```
+
+日志追加写入 `bms\console.log`。建议让它随开机自动启动(计划任务或服务),
+进程没起来时重启即可 —— 见"已知问题"里的启动竞态。
 
 ### RCON
 
@@ -736,7 +740,7 @@ python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(41 模块合并)
 
 ## 七、已知问题
 
-- **启动间歇卡死**:Steam 客户端注入的 `crashhandler.dll` 与加载器竞态,约一半概率卡在进程早期(35MB、无端口)。`start_server.bat` 的自动重试已兜底;退出 Steam 后启动大概率一次成功。
+- **启动间歇卡死**:Steam 客户端注入的 `crashhandler.dll` 与加载器竞态,约一半概率卡在进程早期(35MB、无端口)。**没有稳的根治办法,用外部脚本兜底** —— 检测 27015 端口,没起来就杀掉进程重启;退出 Steam 后启动大概率一次成功。
 - **关窗时退出码 -1073740791**:服务器已走完干净关机(日志已落盘),随后 Steam 的 crashhandler 在清理阶段 fail-fast —— 无害,可忽略。
 - **`Unknown command heartbeat`**:Black Mesa 引擎在 `mp_restartgame` 时自发执行 GoldSrc 遗留命令产生的噪音,无害。
 - **`plugins/` 中 2022 年的逐插件 smx 已过时**:当前部署的是合并后的 `BMAG.smx`,旧文件仅作参照,不要同时加载。
