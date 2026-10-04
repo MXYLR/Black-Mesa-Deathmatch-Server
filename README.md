@@ -151,6 +151,12 @@ copy /Y smx_analysis\src\scripting\cfg\*.cfg             %SRV%\bms\cfg\
 > 漏了的话聊天框里所有 `[比赛]` 提示都会显示成短语键名。改文案(不动代码)
 > 只需重传这三个文件 + 换图或 `sm plugins reload BMAG`,不必重新编译。
 
+> **另:SourceMod 全新安装自带的 `plugins/nextmap.smx` 要停用**(移到 `plugins/disabled/`)。
+> 本服换图由 `bms_match` 的投票 + 核心的 `sm_nextmap` 决定;nextmap 插件会按 `mapcyclefile`
+> 自动推进 `sm_nextmap`,和投票结果打架。仓库里那份就在 `plugins/disabled/nextmap.smx`。
+> (注:`SetNextMap` / `GetNextMap` 是 **SourceMod 核心**提供的 native,不是 nextmap.smx ——
+> 所以停用它**不会**让 BMAG 加载失败。)
+
 单人战役环境是另一套 `addons/sourcemod`(Steam 客户端目录下的 Black Mesa),
 需要的是 `tau_mp.smx` + `hl1tau.smx` + `tau_mp.games.txt` —— 这三样属单人战役专用,
 **不在本仓库内**(本机存放在 `campaign/`,见 `.gitignore`)。
