@@ -5,11 +5,33 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 服务器启用的 **35 个 SourceMod 模块被合并编译成单个 `BMAG.smx`**(SourceMod 官方插件 + 社区插件 + 自研 `bms_match` 比赛插件),
 另有若干**独立插件**单独加载(仓库内保留 `spawn_marker`,默认停用)。
 
-单人战役(单机剧情)专用的 tau 改造插件 `tau_mp` / `hl1tau` 不属于死亡竞赛交付,
-已连同其签名文件与逆向笔记移到本地目录 `campaign/`(`.gitignore` 已排除,不随本仓库分发)。
-仓库里提到它们的旧位置时,都按"已移出"理解。
-
 源码、合并器与逆向笔记全部在本仓库内,可直接重建。
+
+**不在本仓库内的东西**:单人战役(单机剧情)专用的两个插件是各自独立的小项目,
+放在本机 `campaign/` 下(整目录已被 `.gitignore` 排除,不随本仓库分发):
+
+| 项目 | 内容 |
+|---|---|
+| `campaign/tau_mp/` | `plugins/tau_mp.smx`、`tau_mp.sp`、`gamedata/tau_mp.games.txt`、`REVERSE_TAU.md` |
+| `campaign/hl1tau/` | `plugins/hl1tau.smx`、`hl1tau.sp` |
+
+本文件中提到这两个插件时,路径都指上面这张表。另:`client_mod/`(自定义准星客户端 mod,已搁置)
+与 `bms_match_delivery/`(旧交付包归档)同样只在本地、不入库。
+
+---
+
+## 目录
+
+- [⚠️ 部署前必改清单](#️-部署前必改清单)
+- [目录结构](#目录结构)
+- [部署](#部署) · [启动](#启动) · [RCON](#rcon)
+- [权限标志](#权限标志)
+- [一、`bms_match` — 比赛插件(自研)](#一bms_match--比赛插件自研)
+- [二、其它自研 / 深度改造模块](#二其它自研--深度改造模块)
+- [三、SourceMod 官方模块](#三sourcemod-官方模块)
+- [四、独立插件](#四独立插件)
+- [五、从源码构建](#五从源码构建)
+- [六、已知问题](#六已知问题)
 
 ---
 
@@ -53,28 +75,38 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 │   ├── bms_rpgReloadFix.smx      第三方:RPG 换弹修复
 │   ├── bms_weapon_tauStuckFix.smx 第三方:tau 低弹药卡枪修复
 │   ├── is_weaponfx.smx           第三方:武器动画预热
-│   ├── <官方插件>.smx            2022 年上传的原始逐插件版本(已被 BMAG 取代,留作参照)
-│   └── disabled/                 停用插件(spawn_marker、nextmap、basebans、randomcycle 等)
+│   ├── is_bms_fix_timelimit.smx  第三方:回合时限/倒计时修复(bms_match 的计时器沿用同一机制)
+│   ├── <模块名>.smx              2022 年上传的原始逐插件版本(已被 BMAG 取代,留作参照)
+│   └── disabled/                 停用插件(basebans、nextmap、randomcycle、spawn_marker、
+│                                 classicmovement、sm_realbhop、xms、admin-sql-* 等)
 ├── smx_analysis/                 构建流水线与源码
 │   ├── merge.py                  把 35 个模块源码合并成 BMAG.sp
 │   ├── fix_merge.py              merge.py 的补丁工具
 │   ├── sig_check.py              签名抗重定位校验(见"从源码构建")
 │   ├── rcon.py                   RCON 调试客户端(凭据走环境变量)
 │   ├── bisect_compile.py         二分定位编译失败的模块
+│   ├── *.ps1                     启动/崩溃诊断辅助脚本(check_crash、test_launch、
+│   │                             watch_launch、proc、evt)
 │   ├── REVERSE_*.md              引擎逆向笔记(见下)
 │   └── src/scripting/
-│       ├── plugins/              **35 个模块源码 + 独立插件源码**
+│       ├── plugins/              模块源码 + 未编入 BMAG 的独立插件源码
 │       ├── include/              编译用 SourceMod include(与生产服务器版本一致)
 │       ├── BMAG/                 merge.py 产物(BMAG.sp 为生成物不入库,BMAG.smx 入库)
 │       ├── configs/              插件配置(bms_match.cfg、bms_webpanel.html)
-│       └── cfg/                  地图池与比赛用 cfg
-├── cfg/ configs/ motd/           服务器其它配置备份
+│       ├── cfg/                  地图池(mapcycle_*.txt)与比赛用 cfg
+│       └── translations/         各插件短语文件(**运行时读取,不编进 BMAG.smx**)
+├── cfg/                          服务器 cfg/ 备份(server.cfg、autoexec、listenserver、
+│                                 banned_*、chapter*.cfg 等)
+├── configs/                      SourceMod configs/ 备份(admins、advertisements、
+│                                 admin_levels/groups/overrides、maplists、core、geoip 等)
+├── motd/                         MOTD 页面
 └── README.md
 ```
 
 `.gitignore` 排除:交付包归档 `bms_match_delivery/`、`smx_analysis/dl/` 与 `smx_analysis/out/`(下载的工具与证据 dump,
-体积大且可重新获取)、`merge.py` 生成的 `BMAG/BMAG.sp`、已被 `BMAG.smx` 取代的旧版平铺产物、
-暂时搁置的自定义准星客户端 mod `client_mod/`,以及单人战役专用的 `campaign/`。
+体积大且可重新获取)、`merge.py` 生成的 `BMAG/BMAG.sp`、已被 `BMAG.smx` 取代的旧版平铺产物
+(`smx_analysis/plugins/`、`partial.sp`、`bctest.smx`)、暂时搁置的自定义准星客户端 mod `client_mod/`
+与 `REVERSE_CROSSHAIR.md`,以及单人战役两个独立项目所在的 `campaign/`。
 
 ### 逆向笔记(`smx_analysis/REVERSE_*.md`)
 
@@ -88,7 +120,7 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 | `REVERSE_WALLPEN.md` | 弹道穿墙与玻璃穿透 |
 
 > `REVERSE_TAU.md`(tau 炮单人/多人分支、高斯跳、跌落伤害链路)属单人战役部分,
-> 已随 `tau_mp` / `hl1tau` 一起移到 `campaign/`。
+> 已随 `tau_mp` 一起移到 `campaign/tau_mp/`。
 
 ---
 
@@ -244,6 +276,11 @@ RCON_HOST=127.0.0.1 RCON_PORT=27015 RCON_PASSWORD='<你的rcon密码>' python sm
 
 ## 二、其它自研 / 深度改造模块
 
+以下 9 个模块都**编译在 `BMAG.smx` 内部**(见 [五、从源码构建](#五从源码构建)),不能单独加载。
+`spawn_distribute`、`textmsg_fix` 为自研;其余基于 AlliedModders 社区插件,按本服需要做过适配或实质改造
+(`fast_spawn`、`speclist` 源自 Alienmario,`SpecDetails` 源自 wribit,`missing_viewmodel_fix` 源自 ch4os + SHUFEN,
+`advertisements` 源自 Tsunami;各文件头部保留原作者声明)。
+
 ### `fast_spawn` — 零秒重生
 
 死亡后立即重生,不等原生按键或 5 秒 `mp_forcerespawn`。
@@ -331,27 +368,36 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 
 ## 三、SourceMod 官方模块
 
+绝大多数是 SourceMod 自带的官方插件(少数为社区插件,如 `connectmessage`、`showhealth`、
+`teamjoinblocker`),同样**都编译在 `BMAG.smx` 内部**。这里只列本服实际启用的部分,
+并对改过默认行为的加注。
+
 ### `admin-flatfile`
+
 无命令、无 ConVar。读取 `configs/admins.cfg`、`admin_groups.cfg`、`admin_overrides.cfg`。
 
 ### `admincheats`
+
 | ConVar | 默认 | 说明 |
 |---|---|---|
 | `sm_admin_cheats_level` | 0 | 执行作弊命令所需的权限等级 |
 | `sm_admin_cheats_version` | 0.2 | 版本号 |
 
 ### `adminhelp`
+
 | 命令 | 权限 | 说明 |
 |---|---|---|
 | `sm_help` | b | 显示 SourceMod 命令与说明 |
 | `sm_searchcmd` | b | 搜索 SourceMod 命令 |
 
 ### `adminmenu`
+
 | 命令 | 权限 | 说明 |
 |---|---|---|
 | `sm_admin` | b | 打开管理员菜单 |
 
 ### `antiflood`
+
 | ConVar | 默认 | 说明 |
 |---|---|---|
 | `sm_flood_time` | 0.75 | 两条聊天消息之间允许的最短间隔(秒) |
@@ -434,10 +480,20 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 | `sm_voteban_time` | 30 | 封禁时长(分钟) |
 
 ### `clientprefs`
+
 | 命令 | 权限 | 说明 |
 |---|---|---|
 | `sm_cookies <名称> [值]` | b | 读取/修改客户端 cookie |
 | `sm_settings` | — | 打开玩家个人设置菜单 |
+
+### `connectmessage`
+
+玩家加入/离开时在聊天框提示。无命令。
+
+| ConVar | 默认 | 说明 |
+|---|---|---|
+| `sm_connectmsg` | 1 | 玩家加入时提示 |
+| `sm_disconnectmsg` | 1 | 玩家离开时提示 |
 
 ### `funcommands` — 娱乐命令
 
@@ -512,6 +568,20 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 
 > 本服务器在 `OnConfigsExecuted` 中强制 `sm_mapvote_endvote 0`,避免结束换图投票覆盖 `sm_nextmap`。
 
+### `motd-fixer`
+
+延时打开 MOTD(引擎自带的 MOTD 触发有时序问题)。
+
+| 命令 | 权限 | 说明 |
+|---|---|---|
+| `sm_motd` | — | 打开 MOTD |
+| `sm_url` | — | 同上(别名) |
+
+| ConVar | 默认 | 说明 |
+|---|---|---|
+| `sm_motd_fixer_enabled` | 1 | 启用/关闭 |
+| `sm_motd_fixer_time` | 2.0 | 打开 MOTD 前的延时(秒) |
+
 ### `nominations` — 地图提名
 
 | 命令 | 权限 | 说明 |
@@ -525,7 +595,21 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 | `sm_nominate_excludeold` | 1 | 排除 mapchooser 已排除的旧地图 |
 | `sm_nominate_maxfound` | 0 | 最多加入几个匹配结果(0 = 不限) |
 
+### `pause`
+
+暂停/继续服务器的底层命令。比赛期由 `bms_match` 接管(见 [命令监听](#命令监听拦截引擎命令)),
+本模块提供管理员的直接入口。
+
+| 命令 | 权限 | 说明 |
+|---|---|---|
+| `sm_pause` | b | 暂停服务器 |
+| `sm_unpause` | b | 继续服务器 |
+| `sm_setpause <0/1>` | b | 直接设置暂停状态 |
+
+> 聊天里的 `!pause` / `!unpause` 由 `bms_match` 处理(按比赛状态机同步),两者不要混用。
+
 ### `playercommands`
+
 | 命令 | 权限 | 说明 |
 |---|---|---|
 | `sm_slap <玩家> [伤害]` | f | 抽打目标 |
@@ -557,7 +641,18 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 | `sm_rtv_changetime` | 0 | 通过后何时换图(0 = 立即,1 = 回合结束) |
 | `sm_rtv_postvoteaction` | 0 | 地图投票完成后如何处理 RTV(0 = 允许) |
 
+### `showhealth`
+
+在屏幕上显示血量。
+
+| ConVar | 默认 | 说明 |
+|---|---|---|
+| `sm_show_health` | 1 | 启用/关闭 |
+| `sm_show_health_on_hit_only` | 0 | 0 = 始终显示血量,1 = 只在被击中后显示 |
+| `sm_show_health_text_area` | 1 | 1 = hint 区,2 = 屏幕中央 |
+
 ### `sounds`
+
 | 命令 | 权限 | 说明 |
 |---|---|---|
 | `sm_play <玩家> <声音文件>` | b | 给玩家播放声音 |
@@ -588,12 +683,18 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 
 ## 四、独立插件
 
-### `tau_mp.smx` / `hl1tau.smx` — 单人战役(**已移出本仓库**)
+### 单人战役插件(**已移出本仓库**)
 
-让单人战役里的 tau 炮拥有多人模式的**高斯跳**与**右键无冷却**,并把**跌落伤害封顶**
-(`tau_mp`,在两处 `je` 指令上就地 `NOP`、卸载时还原原字节);把 tau 溅射半径还原成
-HL1 的值(`hl1tau`)。两者只服务单机剧情,连同签名文件 `tau_mp.games.txt` 与逆向笔记
-`REVERSE_TAU.md` 一起移到了本地目录 `campaign/`,不随本仓库分发。
+tau 炮在单人战役里是"阉割版":没有高斯跳、副攻有硬直 —— 这两条分支写死在 `server.dll` 里
+(按 `IsMultiplayer()` 判),纯 ConVar 改不出来。两个插件各自独立,只服务单机剧情,
+放在本机 `campaign/` 下,**不在本仓库内**:
+
+| 项目 | 做什么 |
+|---|---|
+| `campaign/tau_mp/` | 让单人 tau 拥有多人模式的**高斯跳**与**右键无冷却**(在两处 `je` 指令上就地 `NOP`、卸载时还原原字节),并把**跌落伤害封顶**在 10 HP |
+| `campaign/hl1tau/` | 把 tau 的溅射半径还原成 HL1 的值 |
+
+`campaign/tau_mp/` 里另有签名文件 `gamedata/tau_mp.games.txt` 与逆向笔记 `REVERSE_TAU.md`。
 
 ### `spawn_marker.smx` — 复活点标记(**默认停用**)
 
@@ -618,15 +719,29 @@ HL1 的值(`hl1tau`)。两者只服务单机剧情,连同签名文件 `tau_mp.ga
 | `bms_rpgReloadFix.smx` | RPG 换弹动画修复 |
 | `bms_weapon_tauStuckFix.smx` | tau 低弹药卡枪修复:右键按下第一 tick 且手持 `weapon_tau` 时把备用弹药补到 3 |
 | `is_weaponfx.smx` | 武器动画预热:玩家入服后假连 `is_weaponfix_saddr` 预缓存动画再重连(需在 `server.cfg` 显式设该地址,默认值会被视为"未配置"而自我禁用) |
+| `is_bms_fix_timelimit.smx` | 回合时限/倒计时修复(BM 只在地图加载时读一次 `mp_timelimit`,运行期 `SetInt` 无效;它走 `mp_round_time` 实体的加时输入 —— `bms_match` 的计时器沿用同一机制) |
 
 ### 未编入 BMAG 的模块
 
-`basebans`、`nextmap`、`randomcycle`、`spawn_cap` 的源码保留在 `smx_analysis/src/scripting/plugins/`,
-但**不在 `merge.py` 的 MODULES 列表中,不会编译进 `BMAG.smx`**(功能已被 `bms_match` / `spawn_distribute` 取代)。
-对应 smx 放在 `plugins/disabled/`。
+以下 7 个模块的源码保留在 `smx_analysis/src/scripting/plugins/`,但**不在 `merge.py` 的
+MODULES 列表中,不会编译进 `BMAG.smx`**:
+
+| 模块 | 为什么不在 BMAG 里 |
+|---|---|
+| `basebans` | 封禁命令(本地封禁,不依赖数据库);需要时启用 `plugins/disabled/basebans.smx` |
+| `nextmap` | 换图由 `bms_match` 的投票 + SourceMod 核心的 `sm_nextmap` 负责 |
+| `randomcycle` | 同上,随机换图走 `bms_match` 的 `!runrandom` |
+| `spawn_cap` | 功能已被 `spawn_distribute` 取代(且原版会踢 bot) |
+| `spawn_marker` | 训练用工具,见上一节;默认停用 |
+| `admin-sql-prefetch` | SQL 管理员预取;本服管理员走 `admin-flatfile` |
+| `admin-sql-threaded` | SQL 管理员;同上 |
+
+`plugins/disabled/` 里还有几个连源码都没有的: `classicmovement`(经典移动)、
+`sm_realbhop`(真 bhop)、`xms`(hl2dm 的比赛插件,`bms_match` 的参考实现)。
 
 > **SourceBans++ 已移除(2026-10-04)**:`sbpp_*` 六个模块连同 `configs/sourcebans/` 和 `sourcebanspp.inc`
-> / `sourcecomms.inc` 一起从仓库删除,`BMAG.smx` 已重编译。**因此 BMAG 现在不再提供任何封禁命令**
+> / `sourcecomms.inc` 一起从仓库删除,`BMAG.smx` 已重编译(41 → 35 个模块)。
+> **因此 BMAG 现在不再提供任何封禁命令**
 > (`sm_ban` / `sm_addban` / `sm_unban` / `sm_banip` 全部消失);禁言禁麦不受影响,仍由 `basecomm` 提供。
 > `basevotes` 的 `sm_voteban` 也还在,但它改走 SourceMod 核心的本地封禁(写进服务器自己的封禁名单),
 > 不再进 SourceBans 数据库。
@@ -659,7 +774,8 @@ python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(35 模块合并)
 
 - spcomp 输出**不是字节可复现的**(内嵌路径/时间戳/哈希表序),判断新旧请以功能验证或日志为准,不要比对 MD5
 - 编译用的 `include/` 必须与生产服务器一致:旧版 `sourcemod.inc` 的 `StoreToAddress` 只有 3 个参数,会编译报错
-- **签名必须抗重定位** —— `GameConfGetAddress` 扫的是已加载内存,含绝对地址(`imm32`)的签名会因 base relocation 在运行时失配(磁盘命中、内存不命中,静默不生效)。用 `smx_analysis/sig_check.py` 校验(结论出自单人战役 `tau_mp` 的签名,该插件已移到 `campaign/`)
+- **签名必须抗重定位** —— `GameConfGetAddress` 扫的是已加载内存,含绝对地址(`imm32`)的签名会因 base relocation 在运行时失配(磁盘命中、内存不命中,静默不生效)。用 `smx_analysis/sig_check.py` 校验(结论出自单人战役 `tau_mp` 的签名,该插件已移到 `campaign/tau_mp/`)
+- 单人战役那两个插件的源码**不在** `src/scripting/plugins/`(已移出仓库),因此 `merge.py` 和上面的编译命令都不涉及它们;单独编译见 `campaign/` 里各自的源码
 
 ---
 
