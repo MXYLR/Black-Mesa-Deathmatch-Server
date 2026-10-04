@@ -661,7 +661,7 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 
 ```bash
 cd smx_analysis
-python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(41 模块合并)
+python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(35 模块合并)
 ```
 
 然后用 spcomp 编译(编译器不入库,放在被忽略的 `dl/sm-win/` 下):
@@ -673,7 +673,7 @@ python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(41 模块合并)
   "src/scripting/BMAG/BMAG.sp"
 ```
 
-基线:**50 个警告、0 个错误**。
+基线:**48 个警告、0 个错误**(删掉 SourceBans++ 之前是 50)。
 
 `merge.py` 只桥接**精确的** SourceMod forward 名,`bms_match` 用自己的 `Bms_` 前缀实现生命周期回调,
 靠 `FORWARD_ALIASES` 映射回标准名 —— 改动 forward 命名时务必同步该表,否则回调会静默失效。
