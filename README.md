@@ -95,16 +95,18 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 
 ## 部署
 
-服务器(steamcmd 安装)位于 `F:\BMServer`。把对应文件复制进去即可:
+服务器是 steamcmd 安装的 srcds,根目录记为 `%SRV%`(即含 `srcds.exe` 的那一层)。
+把对应文件复制进去即可:
 
 ```bat
-copy /Y plugins\BMAG.smx            F:\BMServer\bms\addons\sourcemod\plugins\
-copy /Y plugins\tau_mp.smx          F:\BMServer\bms\addons\sourcemod\plugins\
-copy /Y plugins\hl1tau.smx          F:\BMServer\bms\addons\sourcemod\plugins\
-copy /Y gamedata\tau_mp.games.txt   F:\BMServer\bms\addons\sourcemod\gamedata\
-copy /Y smx_analysis\src\scripting\configs\bms_match.cfg F:\BMServer\bms\addons\sourcemod\configs\
-copy /Y smx_analysis\src\scripting\cfg\*.txt             F:\BMServer\bms\cfg\
-copy /Y smx_analysis\src\scripting\cfg\*.cfg             F:\BMServer\bms\cfg\
+set SRV=<你的 srcds 根目录>
+copy /Y plugins\BMAG.smx            %SRV%\bms\addons\sourcemod\plugins\
+copy /Y plugins\tau_mp.smx          %SRV%\bms\addons\sourcemod\plugins\
+copy /Y plugins\hl1tau.smx          %SRV%\bms\addons\sourcemod\plugins\
+copy /Y gamedata\tau_mp.games.txt   %SRV%\bms\addons\sourcemod\gamedata\
+copy /Y smx_analysis\src\scripting\configs\bms_match.cfg %SRV%\bms\addons\sourcemod\configs\
+copy /Y smx_analysis\src\scripting\cfg\*.txt             %SRV%\bms\cfg\
+copy /Y smx_analysis\src\scripting\cfg\*.cfg             %SRV%\bms\cfg\
 ```
 
 单人战役环境是另一套 `addons/sourcemod`(Steam 客户端目录下的 Black Mesa),
@@ -114,7 +116,7 @@ copy /Y smx_analysis\src\scripting\cfg\*.cfg             F:\BMServer\bms\cfg\
 
 ### 启动
 
-- **命令行 / 双击**:`F:\BMServer\start_server.bat` — 自动重试启动器:每 60 秒检测 27015 端口,未起则杀进程重试(最多 10 次)
+- **命令行 / 双击**:srcds 根目录下的 `start_server.bat` — 自动重试启动器:每 60 秒检测 27015 端口,未起则杀进程重试(最多 10 次)
 - **手动**:`srcds.exe -game bms +map dm_boom +maxplayers 16 -condebug`(日志追加写入 `bms\console.log`)
 
 ### RCON
