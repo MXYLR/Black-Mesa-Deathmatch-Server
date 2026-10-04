@@ -1,0 +1,27 @@
+=== cvar names (manual map) ===
+  object 0x108bc278 (bullet_ff_through_walls?): vtable=0x3e1c3e18
+     [+0x04] = 0x3e243e20  ""
+     [+0x08] = 0x3e2c3e28  ""
+     [+0x0c] = 0x3e343e30  ""
+     [+0x10] = 0x3e3c3e38  ""
+  object 0x108a8120 (glass debug overlay cvar): vtable=0x3370336c
+     [+0x04] = 0x33783374  ""
+     [+0x08] = 0x3380337c  ""
+     [+0x0c] = 0x33883384  ""
+     [+0x10] = 0x3390338c  ""
+
+=== find vtable start containing 0x105d6ea0, then its RTTI class name ===
+  slot 0x105d6e80 -> vtable 0x00000000  COL 0x00000000  name "?"
+  slot 0x105d6ea0 -> vtable 0x00000000  COL 0x00000000  name "?"
+  slot 0x105eb354 -> vtable 0x00000000  COL 0x00000000  name "?"
+  slot 0x1073dbd8 -> vtable 0x00000000  COL 0x00000000  name "?"
+
+=== who else is in the vtable containing 0x1034dd80? (list slots) ===
+
+=== the bullet-list global 0x1089e23c and GlassImpact-related globals ===
+  [0x1089e23c] = 0x3cc43cc0
+  [0x1086b6ec] = 0x36c636b4
+
+=== FCVAR check: flags dword of the two cvar objects (ConVar flags live ~ +0x18..0x20) ===
+  0x108bc278: 3e1c3e18 3e243e20 3e2c3e28 3e343e30 3e3c3e38 3e443e40 3e4c3e48 3e543e50 3e5c3e58 3e643e60 3e6c3e68 3e743e70
+  0x108a8120: 3370336c 33783374 3380337c 33883384 3390338c 33983394 33a0339c 33a833a4 33b033ac 33b833b4 33c033bc 33c833c4

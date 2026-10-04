@@ -1,0 +1,127 @@
+"npc_houndeye.Blast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"			"npc/houndeye/blast1.wav"
+}
+
+"npc_houndeye.Charge"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_105dB"
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/charge1.wav"
+		"wave"	"npc/houndeye/charge2.wav"
+		"wave"	"npc/houndeye/charge3.wav"
+	}
+}
+
+"npc_houndeye_knockback.Charge"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_105dB"
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/charge1.wav"
+		"wave"	"npc/houndeye/charge2.wav"
+		"wave"	"npc/houndeye/charge3.wav"
+	}
+}
+
+"npc_houndeye.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"npc/houndeye/die1.wav"
+}
+
+"npc_houndeye.Pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/pain1.wav"
+		"wave"	"npc/houndeye/pain2.wav"
+		"wave"	"npc/houndeye/pain3.wav"
+	}
+}
+
+"npc_houndeye.Idle"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/he_idle1.wav"
+		"wave"	"npc/houndeye/he_idle2.wav"
+		"wave"	"npc/houndeye/he_idle3.wav"
+		"wave"	"npc/houndeye/he_idle4.wav"
+		"wave"	"npc/houndeye/he_idle5.wav"
+		"wave"	"npc/houndeye/he_idle6.wav"
+		"wave"	"npc/houndeye/he_idle7.wav"
+		"wave"	"npc/houndeye/he_idle8.wav"
+		"wave"	"npc/houndeye/he_idle9.wav"
+		"wave"	"npc/houndeye/he_idle10.wav"
+	}
+}
+
+"npc_houndeye.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/he_alert1.wav"
+		"wave"	"npc/houndeye/he_alert2.wav"
+		"wave"	"npc/houndeye/he_alert3.wav"
+		"wave"	"npc/houndeye/he_alert4.wav"
+		"wave"	"npc/houndeye/he_alert5.wav"
+		"wave"	"npc/houndeye/he_alert6.wav"
+		"wave"	"npc/houndeye/he_alert7.wav"
+		"wave"	"npc/houndeye/he_alert8.wav"
+		"wave"	"npc/houndeye/he_alert9.wav"
+		"wave"	"npc/houndeye/he_alert10.wav"
+	}
+}
+
+"npc_houndeye.FootStep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/he_step1.wav" 
+		"wave"	"npc/houndeye/he_step2.wav"
+		"wave"	"npc/houndeye/he_step3.wav"
+	}
+}
+
+// XEN A - Houndeye Island - Alert
+
+"npc_houndeye.xena_islandalert01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"115"
+	"soundlevel"	"SNDLVL_140dB"
+	"wave"			"npc/houndeye/he_warning1.wav"
+}
+

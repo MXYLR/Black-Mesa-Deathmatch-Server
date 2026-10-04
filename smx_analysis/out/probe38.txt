@@ -1,0 +1,9 @@
+=== RTTI type descriptors used by the wrapper 0x10590163 ===
+  arg1 (src type) @0x10819310 td=0x10819308: vft=0x406d6574 spare=0x00000040 name=""
+  arg2 (dst type) @0x10819830 td=0x10819828: vft=0x4043504e spare=0x00000040 name=""
+
+=== floats at 0x1110c72c ===
+Traceback (most recent call last):
+  File "<stdin>", line 18, in <module>
+  File "<stdin>", line 4, in f32
+struct.error: unpack requires a buffer of 4 bytes

@@ -1,0 +1,19 @@
+UnlitGeneric
+{
+	$basetexture	vgui\hud\weapon_frag
+	$translucent	1
+	$distancealpha	1
+
+	$softedges		1
+	$edgesoftnessstart	.55
+	$edgesoftnessend	.35
+	$scaleedgesoftnessbasedonscreenres 1
+
+	$horizontal_scale 0.9
+	$vertical_scale   0.9
+	
+	$vertexcolor	1
+	$vertexalpha	1
+	$no_fullbright	1
+	$ignorez	1
+}

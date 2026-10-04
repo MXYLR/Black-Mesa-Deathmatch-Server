@@ -1,0 +1,27 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_RPG"
+{
+	"id" "elementid" "d1d4feb5-c31b-48a9-9d15-9b37593eec4f"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_rpg.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_rpg_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_rpg.mdl"
+	"printname" "string" "RPG"
+	"primary_ammo" "string" "grenade_rpg"
+	"clip_size" "int" "-1"	
+	"default_clip" "int" "1"
+	"bucket" "int" "3"
+	"bucket_position" "int" "0"
+
+	"bucket_controller" "int" "0"
+	"bucket_position_controller" "int" "3"
+
+	"anim_prefix" "string" "rpg"
+	"item_flags" "int" "0"
+	"weight" "int" "120"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "67078c9e-7273-4cc4-a712-0196949669b9"
+		"single_shot" "string" "weapon_rpg.Single"
+	}
+}

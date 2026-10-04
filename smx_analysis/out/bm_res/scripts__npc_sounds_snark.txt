@@ -1,0 +1,66 @@
+
+"npc_snark.Bite"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,140"
+	"soundlevel"	"SNDLVL_80dB"
+	"rndwave"
+	{
+	"wave"			"npc/snark/bite01.wav"
+	"wave"			"npc/snark/bite02.wav"
+	"wave"			"npc/snark/bite03.wav"
+	"wave"			"npc/snark/bite04.wav"
+	"wave"			"npc/snark/bite05.wav"
+	}
+}
+
+"npc_snark.Deploy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,107"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"	"npc/snark/deploy1.wav"
+		"wave"	"npc/snark/deploy2.wav"
+		"wave"	"npc/snark/deploy3.wav"
+	}
+}
+
+"npc_snark.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90dB"
+	"wave"			"npc/snark/die1.wav"
+	"wave"			"npc/snark/die02.wav"
+	"wave"			"npc/snark/die03.wav"
+	"wave"			"npc/snark/die04.wav"
+}
+
+"npc_snark.Explode"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,115"
+	"soundlevel"	"SNDLVL_90dB"
+	"wave"			"npc/snark/blast1.wav"
+}
+
+"npc_snark.Hunt"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,115"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"	"npc/snark/hunt1.wav"
+		"wave"	"npc/snark/hunt2.wav"
+		"wave"	"npc/snark/hunt3.wav"
+		"wave"	"npc/snark/hunt4.wav"
+	}
+}

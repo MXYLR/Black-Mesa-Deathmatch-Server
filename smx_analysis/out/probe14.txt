@@ -1,0 +1,44 @@
+=== datamap containing m_AmmoType / m_PenetratedAmmoType ===
+  m_SoundTime            @0x106a96c8 refs: ['0x107f9818', '0x10814640']
+  m_AmmoType             @0x106a96d4 refs: ['0x107f984c', '0x10814674']
+  m_PenetratedAmmoType   @0x106a96e0 refs: ['0x107f9880', '0x108146a8']
+  m_iImpacts             @0x106a96f8 refs: ['0x107f98e8', '0x10814710']
+  m_vecDir               @0x106a9704 refs: ['0x104840ea', '0x104fba4d', '0x1050215d', '0x10506921', '0x107f9950', '0x10814778']
+  m_flLastThink          @0x106a9710 refs: ['0x107f9984', '0x108147ac']
+  m_Speed                @0x106a9720 refs: ['0x104f8e78', '0x104fa808', '0x107f99b8', '0x108147e0', '0x10816400', '0x1081698c']
+  m_vecStart             @0x106a9728 refs: ['0x1050137e', '0x107f99ec', '0x10814848']
+
+=== that datamap: dump entries (name ptrs) ===
+
+=== "tracerbullet" / "bullet" classname refs ===
+  str @0x106a9744 = "tracerbullet"
+     ref @0x10016cb6
+     ref @0x10484d9e
+  str @0x105fb011 = "bullet"
+  str @0x106554d6 = "bullet"
+  str @0x1061cc2e = "Bullet"
+  str @0x10675646 = "Bullet"
+
+=== RTTI class names of interest ===
+  ".?AVCBullet               " -> ['0x1081b538']
+  ".?AVCTracerBullet         " -> ['0x108295d8']
+  ".?AVCBM                   " -> ['0x10826484', '0x10826f74', '0x108275a0', '0x108294a0', '0x10829964', '0x10829988', '0x108299ac', '0x10829a18', '0x10829a40', '0x10829a68', '0x10829a90', '0x10829ba8', '0x10829c1c', '0x10829c40', '0x10829c98', '0x10829d9c', '0x1082c710']
+  "TracerBullet              " -> ['0x106a9389', '0x108295dd', '0x1082960b']
+  "CBlackMesaFireBullets     " -> ['0x1072764c', '0x1082d9ec']
+  "CBMFireBullets            " -> none
+  ".?AVCBaseBullet           " -> none
+
+=== who uses BMAmmoID / SniperPenetratedRound string ===
+  "SniperPenetratedRound" @0x10678044 refs: ['0x102cda6f', '0x10351f89', '0x104be949', '0x107eebf0']
+  "SniperRound" @0x10678038 refs: ['0x102cda3d', '0x10351f78', '0x104be938', '0x107eebec']
+  "50cal" @0x10678028 refs: ['0x102cd9d9', '0x1031fa36', '0x107eebe4']
+  "sentry" @0x10678030 refs: ['0x102cda0b', '0x103960e9', '0x107eebe8']
+
+=== "PenetratedRound" / "SniperRound" as KeyValues in scripts? scan string blob start ===
+  raw: 53 6e 69 70 65 72 52 6f 75 6e 64 00 53 6e 69 70 65 72 50 65 6e 65 74 72 61 74 65 64 52 6f 75 6e 64 00 00 00 00 00 00 00 43 52 49 54 49 43 41 4c 20 45 52 52 4f 52 3a 20 41 6d 6d 6f 44 65 66 20 61 6d 6d 6f 20 63 6f 75 6e 74 20 25 69 20 64 6f 65 73 20 6e 6f 74 20 6d 61 74 63 68 20 75 70 20
+
+=== find datamap table referencing m_vecStart, then list names around it ===
+  base guess 0x10501360
+     [+-0x080] 0x105d9e8c  should_never_see_this
+     [++0x03c] 0x107496f8  m_nEntity
+     [++0x040] 0x10823868  AutoList@@

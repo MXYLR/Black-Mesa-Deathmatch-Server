@@ -1,0 +1,36 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_TAU"
+{
+	"id" "elementid" "17150a26-1118-468c-bf18-0fcd188154b7"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_gauss.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_gauss_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_gauss.mdl"
+	"printname" "string" "Tau"
+	"primary_ammo" "string" "energy"
+	"clip_size" "int" "-1"	
+	"default_clip" "int" "30"
+	"bucket" "int" "3"
+	"bucket_position" "int" "1"
+
+	"bucket_controller" "int" "3"
+	"bucket_position_controller" "int" "1"
+
+	"anim_prefix" "string" "tau"
+	"item_flags" "int" "0"
+	"weight" "int" "130"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "09e87b6a-a6db-435b-b40e-0a89788f6055"
+		"empty" "string" "weapon_tau.Empty"
+		"single_shot" "string" "weapon_tau.Single"
+		"double_shot" "string" "weapon_tau.UnderCharge"
+		"burst" "string" "weapon_tau.UnderCharge"
+		"special1" "string" "weapon_tau.SpinUp"
+		"special2" "string" "weapon_tau.Charged"
+		"special3" "string" "weapon_tau.OverCharged"
+		"reload" "string" "weapon_tau.OverCharging"
+	}
+}
+
+

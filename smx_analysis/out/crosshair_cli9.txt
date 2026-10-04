@@ -1,0 +1,80 @@
+=== global 0x1070508c ===
+
+=== global 0x107050ac ===
+
+=== global 0x106d96b0 ===
+
+=== refs to "weapon_" 0x10492368 ===
+  ref @0x1027d770 [.text]
+     0x1027d710  mov       dl, byte ptr [eax]
+     0x1027d712  cmp       dl, byte ptr [ecx]
+     0x1027d714  jne       0x1027d730
+     0x1027d716  test      dl, dl
+     0x1027d718  je        0x1027d72c
+     0x1027d71a  mov       dl, byte ptr [eax + 1]
+     0x1027d71d  cmp       dl, byte ptr [ecx + 1]
+     0x1027d720  jne       0x1027d730
+     0x1027d722  add       eax, 2
+     0x1027d725  add       ecx, 2
+     0x1027d728  test      dl, dl
+     0x1027d72a  jne       0x1027d710
+     0x1027d72c  xor       eax, eax
+     0x1027d72e  jmp       0x1027d735
+     0x1027d730  sbb       eax, eax
+     0x1027d732  or        eax, 1
+     0x1027d735  test      eax, eax
+     0x1027d737  jne       0x1027d753
+     0x1027d739  mov       esi, dword ptr [ebp + 8]
+     0x1027d73c  mov       ecx, esi
+     0x1027d73e  push      0x1046a5b0
+     0x1027d743  mov       dword ptr [esi], eax
+     0x1027d745  call      0x1035b140
+     0x1027d74a  mov       eax, esi
+     0x1027d74c  pop       esi
+     0x1027d74d  mov       esp, ebp
+     0x1027d74f  pop       ebp
+     0x1027d750  ret       8
+     0x1027d753  push      0x1040c7e2
+     0x1027d758  lea       ecx, [ebp + 0xc]
+     0x1027d75b  mov       dword ptr [ebp + 0xc], 0
+     0x1027d762  call      0x1035b140
+     0x1027d767  push      esi
+     0x1027d768  mov       esi, dword ptr [ebp + 8]
+     0x1027d76b  lea       eax, [ebp - 4]
+     0x1027d76e  push      esi
+     0x1027d76f  push      0x10492368
+     0x1027d774  push      eax
+     0x1027d775  lea       ecx, [ebp + 0xc]
+     0x1027d778  call      0x1035ad10
+     0x1027d77d  mov       ecx, eax
+     0x1027d77f  call      0x1035ad10
+     0x1027d784  lea       ecx, [ebp - 4]
+     0x1027d787  call      0x1035b100
+     0x1027d78c  lea       ecx, [ebp + 0xc]
+     0x1027d78f  call      0x1035b100
+     0x1027d794  mov       eax, esi
+     0x1027d796  pop       esi
+     0x1027d797  mov       esp, ebp
+     0x1027d799  pop       ebp
+     0x1027d79a  ret       8
+     0x1027d79d  int3      
+     0x1027d79e  int3      
+     0x1027d79f  int3      
+     0x1027d7a0  mov       eax, dword ptr [0x106ec10c]
+     0x1027d7a5  test      al, 1
+     0x1027d7a7  jne       0x1027d7c4
+     0x1027d7a9  or        eax, 1
+     0x1027d7ac  push      0x10492c7c
+     0x1027d7b1  mov       dword ptr [0x106ec10c], eax
+     0x1027d7b6  call      0x1036acd0
+     0x1027d7bb  add       esp, 4
+     0x1027d7be  mov       dword ptr [0x106ec108], eax
+     0x1027d7c3  ret       
+     0x1027d7c4  mov       eax, dword ptr [0x106ec108]
+     0x1027d7c9  ret       
+     0x1027d7ca  int3      
+     0x1027d7cb  int3      
+     0x1027d7cc  int3      
+     0x1027d7cd  int3      
+     0x1027d7ce  int3      
+     0x1027d7cf  int3      

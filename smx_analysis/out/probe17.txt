@@ -1,0 +1,123 @@
+=== 0x10286590 (the per-shot trace helper) head ===
+  0x10286590  push      ebp
+  0x10286591  mov       ebp, esp
+  0x10286593  mov       ecx, dword ptr [0x1089e23c]
+  0x10286599  test      ecx, ecx
+  0x1028659b  je        0x10286739
+  0x102865a1  mov       eax, dword ptr [ebp + 0x1c]
+  0x102865a4  push      ebx
+  0x102865a5  mov       ebx, dword ptr [ebp + 0x18]
+  0x102865a8  test      eax, eax
+  0x102865aa  jne       0x102865b3
+  0x102865ac  call      0x10286170
+  0x102865b1  jmp       0x102865ba
+  0x102865b3  push      eax
+  0x102865b4  push      ebx
+  0x102865b5  call      0x10285fa0
+  0x102865ba  cmp       eax, -1
+  0x102865bd  jne       0x102865d0
+  0x102865bf  push      0x10661be4
+  0x102865c4  call      dword ptr [0x105c3268]
+  0x102865ca  add       esp, 4
+  0x102865cd  pop       ebx
+  0x102865ce  pop       ebp
+  0x102865cf  ret       
+  0x102865d0  push      esi
+  0x102865d1  imul      esi, eax, 0x34
+  0x102865d4  mov       eax, dword ptr [ebp + 0xc]
+  0x102865d7  push      edi
+  0x102865d8  mov       edi, dword ptr [0x1089e23c]
+  0x102865de  fld       dword ptr [eax]
+  0x102865e0  fstp      dword ptr [esi + edi + 0x384]
+  0x102865e7  fld       dword ptr [eax + 4]
+  0x102865ea  fstp      dword ptr [esi + edi + 0x388]
+  0x102865f1  fld       dword ptr [eax + 8]
+  0x102865f4  mov       eax, dword ptr [ebp + 8]
+  0x102865f7  fstp      dword ptr [esi + edi + 0x38c]
+  0x102865fe  mov       dword ptr [esi + edi + 0x370], eax
+  0x10286605  mov       eax, dword ptr [ebp + 0x10]
+  0x10286608  mov       dword ptr [esi + edi + 0x368], eax
+  0x1028660f  mov       dword ptr [esi + edi + 0x36c], 0x3f000000
+  0x1028661a  mov       eax, dword ptr [0x1086b1c8]
+  0x1028661f  movss     xmm0, dword ptr [eax + 0xc]
+  0x10286624  mov       byte ptr [esi + edi + 0x37e], 0
+  0x1028662c  addss     xmm0, dword ptr [ebp + 0x14]
+  0x10286631  movss     dword ptr [esi + edi + 0x378], xmm0
+  0x1028663a  test      ebx, ebx
+  0x1028663c  je        0x10286650
+  0x1028663e  mov       eax, dword ptr [ebx]
+  0x10286640  mov       ecx, ebx
+  0x10286642  call      dword ptr [eax + 8]
+  0x10286645  mov       eax, dword ptr [eax]
+  0x10286647  mov       dword ptr [esi + edi + 0x360], eax
+  0x1028664e  jmp       0x1028665b
+  0x10286650  mov       dword ptr [esi + edi + 0x360], 0xffffffff
+  0x1028665b  mov       ecx, dword ptr [ebp + 0x20]
+  0x1028665e  test      ecx, ecx
+  0x10286660  je        0x10286672
+  0x10286662  mov       eax, dword ptr [ecx]
+  0x10286664  call      dword ptr [eax + 8]
+  0x10286667  mov       eax, dword ptr [eax]
+  0x10286669  mov       dword ptr [esi + edi + 0x364], eax
+  0x10286670  jmp       0x1028667d
+  0x10286672  mov       dword ptr [esi + edi + 0x364], 0xffffffff
+  0x1028667d  mov       eax, dword ptr [ebp + 0x1c]
+  0x10286680  test      ebx, ebx
+  0x10286682  mov       dword ptr [esi + edi + 0x380], eax
+  0x10286689  setne     al
+  0x1028668c  mov       byte ptr [esi + edi + 0x390], al
+  0x10286693  mov       ecx, dword ptr [0x1086a9bc]
+  0x10286699  cmp       ecx, 0x1086a9a0
+  0x1028669f  jne       0x102866ad
+  0x102866a1  mov       eax, dword ptr [0x1086a9d0]
+  0x102866a6  xor       eax, 0x1086a9a0
+  0x102866ab  jmp       0x102866b8
+  0x102866ad  mov       eax, dword ptr [ecx]
+
+=== 0x1011e4d0 (glass-impact caller) head ===
+  0x1011e4d0  push      ebp
+  0x1011e4d1  mov       ebp, esp
+  0x1011e4d3  push      esi
+  0x1011e4d4  mov       esi, ecx
+  0x1011e4d6  mov       eax, dword ptr [esi + 0x104]
+  0x1011e4dc  shr       eax, 0xb
+  0x1011e4df  test      al, 1
+  0x1011e4e1  je        0x1011e4e8
+  0x1011e4e3  call      0x1010ee90
+  0x1011e4e8  mov       eax, dword ptr [esi]
+  0x1011e4ea  mov       ecx, esi
+  0x1011e4ec  call      dword ptr [eax + 0x250]
+  0x1011e4f2  mov       ecx, eax
+  0x1011e4f4  mov       eax, dword ptr [ebp + 8]
+  0x1011e4f7  movss     xmm0, dword ptr [ecx]
+  0x1011e4fb  addss     xmm0, dword ptr [esi + 0x280]
+  0x1011e503  movss     dword ptr [eax], xmm0
+  0x1011e507  movss     xmm0, dword ptr [ecx + 4]
+  0x1011e50c  addss     xmm0, dword ptr [esi + 0x284]
+  0x1011e514  movss     dword ptr [eax + 4], xmm0
+  0x1011e519  movss     xmm0, dword ptr [ecx + 8]
+  0x1011e51e  addss     xmm0, dword ptr [esi + 0x288]
+  0x1011e526  pop       esi
+  0x1011e527  movss     dword ptr [eax + 8], xmm0
+  0x1011e52c  pop       ebp
+  0x1011e52d  ret       4
+  0x1011e530  push      ebx
+  0x1011e531  mov       ebx, esp
+  0x1011e533  sub       esp, 8
+  0x1011e536  and       esp, 0xfffffff0
+  0x1011e539  add       esp, 4
+  0x1011e53c  push      ebp
+  0x1011e53d  mov       ebp, dword ptr [ebx + 4]
+  0x1011e540  mov       dword ptr [esp + 4], ebp
+  0x1011e544  mov       ebp, esp
+  0x1011e546  sub       esp, 0x358
+  0x1011e54c  mov       eax, dword ptr [0x10817e30]
+  0x1011e551  xor       eax, ebp
+  0x1011e553  mov       dword ptr [ebp - 4], eax
+  0x1011e556  push      esi
+  0x1011e557  mov       esi, ecx
+  0x1011e559  push      edi
+  0x1011e55a  mov       edi, dword ptr [ebx + 8]
+
+=== glass branch context 0x1011f340-0x1011f3c0 ===
+  0x1011f340  test      dword ptr [eax - 2], edi

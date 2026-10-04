@@ -1,0 +1,17 @@
+"DeadHEV.PingLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"95, 100"
+	"soundlevel"		"SNDLVL_70dB"
+	"wave"			"xen/homing_beacon_h01.wav"
+}
+
+"DeadHEV.Shutdown"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"xen/hev_dead_shutdown01.wav"
+}

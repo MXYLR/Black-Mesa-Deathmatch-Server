@@ -1,0 +1,51 @@
+=== 1) bullet_ff_through_walls ConVar registration ===
+  str @0x106a904c = "bullet_ff_through_walls"
+    ref @0x10016a8b [.text]
+       0x10016a5b  add       al, 0x9c
+       0x10016a5d  mov       edx, dword ptr [eax]
+       0x10016a5f  ret       
+       0x10016a60  call      0x102b1f50
+       0x10016a65  push      0x106611b4
+       0x10016a6a  push      0x107f97b8
+       0x10016a6f  mov       ecx, eax
+       0x10016a71  mov       edx, dword ptr [eax]
+       0x10016a73  call      dword ptr [edx]
+       0x10016a75  ret       
+       0x10016a76  int3      
+       0x10016a77  int3      
+       0x10016a78  int3      
+       0x10016a79  int3      
+       0x10016a7a  int3      
+       0x10016a7b  int3      
+       0x10016a7c  int3      
+       0x10016a7d  int3      
+       0x10016a7e  int3      
+       0x10016a7f  int3      
+       0x10016a80  push      0x2000
+       0x10016a85  push      0x105c89cc
+       0x10016a8a  push      0x106a904c
+       0x10016a8f  mov       ecx, 0x108bc278
+       0x10016a94  call      0x1052ec80
+       0x10016a99  push      0x105b7e10
+       0x10016a9e  call      0x1059036a
+       0x10016aa3  pop       ecx
+       0x10016aa4  ret       
+       0x10016aa5  int3      
+       0x10016aa6  int3      
+       0x10016aa7  int3      
+       0x10016aa8  int3      
+       0x10016aa9  int3      
+       0x10016aaa  int3      
+       0x10016aab  int3      
+       0x10016aac  int3      
+       0x10016aad  int3      
+       0x10016aae  int3      
+       0x10016aaf  int3      
+       0x10016ab0  push      0x108bc304
+       0x10016ab5  push      0x106a90c8
+
+=== 2) RTTI -> vtable for CBlackMesaFireBullets / CTEWeaponBullets / CTracerBullet ===
+  .?AVCBlackMesaFireBullets  td=0x1082d9e4
+
+=== 3) scan ALL RTTI class names for the vtable containing 0x1034dd80 ===
+   (no RTTI vtable contains 0x1034dd80)

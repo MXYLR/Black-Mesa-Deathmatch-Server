@@ -1,0 +1,202 @@
+//*****************************************************************
+//   NOTE: This script file is a Work- In- Progress
+//*****************************************************************
+//
+//
+// 	This script file contains soundscript entries listing sounds from the following folders and subfolders within:
+//
+//	sound/npc/beneathacle
+//
+//	This file started as a direct copy of "npc_sounds_barnacle.txt", due to the nature of the npc
+//	Therefore, some the entries, while the names have been changed, still contain notes from the HL2 counterpart,
+//	Along with some of the obsoleted soundscripts that accompanied it.
+//
+//
+//
+//******************************************************************************************
+//
+////****************************************************************************
+//           SOUND  ///  NPC_Beneathacle  ///  STARTS HERE !!!!
+//****************************************************************************	
+//        		sound/npc/beneathacle
+//****************************************************************************
+"NPC_Beneathacle.FinalBite"	// bites head
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/beneathacle/beneathacle_crunch2.wav"
+		"wave"		"npc/beneathacle/beneathacle_crunch3.wav"
+	}
+}
+
+"NPC_Beneathacle.Chew"	// HL2 obsoleted, use FinalBite and Digest
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/beneathacle/bcl_chew1.wav"
+		"wave"	"npc/beneathacle/bcl_chew2.wav"
+		"wave"	"npc/beneathacle/beneathacle_crunch2.wav"
+	}
+}
+
+"NPC_Beneathacle.Alert"	// HL2 obsoleted, use TongueStretch & PullPant
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"npc/beneathacle/bcl_alert2.wav"
+}
+
+"NPC_Beneathacle.Die"	// dies
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/beneathacle/beneathacle_die1.wav"
+		"wave"	"npc/beneathacle/beneathacle_die2.wav"
+		"wave"	"npc/beneathacle/beneathacle_die3.wav"
+	}
+}
+
+"NPC_Beneathacle.TongueOut"	// beneathacle tongue flops out
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.80"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"	"npc/beneathacle/beneathacle_tongue2.wav"
+}
+
+"NPC_Beneathacle.TongueStretch"	// beneathacle tongue stretch as pulls up dinner
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.80"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/beneathacle/beneathacle_tongue_pull1.wav"
+		"wave"	"npc/beneathacle/beneathacle_tongue_pull2.wav"
+		"wave"	"npc/beneathacle/beneathacle_tongue_pull3.wav"
+	}
+}
+
+"NPC_Beneathacle.PullPant"		// beneathacle pants as it pulls up dinner
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/beneathacle/beneathacle_pull1.wav"
+		"wave"	"npc/beneathacle/beneathacle_pull2.wav"
+		"wave"	"npc/beneathacle/beneathacle_pull3.wav"
+		"wave"	"npc/beneathacle/beneathacle_pull4.wav"
+
+	}
+}
+
+"NPC_Beneathacle.Grunt"	//  (not used)
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/beneathacle/beneathacle_grunt1.wav"
+		"wave"	"npc/beneathacle/beneathacle_grunt3.wav"
+		"wave"	"npc/beneathacle/beneathacle_grunt4.wav"
+
+	}
+}
+
+"NPC_Beneathacle.BabyGrunt"	// baby beneathacle, idle, calls back (not used)
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"150"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/beneathacle/beneathacle_grunt1.wav"
+		"wave"	"npc/beneathacle/beneathacle_grunt3.wav"
+		"wave"	"npc/beneathacle/beneathacle_grunt4.wav"
+
+	}
+}
+
+"NPC_Beneathacle.Scream"	// beneathacle screams just before FinalBite
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/beneathacle/beneathacle_bark1.wav"
+		"wave"	"npc/beneathacle/beneathacle_bark2.wav"
+	}
+}
+
+"NPC_Beneathacle.Digest"	// beneathacle digestion idle - after eating 
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/beneathacle/beneathacle_digesting1.wav"
+		"wave"	"npc/beneathacle/beneathacle_digesting2.wav"
+		"wave"	"npc/beneathacle/beneathacle_gulp1.wav"
+		"wave"	"npc/beneathacle/beneathacle_gulp2.wav"
+	}
+}
+
+"NPC_Beneathacle.BreakNeck"	// Breaks the prey's neck as it grabs.
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/beneathacle/beneathicle_neck_snap1.wav"
+		"wave"		"npc/beneathacle/beneathicle_neck_snap1.wav"
+	}
+}

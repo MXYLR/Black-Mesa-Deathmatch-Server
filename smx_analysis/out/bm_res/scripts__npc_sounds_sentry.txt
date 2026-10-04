@@ -1,0 +1,131 @@
+"npc_sentry_ceiling.Deploy"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ceiling/deploy.waV"
+}
+
+"npc_sentry_ceiling.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volumne"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ground/die.wav"
+}
+
+"npc_sentry_ceiling.MotorLoop"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ceiling/motor_loop.wav"
+}
+
+"npc_sentry_ceiling.MotorStop"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ceiling/motor_stop.wav"
+}
+
+"npc_sentry_ceiling.Ping"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ceiling/ping2.wav"
+}
+
+"npc_sentry_ceiling.Retract"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ceiling/retract.waV"
+}
+
+"npc_sentry_ceiling.Shoot"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_GUNFIRE"
+	"rndwave"
+	{
+		"wave"		"npc/sentry_ceiling/shoot1.wav"
+	}
+}
+
+"npc_sentry_ground.Deploy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ground/deploy.wav"
+}
+
+"npc_sentry_ground.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volumne"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ground/die.wav"
+}
+
+"npc_sentry_ground.MotorLoop"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ground/motor_loop.wav"
+}
+
+"npc_sentry_ground.MotorStop"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ground/motor_stop.wav"
+}
+
+"npc_sentry_ground.Ping"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ground/ping.wav"
+}
+
+"npc_sentry_ground.Retract"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/sentry_ground/retract.wav"
+}
+
+"npc_sentry_ground.Shoot"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_GUNFIRE"
+	"rndwave"
+	{
+		"wave"		"npc/sentry_ground/single.wav"
+	}
+}

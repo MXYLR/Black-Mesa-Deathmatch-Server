@@ -1,0 +1,337 @@
+=== raw byte search: b"crosshair" (case-insensitive) whole file ===
+  total occurrences: 15
+   file off 0x4218d8  va 0x10422ad8 [.rdata]  "crosshair."
+   file off 0x421934  va 0x10422b34 [.rdata]  "crosshair."
+   file off 0x421986  va 0x10422b86 [.rdata]  "crosshair."
+   file off 0x4219e2  va 0x10422be2 [.rdata]  "crosshair."
+   file off 0x45e025  va 0x1045f225 [.rdata]  "crosshair"
+   file off 0x45e055  va 0x1045f255 [.rdata]  "crosshair"
+   file off 0x48f2cc  va 0x104904cc [.rdata]  "crosshair_enable"
+   file off 0x48f2e4  va 0x104904e4 [.rdata]  "crosshair_enemy_detect_range"
+   file off 0x48f30f  va 0x1049050f [.rdata]  "crosshair"
+   file off 0x48f6c8  va 0x104908c8 [.rdata]  "Crosshair"
+   file off 0x48f6d7  va 0x104908d7 [.rdata]  "CrosshairColor"
+   file off 0x48f6e8  va 0x104908e8 [.rdata]  "CrosshairColor"
+   file off 0x4ad028  va 0x104ae228 [.rdata]  "Crosshair"
+   file off 0x4ad06b  va 0x104ae26b [.rdata]  "Crosshair"
+   file off 0x57afd8  va 0x1057c1d8 [.data]  "Crosshair@@"
+
+=== raw search: material basenames ===
+   crosshair_   off 0x48f2cc va 0x104904cc [.rdata] "crosshair_enable"
+   crosshair_   off 0x48f2e4 va 0x104904e4 [.rdata] "crosshair_enemy_detect_range"
+   gauss        off 0x40eb3c va 0x1040fd3c [.rdata] "GAUSS_SPINUP"
+   gauss        off 0x40eb50 va 0x1040fd50 [.rdata] "GAUSS_SPINCYCLE"
+   gauss        off 0x40eb64 va 0x1040fd64 [.rdata] "GAUSS_SPINCYCLE_NOAMMO"
+   gauss        off 0x450874 va 0x10451a74 [.rdata] "GaussianNoise_IMaterialProxy003"
+   gauss        off 0x4ab943 va 0x104acb43 [.rdata] "GaussExplosion"
+   gauss        off 0x4ab959 va 0x104acb59 [.rdata] "GaussExplosion"
+   gauss        off 0x54d498 va 0x1054e698 [.rdata] "GaussianRandomStream@@QAE@PAVIUniformRandomStream@@@Z"
+   gauss        off 0x54d4e1 va 0x1054e6e1 [.rdata] "GaussianRandomStream@@QAEXPAVIUniformRandomStream@@@Z"
+   gauss        off 0x54d55c va 0x1054e75c [.rdata] "GaussianRandomStream@@QAEMMM@Z"
+   gauss        off 0x576da5 va 0x10577fa5 [.data] "GaussianNoiseProxy@@"
+   gauss        off 0x57bd84 va 0x1057cf84 [.data] "GaussExplosion@@"
+   gluon        off 0x417cc2 va 0x10418ec2 [.rdata] "GLUON"
+   gluon        off 0x417e30 va 0x10419030 [.rdata] "GLUON"
+   gluon        off 0x417fb4 va 0x104191b4 [.rdata] "GLUON"
+   gluon        off 0x418112 va 0x10419312 [.rdata] "GLUON"
+   gluon        off 0x418246 va 0x10419446 [.rdata] "GLUON"
+   gluon        off 0x4183b1 va 0x104195b1 [.rdata] "GLUON"
+   gluon        off 0x418555 va 0x10419755 [.rdata] "GLUON"
+   gluon        off 0x4186c1 va 0x104198c1 [.rdata] "GLUON"
+   gluon        off 0x418866 va 0x10419a66 [.rdata] "GLUON"
+   gluon        off 0x425bf8 va 0x10426df8 [.rdata] "gluon_glow_trail"
+   gluon        off 0x468978 va 0x10469b78 [.rdata] "gluon_enttrail"
+   gluon        off 0x469397 va 0x1046a597 [.rdata] "gluon"
+   gluon        off 0x469530 va 0x1046a730 [.rdata] "gluon"
+   gluon        off 0x4a31d3 va 0x104a43d3 [.rdata] "gluon_global_noise_scroll"
+   gluon        off 0x4a31f3 va 0x104a43f3 [.rdata] "gluon_global_noise_radius"
+   gluon        off 0x4a3213 va 0x104a4413 [.rdata] "gluon_global_noise_scroll_distance"
+   gluon        off 0x4a323b va 0x104a443b [.rdata] "gluon_main_beam_alpha"
+   gluon        off 0x4a3257 va 0x104a4457 [.rdata] "gluon_main_beam_scroll"
+   gluon        off 0x4a3273 va 0x104a4473 [.rdata] "gluon_main_beam_point_per_distance"
+   gluon        off 0x4a329b va 0x104a449b [.rdata] "gluon_main_beam_size"
+   gluon        off 0x4a32b3 va 0x104a44b3 [.rdata] "gluon_spiral_beam_alpha"
+   gluon        off 0x4a32d3 va 0x104a44d3 [.rdata] "gluon_spiral_beam_scroll"
+   gluon        off 0x4a32f3 va 0x104a44f3 [.rdata] "gluon_spiral_beam_point_per_distance"
+   gluon        off 0x4a331b va 0x104a451b [.rdata] "gluon_spiral_beam_point_per_spiral"
+   gluon        off 0x4a334b va 0x104a454b [.rdata] "gluon_spiral_beam_spiral_theta_step"
+   gluon        off 0x4a3373 va 0x104a4573 [.rdata] "gluon_spiral_beam_spiral_radius"
+   ...more
+   hivehand     off 0x417c96 va 0x10418e96 [.rdata] "HIVEHAND"
+   hivehand     off 0x417df8 va 0x10418ff8 [.rdata] "HIVEHAND"
+   hivehand     off 0x417f7c va 0x1041917c [.rdata] "HIVEHAND"
+   hivehand     off 0x4180e6 va 0x104192e6 [.rdata] "HIVEHAND"
+   hivehand     off 0x41821a va 0x1041941a [.rdata] "HIVEHAND"
+   hivehand     off 0x418375 va 0x10419575 [.rdata] "HIVEHAND"
+   hivehand     off 0x418519 va 0x10419719 [.rdata] "HIVEHAND"
+   hivehand     off 0x418695 va 0x10419895 [.rdata] "HIVEHAND"
+   hivehand     off 0x41881a va 0x10419a1a [.rdata] "HIVEHAND"
+   hivehand     off 0x4693a7 va 0x1046a5a7 [.rdata] "hivehand"
+   hivehand     off 0x469544 va 0x1046a744 [.rdata] "hivehand"
+   hivehand     off 0x47f04b va 0x1048024b [.rdata] "hivehand.Buzz"
+   hivehand     off 0x49c160 va 0x1049d360 [.rdata] "HiveHand"
+   hivehand     off 0x49c176 va 0x1049d376 [.rdata] "hivehand_plr_regen_attack_delay"
+   hivehand     off 0x49c1a2 va 0x1049d3a2 [.rdata] "hivehand_plr_regen_tick"
+   hivehand     off 0x49c1ce va 0x1049d3ce [.rdata] "hivehand_plr_secondary_radius"
+   hivehand     off 0x49c1f6 va 0x1049d3f6 [.rdata] "hivehand_plr_secondary_phase"
+   hivehand     off 0x49c9ff va 0x1049dbff [.rdata] "hivehand.Pickup"
+   hivehand     off 0x49ca17 va 0x1049dc17 [.rdata] "hivehand.BackgroundLoop"
+   hivehand     off 0x49ca39 va 0x1049dc39 [.rdata] "HiveHand"
+   hivehand     off 0x49ca4e va 0x1049dc4e [.rdata] "HiveHand"
+   hivehand     off 0x4a0fbc va 0x104a21bc [.rdata] "HIVEHAND"
+   hivehand     off 0x57b739 va 0x1057c939 [.data] "HiveHand@@"
+   xbox_reticle off 0x4490a9 va 0x1044a2a9 [.rdata] "xbox_reticle"
+
+=== CHudCrosshair RTTI ===
+  TypeDescriptor @0x1057c1c8: 84 df 51 10 00 00 00 00 2e 3f 41 56 43 48 75 64 43 72 6f 73 73 68 61 69 72 40 40 00 84 df 51 10
+  td[0]=0x1051df84 td[1]=0x00000000  name@td+8=".?AVCHudCrosshair@@"
+  COL candidates: ['0x10540d1c', '0x10540d54', '0x10540d7c']
+   COL @0x10540d1c: c8 c1 57 10 24 0d 54 10 00 00 00 00 03 00 00 00 07 00 00 00 34 0d 54 10
+     ptrs to COL: []
+   COL @0x10540d54: c8 c1 57 10 06 00 00 00 00 00 00 00 ff ff ff ff 00 00 00 00 40 00 00 00
+     ptrs to COL: ['0x10540d34']
+     >>> VTABLE @0x10540d38
+        [  0 / +0x000] 0x1052a648
+        [  1 / +0x004] 0x1052a5c8
+        [  2 / +0x008] 0x1052a590
+        [  3 / +0x00c] 0x1052a7a0
+        [  4 / +0x010] 0x1052a7bc
+        [  5 / +0x014] 0x1052a7d8
+   COL @0x10540d7c: c8 c1 57 10 24 0d 54 10 00 00 00 00 00 00 00 00 00 00 00 00 14 c2 57 10
+     ptrs to COL: []
+
+=== strings in the 0x104904xx convar cluster ===
+  0x10490400  "outtime"
+  0x10490408  "nextfadetime"
+  0x10490418  "pausebetweenwaves"
+  0x1049042c  "logotime"
+  0x10490438  "HALF-LIFE'"
+  0x10490444  "logo"
+  0x1049044c  "logo2"
+  0x10490454  "creditsdone"
+  0x10490460  "ClientTitleFont_LOGO"
+  0x10490478  "resource/credits_%language%.txt"
+  0x10490498  "OutroCreditsNames"
+  0x104904ac  "IntroCreditsNames"
+  0x104904c8  "hud_crosshair_enable"
+  0x104904e0  "hud_crosshair_enemy_detect_range"
+  0x10490504  "cl_observercrosshair"
+  0x104908c4  "CHudCrosshair"
+  0x104908d4  "m_cCrosshairColor"
+  0x104908e8  "CrosshairColor"
+
+=== refs to "CHudCrosshair"/"m_cCrosshairColor"/"CrosshairColor" ===
+  0x104908c4 "CHudCrosshair" refs: ['0x10278010', '0x10278224', '0x10278530']
+     --- disasm around 0x10278010 ---
+       0x10277fb0  pop       ebp
+       0x10277fb1  ret       
+       0x10277fb2  int3      
+       0x10277fb3  int3      
+       0x10277fb4  int3      
+       0x10277fb5  int3      
+       0x10277fb6  int3      
+       0x10277fb7  int3      
+       0x10277fb8  int3      
+       0x10277fb9  int3      
+       0x10277fba  int3      
+       0x10277fbb  int3      
+       0x10277fbc  int3      
+       0x10277fbd  int3      
+       0x10277fbe  int3      
+       0x10277fbf  int3      
+       0x10277fc0  push      ebp
+       0x10277fc1  mov       ebp, esp
+       0x10277fc3  sub       esp, 0x18
+       0x10277fc6  cmp       dword ptr [ebp + 0xc], 0
+       0x10277fca  push      ebx
+       0x10277fcb  mov       ebx, ecx
+       0x10277fcd  je        0x10277fd6
+       0x10277fcf  mov       dword ptr [ebx + 0x30], 0x104908bc
+       0x10277fd6  push      esi
+       0x10277fd7  mov       esi, dword ptr [ebp + 8]
+       0x10277fda  push      edi
+       0x10277fdb  push      esi
+       0x10277fdc  call      0x10153e70
+       0x10277fe1  call      0x10216460
+       0x10277fe6  push      0
+       0x10277fe8  push      esi
+       0x10277fe9  mov       ecx, eax
+       0x10277feb  mov       edx, dword ptr [eax]
+       0x10277fed  call      dword ptr [edx + 0x20]
+       0x10277ff0  push      eax
+       0x10277ff1  lea       ecx, [ebx + 0x2c]
+       0x10277ff4  call      0x103645a0
+       0x10277ff9  mov       dword ptr [ebx], 0x10490520
+       0x10277fff  mov       dword ptr [ebx + 0x2c], 0x10490564
+       0x10278006  cmp       byte ptr [0x106ebff4], 0
+       0x1027800d  jne       0x10278039
+       0x1027800f  push      0x104908c4
+       0x10278014  mov       byte ptr [0x106ebff4], 1
+       0x1027801b  call      0x1036ae20
+       0x10278020  mov       esi, eax
+       0x10278022  push      0x1044a2bc
+       0x10278027  mov       dword ptr [esi + 0x1c], 0x102782b0
+       0x1027802e  call      0x1036ae20
+       0x10278033  add       esp, 8
+       0x10278036  mov       dword ptr [esi + 0x18], eax
+       0x10278039  cmp       byte ptr [0x106ec000], 0
+       0x10278040  jne       0x1027806c
+       0x10278042  push      0x104908c4
+       0x10278047  mov       byte ptr [0x106ec000], 1
+       0x1027804e  call      0x10377a40
+       0x10278053  mov       esi, eax
+       0x10278055  push      0x1044a2bc
+       0x1027805a  mov       dword ptr [esi + 0x18], 0x102782b0
+       0x10278061  call      0x10377a40
+       0x10278066  add       esp, 8
+       0x10278069  mov       dword ptr [esi + 0x14], eax
+     --- disasm around 0x10278224 ---
+       0x102781c4  sal       byte ptr [eax + esi - 0x73], 0x4d
+       0x102781c9  cld       
+       0x102781ca  push      ecx
+       0x102781cb  mov       ecx, eax
+       0x102781cd  call      0x1025e300
+       0x102781d2  movzx     ecx, byte ptr [esi + 0x193]
+       0x102781d9  mov       eax, dword ptr [ebp - 4]
+       0x102781dc  mov       byte ptr [esi + 0x190], al
+       0x102781e2  mov       al, byte ptr [ebp - 2]
+       0x102781e5  mov       byte ptr [esi + 0x191], ah
+       0x102781eb  mov       byte ptr [esi + 0x192], al
+       0x102781f1  mov       byte ptr [esi + 0x193], cl
+       0x102781f7  pop       esi
+       0x102781f8  mov       esp, ebp
+       0x102781fa  pop       ebp
+       0x102781fb  ret       
+       0x102781fc  int3      
+       0x102781fd  int3      
+       0x102781fe  int3      
+       0x102781ff  int3      
+       0x10278200  push      esi
+       0x10278201  push      0x198
+       0x10278206  call      0x1017cea0
+       0x1027820b  push      0x198
+       0x10278210  mov       esi, eax
+       0x10278212  push      0
+       0x10278214  push      esi
+       0x10278215  call      0x103d3d20
+       0x1027821a  add       esp, 0x10
+       0x1027821d  test      esi, esi
+       0x1027821f  je        0x10278231
+       0x10278221  push      1
+       0x10278223  push      0x104908c4
+       0x10278228  mov       ecx, esi
+       0x1027822a  call      0x10277fc0
+       0x1027822f  pop       esi
+       0x10278230  ret       
+       0x10278231  xor       eax, eax
+       0x10278233  pop       esi
+       0x10278234  ret       
+       0x10278235  int3      
+       0x10278236  int3      
+       0x10278237  int3      
+       0x10278238  int3      
+       0x10278239  int3      
+       0x1027823a  int3      
+       0x1027823b  int3      
+       0x1027823c  int3      
+       0x1027823d  int3      
+       0x1027823e  int3      
+       0x1027823f  int3      
+       0x10278240  push      0x104908c4
+       0x10278245  call      0x10377a40
+       0x1027824a  add       esp, 4
+       0x1027824d  ret       
+       0x1027824e  int3      
+       0x1027824f  int3      
+       0x10278250  mov       eax, dword ptr [0x106ec008]
+       0x10278255  test      al, 1
+       0x10278257  jne       0x10278274
+       0x10278259  or        eax, 1
+       0x1027825c  push      0x104908c4
+       0x10278261  mov       dword ptr [0x106ec008], eax
+       0x10278266  call      0x1036acd0
+       0x1027826b  add       esp, 4
+       0x1027826e  mov       dword ptr [0x106ec004], eax
+       0x10278273  ret       
+       0x10278274  mov       eax, dword ptr [0x106ec004]
+       0x10278279  ret       
+       0x1027827a  int3      
+       0x1027827b  int3      
+       0x1027827c  int3      
+       0x1027827d  int3      
+       0x1027827e  int3      
+       0x1027827f  int3      
+     --- disasm around 0x10278530 ---
+       0x102784d0  mov       byte ptr [ebp - 1], al
+       0x102784d3  push      dword ptr [ebp - 4]
+       0x102784d6  jmp       0x102784de
+       0x102784d8  push      dword ptr [ebx + 0x164]
+       0x102784de  mov       eax, dword ptr [ecx]
+       0x102784e0  call      dword ptr [eax + 0x34]
+       0x102784e3  test      edi, edi
+       0x102784e5  je        0x102784f1
+       0x102784e7  mov       eax, dword ptr [edi]
+       0x102784e9  mov       ecx, edi
+       0x102784eb  call      dword ptr [eax + 0x5c4]
+       0x102784f1  mov       eax, dword ptr [esi]
+       0x102784f3  mov       ecx, esi
+       0x102784f5  call      dword ptr [eax + 0x74]
+       0x102784f8  pop       edi
+       0x102784f9  pop       esi
+       0x102784fa  pop       ebx
+       0x102784fb  mov       esp, ebp
+       0x102784fd  pop       ebp
+       0x102784fe  ret       
+       0x102784ff  int3      
+       0x10278500  push      esi
+       0x10278501  mov       esi, ecx
+       0x10278503  mov       ecx, dword ptr [0x105a42e8]
+       0x10278509  test      ecx, ecx
+       0x1027850b  je        0x10278523
+       0x1027850d  mov       eax, dword ptr [ecx]
+       0x1027850f  mov       eax, dword ptr [eax + 0xa4]
+       0x10278515  call      eax
+       0x10278517  test      al, al
+       0x10278519  je        0x10278523
+       0x1027851b  mov       ecx, esi
+       0x1027851d  pop       esi
+       0x1027851e  jmp       0x102781b0
+       0x10278523  mov       ecx, dword ptr [0x105dc4d8]
+       0x10278529  test      ecx, ecx
+       0x1027852b  je        0x1027855e
+       0x1027852d  push      0
+       0x1027852f  push      0x104908c4
+       0x10278534  call      0x10357e10
+       0x10278539  test      eax, eax
+       0x1027853b  je        0x1027855e
+       0x1027853d  mov       ecx, dword ptr [0x105dc4d8]
+       0x10278543  push      edi
+       0x10278544  mov       edi, dword ptr [esi + 0x2c]
+       0x10278547  push      0
+       0x10278549  push      0x104908c4
+       0x1027854e  call      0x10357e10
+       0x10278553  push      eax
+       0x10278554  lea       ecx, [esi + 0x2c]
+       0x10278557  call      dword ptr [edi + 0x168]
+       0x1027855d  pop       edi
+       0x1027855e  pop       esi
+       0x1027855f  ret       
+       0x10278560  push      edi
+       0x10278561  mov       edi, ecx
+       0x10278563  call      0x10216460
+       0x10278568  mov       ecx, eax
+       0x1027856a  mov       edx, dword ptr [eax]
+       0x1027856c  mov       eax, dword ptr [edx + 0x64]
+       0x1027856f  call      eax
+       0x10278571  test      al, al
+       0x10278573  je        0x10278647
+       0x10278579  mov       ecx, dword ptr [0x105a48ac]
+       0x1027857f  mov       eax, dword ptr [ecx]
+       0x10278581  mov       eax, dword ptr [eax + 0x70]
+       0x10278584  call      eax
+       0x10278586  test      al, al
+       0x10278588  jne       0x10278647
+  0x104908d4 "m_cCrosshairColor" refs: ['0x102780c0']
+     --- disasm around 0x102780c0 ---
+       0x10278060  adc       al, ch
+  0x104908e8 "CrosshairColor" refs: []

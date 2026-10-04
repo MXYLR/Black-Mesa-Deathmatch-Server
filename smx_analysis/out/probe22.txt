@@ -1,0 +1,65 @@
+=== "func_breakable" / "CHAR_TEX" strings ===
+  "func_breakable": ['0x105fafec', '0x1061cd88', '0x1061cfb0', '0x1061dc90', '0x1061e1b2', '0x1061e1fa', '0x1061e23c']
+     @0x105fafec refs:
+        @0x10008626
+        @0x1011f257
+        @0x1011f25e
+        @0x102cfbe0
+        @0x102cfbe7
+        @0x10301427
+        @0x1030142e
+        @0x1036f2a0
+        @0x1036f2a7
+        @0x103bd741
+        @0x103bd748
+        @0x104ba71a
+        @0x104ba721
+        @0x104c8c92
+        @0x104c8c99
+        @0x104f2291
+        @0x104f2298
+        (imm32/abs occurrences: ['0x10008626', '0x1011f257', '0x1011f25e', '0x102cfbe0', '0x102cfbe7', '0x10301427', '0x1030142e', '0x1036f2a0', '0x1036f2a7', '0x103bd741', '0x103bd748', '0x104ba71a', '0x104ba721', '0x104c8c92', '0x104c8c99', '0x104f2291', '0x104f2298'])
+     @0x1061cd88 refs:
+        @0x1018ec43
+        (imm32/abs occurrences: ['0x1018ec43'])
+     @0x1061cfb0 refs:
+        (imm32/abs occurrences: [])
+     @0x1061dc90 refs:
+        @0x100086c6
+        @0x102cfbc7
+        @0x102cfbce
+        @0x10301450
+        @0x10301457
+        @0x1036f2c4
+        @0x1036f2cb
+        @0x103dcbc0
+        @0x103dcbc7
+        @0x10460940
+        @0x10460947
+        @0x10467ea0
+        @0x10467ea7
+        @0x104c8cc8
+        @0x104c8ccf
+        (imm32/abs occurrences: ['0x100086c6', '0x102cfbc7', '0x102cfbce', '0x10301450', '0x10301457', '0x1036f2c4', '0x1036f2cb', '0x103dcbc0', '0x103dcbc7', '0x10460940', '0x10460947', '0x10467ea0', '0x10467ea7', '0x104c8cc8', '0x104c8ccf'])
+     @0x1061e1b2 refs:
+        (imm32/abs occurrences: [])
+     @0x1061e1fa refs:
+        (imm32/abs occurrences: [])
+     @0x1061e23c refs:
+        (imm32/abs occurrences: [])
+  "GlassImpact": ['0x105d78e8']
+     @0x105d78e8 refs:
+        @0x10067ce2
+        @0x10067e1a
+        @0x10192da6
+        (imm32/abs occurrences: ['0x10067ce2', '0x10067e1a', '0x10192da6'])
+
+=== raw 0x00000800 immediates inside bullet fn 0x1011e530..0x1011f500 ===
+
+=== what does info+0x2c/0x30 look like: FireBulletsInfo_t m_iAmmoType etc. ===
+  1.0f const [0x105d6624] = 1.0000
+  [0x105c8f00] = 0.0000
+Traceback (most recent call last):
+  File "<stdin>", line 39, in <module>
+  File "<stdin>", line 5, in f32
+struct.error: unpack requires a buffer of 4 bytes

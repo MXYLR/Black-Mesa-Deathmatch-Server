@@ -1,0 +1,45 @@
+"resource/gameui/flyout_multiplayer.res"
+{
+	"BtnServerBrowser"	
+	{
+		"ControlName"			"HybridButton"
+		"fieldName"				"BtnServerBrowser"
+		"xpos"					"0"
+		"ypos"					"0"
+		"wide"					"128"
+		"tall"					"16"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"navUp"					"BtnHostGame"
+		"navDown"				"BtnHostGame"
+		"labelText"				"#GameUI_Multiplayer_ServerBrowser"
+		"style"					"TopMenuSub"
+		"command"				""
+		"textAlignment"			"center"
+	}
+	
+	"BtnHostGame"
+	{
+		"ControlName"			"HybridButton"
+		"fieldName"				"BtnHostGame"
+		"xpos"					"0"
+		"ypos"					"16"
+		"wide"					"128"
+		"tall"					"16"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"navUp"					"BtnServerBrowser"
+		"navDown"				"BtnServerBrowser"
+		"labelText"				"#GameUI_Multiplayer_HostGame"
+		"style"					"TopMenuSub"
+		"command"				""
+		"textAlignment"			"center"
+	}
+
+}

@@ -1,0 +1,102 @@
+
+// ============================================================================================
+// ============================================================================================
+response ScientistMaleHurt
+{
+	scene "scenes/npc/scientist_male01/sci_pain01.vcd"
+//	scene "scenes/npc/scientist_male01/sci_pain02.vcd"
+	scene "scenes/npc/scientist_male01/sci_pain03.vcd"
+//	scene "scenes/npc/scientist_male01/sci_pain04.vcd"
+//	scene "scenes/npc/scientist_male01/sci_pain05.vcd"
+//	scene "scenes/npc/scientist_male01/sci_pain06.vcd"
+//	scene "scenes/npc/scientist_male01/sci_pain07.vcd"
+	scene "scenes/npc/scientist_male01/sci_pain08.vcd"
+	scene "scenes/npc/scientist_male01/sci_pain09.vcd"
+	scene "scenes/npc/scientist_male01/sci_ow01.vcd"
+//	scene "scenes/npc/scientist_male01/sci_ow02.vcd"
+//	scene "scenes/npc/scientist_male01/sci_ow03.vcd"
+	scene "scenes/npc/scientist_male01/sci_ow04.vcd"
+	scene "scenes/npc/scientist_male01/sci_ow05.vcd"
+	scene "scenes/npc/scientist_male01/sci_ow06.vcd"
+	scene "scenes/npc/scientist_male01/sci_ow07.vcd"
+	scene "scenes/npc/scientist_male01/sci_ow08.vcd"
+}
+
+rule ScientistMaleHurt
+{
+	criteria ConceptHurt IsScientistMale IsNotDrowning
+	response ScientistMaleHurt
+}
+
+Rule ScientistMaleDeath
+{
+	criteria ConceptDeath IsScientistMale
+	Response ScientistMaleHurt
+}
+
+// ============================================================================================
+// ============================================================================================
+response ScientistMaleDominatedPlayer
+{
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate01.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate02.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate06.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate08.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate09.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate10.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate11.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate12.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_dominate13.vcd"
+	scene "scenes/npc/scientist_male01/sci_fantastic01.vcd"
+	scene "scenes/npc/scientist_male01/sci_fantastic02.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic03.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic04.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic05.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic06.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic07.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic08.vcd"
+}
+
+rule ScientistMaleDominatedPlayer
+{
+	criteria ConceptKilledPlayer IsScientistMale IsNotSpeaking IsDominated
+	response ScientistMaleDominatedPlayer
+}
+
+response ScientistMaleRevengedPlayer
+{
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge01.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge02.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge04.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge05.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge06.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge08.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge09.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge10.vcd"
+	scene "scenes/player_deathmatch/male_scientist/sci_mp_revenge11.vcd"
+	scene "scenes/npc/scientist_male01/sci_fantastic02.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic03.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic04.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic05.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic06.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic07.vcd" 
+	scene "scenes/npc/scientist_male01/sci_fantastic08.vcd" 
+}
+
+rule ScientistMaleRevengedPlayer
+{
+	criteria ConceptKilledPlayer IsScientistMale IsNotSpeaking IsRevenge
+	response ScientistMaleRevengedPlayer
+}
+
+// ============================================================================================
+// ============================================================================================
+Response ScientistMaleIdleExpression
+{
+	scene "scenes/Expressions/colleague_angry_combat_01.vcd"
+}
+Rule ScientistMaleIdleExpression
+{
+	criteria ConceptExpression IsScientistMale
+	Response ScientistMaleIdleExpression
+}

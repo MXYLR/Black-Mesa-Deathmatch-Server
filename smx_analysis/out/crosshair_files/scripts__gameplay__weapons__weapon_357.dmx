@@ -1,0 +1,75 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_357"
+{
+	"id" "elementid" "d5d2ee24-78ac-49a8-bfc8-ea8cce14b6c3"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_357.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_357_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_357.mdl"
+	"printname" "string" "357"
+	"primary_ammo" "string" "357"
+	"clip_size" "int" "6"
+	"bucket" "int" "1"
+	"bucket_position" "int" "1"
+
+	"bucket_controller" "int" "1"
+	"bucket_position_controller" "int" "1"
+
+	"anim_prefix" "string" "glock"
+	"item_flags" "int" "0"
+	"weight" "int" "80"
+	"fov_zoom_classic" "float" "40"
+	"fov_zoom_ironsight" "float" "55"
+	"fov_zoom_speed" "float" "0.5"
+	"muzzleflash_firstperson" "string" "weapon_357_muzzleflash"
+	"muzzleflash_thirdperson" "string" "world_weapon_357_muzzleflash"
+	"brass_ejection_model" "string" "models/Weapons/shell.mdl"
+	"tracer" "string" "weapon_tracer_small"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "445a8871-9422-4322-8858-7b3f537bc996"
+		"double_shot" "string" "weapon_357.Double"
+		"reload_npc" "string" "weapon_357.Reload_NPC"
+		"empty" "string" "weapon_357.Empty"
+		"single_shot" "string" "weapon_357.Single"
+		"single_shot_npc" "string" "weapon_357.Single"
+	}
+	"primary_attack" "primary_attack"
+	{
+		"id" "elementid" "458fa7c9-723c-4981-aa78-37cd78410dfe"
+		"cycle" "float" "0.75"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "e4ea20f8-6c40-4690-80c8-9de188c0ac9a"
+			"spread" "vector3" "0 0 0"
+			"damage" "float" "45"
+			"damage_multiplayer" "float" "50"
+		}
+		"recoil" "recoil"
+		{
+			"id" "elementid" "d9965ae3-0990-4865-a86d-2b4c518daa8a"
+			"min_snap_angles" "vector3" "-2 -0.25 0"
+			"max_snap_angles" "vector3" "-1.5 0.25 0"
+			"min_punch_angles" "vector3" "-6 0 -0.75"
+			"max_punch_angles" "vector3" "-4 0 -0.75"
+			"min_punch_offset" "vector3" "-0.75 0.75 0"
+			"max_punch_offset" "vector3" "-0.75 0.75 0"
+		}
+	}
+	"npc_attack" "npc_attack"
+	{
+		"id" "elementid" "0a627a85-7f95-4fb6-a566-cb3e60b79524"
+		"cycle" "float" "0.75"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "ae6d65da-ecb4-4e84-873c-6a7f45694f15"
+			"spread" "vector3" "1 1 0"
+			"damage" "float" "34"
+		}
+		"burst_count_min" "int" "1"
+		"burst_count_max" "int" "2"
+		"rest_time_min" "float" "0.75"
+		"rest_time_max" "float" "1.0"
+	}
+}
+

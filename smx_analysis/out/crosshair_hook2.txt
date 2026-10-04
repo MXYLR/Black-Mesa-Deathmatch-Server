@@ -1,0 +1,406 @@
+=== sanity: what is at each candidate name VA ===
+  C_BaseCombatWeapon           0x1041a7f0  ''                                         <<< NOT AN RTTI NAME
+  C_BlackMesaBaseWeapon        0x104a16c0  ''                                         <<< NOT AN RTTI NAME
+  C_Weapon_357                 0x104998d0  ''                                         <<< NOT AN RTTI NAME
+  C_Weapon_Crossbow            0x1049a0f0  ''                                         <<< NOT AN RTTI NAME
+  C_Weapon_Crowbar             0x1049a974  ''                                         <<< NOT AN RTTI NAME
+  C_Weapon_Frag                0x1049b164  ''                                         <<< NOT AN RTTI NAME
+  C_Weapon_Glock               0x1049ba6c  'mary'                                     <<< NOT AN RTTI NAME
+  C_WeaponAssassinGlock        0x1049c240  ''                                         <<< NOT AN RTTI NAME
+  C_Weapon_Headcrab            0x1049ca38  ''                                         <<< NOT AN RTTI NAME
+  C_Weapon_HiveHand            0x1049d338  'HeadCrabBlur_IMaterialProxy003'           <<< NOT AN RTTI NAME
+  C_Weapon_MP5                 0x1049db8c  ''                                         <<< NOT AN RTTI NAME
+  C_Weapon_RPG                 0x1057c968  '.?AVC_Weapon_RPG@@'                     
+  C_Weapon_Satchel             0x1057c9a8  '.?AVC_Weapon_Satchel@@'                 
+  C_Weapon_Shotgun             0x1057c9c8  '.?AVC_Weapon_Shotgun@@'                 
+  C_Weapon_Snark               0x1057c9e8  '.?AVC_Weapon_Snark@@'                   
+  C_Weapon_Tau                 0x1057ca08  '.?AVC_Weapon_Tau@@'                     
+  C_Weapon_Tripmine            0x1057ca24  '.?AVC_Weapon_Tripmine@@'                
+  C_Weapon_Gluon               0x1057cad8  '.?AVC_Weapon_Gluon@@'                   
+
+=== resolved vtables (primary, longest .text run) ===
+  C_Weapon_RPG                 vt=0x1049e44c
+  C_Weapon_Satchel             vt=0x1049ec8c
+  C_Weapon_Shotgun             vt=0x1049f4d4
+  C_Weapon_Snark               vt=0x1049fcc0
+  C_Weapon_Tau                 vt=0x104a0718
+  C_Weapon_Tripmine            vt=0x104a0fc4
+  C_Weapon_Gluon               vt=0x104a3c1c
+
+=== slot table ===
+  class                        vtable     +0x5AC     +0x5BC     +0x5C4     +0x5CC     +0x5D0    
+  C_Weapon_RPG                 0x1049e44c 0x10291ef0 0x10297c90 0x100a48d0 0x10291f80 0x10292900
+  C_Weapon_Satchel             0x1049ec8c 0x10292be0 0x10297c90 0x100a48d0 0x10297000 0x10074630
+  C_Weapon_Shotgun             0x1049f4d4 0x102933f0 0x10297c90 0x100a48d0 0x10293430 0x102939f0
+  C_Weapon_Snark               0x1049fcc0 0x10293c50 0x10297c90 0x100a48d0 0x10297000 0x10074630
+  C_Weapon_Tau                 0x104a0718 0x102941c0 0x10294fb0 0x100a48d0 0x10294610 0x102956c0
+  C_Weapon_Tripmine            0x104a0fc4 0x10295970 0x10297c90 0x100a48d0 0x10297000 0x10074630
+  C_Weapon_Gluon               0x104a3c1c 0x1029ccd0 0x10297c90 0x100a48d0 0x1029b100 0x1029c600
+
+=== draw function prologues (16 bytes) - for runtime signature verification ===
+  C_Weapon_RPG                 0x10291f80  55 8B EC 83 EC 44 A1 60 1D 57 10 33 C5 89 45 FC
+  C_Weapon_Satchel             0x10297000  55 8B EC 83 EC 1C 56 57 8B F1 E8 E1 B3 DD FF 8B
+  C_Weapon_Shotgun             0x10293430  55 8B EC 83 EC 08 56 57 8B F1 E8 71 42 00 00 8B
+  C_Weapon_Tau                 0x10294610  56 8B 35 8C 50 70 10 57 6A 10 8B 3E E8 3F DD E6
+  C_Weapon_Gluon               0x1029b100  55 8B EC 83 EC 08 56 57 8B F1 E8 A1 C5 FF FF 8B
+
+=== the two candidate shouldDraw implementations ===
+  --- 0x100a4a70 [.text] ---
+     0x100a4a70  mov       eax, dword ptr [ecx]
+     0x100a4a72  mov       eax, dword ptr [eax + 0x5d4]
+     0x100a4a78  call      eax
+     0x100a4a7a  test      al, al
+     0x100a4a7c  je        0x100a4a8a
+     0x100a4a7e  call      0x100bc240
+     0x100a4a83  test      al, al
+     0x100a4a85  jne       0x100a4a8a
+     0x100a4a87  mov       al, 1
+     0x100a4a89  ret       
+     0x100a4a8a  xor       al, al
+     0x100a4a8c  ret       
+     0x100a4a8d  int3      
+     0x100a4a8e  int3      
+     0x100a4a8f  int3      
+     0x100a4a90  ret       4
+     0x100a4a93  int3      
+     0x100a4a94  int3      
+     0x100a4a95  int3      
+     0x100a4a96  int3      
+     0x100a4a97  int3      
+     0x100a4a98  int3      
+     0x100a4a99  int3      
+     0x100a4a9a  int3      
+     0x100a4a9b  int3      
+     0x100a4a9c  int3      
+     0x100a4a9d  int3      
+     0x100a4a9e  int3      
+     0x100a4a9f  int3      
+     0x100a4aa0  mov       eax, dword ptr [0x10585ab4]
+     0x100a4aa5  test      al, 1
+     0x100a4aa7  jne       0x100a4b06
+     0x100a4aa9  push      0
+     0x100a4aab  push      0
+     0x100a4aad  push      4
+     0x100a4aaf  push      0
+     0x100a4ab1  or        eax, 1
+     0x100a4ab4  push      0x1041b314
+     0x100a4ab9  push      0x10585a00
+  --- 0x10074630 [.text] ---
+     0x10074630  mov       al, 1
+     0x10074632  ret       
+     0x10074633  int3      
+     0x10074634  int3      
+     0x10074635  int3      
+     0x10074636  int3      
+     0x10074637  int3      
+     0x10074638  int3      
+     0x10074639  int3      
+     0x1007463a  int3      
+     0x1007463b  int3      
+     0x1007463c  int3      
+     0x1007463d  int3      
+     0x1007463e  int3      
+     0x1007463f  int3      
+     0x10074640  mov       al, 1
+     0x10074642  ret       
+     0x10074643  int3      
+     0x10074644  int3      
+     0x10074645  int3      
+     0x10074646  int3      
+     0x10074647  int3      
+     0x10074648  int3      
+     0x10074649  int3      
+     0x1007464a  int3      
+     0x1007464b  int3      
+     0x1007464c  int3      
+     0x1007464d  int3      
+     0x1007464e  int3      
+     0x1007464f  int3      
+     0x10074650  xor       al, al
+     0x10074652  ret       
+     0x10074653  int3      
+     0x10074654  int3      
+     0x10074655  int3      
+     0x10074656  int3      
+     0x10074657  int3      
+     0x10074658  int3      
+     0x10074659  int3      
+     0x1007465a  int3      
+     0x1007465b  int3      
+     0x1007465c  int3      
+     0x1007465d  int3      
+     0x1007465e  int3      
+     0x1007465f  int3      
+     0x10074660  mov       al, 1
+     0x10074662  ret       
+     0x10074663  int3      
+     0x10074664  int3      
+     0x10074665  int3      
+     0x10074666  int3      
+     0x10074667  int3      
+     0x10074668  int3      
+     0x10074669  int3      
+     0x1007466a  int3      
+     0x1007466b  int3      
+     0x1007466c  int3      
+     0x1007466d  int3      
+     0x1007466e  int3      
+     0x1007466f  int3      
+     0x10074670  xor       al, al
+     0x10074672  ret       
+     0x10074673  int3      
+     0x10074674  int3      
+     0x10074675  int3      
+     0x10074676  int3      
+     0x10074677  int3      
+     0x10074678  int3      
+     0x10074679  int3      
+     0x1007467a  int3      
+     0x1007467b  int3      
+     0x1007467c  int3      
+     0x1007467d  int3      
+     0x1007467e  int3      
+     0x1007467f  int3      
+  --- 0x100a44d0 [.text] ---
+     0x100a44d0  jmp       0x100ba690
+     0x100a44d5  int3      
+     0x100a44d6  int3      
+     0x100a44d7  int3      
+     0x100a44d8  int3      
+     0x100a44d9  int3      
+     0x100a44da  int3      
+     0x100a44db  int3      
+     0x100a44dc  int3      
+     0x100a44dd  int3      
+     0x100a44de  int3      
+     0x100a44df  int3      
+     0x100a44e0  push      ebp
+     0x100a44e1  mov       ebp, esp
+     0x100a44e3  push      ecx
+     0x100a44e4  push      ebx
+     0x100a44e5  push      esi
+     0x100a44e6  push      edi
+     0x100a44e7  mov       edi, ecx
+     0x100a44e9  mov       ecx, dword ptr [0x1040926c]
+     0x100a44ef  call      dword ptr [0x10409284]
+     0x100a44f5  mov       byte ptr [ebp - 1], al
+     0x100a44f8  test      al, al
+     0x100a44fa  je        0x100a4518
+     0x100a44fc  mov       ecx, dword ptr [0x1040926c]
+     0x100a4502  push      4
+     0x100a4504  push      0
+     0x100a4506  push      0x1041fbd8
+     0x100a450b  push      0
+     0x100a450d  push      0x104213f0
+     0x100a4512  call      dword ptr [0x1040928c]
+     0x100a4518  cmp       byte ptr [edi + 0x84], 0
+
+=== full 0x1070508c slot scan (fixed) ===
+  vt+0x18b    8 site(s)   e.g. 0x100e797d
+  vt+0x200    2 site(s)   e.g. 0x1028223c
+  vt+0x368    4 site(s)   e.g. 0x10272b2d
+  vt+0x4c2    1 site(s)   e.g. 0x101e82f0
+  vt+0x5eb    1 site(s)   e.g. 0x1036b50e
+  vt+0x601    1 site(s)   e.g. 0x10156f4d
+  vt+0x68b    1 site(s)   e.g. 0x1015efd0
+  vt+0xf00    1 site(s)   e.g. 0x1015f61c
+  vt+0xf18    1 site(s)   e.g. 0x10369b0c
+  vt+0xf50    2 site(s)   e.g. 0x102771f9
+  vt+0xffc    1 site(s)   e.g. 0x103aa164
+  vt+0x118b    3 site(s)   e.g. 0x1016baa8
+  vt+0x2b20    1 site(s)   e.g. 0x10369867
+  vt+0x2b50    4 site(s)   e.g. 0x10288f5b
+  vt+0x3334    2 site(s)   e.g. 0x103ae05a
+  vt+0x4307    1 site(s)   e.g. 0x1016de88
+  vt+0x4648    1 site(s)   e.g. 0x103b4fd0
+  vt+0x4768    3 site(s)   e.g. 0x1017ddf0
+  vt+0x480f    1 site(s)   e.g. 0x10387e78
+  vt+0x48e0    1 site(s)   e.g. 0x103810e9
+  vt+0x5008    1 site(s)   e.g. 0x10277b5b
+  vt+0x5024    1 site(s)   e.g. 0x1036f9e1
+  vt+0x504c    1 site(s)   e.g. 0x1036cae5
+  vt+0x50dc    4 site(s)   e.g. 0x1028b32a
+  vt+0x50ff   13 site(s)   e.g. 0x100e7ba3
+  vt+0x5200    4 site(s)   e.g. 0x10276978
+  vt+0x52e0    1 site(s)   e.g. 0x103810b1
+  vt+0x52ff    3 site(s)   e.g. 0x100e7c8f
+  vt+0x53a4    1 site(s)   e.g. 0x103ac275
+  vt+0x53fc    1 site(s)   e.g. 0x1017fc8e
+  vt+0x5618    1 site(s)   e.g. 0x103bdf5c
+  vt+0x5644    1 site(s)   e.g. 0x1028dbe4
+  vt+0x56dc    4 site(s)   e.g. 0x1028b47a
+  vt+0x56f8    1 site(s)   e.g. 0x10282b9f
+  vt+0x572c    2 site(s)   e.g. 0x10369cdb
+  vt+0x57f4    1 site(s)   e.g. 0x1015f58d
+  vt+0x5b30    1 site(s)   e.g. 0x103a5c4d
+  vt+0x5b3c    1 site(s)   e.g. 0x10291b86
+  vt+0x5b5e    2 site(s)   e.g. 0x103761e3
+  vt+0x5b5f    1 site(s)   e.g. 0x10151bd0
+  vt+0x5d5e    2 site(s)   e.g. 0x1036dc55
+  vt+0x5e30    1 site(s)   e.g. 0x10390083
+  vt+0x5e3c    2 site(s)   e.g. 0x1027cd0c
+  vt+0x5e48    2 site(s)   e.g. 0x102a5383
+  vt+0x5e68    1 site(s)   e.g. 0x10154481
+  vt+0x5f30    2 site(s)   e.g. 0x1038cd03
+  vt+0x5f3c    9 site(s)   e.g. 0x10373b2f
+  vt+0x5f44    1 site(s)   e.g. 0x10371b9e
+  vt+0x5f54    1 site(s)   e.g. 0x101744f0
+  vt+0x5f64    1 site(s)   e.g. 0x103901f3
+  vt+0x5f68    3 site(s)   e.g. 0x10386d76
+  vt+0x6850    1 site(s)   e.g. 0x1016bcdb
+  vt+0x685c    7 site(s)   e.g. 0x10157191
+  vt+0x6aec    1 site(s)   e.g. 0x103b9b7c
+  vt+0x6af4    5 site(s)   e.g. 0x1017ddd4
+  vt+0x6af8    5 site(s)   e.g. 0x103739ef
+  vt+0x6afc    1 site(s)   e.g. 0x1037fe84
+  vt+0x803c    2 site(s)   e.g. 0x1027cd8c
+  vt+0x8054    1 site(s)   e.g. 0x1016dd1c
+  vt+0x833c    2 site(s)   e.g. 0x10161ecc
+  vt+0x8358    2 site(s)   e.g. 0x10385eb3
+  vt+0x8363    1 site(s)   e.g. 0x103ac2ac
+  vt+0x83f8    1 site(s)   e.g. 0x10373aff
+  vt+0x852c    4 site(s)   e.g. 0x10174c19
+  vt+0x858b    1 site(s)   e.g. 0x1016b981
+  vt+0x858d    3 site(s)   e.g. 0x101057b9
+  vt+0x85f4    1 site(s)   e.g. 0x103850a2
+  vt+0x890c    1 site(s)   e.g. 0x10389879
+  vt+0x8914    1 site(s)   e.g. 0x101e7ba4
+  vt+0x8924    1 site(s)   e.g. 0x103865d1
+  vt+0x8930    1 site(s)   e.g. 0x103bc4de
+  vt+0x897c    2 site(s)   e.g. 0x1016cfa8
+  vt+0x89ec    1 site(s)   e.g. 0x10392029
+  vt+0x89f8    1 site(s)   e.g. 0x1038e801
+  vt+0x89fc    1 site(s)   e.g. 0x1017e16d
+  vt+0x8a30    2 site(s)   e.g. 0x10373d05
+  vt+0x8a50    2 site(s)   e.g. 0x1016bb9c
+  vt+0x8a68    1 site(s)   e.g. 0x10156f30
+  vt+0x8b04    5 site(s)   e.g. 0x101e83da
+  vt+0x8b08   22 site(s)   e.g. 0x100e7d10
+  vt+0x8b0c   16 site(s)   e.g. 0x10171c5e
+  vt+0x8b10    3 site(s)   e.g. 0x10286d13
+  vt+0x8b13    3 site(s)   e.g. 0x10157579
+  vt+0x8b14    4 site(s)   e.g. 0x101103d5
+  vt+0x8b18   10 site(s)   e.g. 0x1016556b
+  vt+0x8b19    4 site(s)   e.g. 0x10157551
+  vt+0x8b1a    1 site(s)   e.g. 0x101e8e41
+  vt+0x8b1c    3 site(s)   e.g. 0x101f1168
+  vt+0x8b20    3 site(s)   e.g. 0x101e83eb
+  vt+0x8b24   13 site(s)   e.g. 0x1036994d
+  vt+0x8b28    4 site(s)   e.g. 0x10288fab
+  vt+0x8b2c   16 site(s)   e.g. 0x101ec669
+  vt+0x8b30   12 site(s)   e.g. 0x10158150
+  vt+0x8b33    1 site(s)   e.g. 0x1037645d
+  vt+0x8b34   50 site(s)   e.g. 0x10161ec1
+  vt+0x8b38   11 site(s)   e.g. 0x10157d79
+  vt+0x8b3c   25 site(s)   e.g. 0x100e79db
+  vt+0x8b44    5 site(s)   e.g. 0x10283604
+  vt+0x8b48    3 site(s)   e.g. 0x102a5373
+  vt+0x8b4c    1 site(s)   e.g. 0x10386703
+  vt+0x8b50   27 site(s)   e.g. 0x100e7a8a
+  vt+0x8b54   36 site(s)   e.g. 0x100e7a96
+  vt+0x8b55    1 site(s)   e.g. 0x103a20d7
+  vt+0x8b58    6 site(s)   e.g. 0x1017fc43
+  vt+0x8b5b    1 site(s)   e.g. 0x102773d0
+  vt+0x8b5c   18 site(s)   e.g. 0x10151bb7
+  vt+0x8b5e    2 site(s)   e.g. 0x1016df34
+  vt+0x8b64    2 site(s)   e.g. 0x100e7ccd
+  vt+0x8b68    2 site(s)   e.g. 0x1017fc9d
+  vt+0x8b6c    2 site(s)   e.g. 0x1037eed7
+  vt+0x8b7c    2 site(s)   e.g. 0x1036dc41
+  vt+0x8b9c    1 site(s)   e.g. 0x1038d63c
+  vt+0x8bc8    2 site(s)   e.g. 0x10282bae
+  vt+0x8bd4    1 site(s)   e.g. 0x103928ce
+  vt+0x8bd8    5 site(s)   e.g. 0x1015f5a4
+  vt+0x8bdc    1 site(s)   e.g. 0x1028b3b6
+  vt+0x8be8    1 site(s)   e.g. 0x103bcb65
+  vt+0x8bec    2 site(s)   e.g. 0x10282b37
+  vt+0x8bf0    2 site(s)   e.g. 0x10151ba4
+  vt+0x8bf4    5 site(s)   e.g. 0x103739de
+  vt+0x8bf8    2 site(s)   e.g. 0x10373ae8
+  vt+0x8bfc   10 site(s)   e.g. 0x1015e43f
+  vt+0x8d0c    1 site(s)   e.g. 0x1027dc04
+  vt+0x8d11    1 site(s)   e.g. 0x1038c2e5
+  vt+0x8d13    1 site(s)   e.g. 0x1038c223
+  vt+0x8d14    2 site(s)   e.g. 0x10174d53
+  vt+0x8d20    2 site(s)   e.g. 0x103696af
+  vt+0x8d34    1 site(s)   e.g. 0x103ab09c
+  vt+0x8d38    1 site(s)   e.g. 0x10174f87
+  vt+0x8d39    2 site(s)   e.g. 0x1015588c
+  vt+0x8d50    1 site(s)   e.g. 0x1038d118
+  vt+0x8d54    2 site(s)   e.g. 0x101571b6
+  vt+0x8d5c    4 site(s)   e.g. 0x100e7aa8
+  vt+0x8dfc    3 site(s)   e.g. 0x1036a024
+  vt+0x8f89    1 site(s)   e.g. 0x1017ecc1
+  vt+0x90ff    1 site(s)   e.g. 0x102b89fc
+  vt+0x958d   13 site(s)   e.g. 0x100e7bec
+  vt+0xa134    2 site(s)   e.g. 0x1038d288
+  vt+0xa340    1 site(s)   e.g. 0x1016db84
+  vt+0xb5ff    2 site(s)   e.g. 0x102779fd
+  vt+0xb60f    2 site(s)   e.g. 0x10276d9f
+  vt+0xc085    1 site(s)   e.g. 0x1017ec54
+  vt+0xc654    1 site(s)   e.g. 0x1039019f
+  vt+0xcc0c    1 site(s)   e.g. 0x10396433
+  vt+0xcc20    2 site(s)   e.g. 0x101f399f
+  vt+0xcc38    1 site(s)   e.g. 0x10396333
+  vt+0xcc40    1 site(s)   e.g. 0x1017e845
+  vt+0xcc50    1 site(s)   e.g. 0x103963d3
+  vt+0xcc58    1 site(s)   e.g. 0x10396383
+  vt+0xd130    1 site(s)   e.g. 0x10371a07
+  vt+0xd934    2 site(s)   e.g. 0x101544aa
+  vt+0xdcf4    1 site(s)   e.g. 0x1015b8f1
+  vt+0xe58b    3 site(s)   e.g. 0x102243c9
+  vt+0xe808    1 site(s)   e.g. 0x103aa926
+  vt+0xe810    1 site(s)   e.g. 0x102892fb
+  vt+0xe838    1 site(s)   e.g. 0x10292346
+  vt+0xe850    4 site(s)   e.g. 0x10272a8f
+  vt+0xe864    1 site(s)   e.g. 0x100e7add
+  vt+0xe950    1 site(s)   e.g. 0x1017fc25
+  vt+0xe95c    1 site(s)   e.g. 0x102772d7
+  vt+0xeb14    1 site(s)   e.g. 0x1037e223
+  vt+0xeb30    1 site(s)   e.g. 0x10373ccb
+  vt+0xeb34    4 site(s)   e.g. 0x103b9dda
+  vt+0xeb5c    2 site(s)   e.g. 0x10277320
+  vt+0xebfc    1 site(s)   e.g. 0x102784b8
+  vt+0xf13b    2 site(s)   e.g. 0x10281281
+  vt+0xf304    1 site(s)   e.g. 0x101e8fa9
+  vt+0xf334    4 site(s)   e.g. 0x1028b7c9
+  vt+0xf338    1 site(s)   e.g. 0x101e8ee8
+  vt+0xf350    2 site(s)   e.g. 0x1027682b
+  vt+0xf398    1 site(s)   e.g. 0x1028b773
+  vt+0xf3e0    1 site(s)   e.g. 0x102835c8
+  vt+0xf3f8    5 site(s)   e.g. 0x103aa251
+  vt+0xf3fc    4 site(s)   e.g. 0x103aa01f
+  vt+0xf619    1 site(s)   e.g. 0x1039fa5d
+  vt+0xf623    1 site(s)   e.g. 0x103b3ea4
+  vt+0xf63c    2 site(s)   e.g. 0x10369749
+  vt+0xff04    1 site(s)   e.g. 0x103901dd
+  vt+0xff08    4 site(s)   e.g. 0x10387c98
+  vt+0xff0c    9 site(s)   e.g. 0x10154470
+  vt+0xff10    5 site(s)   e.g. 0x10158189
+  vt+0xff14    3 site(s)   e.g. 0x10389947
+  vt+0xff18    5 site(s)   e.g. 0x101e8e84
+  vt+0xff1c    3 site(s)   e.g. 0x10286d31
+  vt+0xff24    2 site(s)   e.g. 0x10369e33
+  vt+0xff34   11 site(s)   e.g. 0x1027ccfa
+  vt+0xff38    3 site(s)   e.g. 0x1038d520
+  vt+0xff3c    3 site(s)   e.g. 0x10381122
+  vt+0xff54    1 site(s)   e.g. 0x1038d43c
+  vt+0xff56    1 site(s)   e.g. 0x1015f0cd
+  vt+0xff57    1 site(s)   e.g. 0x100e799b
+  vt+0xffb0    1 site(s)   e.g. 0x10158023
+  vt+0xffb4    3 site(s)   e.g. 0x1028b2f7
+  vt+0xffb8    1 site(s)   e.g. 0x1038ce8e
+  vt+0xffc0    2 site(s)   e.g. 0x1028b25e
+  vt+0xffc4    2 site(s)   e.g. 0x1028b1ba
+  vt+0xffd8    3 site(s)   e.g. 0x10272c3c
+  vt+0xffdc    4 site(s)   e.g. 0x1028b874
+  vt+0xffe0    1 site(s)   e.g. 0x1038dc81
+  vt+0xffe4    2 site(s)   e.g. 0x10282bee
+  vt+0xffe8    2 site(s)   e.g. 0x103bc2bc
+  vt+0xffec    2 site(s)   e.g. 0x1015f5bf
+  vt+0xfff0    2 site(s)   e.g. 0x10389526
+  vt+0xfff4    6 site(s)   e.g. 0x1028b0d9
+  vt+0xfff8    7 site(s)   e.g. 0x1015f55b
+  vt+0xfffc    6 site(s)   e.g. 0x101ebf10
+  vt+0xffff    1 site(s)   e.g. 0x1016ba8d
+

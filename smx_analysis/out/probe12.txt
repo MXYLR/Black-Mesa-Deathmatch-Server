@@ -1,0 +1,626 @@
+=== RTTI for CBlackMesaFireBullets ===
+  type descriptor candidate 0x1082d9d8 bytes: 70 65 72 40 40 00 00 00 d4 31 76 10 00 00 00 00 2e 3f 41 56 43 42 6c 61
+  name field: ""
+  td+0 = 0x40726570 (rva?)
+
+=== class-name string also used by datamap ===
+  0x1072764d "BlackMesaFireBullets"
+  0x10727667 "BlackMesaFireBullets"
+  0x1082d9ed "BlackMesaFireBullets@@"
+
+=== penetration keyvalue strings ===
+  penetration_num_layers                 @0x10724704 "penetration_num_layers"
+      ref @0x1046da07  fn_start 0x1046d870
+  penetration_power                      @0x1072471c "penetration_power"
+      ref @0x1046da57  fn_start 0x1046d870
+  penetration_max_distance               @0x10724730 "penetration_max_distance"
+      ref @0x1046daa7  fn_start 0x1046d870
+  character_penetration_max_distance     @0x1072474c "character_penetration_max_distance"
+      ref @0x1046daf7  fn_start 0x1046d870
+
+=== Penetration Error / PenetratedRound / PenetratedAmmoType ===
+  Penetration Error (%s)!  @0x106453f9
+  PenetratedRound          @0x1067804a
+  PenetratedAmmoType       @0x106a96e2
+
+=== full body 0x1034fb10 (aligned-frame fn) ===
+  length 0x8b2
+  0x1034fb10  push      ebx
+  0x1034fb11  mov       ebx, esp
+  0x1034fb13  sub       esp, 8
+  0x1034fb16  and       esp, 0xfffffff0
+  0x1034fb19  add       esp, 4
+  0x1034fb1c  push      ebp
+  0x1034fb1d  mov       ebp, dword ptr [ebx + 4]
+  0x1034fb20  mov       dword ptr [esp + 4], ebp
+  0x1034fb24  mov       ebp, esp
+  0x1034fb26  sub       esp, 0x178
+  0x1034fb2c  mov       eax, dword ptr [0x10817e30]
+  0x1034fb31  xor       eax, ebp
+  0x1034fb33  mov       dword ptr [ebp - 4], eax
+  0x1034fb36  mov       eax, dword ptr [ebx + 8]
+  0x1034fb39  push      esi
+  0x1034fb3a  mov       esi, dword ptr [ebx + 0xc]
+  0x1034fb3d  mov       dword ptr [ebp - 0x78], eax
+  0x1034fb40  mov       eax, dword ptr [ebx + 0x14]
+  0x1034fb43  push      edi
+  0x1034fb44  mov       edx, dword ptr [esi + 0x4c]
+  0x1034fb47  mov       dword ptr [ebp - 0xa4], eax
+  0x1034fb4d  test      edx, edx
+  0x1034fb4f  je        0x1034fc1c
+  0x1034fb55  mov       ecx, dword ptr [esi + 0x54]
+  0x1034fb58  cmp       ecx, -1
+  0x1034fb5b  je        0x1034fb7b
+  0x1034fb5d  mov       edi, dword ptr [0x107bcd48]
+  0x1034fb63  mov       eax, ecx
+  0x1034fb65  and       eax, 0x1fff
+  0x1034fb6a  shr       ecx, 0xd
+  0x1034fb6d  add       eax, eax
+  0x1034fb6f  cmp       dword ptr [edi + eax*8 + 8], ecx
+  0x1034fb73  jne       0x1034fb7b
+  0x1034fb75  mov       eax, dword ptr [edi + eax*8 + 4]
+  0x1034fb79  jmp       0x1034fb7d
+  0x1034fb7b  xor       eax, eax
+  0x1034fb7d  cmp       edx, eax
+  0x1034fb7f  je        0x1034fbb3
+  0x1034fb81  mov       eax, dword ptr [edx + 0x5c]
+  0x1034fb84  mov       ecx, 0x105c8971
+  0x1034fb89  test      eax, eax
+  0x1034fb8b  cmovne    ecx, eax
+  0x1034fb8e  push      ecx
+  0x1034fb8f  push      edx
+  0x1034fb90  push      0x106a9070
+  0x1034fb95  call      dword ptr [0x105c3214]
+  0x1034fb9b  add       esp, 0xc
+  0x1034fb9e  xor       al, al
+  0x1034fba0  pop       edi
+  0x1034fba1  pop       esi
+  0x1034fba2  mov       ecx, dword ptr [ebp - 4]
+  0x1034fba5  xor       ecx, ebp
+  0x1034fba7  call      0x10590afb
+  0x1034fbac  mov       esp, ebp
+  0x1034fbae  pop       ebp
+  0x1034fbaf  mov       esp, ebx
+  0x1034fbb1  pop       ebx
+  0x1034fbb2  ret       
+  0x1034fbb3  test      edx, edx
+  0x1034fbb5  je        0x1034fc1c
+  0x1034fbb7  mov       eax, dword ptr [edx]
+  0x1034fbb9  mov       ecx, edx
+  0x1034fbbb  mov       eax, dword ptr [eax + 0x15c]
+  0x1034fbc1  call      eax
+  0x1034fbc3  test      al, al
+  0x1034fbc5  je        0x1034fc1c
+  0x1034fbc7  mov       ecx, dword ptr [esi + 0x4c]
+  0x1034fbca  call      0x10113cd0
+  0x1034fbcf  mov       edx, dword ptr [ebp - 0x78]
+  0x1034fbd2  mov       edi, eax
+  0x1034fbd4  mov       ecx, dword ptr [edx]
+  0x1034fbd6  call      0x10113cd0
+  0x1034fbdb  cmp       eax, edi
+  0x1034fbdd  jne       0x1034fc1c
+  0x1034fbdf  lea       ecx, [eax - 2]
+  0x1034fbe2  cmp       ecx, 1
+  0x1034fbe5  ja        0x1034fc1c
+  0x1034fbe7  lea       eax, [edi - 2]
+  0x1034fbea  cmp       eax, 1
+  0x1034fbed  ja        0x1034fc1c
+  0x1034fbef  cmp       byte ptr [esi + 0x9d], 0
+  0x1034fbf6  jne       0x1034fc0f
+  0x1034fbf8  mov       eax, dword ptr [0x108bc278]
+  0x1034fbfd  mov       ecx, 0x108bc278
+  0x1034fc02  mov       eax, dword ptr [eax + 0x2c]
+  0x1034fc05  call      eax
+  0x1034fc07  test      eax, eax
+  0x1034fc09  je        0x103503a6
+  0x1034fc0f  cmp       byte ptr [esi + 0x9f], 0
+  0x1034fc16  jne       0x103503a6
+  0x1034fc1c  mov       ecx, dword ptr [0x10879dec]
+  0x1034fc22  movsx     eax, word ptr [esi + 0x40]
+  0x1034fc26  push      eax
+  0x1034fc27  mov       edx, dword ptr [ecx]
+  0x1034fc29  mov       eax, dword ptr [edx + 0x14]
+  0x1034fc2c  call      eax
+  0x1034fc2e  test      byte ptr [esi + 0x30], 8
+  0x1034fc32  movzx     eax, word ptr [eax + 0x4c]
+  0x1034fc36  mov       dword ptr [ebp - 0xb0], eax
+  0x1034fc3c  je        0x1034fc51
+  0x1034fc3e  cmp       eax, 0x47
+  0x1034fc41  jne       0x1034fc51
+  0x1034fc43  movss     xmm0, dword ptr [0x105d6624]
+  0x1034fc4b  mov       byte ptr [ebp - 0x71], 1
+  0x1034fc4f  jmp       0x1034fc75
+  0x1034fc51  lea       ecx, [ebp - 0x90]
+  0x1034fc57  mov       byte ptr [ebp - 0x71], 0
+  0x1034fc5b  push      ecx
+  0x1034fc5c  lea       ecx, [ebp - 0x7c]
+  0x1034fc5f  mov       dword ptr [ebp - 0x7c], 0x3f800000
+  0x1034fc66  push      ecx
+  0x1034fc67  push      eax
+  0x1034fc68  call      0x1034e330
+  0x1034fc6d  movss     xmm0, dword ptr [ebp - 0x7c]
+  0x1034fc72  add       esp, 0xc
+  0x1034fc75  mov       ecx, dword ptr [0x108bc0b4]
+  0x1034fc7b  movss     dword ptr [ebp - 0x7c], xmm0
+  0x1034fc80  cmp       ecx, 0x108bc098
+  0x1034fc86  jne       0x1034fc97
+  0x1034fc88  mov       eax, dword ptr [0x108bc0c8]
+  0x1034fc8d  mov       edx, eax
+  0x1034fc8f  xor       edx, 0x108bc098
+  0x1034fc95  jmp       0x1034fcab
+  0x1034fc97  mov       eax, dword ptr [ecx]
+  0x1034fc99  mov       eax, dword ptr [eax + 0x2c]
+  0x1034fc9c  call      eax
+  0x1034fc9e  mov       ecx, dword ptr [0x108bc0b4]
+  0x1034fca4  mov       edx, eax
+  0x1034fca6  mov       eax, dword ptr [0x108bc0c8]
+  0x1034fcab  fld       dword ptr [0x105d668c]
+  0x1034fcb1  cmp       edx, 1
+  0x1034fcb4  je        0x1034fcdd
+  0x1034fcb6  cmp       ecx, 0x108bc098
+  0x1034fcbc  jne       0x1034fcc5
+  0x1034fcbe  xor       eax, 0x108bc098
+  0x1034fcc3  jmp       0x1034fcd4
+  0x1034fcc5  mov       eax, dword ptr [ecx]
+  0x1034fcc7  fstp      st(0)
+  0x1034fcc9  mov       eax, dword ptr [eax + 0x2c]
+  0x1034fccc  call      eax
+  0x1034fcce  fld       dword ptr [0x105d668c]
+  0x1034fcd4  cmp       eax, 3
+  0x1034fcd7  jne       0x1034fd79
+  0x1034fcdd  push      ecx
+  0x1034fcde  fstp      dword ptr [esp]
+  0x1034fce1  push      0x7f
+  0x1034fce3  push      0xff
+  0x1034fce8  push      0
+  0x1034fcea  push      0
+  0x1034fcec  lea       eax, [ebp - 0x10]
+  0x1034fcef  mov       dword ptr [ebp - 0x10], 0x40000000
+  0x1034fcf6  push      eax
+  0x1034fcf7  lea       eax, [ebp - 0x9c]
+  0x1034fcfd  mov       dword ptr [ebp - 0xc], 0x40000000
+  0x1034fd04  push      eax
+  0x1034fd05  lea       eax, [esi + 0xc]
+  0x1034fd08  mov       dword ptr [ebp - 8], 0x40000000
+  0x1034fd0f  push      eax
+  0x1034fd10  mov       dword ptr [ebp - 0x9c], 0xc0000000
+  0x1034fd1a  mov       dword ptr [ebp - 0x98], 0xc0000000
+  0x1034fd24  mov       dword ptr [ebp - 0x94], 0xc0000000
+  0x1034fd2e  call      0x101575d0
+  0x1034fd33  mov       ecx, dword ptr [esi + 0x4c]
+  0x1034fd36  add       esp, 0x20
+  0x1034fd39  test      ecx, ecx
+  0x1034fd3b  je        0x1034fd7b
+  0x1034fd3d  mov       eax, dword ptr [ecx]
+  0x1034fd3f  mov       eax, dword ptr [eax + 0x15c]
+  0x1034fd45  call      eax
+  0x1034fd47  test      al, al
+  0x1034fd49  je        0x1034fd7b
+  0x1034fd4b  mov       edi, dword ptr [esi + 0x4c]
+  0x1034fd4e  test      edi, edi
+  0x1034fd50  je        0x1034fd62
+  0x1034fd52  mov       eax, dword ptr [edi]
+  0x1034fd54  mov       ecx, edi
+  0x1034fd56  mov       eax, dword ptr [eax + 0x15c]
+  0x1034fd5c  call      eax
+  0x1034fd5e  test      al, al
+  0x1034fd60  jne       0x1034fd64
+  0x1034fd62  xor       edi, edi
+  0x1034fd64  fld       dword ptr [0x105d668c]
+  0x1034fd6a  push      1
+  0x1034fd6c  push      ecx
+  0x1034fd6d  mov       ecx, edi
+  0x1034fd6f  fstp      dword ptr [esp]
+  0x1034fd72  call      0x100ed950
+  0x1034fd77  jmp       0x1034fd7b
+  0x1034fd79  fstp      st(0)
+  0x1034fd7b  mov       ecx, dword ptr [esi + 0x4c]
+  0x1034fd7e  test      ecx, ecx
+  0x1034fd80  je        0x1034fd94
+  0x1034fd82  mov       eax, dword ptr [ecx]
+  0x1034fd84  mov       eax, dword ptr [eax + 0x138]
+  0x1034fd8a  call      eax
+  0x1034fd8c  mov       byte ptr [ebp - 0x73], 1
+  0x1034fd90  test      eax, eax
+  0x1034fd92  jne       0x1034fd98
+  0x1034fd94  mov       byte ptr [ebp - 0x73], 0
+  0x1034fd98  movss     xmm0, dword ptr [esi + 0x2c]
+  0x1034fd9d  lea       edi, [esi + 0xc]
+  0x1034fda0  ucomiss   xmm0, dword ptr [0x105d6624]
+  0x1034fda7  mov       eax, dword ptr [edi]
+  0x1034fda9  mov       dword ptr [ebp - 0x8c], eax
+  0x1034fdaf  mov       eax, dword ptr [edi + 4]
+  0x1034fdb2  mov       dword ptr [ebp - 0x88], eax
+  0x1034fdb8  mov       eax, dword ptr [edi + 8]
+  0x1034fdbb  mov       dword ptr [ebp - 0x84], eax
+  0x1034fdc1  lahf      
+  0x1034fdc2  test      ah, 0x44
+  0x1034fdc5  jnp       0x1034fe26
+  0x1034fdc7  movss     xmm0, dword ptr [0x105fb1ec]
+  0x1034fdcf  movss     xmm1, dword ptr [esi + 0x18]
+  0x1034fdd4  movss     xmm2, dword ptr [esi + 0x1c]
+  0x1034fdd9  movss     xmm3, dword ptr [esi + 0x20]
+  0x1034fdde  movss     xmm4, dword ptr [ebp - 0x8c]
+  0x1034fde6  mulss     xmm1, xmm0
+  0x1034fdea  mulss     xmm2, xmm0
+  0x1034fdee  mulss     xmm3, xmm0
+  0x1034fdf2  addss     xmm4, xmm1
+  0x1034fdf6  movss     xmm1, dword ptr [ebp - 0x88]
+  0x1034fdfe  movss     xmm0, dword ptr [ebp - 0x84]
+  0x1034fe06  addss     xmm1, xmm2
+  0x1034fe0a  addss     xmm0, xmm3
+  0x1034fe0e  movss     dword ptr [ebp - 0x8c], xmm4
+  0x1034fe16  movss     dword ptr [ebp - 0x88], xmm1
+  0x1034fe1e  movss     dword ptr [ebp - 0x84], xmm0
+  0x1034fe26  mov       eax, dword ptr [ebp - 0x78]
+  0x1034fe29  fld       dword ptr [0x105d6618]
+  0x1034fe2f  push      0
+  0x1034fe31  push      0
+  0x1034fe33  push      dword ptr [eax]
+  0x1034fe35  lea       eax, [ebp - 0x8c]
+  0x1034fe3b  push      ecx
+  0x1034fe3c  fstp      dword ptr [esp]
+  0x1034fe3f  push      0x140
+  0x1034fe44  push      eax
+  0x1034fe45  push      0x10
+  0x1034fe47  call      0x10286590
+  0x1034fe4c  mov       ecx, dword ptr [ebp - 0x78]
+  0x1034fe4f  add       esp, 0x1c
+  0x1034fe52  cmp       byte ptr [ebp - 0x73], 0
+  0x1034fe56  movss     xmm1, dword ptr [edi]
+  0x1034fe5a  movss     xmm2, dword ptr [edi + 4]
+  0x1034fe5f  subss     xmm2, dword ptr [ecx + 0x10]
+  0x1034fe64  subss     xmm1, dword ptr [ecx + 0xc]
+  0x1034fe69  movss     xmm0, dword ptr [edi + 8]
+  0x1034fe6e  subss     xmm0, dword ptr [ecx + 0x14]
+  0x1034fe73  mov       byte ptr [ebp - 0x72], 0
+  0x1034fe77  mulss     xmm2, xmm2
+  0x1034fe7b  mulss     xmm1, xmm1
+  0x1034fe7f  mulss     xmm0, xmm0
+  0x1034fe83  addss     xmm2, xmm1
+  0x1034fe87  addss     xmm2, xmm0
+  0x1034fe8b  movss     xmm0, dword ptr [0x105c8f00]
+  0x1034fe93  movss     dword ptr [ebp - 0x80], xmm2
+  0x1034fe98  je        0x1034feb8
+  0x1034fe9a  mov       byte ptr [esi + 0x9f], 1
+  0x1034fea1  movss     xmm1, dword ptr [ecx + 0x34]
+  0x1034fea6  ucomiss   xmm1, xmm0
+  0x1034fea9  lahf      
+  0x1034feaa  test      ah, 0x44
+  0x1034fead  jnp       0x1034feb8
+  0x1034feaf  comiss    xmm1, xmm2
+  0x1034feb2  jb        0x1034feb8
+  0x1034feb4  mov       byte ptr [ebp - 0x72], 1
+  0x1034feb8  cmp       dword ptr [esi + 0x4c], 0
+  0x1034febc  je        0x103500a4
+  0x1034fec2  call      0x102938d0
+  0x1034fec7  sqrtss    xmm0, dword ptr [ebp - 0x80]
+  0x1034fecc  mov       eax, dword ptr [ebp - 0x78]
+  0x1034fecf  push      ecx
+  0x1034fed0  movss     dword ptr [esp], xmm0
+  0x1034fed5  push      dword ptr [eax + 8]
+  0x1034fed8  call      0x1034d9f0
+  0x1034fedd  mov       ecx, dword ptr [ebp - 0x78]
+  0x1034fee0  add       esp, 8
+  0x1034fee3  mov       eax, dword ptr [ecx]
+  0x1034fee5  push      0
+  0x1034fee7  push      dword ptr [ecx + 0x28]
+  0x1034feea  push      ecx
+  0x1034feeb  fstp      dword ptr [esp]
+  0x1034feee  push      eax
+  0x1034feef  push      eax
+  0x1034fef0  lea       ecx, [ebp - 0x120]
+  0x1034fef6  call      0x10292d90
+  0x1034fefb  mov       edx, dword ptr [ebp - 0x78]
+  0x1034fefe  mov       ecx, dword ptr [edx]
+  0x1034ff00  test      ecx, ecx
+  0x1034ff02  je        0x1034ff58
+  0x1034ff04  call      0x100ff4f0
+  0x1034ff09  mov       ecx, eax
+  0x1034ff0b  test      ecx, ecx
+  0x1034ff0d  je        0x1034ff20
+  0x1034ff0f  mov       eax, dword ptr [ecx]
+  0x1034ff11  mov       eax, dword ptr [eax + 8]
+  0x1034ff14  call      eax
+  0x1034ff16  mov       eax, dword ptr [eax]
+  0x1034ff18  mov       dword ptr [ebp - 0xf4], eax
+  0x1034ff1e  jmp       0x1034ff2a
+  0x1034ff20  mov       dword ptr [ebp - 0xf4], 0xffffffff
+  0x1034ff2a  mov       eax, dword ptr [ebp - 0x78]
+  0x1034ff2d  mov       ecx, dword ptr [eax]
+  0x1034ff2f  call      0x100ff4f0
+  0x1034ff34  mov       ecx, eax
+  0x1034ff36  test      ecx, ecx
+  0x1034ff38  je        0x1034ff4b
+  0x1034ff3a  mov       eax, dword ptr [ecx]
+  0x1034ff3c  mov       eax, dword ptr [eax + 8]
+  0x1034ff3f  call      eax
+  0x1034ff41  mov       eax, dword ptr [eax]
+  0x1034ff43  mov       dword ptr [ebp - 0xfc], eax
+  0x1034ff49  jmp       0x1034ff55
+  0x1034ff4b  mov       dword ptr [ebp - 0xfc], 0xffffffff
+  0x1034ff55  mov       edx, dword ptr [ebp - 0x78]
+  0x1034ff58  fld       dword ptr [0x105d6614]
+  0x1034ff5e  lea       eax, [esi + 0x5c]
+  0x1034ff61  push      ecx
+  0x1034ff62  fstp      dword ptr [esp]
+  0x1034ff65  push      edi
+  0x1034ff66  push      eax
+  0x1034ff67  mov       eax, dword ptr [edx + 4]
+  0x1034ff6a  push      dword ptr [eax + 0x2e8]
+  0x1034ff70  lea       eax, [ebp - 0x120]
+  0x1034ff76  push      eax
+  0x1034ff77  call      0x102933e0
+  0x1034ff7c  mov       eax, dword ptr [ebp - 0x78]
+  0x1034ff7f  add       esp, 0x14
+  0x1034ff82  cmp       byte ptr [esi + 0x9d], 0
+  0x1034ff89  mov       ecx, 1
+  0x1034ff8e  mov       eax, dword ptr [eax + 4]
+  0x1034ff91  mov       eax, dword ptr [eax + 0x2e8]
+  0x1034ff97  mov       dword ptr [ebp - 0xd8], eax
+  0x1034ff9d  mov       eax, dword ptr [ebp - 0xe0]
+  0x1034ffa3  cmove     eax, ecx
+  0x1034ffa6  mov       ecx, dword ptr [0x108bc1a4]
+  0x1034ffac  mov       dword ptr [ebp - 0xe0], eax
+  0x1034ffb2  cmp       ecx, 0x108bc188
+  0x1034ffb8  jne       0x1034ffc9
+  0x1034ffba  mov       eax, dword ptr [0x108bc1b8]
+  0x1034ffbf  mov       edx, eax
+  0x1034ffc1  xor       edx, 0x108bc188
+  0x1034ffc7  jmp       0x1034ffdd
+  0x1034ffc9  mov       eax, dword ptr [ecx]
+  0x1034ffcb  mov       eax, dword ptr [eax + 0x2c]
+  0x1034ffce  call      eax
+  0x1034ffd0  mov       ecx, dword ptr [0x108bc1a4]
+  0x1034ffd6  mov       edx, eax
+  0x1034ffd8  mov       eax, dword ptr [0x108bc1b8]
+  0x1034ffdd  cmp       edx, 2
+  0x1034ffe0  je        0x1035000e
+  0x1034ffe2  cmp       ecx, 0x108bc188
+  0x1034ffe8  jne       0x1034fff1
+  0x1034ffea  xor       eax, 0x108bc188
+  0x1034ffef  jmp       0x1034fff8
+  0x1034fff1  mov       eax, dword ptr [ecx]
+  0x1034fff3  mov       eax, dword ptr [eax + 0x2c]
+  0x1034fff6  call      eax
+  0x1034fff8  cmp       eax, 1
+  0x1034fffb  jne       0x10350079
+  0x1034fffd  mov       ecx, dword ptr [esi + 0x4c]
+  0x10350000  mov       eax, dword ptr [ecx]
+  0x10350002  mov       eax, dword ptr [eax + 0x15c]
+  0x10350008  call      eax
+  0x1035000a  test      al, al
+  0x1035000c  je        0x10350079
+  0x1035000e  movss     xmm0, dword ptr [edi]
+  0x10350012  lea       eax, [ebp - 0x18]
+  0x10350015  fld       dword ptr [ebp - 0xf0]
+  0x1035001b  sub       esp, 8
+  0x1035001e  movss     dword ptr [ebp - 0x9c], xmm0
+  0x10350026  movss     xmm0, dword ptr [edi + 4]
+  0x1035002b  movss     dword ptr [ebp - 0x98], xmm0
+  0x10350033  movss     xmm0, dword ptr [edi + 8]
+  0x10350038  subss     xmm0, dword ptr [0x105d6678]
+  0x10350040  fstp      qword ptr [esp]
+  0x10350043  push      0x105d6934
+  0x10350048  push      0x14
+  0x1035004a  push      eax
+  0x1035004b  movss     dword ptr [ebp - 0x94], xmm0
+  0x10350053  call      0x1052e0c0
+  0x10350058  fld       dword ptr [0x105d668c]
+  0x1035005e  lea       eax, [ebp - 0x18]
+  0x10350061  add       esp, 0x10
+  0x10350064  fstp      dword ptr [esp]
+  0x10350067  push      0
+  0x10350069  push      eax
+  0x1035006a  lea       eax, [ebp - 0x9c]
+  0x10350070  push      eax
+  0x10350071  call      0x10158d50
+  0x10350076  add       esp, 0x10
+  0x10350079  mov       ecx, dword ptr [esi + 0x4c]
+  0x1035007c  lea       eax, [esi + 0x5c]
+  0x1035007f  push      0
+  0x10350081  push      esi
+  0x10350082  push      eax
+  0x10350083  lea       eax, [ebp - 0x120]
+  0x10350089  push      eax
+  0x1035008a  call      0x1011e3d0
+  0x1035008f  call      0x10293350
+  0x10350094  movss     xmm0, dword ptr [0x105c8f00]
+  0x1035009c  movss     xmm2, dword ptr [ebp - 0x80]
+  0x103500a1  mov       ecx, dword ptr [ebp - 0x78]
+  0x103500a4  cmp       byte ptr [ebx + 0x10], 0
+  0x103500a8  je        0x103500ba
+  0x103500aa  cmp       byte ptr [ebp - 0x71], 0
+  0x103500ae  jne       0x103500ba
+  0x103500b0  cmp       byte ptr [ebp - 0x72], 0
+  0x103500b4  je        0x103503a6
+  0x103500ba  movss     xmm1, dword ptr [ecx + 0x30]
+  0x103500bf  comiss    xmm1, xmm0
+  0x103500c2  jbe       0x103500cd
+  0x103500c4  comiss    xmm2, xmm1
+  0x103500c7  ja        0x103503a6
+  0x103500cd  cmp       dword ptr [esi + 0x58], 0
+  0x103500d1  mov       dword ptr [ebp - 0x130], 0
+  0x103500db  je        0x1035017a
+  0x103500e1  push      edi
+  0x103500e2  lea       eax, [esi + 0x68]
+  0x103500e5  push      eax
+  0x103500e6  lea       ecx, [ebp - 0x170]
+  0x103500ec  call      0x100686a0
+  0x103500f1  mov       ecx, dword ptr [0x1086b6ec]
+  0x103500f7  lea       edx, [ebp - 0x70]
+  0x103500fa  push      edx
+  0x103500fb  mov       edx, dword ptr [ebp - 0x78]
+  0x103500fe  push      dword ptr [esi + 0x58]
+  0x10350101  mov       eax, dword ptr [ecx]
+  0x10350103  push      dword ptr [edx + 0x24]
+  0x10350106  lea       edx, [ebp - 0x170]
+  0x1035010c  push      edx
+  0x1035010d  call      dword ptr [eax + 0x10]
+  0x10350110  cmp       byte ptr [ebp - 0x71], 0
+  0x10350114  jne       0x1035029a
+  0x1035011a  cmp       byte ptr [ebp - 0x73], 0
+  0x1035011e  jne       0x1035029a
+  0x10350124  cmp       byte ptr [ebp - 0x39], 0
+  0x10350128  jne       0x103503a6
+  0x1035012e  movss     xmm3, dword ptr [ebp - 0x64]
+  0x10350133  movss     xmm4, dword ptr [ebp - 0x60]
+  0x10350138  movaps    xmm1, xmm3
+  0x1035013b  subss     xmm1, dword ptr [edi]
+  0x1035013f  movss     xmm5, dword ptr [ebp - 0x5c]
+  0x10350144  movaps    xmm2, xmm4
+  0x10350147  subss     xmm2, dword ptr [edi + 4]
+  0x1035014c  movaps    xmm0, xmm5
+  0x1035014f  subss     xmm0, dword ptr [edi + 8]
+  0x10350154  mulss     xmm1, xmm1
+  0x10350158  mulss     xmm2, xmm2
+  0x1035015c  mulss     xmm0, xmm0
+  0x10350160  addss     xmm2, xmm1
+  0x10350164  addss     xmm2, xmm0
+  0x10350168  comiss    xmm2, dword ptr [0x105ece60]
+  0x1035016f  jb        0x103502a9
+  0x10350175  jmp       0x103503a6
+  0x1035017a  movss     xmm4, dword ptr [0x105daa74]
+  0x10350182  movss     xmm5, dword ptr [esi + 0x5c]
+  0x10350187  movss     xmm6, dword ptr [esi + 0x60]
+  0x1035018c  movss     xmm7, dword ptr [esi + 0x64]
+  0x10350191  movss     xmm1, dword ptr [edi]
+  0x10350195  movss     xmm2, dword ptr [edi + 4]
+  0x1035019a  movss     xmm3, dword ptr [edi + 8]
+  0x1035019f  mulss     xmm5, xmm4
+  0x103501a3  mulss     xmm6, xmm4
+  0x103501a7  mulss     xmm7, xmm4
+  0x103501ab  movss     dword ptr [ebp - 0xa8], xmm5
+  0x103501b3  movss     dword ptr [ebp - 0xac], xmm6
+  0x103501bb  movss     dword ptr [ebp - 0xa0], xmm7
+  0x103501c3  addss     xmm0, xmm4
+  0x103501c7  mov       ecx, dword ptr [0x1086b6ec]
+  0x103501cd  push      -1
+  0x103501cf  lea       edx, [ebp - 0x70]
+  0x103501d2  push      edx
+  0x103501d3  movss     dword ptr [ebp - 0x80], xmm0
+  0x103501d8  movaps    xmm0, xmm5
+  0x103501db  addss     xmm0, xmm1
+  0x103501df  movss     dword ptr [ebp - 0x70], xmm0
+  0x103501e4  movaps    xmm0, xmm6
+  0x103501e7  addss     xmm0, xmm2
+  0x103501eb  movss     dword ptr [ebp - 0x6c], xmm0
+  0x103501f0  movaps    xmm0, xmm7
+  0x103501f3  addss     xmm0, xmm3
+  0x103501f7  movss     dword ptr [ebp - 0x68], xmm0
+  0x103501fc  mov       eax, dword ptr [ecx]
+  0x103501fe  mov       eax, dword ptr [eax + 4]
+  0x10350201  call      eax
+  0x10350203  test      eax, 0x200400b
+  0x10350208  je        0x10350254
+  0x1035020a  movss     xmm0, dword ptr [ebp - 0x80]
+  0x1035020f  movss     xmm1, dword ptr [0x105db264]
+  0x10350217  comiss    xmm1, xmm0
+  0x1035021a  jb        0x103503a6
+  0x10350220  movss     xmm3, dword ptr [ebp - 0x68]
+  0x10350225  movss     xmm2, dword ptr [ebp - 0x6c]
+  0x1035022a  movss     xmm1, dword ptr [ebp - 0x70]
+  0x1035022f  movss     xmm4, dword ptr [0x105daa74]
+  0x10350237  movss     xmm5, dword ptr [ebp - 0xa8]
+  0x1035023f  movss     xmm6, dword ptr [ebp - 0xac]
+  0x10350247  movss     xmm7, dword ptr [ebp - 0xa0]
+  0x1035024f  jmp       0x103501c3
+  0x10350254  push      edi
+  0x10350255  lea       eax, [ebp - 0x70]
+  0x10350258  mov       dword ptr [ebp - 0x90], 0x106a8de8
+  0x10350262  push      eax
+  0x10350263  lea       ecx, [ebp - 0x170]
+  0x10350269  call      0x100686a0
+  0x1035026e  mov       ecx, dword ptr [0x1086b6ec]
+  0x10350274  lea       edx, [ebp - 0x70]
+  0x10350277  push      edx
+  0x10350278  lea       edx, [ebp - 0x90]
+  0x1035027e  push      edx
+  0x1035027f  mov       eax, dword ptr [ecx]
+  0x10350281  lea       edx, [ebp - 0x170]
+  0x10350287  push      0x200400b
+  0x1035028c  push      edx
+  0x1035028d  call      dword ptr [eax + 0x14]
+  0x10350290  cmp       byte ptr [ebp - 0x39], 0
+  0x10350294  jne       0x103503a6
+  0x1035029a  movss     xmm5, dword ptr [ebp - 0x5c]
+  0x1035029f  movss     xmm4, dword ptr [ebp - 0x60]
+  0x103502a4  movss     xmm3, dword ptr [ebp - 0x64]
+  0x103502a9  cmp       byte ptr [ebp - 0x72], 0
+  0x103502ad  movaps    xmm1, xmm3
+  0x103502b0  mov       eax, dword ptr [ebp - 0x78]
+  0x103502b3  movaps    xmm2, xmm4
+  0x103502b6  movaps    xmm0, xmm5
+  0x103502b9  subss     xmm2, dword ptr [eax + 0x10]
+  0x103502be  subss     xmm1, dword ptr [eax + 0xc]
+  0x103502c3  subss     xmm0, dword ptr [eax + 0x14]
+  0x103502c8  mov       eax, dword ptr [ebp - 0xa4]
+  0x103502ce  mulss     xmm2, xmm2
+  0x103502d2  mulss     xmm1, xmm1
+  0x103502d6  mulss     xmm0, xmm0
+  0x103502da  addss     xmm2, xmm1
+  0x103502de  addss     xmm2, xmm0
+  0x103502e2  sqrtss    xmm0, xmm2
+  0x103502e6  movss     dword ptr [esi + 0x74], xmm0
+  0x103502eb  movss     dword ptr [eax], xmm3
+  0x103502ef  movss     dword ptr [eax + 4], xmm4
+  0x103502f4  movss     dword ptr [eax + 8], xmm5
+  0x103502f9  jne       0x1034fb9e
+  0x103502ff  mov       ecx, dword ptr [0x10879dec]
+  0x10350305  movsx     eax, word ptr [ebp - 0x30]
+  0x10350309  push      eax
+  0x1035030a  mov       edx, dword ptr [ecx]
+  0x1035030c  mov       eax, dword ptr [edx + 0x14]
+  0x1035030f  call      eax
+  0x10350311  test      byte ptr [ebp - 0x40], 2
+  0x10350315  movzx     eax, word ptr [eax + 0x4c]
+  0x10350319  je        0x10350324
+  0x1035031b  cmp       eax, 0x59
+  0x1035031e  jne       0x10350324
+  0x10350320  mov       cl, 1
+  0x10350322  jmp       0x10350326
+  0x10350324  xor       cl, cl
+  0x10350326  cmp       byte ptr [ebp - 0x71], 0
+  0x1035032a  je        0x10350334
+  0x1035032c  test      cl, cl
+  0x1035032e  jne       0x1034fb9e
+  0x10350334  cmp       byte ptr [ebx + 0x10], 0
+  0x10350338  jne       0x103503a6
+  0x1035033a  cmp       dword ptr [ebp - 0xb0], eax
+  0x10350340  jne       0x1035035e
+  0x10350342  cmp       eax, 0x57
+  0x10350345  je        0x1035034c
+  0x10350347  cmp       eax, 0x4d
+  0x1035034a  jne       0x1035035e
+  0x1035034c  movss     xmm0, dword ptr [ebp - 0x7c]
+  0x10350351  mulss     xmm0, dword ptr [0x105d6660]
+  0x10350359  movss     dword ptr [ebp - 0x7c], xmm0
+  0x1035035e  movss     xmm1, dword ptr [ebp - 0x64]
+  0x10350363  movss     xmm2, dword ptr [ebp - 0x60]
+  0x10350368  subss     xmm2, dword ptr [edi + 4]
+  0x1035036d  subss     xmm1, dword ptr [edi]
+  0x10350371  movss     xmm0, dword ptr [ebp - 0x5c]
+  0x10350376  subss     xmm0, dword ptr [edi + 8]
+  0x1035037b  mov       eax, dword ptr [ebp - 0x78]
+  0x1035037e  mulss     xmm2, xmm2
+  0x10350382  mulss     xmm1, xmm1
+  0x10350386  mulss     xmm0, xmm0
+  0x1035038a  addss     xmm2, xmm1
+  0x1035038e  addss     xmm2, xmm0
+  0x10350392  movss     xmm0, dword ptr [eax + 0x2c]
+  0x10350397  mulss     xmm0, dword ptr [ebp - 0x7c]
+  0x1035039c  mulss     xmm0, dword ptr [ebp - 0x7c]
+  0x103503a1  comiss    xmm2, xmm0
+  0x103503a4  jbe       0x103503ad
+  0x103503a6  mov       dword ptr [esi + 0x74], 0x7f7fffff
+  0x103503ad  mov       ecx, dword ptr [ebp - 4]
+  0x103503b0  mov       al, 1
+  0x103503b2  pop       edi
+  0x103503b3  xor       ecx, ebp
+  0x103503b5  pop       esi
+  0x103503b6  call      0x10590afb
+  0x103503bb  mov       esp, ebp
+  0x103503bd  pop       ebp
+  0x103503be  mov       esp, ebx
+  0x103503c0  pop       ebx
+  0x103503c1  ret       

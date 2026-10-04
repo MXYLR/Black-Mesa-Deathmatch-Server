@@ -1,0 +1,145 @@
+
+//********************************************************************************************************************************************************
+//		2016 - 2017 Xen BOID Sounds Go HERE  (NOTE: JUST BUILDING THE LIST- WAVS don't exist yet!!! 12/13/2016
+//********************************************************************************************************************************************************
+"npc_xen_boid.call01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+
+
+	"pitch"			"PITCH_NORM"
+
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"npc/boid/boid_call01.wav"
+}
+
+"npc_xen_boid.call02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+
+
+	"pitch"			"PITCH_NORM"
+
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"npc/boid/boid_call02.wav"
+}
+
+"npc_xen_boid.call03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+
+
+	"pitch"			"PITCH_NORM"
+
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"npc/boid/boid_call03.wav"
+}
+
+"npc_xen_boid.call04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+
+
+	"pitch"			"PITCH_NORM"
+
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"npc/boid/boid_call04.wav"
+}
+
+"npc_xen_boid_chirp"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/boid/boid_chirp01.wav"
+		"wave"	"npc/boid/boid_chirp02.wav"
+		"wave"	"npc/boid/boid_chirp03.wav"
+		"wave"	"npc/boid/boid_chirp04.wav"
+	}
+}
+
+"npc_xen_boid_call"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/boid/boid_call01.wav"
+		"wave"	"npc/boid/boid_call02.wav"
+		"wave"	"npc/boid/boid_call03.wav"
+		"wave"	"npc/boid/boid_call04.wav"
+	}
+}
+
+"npc_xen_boid.chirp01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+
+
+	"pitch"			"PITCH_NORM"
+
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"npc/boid/boid_chirp01.wav"
+}
+
+"npc_xen_boid.chirp02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+
+
+	"pitch"			"PITCH_NORM"
+
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"npc/boid/boid_chirp02.wav"
+}
+
+"npc_xen_boid.chirp03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+
+
+	"pitch"			"PITCH_NORM"
+
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"npc/boid/boid_chirp03.wav"
+}
+
+"npc_xen_boid.chirp04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+
+
+	"pitch"			"PITCH_NORM"
+
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"npc/boid/boid_chirp04.wav"
+}

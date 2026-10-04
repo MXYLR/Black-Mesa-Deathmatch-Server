@@ -1,0 +1,32 @@
+criterion "ConceptExpression" "Concept" "TLK_PLAYER_EXPRESSION" required
+criterion "ConceptHurt" "Concept" "TLK_PLAYER_HURT" required  
+criterion "ConceptDeath" "Concept" "TLK_PLAYER_DEATH" required
+criterion "ConceptKilledPlayer" "Concept" "TLK_PLAYER_KILLED_PLAYER" required  
+criterion "ConceptSeizeDrowning" "Concept" "TLK_PLAYER_SEIZE_DROWNING" required
+
+criterion "IsDominated" "domination" "dominated" "required" 
+criterion "IsRevenge" "domination" "revenge" "required" 
+
+criterion "IsScientistMale" "class" "sci_male" required
+criterion "IsScientistFemale" "class" "sci_female" required
+criterion "IsGuard" "class" "guard" required
+criterion "IsMarine" "class" "marine" required
+criterion "IsZombie" "class" "zombie" required
+
+criterion "IsDrowning"			"drowning" "1"	required
+criterion "IsNotDrowning"		"drowning" "<1"	required
+
+criterion "IsVictimScientistMale" "victimclass" "sci_male" "required" weight 0
+criterion "IsVictimScientistFemale" "victimclass" "sci_female" "required" weight 0
+criterion "IsVictimGuard" "victimclass" "guard" "required" weight 0
+criterion "IsVictimMarine" "victimclass" "marine" "required" weight 0
+criterion "IsVictimZombie" "victimclass" "zombie" "required" weight 0
+
+criterion "IsSpeaking"			"speaking"	"1"		required
+criterion "IsNotSpeaking"		"speaking"	"<1"		required
+
+#include "talker_player/sci_male.txt"
+#include "talker_player/sci_female.txt"
+#include "talker_player/marine.txt"
+#include "talker_player/guard.txt"
+#include "talker_player/zombie.txt"

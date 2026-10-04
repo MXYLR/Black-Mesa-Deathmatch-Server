@@ -1,0 +1,1014 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP DM_BOUNCE STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+"bounce.util_stresswood"
+{
+	
+	"playrandom"
+	{
+		"time"		"2,3"
+		"volume"	"0.4"
+		"pitch"		"90,105"
+
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"ambient\materials\wood_creak1.wav"
+			"wave"	"ambient\materials\wood_creak2.wav"
+			"wave"	"ambient\materials\wood_creak3.wav"
+			"wave"	"ambient\materials\wood_creak4.wav"
+			"wave"	"ambient\materials\wood_creak5.wav"
+			"wave"	"ambient\materials\wood_creak6.wav"
+		}
+	}
+}
+
+"bounce.util_rockfalls"	
+{	
+	"playrandom"
+	{
+		"volume"	"0.8"
+		"pitch"		"90,110"
+		"time"		"5,16"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\object_physics\rock_hit7.wav"
+			"wave"	"BMS_ambience\object_physics\rock_hit9.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall2.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall3.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall1.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall5.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall6.wav"
+		}
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//================================================================================================================================
+//										Base Utility Soundscapes - Bounce
+//================================================================================================================================
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//							DO NOT USE IN THE ACTUAL VMFs.
+//
+//							They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//							for the overall environments being portrayed.
+//
+//							Scroll down to "Main Map Soundscapes - Subtransit" for the soundscapes proper.
+
+"bounce.outside.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_desertday1.wav"
+		"attenuation"	"1.1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_wind3.wav"
+		"attenuation"	"1.1"
+	}
+}
+
+"bounce.outsiderock.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_desertday1.wav"
+		"attenuation"	"1.0"		
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_wind3.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"bounce.desert_cave.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_wind1.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"bounce.building_indoor.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_dam1.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"bounce.building_shack.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_dam1.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+// this version of the .base is used with desert cave 1 as an ambientpositionoverride
+// 
+
+"bounce.sewer_tunnel.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_wind4.wav"
+		"attenuation"	"0.7"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_water2.wav"
+		"attenuation"	"0.7"
+	}
+}
+
+// this version is used with desert cave 2 and 3 as an ambientpositionoverride, and has
+// a tighter attenuation setting
+
+"bounce.sewer_tunnel.base_v2"
+{
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_wind4.wav"
+		"attenuation"	"1.1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_water2.wav"
+		"attenuation"	"1.1"
+	}
+}
+
+
+//================================================================================================================================
+//================================================================================================================================
+//								Positional Utility Soundscapes - Undertow
+//================================================================================================================================
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 									DO NOT USE IN THE ACTUAL VMFs.
+//
+//									They are Building Blocks only, meant for insertion into the main soundscapes,
+//									in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//									via the info_target entity.
+//
+//									Scroll down to "Main Map Soundscapes - Subtransit" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Bounce, Outside Secton 1
+//									bnc_out1, for positional shorthand.
+
+
+///////// info_targets ///////////
+
+// bnc_out1_pos4_radiostatic
+// bnc_out1_pos5_?????? (reserve this for use)
+
+"bnc.out1.util_pos4only"
+{
+	"playlooping"
+	{
+		"wave"			"vo/c3a1a/radio_faf01_radiosilence.wav"
+		"volume"		"0.18"
+		"pitch"			"100"
+		"attenuation"	"1.6"
+		
+		"position"		"4"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Bounce, Outside Secton 2
+//									bnc_out2, for positional shorthand.
+
+
+///////// info_targets ///////////
+
+// bnc_out2_pos0_ehum3
+// bnc_out2_pos1_pipe1b
+
+// bnc_out2_pos2_ind4	(.wav changed to "large3", despite nomenclature)
+
+"bnc.out2.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum3.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1b.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"1"
+	}	
+}
+
+"bnc.out2.util_pos2-3"
+{
+	"playlooping"
+	{
+		"wave"			")bms_ambience/room_ambience/r_ambience_large3.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"0.5"
+		
+		"position"		"2"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Bounce, Building Indoors 1 (the only section outside)
+//									bnc_ind1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// bnc_ind1_pos0_generator1
+// bnc_ind1_pos1_ehum1
+// bnc_ind1_pos2_comp3
+// bnc_ind1_pos3_comp1
+
+"bnc.ind1.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_generator1.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"1"
+	}
+}
+
+"bnc.ind1.util_pos2-3"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp3.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"3"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Bounce, Building Indoors 2 (the only section outside)
+//									bnc_ind2, for positional shorthand.
+
+///////// info_targets ///////////
+
+// bnc_ind2_pos6_comp1a
+// bnc_ind2_pos7_ehum1a
+
+"bnc.ind2.util_pos6-7"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp1a.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"volume"		"0.15"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Bounce, Cave 1 (the only section outside)
+//									bnc_cave1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// bnc_cave1_pos0_steamloop
+// bnc_cave1_pos1
+
+"bnc.cave1.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"1"
+	}
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Bounce, Cave 2 (the only section outside)
+//									bnc_cave2, for positional shorthand.
+
+///////// info_targets ///////////
+
+// bnc_cave2_pos4_driploop
+// bnc_cave2_pos1
+
+"bnc.cave2.util_pos4-5"
+{
+	"playlooping"
+	{
+		"wave"			"ambient/water/drip_loop1.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Bounce, Sewer Tunnel 4 (the only section outside)
+//									bnc_swtn4, for positional shorthand.
+
+///////// info_targets ///////////
+
+// bnc_swtn4_pos4_driploop
+
+"bnc.swtn4.util_pos4-5"
+{
+	"playlooping"
+	{
+		"wave"			"ambient/water/drip_loop1.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Bounce, Sewer Tunnel 1
+//									bnc_swtn1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// bnc_swtn1_pos5_wtleakloop1
+// bnc_swtn1_pos6_rpipes1
+// bnc_swtn1_pos7_rpipes1a
+
+"bnc_swtn1.util_pos6-7"
+{
+
+	// Layering 2 sounds into position 3
+
+	"playlooping"
+	{
+		"wave"			")ambient/levels/canals/waterleak_loop1.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+		
+		"position"		"5"
+	}
+
+	"playlooping"
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_water13.wav"
+		"volume"		"0.15"
+		"pitch"			"150"
+		"attenuation"	"1.1"
+		
+		"position"		"5"
+	}	
+	
+	"playlooping"
+	{
+		"wave"			")bms_ambience/room_ambience/r_ambience_pipes1.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"6"
+	}	
+	
+	// Layering 2 sounds into position 5	
+	
+	"playlooping"
+	{
+		"wave"			")bms_ambience/room_ambience/r_ambience_pipes1a.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"7"
+	}
+
+	"playlooping"
+	{
+		"wave"			"@bms_ambience/room_ambience/r_ambience_med3a.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"7"
+	}		
+}
+
+//================================================================================================================================
+//									Main Map Soundscapes -	Bounce
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Bounce - Outside 1		// 
+
+"bounce.outside1"
+{
+	"dsp"			"26"
+	"dsp_volume"	"0.25"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.ind1.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"bnc.ind1.util_pos2-3"
+		"volume"		"1.0"
+	}	
+
+	"playsoundscape"
+	{
+		"name"			"bnc.out1.util_pos4only"
+		"volume"		"1.0"
+	}	
+
+	"playsoundscape"
+	{
+		"name"			"bnc.ind2.util_pos6-7"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Outside 2			//
+
+"bounce.outside2"
+{
+	"dsp"			"26"
+	"dsp_volume"	"0.25"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.out2.util_pos0-1"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.out2.util_pos2-3"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Outside (Rock)		//
+
+"bounce.outsiderock"
+{
+	"dsp"				"0"
+	"dsp_volume"		"1.0"
+	
+   	"playsoundscape"
+	{
+		"name"			"bounce.outsiderock.base"
+		"volume"		"1.0"
+	}
+  
+   	"playsoundscape"
+	{
+		"name"			"bounce.util_rockfalls"	
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - desert_cave	1	// 
+
+"bounce.desert_cave1"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.45"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.desert_cave.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.cave1.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"bnc.out2.util_pos2-3"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.4"
+	}
+	
+	//	info_target is "blendscape_cvtn1_to_swtn2"
+	
+	"playsoundscape"
+	{
+		"name"							"bounce.sewer_tunnel.base"
+		"volume"						"1.0"
+		"ambientpositionoverride"		"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - desert_cave	1a	//
+
+"bounce.desert_cave1a"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.45"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.desert_cave.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"							"bounce.outside.base"
+		"volume"						"0.4"
+	}
+	
+	//	info_target is "blendscape_cvtn1_to_swtn2"
+	
+	"playsoundscape"
+	{
+		"name"							"bounce.sewer_tunnel.base"
+		"volume"						"1.0"
+		"ambientpositionoverride"		"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - desert_cave	2	//
+
+"bounce.desert_cave2"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.45"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.desert_cave.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.cave2.util_pos4-5"
+		"volume"		"1.0"
+	}
+
+	// info_target is "blendscape_swtn4_amb"
+	
+	"playsoundscape"
+	{
+		"name"							"bounce.sewer_tunnel.base_v2"
+		"volume"						"1.0"
+		"ambientpositionoverride"		"7"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - desert_cave	3	//
+
+"bounce.desert_cave3"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.45"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.desert_cave.base"
+		"volume"		"1.0"
+	}
+	
+	// info_target is "blendscape_swtn4_amb"
+	
+	"playsoundscape"
+	{
+		"name"							"bounce.sewer_tunnel.base_v2"
+		"volume"						"1.0"
+		"ambientpositionoverride"		"7"
+	}		
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.cave1.util_pos0-1"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.1"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Building Indoors 1		// 
+
+"bounce.building_indoors1"
+{
+	"dsp"				"17"
+	"dsp_volume"		"0.5"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.building_indoor.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.ind1.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"bnc.ind1.util_pos2-3"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.3"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Building Indoors 2		//
+
+"bounce.building_indoors2"
+{
+	"dsp"				"17"
+	"dsp_volume"		"0.5"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.building_indoor.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.ind2.util_pos6-7"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.3"
+	}
+}
+
+// Bounce - Building Indoors 2		//
+
+"bounce.building_indoors2_ladder"
+{
+	"dsp"				"17"
+	"dsp_volume"		"0.5"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.building_indoor.base"
+		"volume"		"0.5"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.ind2.util_pos6-7"
+		"volume"		"0.65"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.15"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Building Shack		//
+
+"bounce.building_shack1"
+{
+	"dsp"				"17"
+	"dsp_volume"		"0.5"
+	
+    "playsoundscape"
+	{
+		"name"			"bounce.building_shack.base"
+		"volume"		"1.0"		
+	}
+  
+    "playsoundscape"
+	{
+		"name"			"bounce.util_stresswood"
+		"volume"		"1.0"		
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Building Shack		//
+
+"bounce.building_shack2"
+{
+	"dsp"				"17"
+	"dsp_volume"		"0.5"
+	
+    "playsoundscape"
+	{
+		"name"			"bounce.building_shack.base"
+		"volume"		"1.0"		
+	}
+  
+    "playsoundscape"
+	{
+		"name"			"bounce.util_stresswood"
+		"volume"		"1.0"		
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Sewer Tunnel 1		//
+
+"bounce.sewer_tunnel1"
+{
+	"dsp"				"1"
+	"dsp_volume"		"0.5"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.sewer_tunnel.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.out2.util_pos2-3"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"bnc_swtn1.util_pos6-7"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.2"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Sewer Tunnel 2		//
+//								//
+//								// DEV NOTE: SEWER TUNNEL 2 has been removed from the vmf
+//								// and a info_target with an ambientpositionoverride
+//								// has been placed into "Desert Cave 1" to cut down
+//								// on soundscape entity placements.
+
+"bounce.sewer_tunnel2"
+{
+	"dsp"				"1"
+	"dsp_volume"		"0.5"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.sewer_tunnel.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.1"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Sewer Tunnel 3		//
+
+"bounce.sewer_tunnel3"
+{
+	"dsp"				"1"
+	"dsp_volume"		"0.5"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.sewer_tunnel.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.1"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Bounce - Sewer Tunnel 4		//
+
+"bounce.sewer_tunnel4"
+{
+	"dsp"				"1"
+	"dsp_volume"		"0.5"
+	
+	"playsoundscape"
+	{
+		"name"			"bounce.sewer_tunnel.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"bnc.swtn4.util_pos4-5"
+		"volume"		"1.0"
+	}
+
+// info_target is "blendscape_swtn4_to_out1"	
+
+	"playsoundscape"
+	{
+		"name"			"bounce.outside.base"
+		"volume"		"0.75"
+		"ambientpositionoverride"		"7"
+	}
+}

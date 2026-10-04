@@ -1,0 +1,911 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP DM_RAIL STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+// THIS map (and thus it's soundscape listings) are  the deathmatch counterpart to map bm_c2a2b (ON A RAIL), 
+// alterations and additions have been made to the in order to accommodate any changes made to the map layout.
+
+//================================================================================================================================
+//												Base Utility Soundscapes 
+//================================================================================================================================
+
+// These .base soundscape are building blocks, for insertion into the proper main use soundscapes. They are not meant for actual .vmf consumption.
+// for the soundscapes proper, please scroll down to  "Main Map Soundscapes "
+
+"dm_rail.main_tunnel2.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"110"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large7.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"110"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large9.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"dm_rail.small_hallway.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med3.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"110"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large7.wav"
+		"attenuation"	"1.0"	
+	}
+}
+
+"dm_rail.mat_trans.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large5.wav"
+		"attenuation"	"0.7"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med11.wav"
+		"attenuation"	"0.7"	
+	}
+}
+
+"dm_rail.mat_trans_stairway.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med3.wav"
+		"attenuation"	"1.0"	
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"110"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large7.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+//================================================================================================================================
+//												Positional Utility Soundscapes 
+//================================================================================================================================
+	
+// positional utility, b hallway 2
+
+///////// info_targets ///////////
+// b_mn2_pos0_pipe1
+// b_mn2_pos1_pflow2
+// b_mn2_pos2_plow1
+// b_mn2_pos3_vent2
+
+"dm_rail.mn2.pos_util_0-3"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"			"0.75"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"attenuation"		"1.2"
+
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"		"1.2"
+
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.55"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"		"1.2"
+
+		"position"			"2"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.35"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_vent2.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position"			"3"
+	}
+}
+
+// positional utility, b small hallway 1
+
+"dm_rail.shw1.pos_util"
+{
+	"playlooping"
+	{
+		"volume"			"0.15"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"		"1.5"
+
+		"position"			"4"
+	}
+}
+
+// positional utility, b office hallway (marines vs vorts)
+
+///////// info_targets ///////////
+
+// b_ohw_pos0_vent2
+// b_ohw_pos1_vent2c
+// b_ohw_pos2_fan5
+//
+// b_ohw_pos5_vent2a
+// b_ohw_pos6_vent2b
+// b_ohw_pos7_fan8
+
+"dm_rail.ohw.pos_util_0-3"
+{
+	"playlooping"
+	{
+		"volume"			"0.30"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_vent2.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.30"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_vent2c.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.35"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan5.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position"			"2"
+	}
+}
+
+"dm_rail.ohw.pos_util_5-7"
+{
+	"playlooping"
+	{
+		"volume"			"0.30"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_vent2a.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position"			"5"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.30"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_vent2b.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position"			"6"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.35"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan8.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position"			"7"
+	}
+}
+
+// Positional utility, map b mat trans
+
+///////// info_targets ///////////
+
+// b_mt_pos0_fan4
+// b_mt_pos1_ehum1
+// b_mt_pos2_pipe4
+// b_mt_pos3_pipe3
+// b_mt_pos4_pflow2b
+// b_mt_pos5_pflow2a
+// b_mt_pos6_pflow2
+// b_mt_pos7_pipe5
+
+"dm_rail.mt.util_pos"
+{
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan4.wav"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.22"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"		"1.3"
+
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"attenuation"		"1.4"
+
+		"position"			"2"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"attenuation"		"1.4"
+
+		"position"			"3"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipeflow2b.wav"
+		"attenuation"		"1.4"
+
+		"position"			"4"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipeflow2a.wav"
+		"attenuation"		"1.4"
+
+		"position"			"5"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"		"1.4"
+
+		"position"			"6"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"attenuation"		"1.4"
+
+		"position"			"7"
+	}
+}
+
+// Positional utility, map b mat trans stairway
+
+///////// info_targets ///////////
+
+// b_mts_pos0_vent2a
+// b_mts_pos1_vent2b
+// b_mts_pos2_pipe2
+// b_mts_pos3_fan5
+
+"dm_rail.mts.util_pos"
+{
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_vent2a.wav"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_vent2b.wav"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"		"1.4"
+
+		"position"			"2"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan5.wav"
+		"attenuation"		"1.4"
+
+		"position"			"3"
+	}
+}
+
+// positional utility, map b silo.
+
+///////// info_targets ///////////
+
+// b_silo_pos0_ehum1
+// b_silo_pos1_ehum1b
+
+// b_silo_pos6_wtrcnr
+// b_silo_pos7_pflow2c
+
+"dm_rail.silo.util_pos"
+{
+	"playlooping"
+	{
+		"volume"			"0.15"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"		"1.2"
+
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.12"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		"attenuation"		"1.2"
+
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.62"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_watercontainer.wav"
+		"attenuation"		"1.3"
+
+		"position"			"6"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.52"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipeflow2c.wav"
+		"attenuation"		"1.3"
+
+		"position"			"7"
+	}
+}
+
+// positional utility, map b tunnel 3
+
+///////// info_targets ///////////
+
+// b_tn3_pos2_pflow1 
+// b_tn3_pos3_pflow2
+
+"dm_rail.tn3.util_pos"
+{
+	"playlooping"
+	{
+		"volume"			"0.52"
+		"pitch"				"100"
+		"wave"				"BMS_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"		"1.3"
+
+		"position"			"2"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.52"
+		"pitch"				"100"
+		"wave"				"BMS_ambience/machine_ambience/m_ambience_pipeflow1a.wav"
+		"attenuation"		"1.3"
+
+		"position"			"3"
+	}
+}
+
+//================================================================================================================================
+//													Main Map Soundscapes 
+//================================================================================================================================
+
+// new additions to account for dm_rail's layout changes.
+
+"dm_rail.tunnel2_stairway1"
+{
+	"dsp"				"7"
+	"dsp_volume" 		"0.5"
+	"fadetime"			"2.5"
+
+	"playsoundscape"
+	{
+		"name"			"dm_rail.main_tunnel2.base"
+		"volume"		"0.55"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"c1a1.util_miscamb"
+		"volume"		"0.25"
+	}
+}
+
+"dm_rail.office_room2.servicecloset"
+{
+	"dsp"				"5"
+	"dsp_volume" 		"0.2"
+	"fadetime"			"2.0"
+
+	"playsoundscape"
+	{
+		"name"			"dm_rail.mat_trans_stairway.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a1.util_miscamb"
+		"volume"		"0.25"
+	}
+}
+
+"dm_rail.main_tunnel2"
+{
+	"dsp"				"7"
+	"dsp_volume" 		"1"
+
+	"playsoundscape"
+	{
+		"name"			"dm_rail.main_tunnel2.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"dm_rail.mn2.pos_util_0-3"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"							"dm_rail.mat_trans.base"
+		"volume"						"1.0"
+		"ambientpositionoverride"		"7"
+	}	
+
+	"playsoundscape"
+	{
+		"name"			"oar.distantnoise1"
+		"volume"		"0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a1.util_miscamb"
+		"volume"		"0.3"
+	}
+}
+
+//  Small hallway 1 //  
+
+// 							"dm_rail.mn2.pos_util_0-3" is still called up here, but only when regarding position 3 (the overhead fan near the doorway)
+// 							Position 4 is the electrical box inside the actual space for small hallway 1
+// 							Here, we also start setting up some of the upcoming office hallway positionals (found in "dm_rail.ohw.pos_util_5-7")
+
+"dm_rail.small_hallway1"
+{
+	"dsp"			"18"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.main_tunnel2.base"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.small_hallway.base"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.mn2.pos_util_0-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.shw1.pos_util"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.ohw.pos_util_5-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_miscamb"
+		"volume"	"0.1"
+	}
+}
+
+// Map B - Office Hallway //
+//
+//				We are safe to drop b small hallway 1 and the b main tunnel 2 positionals, as they are now out of earshot.
+//				This allows us to open up positions 0 thru 4 for other sounds in the "office hallway" that we couldn't place "dm_rail.ohw.pos_util_5-7"
+//				
+
+"dm_rail.office_hallway"
+{
+	"dsp"	"17"
+	"dsp_volume" "1.0"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med8.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.ohw.pos_util_0-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.ohw.pos_util_5-7"
+		"volume"	"1.0"
+	}
+}
+
+//
+
+"dm_rail.small_hallway2"
+{
+	"dsp"	"18"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.small_hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_miscamb"
+		"volume"	"0.1"
+	}
+}
+
+"dm_rail.small_hallway3"
+{
+	"dsp"	"18"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.small_hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_miscamb"
+		"volume"	"0.1"
+	}
+}
+
+//
+
+"dm_rail.office_room"
+{
+	"dsp"	"17"
+	"dsp_volume" "0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med8.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"110"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med7.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.ohw.pos_util_0-3"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.ohw.pos_util_5-7"
+		"volume"	"0.3"
+	}
+}
+
+"dm_rail.office_room1"
+{
+	"dsp"	"17"
+	"dsp_volume" "0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med8.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"110"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.30"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan8.wav"
+		"attenuation"	"1.4"
+
+		"position"	"3"
+	}
+}
+
+//
+
+"dm_rail.office_room2"
+{
+	"dsp"	"17"
+	"dsp_volume" "0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med8.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"110"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_objects/hum/hum2.wav"
+		"attenuation"	"1.4"
+
+		"position"	"4"
+	}
+}
+
+// MAP B  - MATERIAL TRANSIT
+
+"dm_rail.mat_trans"
+{
+	"dsp"	"17"
+	"dsp_volume" "0.7"
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.mat_trans.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.mt.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_miscamb"
+		"volume"	"0.4"
+	}
+}
+
+// MAP B  - MATERIAL TRANSIT Stairway Section
+
+"dm_rail.mat_trans_stairway2"
+{
+	"dsp"	"17"
+	"dsp_volume" "0.7"
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.mat_trans_stairway.base"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.mat_trans.base"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.mts.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_miscamb"
+		"volume"	"0.4"
+	}
+}
+
+"dm_rail.mat_trans_stairway"
+{
+	"dsp"	"17"
+	"dsp_volume" "0.7"
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.mat_trans_stairway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.mts.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_miscamb"
+		"volume"	"0.4"
+	}
+}
+
+//   - ROCKET SILO
+
+"dm_rail.silo"
+{
+	"dsp"	"10"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"110"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large4.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.silo.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+//   - Main Tunnel 3
+
+"dm_rail.main_tunnel3"
+{
+	"dsp"	"7"
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"110"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"110"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large9.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.silo.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"dm_rail.tn3.util_pos"
+		"volume"	"1.0"
+	}
+}
+

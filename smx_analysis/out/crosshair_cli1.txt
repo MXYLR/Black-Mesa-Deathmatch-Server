@@ -1,0 +1,112 @@
+client.dll base=0x10000000 size=0x7bc000
+sections: .text[1000..408a00], .rdata[409000..54f000], .data[54f000..738e28], .reloc[739000..7bb600]
+
+=== strings containing crosshair/reticle ===
+  0x10422aac  Remove the decals from the entity under the crosshair.
+  0x10422af8  Displays the client's bounding box for the entity under the crosshair.
+  0x10422b50  Displays the client's absbox for the entity under the crosshair.
+  0x10422ba8  Displays the client's render box for the entity under the crosshair.
+  0x10440840  vr_moveaim_reticle_yaw_limit
+  0x10440890  vr_moveaim_reticle_pitch_limit
+  0x104408b0  vr_moveaim_reticle_yaw_limit_zoom
+  0x104408d4  vr_moveaim_reticle_pitch_limit_zoom
+  0x10449d58  hud_draw_active_reticle
+  0x10449d70  hud_draw_fixed_reticle
+  0x10449db4  hud_reticle_scale
+  0x10449dc8  hud_reticle_minalpha
+  0x10449de0  hud_reticle_maxalpha
+  0x10449df8  hud_reticle_alpha_speed
+  0x1044a2a0  vgui/hud/xbox_reticle
+  0x1045f20f  0 = Entity under your crosshair
+  0x1045f230  1 = Weapon held by player under your crosshair
+  0x104904c8  hud_crosshair_enable
+  0x104904e0  hud_crosshair_enemy_detect_range
+  0x10490504  cl_observercrosshair
+  0x104908c4  CHudCrosshair
+  0x104908d4  m_cCrosshairColor
+  0x104908e8  CrosshairColor
+  0x104ae220  m_vecGunCrosshair
+  0x104ae248  C_PropVehicleDriveable::m_iv_vecGunCrosshair
+  0x1057c1d0  .?AVCHudCrosshair@@
+
+=== references to those strings ===
+  0x10422aac "Remove the decals from the entity under the crosshair."
+        ref @0x10045368 [.text]
+  0x10422af8 "Displays the client's bounding box for the entity under the crosshair."
+        ref @0x100451d8 [.text]
+  0x10422b50 "Displays the client's absbox for the entity under the crosshair."
+        ref @0x100451a8 [.text]
+  0x10422ba8 "Displays the client's render box for the entity under the crosshair."
+        ref @0x10045208 [.text]
+  0x10440840 "vr_moveaim_reticle_yaw_limit"
+        ref @0x100499b0 [.text]
+  0x10440890 "vr_moveaim_reticle_pitch_limit"
+        ref @0x10049950 [.text]
+  0x104408b0 "vr_moveaim_reticle_yaw_limit_zoom"
+        ref @0x100499e0 [.text]
+  0x104408d4 "vr_moveaim_reticle_pitch_limit_zoom"
+        ref @0x10049980 [.text]
+  0x10449d58 "hud_draw_active_reticle"
+  0x10449d70 "hud_draw_fixed_reticle"
+  0x10449db4 "hud_reticle_scale"
+        ref @0x1004bbe8 [.text]
+  0x10449dc8 "hud_reticle_minalpha"
+        ref @0x1004bbb8 [.text]
+  0x10449de0 "hud_reticle_maxalpha"
+        ref @0x1004bb88 [.text]
+  0x10449df8 "hud_reticle_alpha_speed"
+        ref @0x1004ba68 [.text]
+  0x1044a2a0 "vgui/hud/xbox_reticle"
+        ref @0x101581ac [.text]
+  0x1045f20f "0 = Entity under your crosshair"
+  0x1045f230 "1 = Weapon held by player under your crosshair"
+  0x104904c8 "hud_crosshair_enable"
+  0x104904e0 "hud_crosshair_enemy_detect_range"
+  0x10490504 "cl_observercrosshair"
+  0x104908c4 "CHudCrosshair"
+        ref @0x10278010 [.text]
+        ref @0x10278224 [.text]
+        ref @0x10278530 [.text]
+  0x104908d4 "m_cCrosshairColor"
+        ref @0x102780c0 [.text]
+  0x104908e8 "CrosshairColor"
+  0x104ae220 "m_vecGunCrosshair"
+  0x104ae248 "C_PropVehicleDriveable::m_iv_vecGunCrosshair"
+        ref @0x102b86f4 [.text]
+  0x1057c1d0 ".?AVCHudCrosshair@@"
+
+=== cl_ convars with crosshair/cross in the name ===
+  0x10449d58  hud_draw_active_reticle
+  0x10449d70  hud_draw_fixed_reticle
+  0x10449db4  hud_reticle_scale
+  0x10449dc8  hud_reticle_minalpha
+  0x10449de0  hud_reticle_maxalpha
+  0x10449df8  hud_reticle_alpha_speed
+  0x104904c8  hud_crosshair_enable
+  0x104904e0  hud_crosshair_enemy_detect_range
+  0x10490504  cl_observercrosshair
+
+=== RTTI names mentioning Crosshair ===
+  0x1057c1d0  .?AVCHudCrosshair@@
+
+=== vgui/hud material strings (any) ===
+  0x10436ae4  vgui/hud/icon_commentary
+  0x1044a28c  vgui/hud/autoaim
+  0x1044a2a0  vgui/hud/xbox_reticle
+  0x1048e188  vgui/hud/damage_drown
+  0x1048e79c  vgui/hud/hud_hev
+  0x1048f9ac  vgui/hud/hud_widget01
+  0x10491788  vgui/hud/hud_health
+  0x1049179c  vgui/hud/item_battery
+  0x104917b4  vgui/hud/damage_radiation
+  0x104917d0  vgui/hud/damage_%s
+  0x10492d58  vgui/hud/damage_fall
+  0x10493550  vgui/hud/hud_healpool
+  0x104939d8  vgui/hud/hud_dot
+  0x10493e74  vgui/hud/
+  0x104950e0  vgui/hud/item_longjump
+  0x10495e5c  vgui/hud/hud_widget_long_jump_seq
+  0x10506080  vgui/hud/800corner1
+  0x105060b0  vgui/hud/800corner2
+  0x105060e0  vgui/hud/800corner3
+  0x10506110  vgui/hud/800corner4

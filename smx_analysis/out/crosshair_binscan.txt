@@ -1,0 +1,192 @@
+scanned 349 binaries
+
+=== bin\GameUI.dll (68 hits) ===
+  crosshair_   off 0x0194f20  "crosshair_blend"
+  crosshair_   off 0x01950d8  "crosshair_size"
+  crosshair_   off 0x0195114  "crosshair_thickness"
+  crosshair_   off 0x01954ef  "crosshair_red"
+  crosshair_   off 0x0195503  "crosshair_green"
+  crosshair_   off 0x0195517  "crosshair_blue"
+  crosshair_   off 0x019552b  "crosshair_scale"
+  crosshair_   off 0x01955b3  "crosshair_file"
+  crosshair_   off 0x0195633  "crosshair_file """
+  crosshair_   off 0x019564b  "crosshair_file %s
+"
+  crosshair    off 0x0194230  "crosshairimagepanelbase"
+  crosshair    off 0x01949e4  "crosshairimagepanelsimple"
+  crosshair    off 0x0194a03  "crosshairusealpha"
+  crosshair    off 0x0194a2c  "crosshairtranslucencycheckbox"
+  crosshair    off 0x0194a4c  "crosshaircolorcombobox"
+  crosshair    off 0x0194a64  "crosshairsizecombobox"
+  crosshair    off 0x0194a93  "crosshairscale 0"
+  crosshair    off 0x0194ab7  "crosshairscale 1200"
+  crosshair    off 0x0194adf  "crosshairscale 768"
+  crosshair    off 0x0194af7  "crosshairscale 600"
+  crosshair    off 0x0194b1f  "crosshairalpha"
+  crosshair    off 0x0194b33  "crosshaircolor"
+  crosshair    off 0x0194b47  "crosshairscale"
+  crosshair    off 0x0194b5b  "crosshaircolor %d
+"
+  crosshair    off 0x0194f00  "crosshairimagepanelcs"
+  crosshair    off 0x0194f20  "crosshair_blend"
+  crosshair    off 0x0194f3a  "crosshair"
+  crosshair    off 0x0194f4c  "crosshairdynamic"
+  crosshair    off 0x0194f60  "crosshairdynamiccheckbox"
+  crosshair    off 0x0194f7f  "crosshairdot"
+  crosshair    off 0x0194f94  "crosshairdot"
+  crosshair    off 0x0194fa4  "crosshairdotcheckbox"
+  crosshair    off 0x0194fc4  "crosshaircolor_alpha"
+  crosshair    off 0x0194fef  "crosshaircolor_r"
+  crosshair    off 0x0195008  "crosshaircolor_red"
+  crosshair    off 0x0195033  "crosshaircolor_g"
+  crosshair    off 0x019504c  "crosshaircolor_green"
+  crosshair    off 0x019507b  "crosshaircolor_b"
+  crosshair    off 0x0195094  "crosshaircolor_blue"
+  crosshair    off 0x01950bf  "crosshairsize"
+  crosshair    off 0x01950d8  "crosshair_size"
+  crosshair    off 0x01950f7  "crosshairthickness"
+  crosshair    off 0x0195114  "crosshair_thickness"
+  crosshair    off 0x01954d0  "crosshairimagepaneladvanced"
+  crosshair    off 0x01954ef  "crosshair_red"
+  crosshair    off 0x0195503  "crosshair_green"
+  crosshair    off 0x0195517  "crosshair_blue"
+  crosshair    off 0x019552b  "crosshair_scale"
+  crosshair    off 0x0195544  "crosshairscale"
+  crosshair    off 0x0195567  "crosshairlist"
+  crosshair    off 0x019557d  "crosshairs/crosshair1"
+  crosshair    off 0x0195588  "crosshair1"
+  crosshair    off 0x01955a1  "crosshairs/%s"
+  crosshair    off 0x01955b3  "crosshair_file"
+  crosshair    off 0x01955d3  "crosshairs/%s.vtf"
+  crosshair    off 0x01955f7  "crosshairs/*.vtf"
+  crosshair    off 0x0195617  "crosshairs/%s"
+  crosshair    off 0x0195633  "crosshair_file """
+  crosshair    off 0x019564b  "crosshair_file %s
+"
+  crosshair    off 0x0195660  "crosshairimage"
+  crosshair    off 0x0195670  "crosshairlabel"
+  crosshair    off 0x01957c3  "crosshairimage"
+  crosshair    off 0x019d96e  "crosshair"
+  crosshair    off 0x019d97b  "crosshair"
+  crosshair    off 0x021dad0  "crosshairimagepanelbase@@"
+  crosshair    off 0x021daf8  "crosshairimagepanelsimple@@"
+  crosshair    off 0x021db20  "crosshairimagepanelcs@@"
+  crosshair    off 0x021db44  "crosshairimagepaneladvanced@@"
+
+=== bin\engine.dll (25 hits) ===
+  crosshair_   off 0x033d39b  "crosshair_edit_editor"
+  crosshair_   off 0x033d3b8  "crosshair_edit"
+  crosshair_   off 0x033d3f3  "crosshair_edit
+"
+  crosshair_   off 0x033d45c  "crosshair_explorer"
+  crosshair_   off 0x033d49c  "crosshair_reloadmaterial"
+  crosshair_   off 0x033d4e4  "crosshair_printmaterial"
+  crosshair    off 0x03238cc  "crosshairangle"
+  crosshair    off 0x033d26c  "crosshair in the editor"
+  crosshair    off 0x033d327  "crosshair"
+  crosshair    off 0x033d338  "crosshair"
+  crosshair    off 0x033d374  "crosshair in the editor defined by mat_crosshair_edit_editor"
+  crosshair    off 0x033d39b  "crosshair_edit_editor"
+  crosshair    off 0x033d3b8  "crosshair_edit"
+  crosshair    off 0x033d3f3  "crosshair_edit
+"
+  crosshair    off 0x033d424  "crosshair in explorer and highlight the vmt file"
+  crosshair    off 0x033d45c  "crosshair_explorer"
+  crosshair    off 0x033d48e  "crosshair"
+  crosshair    off 0x033d49c  "crosshair_reloadmaterial"
+  crosshair    off 0x033d4d5  "crosshair"
+  crosshair    off 0x033d4e4  "crosshair_printmaterial"
+  crosshair    off 0x034a410  "crosshairangle: not a client"
+  crosshair    off 0x03563fe  "crosshair"
+  crosshair    off 0x035640e  "crosshair"
+  crosshair    off 0x0361341  "crosshair"
+  crosshair    off 0x03fc790  "crosshairangle@@"
+
+=== bin\hammer_dll.dll (1 hits) ===
+  crosshair    off 0x05527e4  "crosshairs"
+
+=== bin\libcef.dll (1 hits) ===
+  crosshair    off 0x105ae2c  "crosshair"
+
+=== bin\thirdparty\qt-5.9.x-windows-x86-msvc2013-angle\bin\Qt5Designer.dll (1 hits) ===
+  xc_          off 0x01caefd  "xc_¢xcüÝÐ[wowa9 ë/°Óó^oðj(èÇb=ÝËa"
+
+=== bin\vguimatsurface.dll (1 hits) ===
+  crosshair    off 0x00d0af1  "crosshair"
+
+=== bms\addons\sourcemod\bin\sourcemod.2.blade.dll (2 hits) ===
+  crosshair    off 0x014cd90  "crosshairangle
+angle (2.cmsgqangle"'
+csvcmsg_prefetch"
+  crosshair    off 0x014dc42  "crosshairangle
+svc_bspdecal
+svc_splitscreen
+svc_u"
+
+=== bms\addons\sourcemod\bin\sourcemod.2.csgo.dll (2 hits) ===
+  crosshair    off 0x016ee18  "crosshairangle
+angle (2.cmsgqangle"'
+csvcmsg_prefetch"
+  crosshair    off 0x016fb7f  "crosshairangle
+svc_bspdecal
+svc_splitscreen
+svc_u"
+
+=== bms\addons\sourcemod\bin\x64\sourcemod.2.blade.dll (2 hits) ===
+  crosshair    off 0x017a268  "crosshairangle
+angle (2.cmsgqangle"'
+csvcmsg_prefetch"
+  crosshair    off 0x017b11a  "crosshairangle
+svc_bspdecal
+svc_splitscreen
+svc_u"
+
+=== bms\bin\client.dll (28 hits) ===
+  crosshair_   off 0x048f2cc  "crosshair_enable"
+  crosshair_   off 0x048f2e4  "crosshair_enemy_detect_range"
+  crosshair    off 0x04218d8  "crosshair."
+  crosshair    off 0x0421934  "crosshair."
+  crosshair    off 0x0421986  "crosshair."
+  crosshair    off 0x04219e2  "crosshair."
+  crosshair    off 0x045e025  "crosshair
+	1 = weapon held by player under your crosshair
+	2 = y"
+  crosshair    off 0x045e055  "crosshair
+	2 = your viewmodel
+	3 = the first entity attached to "
+  crosshair    off 0x048f2cc  "crosshair_enable"
+  crosshair    off 0x048f2e4  "crosshair_enemy_detect_range"
+  crosshair    off 0x048f30f  "crosshair"
+  crosshair    off 0x048f6c8  "crosshair"
+  crosshair    off 0x048f6d7  "crosshaircolor"
+  crosshair    off 0x048f6e8  "crosshaircolor"
+  crosshair    off 0x04ad028  "crosshair"
+  crosshair    off 0x04ad06b  "crosshair"
+  crosshair    off 0x057afd8  "crosshair@@"
+  reticle      off 0x043f64b  "reticle_yaw_limit"
+  reticle      off 0x043f69b  "reticle_pitch_limit"
+  reticle      off 0x043f6bb  "reticle_yaw_limit_zoom"
+  reticle      off 0x043f6df  "reticle_pitch_limit_zoom"
+  reticle      off 0x0448b68  "reticle"
+  reticle      off 0x0448b7f  "reticle"
+  reticle      off 0x0448bb8  "reticle_scale"
+  reticle      off 0x0448bcc  "reticle_minalpha"
+  reticle      off 0x0448be4  "reticle_maxalpha"
+  reticle      off 0x0448bfc  "reticle_alpha_speed"
+  reticle      off 0x04490ae  "reticle"
+
+=== bms\bin\server.dll (12 hits) ===
+  crosshair    off 0x05df244  "crosshair.
+"
+  crosshair    off 0x05df328  "crosshair"
+  crosshair    off 0x05dff32  "crosshair.
+	arguments:	-none-"
+  crosshair    off 0x06025b8  "crosshair"
+  crosshair    off 0x06206cb  "crosshair"
+  crosshair    off 0x0672300  "crosshair"
+  crosshair    off 0x06747b0  "crosshair and placement location further away from player"
+  crosshair    off 0x0674848  "crosshair and placement location nearer to from player"
+  crosshair    off 0x0723bf5  "crosshair. format is player_testvcd <vcd>. "
+  crosshair    off 0x0723c8c  "crosshair to speak a response rule concept. format is player_tes"
+  xc_          off 0x062240c  "xc_uncrouch_on_jump"
+  xc_          off 0x064bcf4  "xc_crouch_debounce"

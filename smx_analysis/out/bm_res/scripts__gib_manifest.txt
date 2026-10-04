@@ -1,0 +1,1653 @@
+// NPCS and prop_ragdoll
+"gib_manifest.txt"
+{
+//------------------------------------------------------------------------------------------------------
+//	HUMAN COMMON GIBS
+//------------------------------------------------------------------------------------------------------
+	"Human_Small_Gibs"
+	{
+		"gibs"
+		{
+			"sgib1"			
+			{ 
+				"health"		"5"	
+				"model"			"models/gibs/humans/sgib_01.mdl"
+			}
+			"sgib2"			
+			{ 
+				"health"		"5"	
+				"model"			"models/gibs/humans/sgib_02.mdl"
+			}
+			"sgib3"			
+			{ 
+				"health"		"5"	
+				"model"			"models/gibs/humans/sgib_03.mdl"
+			}
+		}
+	}
+	
+	"Human_Medium_Gibs"
+	{
+		"gibs"
+		{
+			"mgib1"			
+			{ 
+				"health"			"10"
+				"model"				"models/gibs/humans/mgib_01.mdl"
+				"odds"				"42"
+				"override_gib"		"Human_Small_Gibs"
+			}
+			"mgib2"			
+			{ 
+				"health"			"10"
+				"model"				"models/gibs/humans/mgib_02.mdl"
+				"odds"				"42"
+				"override_gib"		"Human_Small_Gibs"
+			}
+			"mgib3"			
+			{ 
+				"health"			"10"
+				"model"				"models/gibs/humans/mgib_03.mdl"
+				"odds"				"42"
+				"override_gib"		"Human_Small_Gibs"
+			}
+			"mgib4"			
+			{ 
+				"health"			"10"	
+				"model"				"models/gibs/humans/mgib_04.mdl"
+				"odds"				"42"
+				"override_gib"		"Human_Small_Gibs"
+			}
+			"mgib5"			
+			{ 
+				"health"			"10"
+				"model"				"models/gibs/humans/mgib_05.mdl"
+				"odds"				"42"
+				"override_gib"		"Human_Small_Gibs"
+			}
+			"mgib6"			
+			{ 
+				"health"			"10"
+				"model"				"models/gibs/humans/mgib_06.mdl"
+				"odds"				"42"
+				"override_gib"		"Human_Small_Gibs"
+			}
+			"mgib7"			
+			{ 
+				"health"			"10"
+				"model"				"models/gibs/humans/mgib_07.mdl"
+				"odds"				"42"
+				"override_gib"		"Human_Small_Gibs"
+			}
+		}
+	}
+	
+	"Human_Head_Gibs"
+	{
+		"gibs"
+		{
+			"skull"			
+			{ 
+				"model"				"models/gibs/HGIBS.mdl"
+				"odds"				"20"
+			}
+			"eye"			
+			{ 
+				"model"				"models/gibs/humans/eye_gib.mdl"
+				"odds"				"80"
+			}
+			"brain"			
+			{ 
+				"model"				"models/gibs/humans/brain_gib.mdl"
+				"odds"				"80"
+			}
+		}
+		"import" "Human_Small_Gibs"
+	}
+		
+	"Human_Chest_Gibs"
+	{
+		"gibs"
+		{
+			"heart"			
+			{ 
+				"model"				"models/gibs/humans/heart_gib.mdl"
+				"odds"				"80"
+			}
+			"lung"			
+			{ 
+				"model"				"models/gibs/humans/lung_gib.mdl"
+				"odds"				"80"
+			}
+			"liver"			
+			{ 
+				"model"				"models/gibs/humans/liver_gib.mdl"
+				"odds"				"80"
+			}
+		}
+		"import" "Human_Medium_Gibs"
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	XENIAN COMMON GIBS
+//------------------------------------------------------------------------------------------------------
+	"Xenian_Small_Gibs"
+	{
+		"gibs"
+		{
+			"sgib1"			
+			{ 
+				"health"		"5"
+				"model"			"models/gibs/xenians/sgib_01.mdl"
+			}
+			"sgib2"			
+			{ 
+				"health"		"5"
+				"model"			"models/gibs/xenians/sgib_02.mdl"
+			}
+			"sgib3"			
+			{ 
+				"health"		"5"
+				"model"			"models/gibs/xenians/sgib_03.mdl"
+			}
+		}
+	}
+	
+	"Xenian_Medium_Gibs"
+	{
+		"gibs"
+		{
+			"mgib1"			
+			{ 
+				"health"			"10"
+				"model"				"models/gibs/xenians/mgib_01.mdl"
+				"odds"				"42"
+				"override_gib"		"Xenian_Small_Gibs"
+			}
+			"mgib2"			
+			{ 
+				"health"			"10"	
+				"model"				"models/gibs/xenians/mgib_02.mdl"
+				"odds"				"42"
+				"override_gib"		"Xenian_Small_Gibs"
+			}
+			"mgib3"			
+			{ 
+				"health"			"10"	
+				"model"				"models/gibs/xenians/mgib_03.mdl"
+				"odds"				"42"
+				"override_gib"		"Xenian_Small_Gibs"
+			}
+			"mgib4"			
+			{ 
+				"health"			"10"	
+				"model"				"models/gibs/xenians/mgib_04.mdl"
+				"odds"				"42"
+				"override_gib"		"Xenian_Small_Gibs"
+			}
+			"mgib5"			
+			{ 
+				"health"			"10"	
+				"model"				"models/gibs/xenians/mgib_05.mdl"
+				"odds"				"42"
+				"override_gib"		"Xenian_Small_Gibs"
+			}
+			"mgib6"			
+			{ 
+				"health"			"10"
+				"model"				"models/gibs/xenians/mgib_06.mdl"
+				"odds"				"42"
+				"override_gib"		"Xenian_Small_Gibs"
+			}
+			"mgib7"			
+			{ 
+				"health"			"10"	
+				"model"				"models/gibs/xenians/mgib_07.mdl"
+				"odds"				"42"
+				"override_gib"		"Xenian_Small_Gibs"
+			}
+		}
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	ABRAMS
+//------------------------------------------------------------------------------------------------------
+	"models/props_vehicles/abrams.mdl"
+	{
+		"gibs"
+		{
+			"Base"			
+			{ 
+				"ignorephyspush"	"1"
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_base.mdl"
+				"particle"		"vehicle_fire"
+			}	
+			"EngineBlock"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_engineblock1.mdl"
+			}	
+			"FrontPlate1"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_l_frontplate1.mdl"
+			}	
+			"SidePlate2"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_l_sideplate2.mdl"
+			}	
+			"FrontPlate3"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_l_sideplate3.mdl"
+			}	
+			"RFrontPlate1"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_r_frontplate1.mdl"
+			}	
+			"RFrontPlate2"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_r_frontplate2.mdl"
+			}	
+			"RSidePlate1"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_r_sideplate1.mdl"
+			}	
+			"RSidePlate2"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_r_sideplate2.mdl"
+			}		
+			"Wheel"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_r_wheel1.mdl"
+			}		
+			"Turret"			
+			{ 
+				"ignorephyspush"	"1"
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_turret.mdl"
+				"velocity" 		"0 0 600"
+			}		
+			"MachineGun"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/m1a1_abrams_gibs/m1_gib_turret_machinegun.mdl"
+			}		
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+		"import"	"Human_Small_Gibs"
+		"import"	"Human_Medium_Gibs"
+		"import"	"Human_Head_Gibs"
+		"import"	"Human_Chest_Gibs"
+
+		"physexplosion"
+		{
+			"z_offset"		"64"
+			"magnitude"		"100"
+			"radius"		"600"
+		}
+	}
+
+//------------------------------------------------------------------------------------------------------
+//	APACHE
+//------------------------------------------------------------------------------------------------------
+	"models/props_vehicles/apache.mdl"
+	{
+		"gibs"
+		{
+			"fueselage"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/apache_gibs/apache_fueselage.mdl"
+				"particle"	"heli_cliff_fire"
+			}	
+			"gun"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/apache_gibs/apache_gun.mdl"
+			}	
+			"tire"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/apache_gibs/apache_tire.mdl"
+			}	
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+		"import"	"Human_Small_Gibs"
+		"import"	"Human_Medium_Gibs"
+		"import"	"Human_Head_Gibs"
+		"import"	"Human_Chest_Gibs"
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	Alien Grunt
+//------------------------------------------------------------------------------------------------------	
+	"alien_grunt_shared_gibs"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/agrunt/torso.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"left_arm_lower"			
+			{ 
+				"health"		"25"
+				"ragdoll"		"1"
+				"model"			"models/gibs/agrunt/left_arm_lower.mdl"	
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"right_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/agrunt/right_leg.mdl"	
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+		}
+		"import"	"Xenian_Medium_Gibs"
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+
+	"models/xenians/agrunt_unarmored.mdl"
+	{
+		"import"	"alien_grunt_shared_gibs"
+	}
+	
+	"models/xenians/agrunt.mdl"
+	{
+		"gibs"
+		{
+			"gib_helmet"			
+			{ 
+				"health"		"35"
+				"model"			"models/gibs/agrunt/gib_helmet.mdl"	
+			}	
+			"gib_shoulder_armor"			
+			{ 
+				"health"		"35"
+				"model"			"models/gibs/agrunt/gib_shoulder_armor.mdl"	
+			}
+			"gib_back_armor"			
+			{ 
+				"health"		"35"
+				"model"			"models/gibs/agrunt/gib_back_armor.mdl"	
+			}
+		}
+		"import"	"alien_grunt_shared_gibs"
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	Bullsquid
+//------------------------------------------------------------------------------------------------------
+	"models/xenians/bullsquid.mdl"
+	{
+		"gibs"
+		{
+			"head"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/bullsquid/head.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/bullsquid/torso.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"left_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/bullsquid/left_leg.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"right_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/bullsquid/right_leg.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"tail"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/bullsquid/tail.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+		}
+		"import"	"Xenian_Medium_Gibs"
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+	
+	
+//------------------------------------------------------------------------------------------------------
+//	Controller
+//------------------------------------------------------------------------------------------------------
+	"models/xenians/controller.mdl"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/torso.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"head"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/head.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"left_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/left_leg.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"left_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/left_arm.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"right_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/right_arm.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"right_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/right_leg.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"mid_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/mid_arm.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"flap_front"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/flap_front.mdl"
+				"odds"			"42"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"flap_left"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/flap_left.mdl"
+				"odds"			"42"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+			"flap_right"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/controller/flap_right.mdl"
+				"odds"			"42"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+		}
+		"import"	"Xenian_Medium_Gibs"
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	GARGA
+//------------------------------------------------------------------------------------------------------
+	"models/xenians/garg.mdl"
+	{
+		"gibs"
+		{
+			"RightArm"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/gargantua/right_arm.mdl"
+			}	
+			"LeftArmLower"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/gargantua/left_arm_lower.mdl"
+			}
+			"Torso"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/gargantua/torso.mdl"
+			}
+			"LowerTorso"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/gargantua/lower_torso.mdl"
+			}
+			"LeftLeg"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/gargantua/left_leg.mdl"
+			}
+		}
+
+
+		"import"	"Xenian_Medium_Gibs"
+		"import"	"Xenian_Medium_Gibs"
+
+		"particle"	"gargantua_gib_fx"
+
+		"physexplosion"
+		{
+			"z_offset"		"64"
+			"magnitude"		"100"
+			"radius"		"600"
+		}
+	}
+
+
+//------------------------------------------------------------------------------------------------------
+//	Headcrab
+//------------------------------------------------------------------------------------------------------
+	"models/xenians/headcrab.mdl"
+	{
+		"import"	"Xenian_Small_Gibs"	
+		"import"	"Xenian_Small_Gibs"	
+	}
+
+	
+//------------------------------------------------------------------------------------------------------
+//	HOUNDEYE
+//------------------------------------------------------------------------------------------------------
+	"models/xenians/houndeye.mdl"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/houndeye/torso.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+				
+			}	
+			"left_leg"			
+			{ 
+				"health"		"25"
+				"ragdoll"		"1"
+				"model"			"models/gibs/houndeye/left_leg.mdl"	
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"back_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/houndeye/back_leg.mdl"	
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"right_leg_upper"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/houndeye/right_leg_upper.mdl"	
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"right_leg_lower"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/houndeye/right_leg_lower.mdl"	
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}
+		}
+		"import"	"Xenian_Medium_Gibs"	
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+		
+//------------------------------------------------------------------------------------------------------
+//	HUMAN GUARD
+//------------------------------------------------------------------------------------------------------
+	"guard_gib"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/guard/torso.mdl"
+				"override_gib"	"Human_Chest_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+			"left_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/guard/left_arm.mdl"
+				"override_gib"	"Human_Medium_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+			"right_arm"			
+			{
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/guard/right_arm.mdl"
+				"override_gib"	"Human_Medium_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+			"right_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/guard/right_leg.mdl"
+				"override_gib"	"Human_Medium_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+		}
+		"import"	"Human_Head_Gibs"
+		"import"	"Human_Medium_Gibs"
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+	
+	"models/humans/guard.mdl"
+	{
+		"import"	"guard_gib"
+	}
+
+	"models/humans/guard_02.mdl"
+	{
+		"import"	"guard_gib"
+	}
+
+	"models/humans/guard_hurt.mdl"
+	{
+		"import"	"guard_gib"
+	}
+
+//------------------------------------------------------------------------------------------------------
+//	HUMAN MARINE
+//------------------------------------------------------------------------------------------------------
+	"marine_gib"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/marines/torso.mdl"
+				"override_gib"	"Human_Chest_Gibs"
+				"particle"		"gib_human_spurt"
+				
+			}	
+			"left_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/marines/left_leg.mdl"
+				"override_gib"	"Human_Medium_Gibs"
+				"particle"		"gib_human_spurt"
+				
+			}	
+			"right_leg"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/marines/right_leg.mdl"
+				"override_gib"	"Human_Medium_Gibs"
+				"particle"		"gib_human_spurt"
+				
+			}	
+			"left_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/marines/left_arm.mdl"
+				"override_gib"	"Human_Medium_Gibs"
+				"particle"		"gib_human_spurt"
+				
+			}	
+			"right_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/marines/right_arm.mdl"
+				"override_gib"	"Human_Medium_Gibs"
+				"particle"		"gib_human_spurt"
+				
+			}	
+		}
+		"import"	"Human_Head_Gibs"
+		"import"	"Human_Medium_Gibs"
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+
+	"models/humans/marine.mdl"
+	{
+		"import"	"marine_gib"
+	}
+
+	"models/humans/marine_02.mdl"
+	{
+		"import"	"marine_gib"
+	}	
+
+//------------------------------------------------------------------------------------------------------
+//	HUMAN SCIENTIST
+//------------------------------------------------------------------------------------------------------
+	"left_leg_gibs"
+	{
+		"import" "Human_Small_Gibs"
+	}
+
+	"right_leg_gibs"
+	{
+		"import" "Human_Small_Gibs"
+	}
+
+	"right_arm_gibs"
+	{
+		"import" "Human_Small_Gibs"
+	}
+
+	"left_arm_gibs"
+	{
+		"import" "Human_Small_Gibs"		
+	}
+
+	"Scientist_Legs"
+	{
+		"gibs"
+		{
+			"left_leg"			
+			{ 
+				"health"		"30"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/scientists/left_leg.mdl"
+				"override_gib"	"left_leg_gibs"
+			}
+			"right_leg"			
+			{ 
+				"health"		"30"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/scientists/right_leg.mdl"
+				"override_gib"	"right_leg_gibs"
+			}
+		}
+	}
+
+	"scientist_gib"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/scientists/torso.mdl"
+				"override_gib"	"Human_Chest_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+			"left_arm"			
+			{ 
+				"health"		"30"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/scientists/left_arm.mdl"
+				"override_gib"	"left_arm_gibs"
+				"particle"		"gib_human_spurt"
+			}	
+			"right_arm"			
+			{ 
+				"health"		"30"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/scientists/right_arm.mdl"
+				"override_gib"	"right_arm_gibs"
+			}
+		}
+		"import"	"Scientist_Legs"
+		"import"	"Human_Head_Gibs"
+		"import"	"Human_Medium_Gibs"
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+
+	"models/humans/scientist.mdl"
+	{
+		"import"	"scientist_gib"
+	}
+
+	"models/humans/scientist_02.mdl"
+	{
+		"import"	"scientist_gib"
+	}
+	
+	"models/humans/scientist_hurt.mdl"
+	{
+		"import"	"scientist_gib"
+	}
+
+	"models/humans/scientist_hurt_02.mdl"
+	{
+		"import"	"scientist_gib"
+	}
+		
+	"models/humans/scientist_female.mdl"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/fem_sci/torso.mdl"
+				"override_gib"		"Human_Chest_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+			"left_arm"			
+			{ 
+				"health"		"30"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/scientists/left_arm.mdl"
+				"override_gib"	"left_arm_gibs"
+				"particle"		"gib_human_spurt"
+			}	
+			"right_arm"			
+			{ 
+				"health"		"30"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/humans/scientists/right_arm.mdl"
+				"override_gib"	"right_arm_gibs"
+			}
+		}
+		"import"	"Scientist_Legs"
+		"import"	"Human_Head_Gibs"
+		"import"	"Human_Medium_Gibs"
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	HEV MALE
+//------------------------------------------------------------------------------------------------------
+	"hev_male_gib"
+	{
+		"gibs"
+		{
+			"right_arm"
+			{
+				"model"		"models/gibs/humans/hev_male/right_arm.mdl"
+				"ragdoll"	"1" 
+			}
+
+			"left_arm"
+			{
+				"model"		"models/gibs/humans/hev_male/left_arm.mdl"
+				"ragdoll"	"1" 
+			}
+
+			"right_leg"
+			{
+				"model"		"models/gibs/humans/hev_male/right_leg.mdl"
+				"ragdoll"	"1" 
+			}
+
+			"left_leg"
+			{
+				"model"		"models/gibs/humans/hev_male/left_leg.mdl"
+				"ragdoll"	"1" 
+			}
+
+			"torso"
+			{
+				"model"		"models/gibs/humans/hev_male/torso.mdl"
+				"ragdoll"	"1" 
+			}
+		}
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+
+	"models/humans/hev_male.mdl"
+	{
+		"import"	"hev_male_gib"
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	LAV
+//------------------------------------------------------------------------------------------------------
+	"models/props_vehicles/lav.mdl"
+	{
+		"gibs"
+		{
+			"lav_hull"			
+			{ 
+				"ignorephyspush"	"1"
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/lav/lav_hull.mdl"
+				"particle"		"vehicle_fire"
+			}	
+			"lav_tire1"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/lav/lav_tire1.mdl"
+			}	
+			"lav_tire2"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/lav/lav_tire2.mdl"
+			}	
+			"lav_tire3"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/lav/lav_tire3.mdl"
+			}	
+			"lav_tire4"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/lav/lav_tire4.mdl"
+			}			
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+		"import"	"Human_Small_Gibs"
+		"import"	"Human_Medium_Gibs"
+		"import"	"Human_Head_Gibs"
+		"import"	"Human_Chest_Gibs"
+
+		"physexplosion"
+		{
+			"z_offset"		"64"
+			"magnitude"		"100"
+			"radius"		"600"
+		}
+	}
+
+//------------------------------------------------------------------------------------------------------
+//	OSPREY
+//------------------------------------------------------------------------------------------------------
+	"models/props_vehicles/osprey.mdl"
+	{
+		"gibs"
+		{
+			"aileron"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/v22_gibs/v22_gib_aileron.mdl"
+			}	
+			//"fuselage"			
+			//{ 
+			//	"nofade"		"1"
+			//	"interactive"	"2"
+			//	"model"			"models/gibs/v22_gibs/v22_gib_fuselage.mdl"
+			//}	
+			"lnacelle"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/v22_gibs/v22_gib_lnacelle.mdl"
+			}	
+			"lstab"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/v22_gibs/v22_gib_lstab.mdl"
+			}	
+			"rnacelle"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/v22_gibs/v22_gib_rnacelle.mdl"
+			}	
+			"rstab"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/v22_gibs/v22_gib_rstab.mdl"
+			}	
+			"whee"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/v22_gibs/v22_gib_wheel.mdl"
+			}	
+			"wing"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/gibs/v22_gibs/v22_gib_wing.mdl"
+			}	
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+		"import"	"Human_Small_Gibs"
+		"import"	"Human_Medium_Gibs"
+		"import"	"Human_Head_Gibs"
+		"import"	"Human_Chest_Gibs"
+
+		"physexplosion"
+		{
+			"magnitude"		"600"
+			"radius"		"600"
+		}
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	VORTIGAUNT
+//------------------------------------------------------------------------------------------------------
+	"models/vortigaunt_slave.mdl"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"60"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/vortigaunt/torso.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"lower_torso"			
+			{ 
+				"health"		"30"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/vortigaunt/lower_torso.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"left_arm_lower"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/vortigaunt/left_arm_lower.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+			"right_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/vortigaunt/right_arm.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_alien_spurt"
+			}	
+		}
+		"import"	"Xenian_Medium_Gibs"
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	ZOMBIE SCIENTIST
+//------------------------------------------------------------------------------------------------------
+	"zombie_arms"
+	{
+		"gibs"
+		{
+			"left_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/zombies/zombie_sci/left_arm.mdl"
+				"override_gib"	"Xenian_Small_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+			"right_arm"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/zombies/zombie_sci/right_arm.mdl"
+				"override_gib"	"Xenian_Small_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+		}
+	}
+
+	"zombie_legs"
+	{
+		"gibs"
+		{
+			"torso"			
+			{ 
+				"health"		"25"	
+				"ragdoll"		"1"
+				"model"			"models/gibs/zombies/zombie_sci/torso.mdl"
+				"override_gib"	"Xenian_Medium_Gibs"
+				"particle"		"gib_human_spurt"
+			}	
+		}
+	}
+
+	"models/zombies/zombie_sci_torso.mdl"
+	{
+		"import"	"zombie_arms"
+		"import"	"Xenian_Small_Gibs"
+
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+
+	"models/gibs/zombies/zombie_sci/legs.mdl"
+	{
+		"import"	"zombie_legs"
+		"import"	"Scientist_Legs"
+		"import"	"Xenian_Small_Gibs"
+
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+
+	"models/zombies/zombie_sci.mdl"
+	{
+		"import"	"zombie_legs"
+		"import"	"zombie_arms"
+		"import"	"Scientist_Legs"
+		"import"	"Xenian_Medium_Gibs"
+		"import"	"Human_Small_Gibs"
+		
+		"physexplosion"
+		{
+			"magnitude"		"7"
+			"radius"		"50"
+		}
+	}
+	
+//------------------------------------------------------------------------------------------------------
+//	HUMAN COMMON GIBS
+//------------------------------------------------------------------------------------------------------
+	"models/props_blackmesa/carcass.mdl"
+	{
+		"gibs"
+		{
+			"sgib1"			
+			{ 
+				"health"		"10"	
+				"model"			"models/gibs/carcass/carcass_gib_01.mdl"
+			}
+			"sgib2"			
+			{ 
+				"health"		"10"
+				"model"			"models/gibs/carcass/carcass_gib_02.mdl"
+			}
+			"sgib3"			
+			{ 
+				"health"		"10"	
+				"model"			"models/gibs/carcass/carcass_gib_03.mdl"
+			}
+			"sgib4"			
+			{ 
+				"health"		"10"	
+				"model"			"models/gibs/carcass/carcass_gib_04.mdl"
+			}
+		}
+	}
+
+//------------------------------------------------------------------------------------------------------
+//	Vehicles
+//------------------------------------------------------------------------------------------------------
+	"models/props_vehicles/crownvic.mdl"
+	{
+		"gibs"
+		{
+			"Base"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/props_vehicles/crownvic_destroyed.mdl"
+				"particle"		"vehicle_fire"
+			}		
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+	}
+
+	"models/props_vehicles/crownvic.mdl"
+	{
+		"gibs"
+		{
+			"Base"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/props_vehicles/crownvic_destroyed.mdl"
+				"particle"		"vehicle_fire"
+			}		
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+	}
+
+	"models/props_vehicles/hummer.mdl"
+	{
+		"gibs"
+		{
+			"Base"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/props_vehicles/hummer_destroyed.mdl"
+				"particle"		"vehicle_fire"
+			}		
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+	}
+
+	"police_jeep"
+	{
+		"gibs"
+		{
+			"Base"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/props_vehicles/jeep01_burnt.mdl"
+				"particle"		"vehicle_fire"
+			}		
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+	}
+
+	"models/props_vehicles/jeep01.mdl"
+	{
+		"import" "police_jeep"
+	}
+
+	"models/props_vehicles/jeep02.mdl"
+	{
+		"import" "police_jeep"
+	}
+		
+	"models/props_vehicles/jeep03.mdl"
+	{
+		"import" "police_jeep"
+	}
+
+	"models/props_vehicles/suv01.mdl"
+	{
+		"gibs"
+		{
+			"Base"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/props_vehicles/suv_destroyed.mdl"
+				"particle"		"vehicle_fire"
+			}		
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+	}
+
+	"models/props_vehicles/m35woodback.mdl"
+	{
+		"gibs"
+		{
+			"Base"			
+			{ 
+				"nofade"		"1"
+				"interactive"	"2"
+				"model"			"models/props_vehicles/m35_blown.mdl"
+				"particle"		"vehicle_fire"
+			}		
+		}
+		"sound"		"EnvExplosionEffect.Sound"
+		"particle"	"osprey_gib_fx"
+	}
+
+	
+//------------------------------------------------------------------------------------------------------
+//	CRATE GIBS
+//------------------------------------------------------------------------------------------------------
+	"crate_canteen"
+	{
+		"gibs_quick" "models\props_canteen\spork.mdl"
+		"gibs_quick" "models\props_canteen\spork.mdl"
+		"gibs_quick" "models\props_canteen\spork.mdl"
+		"gibs_quick" "models\props_junk\handtowel.mdl"
+		"gibs_quick" "models\props_junk\styrofoamcup01a.mdl"
+		"gibs_quick" "models\props_junk\styrofoamcup01a.mdl"
+		"gibs_quick" "models\props_junk\styrofoamcup01a.mdl"
+		"gibs_quick" "models\props_junk\plate01.mdl"
+		"gibs_quick" "models\props_junk\plate01.mdl"
+	}
+
+	"crate_joke"
+	{
+		"gibs_quick" "models\props_blackmesa\octodog.mdl"
+		"gibs_quick" "models\props_sewer\turd.mdl"
+		"gibs_quick" "models\props_sewer\turd.mdl"
+		"gibs_quick" "models\props_sewer\turd.mdl"
+		"gibs_quick" "models\props_junk\watermelon01.mdl"
+		"gibs_quick" "models\props_junk\watermelon01.mdl"
+		"gibs_quick" "models\gibs\humans\eye_gib.mdl"
+		"gibs_quick" "models\gibs\humans\eye_gib.mdl"
+		"gibs_quick" "models\gibs\humans\eye_gib.mdl"
+		"gibs_quick" "models\gibs\humans\eye_gib.mdl"
+		"gibs_quick" "models\gibs\humans\eye_gib.mdl"
+	}
+
+	"crate_junk"
+	{
+		"gibs_quick" "models\props_blackmesa\bms_vent_break_piece1.mdl"
+		"gibs_quick" "models\props_blackmesa\bms_vent_break_piece3.mdl"
+		"gibs_quick" "models\props_blackmesa\bms_vent_break_piece5.mdl"
+		"gibs_quick" "models\gibs\metal_gib1.mdl"
+		"gibs_quick" "models\gibs\metal_gib2.mdl"
+		"gibs_quick" "models\gibs\metal_gib3.mdl"
+		"gibs_quick" "models\props_c17\tools_pliers01a.mdl"
+		"gibs_quick" "models\props_c17\tools_wrench01a.mdl"
+		"gibs_quick" "models\props_junk\garbage_metalcan001a.mdl"
+		"gibs_quick" "models\props_junk\garbage_metalcan002a.mdl"
+		"gibs_quick" "models\props_wasteland\prison_padlock001b.mdl"
+		"gibs_quick" "models\props_trainstation\payphone_reciever001a.mdl"
+	}
+
+	"crate_lab"
+	{
+		"gibs_quick" "models\props_am\scale.mdl"
+		"gibs_quick" "models\props_blackmesa\supercomputer01a_break08.mdl"
+		"gibs_quick" "models\props_lab\chemjar01.mdl"
+		"gibs_quick" "models\props_lab\sterilizer.mdl"
+		"gibs_quick" "models\props_junk\cardboard_box004a.mdl"
+		"gibs_quick" "models\props_lab\bindergreen.mdl"
+		"gibs_quick" "models\props_lab\bindergreen.mdl"
+		"gibs_quick" "models\props_lab\reciever01d.mdl"
+		"gibs_quick" "models\props_lab\reciever01c.mdl"
+		"gibs_quick" "models\props_lab\substance_tray.mdl"
+	}
+
+	"crate_lab2"
+	{
+		"gibs_quick" "models\props_blackmesa\supercomputer01a_break08.mdl"
+		"gibs_quick" "models\props_blackmesa\supercomputer01a_break08.mdl"
+		"gibs_quick" "models\props_generic\geigercounter.mdl"
+		"gibs_quick" "models\props_junk\battery.mdl"
+		"gibs_quick" "models\props_junk\cd_drive.mdl"
+		"gibs_quick" "models\props_lab\binderredlabel.mdl"
+		"gibs_quick" "models\props_lab\binderredlabel.mdl"
+		"gibs_quick" "models\props_junk\goggles.mdl"
+		"gibs_quick" "models\props_junk\funnel.mdl"
+	}
+
+	"crate_military"
+	{
+		"gibs_quick" "models\props_marines\alicepack.mdl"
+		"gibs_quick" "models\props_marines\alicepack.mdl"
+		"gibs_quick" "models\props_marines\bayonet.mdl"
+		"gibs_quick" "models\props_marines\etool.mdl"
+		"gibs_quick" "models\props_marines\mil_flashlight.mdl"
+		"gibs_quick" "models\props_marines\mil_flashlight.mdl"
+		"gibs_quick" "models\props_marines\prc77_radio.mdl"
+		"gibs_quick" "models\props_generic\walkietalkie.mdl"
+	}
+    
+	"crate_military_big"
+	{
+		"gibs_quick" "models\props_marines\ammobox01.mdl" 
+		"gibs_quick" "models\props_marines\ammobox01.mdl" 
+		"gibs_quick" "models\props_marines\ammobox01.mdl"
+		"gibs_quick" "models\props_marines\mil_flashlight.mdl"
+		"gibs_quick" "models\props_marines\prc77_radio.mdl"
+		"gibs_quick" "models\props_marines\alicepack.mdl"
+		"gibs_quick" "models\props_marines\alicepack.mdl"
+	}
+
+	"crate_office"
+	{
+		"gibs_quick" "models\gibs\props_office\books_1_gib3.mdl"
+		"gibs_quick" "models\gibs\props_office\books_1_gib7.mdl"
+		"gibs_quick" "models\props_office\stapler.mdl"
+		"gibs_quick" "models\props_office\calculator.mdl"
+		"gibs_quick" "models\props_junk\handtowel.mdl"
+		"gibs_quick" "models\props_office\videocassette.mdl"
+		"gibs_quick" "models\props_office\pencil.mdl"
+		"gibs_quick" "models\props_office\paper_box.mdl"
+		"gibs_quick" "models\props_office\paper_box.mdl"
+		"gibs_quick" "models\props_office\holepunch.mdl"
+	}
+
+	"crate_tech"
+	{
+		"gibs_quick" "models\props_junk\wirespool01a.mdl"
+		"gibs_quick" "models\items\car_battery01.mdl"
+		"gibs_quick" "models\props_blackmesa\supercomputer01a_break08.mdl"
+		"gibs_quick" "models\props_blackmesa\supercomputer01a_break08.mdl"
+		"gibs_quick" "models\props_junk\plasticcontainer01.mdl"
+		"gibs_quick" "models\props_office\cd_music.mdl"
+		"gibs_quick" "models\props_industrial\welder.mdl"
+		"gibs_quick" "models\props_junk\junk_screwdriver.mdl"
+		"gibs_quick" "models\props_junk\junk_spanner.mdl"
+	}
+
+	"crate_tech2"
+	{
+		"gibs_quick" "models\props_junk\cd_drive.mdl"
+		"gibs_quick" "models\props_junk\capacitor.mdl"
+		"gibs_quick" "models\props_blackmesa\supercomputer01a_break08.mdl"
+		"gibs_quick" "models\props_blackmesa\supercomputer01a_break08.mdl"
+		"gibs_quick" "models\props_junk\soldering_iron.mdl"
+		"gibs_quick" "models\props_office\cd_music.mdl"
+		"gibs_quick" "models\props_junk\junk_6vbattery.mdl"
+		"gibs_quick" "models\props_junk\junk_screwdriver.mdl"
+		"gibs_quick" "models\props_junk\junk_spanner.mdl"
+	}
+
+	"crate_cleaning_products"
+	{
+		"gibs_quick" "models\props_junk\bogroll.mdl"
+		"gibs_quick" "models\props_junk\bogroll.mdl"
+		"gibs_quick" "models\props_junk\handtowel.mdl"
+		"gibs_quick" "models\props_junk\cleanerbottle01.mdl"
+		"gibs_quick" "models\props_junk\plasticcontainer01.mdl"
+		"gibs_quick" "models\props_junk\plasticcontainer02.mdl"
+		"gibs_quick" "models\props_junk\plasticcontainer03.mdl"
+		"gibs_quick" "models\props_junk\plasticcontainer04.mdl"
+	}
+
+	"crate_paint_supplies"
+	{
+		"gibs_quick" "models\props_junk\metalcontainer01.mdl"
+		"gibs_quick" "models\props_junk\metalcontainer02.mdl"
+		"gibs_quick" "models\props_junk\metalcontainer03.mdl"
+		"gibs_quick" "models\props_junk\metalcontainer04.mdl"
+		"gibs_quick" "models\props_junk\spraycan.mdl"
+		"gibs_quick" "models\props_junk\spraycan.mdl"
+	}
+
+	"crate_books_small"
+	{
+		"gibs_quick" "models\gibs\props_office\books_1_gib1.mdl"
+		"gibs_quick" "models\gibs\props_office\books_1_gib2.mdl"
+		"gibs_quick" "models\gibs\props_office\books_1_gib3.mdl"
+		"gibs_quick" "models\gibs\props_office\books_1_gib4.mdl"
+		"gibs_quick" "models\gibs\props_office\books_1_gib5.mdl"
+		"gibs_quick" "models\gibs\props_office\books_1_gib6.mdl"
+	}
+
+	"crate_books_large"
+	{
+		"gibs_quick" "models\gibs\props_office\books_2_gib1.mdl"
+		"gibs_quick" "models\gibs\props_office\books_2_gib2.mdl"
+		"gibs_quick" "models\gibs\props_office\books_2_gib3.mdl"
+		"gibs_quick" "models\gibs\props_office\books_2_gib4.mdl"
+		"gibs_quick" "models\gibs\props_office\books_2_gib5.mdl"
+		"gibs_quick" "models\gibs\props_office\books_2_gib6.mdl"
+		"gibs_quick" "models\gibs\props_office\books_2_gib7.mdl"
+		"gibs_quick" "models\props_lab\bindergreen.mdl"
+		"gibs_quick" "models\props_lab\bindergreen.mdl"
+		"gibs_quick" "models\props_lab\bindergraylabel01a.mdl"
+		"gibs_quick" "models\props_lab\binderredlabel.mdl"
+		"gibs_quick" "models\props_lab\binderredlabel.mdl"
+	}
+
+	"crate_snacks"
+	{
+		"gibs_quick" "models\gibs\props_canteen\vm_snack01.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack02.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack03.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack04.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack05.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack10.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack11.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack12.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack13.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack18.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack20.mdl"
+		"gibs_quick" "models\gibs\props_canteen\vm_snack23.mdl"
+		"gibs_quick" "models\props_junk\drinkcan01.mdl"
+		"gibs_quick" "models\props_junk\drinkcan01.mdl"
+	}
+
+	"crate_computer_supplies"
+	{
+		"gibs_quick" "models\props_office\computer_keyboard01.mdl"
+		"gibs_quick" "models\props_office\computer_mouse01.mdl"
+		"gibs_quick" "models\props_office\computer_monitor01.mdl"
+		"gibs_quick" "models\props_office\computer_desktop01.mdl"
+		"gibs_quick" "models\props_office\office_phone.mdl"
+		"gibs_quick" "models\props_office\cd_music.mdl"
+		"gibs_quick" "models\props_office\cd_music.mdl"
+	}
+	"crate_tools"
+	{
+		"gibs_quick" "models\props_junk\duct_tape.mdl"
+		"gibs_quick" "models\props_junk\dust_mask.mdl"
+		"gibs_quick" "models\props_junk\gluegun.mdl"
+		"gibs_quick" "models\props_junk\goggles.mdl"
+		"gibs_quick" "models\props_junk\hardhat.mdl"
+		"gibs_quick" "models\props_junk\junk_6vbattery.mdl"
+		"gibs_quick" "models\props_junk\drill.mdl"
+		"gibs_quick" "models\props_junk\junk_caulkgun.mdl"
+		"gibs_quick" "models\props_junk\junk_caulktube.mdl"
+		"gibs_quick" "models\props_junk\junk_earmuffs.mdl"
+		"gibs_quick" "models\props_junk\junk_wd43.mdl"
+		"gibs_quick" "models\props_junk\oil_can.mdl"
+		"gibs_quick" "models\props_junk\soldering_iron.mdl"
+	}
+}

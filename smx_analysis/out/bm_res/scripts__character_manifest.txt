@@ -1,0 +1,4214 @@
+			"character_manifest.txt"
+{
+
+//Bind a key to "reload_character_manifest" to reload this file in realtime.
+//////////////////////////////////////////////////////////
+/////////////npc_human_scientist//////////////////////////
+//////////////////////////////////////////////////////////
+
+	npc_human_scientist
+	//Face_01
+	{
+		flex_data
+		{
+                        cheek_depth .5
+                        cheek_fat_max .5
+                        chin_butt 1.0
+                        chin_width .5
+                        ears_angle 1.0
+                        ears_height .5
+                        eyes_ang_min .5
+                        jaw_depth .5
+                        lowlip_size 1.0
+                        mouth_w_max .1
+                        mouth_h_min .4
+                        mouth_depth .3
+                        nose_w_min .5
+                        nose_angle .5
+                        nost_height .5
+                        nost_width .9
+                        nose_tip .5
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist.mdl"
+		skin 0,1,2,3,6,10,12,13
+	}
+
+	npc_human_scientist
+	//Face_02
+	{
+		flex_data
+		{
+                         cheek_fat_min .5
+                         head_height 1.0
+                         head_w_min .5
+                         ears_angle 1.0
+                         ears_height 1.0
+                         mouth_w_max 1.0
+                         mouth_depth .5
+                         nose_w_max 1.0
+                         nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 1,3,5,6,7
+	}
+
+	npc_human_scientist
+	//Face_03
+	{
+		flex_data
+		{
+                         cheek_depth 1.0
+                         cheek_fat_max 1.0
+                         neck_size .5
+                         ears_angle 1.0
+                         ears_height 1.0
+                         uplip_size 1.0
+                         mouth_w_min .5
+                         mouth_depth 1.0
+                         nose_h_max .6
+                         nose_angle .6
+                         nost_width .6
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_hurt.mdl"
+		skin 0,1,2,3,6,10,12,13
+	}
+	
+	npc_human_scientist
+	//Face_04
+	{
+		flex_data
+		{
+			cheek_fat_min 0.7
+			head_w_max .5
+			ears_angle 1.0
+			mouth_w_max .7
+			nose_h_max .3
+			nose_angle 1.0
+			nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_hurt.mdl"
+		skin 0,1,2,3,6,10,12,13
+	}
+
+	npc_human_scientist
+	//Face_05
+	{
+		flex_data
+		{
+			chin_width 1.0
+			ears_angle 1.0
+			jaw_depth 1.0
+			lowlip_size 1.0
+			mouth_w_max 0.5
+			mouth_h_min 0.5
+			mouth_depth 0.5
+			nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_hurt_02.mdl"
+		skin 1,3,5,6,7
+	}
+
+	npc_human_scientist
+	//Face_06
+	{
+		flex_data
+		{
+			cheek_fat_max .5
+			chin_height .5
+			head_w_max .3
+			ears_angle .5
+			ears_height 1.0
+			eyes_height .3
+			eyes_size .2
+			jaw_depth .5
+			lowlip_size .5
+			uplip_size .75
+			mouth_w_max .75
+			nose_h_min .75
+			nost_height 1.0
+			nost_width 1.0
+			nose_tip .5
+                        hairline_puff 0.75
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist.mdl"
+		skin 4,5,7,8,9,11,14
+	}
+
+	npc_human_scientist
+	//Face_07
+	{
+		flex_data
+		{
+                         brow_h 0.3
+                         cheek_fat_max .7
+                         chin_width 1.0
+                         chin_height 1.0
+                         neck_size 1.0
+                         ears_angle .5
+                         uplip_size 1.0
+			 lowlip_size 1.0
+                         nose_w_max 1.0
+                         nose_h_max 0.5
+                         nose_tip 1.0
+                         hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 2,4
+	}
+
+	npc_human_scientist
+	//Face_08
+	{
+		flex_data
+		{
+                        cheek_depth .5
+                        cheek_fat_max .5
+                        chin_butt 1.0
+                        chin_width .5
+                        head_w_max 0.7
+                        ears_angle 1.0
+                        ears_height .5
+                        eyes_ang_min .5
+                        jaw_depth .5
+                        lowlip_size 1.0
+                        mouth_w_max .1
+                        mouth_h_min .4
+                        mouth_depth .3
+                        nose_w_min .5
+                        nose_angle .5
+                        nost_height .5
+                        nost_width .9
+                        nose_tip .5
+                        hairline_puff 0.75
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_hurt.mdl"
+		skin 4,5,7,8,9,11,14
+	}
+	
+	npc_human_scientist
+	//Face_09
+	{
+		flex_data
+		{
+			cheek_depth .3
+			cheek_fat_max .8
+			chin_width .7
+			chin_height .7
+			neck_size .4
+			lowlip_size .5
+			uplip_size 1.0
+			mouth_w_max .7
+			mouth_depth .3
+			nose_h_max .5
+			nose_angle .9
+			nose_d_max .9
+			nost_height .9
+			nost_width .5
+			hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_hurt.mdl"
+		skin 4,5,7,8,9,11,14
+	}
+	
+	npc_human_scientist
+	//Face_10
+	{
+		flex_data
+		{
+			cheek_fat_min 0.8
+			chin_butt .7
+			face_d_max .25
+			head_height .95
+			head_w_min .0
+			ears_angle .7
+			ears_height .7
+			eyes_ang_min 1.0
+			eyes_height .5
+			jaw_depth .7
+			lowlip_size 1.0
+			uplip_size .6
+			mouth_w_max 1.0
+			mouth_h_min .5
+			nose_w_max .5
+			nose_h_max .5
+			nose_angle .5
+			nose_d_max 1.0
+			nost_width 1.0
+			hairline_puff .75
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_hurt_02.mdl"
+		skin 2,4
+	}
+
+	ragdoll_scientist_hurt
+	{
+		flex_data
+		{
+			// Not used by ragdolls
+		}
+		bodygroup_data
+		{
+			glasses	0,1,2,3,4,5,6
+		}
+		model "models/humans/scientist_hurt_02.mdl"
+		skin 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14
+	}
+
+//////////////////////////////////////////////////////////
+//npc_human_scientist_female
+//////////////////////////////////////////////////////////
+
+/// default
+	npc_human_scientist_female
+	{
+		flex_data
+		{
+
+		}
+		bodygroup_data
+		{
+			body	0,1
+		}
+		skin 0
+	}
+
+	npc_human_scientist_female
+	{
+		flex_data
+		{
+		chin_width 0.75
+		face_d_max 0.5
+		mouth_depth 0.5
+		nose_w_min 0.5
+		nose_angle 0.5
+		nose_tip 0.25
+		}
+		bodygroup_data
+		{
+			body	0,1
+			hair	3
+			glasses	5
+		}
+		skin 2
+	}
+
+	npc_human_scientist_female
+	{
+		flex_data
+		{
+		cheek_fat_max 0.75
+		chin_width 1
+		chin_height 0.5
+		face_d_min 0.5
+		ears_angle 1
+		eyes_ang_min 0.5
+		lowlip_size 0.5
+		uplip_size 0.5
+		mouth_w_max 1
+		nose_w_max 0.5
+		nose_tip 1
+		}
+		bodygroup_data
+		{
+			body	0,1
+			hair	2
+			glasses	2			
+		}
+		skin 1
+	}
+
+	npc_human_scientist_female
+	{
+		flex_data
+		{
+		cheek_fat_max 0.5
+		face_d_max 0.5
+		ears_angle 0.5
+		eyes_height 0.5
+		jaw_depth 0.25
+		mouth_w_min 0.5
+		mouth_depth 0.25
+		nose_w_min 0.5
+		nose_angle 0.5
+		nose_tip 0.5
+		}
+		bodygroup_data
+		{
+			body	0,1
+			hair	1
+			glasses	4
+		}
+		skin 0
+	}
+
+//////////////////////////////////////////////////////////
+//npc_human_security
+//////////////////////////////////////////////////////////
+	npc_human_security
+	//Face_01
+	{
+		flex_data
+		{
+                        cheek_depth .5
+                        cheek_fat_max .5
+                        chin_butt 1.0
+                        chin_width .5
+                        ears_angle 1.0
+                        ears_height .5
+                        eyes_ang_min .5
+                        jaw_depth .5
+                        lowlip_size 1.0
+                        mouth_w_max .1
+                        mouth_h_min .4
+                        mouth_depth .3
+                        nose_w_min .5
+                        nose_angle .5
+                        nost_height .5
+                        nost_width .9
+                        nose_tip .5
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 2
+			holster 1
+			flashlight 0,1
+		}
+		model "models/humans/guard.mdl"
+		skin 0,1,2,3,6,10,12,13
+	}
+
+	npc_human_security
+	//Face_02
+	{
+		flex_data
+		{
+                         cheek_fat_min .5
+                         head_height 1.0
+                         head_w_min .5
+                         ears_angle 1.0
+                         ears_height 1.0
+                         mouth_w_max 1.0
+                         mouth_depth .5
+                         nose_w_max 1.0
+                         nost_width 1.0
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 2
+			holster 1
+			flashlight 0,1
+		}
+		model "models/humans/guard_02.mdl"
+		skin 1,3,5,6,7
+	}
+
+	npc_human_security
+	//Face_03
+	{
+		flex_data
+		{
+                         cheek_depth 1.0
+                         cheek_fat_max 1.0
+                         neck_size .5
+                         ears_angle 1.0
+                         ears_height 1.0
+                         uplip_size 1.0
+                         mouth_w_min .5
+                         mouth_depth 1.0
+                         nose_h_max .6
+                         nose_angle .6
+                         nost_width .6
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 2
+			holster 1
+			flashlight 0,1
+		}
+		model "models/humans/guard_hurt.mdl"
+		skin 0,1,2,3,6,10,12,13
+	}
+
+
+
+	npc_human_security
+	//Face_04
+	{
+		flex_data
+		{
+			cheek_fat_max .5
+			chin_height .5
+			head_w_max .3
+			ears_angle .5
+			ears_height 1.0
+			eyes_height .3
+			eyes_size .2
+			jaw_depth .5
+			lowlip_size .5
+			uplip_size .75
+			mouth_w_max .75
+			nose_h_min .75
+			nost_height 1.0
+			nost_width 1.0
+			nose_tip .5
+                        hairline_puff 0.75
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 2
+			holster 1
+			flashlight 0,1
+		}
+		model "models/humans/guard.mdl"
+		skin 4,5,7,8,9,11,14
+	}
+
+	npc_human_security
+	//Face_05
+	{
+		flex_data
+		{
+                         brow_h 0.3
+                         cheek_fat_max .7
+                         chin_width 1.0
+                         chin_height 1.0
+                         neck_size 1.0
+                         ears_angle .5
+                         uplip_size 1.0
+			 lowlip_size 1.0
+                         nose_w_max 1.0
+                         nose_h_max 0.5
+                         nose_tip 1.0
+                         hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 2
+			holster 1
+			flashlight 0,1
+		}
+		model "models/humans/guard_02.mdl"
+		skin 2,4
+	}
+
+	npc_human_security
+	//Face_06
+	{
+		flex_data
+		{
+                        cheek_depth .5
+                        cheek_fat_max .5
+                        chin_butt 1.0
+                        chin_width .5
+                        head_w_max 0.7
+                        ears_angle 1.0
+                        ears_height .5
+                        eyes_ang_min .5
+                        jaw_depth .5
+                        lowlip_size 1.0
+                        mouth_w_max .1
+                        mouth_h_min .4
+                        mouth_depth .3
+                        nose_w_min .5
+                        nose_angle .5
+                        nost_height .5
+                        nost_width .9
+                        nose_tip .5
+                        hairline_puff 0.75
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 2
+			holster 1
+			flashlight 0,1
+		}
+		model "models/humans/guard_hurt.mdl"
+		skin 4,5,7,8,9,11,14
+	}
+
+//////////////////////////////////////////////////////////
+//security_no_armor
+//////////////////////////////////////////////////////////
+	security_no_armor
+	{
+		flex_data
+		{
+
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 0
+			holster 0,1
+			flashlight 0,1
+		}
+		skin 0,1,2,3,6,10,12,13
+	}
+	
+	security_no_armor
+	//Face_02
+	{
+		flex_data
+		{
+                         cheek_fat_min .5
+                         head_height 1.0
+                         head_w_min .5
+                         ears_angle 1.0
+                         ears_height 1.0
+                         mouth_w_max 1.0
+                         mouth_depth .5
+                         nose_w_max 1.0
+                         nost_width 1.0
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 0
+			holster 0,1
+			flashlight 0,1
+		}
+		model "models/humans/guard_02.mdl"
+		skin 1,3,5,6,7
+	}
+//////////////////////////////////////////////////////////
+/////////////npc_human_commander//////////////////////////
+//////////////////////////////////////////////////////////
+	npc_human_commander
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			chin_butt 1.0
+			chin_width 0.5
+			chin_height 0.5
+			head_w_max 0.25
+			neck_size 0.75
+			ears_angle 0.5
+			jaw_depth 0.25
+			lowlip_size 1.0
+			uplip_size 0.5
+			nose_w_max 1.0
+			nose_angle 1.0
+			nost_width 0.5
+			nose_tip 1.0
+			cigar_mouth 1.0
+		}
+		bodygroup_data
+		{
+			head 0,3
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		bonemerge_data
+		{
+			"models/humans/props/marine_beret.mdl",
+			"models/humans/props/marine_cigar.mdl",
+		}
+		model "models/humans/marine.mdl"
+		skin 2,3
+	}
+
+	npc_human_commander
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			chin_butt 1.0
+			chin_width 0.5
+			chin_height 0.5
+			head_w_max 0.25
+			neck_size 0.75
+			ears_angle 0.5
+			jaw_depth 0.25
+			lowlip_size 1.0
+			uplip_size 0.5
+			nose_w_max 1.0
+			nose_angle 1.0
+			nost_width 0.5
+			nose_tip 1.0
+		}
+		bodygroup_data
+		{
+			head 0,3
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		bonemerge_data
+		{
+			"models/humans/props/marine_beret.mdl",
+		}
+		model "models/humans/marine.mdl"
+		skin 2,3
+	}
+
+	npc_human_commander
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			chin_butt 1.0
+			chin_width 0.5
+			chin_height 0.5
+			head_w_max 0.25
+			neck_size 0.75
+			ears_angle 0.5
+			jaw_depth 0.25
+			lowlip_size 1.0
+			uplip_size 0.5
+			nose_w_max 1.0
+			nose_angle 1.0
+			nost_width 0.5
+			nose_tip 1.0
+		}
+		bodygroup_data
+		{
+			head 0,3
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		bonemerge_data
+		{
+			"models/humans/props/marine_beret.mdl",
+		}
+		model "models/humans/marine_02.mdl"
+		skin 3,6
+	}
+
+	npc_human_commander
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.75
+			chin_butt 1.0
+			chin_width 1.0
+			chin_height 1.0
+			face_d_min 0.25
+			head_w_max 0.5
+			neck_size 0.75
+			ears_height 0.5
+			jaw_depth 1.0
+			nose_angle 0.5
+			nost_height 0.5
+			nost_width 0.5
+			nose_tip 0.5
+			cigar_mouth 1.0
+			hairline_puff 0.5
+		}
+		bodygroup_data
+		{
+			head 0
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		bonemerge_data
+		{
+			"models/humans/props/marine_beret.mdl",
+			"models/humans/props/marine_cigar.mdl",
+		}
+		model "models/humans/marine.mdl"
+		skin 8,14
+	}
+
+	npc_human_commander
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.75
+			chin_butt 1.0
+			chin_width 1.0
+			chin_height 1.0
+			face_d_min 0.25
+			head_w_max 0.5
+			neck_size 0.75
+			ears_height 0.5
+			jaw_depth 1.0
+			nose_angle 0.5
+			nost_height 0.5
+			nost_width 0.5
+			nose_tip 0.5
+			hairline_puff 0.5
+		}
+		bodygroup_data
+		{
+			head 0
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		bonemerge_data
+		{
+			"models/humans/props/marine_beret.mdl",
+		}
+		model "models/humans/marine.mdl"
+		skin 8,14
+	}
+
+	npc_human_commander
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			chin_butt 0.5
+			chin_width 0.5
+			chin_height 0.5
+			head_w_max 0.25
+			neck_size 0.75
+			ears_angle 0.25
+			ears_height 0.25
+			jaw_depth 0.5
+			lowlip_size 0.5
+			uplip_size 0.5
+			mouth_w_min 0.5
+			mouth_depth 0.5
+			nose_angle 0.5
+			nost_height 0.75
+			nose_tip 0.5
+		}
+		bodygroup_data
+		{
+			head 0,3
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		bonemerge_data
+		{
+			"models/humans/props/marine_beret.mdl",
+		}
+		model "models/humans/marine.mdl"
+		skin 6,1
+	}
+
+	npc_human_commander
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.75
+			chin_butt 1.0
+			chin_width 1.0
+			chin_height 1.0
+			face_d_min 0.25
+			head_w_max 0.5
+			neck_size 0.75
+			ears_height 0.5
+			jaw_depth 1.0
+			nose_angle 0.5
+			nost_height 0.5
+			nost_width 0.5
+			nose_tip 0.5
+			hairline_puff 0.5
+		}
+		bodygroup_data
+		{
+			head 0,3
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		bonemerge_data
+		{
+			"models/humans/props/marine_beret.mdl",
+		}
+		model "models/humans/marine_02.mdl"
+		skin 2,4
+	}
+
+//////////////////////////////////////////////////////////
+/////////////npc_human_grunt//////////////////////////////
+//////////////////////////////////////////////////////////
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_max 0.5
+			face_d_min 1.0
+			head_w_min 0.5
+			neck_size 0.5
+			ears_height 1.0
+			eyes_ang_max 1.0
+			mouth_w_min 0.75
+			nose_w_max 0.75
+			nose_h_min 0.75
+			nose_tip 0.5
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 13,1
+	}
+
+	npc_human_grunt
+	{
+		weight 0.1
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_max 0.5
+			face_d_min 1.0
+			head_w_min 0.5
+			neck_size 0.5
+			ears_height 1.0
+			eyes_ang_max 1.0
+			mouth_w_min 0.75
+			nose_w_max 0.75
+			nose_h_min 0.75
+			nose_tip 0.5
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 13,1
+	}
+
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			head_w_min 0.25
+			neck_size 0.75
+			ears_height 0.5
+			jaw_depth 1.0
+			lowlip_size 1.0
+			uplip_size 1.0
+			nose_angle 0.5
+			nost_height 0.5
+			nost_width 0.75
+			nose_tip 1.0			
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 2,3
+	}
+
+	npc_human_grunt
+	{
+		weight 0.1
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			head_w_min 0.25
+			neck_size 0.75
+			ears_height 0.5
+			jaw_depth 1.0
+			lowlip_size 1.0
+			uplip_size 1.0
+			nose_angle 0.5
+			nost_height 0.5
+			nost_width 0.75
+			nose_tip 1.0			
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 2,3
+	}
+
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			chin_butt 1.0
+			chin_width 0.5
+			head_height 0.5
+			head_w_max 0.25
+			ears_angle 1.0
+			ears_height 0.5
+			eyes_ang_min 0.25
+			eyes_height 0.5
+			jaw_depth 0.5
+			lowlip_size 1.0
+			uplip_size 0.5
+			mouth_w_min 0.5
+			nose_w_max 0.5
+			nose_angle 1.0
+			nost_height 1.0
+			nost_width 0.5
+			nose_tip 0.5
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine_02.mdl"
+		skin 3,5
+	}
+
+	npc_human_grunt
+	{
+		weight 0.1
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			chin_butt 1.0
+			chin_width 0.5
+			head_height 0.5
+			head_w_max 0.25
+			ears_angle 1.0
+			ears_height 0.5
+			eyes_ang_min 0.25
+			eyes_height 0.5
+			jaw_depth 0.5
+			lowlip_size 1.0
+			uplip_size 0.5
+			mouth_w_min 0.5
+			nose_w_max 0.5
+			nose_angle 1.0
+			nost_height 1.0
+			nost_width 0.5
+			nose_tip 0.5
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine_02.mdl"
+		skin 3,5
+	}
+
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			chin_butt 1.0
+			chin_width 0.50
+			chin_height 0.50
+			head_w_max 0.25
+			neck_size 0.75
+			ears_angle 0.5
+			ears_height 0.50
+			jaw_depth 0.75
+
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,1,6
+	}
+
+	npc_human_grunt
+	{
+		weight 0.1
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.5
+			chin_butt 1.0
+			chin_width 0.50
+			chin_height 0.50
+			head_w_max 0.25
+			neck_size 0.75
+			ears_angle 0.5
+			ears_height 0.50
+			jaw_depth 0.75
+
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,1,6
+	}
+
+	npc_human_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.75
+			neck_size 0.75
+			jaw_depth 0.5
+			mouth_w_min 0.25
+			nose_angle 0.5
+			nose_tip 0.5
+			hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine_02.mdl"
+		skin 2,4
+	}
+
+	npc_human_grunt
+	{
+		weight 0.1
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.75
+			neck_size 0.75
+			jaw_depth 0.5
+			mouth_w_min 0.25
+			nose_angle 0.5
+			nose_tip 0.5
+			hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine_02.mdl"
+		skin 2,4
+	}
+//////////////////////////////////////////////////////////
+/////////////npc_human_medic//////////////////////////////
+//////////////////////////////////////////////////////////
+	npc_human_medic
+	{
+		flex_data
+		{
+			brow_h 0.5
+			cheek_fat_max 0.5
+			chin_width 0.25
+			face_d_min 0.25
+			head_w_max 0.5
+			neck_size 0.5
+			ears_angle 0.5
+			ears_height 1.0
+			eyes_height 1.0
+			uplip_size 0.75
+			lowlip_size 0.75
+			nose_w_max 1.0
+			nose_angle 0.5
+			nose_d_max 0.5
+			nost_height 0.5
+			nost_width 0.5
+			nose_tip 1			
+		}
+		bodygroup_data
+		{
+			helmet_medic 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/marine_02.mdl"
+		skin 3,5
+	}
+
+	npc_human_medic
+	{
+		flex_data
+		{
+			brow_h 0.5
+			cheek_fat_min 1.0
+			chin_width 1.0
+			face_d_max 0.5
+			neck_size 0.5
+			ears_height 1.0
+			jaw_depth 0.5
+			nose_angle 1.0		
+		}
+		bodygroup_data
+		{
+			helmet_medic 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/marine_02.mdl"
+		skin 2,4
+	}
+
+	npc_human_medic
+	{
+		flex_data
+		{
+			brow_h 0.5
+			cheek_fat_max 0.5
+			face_d_min 1.0
+			head_w_min 0.5
+			neck_size 0.5
+			ears_height 1.0
+			eyes_ang_max 1.0
+			mouth_w_min 0.75
+			nose_w_max 0.75
+			nose_h_min 0.75
+			nose_tip 0.5
+		}
+		bodygroup_data
+		{
+			helmet_medic 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/marine.mdl"
+		skin 13,1
+	}
+
+	npc_human_medic
+	{
+		flex_data
+		{
+			brow_h 0.5
+			cheek_fat_max 0.5
+			chin_width 0.5
+			chin_height 0.5
+			head_height 1.0
+			head_w_max 0.5
+			neck_size 0.5
+			ears_angle 1.0
+			ears_height 1.0
+			jaw_depth 0.5
+			lowlip_size 0.5
+			uplip_size 0.5
+			mouth_w_min 0.5
+			nose_w_max 0.5
+			nose_angle 1.0
+			nost_height 1.0
+			nost_width 0.5
+			nose_tip 1.0
+		}
+		bodygroup_data
+		{
+			helmet_medic 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/marine.mdl"
+		skin 6,11
+	}
+
+//////////////////////////////////////////////////////////
+/////////////npc_human_grenadier//////////////////////////
+//////////////////////////////////////////////////////////
+	npc_human_grenadier
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+
+//////////////////////////////////////////////////////////
+/////////////SPECIFIC GRUNTS//////////////////////////////
+//////////////////////////////////////////////////////////
+	Grunt_NV
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a1a_assault01_hgrunt01
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a1a_assault01_hgrunt02
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	2nd_sqd_grunt1
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	2nd_sqd_grunt2
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	3nd_sqd_grunt2
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	4th_sqd_grunt1
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_attack_squad_02
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_attack_squad_03
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_attack_squad_04
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_office_squad_03
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_office_squad_04
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_arrival_squad_01
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_arrival_squad_02
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_lobby_squad_02
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2b_lobby_squad_04
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_backup_squad_01
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_backup_squad_02
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_vanguard_squad_02
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_vanguard_squad_04
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_rail_squad_02
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_rail_squad_03
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_launch_squad_03
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_launch_squad_04
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+	
+	c2a2c_launch_squad_05
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			gasmask_nv 1
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+
+	Grunt_gasmask
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+
+	c2a3a_ambush_grunt01
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.75
+			neck_size 0.75
+			jaw_depth 0.5
+			mouth_w_min 0.25
+			nose_angle 0.5
+			nose_tip 0.5
+			hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine_02.mdl"
+		skin 2,4
+	}
+	
+	grunt_01
+	{
+		flex_data
+		{
+			brow_h 1.0
+			cheek_fat_min 0.75
+			neck_size 0.75
+			jaw_depth 0.5
+			mouth_w_min 0.25
+			nose_angle 0.5
+			nose_tip 0.5
+			hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 1
+			packs_thigh 1
+		}
+		model "models/humans/masked_marine_02.mdl"
+		skin 2,4
+	}
+	
+	c2a3a_ambush_grunt
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}
+
+	grunt_02
+	{
+		flex_data
+		{
+			brow_h 1.0
+			neck_size 0.75
+		}
+		bodygroup_data
+		{
+			head 2
+			gloves 0,1
+			holster 1
+			packs_chest 0,1
+			packs_hips 0,1
+			packs_thigh 0,1
+		}
+		model "models/humans/masked_marine.mdl"
+		skin 0,2
+	}		
+
+//////////////////////////////////////////////////////////
+/////////////SPECIFIC SCIENTISTS//////////////////////////
+//////////////////////////////////////////////////////////
+
+//Sci_Welder_01
+	Sci_Welder_01
+	{
+		flex_data
+		{
+			cheek_fat_min 1.0
+			head_w_min .5
+			ears_height 1.0
+			lowlip_size 1.0
+			mouth_h_min 1.0
+			nose_w_max 1.0
+			nose_h_min 1.0
+			nose_angle 1.0
+			hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			glasses	7
+		}
+		skin 8
+	}
+//Sci_Welder_02
+	Sci_Welder_02
+	{
+		flex_data
+		{
+                         cheek_fat_min .5
+                         head_height 1.0
+                         head_w_min .5
+                         ears_angle 1.0
+                         ears_height 1.0
+                         mouth_w_max 1.0
+                         mouth_depth .5
+                         nose_w_max 1.0
+                         nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	7
+		}
+		skin 2
+	}
+
+
+//Sci_01
+	Sci01_lobby
+	{
+		flex_data
+		{
+			cheek_fat_max .5
+			chin_height .5
+			head_w_max .3
+			ears_angle .5
+			ears_height 1.0
+			eyes_height .3
+			eyes_size .2
+			jaw_depth .5
+			lowlip_size .5
+			uplip_size .75
+			mouth_w_max .75
+			nose_h_min .75
+			nost_height 1.0
+			nost_width 1.0
+			nose_tip .5
+                        hairline_puff 0.75
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 4
+	}
+//Sci_02
+	Sci02_lab04
+	{
+		flex_data
+		{
+
+		}
+		bodygroup_data
+		{
+
+		}
+		skin 0
+	}
+//Sci_03
+	Sci03_Lobby
+        {
+		flex_data
+		{
+			cheek_fat_max .5
+
+			head_w_max .0
+			neck_size .3
+			ears_height 1.0
+			eyes_ang_min .5
+			lowlip_size .5
+			uplip_size .7
+			mouth_w_max .7
+			mouth_h_max .5
+			nose_h_min .2
+			nose_angle .5
+			nost_height .7
+			nost_width .3
+			nose_tip .7
+			hairline_puff .75
+		}
+		bodygroup_data
+		{
+			glasses	5
+		}
+		skin 7
+	}
+//sci_04 Female
+	Sci04_SideOffice
+	{
+		flex_data
+		{
+
+		}
+
+		skin 0
+	}
+//Sci_05
+	Sci05_Lobby
+	{
+		flex_data
+		{
+			cheek_fat_min 1.0
+			head_w_min .5
+			ears_height 1.0
+			lowlip_size 1.0
+			mouth_h_min 1.0
+			nose_w_max 1.0
+			nose_h_min 1.0
+			nose_angle 1.0
+			hairline_puff 1.0
+		}
+		skin 8
+	}
+//Sci_06
+	Sci06_NetworkHallway
+	{
+		flex_data
+		{
+                         cheek_fat_min .5
+                         head_height 1.0
+                         head_w_min .5
+                         ears_angle 1.0
+                         ears_height 1.0
+                         mouth_w_max 1.0
+                         mouth_depth .5
+                         nose_w_max 1.0
+                         nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	4
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 1
+	}
+//Sci_07
+	Sci07_ResearchWing
+	{
+		flex_data
+		{
+                        cheek_depth .5
+                        cheek_fat_max .5
+                        chin_butt 1.0
+                        chin_width .5
+                        head_w_max 0.7
+                        ears_angle 1.0
+                        ears_height .5
+                        eyes_ang_min .5
+                        jaw_depth .5
+                        lowlip_size 1.0
+                        mouth_w_max .1
+                        mouth_h_min .4
+                        mouth_depth .3
+                        nose_w_min .5
+                        nose_angle .5
+                        nost_height .5
+                        nost_width .9
+                        nose_tip .5
+		}
+		bodygroup_data
+		{
+			glasses	2
+		}
+		skin 12
+	}
+//Sci_08
+	Sci08_NetworkRoom
+	{
+		flex_data
+		{
+                         cheek_fat_max .4
+                         chin_height .3
+                         head_w_max .9
+                         neck_size .5
+                         ears_angle 1.0
+                         lowlip_size 1.0
+                         uplip_size 1.0
+                         mouth_w_max .3
+                         mouth_h_min .3
+                         mouth_depth .5
+                         nose_w_min .3
+                         nose_h_max .3
+                         nose_angle .5
+                         nost_width 1.0
+		}
+		skin 2
+	}
+//Sci_09
+	Sci09_NetworkRoom
+	{
+		flex_data
+		{
+			eyes_size 0
+			cheek_fat_max 0.75
+			chin_width 0.75
+			chin_butt 0.5
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 6
+	}
+//Sci_10 female
+	Sci10_NetworkRoom
+	{
+		flex_data
+		{
+			neck_size 1.0
+			lowlip_size 0.5
+			mouth_h_min 1.0
+			nose_h_min 1.0
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		bodygroup_data
+		{
+			hair	3
+		}
+		skin 2
+	}
+//Sci_11
+	Sci11_NetworkRoom
+	{
+		flex_data
+		{
+
+		}
+		bodygroup_data
+		{
+			glasses	6
+		}
+		skin 9
+	}
+//Sci_12
+	Sci12_GmanRoom
+	{
+		flex_data
+		{
+                         chin_butt 1.0
+                         chin_width 1.0
+                         chin_height .3
+                         head_height 1.0
+                         head_w_min .25
+                         ears_angle 1.0
+                         ears_height 1.0
+                         eyes_ang_min .7
+                         eyes_size .3
+                         lowlip_size .5
+                         uplip_size .5
+                         nose_h_min 1.0
+                         nose_angle .5
+                         nose_tip .5
+		}
+		skin 1
+	}
+//Sci_13
+	Sci13_Research
+	{
+		flex_data
+		{
+
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 7
+	}
+//Sci_14 female
+	Sci14_Research
+	{
+		flex_data
+		{
+			chin_height 1.0
+			ears_angle 0.5
+			ears_height 0.75
+			eyes_height 0.5
+			jaw_depth 0.5
+			mouth_depth 0.5
+			nose_h_max 1.0
+			nose_angle 0.5
+			nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	2
+			hair 2
+		}
+		skin 1
+	}
+
+//Sci_15
+	Sci15_Truman
+        {
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			glasses	6
+		}
+		skin 14
+	}
+//Sci_16
+	Sci16_Breakroom
+	{
+		flex_data
+		{
+                         cheek_fat_min .9
+		}
+		bodygroup_data
+		{
+			glasses	6
+		}
+		skin 3
+	}
+//Sci_17
+	Sci17_Locker
+	{
+		flex_data
+		{
+			chin_width 1.0
+			ears_angle 1.0
+			jaw_depth 1.0
+			lowlip_size 1.0
+			mouth_w_max 0.5
+			mouth_h_min 0.5
+			mouth_depth 0.5
+			nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	4
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 3
+	}
+//Sci_18
+	Sci18_Bathroom
+	{
+		flex_data
+		{
+                         cheek_depth 1.0
+                         cheek_fat_max 1.0
+                         neck_size .5
+                         ears_angle 1.0
+                         ears_height 1.0
+                         uplip_size 1.0
+                         mouth_w_min .5
+                         mouth_depth 1.0
+                         nose_h_max .6
+                         nose_angle .6
+                         nost_width .6
+		}
+		bodygroup_data
+		{
+			glasses	2
+		}
+		skin 0
+	}
+//Sci_19
+	Sci19_Bathroom
+	{
+		flex_data
+		{
+			cheek_fat_min 0.7
+			head_w_max .5
+			ears_angle 1.0
+			mouth_w_max .7
+			nose_h_max .3
+			nose_angle 1.0
+			nost_width 1.0
+		}
+		skin 10
+	}
+//Sci_20
+	Sci20_lab01
+	{
+		flex_data
+		{
+                         cheek_depth .4
+                         cheek_fat_min .5
+                         chin_butt .5
+                         chin_width .5
+                         chin_height .8
+                         head_height .5
+                         head_w_min .5
+                         ears_angle 1.0
+                         eyes_ang_min .4
+                         uplip_size .3
+                         mouth_w_min .3
+                         mouth_h_min .5
+                         mouth_depth .4
+                         nose_w_min 1.0
+                         nose_w_max 1.0
+                         nose_h_min .3
+                         nose_h_max .3
+                         nose_angle .3
+                         nost_width .3
+                         hairline_puff .75
+		}
+		skin 9
+	}
+//Sci_21
+	Sci21_lab01
+	{
+		flex_data
+		{
+			cheek_fat_min 0.8
+			chin_butt .7
+			face_d_max .25
+			head_height .95
+			head_w_min .0
+			ears_angle .7
+			ears_height .7
+			eyes_ang_min 1.0
+			eyes_height .5
+			jaw_depth .7
+			lowlip_size 1.0
+			uplip_size .6
+			mouth_w_max 1.0
+			mouth_h_min .5
+			nose_w_max .5
+			nose_h_max .5
+			nose_angle .5
+			nose_d_max 1.0
+			nost_width 1.0
+			hairline_puff .75
+		}
+		bodygroup_data
+		{
+			glasses	6
+		}
+		skin 7
+	}
+//Sci_22 Female
+	Sci22_lab01
+	{
+		flex_data
+		{
+			eyes_ang_min 0.4
+			eyes_height 0.2
+			nose_w_min 0.2
+			nose_h_max 0.3
+			nose_tip 0.2
+			nose_d_max 0.3
+			nose_angle 0.2
+			nost_width 0.1
+			mouth_h_max 0.3
+			mouth_w_min 0.3
+			face_d_min 0.2
+			jaw_depth 0.2
+		}
+		bodygroup_data
+		{
+			hair 2
+		}
+		bodygroup_data
+		{
+			glasses	4
+		}
+		skin 1
+	}
+//Sci_23
+	Sci23_lab02
+	{
+		flex_data
+		{
+                         cheek_fat_max .4
+                         chin_height .3
+                         head_w_max .5
+                         neck_size .5
+                         ears_angle 1.0
+                         eyes_height .5
+                         lowlip_size .5
+                         uplip_size 1.0
+                         mouth_w_max .3
+                         mouth_h_min .3
+                         mouth_depth .5
+                         nose_w_min .3
+                         nose_h_max .3
+                         nose_angle .5
+                         nost_width 1.0
+		}
+		skin 5
+	}
+
+SCI23_Bathroom
+{
+		flex_data
+		{
+                         cheek_fat_max .4
+                         chin_height .3
+                         head_w_max .5
+                         neck_size .5
+                         ears_angle 1.0
+                         eyes_height .5
+                         lowlip_size .5
+                         uplip_size 1.0
+                         mouth_w_max .3
+                         mouth_h_min .3
+                         mouth_depth .5
+                         nose_w_min .3
+                         nose_h_max .3
+                         nose_angle .5
+                         nost_width 1.0
+		}
+		skin 5
+	}
+//Sci_24
+	Sci24_lab03
+	{
+		flex_data
+		{
+                         cheek_depth .5
+                         cheek_fat_min .5
+                         chin_width .6
+                         chin_height .6
+                         face_d_max .8
+                         head_height .5
+                         head_w_min .6
+                         neck_size .6
+                         ears_angle .6
+                         eyes_ang_min .4
+                         lowlip_size 1.0
+                         uplip_size 1.0
+                         mouth_w_min .5
+                         mouth_h_max .8
+                         nose_h_max 1.0
+                         nost_height .5
+                         nost_width .5
+                         nose_tip 1.0
+                         hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 5
+	}
+//Sci_25 Female
+	Sci25_Lab04
+	{
+		flex_data
+		{
+                         ears_angle 1.0
+		}
+		bodygroup_data
+		{
+			glasses	5
+		}
+		skin 0
+	}
+//Sci_26
+	Sci26_DevHall
+	{
+		flex_data
+		{
+                         chin_butt .5
+                         chin_width .5
+                         face_d_max 1.0
+                         head_height 1.0
+                         ears_angle 1.0
+                         ears_height 1.0
+                         eyes_ang_max .5
+                         jaw_depth .4
+                         lowlip_size .7
+                         uplip_size .7
+                         mouth_w_max .2
+                         mouth_h_min .2
+                         nose_h_min .4
+                         nost_width .5
+                         nose_tip .7
+		}
+		skin 0
+	}
+//Sci_27
+	Sci27_TVroom
+	{
+		flex_data
+		{
+                         brow_h 0.3
+                         cheek_fat_max .7
+                         chin_width 1.0
+                         chin_height 1.0
+                         neck_size 1.0
+                         ears_angle .5
+                         uplip_size 1.0
+			 lowlip_size 1.0
+                         nose_w_max 1.0
+                         nose_h_max 0.5
+                         nose_tip 1.0
+                         hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			glasses	2
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 4
+	}
+//Sci_28
+	Sci28_Lab05
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			glasses	6
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 6
+	}
+//Sci_29
+	Sci29_Lab05
+	{
+		flex_data
+		{
+			cheek_fat_min .3
+			chin_butt .7
+			face_d_max .25
+			head_height .75
+			head_w_min .4
+			ears_angle .7
+			ears_height .7
+			eyes_ang_min .5
+			eyes_height .5
+			jaw_depth .7
+			lowlip_size 1.0
+			uplip_size .6
+			mouth_w_max 1.0
+			mouth_h_min .5
+			nose_w_max .5
+			nose_h_max .5
+			nose_angle .5
+			nose_d_max 1.0
+			nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	4
+		}
+		skin 6
+	}
+//Sci_30 Female
+	Sci30_Lab05
+	{
+		flex_data
+		{
+                        cheek_fat_min 1.0
+			chin_width 1.0
+			ears_angle 1.0
+			eyes_ang_min 0.4
+			uplip_size 1.0
+			mouth_h_min 1.0
+			nose_h_max 1.0
+
+		}
+		bodygroup_data
+		{
+			hair	4
+		}
+		skin 2
+	}
+//Sci_31
+	Sci31_Generator
+	{
+		flex_data
+		{
+                         cheek_fat_max .5
+                         head_w_max .5
+                         neck_size .4
+                         ears_angle 1.0
+                         lowlip_size 1.0
+                         mouth_w_max .5
+                         mouth_h_max 1.0
+                         mouth_depth .9
+                         nose_h_max 1.0
+                         nost_width 1.0
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 5
+	}
+//Sci_32
+	Sci32_Generator
+	{
+		flex_data
+		{
+			neck_size .5
+			ears_angle .5
+			ears_height .5
+			eyes_height .25
+			lowlip_size .25
+			uplip_size .25
+			mouth_h_min .7
+			mouth_depth .7
+			nose_angle 1.0
+			nost_width .5
+			nose_tip 1.0
+			hairline_puff 1.0
+		}
+		skin 8
+	}
+//Sci_34
+	Sci34_Laser
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			glasses	5
+		}
+		skin 11
+	}
+//Sci_35
+	Sci35_Laser
+	{
+		flex_data
+		{
+                         cheek_depth .4
+                         cheek_fat_min .5
+                         chin_width .5
+                         head_w_min .5
+                         uplip_size .3
+                         mouth_w_min .3
+                         mouth_h_min .5
+                         mouth_depth .4
+                         nose_w_min 1.0
+                         nose_w_max 1.0
+                         nose_h_min .3
+                         nose_h_max .3
+                         nose_angle .3
+                         nost_width .3
+                         hairline_puff .75
+		}
+		skin 5
+	}
+//Sci_36
+	Sci36_Ionization
+	{
+		flex_data
+		{
+			ears_angle 1.0
+			eyes_size 0.25
+			lowlip_size 1.0
+			mouth_h_min 0.2
+			mouth_depth 1.0
+			nose_w_max 1.0
+			nose_h_min 0.5
+			nose_angle 1.0
+			nose_d_max .5
+			nost_height .7
+			nost_width .5
+		}
+		skin 1
+	}
+//Sci_37
+	Sci37_Ionization
+	{
+		flex_data
+		{
+			cheek_fat_min 1.0
+			head_height 1.0
+			neck_size 1.0
+			ears_height 1.0
+			eyes_height 1.0
+			lowlip_size 1.0
+			mouth_w_min .5
+			mouth_h_min 1.0
+			nose_tip 1.0
+		}
+		bodygroup_data
+		{
+			glasses	3
+		}
+		skin 10
+	}
+//sci_38
+	Sci38_Ionization
+	{
+		flex_data
+		{
+		         cheek_depth 1.0
+		         cheek_fat_max .8
+		         chin_butt .5
+		         chin_width .4
+		         chin_height .4
+		         head_height .25
+		         head_w_max .8
+		         neck_size .4
+		         ears_height .3
+		         eyes_ang_min .3
+		         lowlip_size 0.5
+		         uplip_size 0.5
+		         mouth_w_min .5
+		         nose_h_min .3
+		         nose_d_max .3
+		         nost_height 0.5
+		         nost_width .2
+		}
+		skin 11
+	}
+//sci_39
+	Sci39_Ionization
+	{
+		flex_data
+		{
+			cheek_depth .3
+			cheek_fat_max .8
+			chin_width .7
+			chin_height .7
+			neck_size .4
+			lowlip_size .5
+			uplip_size 1.0
+			mouth_w_max .7
+			mouth_depth .3
+			nose_h_max .5
+			nose_angle .9
+			nose_d_max .9
+			nost_height .9
+			nost_width .5
+		}
+		bodygroup_data
+		{
+			glasses	3
+		}
+		skin 12
+	}
+//Sci_40
+	Sci40
+	{
+		flex_data
+		{
+			cheek_depth .3
+			cheek_fat_max .8
+			chin_width .7
+			chin_height .7
+			neck_size .4
+			lowlip_size .5
+			uplip_size 1.0
+			mouth_w_max .7
+			mouth_depth .3
+			nose_h_max .5
+			nose_angle .9
+			nose_d_max .9
+			nost_height .9
+			nost_width .5
+			hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			glasses	3
+		}
+		skin 7
+	}
+//Sci_41
+	Sci41
+	{
+		flex_data
+		{
+			cheek_fat_max .3
+			chin_butt .7
+			chin_height 1.0
+			head_height .8
+			head_w_min 1.0
+			ears_angle 1.0
+			ears_height .8
+			lowlip_size .3
+			uplip_size .3
+			mouth_w_max .3
+			mouth_h_min 1.0
+			mouth_depth .5
+			nose_h_min 1.0
+			nose_angle .5
+			nost_width .3
+			nose_tip 1.0
+			hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			glasses	2
+		}
+		skin 8
+	}
+//Sci_42
+	Sci42
+	{
+		flex_data
+		{
+			hairline_puff 0.75
+		}
+		skin 4
+	}
+//Sci_43
+	Sci43_Plasma
+	{
+		flex_data
+		{
+                         cheek_fat_max .5
+                         head_w_max .5
+                         neck_size .4
+                         ears_angle 1.0
+                         lowlip_size 1.0
+                         mouth_w_max .5
+                         mouth_h_max 1.0
+                         mouth_depth .9
+                         nose_h_max 1.0
+                         nost_width 1.0
+                         nose_tip 1.0
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 10
+	}
+//Sci_43a
+	Sci43a
+	{
+		flex_data
+		{
+			cheek_fat_min 0.5
+			chin_butt 0.5
+			chin_width 0.5
+			chin_height 0.5
+			head_w_min 0.5
+			ears_angle 0.5
+			ears_height 0.5
+			jaw_depth 0.5
+			lowlip_size 0.5
+			uplip_size 0.5
+
+		}
+		bodygroup_data
+		{
+			glasses	5
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 2
+	}
+//Sci_44
+	Sci44_TCHallway
+	{
+		flex_data
+		{
+                         cheek_fat_max .3
+                         chin_butt 1.0
+                         chin_width .6
+                         chin_height .6
+                         head_height .8
+                         head_w_min .6
+                         neck_size .4
+                         ears_height 1.0
+                         eyes_ang_min .4
+                         lowlip_size .8
+                         mouth_w_max .5
+                         mouth_depth .2
+                         nose_w_max .5
+                         nose_h_max .5
+                         nose_angle .5
+                         nost_height .8
+                         nost_width 1.0
+                         nose_tip .8
+                         hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 9
+	}
+//Sci_45
+	Sci45_TCHallway
+	{
+		flex_data
+		{
+                         cheek_fat_min 1.0
+                         chin_butt 1.0
+                         chin_width .6
+                         face_d_min .6
+                         head_height 1.0
+                         ears_angle 1.0
+                         jaw_depth .5
+                         lowlip_size 1.0
+                         mouth_w_min .5
+                         mouth_h_min .6
+                         nose_w_min .5
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 2
+	}
+	Sci46_TCHallway 
+	{
+		flex_data
+		{
+			neck_size 1.0
+			lowlip_size 0.5
+			mouth_h_min 1.0
+			nose_h_min 1.0
+		}
+		bodygroup_data
+		{
+			glasses	2
+		}
+		bodygroup_data
+		{
+			hair	3
+		}
+		skin 2
+	}
+//sci_47
+	Sci47_TCHallway
+	{
+		flex_data
+		{
+			cheek_fat_min 0.8
+			chin_butt .7
+			face_d_max .25
+			head_height .95
+			head_w_min .0
+			ears_angle .7
+			ears_height .7
+			eyes_ang_min 1.0
+			eyes_height .5
+			jaw_depth .7
+			lowlip_size 1.0
+			uplip_size .6
+			mouth_w_max 1.0
+			mouth_h_min .5
+			nose_w_max .5
+			nose_h_max .5
+			nose_angle .5
+			nose_d_max 1.0
+			nost_width 1.0
+			hairline_puff .75
+		}
+		bodygroup_data
+		{
+			glasses	6
+		}
+		skin 7
+	}
+//Sci_48
+	Sci48_TCHallway
+	{
+		flex_data
+		{
+                        brow_h .8
+			chin_width 1.0
+			chin_height .8
+			head_height .8
+			head_w_max .2
+			neck_size .5
+			ears_height .8
+			eyes_ang_max .2
+			eyes_height .5
+			jaw_depth 1.0
+			uplip_size 1.0
+			mouth_w_min .4
+			nose_h_max .5
+			nose_angle 1.0
+			nose_tip .5
+		}
+		skin 7
+	}
+
+//Sci49
+	Sci49_TChamberFoyer
+	{
+		flex_data
+		{
+                        chin_width 1.0
+			chin_height 1.0
+			head_height 1.0
+			head_w_min 0.5
+			neck_size 0.5
+			mouth_w_max 0.5
+			mouth_h_min 1.0
+			nose_h_min 1.0
+			nost_width 0.5
+			nose_tip 0.5
+			hairline_puff 1.0
+		}
+		skin 8
+	}
+
+//Sci_50
+	Sci50_TChamberFoyer
+	{
+		flex_data
+		{
+			neck_size .5
+			ears_angle .5
+			ears_height .5
+			eyes_height .25
+			lowlip_size .25
+			uplip_size .25
+			mouth_h_min .7
+			mouth_depth .7
+			nose_angle 1.0
+			nost_width .5
+			nose_tip 1.0
+		}
+		bodygroup_data
+		{
+			glasses	6
+		}
+		skin 12
+	}
+
+SCI05_Transmission
+{
+		flex_data
+		{
+		cheek_fat_min .7
+		chin_butt 0.8
+		chin_width 0.4
+		head_w_min .1
+		neck_size .6
+		ears_height .5
+		jaw_depth .0
+		lowlip_size 1.0
+		uplip_size 1.0
+		mouth_w_max .3
+		mouth_h_min .0
+		mouth_depth .5
+		nose_w_max .2
+		nose_angle 0.4
+		nost_width 1.0
+		nose_tip .5
+		hairline_puff 0
+		}
+		bodygroup_data
+		{
+			glasses	4
+		}
+		skin 8
+
+	}
+
+SCI03
+{
+		flex_data
+		{
+		cheek_fat_min .7
+		chin_butt 0.8
+		chin_width 0.4
+		head_w_min .1
+		neck_size .1
+		ears_height .5
+		jaw_depth .0
+		lowlip_size 1.0
+		uplip_size 1.0
+		mouth_w_max .3
+		mouth_h_min .0
+		mouth_depth .5
+		nose_w_max .2
+		nose_angle 0.4
+		nost_width .4
+		nose_tip .2
+		hairline_puff 1
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 10
+	}
+SCI04
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			glasses	2
+			hair	3
+		}
+
+		skin 2
+	}
+//////////////////////////////////////////////////////////
+/////////////SPECIFIC GUARDS//////////////////////////////
+//////////////////////////////////////////////////////////
+	GRD00_Door
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			helmet	0
+			chest 2
+			holster 1
+		}
+		skin 1
+	}
+	GRD01_Checkpoint
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			helmet	1
+			chest 1
+		}
+		skin 9
+	}
+	GRD02_Lobby
+	{
+		flex_data
+		{
+
+                }
+		bodygroup_data
+		{
+			helmet	1
+			chest 2
+			holster 0
+			flashlight 0
+		}
+		skin 6
+	}
+	GRD03_NetworkRoom
+	{
+		flex_data
+		{
+		cheek_fat_max .3
+		chin_butt 1.0
+		chin_width 1.0
+		head_w_min .5
+		neck_size .5
+		ears_height .5
+		jaw_depth .5
+		lowlip_size 1.0
+		uplip_size 1.0
+		mouth_w_max .3
+		mouth_h_min .3
+		mouth_depth .9
+		nose_w_max .3
+		nose_angle 1.0
+		nost_width .3
+		nose_tip .5
+		hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			helmet	1
+			chest 0
+			holster 0
+			flashlight 0
+		}
+		model "models/humans/guard_02.mdl"
+		skin 4
+	}
+	GRD04_Coolant
+	{
+		flex_data
+		{
+		chin_butt .2
+		chin_width .5
+		face_d_max .8
+		head_w_min .4
+		neck_size .3
+		ears_angle .9
+		eyes_ang_min .6
+		lowlip_size .6
+		mouth_w_min .3
+		mouth_w_max .5
+		mouth_depth .9
+		nose_angle .3
+		nost_height .8
+		nose_tip .9
+		hairline_puff .9
+		}
+		bodygroup_data
+		{
+			helmet	0
+			chest 1
+			holster 1
+			flashlight 1
+		}
+		skin 8
+	}
+	GRD05_BreakRoom
+	{
+		flex_data
+		{
+		brow_h 0.5
+		cheek_fat_min .4
+		chin_width .3
+		chin_height .3
+		face_d_max .2
+		head_height .5
+		head_w_max .5
+		neck_size .5
+		ears_height .5
+		lowlip_size 1.0
+		mouth_w_max .5
+		mouth_h_max .5
+		mouth_depth .9
+		nose_h_max .8
+		nose_angle .9
+		nose_d_max .9
+		nost_width .8
+		nose_tip .8
+		}
+		bodygroup_data
+		{
+			helmet	1
+			chest 2
+			holster 1
+			flashlight 1
+		}
+		skin 10
+	}
+	GRD06_DevHall
+	{
+		flex_data
+		{
+		brow .5
+                cheek_depth 1.0
+                cheek_fat_max .3
+                cheek_fat_min .8
+                chin_butt .5
+                chin_width .5
+                head_height .5
+                head_w_min 0.8
+                neck_size .5
+                ears_angle .8
+                ears_height .4
+                jaw_depth 1.0
+                lowlip_size .4
+                uplip_size .4
+                mouth_w_max 1.0
+                mouth_depth .2
+                nose_w_min .2
+                nose_h_min .2
+                nose_h_max 1.0
+                nose_angle .5
+                nose_d_max .8
+                nost_width 1.0
+                nose_tip .8
+		}
+		bodygroup_data
+		{
+			helmet	1
+			chest 2
+			holster 1
+			flashlight 1
+		}
+		skin 2
+	}
+	GRD07_Laser
+	{
+		flex_data
+		{
+		cheek_depth 1.0
+		chin_width .8
+		chin_height 1.0
+		head_w_min .3
+		neck_size .5
+		ears_height .2
+		eyes_ang_min .5
+		jaw_depth .8
+		lowlip_size .8
+		uplip_size 1.0
+		mouth_w_min .5
+		nose_w_min .5
+		nose_angle .3
+		nose_d_max .8
+		hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			helmet	0
+			chest 2
+			holster 1
+			flashlight 1
+		}
+		skin 5
+	}
+	GRD08_TChallway
+	{
+		flex_data
+		{
+		brow .5
+		cheek_depth .8
+		chin_butt .5
+		chin_width .2
+		chin_height .5
+		face_d_max .5
+		head_height .9
+		head_w_min .3
+		neck_size .5
+		ears_angle .8
+		ears_height .1
+		jaw_depth .8
+		lowlip_size .2
+		uplip_size .2
+		mouth_w_max .5
+		mouth_h_min .5
+		mouth_depth .3
+		nose_h_max .2
+		nose_angle .5
+		nose_d_max .9
+		nost_height .2
+		nost_width .8
+		}
+		bodygroup_data
+		{
+			helmet	0
+			chest 1
+			holster 1
+			flashlight 0
+		}
+		skin 13
+	}
+	Grd01_Storage
+	{
+		flex_data
+		{
+		brow .5
+		cheek_depth .8
+		chin_butt .5
+		chin_width .2
+		chin_height .5
+		face_d_max .5
+		head_height .9
+		head_w_min .3
+		neck_size .5
+		ears_angle .8
+		ears_height .1
+		jaw_depth .8
+		lowlip_size .2
+		uplip_size .2
+		mouth_w_max .5
+		mouth_h_min .5
+		mouth_depth .3
+		nose_h_max .2
+		nose_angle .5
+		nose_d_max .9
+		nost_height .2
+		nost_width .8
+		}
+		bodygroup_data
+		{
+			helmet	0
+			chest 1
+			holster 1
+			flashlight 0
+		}
+		skin 13
+	}
+	GRD01_PowerUpControl
+	{
+		flex_data
+		{
+		cheek_fat_max 0.67
+		chin_width 0.5
+		chin_height 0.5
+		face_d_max 0.25
+		head_w_max 0.33
+		neck_size 0.5
+		ears_angle 0.5
+		ears_height 0.33
+		jaw_depth 0.25
+		lowlip_size 0.75
+		uplip_size 0.75
+		mouth_w_min 1.0
+		nost_width 0.5
+		nose_tip 0.5
+		right_inner_raiser 0.75
+		left_inner_raiser 0.75
+		blink 0.25
+		}
+		bodygroup_data
+		{
+		body 1
+		helmet 1
+		chest 2
+		holster 1
+		flashlight 1
+		}
+		model "models/humans/guard_hurt.mdl"
+		skin 1
+	}
+	c2a1a_brown
+	{
+		flex_data
+		{
+		cheek_fat_min 0.67
+		chin_butt 1
+		chin_width 0.33
+		chin_height 0.5
+		face_d_max 0.33
+		head_w_max 0.33
+		neck_size 0.5
+		ears_height 0.5
+		jaw_depth 0.5
+		mouth_w_min 0.5
+		mouth_depth 0.25
+		nose_w_min 0.67
+		nost_width 0.5
+		nose_tip 0.5
+		}
+		bodygroup_data
+		{
+			body 1
+			helmet	1
+			chest 1
+			holster 1
+			flashlight 1
+		}
+		skin 9
+	}
+	GRD02
+	{
+		flex_data
+		{
+		brow .5
+                cheek_depth 1.0
+                cheek_fat_max .3
+                cheek_fat_min .8
+                chin_butt .5
+                chin_width .5
+                neck_size .5
+                ears_angle .8
+                ears_height .4
+                jaw_depth 1.0
+                lowlip_size .4
+                uplip_size .4
+                mouth_w_max 1.0
+                mouth_depth .2
+                nose_w_min .2
+                nose_h_min .2
+                nose_h_max 1.0
+                nose_angle .5
+                nose_d_max .8
+                nost_width 1.0
+                nose_tip .8
+		}
+		bodygroup_data
+		{
+			body 1
+			helmet	1
+			chest 2
+			holster 3
+			flashlight 1
+		}
+		skin 2
+	}
+	grd02_dead
+	{
+		flex_data
+		{
+		brow .5
+                cheek_depth 1.0
+                cheek_fat_max .3
+                cheek_fat_min .8
+                chin_butt .5
+                chin_width .5
+                neck_size .5
+                ears_angle .8
+                ears_height .4
+                jaw_depth 1.0
+                lowlip_size .4
+                uplip_size .4
+                mouth_w_max 1.0
+                mouth_depth .2
+                nose_w_min .2
+                nose_h_min .2
+                nose_h_max 1.0
+                nose_angle .5
+                nose_d_max .8
+                nost_width 1.0
+                nose_tip .8
+		}
+		bodygroup_data
+		{
+			body 1
+			helmet	1
+			chest 2
+			holster 2
+			flashlight 1
+		}
+		skin 2
+	}
+GRD01_lookdown
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			helmet	1
+			chest 0
+		}
+		skin 6
+	}
+GRD02_chopper
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			helmet	0
+			chest 2
+			holster 2
+			flashlight 1
+		}
+		skin 6
+	}
+GRD03_control
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			helmet	0
+			chest 2
+			holster 2
+			flashlight 1
+		}
+		skin 10
+	}
+
+GRD02_Shack
+	{
+		flex_data
+		{
+                         brow_h 0.3
+			 head_w_max 0.5
+                         cheek_fat_max .7
+                         chin_width 1.0
+                         neck_size 1.0
+                         ears_angle .5
+                         uplip_size 1.0
+			 lowlip_size 1.0
+                         nose_w_max 1.0
+                         nose_h_max 0.5
+                         nose_tip 1.0
+                         hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			helmet 1
+			chest 2
+			holster 1
+			flashlight 0,1
+		}
+		model "models/humans/guard.mdl"
+		skin 4
+	}
+	
+GRD02_Shack_DeathGuy
+	{
+		flex_data
+		{
+                         brow_h 0.3
+			 head_w_max 0.5
+                         cheek_fat_max .7
+                         chin_width 1.0
+                         neck_size 1.0
+                         ears_angle .5
+                         uplip_size 1.0
+			 lowlip_size 1.0
+                         nose_w_max 1.0
+                         nose_h_max 0.5
+                         nose_tip 1.0
+                         hairline_puff 1.0
+		}
+		bodygroup_data
+		{
+			body 1
+			helmet 1
+			chest 2
+			holster 2
+			flashlight 0,1
+		}
+		model "models/humans/guard_hurt.mdl"
+		skin 4
+	}	
+
+GRD04_walkpast
+	{
+		flex_data
+		{
+			cheek_fat_max 0.67
+			chin_butt 0.5
+			chin_width 0.5
+			chin_height 0.5
+			head_w_max 0.5
+			neck_size 1
+			ears_angle 0.5
+			eyes_height 0.5
+			jaw_depth 0.25
+			lowlip_size 0.75
+			uplip_size 0.75
+			mouth_w_min 0.33
+			mouth_h_max 0.25
+			nose_w_max 0.67
+			nose_h_min 0.67
+			nose_angle 0.25
+			nost_height 0.67
+			nose_width 0.33
+			nose_tip 0.33
+			hairline_puff 0.25
+		}
+		bodygroup_data
+		{
+			helmet	1
+			chest 2
+		}
+		model "models/humans/guard_02.mdl"
+		skin 5
+	}
+
+//////////////////////////////////////////////////////////
+/////////////SPECIFIC Characters_WGH//////////////////////
+//////////////////////////////////////////////////////////
+//SCI02_SiloDoorsController
+	SCI02_SiloDoorsController
+	{
+		bodygroup_data
+		{
+			glasses 2, 3, 4, 6, 7
+		}
+	}
+//////////////////////////////////////////////////////////
+/////////////SPECIFIC Characters_APPR/////////////////////
+//////////////////////////////////////////////////////////
+//SCI01_ChallengerDeep
+	SCI01_Icthy
+	{
+		model "models/humans/scientist_hurt.mdl"
+	}
+
+//SCI02_Cryo
+	SCI02_Cryo
+	{
+		model "models/humans/scientist_hurt.mdl"
+	}
+//////////////////////////////////////////////////////////
+/////////////SPECIFIC Characters_QE///////////////////////
+//////////////////////////////////////////////////////////
+	GRD01_Office
+	{
+		flex_data
+		{
+		cheek_fat_max .3
+		chin_butt 0.2
+		chin_width 0.4
+		head_w_min .5
+		neck_size .5
+		ears_height .5
+		jaw_depth .5
+		lowlip_size 1.0
+		uplip_size 1.0
+		mouth_w_max .3
+		mouth_h_min .3
+		mouth_depth .9
+		nose_w_max .4
+		nose_angle 0.4
+		nost_width 1.0
+		nose_tip .5
+		hairline_puff 0
+		}
+		bodygroup_data
+		{
+			helmet	0
+			chest 2
+			holster 1
+			flashlight 0
+		}
+		model "models/humans/guard_02.mdl"
+		skin 2
+	}
+	SCI01_Surgery
+	{
+		flex_data
+		{
+		cheek_fat_min .5
+		chin_butt 0.6
+		chin_width 0.4
+		head_w_min .1
+		neck_size .5
+		ears_height .5
+		jaw_depth .0
+		lowlip_size 1.0
+		uplip_size 1.0
+		mouth_w_max .3
+		mouth_h_min .0
+		mouth_depth .5
+		nose_w_max .4
+		nose_angle 0.4
+		nost_width 1.0
+		nose_tip .5
+		hairline_puff 0
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 12
+	}
+//Sci02_Surgery female
+	SCI02_Surgery
+	{
+		flex_data
+		{
+		}
+		bodygroup_data
+		{
+			glasses	6
+			hair	4
+		}
+		skin 5
+	}
+	SCI03_Surgery
+	{
+		flex_data
+		{
+		cheek_fat_min .5
+		chin_butt 0.6
+		chin_width 0.4
+		head_w_min .1
+		neck_size .5
+		ears_height .5
+		jaw_depth .0
+		lowlip_size 1.0
+		uplip_size 1.0
+		mouth_w_max .3
+		mouth_h_min .0
+		mouth_depth .5
+		nose_w_max .4
+		nose_angle 0.4
+		nost_width 1.0
+		nose_tip .5
+		hairline_puff 0
+		}
+		bodygroup_data
+		{
+			glasses	2
+		}
+		skin 6
+	}
+//////////////////////////////////////////////////////////
+/////////////SPECIFIC Characters_ST///////////////////////////
+//////////////////////////////////////////////////////////
+//SCI01_Ordnance
+	SCI01_Ordnance
+	{
+	model "models/humans/scientist_hurt.mdl"	
+	}
+
+	h_hangar_guard
+	{
+		flex_data
+		{
+		eyes_ang_max 0.1
+		cheek_fat_min 0.3
+		chin_butt 0.7
+		chin_width 0.5
+		head_w_max 0.3
+		neck_size .3
+		ears_height 0.0
+		ears_angle 0.5
+		jaw_depth 0.4
+		lowlip_size 0.4
+		uplip_size 1.0
+		mouth_w_max .2
+		mouth_h_min .0
+		mouth_depth .3
+		nose_w_max 0.0
+		nose_angle 0.1
+		nost_width 0.3
+		nose_tip .5
+		hairline_puff 0
+                }
+		bodygroup_data
+		{
+			helmet	1
+			chest 1
+			holster 1
+			flashlight 1
+		}
+		skin 0
+	}
+
+	GRD02_HiveHand
+	{
+		flex_data
+		{
+		eyes_ang_max 0.1
+		cheek_fat_min 0.3
+		chin_butt 0.7
+		chin_width 0.5
+		head_w_max 0.3
+		neck_size .3
+		ears_height 0.0
+		ears_angle 0.5
+		jaw_depth 0.4
+		lowlip_size 0.4
+		uplip_size 1.0
+		mouth_w_max .2
+		mouth_h_min .0
+		mouth_depth .3
+		nose_w_max 0.0
+		nose_angle 0.1
+		nost_width 0.3
+		nose_tip .5
+		hairline_puff 0
+                }
+		bodygroup_data
+		{
+			helmet	1
+			chest 1
+			holster 1
+			flashlight 0
+		}
+		skin 1
+	}
+
+	c2a5f_barney
+	{
+		flex_data
+		{
+		eyes_ang_max 0.1
+		cheek_fat_min 0.3
+		chin_butt 0.7
+		chin_width 0.5
+		head_w_max 0.3
+		neck_size .3
+		ears_height 0.0
+		ears_angle 0.5
+		jaw_depth 0.4
+		lowlip_size 0.4
+		uplip_size 1.0
+		mouth_w_max .2
+		mouth_h_min .0
+		mouth_depth .3
+		nose_w_max 0.0
+		nose_angle 0.1
+		nost_width 0.3
+		nose_tip .5
+		hairline_puff 0
+                }
+		bodygroup_data
+		{
+			helmet	1
+			chest 1
+			holster 1
+			flashlight 0
+		}
+		model "models/humans/guard_02.mdl"
+		skin 2
+	}		
+
+//////////////////////////////////////////////////////////
+/////////////SPECIFIC Characters_LC///////////////////////////
+//////////////////////////////////////////////////////////
+	SCI02_gluongun
+	{
+		flex_data
+		{
+		cheek_fat_max .8
+		chin_butt 0.6
+		chin_width 0.4
+		head_w_max .3
+		neck_size .5
+		jaw_depth .0
+		lowlip_size 1.0
+		uplip_size 0.0
+		mouth_w_max .2
+		mouth_depth .5
+		nose_w_min .4
+		nose_angle 0.1
+		nost_width 0.2
+		ears_height .5
+		ears_angle 0.6
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		skin 12
+	}
+	SCI03_Reactor
+	{
+		model "models/humans/scientist_hurt.mdl"
+		skin 12
+	}
+GRD04_SupplyDepot
+	{
+		flex_data
+		{
+			brow_h 0.5
+			cheek_fat_min 0.67
+			chin_butt 1.0
+			chin_width 0.5
+			head_height 0.5
+			head_w_max 0.25
+			neck_size 0.5
+			ears_angle 0.5
+			ears_height 0.5
+			eyes_height 0.5
+			jaw_depth 0.75
+			lowlip_size 0.5
+			uplip_size 0.5
+			mouth_w_min 0.5
+			nose_w_max 0.67
+			nose_h_min 0.5
+			nose_angle 0.75
+			nost_height 0.5
+			nost_width 0.25
+			nose_tip 0.25
+		}
+		bodygroup_data
+		{
+			helmet	1
+			chest 1
+		}
+		model "models/humans/guard_02.mdl"
+		skin 6
+	}
+	SCI07_SupplyDepot
+	{
+		flex_data
+		{
+			cheek_fat_min 0.5
+			face_d_max 0.25
+			head_w_min 0.25
+			ears_angle 1.0
+			eyes_height 0.75
+			nose_w_min 0.5
+			nose_angle 1.0
+			nost_height 0.5
+		}
+		bodygroup_data
+		{
+			glasses	6
+		}
+		skin 6
+	}
+	SCI08
+	{
+		flex_data
+		{
+			cheek_fat_min 0.5
+			jaw_depth 0.25
+			lowlip_size 0.5
+			uplip_size 0.5
+			nose_d_max 1.0
+			nost_height 0.5
+			nost_width 0.5
+			nose_tip 0.25
+		}
+		bodygroup_data
+		{
+			glasses	1
+		}
+		model "models/humans/scientist_02.mdl"
+		skin 1
+	}
+	SCI09_LC
+	{
+		flex_data
+		{
+		cheek_fat_min 1.0
+		cheek_depth 0.8
+		chin_butt 1.0
+		chin_width 0.6
+		jaw_depth 0.0
+		mouth_depth 0.2
+		mouth_h_max 0.3
+		nose_w_min 1.0
+		nose_angle 0.9
+		nose_h_max 0.1
+		nost_width 1.0
+		head_w_max 0.2
+		head_height 0.4
+		hairline_puff 0.7
+		}
+		bodygroup_data
+		{
+			glasses	4
+		}
+		skin 4
+	}
+	SCI10_Steinman
+	{
+		flex_data
+		{
+		cheek_depth 0.6
+		cheek_fat_max 0.5
+		ears_angle 0.2
+		ears_height 0.2
+		eyes_angle_max 0.5
+		mouth_h_max 0.2
+		nose_w_min 0.3
+		nose_angle 0.5
+		nost_width 1.0
+		}
+		bodygroup_data
+		{
+			glasses	5
+			hair 2
+		}
+		skin 1
+	}
+	SCI11
+	{
+		flex_data
+		{
+			cheek_fat_max 1.0
+			head_height 0.5
+			neck_size 0.5
+			lowlip_size 1.0
+			uplip_size 1.0
+			mouth_w_max 0.5
+			nose_w_max 1.0
+			nose_tip 1.0
+			hairline_puff 0.5
+		}
+		bodygroup_data
+		{
+			glasses	7
+		}
+		skin 9
+	}
+}

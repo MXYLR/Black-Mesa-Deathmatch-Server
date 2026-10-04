@@ -1,0 +1,17 @@
+### bullet_ff_through_walls @0x106a904c  refs=1
+    @0x10016a8b
+### sv_showdebugtracers @0x106a9038  refs=1
+    @0x10016b90
+### sv_showdamage @0x106a8fa4  refs=1
+    @0x10016b60
+### Multi-trace error... @0x106a9070  refs=1
+    @0x1034fb91
+### sk_weapon_tau_beam_penetration_depth  find_string -> ['0x1072d530']
+### sk_weapon_tau_beam_penetration_depth(name) @0x1072d530  refs=1
+    @0x1002d16b
+### sk_weapon_tau_beam_penetration_bias  find_string -> ['0x1072d508']
+### sk_weapon_tau_beam_penetration_bias(name) @0x1072d508  refs=1
+    @0x1002d13b
+### sk_weapon_tau_beam_dmg_radius  find_string -> ['0x1072d4e8']
+### sk_weapon_tau_beam_dmg_radius(name) @0x1072d4e8  refs=1
+    @0x1002d10b

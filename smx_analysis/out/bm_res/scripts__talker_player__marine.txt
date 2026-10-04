@@ -1,0 +1,75 @@
+
+// ============================================================================================
+// ============================================================================================
+response MarineHurt
+{
+	scene "scenes/npc/hecu_grunt/hgrunt_hit05.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_hit06.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_hit07.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_hit08.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_hit09.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_hit10.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_hit11.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_hit19.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_pain01.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_pain02.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_pain03.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_pain04.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_pain07.vcd"
+}
+
+rule MarineHurt
+{
+	criteria ConceptHurt IsMarine IsNotDrowning
+	response MarineHurt
+}
+
+Rule MarineHurt
+{
+	criteria ConceptDeath IsMarine
+	Response MarineHurt
+}
+
+// ============================================================================================
+// ============================================================================================
+response MarineDominatedPlayer
+{
+	scene "scenes/npc/hecu_grunt/hgrunt_taunt06.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_taunt06_var02.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_taunt09.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_taunt10.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_taunt10_var01.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_taunt10_var02.vcd"
+}
+
+rule MarineDominatedPlayer
+{
+	criteria ConceptKilledPlayer IsMarine IsNotSpeaking IsDominated
+	response MarineDominatedPlayer
+}
+
+response MarineRevengedPlayer
+{
+	scene "scenes/npc/hecu_grunt/hgrunt_taunt07.vcd"
+	scene "scenes/npc/hecu_grunt/hg_taunt_special03.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_clear06.vcd"
+	scene "scenes/npc/hecu_grunt/hgrunt_clear14.vcd"
+}
+
+rule MarineRevengedPlayer
+{
+	criteria ConceptKilledPlayer IsMarine IsNotSpeaking IsRevenge
+	response MarineDominatedPlayer
+}
+
+// ============================================================================================
+// ============================================================================================
+Response MarineIdleExpression
+{
+	scene "scenes/Expressions/colleague_angry_combat_01.vcd"
+}
+Rule MarineIdleExpression
+{
+	criteria ConceptExpression IsMarine
+	Response MarineIdleExpression
+}

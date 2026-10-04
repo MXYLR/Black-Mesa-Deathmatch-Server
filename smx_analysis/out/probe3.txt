@@ -1,0 +1,26 @@
+  0x10724600  Def: %s[%i]
+  0x10724648  min_snap_angles
+  0x10724658  max_snap_angles
+  0x10724668  min_punch_angles
+  0x1072467c  max_punch_angles
+  0x10724690  min_punch_offset
+  0x107246a4  max_punch_offset
+  0x107246b8  cycle_miss
+  0x107246c4  cycle_hit
+  0x107246d0  shot_count
+  0x107246dc  range_max
+  0x107246e8  range_min
+  0x107246f4  range_modifier
+  0x10724704  penetration_num_layers
+  0x1072471c  penetration_power
+  0x10724730  penetration_max_distance
+  0x1072474c  character_penetration_max_distance
+--- refs to 0x10724704 / 0x1072471c / 0x10724730 ---
+num_layers 0x10724704 -> 1 refs
+    @0x1046da07
+power 0x1072471c -> 1 refs
+    @0x1046da57
+max_distance 0x10724730 -> 1 refs
+    @0x1046daa7
+char_max_dist 0x1072474c -> 1 refs
+    @0x1046daf7

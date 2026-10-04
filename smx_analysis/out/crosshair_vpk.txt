@@ -1,0 +1,891 @@
+
+########## bms (main): 7 vpk files ##########
+  matched entries: 628
+   materials/vgui/hud/weapon_tripmine                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_tau                                .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_snark                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_shotgun                            .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_satchel                            .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_rpg                                .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_mp5                                .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_hivehand                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_gluon                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_glock                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_frag                               .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_dummy                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_crowbar                            .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_crossbow                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/weapon_357                                .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/item_longjump                             .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/item_healthkit                            .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/item_dummy                                .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/item_battery                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_widget_long_jump_seq                  .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_widget01                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_vseparator                            .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_scanlines                             .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_hev_overlay                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_hev                                   .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_health_overlay                        .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_health                                .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_healpool                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/hud_dot                                   .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_slowfreeze                         .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_slowburn                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_shock                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_radiation                          .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_poison                             .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_paralyze                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_freeze                             .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_fall                               .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_drown                              .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/damage_burn                               .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/crosshair_shotgun                         .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/crosshair_mp5                             .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/crosshair_hivehand                        .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/crosshair_gluon                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/crosshair_glock                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/crosshair_gauss                           .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/crosshair_crossbow                        .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/crosshair_357                             .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_snark                                .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_grenade_tripmine                     .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_grenade_satchel                      .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_grenade_rpg                          .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_grenade_mp5                          .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_grenade_hornet                       .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_grenade_frag                         .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_energy                               .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_buckshot                             .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_bolt                                 .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_9mm                                  .vmt    <- bms_materials_dir.vpk
+   materials/vgui/hud/ammo_357                                  .vmt    <- bms_materials_dir.vpk
+   scripts/kb_def                                               .lst    <- bms_misc_dir.vpk
+   scripts/kb_act                                               .lst    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_tripmine                     .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_tau                          .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_snark                        .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_shotgun                      .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_satchel                      .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_rpg                          .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_mp5                          .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_hivehand                     .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_headcrab                     .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_gluon                        .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_glock                        .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_frag                         .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_crowbar                      .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_crossbow                     .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_assassin_glock               .dmx    <- bms_misc_dir.vpk
+   scripts/gameplay/weapons/weapon_357                          .dmx    <- bms_misc_dir.vpk
+   resource/game                                                .ico    <- bms_misc_dir.vpk
+   resource/game-icon                                           .bmp    <- bms_misc_dir.vpk
+   resource/closecaption_vietnamese                             .dat    <- bms_misc_dir.vpk
+   resource/closecaption_ukrainian                              .dat    <- bms_misc_dir.vpk
+   resource/closecaption_turkish                                .dat    <- bms_misc_dir.vpk
+   resource/closecaption_tchinese                               .dat    <- bms_misc_dir.vpk
+   resource/closecaption_swedish                                .dat    <- bms_misc_dir.vpk
+   resource/closecaption_spanish                                .dat    <- bms_misc_dir.vpk
+   resource/closecaption_schinese                               .dat    <- bms_misc_dir.vpk
+   resource/closecaption_russian                                .dat    <- bms_misc_dir.vpk
+   resource/closecaption_romanian                               .dat    <- bms_misc_dir.vpk
+   resource/closecaption_portuguese                             .dat    <- bms_misc_dir.vpk
+   resource/closecaption_polish                                 .dat    <- bms_misc_dir.vpk
+   resource/closecaption_norwegian                              .dat    <- bms_misc_dir.vpk
+   resource/closecaption_mspanish                               .dat    <- bms_misc_dir.vpk
+   resource/closecaption_lithuanian                             .dat    <- bms_misc_dir.vpk
+   resource/closecaption_korean                                 .dat    <- bms_misc_dir.vpk
+   resource/closecaption_japanese                               .dat    <- bms_misc_dir.vpk
+   resource/closecaption_italian                                .dat    <- bms_misc_dir.vpk
+   resource/closecaption_indonesian                             .dat    <- bms_misc_dir.vpk
+   resource/closecaption_hungarian                              .dat    <- bms_misc_dir.vpk
+   resource/closecaption_greek                                  .dat    <- bms_misc_dir.vpk
+   resource/closecaption_german                                 .dat    <- bms_misc_dir.vpk
+   resource/closecaption_georgian                               .dat    <- bms_misc_dir.vpk
+   resource/closecaption_french                                 .dat    <- bms_misc_dir.vpk
+   resource/closecaption_finnish                                .dat    <- bms_misc_dir.vpk
+   resource/closecaption_english                                .dat    <- bms_misc_dir.vpk
+   resource/closecaption_dutch                                  .dat    <- bms_misc_dir.vpk
+   resource/closecaption_danish                                 .dat    <- bms_misc_dir.vpk
+   resource/closecaption_czech                                  .dat    <- bms_misc_dir.vpk
+   resource/closecaption_croatian                               .dat    <- bms_misc_dir.vpk
+   resource/closecaption_brazilian                              .dat    <- bms_misc_dir.vpk
+   resource/closecaption_arabic                                 .dat    <- bms_misc_dir.vpk
+   resource/ui/diagonal                                         .tga    <- bms_misc_dir.vpk
+   resource/bms_big                                             .tga    <- bms_misc_dir.vpk
+   resource/bms                                                 .tga    <- bms_misc_dir.vpk
+   resource/raleway                                             .ttf    <- bms_misc_dir.vpk
+   resource/dinpro                                              .ttf    <- bms_misc_dir.vpk
+   resource/dinpro-light                                        .ttf    <- bms_misc_dir.vpk
+   resource/din1451alt                                          .ttf    <- bms_misc_dir.vpk
+   resource/din-bold                                            .ttf    <- bms_misc_dir.vpk
+   resource/blackmesa_title                                     .ttf    <- bms_misc_dir.vpk
+   resource/blackmesa                                           .ttf    <- bms_misc_dir.vpk
+   scripts/launcherscheme                                       .res    <- bms_misc_dir.vpk
+   scripts/hudlayout                                            .res    <- bms_misc_dir.vpk
+   resource/ui/textwindow                                       .res    <- bms_misc_dir.vpk
+   resource/ui/teammenu                                         .res    <- bms_misc_dir.vpk
+   resource/ui/spectator                                        .res    <- bms_misc_dir.vpk
+   resource/ui/scoreboard                                       .res    <- bms_misc_dir.vpk
+   resource/ui/navprogress                                      .res    <- bms_misc_dir.vpk
+   resource/ui/motd                                             .res    <- bms_misc_dir.vpk
+   resource/ui/modoptionpanel                                   .res    <- bms_misc_dir.vpk
+   resource/ui/modoptionnotice                                  .res    <- bms_misc_dir.vpk
+   resource/ui/modcreditsnotice                                 .res    <- bms_misc_dir.vpk
+   resource/ui/mainmenu                                         .res    <- bms_misc_dir.vpk
+   resource/ui/freezepanel                                      .res    <- bms_misc_dir.vpk
+   resource/ui/deathmatch                                       .res    <- bms_misc_dir.vpk
+   resource/ui/bottomspectator                                  .res    <- bms_misc_dir.vpk
+   resource/ui/achievementsdialog                               .res    <- bms_misc_dir.vpk
+   resource/ui/achievementnotification                          .res    <- bms_misc_dir.vpk
+   resource/screens/vgui_tram_screen                            .res    <- bms_misc_dir.vpk
+   resource/screens/vgui_mortar_screen                          .res    <- bms_misc_dir.vpk
+   resource/gameui/topmenubase                                  .res    <- bms_misc_dir.vpk
+   resource/gameui/scheme                                       .res    <- bms_misc_dir.vpk
+   resource/gameui/options                                      .res    <- bms_misc_dir.vpk
+   resource/gameui/mainmenu                                     .res    <- bms_misc_dir.vpk
+   resource/gameui/gameui_scheme                                .res    <- bms_misc_dir.vpk
+   resource/gameui/flyout_options                               .res    <- bms_misc_dir.vpk
+   resource/gameui/flyout_multiplayer                           .res    <- bms_misc_dir.vpk
+   resource/gameui/flyout_campaign                              .res    <- bms_misc_dir.vpk
+   resource/sourcescheme                                        .res    <- bms_misc_dir.vpk
+   resource/serverevents                                        .res    <- bms_misc_dir.vpk
+   resource/postcommentarydialog                                .res    <- bms_misc_dir.vpk
+   resource/playerlistdialog                                    .res    <- bms_misc_dir.vpk
+   resource/particlesystempropertiespanel                       .res    <- bms_misc_dir.vpk
+   resource/particlesystempreviewpanel_renderpage               .res    <- bms_misc_dir.vpk
+   resource/particlesystempreviewpanel                          .res    <- bms_misc_dir.vpk
+   resource/particlesystemdefinitionbrowser                     .res    <- bms_misc_dir.vpk
+   resource/particlefunctionpicker                              .res    <- bms_misc_dir.vpk
+   resource/particlefunctionbrowser                             .res    <- bms_misc_dir.vpk
+   resource/particlechildrenpicker                              .res    <- bms_misc_dir.vpk
+   resource/optionssubvideoadvanceddlg                          .res    <- bms_misc_dir.vpk
+   resource/optionssubmultiplayer                               .res    <- bms_misc_dir.vpk
+   resource/optionssubmouse                                     .res    <- bms_misc_dir.vpk
+   resource/optionssubblackmesa                                 .res    <- bms_misc_dir.vpk
+   resource/optionssubaudio                                     .res    <- bms_misc_dir.vpk
+   resource/modevents                                           .res    <- bms_misc_dir.vpk
+   resource/loadingdialogvac                                    .res    <- bms_misc_dir.vpk
+   resource/loadingdialogscheme                                 .res    <- bms_misc_dir.vpk
+   resource/loadingdialognobannersingle                         .res    <- bms_misc_dir.vpk
+   resource/loadingdialognobanner                               .res    <- bms_misc_dir.vpk
+   resource/loadingdialogerrorvacbanned                         .res    <- bms_misc_dir.vpk
+   resource/loadingdialogerrornosteamconnection                 .res    <- bms_misc_dir.vpk
+   resource/loadingdialogerrorloggedinelsewhere                 .res    <- bms_misc_dir.vpk
+   resource/loadingdialogerror                                  .res    <- bms_misc_dir.vpk
+   resource/gamemenu                                            .res    <- bms_misc_dir.vpk
+   resource/gamelogo                                            .res    <- bms_misc_dir.vpk
+   resource/gameevents                                          .res    <- bms_misc_dir.vpk
+   resource/dialogoptionsingame                                 .res    <- bms_misc_dir.vpk
+   resource/createmultiplayergameserver                         .res    <- bms_misc_dir.vpk
+   resource/createmultiplayergamegamepl                         .res    <- bms_misc_dir.vpk
+   resource/clientscheme                                        .res    <- bms_misc_dir.vpk
+   resource/charactersubmodel                                   .res    <- bms_misc_dir.vpk
+   resource/charactersubitems                                   .res    <- bms_misc_dir.vpk
+   resource/charactersubface                                    .res    <- bms_misc_dir.vpk
+   resource/characterdialog                                     .res    <- bms_misc_dir.vpk
+   resource/addondownloadlist                                   .res    <- bms_misc_dir.vpk
+   resource/addondialog                                         .res    <- bms_misc_dir.vpk
+   scripts/talker_player/zombie                                 .txt    <- bms_misc_dir.vpk
+   scripts/talker_player/sci_male                               .txt    <- bms_misc_dir.vpk
+   scripts/talker_player/sci_female                             .txt    <- bms_misc_dir.vpk
+   scripts/talker_player/response_rules                         .txt    <- bms_misc_dir.vpk
+   scripts/talker_player/marine                                 .txt    <- bms_misc_dir.vpk
+   scripts/talker_player/guard                                  .txt    <- bms_misc_dir.vpk
+   scripts/talker/response_rules                                .txt    <- bms_misc_dir.vpk
+   scripts/talker/npc_xort                                      .txt    <- bms_misc_dir.vpk
+   scripts/talker/npc_human_security                            .txt    <- bms_misc_dir.vpk
+   scripts/talker/npc_human_scientist_female                    .txt    <- bms_misc_dir.vpk
+   scripts/talker/npc_human_scientist                           .txt    <- bms_misc_dir.vpk
+   scripts/talker/npc_human_medic                               .txt    <- bms_misc_dir.vpk
+   scripts/talker/npc_human_grunt                               .txt    <- bms_misc_dir.vpk
+   scripts/talker/npc_human_grenadier                           .txt    <- bms_misc_dir.vpk
+   scripts/talker/npc_human_commander                           .txt    <- bms_misc_dir.vpk
+   scripts/talker/c3a2_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c3a1_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c2a5_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c2a4_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c2a3_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c2a1_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c1a4_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c1a3_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c1a2_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c1a1_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/talker/c1a0b_scenes                                  .txt    <- bms_misc_dir.vpk
+   scripts/talker/c1a0a_scenes                                  .txt    <- bms_misc_dir.vpk
+   scripts/talker/announcements_wgh                             .txt    <- bms_misc_dir.vpk
+   scripts/talker/announcements_uc                              .txt    <- bms_misc_dir.vpk
+   scripts/talker/announcements_powerup                         .txt    <- bms_misc_dir.vpk
+   scripts/talker/announcements_oar                             .txt    <- bms_misc_dir.vpk
+   scripts/talker/announcements_blastpit_vox                    .txt    <- bms_misc_dir.vpk
+   scripts/talker/announcements_blastpit                        .txt    <- bms_misc_dir.vpk
+   scripts/talker/announcements_am                              .txt    <- bms_misc_dir.vpk
+   scripts/scenes/elimination_zombies                           .txt    <- bms_misc_dir.vpk
+   scripts/killstreak/game_sounds_killstreak_scientist          .txt    <- bms_misc_dir.vpk
+   scripts/killstreak/game_sounds_killstreak_marine             .txt    <- bms_misc_dir.vpk
+   scripts/killstreak/game_sounds_killstreak_football           .txt    <- bms_misc_dir.vpk
+   scripts/animevents/weapon_shotgun                            .txt    <- bms_misc_dir.vpk
+   scripts/animevents/weapon_mp5                                .txt    <- bms_misc_dir.vpk
+   scripts/animevents/weapon_glock                              .txt    <- bms_misc_dir.vpk
+   scripts/animevents/readme                                    .txt    <- bms_misc_dir.vpk
+   scripts/hud_textures                                         .txt    <- bms_misc_dir.vpk
+   scripts/vgui_screens                                         .txt    <- bms_misc_dir.vpk
+   scripts/titles                                               .txt    <- bms_misc_dir.vpk
+   scripts/surfaceproperties_manifest                           .txt    <- bms_misc_dir.vpk
+   scripts/surfaceproperties_hl2                                .txt    <- bms_misc_dir.vpk
+   scripts/surfaceproperties_c2a3                               .txt    <- bms_misc_dir.vpk
+   scripts/surfaceproperties                                    .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_test                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_manifest                                 .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_undertow                              .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_subtransit                            .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_stalkyard                             .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_stack                                 .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_rapidcore                             .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_rail                                  .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_lambdabunker                          .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_gasworks                              .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_crossfire                             .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_dm_bounce                                .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c5a1                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c4a4                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c4a3                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c4a2                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c4a1                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c3a2                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c3a1                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c2a5                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c2a4r                                    .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c2a4q                                    .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c2a3                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c2a2                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c2a1                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c1a4                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c1a3                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c1a2                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c1a1_ab                                  .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c1a1                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c1a0                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundscapes_c0a0                                     .txt    <- bms_misc_dir.vpk
+   scripts/soundmixers                                          .txt    <- bms_misc_dir.vpk
+   scripts/sentences                                            .txt    <- bms_misc_dir.vpk
+   scripts/proplist                                             .txt    <- bms_misc_dir.vpk
+   scripts/propdata                                             .txt    <- bms_misc_dir.vpk
+   scripts/playermodel_manifest                                 .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_zombiehev                                 .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_zombie                                    .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_xen_boid                                  .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_walker                                    .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_vortigaunt                                .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_tentacle                                  .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_surgerybot                                .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_sniper                                    .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_snark                                     .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_sentry                                    .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_securitygaurd                             .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_scimale                                   .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_scifemale                                 .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_osprey                                    .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_nihilanth                                 .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_lav                                       .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_ichthyosaur                               .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_human_shared                              .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_houndeye                                  .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_hecu                                      .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_gonarch                                   .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_gargantua                                 .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_fastheadcrab                              .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_bullsquid                                 .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_blackheadcrab                             .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_beneathacle                               .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_assassin                                  .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_apache                                    .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_alien_grunt                               .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_alien_controller                          .txt    <- bms_misc_dir.vpk
+   scripts/npc_sounds_abrams                                    .txt    <- bms_misc_dir.vpk
+   scripts/mod_textures                                         .txt    <- bms_misc_dir.vpk
+   scripts/misc_sounds_dead_hev                                 .txt    <- bms_misc_dir.vpk
+   scripts/launcher                                             .txt    <- bms_misc_dir.vpk
+   scripts/hudanimations_manifest                               .txt    <- bms_misc_dir.vpk
+   scripts/hudanimations                                        .txt    <- bms_misc_dir.vpk
+   scripts/global_actors                                        .txt    <- bms_misc_dir.vpk
+   scripts/gib_manifest                                         .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_xen_music                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_xen2                                     .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_xen                                      .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_world                                    .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_weapons                                  .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_wgh                               .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_uc                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_st                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_qe                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_pu                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_oc                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_oar                               .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_lc                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_interloper                        .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_ib                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_gonarch                           .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_faf                               .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_endgame                           .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_bp                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_app                               .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes_am                                .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_scenes                                   .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_player                                   .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_physics                                  .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_oartram                                  .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_music                                    .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_manifest                                 .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_items                                    .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_interloper                               .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_exp                                      .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_bm_scripted                              .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_bm_objects                               .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_bm_ambience                              .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_announcement                             .txt    <- bms_misc_dir.vpk
+   scripts/game_sounds_ambient_generic                          .txt    <- bms_misc_dir.vpk
+   scripts/dsp_presets                                          .txt    <- bms_misc_dir.vpk
+   scripts/dm_sounds_scimale                                    .txt    <- bms_misc_dir.vpk
+   scripts/dm_sounds_scifem                                     .txt    <- bms_misc_dir.vpk
+   scripts/dm_sounds_guard                                      .txt    <- bms_misc_dir.vpk
+   scripts/detailmodelfx                                        .txt    <- bms_misc_dir.vpk
+   scripts/decals_subrect                                       .txt    <- bms_misc_dir.vpk
+   scripts/credits                                              .txt    <- bms_misc_dir.vpk
+   scripts/character_manifest                                   .txt    <- bms_misc_dir.vpk
+   scripts/chapterbackgrounds                                   .txt    <- bms_misc_dir.vpk
+   scripts/chapter_manifest                                     .txt    <- bms_misc_dir.vpk
+   scripts/actremap                                             .txt    <- bms_misc_dir.vpk
+   scripts/actbusy                                              .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_vietnamese                             .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_ukrainian                              .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_turkish                                .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_tchinese                               .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_swedish                                .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_spanish                                .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_schinese                               .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_russian                                .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_romanian                               .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_portuguese                             .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_polish                                 .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_norwegian                              .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_mspanish                               .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_lithuanian                             .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_korean                                 .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_japanese                               .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_italian                                .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_indonesian                             .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_hungarian                              .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_greek                                  .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_german                                 .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_georgian                               .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_french                                 .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_finnish                                .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_english                                .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_dutch                                  .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_danish                                 .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_czech                                  .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_croatian                               .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_brazilian                              .txt    <- bms_misc_dir.vpk
+   resource/longjump_seq_arabic                                 .txt    <- bms_misc_dir.vpk
+   resource/gameui_portuguese                                   .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_vietnamese                    .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_ukrainian                     .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_turkish                       .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_tchinese                      .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_swedish                       .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_spanish                       .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_schinese                      .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_russian                       .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_romanian                      .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_portuguese                    .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_polish                        .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_norwegian                     .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_mspanish                      .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_lithuanian                    .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_korean                        .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_japanese                      .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_italian                       .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_indonesian                    .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_hungarian                     .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_greek                         .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_german                        .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_georgian                      .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_french                        .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_finnish                       .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_dutch                         .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_danish                        .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_czech                         .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_croatian                      .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_brazilian                     .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen_arabic                        .txt    <- bms_misc_dir.vpk
+   resource/gameui_loading_screen                               .txt    <- bms_misc_dir.vpk
+   resource/gameui_italian                                      .txt    <- bms_misc_dir.vpk
+   resource/gameui_english                                      .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_vietnamese                        .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_ukrainian                         .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_turkish                           .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_tchinese                          .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_swedish                           .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_spanish                           .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_schinese                          .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_russian                           .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_romanian                          .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_portuguese                        .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_polish                            .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_norwegian                         .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_mspanish                          .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_lithuanian                        .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_korean                            .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_japanese                          .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_italian                           .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_indonesian                        .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_hungarian                         .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_greek                             .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_german                            .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_georgian                          .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_french                            .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_finnish                           .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_english                           .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_dutch                             .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_danish                            .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_czech                             .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_croatian                          .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_brazilian                         .txt    <- bms_misc_dir.vpk
+   resource/crowbarcollective_arabic                            .txt    <- bms_misc_dir.vpk
+   resource/credits_vietnamese                                  .txt    <- bms_misc_dir.vpk
+   resource/credits_ukrainian                                   .txt    <- bms_misc_dir.vpk
+   resource/credits_turkish                                     .txt    <- bms_misc_dir.vpk
+   resource/credits_tchinese                                    .txt    <- bms_misc_dir.vpk
+   resource/credits_swedish                                     .txt    <- bms_misc_dir.vpk
+   resource/credits_spanish                                     .txt    <- bms_misc_dir.vpk
+   resource/credits_schinese                                    .txt    <- bms_misc_dir.vpk
+   resource/credits_russian                                     .txt    <- bms_misc_dir.vpk
+   resource/credits_romanian                                    .txt    <- bms_misc_dir.vpk
+   resource/credits_portuguese                                  .txt    <- bms_misc_dir.vpk
+   resource/credits_polish                                      .txt    <- bms_misc_dir.vpk
+   resource/credits_norwegian                                   .txt    <- bms_misc_dir.vpk
+   resource/credits_mspanish                                    .txt    <- bms_misc_dir.vpk
+   resource/credits_lithuanian                                  .txt    <- bms_misc_dir.vpk
+   resource/credits_korean                                      .txt    <- bms_misc_dir.vpk
+   resource/credits_japanese                                    .txt    <- bms_misc_dir.vpk
+   resource/credits_italian                                     .txt    <- bms_misc_dir.vpk
+   resource/credits_indonesian                                  .txt    <- bms_misc_dir.vpk
+   resource/credits_hungarian                                   .txt    <- bms_misc_dir.vpk
+   resource/credits_greek                                       .txt    <- bms_misc_dir.vpk
+   resource/credits_german                                      .txt    <- bms_misc_dir.vpk
+   resource/credits_georgian                                    .txt    <- bms_misc_dir.vpk
+   resource/credits_french                                      .txt    <- bms_misc_dir.vpk
+   resource/credits_finnish                                     .txt    <- bms_misc_dir.vpk
+   resource/credits_english                                     .txt    <- bms_misc_dir.vpk
+   resource/credits_dutch                                       .txt    <- bms_misc_dir.vpk
+   resource/credits_danish                                      .txt    <- bms_misc_dir.vpk
+   resource/credits_czech                                       .txt    <- bms_misc_dir.vpk
+   resource/credits_croatian                                    .txt    <- bms_misc_dir.vpk
+   resource/credits_brazilian                                   .txt    <- bms_misc_dir.vpk
+   resource/credits_arabic                                      .txt    <- bms_misc_dir.vpk
+   resource/closecaption_vietnamese                             .txt    <- bms_misc_dir.vpk
+   resource/closecaption_ukrainian                              .txt    <- bms_misc_dir.vpk
+   resource/closecaption_turkish                                .txt    <- bms_misc_dir.vpk
+   resource/closecaption_tchinese                               .txt    <- bms_misc_dir.vpk
+   resource/closecaption_swedish                                .txt    <- bms_misc_dir.vpk
+   resource/closecaption_spanish                                .txt    <- bms_misc_dir.vpk
+   resource/closecaption_schinese                               .txt    <- bms_misc_dir.vpk
+   resource/closecaption_russian                                .txt    <- bms_misc_dir.vpk
+   resource/closecaption_romanian                               .txt    <- bms_misc_dir.vpk
+   resource/closecaption_portuguese                             .txt    <- bms_misc_dir.vpk
+   resource/closecaption_polish                                 .txt    <- bms_misc_dir.vpk
+   resource/closecaption_norwegian                              .txt    <- bms_misc_dir.vpk
+   resource/closecaption_mspanish                               .txt    <- bms_misc_dir.vpk
+   resource/closecaption_lithuanian                             .txt    <- bms_misc_dir.vpk
+   resource/closecaption_korean                                 .txt    <- bms_misc_dir.vpk
+   resource/closecaption_japanese                               .txt    <- bms_misc_dir.vpk
+   resource/closecaption_italian                                .txt    <- bms_misc_dir.vpk
+   resource/closecaption_indonesian                             .txt    <- bms_misc_dir.vpk
+   resource/closecaption_hungarian                              .txt    <- bms_misc_dir.vpk
+   resource/closecaption_greek                                  .txt    <- bms_misc_dir.vpk
+   resource/closecaption_german                                 .txt    <- bms_misc_dir.vpk
+   resource/closecaption_georgian                               .txt    <- bms_misc_dir.vpk
+   resource/closecaption_french                                 .txt    <- bms_misc_dir.vpk
+   resource/closecaption_finnish                                .txt    <- bms_misc_dir.vpk
+   resource/closecaption_english                                .txt    <- bms_misc_dir.vpk
+   resource/closecaption_dutch                                  .txt    <- bms_misc_dir.vpk
+   resource/closecaption_danish                                 .txt    <- bms_misc_dir.vpk
+   resource/closecaption_czech                                  .txt    <- bms_misc_dir.vpk
+   resource/closecaption_croatian                               .txt    <- bms_misc_dir.vpk
+   resource/closecaption_brazilian                              .txt    <- bms_misc_dir.vpk
+   resource/closecaption_arabic                                 .txt    <- bms_misc_dir.vpk
+   resource/bootup_vietnamese                                   .txt    <- bms_misc_dir.vpk
+   resource/bootup_ukrainian                                    .txt    <- bms_misc_dir.vpk
+   resource/bootup_turkish                                      .txt    <- bms_misc_dir.vpk
+   resource/bootup_tchinese                                     .txt    <- bms_misc_dir.vpk
+   resource/bootup_swedish                                      .txt    <- bms_misc_dir.vpk
+   resource/bootup_spanish                                      .txt    <- bms_misc_dir.vpk
+   resource/bootup_schinese                                     .txt    <- bms_misc_dir.vpk
+   resource/bootup_russian                                      .txt    <- bms_misc_dir.vpk
+   resource/bootup_romanian                                     .txt    <- bms_misc_dir.vpk
+   resource/bootup_portuguese                                   .txt    <- bms_misc_dir.vpk
+   resource/bootup_polish                                       .txt    <- bms_misc_dir.vpk
+   resource/bootup_norwegian                                    .txt    <- bms_misc_dir.vpk
+   resource/bootup_mspanish                                     .txt    <- bms_misc_dir.vpk
+   resource/bootup_lithuanian                                   .txt    <- bms_misc_dir.vpk
+   resource/bootup_korean                                       .txt    <- bms_misc_dir.vpk
+   resource/bootup_japanese                                     .txt    <- bms_misc_dir.vpk
+   resource/bootup_italian                                      .txt    <- bms_misc_dir.vpk
+   resource/bootup_indonesian                                   .txt    <- bms_misc_dir.vpk
+   resource/bootup_hungarian                                    .txt    <- bms_misc_dir.vpk
+   resource/bootup_greek                                        .txt    <- bms_misc_dir.vpk
+   resource/bootup_german                                       .txt    <- bms_misc_dir.vpk
+   resource/bootup_georgian                                     .txt    <- bms_misc_dir.vpk
+   resource/bootup_french                                       .txt    <- bms_misc_dir.vpk
+   resource/bootup_finnish                                      .txt    <- bms_misc_dir.vpk
+   resource/bootup_english                                      .txt    <- bms_misc_dir.vpk
+   resource/bootup_dutch                                        .txt    <- bms_misc_dir.vpk
+   resource/bootup_danish                                       .txt    <- bms_misc_dir.vpk
+   resource/bootup_czech                                        .txt    <- bms_misc_dir.vpk
+   resource/bootup_croatian                                     .txt    <- bms_misc_dir.vpk
+   resource/bootup_brazilian                                    .txt    <- bms_misc_dir.vpk
+   resource/bootup_arabic                                       .txt    <- bms_misc_dir.vpk
+   resource/bms_vietnamese                                      .txt    <- bms_misc_dir.vpk
+   resource/bms_ukrainian                                       .txt    <- bms_misc_dir.vpk
+   resource/bms_turkish                                         .txt    <- bms_misc_dir.vpk
+   resource/bms_tchinese                                        .txt    <- bms_misc_dir.vpk
+   resource/bms_swedish                                         .txt    <- bms_misc_dir.vpk
+   resource/bms_spanish                                         .txt    <- bms_misc_dir.vpk
+   resource/bms_schinese                                        .txt    <- bms_misc_dir.vpk
+   resource/bms_russian                                         .txt    <- bms_misc_dir.vpk
+   resource/bms_romanian                                        .txt    <- bms_misc_dir.vpk
+   resource/bms_portuguese                                      .txt    <- bms_misc_dir.vpk
+   resource/bms_polish                                          .txt    <- bms_misc_dir.vpk
+   resource/bms_norwegian                                       .txt    <- bms_misc_dir.vpk
+   resource/bms_mspanish                                        .txt    <- bms_misc_dir.vpk
+   resource/bms_lithuanian                                      .txt    <- bms_misc_dir.vpk
+   resource/bms_korean                                          .txt    <- bms_misc_dir.vpk
+   resource/bms_japanese                                        .txt    <- bms_misc_dir.vpk
+   resource/bms_italian                                         .txt    <- bms_misc_dir.vpk
+   resource/bms_indonesian                                      .txt    <- bms_misc_dir.vpk
+   resource/bms_hungarian                                       .txt    <- bms_misc_dir.vpk
+   resource/bms_greek                                           .txt    <- bms_misc_dir.vpk
+   resource/bms_german                                          .txt    <- bms_misc_dir.vpk
+   resource/bms_georgian                                        .txt    <- bms_misc_dir.vpk
+   resource/bms_french                                          .txt    <- bms_misc_dir.vpk
+   resource/bms_finnish                                         .txt    <- bms_misc_dir.vpk
+   resource/bms_english                                         .txt    <- bms_misc_dir.vpk
+   resource/bms_dutch                                           .txt    <- bms_misc_dir.vpk
+   resource/bms_danish                                          .txt    <- bms_misc_dir.vpk
+   resource/bms_czech                                           .txt    <- bms_misc_dir.vpk
+   resource/bms_croatian                                        .txt    <- bms_misc_dir.vpk
+   resource/bms_brazilian                                       .txt    <- bms_misc_dir.vpk
+   resource/bms_arabic                                          .txt    <- bms_misc_dir.vpk
+   materials/vgui/hud/weapon_tripmine                           .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_tau                                .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_snark                              .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_shotgun                            .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_satchel                            .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_rpg                                .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_mp5                                .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_hivehand                           .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_gluon                              .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_glock                              .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_frag                               .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_crowbar                            .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_crossbow                           .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/weapon_357                                .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/item_longjump                             .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/item_healthkit                            .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/item_battery                              .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_widget01                              .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_vseparator                            .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_scanlines                             .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_hev_overlay                           .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_hev                                   .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_health_overlay                        .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_health                                .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_healpool                              .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/hud_dot                                   .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/damage_shock                              .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/damage_radiation                          .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/damage_poison                             .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/damage_paralyze                           .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/damage_fall                               .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/damage_drown                              .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/damage_burn                               .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/crosshair_shotgun                         .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/crosshair_mp5                             .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/crosshair_hivehand                        .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/crosshair_gluon                           .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/crosshair_glock                           .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/crosshair_gauss                           .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/crosshair_crossbow                        .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/crosshair_357                             .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_snark                                .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_grenade_tripmine                     .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_grenade_satchel                      .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_grenade_rpg                          .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_grenade_mp5                          .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_grenade_frag                         .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_energy                               .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_buckshot                             .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_bolt                                 .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_9mm                                  .vtf    <- bms_textures_dir.vpk
+   materials/vgui/hud/ammo_357                                  .vtf    <- bms_textures_dir.vpk
+
+########## custom addons: 31 vpk files ##########
+  matched entries: 87
+   resource/closecaption_english                                .dat    <- hcourse_misc_dir.vpk
+   scripts/talker/t0a3_scenes                                   .txt    <- hcourse_misc_dir.vpk
+   scripts/talker/t0a2_scenes                                   .txt    <- hcourse_misc_dir.vpk
+   scripts/talker/t0a1a_scenes                                  .txt    <- hcourse_misc_dir.vpk
+   scripts/talker/t0a1_scenes                                   .txt    <- hcourse_misc_dir.vpk
+   scripts/talker/t0a0_scenes                                   .txt    <- hcourse_misc_dir.vpk
+   scripts/talker/response_rules                                .txt    <- hcourse_misc_dir.vpk
+   scripts/talker/hazard_course_scenes                          .txt    <- hcourse_misc_dir.vpk
+   scripts/titles                                               .txt    <- hcourse_misc_dir.vpk
+   scripts/soundscapes_manifest                                 .txt    <- hcourse_misc_dir.vpk
+   scripts/soundscapes_hazardcourse                             .txt    <- hcourse_misc_dir.vpk
+   scripts/level_sounds_t0a3                                    .txt    <- hcourse_misc_dir.vpk
+   scripts/level_sounds_t0a2a                                   .txt    <- hcourse_misc_dir.vpk
+   scripts/level_sounds_t0a2                                    .txt    <- hcourse_misc_dir.vpk
+   scripts/level_sounds_t0a1a                                   .txt    <- hcourse_misc_dir.vpk
+   scripts/level_sounds_t0a1                                    .txt    <- hcourse_misc_dir.vpk
+   scripts/level_sounds_t0a0                                    .txt    <- hcourse_misc_dir.vpk
+   scripts/level_sounds_hazardcourse                            .txt    <- hcourse_misc_dir.vpk
+   scripts/game_sounds_manifest                                 .txt    <- hcourse_misc_dir.vpk
+   scripts/credits                                              .txt    <- hcourse_misc_dir.vpk
+   scripts/character_manifest                                   .txt    <- hcourse_misc_dir.vpk
+   resource/credits_english                                     .txt    <- hcourse_misc_dir.vpk
+   resource/closecaption_english                                .txt    <- hcourse_misc_dir.vpk
+   resource/bms_english                                         .txt    <- hcourse_misc_dir.vpk
+   resource/closecaption_english                                .dat    <- stojkeholm_dir.vpk
+   scripts/soundscapes_stojkeholm_background                    .txt    <- stojkeholm_dir.vpk
+   scripts/soundscapes_stojkeholm_03                            .txt    <- stojkeholm_dir.vpk
+   scripts/soundscapes_stojkeholm_02                            .txt    <- stojkeholm_dir.vpk
+   resource/closecaption_english                                .txt    <- stojkeholm_dir.vpk
+   scripts/gameplay/weapons/weapon_tripmine                     .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_tau                          .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_snark                        .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_shotgun                      .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_satchel                      .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_rpg                          .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_mp5                          .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_hivehand                     .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_gluon                        .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_glock                        .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_frag                         .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_crowbar                      .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_crossbow                     .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   scripts/gameplay/weapons/weapon_357                          .dmx    <- Specifically Tweaked Weapon FOV.vpk
+   resource/sourcescheme                                        .res    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/optionssubvideoadvanceddlg                          .res    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/optionssubkeyboard                                  .res    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/optionssubblackmesa                                 .res    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/optionssubaudio                                     .res    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/gamemenu                                            .res    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/clientscheme                                        .res    <- UI_Fixes_and_Improvements_v1.23.vpk
+   scripts/chapter_manifest                                     .txt    <- UI_Fixes_and_Improvements_v1.23.vpk
+   scripts/chapterbackgrounds                                   .txt    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/gameui_english                                      .txt    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/crowbarcollective_english                           .txt    <- UI_Fixes_and_Improvements_v1.23.vpk
+   resource/closecaption_english                                .txt    <- fd_assets.vpk
+   resource/closecaption_english                                .dat    <- fd_assets.vpk
+   scripts/soundscapes_bm_c2a2b2                                .txt    <- oar_20.vpk
+   scripts/soundscapes_bm_c2a2a2                                .txt    <- oar_20.vpk
+   scripts/soundscapes_bm_c2a2b3                                .txt    <- oar_20.vpk
+   scripts/soundscapes_bm_c2a2b1                                .txt    <- oar_20.vpk
+   scripts/soundscapes_bm_c2a2a                                 .txt    <- oar_20.vpk
+   scripts/game_sounds_scenes_oar                               .txt    <- oar_20.vpk
+   scripts/soundscapes_bm_c2a2a1                                .txt    <- oar_20.vpk
+   scripts/soundscapes_c2a2                                     .txt    <- oar_20.vpk
+   resource/gamemenu                                            .res    <- zh_cn_fix.vpk
+   resource/closecaption_schinese                               .dat    <- zh_cn_fix.vpk
+   scripts/talker/response_rules                                .txt    <- zh_cn_fix.vpk
+   scripts/talker/npc_human_security                            .txt    <- zh_cn_fix.vpk
+   scripts/talker/npc_human_scientist                           .txt    <- zh_cn_fix.vpk
+   scripts/talker/npc_human_medic                               .txt    <- zh_cn_fix.vpk
+   scripts/talker/npc_human_grunt                               .txt    <- zh_cn_fix.vpk
+   scripts/talker/npc_human_commander                           .txt    <- zh_cn_fix.vpk
+   scripts/talker/c3a1_scenes                                   .txt    <- zh_cn_fix.vpk
+   scripts/titles                                               .txt    <- zh_cn_fix.vpk
+   scripts/sentences                                            .txt    <- zh_cn_fix.vpk
+   scripts/npc_sounds_sniper                                    .txt    <- zh_cn_fix.vpk
+   scripts/npc_sounds_securitygaurd                             .txt    <- zh_cn_fix.vpk
+   scripts/npc_sounds_scimale                                   .txt    <- zh_cn_fix.vpk
+   scripts/npc_sounds_hecu                                      .txt    <- zh_cn_fix.vpk
+   scripts/credits                                              .txt    <- zh_cn_fix.vpk
+   resource/longjump_seq_schinese                               .txt    <- zh_cn_fix.vpk
+   resource/gameui_loading_screen                               .txt    <- zh_cn_fix.vpk
+   resource/crowbarcollective_schinese                          .txt    <- zh_cn_fix.vpk
+   resource/credits_schinese                                    .txt    <- zh_cn_fix.vpk
+   resource/closecaption_schinese                               .txt    <- zh_cn_fix.vpk
+   resource/bootup_schinese                                     .txt    <- zh_cn_fix.vpk
+   resource/bms_schinese                                        .txt    <- zh_cn_fix.vpk
+
+########## extraction ##########
+  wrote materials__vgui__hud__weapon_tripmine (315 bytes)
+  wrote materials__vgui__hud__weapon_tau (311 bytes)
+  wrote materials__vgui__hud__weapon_snark (315 bytes)
+  wrote materials__vgui__hud__weapon_shotgun (320 bytes)
+  wrote materials__vgui__hud__weapon_satchel (316 bytes)
+  wrote materials__vgui__hud__weapon_rpg (313 bytes)
+  wrote materials__vgui__hud__weapon_mp5 (317 bytes)
+  wrote materials__vgui__hud__weapon_hivehand (321 bytes)
+  wrote materials__vgui__hud__weapon_gluon (316 bytes)
+  wrote materials__vgui__hud__weapon_glock (320 bytes)
+  wrote materials__vgui__hud__weapon_frag (316 bytes)
+  wrote materials__vgui__hud__weapon_dummy (481 bytes)
+  wrote materials__vgui__hud__weapon_crowbar (320 bytes)
+  wrote materials__vgui__hud__weapon_crossbow (320 bytes)
+  wrote materials__vgui__hud__weapon_357 (313 bytes)
+  wrote materials__vgui__hud__item_longjump (265 bytes)
+  wrote materials__vgui__hud__item_healthkit (267 bytes)
+  wrote materials__vgui__hud__item_dummy (264 bytes)
+  wrote materials__vgui__hud__item_battery (265 bytes)
+  wrote materials__vgui__hud__hud_widget_long_jump_seq (321 bytes)
+  wrote materials__vgui__hud__hud_widget01 (321 bytes)
+  wrote materials__vgui__hud__hud_vseparator (267 bytes)
+  wrote materials__vgui__hud__hud_scanlines (109 bytes)
+  wrote materials__vgui__hud__hud_hev_overlay (265 bytes)
+  wrote materials__vgui__hud__hud_hev (269 bytes)
+  wrote materials__vgui__hud__hud_health_overlay (270 bytes)
+  wrote materials__vgui__hud__hud_health (272 bytes)
+  wrote materials__vgui__hud__hud_healpool (265 bytes)
+  wrote materials__vgui__hud__hud_dot (289 bytes)
+  wrote materials__vgui__hud__damage_slowfreeze (268 bytes)
+  wrote materials__vgui__hud__damage_slowburn (264 bytes)
+  wrote materials__vgui__hud__damage_shock (265 bytes)
+  wrote materials__vgui__hud__damage_radiation (269 bytes)
+  wrote materials__vgui__hud__damage_poison (266 bytes)
+  wrote materials__vgui__hud__damage_paralyze (268 bytes)
+  wrote materials__vgui__hud__damage_freeze (268 bytes)
+  wrote materials__vgui__hud__damage_fall (264 bytes)
+  wrote materials__vgui__hud__damage_drown (265 bytes)
+  wrote materials__vgui__hud__damage_burn (264 bytes)
+  wrote materials__vgui__hud__crosshair_shotgun (269 bytes)
+  wrote materials__vgui__hud__crosshair_mp5 (265 bytes)
+  wrote materials__vgui__hud__crosshair_hivehand (270 bytes)
+  wrote materials__vgui__hud__crosshair_gluon (267 bytes)
+  wrote materials__vgui__hud__crosshair_glock (267 bytes)
+  wrote materials__vgui__hud__crosshair_gauss (267 bytes)
+  wrote materials__vgui__hud__crosshair_crossbow (270 bytes)
+  wrote materials__vgui__hud__crosshair_357 (265 bytes)
+  wrote materials__vgui__hud__ammo_snark (263 bytes)
+  wrote materials__vgui__hud__ammo_grenade_tripmine (273 bytes)
+  wrote materials__vgui__hud__ammo_grenade_satchel (272 bytes)
+  wrote materials__vgui__hud__ammo_grenade_rpg (269 bytes)
+  wrote materials__vgui__hud__ammo_grenade_mp5 (269 bytes)
+  wrote materials__vgui__hud__ammo_grenade_hornet (270 bytes)
+  wrote materials__vgui__hud__ammo_grenade_frag (269 bytes)
+  wrote materials__vgui__hud__ammo_energy (264 bytes)
+  wrote materials__vgui__hud__ammo_buckshot (275 bytes)
+  wrote materials__vgui__hud__ammo_bolt (260 bytes)
+  wrote materials__vgui__hud__ammo_9mm (261 bytes)
+  wrote materials__vgui__hud__ammo_357 (265 bytes)
+  wrote scripts__hudlayout (26192 bytes)
+  wrote resource__optionssubmultiplayer (19565 bytes)
+  wrote resource__clientscheme (31844 bytes)
+  skip (big) resource/closecaption_vietnamese (928250 bytes)
+  skip (big) resource/closecaption_ukrainian (890756 bytes)
+  skip (big) resource/closecaption_turkish (900544 bytes)
+  skip (big) resource/closecaption_tchinese (720920 bytes)
+  skip (big) resource/closecaption_swedish (892832 bytes)
+  skip (big) resource/closecaption_spanish (907850 bytes)
+  skip (big) resource/closecaption_schinese (723976 bytes)
+  skip (big) resource/closecaption_russian (892602 bytes)
+  skip (big) resource/closecaption_romanian (888394 bytes)
+  skip (big) resource/closecaption_portuguese (916640 bytes)
+  skip (big) resource/closecaption_polish (907194 bytes)
+  skip (big) resource/closecaption_norwegian (882418 bytes)
+  skip (big) resource/closecaption_mspanish (903574 bytes)
+  skip (big) resource/closecaption_lithuanian (898922 bytes)
+  skip (big) resource/closecaption_korean (763278 bytes)
+  skip (big) resource/closecaption_japanese (754300 bytes)
+  skip (big) resource/closecaption_italian (917138 bytes)
+  skip (big) resource/closecaption_indonesian (918362 bytes)
+  skip (big) resource/closecaption_hungarian (895224 bytes)
+  skip (big) resource/closecaption_greek (916356 bytes)
+  skip (big) resource/closecaption_german (951508 bytes)
+  skip (big) resource/closecaption_georgian (875894 bytes)
+  skip (big) resource/closecaption_french (942626 bytes)
+  skip (big) resource/closecaption_finnish (902748 bytes)
+  skip (big) resource/closecaption_english (895156 bytes)
+  skip (big) resource/closecaption_dutch (913860 bytes)
+  skip (big) resource/closecaption_danish (900214 bytes)
+  skip (big) resource/closecaption_czech (884176 bytes)
+  skip (big) resource/closecaption_croatian (888796 bytes)
+  skip (big) resource/closecaption_brazilian (916482 bytes)
+  skip (big) resource/closecaption_arabic (822648 bytes)
+  skip (big) resource/closecaption_english (960146 bytes)
+  skip (big) resource/closecaption_english (960130 bytes)
+  wrote resource__clientscheme (35689 bytes)
+  skip (big) resource/closecaption_english (954264 bytes)
+  skip (big) resource/closecaption_schinese (858578 bytes)
+  total extracted: 63
+
+########## loose dirs ##########
+  scripts : missing
+  resource : EXISTS
+       game.ico
+  materials/vgui/hud : missing
+  materials/sprites : EXISTS
+       redglow1_path.vmt
+  cfg : EXISTS
+       360controller.cfg
+       autoexec.cfg
+       banned_ip.cfg
+       banned_user.cfg
+       bot_test.cfg
+       chapter1.cfg
+       chapter10.cfg
+       chapter11.cfg
+       chapter12.cfg
+       chapter13.cfg
+       chapter14.cfg
+       chapter15.cfg
+       chapter16.cfg
+       chapter17.cfg
+       chapter18.cfg
+       chapter19.cfg
+       chapter2.cfg
+       chapter20.cfg
+       chapter3.cfg
+       chapter4.cfg
+       chapter5.cfg
+       chapter6.cfg
+       chapter7.cfg
+       chapter8.cfg
+       chapter9.cfg
+       character_presets.txt
+       config.360.cfg
+       config.cfg
+       config_deathmatch.cfg
+       config_deathmatch_old.cfg
+       config_default.cfg
+       config_mp_hl2dm-2025.cfg
+       config_speedrun-2024.cfg
+       config_speedrun-2026-bs.cfg
+       dynlightscript.txt
+       lightscript.cfg
+       lightscript_laptop.cfg
+       lightscript_values.cfg
+       listenserver.cfg
+       listenserver.cfg.bak_20260827_193829
+       mapcycle.txt
+       mapcycle_ffa.txt
+       mapcycle_tdm.txt
+       screenshot.cfg
+       server.cfg
+       server.cfg.bak_20260827_193829
+       server_blacklist.txt
+       server_match.cfg
+       server_match.cfg.bak_20260827_193829
+       server_match_post.cfg
+       server_match_post.cfg.bak_20260827_193829
+       settings.scr
+       settings_default.scr
+       skill.cfg
+       skill_manifest.cfg
+       sourcemod
+       teamplay_colors.txt
+       trusted_keys_base.txt
+       user_default.scr
+       valve.aps

@@ -1,0 +1,3207 @@
+// Office Complex: Unbeknownst to the staff, the cafeteria had been serving bullsquid for years.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c1a2a STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+//================================================================================================================================
+//						Base Utility Soundscapes - Map A
+//================================================================================================================================
+//
+// These .base soundscapes are building blocks to establish the baseline environmental ambience, and are meant for 
+// insertion into the proper main use soundscapes. They are NOT meant for actual .vmf soundscape entity consumption.
+// For the main soundscapes proper, please scroll down to  "Main Map Soundscapes - Map A"
+
+
+"c1a2a.corridor.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_lab2.wav"
+	}
+}
+
+"c1a2a.ventilation_duct.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_vent1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+"c1a2a.ventilation_fanroom.base"
+{
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_vent1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large4.wav"
+	}
+}
+
+"c1a2a.lounge.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.05"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med3.wav"
+	}
+}
+
+"c1a2a.lounge_utrm.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.10"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med3.wav"
+	}
+}
+
+"c1a2a.corridor2_uta1.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2a.storagebay.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2a.storagebay_utwp.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2a.floodedofficeroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"bms_ambience/room_ambience/r_ambience_water_room_st.wav"
+	}
+}
+
+"c1a2a.utility_smallroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2a.securityturretarea1.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_lab2.wav"
+	}
+}
+
+"c1a2a.utility_stairwell.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+}
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map A
+//================================================================================================================================
+//
+// These positional soundscapes are supplements to provide local sound placements and attenuation instuctions via info_target.
+// They are NOT meant for actual .vmf soundscape entity consumption.
+// For the main soundscapes proper, please scroll down to  "Main Map Soundscapes - Map A"
+//
+//
+// Positional Utility, A Corridor 1.	(a_cor1, for shorthand)
+
+///////// info_targets ///////////
+// a_cor1_pos7_pipe1
+
+"c1a2a.cor1.util_pos7"
+{
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"soundlevel"		"SNDLVL_70dB"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utilities, A Office Lounge 1.	(a_lng1, for shorthand)
+
+///////// info_targets ///////////
+// a_lng1_pos0_ehum1
+// a_lng1_pos1_ehum1a
+
+// electrical panels in lounge utility closet
+
+"c1a2a.lng1.util_pos0-1"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.22"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"soundlevel"		"SNDLVL_70dB"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.22"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"		"1.0"
+
+		"position" 		"1"
+	}
+}
+
+///////// info_targets ///////////
+// a_lng1_pos2_vendinga
+// a_lng1_pos3_vendingb
+
+// vending machines in the office lounge
+
+"c1a2a.lng1.util_pos2-3"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_objects/vmachine/vending_hum_a.wav"
+		"attenuation"		"1.4"
+
+		"position" 		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_objects/vmachine/vending_hum_b.wav"
+		"attenuation"		"1.4"
+
+		"position" 		"3"
+	}
+}
+
+// Positional Utilities, A Corridor 2.	(a_cor2, for shorthand)
+
+///////// info_targets ///////////
+// a_cor2_pos0_vendinga
+// a_cor2_pos1_vendingb
+// a_cor2_pos2_ehum1
+
+// vending machines 
+ 
+"c1a2a.cor2.util_pos0-1"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_objects/vmachine/vending_hum_a.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_objects/vmachine/vending_hum_b.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.05"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"soundlevel"		"SNDLVL_NORM"
+
+		"position" 		"2"
+	}
+}
+
+
+///////// info_targets ///////////
+// a_offd_pos3_water
+
+// flooded office water, directional.
+ 
+"c1a2a.cor2.util_pos3"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			")bms_ambience/room_ambience/r_ambience_water_room_st.wav"
+		"soundlevel"		"SNDLVL_NORM"
+
+		"position" 		"3"
+	}
+}
+
+// Positional Utility, A - Storagebay Main.	(a_sbay, for shorthand)
+
+///////// info_targets ///////////
+// a_sbay_pos0_ehum1
+// a_sbay_pos1_ehum1a
+// a_sbay_pos2_pflow2
+// a_sbay_pos3_steam2 (hl2 sound)
+
+"c1a2a.sbay.util_pos0-3"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"50"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"125"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"soundlevel"		"SNDLVL_NORM"
+
+		"position" 		"3"
+	}
+}
+
+// Positional Utility, A - Storagebay UTRoom.	(a_sbut, for shorthand)
+
+///////// info_targets ///////////
+// a_sbut_pos7_pflow1
+
+"c1a2a.sbut.util_pos7"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"soundlevel"		"SNDLVL_NORM"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utilities, A Corridor ut01.	(a_ut1, for shorthand)
+
+///////// info_targets ///////////
+// a_ut1_pos0_ehum1a
+// a_ut1_pos1_ehum1b
+// a_ut1_pos2_pipe4
+// a_ut1_pos3_pflow1
+
+"c1a2a.ut1.util_pos0-3"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.11"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.11"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"attenuation"		"1.4"
+
+		"position" 		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"BMS_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"		"0.9"
+
+		"position" 		"3"
+	}
+}
+
+// Positional Utilities, A Security Turret Area 1.	(a_stur1, for shorthand)
+
+///////// info_targets ///////////
+// a_stur1_pos7_ehum1
+
+"c1a2a.stur1.util_pos7"
+{
+	"playlooping"
+	{
+		"volume"		"0.11"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utilities, A_Starwell 1.	(a_stw1, for shorthand)
+
+///////// info_targets ///////////
+// a_stw_pos5_pflow2
+// a_stw_pos6_pipe1
+
+"c1a2a.stw1.util_pos5-6"
+{
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"6"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes - Map A
+//================================================================================================================================
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Office Corridor 1 
+//				// 
+//				// Map Start, first corridor after exiting the UC elevator.
+
+"c1a2a.corridor1.pre"
+{
+	"dsp"	"17"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.corridor.base"
+		"volume"		"0.3"
+	}
+}
+
+"c1a2a.corridor1"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.cor1.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Ventilation Duct 1
+// 
+//				// Map Start, first vent duct. Found while searching in Corridor 1.
+
+"c1a2a.ventilation_duct1"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Ventilation Fan Room
+// 
+//				//
+
+"c1a2a.ventilation_fanroom1"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.ventilation_fanroom.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Office Lounge 1
+//
+//				// Map start, on immediate right when exiting the UC elevator. 
+//				// Player takes Ventilation Duct 1 to gain access the lounge, as the doors are locked. 
+
+"c1a2a.lounge1"
+{
+	"dsp"	"0"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.lounge.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.lng1.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.lng1.util_pos2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.cor1.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Office Lounge 1 -  Utility Maintenance Room
+//
+//				// Maintenance Room in The Office Lounge.
+//				// Eletrical Panels, Water lines, etc.
+
+"c1a2a.lounge1_utrm1"
+{
+	"dsp"	"17"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.lounge_utrm.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.lng1.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.lng1.util_pos2-3"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Office Corridor 2 
+//
+//				// Player smashes a window at the end of Corridor 1, and enters Corridor 2.
+//				// To the immediate right will be the Flooded Office Room.
+
+"c1a2a.corridor2"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.cor2.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.cor2.util_pos3"
+		"volume"		"1.0"
+	}
+}
+
+"c1a2a.corridor2_s2"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.sbay.util_pos0-3"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Office Corridor 2 - Utility Maintenance Access
+//
+//				// Found nested inside the Corridor 2 office kiosk 
+//				//
+
+"c1a2a.corridor2_uta1"
+{
+	"dsp"	"17"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.corridor2_uta1.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Storage Bay
+//
+//				// Player finds a security guard, and his buddy (unbeknownst to him) has gone thru the good ol' 
+//				// Zombification process back in the rear utility room. Good times were had by all.
+//				// Shooty Shooty Bang Bang.
+ 
+"c1a2a.storagebay"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.storagebay.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.sbay.util_pos0-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.sbut.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Storage Bay Utility Room - Weapons Access Area. 
+//
+
+"c1a2a.storagebay_utwp01"
+{
+	"dsp"	"17"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.storagebay_utwp.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.sbut.util_pos7"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.sbay.util_pos0-3"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Flooded Office Room
+//				// Don't touch the floor - it's high quality electrified H2O.
+//				// You will find Ventilation Duct 2 while in that room.
+//
+
+"c1a2a.floodedofficeroom1"
+{
+	"dsp"	"0"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.floodedofficeroom.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Ventilation Duct 2
+//				// A ventilation duct, nestled inside the flooded office room.
+//				// Travel far enough in, and you'll drop into Office Corridor 3.
+//
+
+"c1a2a.ventilation_duct2"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Office Corridor 3
+//
+//				// Having taken Ventilation Duct 2, the player drops into corridor 3, 
+//				// due to a weak spot in the vent giving out their weight. 
+//				// Time to start laying off that cafeteria pizza, son.
+
+"c1a2a.corridor3"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.ut1.util_pos0-3"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Ventilation Duct 3
+//
+//				// A ventilation duct, nestled above corridor 3. 
+//				// Found towards the end of the hall, accessible via a built-in ladder hatch. 
+//				// Player takes this duct to gain access to the first security turret area.
+
+"c1a2a.ventilation_duct3"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Corridor UT01
+//
+//				// A maintenance corridor that runs from Security Turret Area 1 back to Office Corridor 3.
+//				// 
+//				// a soundscape positional blend target, "a_sta_posblend", 
+//				// is used to migrate the hard transition to the security turret area.
+
+"c1a2a.corridor_ut01"
+{
+	"dsp"	"17"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.utility_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.ut1.util_pos0-3"
+		"volume"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"wave"			")bms_ambience\room_ambience\r_ambience_large7.wav"
+		"pitch"			"100"
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_NORM"
+
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Security Turret Area 1 
+//
+//				// Player drops into Security Turret Area 1, but not before witnessing the turret's
+//				// firepower capabilities on an panicked scientist seeking refuge from other threats nearby. 
+ 
+"c1a2a.securityturretarea1"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.securityturretarea1.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.stw1.util_pos5-6"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.stur1.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Stairwell
+//				// Stairwell that leads to Map B transition point.
+//				// END OF MAP A 
+
+"c1a2a.stairwell"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.utility_stairwell.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2a.stw1.util_pos5-6"
+		"volume"		"1.0"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c1a2b STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+//================================================================================================================================
+//						Base Utility Soundscapes
+//================================================================================================================================
+//
+// These .base soundscapes are building blocks to establish the baseline environmental ambience, and are meant for 
+// insertion into the proper main use soundscapes. They are NOT meant for actual .vmf soundscape entity consumption.
+// For the main soundscapes proper, please scroll down to  "Main Map Soundscapes - Map **"
+
+
+"c1a2b.corridor.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+}
+
+"c1a2b.office_largeroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.12"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med6.wav"
+	}
+}
+
+"c1a2b.office_smallroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.12"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med8.wav"
+	}
+}
+
+// .v2 is sans computer ambience wav.
+
+"c1a2b.office_smallroom.base.v2"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+}
+
+"c1a2b.office_floodedroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+	}
+}
+
+"c1a2b.ventilation_duct.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_vent1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+"c1a2b.ventilation_shaft.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large3.wav"
+	}
+}
+
+"c1a2b.utility_largeroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2b.utility_smallroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2b.utility_stairwell.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+}
+
+"c1a2b.elevator_shaft.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_eleshaft1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med12.wav"
+	}
+}
+
+"c1a2b.utility_exit.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med9.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_pipes1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+"c1a2b.utility_entrance.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med10.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_pipes1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+"c1a2b.utility_entrance.baseblend"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med10a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_pipes1a.wav"
+	}
+}
+
+"c1a2b.office_cafeteria.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map B
+//================================================================================================================================
+//
+// These positional soundscapes are supplements to provide local sound placements and attenuation instuctions via info_target.
+// They are NOT meant for actual .vmf soundscape entity consumption.
+// For the main soundscapes proper, please scroll down to  "Main Map Soundscapes - Map B"
+
+// Positional Utility, B Small Office Room (b_offsm, for shorthand)
+
+///////// info_targets ///////////
+//
+// b_offsm_pos7_pipe1
+
+"c1a2b.offsm.util_pos7"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utility, B Corridor 3.	(b_cor3, for shorthand)
+
+///////// info_targets ///////////
+// b_cor3_pos0_vending
+// b_cor3_pos1_vendinga
+
+"c1a2b.cor3.util_pos0-1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_objects/vmachine/vending_hum.wav"
+		"attenuation"		"1.4"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_objects/vmachine/vending_hum_a.wav"
+		"attenuation"		"1.4"
+
+		"position" 		"1"
+	}
+}
+
+// Positional Utility, B Stairwell.	(b_stw, for shorthand)
+
+///////// info_targets ///////////
+// b_stw_pos7_pipe4b
+
+"c1a2b.stw.util_pos6-7"
+{
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"110"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"soundlevel"		"SNDLVL_70dB"
+
+		"position" 		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"110"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4b.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position" 		"7"
+	}
+}
+
+//================================================================================================================================
+//						MAIN MAP SOUNDSCAPES - MAP B
+//================================================================================================================================
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Office Corridor 1 
+//				// 
+//				// Map Start, first corridor after exiting the map a stairwell.
+
+"c1a2b.corridor1"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.corridor.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Office Corridor 2 
+//				// 
+//				// Map Start, first corridor after exiting the map a stairwell.
+
+"c1a2b.corridor2"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.4"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			")bms_ambience\room_ambience\r_ambience_med6a.wav"
+		"soundlevel"		"SNDLVL_70dB"
+
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Office Area 1
+//
+//				//
+//				//
+
+"c1a2b.office_area1"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_largeroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.offsm.util_pos7"
+		"volume"		"0.5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Small Office Room(s)
+//
+//				//
+//				//
+
+"c1a2b.officearea1_smallroom"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.offsm.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+"c1a2b.officearea1_room1"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.offsm.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+"c1a2b.officearea1_room2"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_largeroom.base"
+		"volume"		"0.35"
+	}
+}
+
+"c1a2b.officearea1_room3"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_largeroom.base"
+		"volume"		"0.35"
+	}
+}
+
+"c1a2b.officearea1_room4"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_largeroom.base"
+		"volume"		"0.35"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.offsm.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+"c1a2b.officearea1_room5"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_largeroom.base"
+		"volume"		"0.35"
+	}
+}
+
+"c1a2b.officearea1_room6"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_largeroom.base"
+		"volume"		"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"0.35"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Office Area 1 Lounge
+//
+//				//
+//				// Please note that this soundscape utilizes a positonal target utility, "c1a2b.offsm.util_pos7"
+//				// that is used also in Map C. This is done because there is a map transition nearby, and this preserves 
+				// continuity between the landmark areas.
+"c1a2b.officearea1_lounge"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base.v2"
+		"volume"		"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.offsm.util_pos7"
+		"volume"		"0.5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Office Corridor 2a
+//				// 
+//				//
+
+"c1a2b.corridor2a"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.4"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_largeroom.base"
+		"volume"		"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base"
+		"volume"		"0.45"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Office Small Corridor
+//
+//				//
+//				//
+
+"c1a2b.officesmcorridor"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.4"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_smallroom.base.v2"
+		"volume"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			")bms_ambience\room_ambience\r_ambience_med6a.wav"
+		"soundlevel"		"SNDLVL_NORM"
+
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Ventilation Duct 1
+//
+//				// A ventilation duct, nestled above one of the small office lounges in Office Area 1. 
+//				// Player takes this duct to gain access the security turret in map c,
+//				// so it may be disabled beforehand, allowing npcs to traverse more safely.
+
+"c1a2b.ventilation_duct1"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Office Corridor 3
+//				// 
+//				//
+
+"c1a2b.corridor3"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.4"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.cor3.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.office_largeroom.base"
+		"volume"		"1.0"
+		"ambientpositionoverride" "7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Stairwell
+//
+//				// Stairwell that leads to Map B transition point.
+//				// END OF MAP B
+
+"c1a2b.stairwell"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.utility_stairwell.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.stw.util_pos6-7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B - Stairwell Utility Closet
+//
+//				// Scientist in the closet...uh..
+//				// Listening to Secure Access Transmissions...
+//				// END OF MAP B
+
+"c1a2b.stairwell_utrm01"
+{
+	"dsp"	"17"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.utility_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.stw.util_pos6-7"
+		"volume"		"1.0"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c1a2c STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+//================================================================================================================================
+//						Base Utility Soundscapes - MAP C
+//================================================================================================================================
+//
+// These .base soundscapes are building blocks to establish the baseline environmental ambience, and are meant for 
+// insertion into the proper main use soundscapes. They are NOT meant for actual .vmf soundscape entity consumption.
+// For the main soundscapes proper, please scroll down to  "Main Map Soundscapes - Map C"
+
+"c1a2c.corridor.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+}
+
+"c1a2c.office_largeroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.12"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med6.wav"
+	}
+}
+
+"c1a2c.office_smallroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.12"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med8.wav"
+	}
+}
+
+"c1a2c.office_floodedroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+	}
+}
+
+"c1a2c.ventilation_duct.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_vent1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+"c1a2c.ventilation_shaft.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large3.wav"
+	}
+}
+
+"c1a2c.utility_largeroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2c.utility_smallroom.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2c.utility_stairwell.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+}
+
+"c1a2c.elevator_shaft.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_eleshaft1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med12.wav"
+	}
+}
+
+"c1a2c.utility_exit.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med9.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_pipes1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+"c1a2c.utility_entrance.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med10.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_pipes1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+"c1a2c.utility_entrance.baseblend"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med10a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_pipes1a.wav"
+	}
+}
+
+"c1a2c.office_cafeteria.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"c1a2c.freezer_main.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large5.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large4.wav"
+	}
+}
+
+"c1a2c.freezer_duct.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_vent1.wav"
+	}
+}
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map C
+//================================================================================================================================
+//
+// These positional soundscapes are supplements to provide local sound placements and attenuation instuctions via info_target.
+// They are NOT meant for actual .vmf soundscape entity consumption.
+// For the main soundscapes proper, please scroll down to  "Main Map Soundscapes - Map C"
+//
+//
+// Positional Utility, C Corridor 1.	(c_cor1, for shorthand)
+
+///////// info_targets ///////////
+// c_cor1_pos7_pipe1
+
+"c1a2c.cor1.util_pos7"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utilities, C Corridor UT1 Exit.	(c_ut1ex, for shorthand)
+// 
+
+///////// info_targets ///////////
+// c_ut1ex_pos0_pipe4
+// c_ut1ex_pos1_pipe5
+// c_ut1ex_pos2_pflow2
+// c_ut1ex_pos3_pipe2
+
+"c1a2c.ut1ex.util_pos0-3"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"3"
+	}
+}
+
+///////// info_targets ///////////
+// c_ut1ex_pos4_pflow2a
+// c_ut1ex_pos5_pipe4a
+// c_ut1ex_pos6_ehum1
+
+"c1a2c.ut1ex.util_pos4-6"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2a.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4a.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"6"
+	}
+}
+
+// Positional Utilities, C Corridor UT1 Entrance.	(c_uten, for shorthand)
+// 
+
+///////// info_targets ///////////
+// c_uten_pos0_pipe4b
+// c_uten_pos1_pipe1a
+// c_uten_pos2_pipe3
+// c_uten_pos3_pflow2
+// c_uten_pos4_pipe1b
+
+"c1a2c.uten.util_pos0-4"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4b.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1a.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"		"1.35"
+
+		"position" 		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.40"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1b.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"4"
+	}
+}
+
+// section 2, 5-7
+
+///////// info_targets ///////////
+// c_uten2_pos5_pflow1a
+// c_uten2_pos6_pflow1
+// c_uten2_pos7_carchime
+
+"c1a2c.uten2.util_pos5-7"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"BMS_ambience/machine_ambience/m_ambience_pipeflow1a.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"BMS_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"		"1.3"
+
+		"position" 		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.650"
+		"pitch"			"100"
+		"wave"			"bms_objects/vehicles/car_chime.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utility, ventilation Duct1a.	(c_dct1a, for shorthand)
+
+///////// info_targets ///////////
+//
+// c_dct1a_pos7_exit  (this is used to smooth out the hard transition into the UT Entrance soundscape. it's a neat trick.
+//
+
+"c1a2c.dct1a.util_pos7"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			")bms_ambience\room_ambience\r_ambience_pipes1a.wav"
+		"soundlevel"		"SNDLVL_70dB"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utility, C Cafeteria.	(c_caf, for shorthand)
+
+///////// info_targets ///////////
+//
+// c_car_pos6_drinkfountain
+//
+
+"c1a2c.caf.util_pos6"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.03"
+		"pitch"			"150"
+		"wave"			"ambient/water/water_flow_loop1.wav"
+		"attenuation"		"1.0"
+
+		"position" 		"6"
+	}
+}
+
+// Positional Utility, C Corridor 3.	(c_cor3, for shorthand)
+
+///////// info_targets ///////////
+// c_cor3_pos0_vendinghum
+// c_cor3_pos1_vendinghum
+
+"c1a2c.cor3.util_pos0-1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_objects/vmachine/vending_hum.wav"
+		"attenuation"		"1.4"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_objects/vmachine/vending_hum_a.wav"
+		"attenuation"		"1.4"
+
+		"position" 		"1"
+	}
+}
+
+// Positional Utility, C Freezer.	(c_fzr, for shorthand)
+// positions 2 to 5 only
+
+///////// info_targets ///////////
+// c_fzr_pos2_fan4
+// c_fzr_pos3_fan4a
+// c_fzr_pos4_fan4b
+// c_fzr_pos5_fan4c
+// c_fzr_pos6_steam2
+
+"c1a2c.frz.util_pos2-6"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan4.wav"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position" 		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan4a.wav"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position" 		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan4b.wav"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position" 		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan4c.wav"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position" 		"5"
+	}
+}
+
+// c_frz_pos_doorway (this is a special guy, full of audio trickery shannanigans.
+
+"c1a2c.frz.util_pos_doorway"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			")bms_ambience\room_ambience\r_ambience_large5a.wav"
+		"soundlevel"		"SNDLVL_70dB"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utility, Ut_Maintenance Area - Barnacle Section.	(c_utba, for shorthand)
+
+///////// info_targets ///////////
+// c_utba_pos0_pipe1
+// c_utba_pos1_pipe4
+// c_utba_pos2_ehum1
+// c_utba_pos3_fan5
+
+"c1a2c.utba.util_pos0-3"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"		"1.2"
+
+		"position" 		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan5.wav"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position" 		"3"
+	}
+}
+
+// Positional Utility, c Stairwell.	(c_stw, for shorthand)
+
+///////// info_targets ///////////
+//
+// c_stw_pos7_pipe2
+
+"c1a2c.stw.util_pos7"
+{
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"110"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position" 		"7"
+	}
+}
+
+// Positional Utility, C Elevator Shaft. (c_elshaft, for shorthand)
+
+///////// info_targets ///////////
+//
+// c_elshaft_pos6_ele	
+
+"c1a2c.eshaft.util_pos6"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			")bms_ambience\room_ambience\r_ambience_med12.wav"
+		"attenuation"		"1.5"
+
+		"position" 		"6"
+	}
+}
+
+//================================================================================================================================
+//						MAIN USE SOUNDSCAPES - MAP C
+//================================================================================================================================
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map B Stairwell - Map C version
+//
+//				// A Copy of "c1a2b.stairwell"
+//				//
+//				// Which starts to set up positionals 0-3	for the Corridor Ut1 Exit Section, 
+//				// 						as there's a open doorway nearby, and pipe sounds are in earshot.
+
+"c1a2b.stairwell.Cversion"
+{
+	"dsp"	"1"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.utility_stairwell.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.stw.util_pos6-7"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ut1ex.util_pos0-3"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Office Corridor 1
+//				// First Office Corrider. 
+//				//
+//				// We continue to utilize positionals 0-3		for the Corridor Ut1 Exit Section, 
+//				// We Switch out the pos7 stairwell pipe utility	for the pos7 pipe in corridor 1.
+
+"c1a2c.corridor1"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.cor1.util_pos7"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ut1ex.util_pos0-3"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Corridor UT 1 - Exit Section
+//
+//				// This utilities maintenance corridor connects to Office Corridor 1, 
+//				// and leads out to the Corridor UT1 Entrance Section.
+//				//
+//				// We bring in the positionals 4-6 utility			"c1a2c.ut1ex.util_pos4-6"
+//				// once the player has entered this section in proper.
+
+"c1a2c.corridor_ut1_exit"
+{
+	"dsp"	"3"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utility_exit.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ut1ex.util_pos0-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ut1ex.util_pos4-6"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Corridor UT 1 - Entrance Section
+//
+//				// 
+//				// Ventilation Duct 1 will be nearby on the right as you enter this section.
+
+"c1a2c.corridor_ut1_entrance"
+{
+	"dsp"	"3"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utility_entrance.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.uten.util_pos0-4"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.uten2.util_pos5-7"
+		"volume"		"0.75"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Corridor UT 1 - Entrance Section (section 2)
+//
+//				// 
+//				// Section 2 will have the crashed jeep.
+
+"c1a2c.corridor_ut1_entrance2"
+{
+	"dsp"	"3"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utility_entrance.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.uten.util_pos0-4"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.uten2.util_pos5-7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Ventilation Duct 1
+// 
+//				//
+//				//
+
+"c1a2c.ventilation_duct1"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utility_entrance.base"
+		"volume"		"0.30"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.uten.util_pos0-4"
+		"volume"		"1.0"
+	}
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Ventilation Fan Room
+// 
+//				//
+//				//
+
+"c1a2c.ventilation_fanroom"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Ventilation Duct 1a
+// 
+//				// 
+//				//
+
+"c1a2c.ventilation_duct1a"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.dct1a.util_pos7"
+		"volume"		"0.5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Office Corridor 2
+//				// 
+//				//
+
+"c1a2c.corridor2"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.4"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.uten.util_pos0-4"
+		"volume"		"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.dct1a.util_pos7"
+		"volume"		"0.35"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Small Office 1 - Near the Cafeteria.
+//
+//				// 
+//				// 
+
+"c1a2c.small_office1"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utility_stairwell.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Cafeteria
+//
+//				// It's a cafeteria. You order food, and other such bullcrap. 
+//				// Pretty sure that's bullsquid, Bob.
+//				// ... Don't f---kin' interrupt me, Bill.
+
+"c1a2c.cafeteria"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"0.7"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.office_cafeteria.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.uten.util_pos0-4"
+		"volume"		"0.75"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.caf.util_pos6"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.dct1a.util_pos7"
+		"volume"		"0.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Office Corridor 3
+//				// Take this corridor to reach the freezer section.
+//				// 
+
+"c1a2c.corridor3"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.cor3.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.frz.util_pos2-6"
+		"volume"		"0.6"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Office Corridor 3 - freezer door open version
+
+//				// Take this corridor to reach the freezer section.
+//				// 
+
+"c1a2c.corridor3_fzr"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.cor3.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.frz.util_pos2-6"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.freezer_main.base"
+		"volume"		"0.3"
+		"ambientpositionoverride" "7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Freezer - Main Section
+//
+//				//
+//				//
+
+"c1a2c.freezer_main"
+{
+	"dsp"	"4"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.freezer_main.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.frz.util_pos2-6"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.frz.util_pos_doorway"
+		"volume"		"0.5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Freezer Duct 1 - Maze Version
+// 
+//				//
+//				// There are multiple ducts that the player must navigate to reach the freezer duct 1 proper.
+
+"c1a2c.freezer_duct1_mze"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.freezer_duct.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.freezer_main.base"
+		"volume"		"0.53"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.frz.util_pos2-6"
+		"volume"		"0.33"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Freezer duct 1
+// 
+//				//
+//				//
+
+"c1a2c.freezer_duct1"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.freezer_duct.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.freezer_main.base"
+		"volume"		"0.25"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Ventilation Duct 2
+// 
+//				//
+//				//
+
+"c1a2c.ventilation_duct2"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.freezer_main.base"
+		"volume"		"0.15"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utba.util_pos0-3"
+		"volume"		"0.5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Utility Maintenance - Barnacle Section
+//
+//				// Area with the gas valve puzzle. And a Barnacle. 
+//				// 
+
+"c1a2c.maintenance_utba01"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utility_smallroom.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utba.util_pos0-3"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Ventilation Duct 3
+// 
+//				//
+//				//
+
+"c1a2c.ventilation_duct3"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.stw.util_pos7"
+		"volume"		"0.65"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Stairwell
+//				// Stairwell that leads to Office Corridor 4
+//				// 
+
+"c1a2c.stairwell1"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utility_stairwell.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.stw.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Office Corridor 4
+//				// Take this corridor to reach the final countdown...er elevator.
+//				// 
+
+"c1a2c.corridor4"
+{
+	"dsp"	"18"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.corridor.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.eshaft.util_pos6"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.stw.util_pos7"
+		"volume"		"0.75"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Elevator Shaft
+//				// END OF MAP C // HEADING OFF TO WGH
+//				// 
+
+"c1a2c.elevator_shaft"
+{
+	"dsp"	"1"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.elevator_shaft.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.eshaft.util_posNULL6"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Elevator Shaft ("A" Version for WGH)
+//				//  copy of the one above, for WGH map transition (this will suffice until we update the nomenclature in the vmf proper
+//				//  for inside the elevator
+
+"c1a2a.elevator_shaft"
+{
+	"dsp"	"1"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.elevator_shaft.base"
+		"volume"		"0.5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//
+//		
+//
+//
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Ventilation Duct 4  
+// 
+//				// A ventilation duct which allows you to back track to Map B and vice versa. 
+//				// It grants access to Elevator Shaft 2.
+
+"c1a2c.ventilation_duct4"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2b.offsm.util_pos7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Ventilation Duct 5 - Turret Access
+// 
+//				//
+//				//
+
+"c1a2c.ventilation_duct5"
+{
+	"dsp"	"2"
+	"dsp_volume" 	"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.ventilation_duct.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.freezer_main.base"
+		"volume"		"0.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map C - Elevator Shaft 2
+// 
+//				// Elevator Shaft 2 grants access to 
+//				// Ventilation Duct 5, which leads to the turret control switch booth.
+
+"c1a2c.elevator_shaft2"
+{
+	"dsp"	"1"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.elevator_shaft.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//		Leftovers from the conversion effort?
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Small Office Room
+//
+
+"c1a2a.office_smallroom"
+{
+	"dsp"	"0"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.office_smallroom.base"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+"c1a2a.utility_largeroom"
+{
+	"dsp"	"19"
+	"dsp_volume" 	"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"c1a2c.utility_largeroom.base"
+		"volume"		"1.0"
+	}
+}

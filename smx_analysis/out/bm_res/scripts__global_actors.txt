@@ -1,0 +1,19 @@
+globalactors
+{
+	"guard"					"male"
+	"guard_02"				"male"
+	"guard_hurt"			"male"
+	"scientist"				"male"
+	"scientist_02"			"male"
+	"scientist_hurt"		"male"
+	"scientist_hurt_02"		"male"
+	"scientist_female"		"female"
+	"marine"				"male"
+	"marine_sg"				"male"
+	"marine_02"				"male"
+	"marine_02_sg"			"male"
+	"masked_marine"			"female"
+	"masked_marine_sg"		"female"
+	"masked_marine_02"		"female"
+	"masked_marine_02_sg"	"female"
+}

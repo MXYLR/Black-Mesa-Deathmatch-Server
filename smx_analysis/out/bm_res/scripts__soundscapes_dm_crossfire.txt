@@ -1,0 +1,1374 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP DM_CROSSFIRE STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+"cf.util_birdlife"	
+{	
+	"playrandom"
+	{
+		"volume"	"0.15"
+		"pitch"		"90,110"
+		"time"		"40,90"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\hawk1.wav"	
+			"wave"	"bms_ambience\soundscape\hawk4.wav"	
+			"wave"	"bms_ambience\soundscape\eagle3.wav"	
+		}
+	}
+}
+
+"cf.util_amb_indoorbooms_ruins"
+{	
+	"playrandom"
+	{
+		"volume"		"0.4"
+		"pitch"			"90,110"
+		"time"			"8,15"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+}
+
+"cf.util_amb_rockdebris"
+{
+	"playrandom"
+	{
+		"volume"		"0.3"
+		"pitch"			"90,110"
+		"time"			"12,20"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"		"bms_ambience\object_physics\rocks_fall1.wav"
+			"wave"		"bms_ambience\object_physics\rocks_fall2.wav"
+			"wave"		"bms_ambience\object_physics\rocks_fall3.wav"
+			"wave"		"bms_ambience\object_physics\small_debris9.wav"
+		}
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//													Base Utility Soundscapes
+//================================================================================================================================
+//================================================================================================================================
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map X" for the soundscapes proper.
+
+
+"crossfire.outside.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_wind3.wav"
+	}
+}
+
+"crossfire.indoor.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med9.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_wind5.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+	}
+}
+
+"crossfire.indoor_ruins.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_wind5.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+	}
+}	
+
+"crossfire.bunker.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"110"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+}
+
+
+//////////
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Crossfire - Indoor Section A	(NOT RUINS)
+//									cf_irsA , for positional shorthand.
+
+///////// info_targets ///////////
+
+// cf_irsA_pos4_ehum1b
+// cf_irsA_pos5_pipe1a
+
+// cf_irsA_pos6_misc6a
+
+"cf.irsA.util_pos4-5"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"4"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1a.wav"
+		"volume"		"0.36"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"5"
+	}
+}
+
+"cf.irsA.util_pos6only"
+{
+	"playlooping"
+	{
+		"wave"			"BMS_ambience/machine_ambience/m_ambience_misc6a.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"6"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Crossfire - Indoor Section A1	(NOT RUINS)
+//									cf_irA1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// cf_irA1_pos4_pipe2a
+// cf_irA1_pos5_pipe2b
+
+"cf.irA.util_pos4-5"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2a.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"4"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2b.wav"
+		"volume"		"0.36"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Crossfire - Indoor Ruins Section B
+//									cf_irsB , for positional shorthand.
+
+///////// info_targets ///////////
+
+// cf_irsB_pos_pipe3
+// cf_irsC_pos_pipe3a
+
+// cf_irsB_pos_pipe1b
+// cf_irsB_pos_pipe1c
+
+"cf.irsB.util_pos"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"4"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe3a.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"5"
+	}
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1b.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"6"
+	}	
+
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1c.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Crossfire - Indoor Ruins Section C
+//									cf_irsC , for positional shorthand.
+
+///////// info_targets ///////////
+
+// cf_irsC_pos4_pipe1b
+// cf_irsC_pos5_pipe1c
+
+// cf_irsC_pos6_pipe1d	(d doesnt exist, using pipe1.wav instead)
+// cf_irsC_pos7_hum1
+
+"cf.irsC.util_pos4-6"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1b.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"4"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1c.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"5"
+	}
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"6"
+	}	
+}
+
+"cf.irsC.util_pos7only"
+{
+	"playlooping"
+	{
+		"wave"			"bms_objects/hum/hum1.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Crossfire - Indoor Ruins Section D
+//									cf_irsD , for positional shorthand.
+
+///////// info_targets ///////////
+
+// cf_irsD_pos6_pipe4
+// cf_irsD_pos7_pipe2
+
+"cf.irsD.util_pos6-7"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"6"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"volume"		"0.45"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Crossfire - Indoor Ruins Section H
+//									cf_irsH , for positional shorthand.
+
+///////// info_targets ///////////
+
+// cf_irsH_pos4_med3		(position 4)
+// cf_irsH_pos5_pipe3	(position 5)
+
+"cf.irsH.util_pos4-5"
+{
+	"playlooping"
+	{
+		"wave"			"@bms_ambience/room_ambience/r_ambience_med3.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"4"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Crossfire - Outside 1
+//									cf_out1 , for positional shorthand.
+
+///////// info_targets ///////////
+// cf_out1_pos0_ehum1
+// cf_out1_pos1_ehum1a
+
+// cf_out1_pos2_misc6
+// cf_out1_pos3_pflow1
+
+"cf.outside1.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"volume"		"0.7"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"0"
+	}
+	
+		"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"1"
+	}
+}
+
+"cf.outside1.util_pos2-3"
+{
+	"playlooping"
+	{
+		"wave"			"BMS_ambience/machine_ambience/m_ambience_misc6.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"2"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"volume"		"0.9"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"3"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Crossfire - Outside 2
+//									cf_out2 , for positional shorthand.
+
+///////// info_targets ///////////
+// cf_out2_pos0_ehum1
+// cf_out2_pos1_pipe4
+
+// cf_out2_pos2_pipe2
+// cf_out2_pos3_???
+
+"cf.outside2.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"1"
+	}
+}
+
+"cf.outside2.util_pos2-3"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"1"
+	}
+}
+
+
+//================================================================================================================================
+//										Main Map Soundscapes - dm_crossfire
+//================================================================================================================================
+
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Outside (MAIN)		//
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+
+"crossfire.outside"
+{
+	"dsp"				"25"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.outside.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"cf.util_birdlife"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Outside 1		//
+//								// 
+
+"crossfire.outside1"
+{
+	"dsp"				"25"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.outside.base"
+		"volume"		"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Outside 1
+	//--------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"cf.outside1.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.outside1.util_pos2-3"
+		"volume"		"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Indoor Section A, nearby
+	//
+	// positional is a generator just outside the doorway
+	// which enters "irsA", so technically an outside 1 position.
+	// nomenclature whoospies...
+	//--------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"			"cf.irsA.util_pos6only"
+		"volume"		"1.0"
+	}	
+	
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND (Birds... Frickin' Birds.)
+	//--------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_birdlife"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Outside 2		//
+//								//  Helipad Section
+//
+
+"crossfire.outside2"
+{
+	"dsp"				"25"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.outside.base"
+		"volume"		"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Outside 2 
+	//--------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"cf.outside2.util_pos0-1"
+		"volume"		"1.0"
+	}
+	
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Indoor A1, nearby 
+	//--------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"cf.irA.util_pos4-5"
+		"volume"		"0.65"
+	}	
+
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND (Birds... Frickin' Birds.)
+	//--------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"cf.util_birdlife"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor (MAIN)		//
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+
+"crossfire.indoor"
+{
+	"dsp"				"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor.base"
+		"volume"		"1.0"
+	}	
+	
+	"playrandom"
+	{
+		"volume"		"0.15"
+		"pitch"			"90,110"
+		"time"			"8,15"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+}
+
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor (MAIN)		//
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+
+"crossfire.indoor_b"
+{
+	"dsp"				"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor.base"
+		"volume"		"1.0"
+	}	
+	
+		// info_target is "cf_irB_pos0_pipe3"
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"0"
+	}	
+	
+	"playrandom"
+	{
+		"volume"		"0.15"
+		"pitch"			"90,110"
+		"time"			"8,15"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+}
+
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor, Section A		//
+
+
+"crossfire.indoor_a"
+{
+	"dsp"				"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor.base"
+		"volume"		"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Indoor Section A	
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"cf.irsA.util_pos4-5"
+		"volume"		"1.0"
+	}
+	
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Indoor Section A
+	//
+	// positional is a generator just outside the doorway
+	// which enters "irsA", so technically an outside 1 position.
+	// nomenclature whoospies...
+	//--------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"			"cf.irsA.util_pos6only"
+		"volume"		"1.0"
+	}	
+
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND
+	//--------------------------------------------------	
+	
+	"playrandom"
+	{
+		"volume"		"0.15"
+		"pitch"			"90,110"
+		"time"			"8,15"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor, Section A1		// 
+
+
+"crossfire.indoor_a1"
+{
+	"dsp"				"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"cf.irA.util_pos4-5"
+		"volume"		"1.0"
+	}	
+
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND
+	//--------------------------------------------------	
+	
+	"playrandom"
+	{
+		"volume"		"0.15"
+		"pitch"			"90,110"
+		"time"			"8,15"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"		"bms_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor Ruins (MAIN)	//
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+
+"crossfire.indoor_ruins"
+{
+	"dsp"				"9"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor_ruins.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_indoorbooms_ruins"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_rockdebris"
+		"volume"		"1.0"
+	}	
+}
+
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor Ruins (MAIN)	//
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+//									//  Explain STUFF HERE
+
+"crossfire.indoor_ruins_a"
+{
+	"dsp"				"9"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor_ruins.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_indoorbooms_ruins"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_rockdebris"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor Ruins b	//
+
+
+"crossfire.indoor_ruins_b"
+{
+	"dsp"				"9"
+	"dsp_volume"		"1.0"
+	"fadetime"			"2.3"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor_ruins.base"
+		"volume"		"1.0"
+	}	
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Indoor Section A
+	//
+	// positional is a generator just outside the doorway
+	// which enters "irsA", so technically an outside 1 position.
+	// nomenclature whoospies...
+	//--------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"			"cf.irsA.util_pos6only"
+		"volume"		"1.0"
+	}		
+	
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND
+	//--------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_indoorbooms_ruins"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_rockdebris"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor Ruins c	//
+
+
+"crossfire.indoor_ruins_c"
+{
+	"dsp"				"9"
+	"dsp_volume"		"1.0"
+	"fadetime"			"2.3"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor_ruins.base"
+		"volume"		"1.0"
+	}	
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Outside 1, nearby 
+	//--------------------------------------------------
+
+	//set to half-volume to simulate wall/floor dampening.
+	
+	"playsoundscape"
+	{
+		"name"			"cf.outside1.util_pos0-1"
+		"volume"		"0.5"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Indoor Ruins Section C
+	//--------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"			"cf.irsC.util_pos4-6"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.irsC.util_pos7only"
+		"volume"		"1.0"
+	}		
+	
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND
+	//--------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_indoorbooms_ruins"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_rockdebris"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor Ruins d	//
+
+
+"crossfire.indoor_ruins_d"
+{
+	"dsp"				"9"
+	"dsp_volume"		"1.0"
+	"fadetime"			"2.3"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor_ruins.base"
+		"volume"		"1.0"
+	}	
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Outside 1, nearby
+	//--------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"cf.outside1.util_pos0-1"
+		"volume"		"1.0"
+	}
+	
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Indoor Ruins, Section D
+	//--------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"cf.irsD.util_pos6-7"
+		"volume"		"1.0"
+	}	
+
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND
+	//--------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_indoorbooms_ruins"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_rockdebris"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor Ruins H	// 
+
+
+"crossfire.indoor_ruins_h"
+{
+	"dsp"				"9"
+	"dsp_volume"		"1.0"
+	"fadetime"			"2.3"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor_ruins.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.irsH.util_pos4-5"
+		"volume"		"1.0"
+	}	
+
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND
+	//--------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_indoorbooms_ruins"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_rockdebris"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Indoor Ruins G	// 
+
+
+"crossfire.indoor_ruins_g"
+{
+	"dsp"				"9"
+	"dsp_volume"		"1.0"
+	"fadetime"			"2.3"
+
+	"playsoundscape"
+	{
+		"name"			"crossfire.indoor_ruins.base"
+		"volume"		"1.0"
+	}
+
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND
+	//--------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_indoorbooms_ruins"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.util_amb_rockdebris"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Bunker (MAIN Entrance)		//
+//											//  Explain STUFF HERE
+//											//  Explain STUFF HERE
+//											//  Explain STUFF HERE
+
+"crossfire.bunker"
+{
+	"dsp"				"6"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"crossfire.bunker.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.bnk_enter.util_pos6-7"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Bunker Right Side)		//"cf.bnk_L.util_pos6-7"
+//											//  Explain STUFF HERE
+//											//  Explain STUFF HERE
+//											//  Explain STUFF HERE
+
+"crossfire.bunker_right"
+{
+	"dsp"				"6"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"crossfire.bunker.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.bnk_R.util_pos2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.bnk_R.util_pos4-5"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Bunker Left Side)			//
+//											//  Explain STUFF HERE
+//											//  Explain STUFF HERE
+//											//  Explain STUFF HERE
+
+"crossfire.bunker_left"
+{
+	"dsp"				"6"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"crossfire.bunker.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.bnk_L.util_pos6-7"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Crossfire - Bunker Launch Control		//
+//											//  Explain STUFF HERE
+//											//  Explain STUFF HERE
+//											//  Explain STUFF HERE
+
+"crossfire.bunker_BLC"
+{
+	"dsp"				"6"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"crossfire.bunker.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"cf.bnk_R.util_pos4-5"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"cf.bnk_L.util_pos6-7"
+		"volume"		"1.0"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Crossfire - Bunker Entrance
+//									cf_bnkET, for positional shorthand.
+
+///////// info_targets ///////////
+// cf_bnkET_pos6_pipe1
+// cf_bnkET_pos7_pipe1a
+
+// entrance positions
+
+"cf.bnk_enter.util_pos6-7"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"6"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1a.wav"
+		"volume"		"0.9"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"7"
+	}
+}	
+
+// right side , before launch control
+
+//ct_bnkR_pos2_pflow1
+//ct_bnkR_pos3_pipe2
+
+//ct_bnkR_pos4_motor1
+//ct_bnkR_pos5_fan1
+ 
+"cf.bnk_R.util_pos2-3"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"2"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_objects/fans/fan1.wav"
+		"volume"		"0.9"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"3"
+	}
+}	
+	
+"cf.bnk_R.util_pos4-5"
+{	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_motor1.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"4"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"5"
+	}
+}
+
+"cf.bnk_L.util_pos6-7"
+{	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1c.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"6"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_motor1a.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"7"
+	}		
+}

@@ -1,0 +1,32 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_GLUON"
+{
+	"id" "elementid" "d29cd0ef-582b-406c-963d-f6ae379f7e7a"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_egon_pickup.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_egon_pickup_mp.mdl"
+	"playermodel_carried" "string" "models/weapons/w_egon.mdl"
+	"viewmodel" "string" "models/weapons/v_egon.mdl"
+	"printname" "string" "Gluon"
+	"primary_ammo" "string" "energy"
+	"clip_size" "int" "-1"	
+	"default_clip" "int" "30"
+	"bucket" "int" "3"
+	"bucket_position" "int" "2"
+
+	"bucket_controller" "int" "3"
+	"bucket_position_controller" "int" "2"
+
+	"anim_prefix" "string" "gluon"
+	"item_flags" "int" "0"
+	"weight" "int" "140"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "2b495322-1a5d-424f-b278-c9a33f6da8af"
+		"empty" "string" "weapon_gluon.Empty"
+		"special1" "string" "weapon_gluon.Special1"
+		"special2" "string" "weapon_gluon.Special2"
+		"special3" "string" "weapon_gluon.Special3"
+	}
+}
+

@@ -1,0 +1,144 @@
+=== callers of 0x1034f250 ===
+   0x1034e2af
+=== callers of 0x1034dd80 ===
+=== callers of 0x1034fb10 ===
+   0x1034f7f7
+=== callers of 0x10351f30 ===
+   0x10484e0c
+
+=== head of 0x1034f250 (the Multi-trace / bullet_ff_through_walls fn) ===
+   0x1034f250  push      ebx
+   0x1034f251  mov       ebx, esp
+   0x1034f253  sub       esp, 8
+   0x1034f256  and       esp, 0xfffffff0
+   0x1034f259  add       esp, 4
+   0x1034f25c  push      ebp
+   0x1034f25d  mov       ebp, dword ptr [ebx + 4]
+   0x1034f260  mov       dword ptr [esp + 4], ebp
+   0x1034f264  mov       ebp, esp
+   0x1034f266  sub       esp, 0x4c8
+   0x1034f26c  mov       eax, dword ptr [0x10817e30]
+   0x1034f271  xor       eax, ebp
+   0x1034f273  mov       dword ptr [ebp - 4], eax
+   0x1034f276  push      esi
+   0x1034f277  mov       esi, dword ptr [ebx + 0x10]
+   0x1034f27a  lea       ecx, [ebp - 0x4bc]
+   0x1034f280  push      edi
+   0x1034f281  mov       edi, dword ptr [ebx + 8]
+   0x1034f284  push      0
+   0x1034f286  mov       dword ptr [ebp - 0x480], edi
+   0x1034f28c  call      0x102b6790
+   0x1034f291  lea       eax, [ebp - 0x4bc]
+   0x1034f297  push      eax
+   0x1034f298  push      esi
+   0x1034f299  lea       ecx, [ebp - 0x4c8]
+   0x1034f29f  call      0x102b6710
+   0x1034f2a4  cmp       byte ptr [edi + 0x39], 0
+   0x1034f2a8  mov       esi, dword ptr [ebx + 0xc]
+   0x1034f2ab  mov       eax, dword ptr [edi + 8]
+   0x1034f2ae  movss     xmm4, dword ptr [edi + 0x14]
+   0x1034f2b3  movss     xmm3, dword ptr [esi]
+   0x1034f2b7  movss     xmm2, dword ptr [eax + 0xc]
+   0x1034f2bc  movss     xmm0, dword ptr [esi + 4]
+   0x1034f2c1  movss     xmm1, dword ptr [esi + 8]
+   0x1034f2c6  mov       eax, dword ptr [edi + 0xc]
+   0x1034f2c9  mulss     xmm3, xmm2
+   0x1034f2cd  mov       dword ptr [ebp - 0x470], eax
+   0x1034f2d3  mov       eax, dword ptr [edi + 0x10]
+   0x1034f2d6  mulss     xmm1, xmm2
+   0x1034f2da  mov       dword ptr [ebp - 0x46c], eax
+   0x1034f2e0  addss     xmm3, dword ptr [edi + 0xc]
+   0x1034f2e5  mov       eax, dword ptr [edi + 0x14]
+   0x1034f2e8  mulss     xmm0, xmm2
+   0x1034f2ec  addss     xmm4, xmm1
+   0x1034f2f0  mov       dword ptr [ebp - 0x468], eax
+   0x1034f2f6  mov       al, byte ptr [edi + 0x38]
+   0x1034f2f9  movss     dword ptr [ebp - 0x48c], xmm2
+   0x1034f301  movss     xmm2, dword ptr [edi + 0x10]
+   0x1034f306  addss     xmm2, xmm0
+   0x1034f30a  movss     dword ptr [ebp - 0x484], xmm3
+   0x1034f312  movss     dword ptr [ebp - 0x498], xmm3
+   0x1034f31a  movss     dword ptr [ebp - 0x47c], xmm4
+   0x1034f322  movss     dword ptr [ebp - 0x490], xmm4
+   0x1034f32a  mov       dword ptr [ebp - 0x3b4], 0xffffffff
+   0x1034f334  movss     dword ptr [ebp - 0x478], xmm2
+   0x1034f33c  movss     dword ptr [ebp - 0x494], xmm2
+   0x1034f344  mov       dword ptr [ebp - 0x3b0], 0
+   0x1034f34e  mov       dword ptr [ebp - 0x394], 0
+   0x1034f358  mov       byte ptr [ebp - 0x36a], al
+   0x1034f35e  je        0x1034f44c
+   0x1034f364  lea       eax, [ebp - 0x68]
+   0x1034f367  mov       dword ptr [ebp - 0x464], 0x106a8df4
+   0x1034f371  push      eax
+   0x1034f372  lea       eax, [ebp - 0x464]
+   0x1034f378  push      eax
+   0x1034f379  push      0x30
+   0x1034f37b  lea       eax, [ebp - 0x498]
+   0x1034f381  push      eax
+   0x1034f382  lea       eax, [ebp - 0x470]
+   0x1034f388  push      eax
+   0x1034f389  call      0x10075c60
+   0x1034f38e  movss     xmm0, dword ptr [ebp - 0x3c]
+   0x1034f393  add       esp, 0x14
+   0x1034f396  ucomiss   xmm0, dword ptr [0x105d6624]
+   0x1034f39d  mov       byte ptr [ebp - 0x36c], 1
+   0x1034f3a4  lahf      
+   0x1034f3a5  test      ah, 0x44
+   0x1034f3a8  jp        0x1034f3b1
+   0x1034f3aa  mov       byte ptr [ebp - 0x36c], 0
+   0x1034f3b1  movss     xmm0, dword ptr [ebp - 0x50]
+   0x1034f3b6  mov       al, byte ptr [ebp - 0x40]
+   0x1034f3b9  movss     xmm3, dword ptr [ebp - 0x484]
+   0x1034f3c1  movss     xmm2, dword ptr [ebp - 0x478]
+   0x1034f3c9  movss     xmm4, dword ptr [ebp - 0x47c]
+   0x1034f3d1  movss     dword ptr [ebp - 0x390], xmm0
+   0x1034f3d9  movss     xmm0, dword ptr [ebp - 0x4c]
+   0x1034f3de  movss     dword ptr [ebp - 0x38c], xmm0
+   0x1034f3e6  movss     xmm0, dword ptr [ebp - 0x48]
+
+=== around the cvar read 0x1034fbf9 ===
+   0x1034fbc0  add       bh, bh
+   0x1034fbc2  rol       byte ptr [eax + eax*8 + 0x4e8b5574], 1
+   0x1034fbc9  dec       esp
+   0x1034fbca  call      0x10113cd0
+   0x1034fbcf  mov       edx, dword ptr [ebp - 0x78]
+   0x1034fbd2  mov       edi, eax
+   0x1034fbd4  mov       ecx, dword ptr [edx]
+   0x1034fbd6  call      0x10113cd0
+   0x1034fbdb  cmp       eax, edi
+   0x1034fbdd  jne       0x1034fc1c
+   0x1034fbdf  lea       ecx, [eax - 2]
+   0x1034fbe2  cmp       ecx, 1
+   0x1034fbe5  ja        0x1034fc1c
+   0x1034fbe7  lea       eax, [edi - 2]
+   0x1034fbea  cmp       eax, 1
+   0x1034fbed  ja        0x1034fc1c
+   0x1034fbef  cmp       byte ptr [esi + 0x9d], 0
+   0x1034fbf6  jne       0x1034fc0f
+   0x1034fbf8  mov       eax, dword ptr [0x108bc278]
+   0x1034fbfd  mov       ecx, 0x108bc278
+   0x1034fc02  mov       eax, dword ptr [eax + 0x2c]
+   0x1034fc05  call      eax
+   0x1034fc07  test      eax, eax
+   0x1034fc09  je        0x103503a6
+   0x1034fc0f  cmp       byte ptr [esi + 0x9f], 0
+   0x1034fc16  jne       0x103503a6
+   0x1034fc1c  mov       ecx, dword ptr [0x10879dec]
+   0x1034fc22  movsx     eax, word ptr [esi + 0x40]
+   0x1034fc26  push      eax
+   0x1034fc27  mov       edx, dword ptr [ecx]
+   0x1034fc29  mov       eax, dword ptr [edx + 0x14]
+   0x1034fc2c  call      eax
+   0x1034fc2e  test      byte ptr [esi + 0x30], 8
+   0x1034fc32  movzx     eax, word ptr [eax + 0x4c]
+   0x1034fc36  mov       dword ptr [ebp - 0xb0], eax
+   0x1034fc3c  je        0x1034fc51
+   0x1034fc3e  cmp       eax, 0x47
+   0x1034fc41  jne       0x1034fc51
+   0x1034fc43  movss     xmm0, dword ptr [0x105d6624]
+   0x1034fc4b  mov       byte ptr [ebp - 0x71], 1
+   0x1034fc4f  jmp       0x1034fc75
+   0x1034fc51  lea       ecx, [ebp - 0x90]
+   0x1034fc57  mov       byte ptr [ebp - 0x71], 0
+   0x1034fc5b  push      ecx
+   0x1034fc5c  lea       ecx, [ebp - 0x7c]

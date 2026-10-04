@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="8;url=__BASE__/panel?token=__TOKEN__">
+<title>插件控制台</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; background: #0e1117; color: #e6e6e6; }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 20px 16px 40px; }
+  h1 { font-size: 22px; margin: 0 0 4px; color: #fff; }
+  .sub { color: #8b949e; font-size: 13px; margin-bottom: 16px; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 14px 16px; margin-bottom: 14px; }
+  .card h2 { font-size: 13px; color: #8b949e; margin: 0 0 10px; font-weight: 600; letter-spacing: 1px; }
+  .state-pill { display: inline-block; padding: 3px 11px; border-radius: 12px; font-size: 13px; font-weight: 600; }
+  .s-default { background:#30363d; color:#c9d1d9; }
+  .s-match, .s-matchex, .s-overtime { background:#1f6feb; color:#fff; }
+  .s-matchwait { background:#9e6a03; color:#fff; }
+  .s-paused { background:#b62324; color:#fff; }
+  .s-over, .s-changing { background:#6e7681; color:#fff; }
+  .grid { margin-top: 10px; overflow: hidden; }
+  .cell { float: left; width: 47%; background: #0d1117; border: 1px solid #21262d; border-radius: 6px; padding: 10px 12px; margin: 0 2% 10px 0; }
+  .cell .k { color: #8b949e; font-size: 12px; }
+  .cell .v { color: #e6e6e6; font-size: 17px; font-weight: 600; margin-top: 2px; word-break: break-all; }
+  .btns { overflow: hidden; }
+  .btn {
+    display: inline-block; width: 47%; margin: 0 2% 10px 0;
+    background: #21262d; color: #e6e6e6; border: 1px solid #30363d; border-radius: 8px;
+    padding: 12px 8px; font-size: 14px; font-family: inherit; text-align: center;
+    text-decoration: none; cursor: pointer;
+  }
+  .btn:hover { background: #30363d; }
+  .btn.primary { background: #238636; border-color: #2ea043; color: #fff; }
+  .btn.danger { background: #da3633; border-color: #f85149; color: #fff; }
+  .btn.small { padding: 8px 4px; font-size: 13px; }
+  .btn.three { width: 30%; margin: 0 1% 8px 1%; }
+  .argrow { margin-bottom: 8px; }
+  .argrow label { display: block; font-size: 13px; color: #c9d1d9; margin-bottom: 4px; }
+  .argrow input[type=text] { width: 58%; background: #0d1117; border: 1px solid #30363d; border-radius: 6px; color: #e6e6e6; padding: 9px 10px; font-size: 14px; }
+  .argrow .btn { width: auto; min-width: 80px; margin: 0 0 0 8px; vertical-align: middle; }
+  .result { background: #0d1117; border: 1px solid #21262d; border-radius: 6px; padding: 10px 12px; font-size: 13px; word-break: break-all; min-height: 24px; color: #e6e6e6; }
+  .refreshbar { margin-top: 10px; }
+  .refreshbar .btn { width: auto; margin: 0; }
+  .updated { color: #8b949e; font-size: 12px; margin-left: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>插件控制台</h1>
+  <div class="sub">状态每 8 秒自动刷新;点击按钮等同于在聊天框输入对应指令,结果见下方「执行结果」。</div>
+
+  <div class="card">
+    <h2>服务器状态</h2>
+    <div><span class="state-pill __STATECLASS__">__STATETEXT__</span></div>
+    <div class="grid">
+      <div class="cell"><div class="k">地图</div><div class="v">__MAP__</div></div>
+      <div class="cell"><div class="k">模式</div><div class="v">__MODE__</div></div>
+      <div class="cell"><div class="k">人数</div><div class="v">__PLAYERS__</div></div>
+      <div class="cell"><div class="k">剩余时间</div><div class="v">__TIMELEFT__</div></div>
+    </div>
+    __SCORESHTML__
+    <div class="refreshbar">
+      <a class="btn small" href="__BASE__/panel?token=__TOKEN__">手动刷新</a>
+      <span class="updated">最后更新 __NOW__</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>执行结果</h2>
+    <div id="result" class="result">__RESULT__</div>
+  </div>
+
+  <div class="card">
+    <h2>比赛控制</h2>
+    <div class="btns">
+      <form method="get" action="__BASE__/do/start" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn primary" type="submit">开始比赛</button></form>
+      <form method="get" action="__BASE__/do/cancel" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn danger" type="submit">取消比赛</button></form>
+      <form method="get" action="__BASE__/do/pause" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn" type="submit">暂停 / 继续</button></form>
+      <form method="get" action="__BASE__/do/runrandom" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn" type="submit">随机地图投票</button></form>
+      <form method="get" action="__BASE__/do/shuffle" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn" type="submit">洗牌分队</button></form>
+      <form method="get" action="__BASE__/do/invert" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn" type="submit">互换队伍</button></form>
+      <form method="get" action="__BASE__/do/maplist" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn" type="submit">地图列表</button></form>
+      <form method="get" action="__BASE__/do/help" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn" type="submit">指令列表</button></form>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>投票换图</h2>
+    <div class="argrow">
+      <label for="run-arg">投票换图</label>
+      <form method="get" action="__BASE__/do/run" style="display:inline;">
+        <input type="hidden" name="token" value="__TOKEN__">
+        <input type="text" name="arg" id="run-arg" placeholder="地图名,如 dm_lockdown">
+        <button class="btn" type="submit">发起</button>
+      </form>
+    </div>
+    <div class="argrow">
+      <label for="runnext-arg">设置下一图</label>
+      <form method="get" action="__BASE__/do/runnext" style="display:inline;">
+        <input type="hidden" name="token" value="__TOKEN__">
+        <input type="text" name="arg" id="runnext-arg" placeholder="地图名">
+        <button class="btn" type="submit">发起</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>参与投票（仅投票进行中有效）</h2>
+    <div class="btns">
+      <form method="get" action="__BASE__/do/yes" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn primary small three" type="submit">赞成</button></form>
+      <form method="get" action="__BASE__/do/no" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn danger small three" type="submit">反对</button></form>
+      <form method="get" action="__BASE__/do/1" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn small three" type="submit">选项 1</button></form>
+      <form method="get" action="__BASE__/do/2" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn small three" type="submit">选项 2</button></form>
+      <form method="get" action="__BASE__/do/3" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn small three" type="submit">选项 3</button></form>
+      <form method="get" action="__BASE__/do/4" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn small three" type="submit">选项 4</button></form>
+      <form method="get" action="__BASE__/do/5" style="display:inline;"><input type="hidden" name="token" value="__TOKEN__"><button class="btn small three" type="submit">选项 5</button></form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

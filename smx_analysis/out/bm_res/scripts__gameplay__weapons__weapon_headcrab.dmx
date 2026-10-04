@@ -1,0 +1,25 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_HEADCRAB"
+{
+	"id" "elementid" "3a196cb7-7f25-436f-b0af-1453598e2263"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/xenians/headcrab.mdl"
+	"viewmodel" "string" "models/weapons/v_headcrabbed.mdl"
+	"printname" "string" "Headcrab"
+	"bucket" "int" "0"
+	"bucket_position" "int" "0"
+
+	"bucket_controller" "int" "1"
+	"bucket_position_controller" "int" "3"
+
+	"anim_prefix" "string" "headcrab"
+	"item_flags" "int" "0"
+	"weight" "int" "-100"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "e9d0b3a0-dbd6-47fe-b8c3-581d9e5b2902"
+		"special1" "string" "weapon_headcrab.Special1"
+		"special2" "string" "weapon_headcrab.Special2"
+	}
+}
+

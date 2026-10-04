@@ -1,0 +1,19 @@
+UnlitGeneric
+{
+	$basetexture	vgui\hud\weapon_357
+	$translucent	1
+	$distancealpha	1
+
+	$softedges		1
+	$edgesoftnessstart	.5
+	$edgesoftnessend	.35
+	$scaleedgesoftnessbasedonscreenres 1
+
+	$horizontal_scale 0.75
+	$vertical_scale   1
+	
+	$vertexcolor	1
+	$vertexalpha	1
+	$no_fullbright	1
+	$ignorez	1
+}

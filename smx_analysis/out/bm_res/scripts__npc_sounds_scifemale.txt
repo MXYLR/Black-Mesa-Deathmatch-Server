@@ -1,0 +1,2198 @@
+//
+//
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+//
+// VOL_NORM		1.0f
+//
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+//
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+//
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	= 3.9
+//	SNDLVL_55dB		= 55,	= 3.0
+//	SNDLVL_IDLE		= 60,	= 2.0
+//	SNDLVL_TALKING		= 60,	= 2.0
+//	SNDLVL_60dB		= 60,	= 2.0
+//	SNDLVL_65dB		= 65,	= 1.5
+//	SNDLVL_STATIC		= 66,	= 1.25
+//	SNDLVL_70dB		= 70,	= 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	= 0.8
+//	SNDLVL_80dB		= 80,	= 0.7
+//	SNDLVL_85dB		= 85,	= 0.6
+//	SNDLVL_90dB		= 90,	= 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	= 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140, = 0.27
+//	SNDLVL_140dB	= 140,	= 0.2
+//	SNDLVL_150dB	= 150,	= 0.2
+//
+
+// Generic Death Sounds for the Female Scientist
+
+"NPC_Scientist_Female.Death"
+{
+	"channel"		"CHAN_STREAM"
+	"volume"		"0.8"
+	"pitch"			"95, 105"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/scientist_female01/ow03.wav"
+		"wave"	"vo/npc/scientist_female01/ow01.wav"
+		"wave"	"vo/npc/scientist_female01/ow04.wav"
+	}
+}
+
+// Generic Pain Sounds for the Female Scientist
+
+"NPC_Scientist_Female.Pain"
+{
+	"channel"		"CHAN_STREAM"
+	"volume"		"0.8"
+	"pitch"			"95, 105"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/npc/scientist_female01/ow02.wav"
+		"wave"	"vo/npc/scientist_female01/ow05.wav"
+		"wave"	"vo/npc/scientist_female01/ow06.wav"
+		"wave"	"vo/npc/scientist_female01/ow09.wav"
+	}
+}
+
+///////////////////////////
+
+"NPC_Scifemale.abouttime03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/abouttime03.wav"
+}
+
+"NPC_Scifemale.abouttime04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/abouttime04.wav"
+}
+
+"NPC_Scifemale.abouttime06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/abouttime06.wav"
+}
+
+"NPC_Scifemale.ahgordon01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ahgordon01.wav"
+}
+
+"NPC_Scifemale.ahgordon02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ahgordon02.wav"
+}
+
+"NPC_Scifemale.ahgordon03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ahgordon03.wav"
+}
+
+"NPC_Scifemale.ahgordon04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ahgordon04.wav"
+}
+
+"NPC_Scifemale.annoyance01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance01.wav"
+}
+
+"NPC_Scifemale.annoyance05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance05.wav"
+}
+
+"NPC_Scifemale.annoyance06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance06.wav"
+}
+
+"NPC_Scifemale.annoyance10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance10.wav"
+}
+
+"NPC_Scifemale.annoyance11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance11.wav"
+}
+
+"NPC_Scifemale.annoyance12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance12.wav"
+}
+
+"NPC_Scifemale.annoyance14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance14.wav"
+}
+
+"NPC_Scifemale.annoyance17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance17.wav"
+}
+
+"NPC_Scifemale.annoyance18"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance18.wav"
+}
+
+"NPC_Scifemale.annoyance28"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance28.wav"
+}
+
+"NPC_Scifemale.annoyance32"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/annoyance32.wav"
+}
+
+"NPC_Scifemale.answer_pre01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre01.wav"
+}
+
+"NPC_Scifemale.answer_pre02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre02.wav"
+}
+
+"NPC_Scifemale.answer_pre03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre03.wav"
+}
+
+"NPC_Scifemale.answer_pre04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre04.wav"
+}
+
+"NPC_Scifemale.answer_pre05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre05.wav"
+}
+
+"NPC_Scifemale.answer_pre06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre06.wav"
+}
+
+"NPC_Scifemale.answer_pre07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre07.wav"
+}
+
+"NPC_Scifemale.answer_pre08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre08.wav"
+}
+
+"NPC_Scifemale.answer_pre09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre09.wav"
+}
+
+"NPC_Scifemale.answer_pre10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre10.wav"
+}
+
+"NPC_Scifemale.answer_pre11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre11.wav"
+}
+
+"NPC_Scifemale.answer_pre12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre12.wav"
+}
+
+"NPC_Scifemale.answer_pre15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre15.wav"
+}
+
+"NPC_Scifemale.answer_pre16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre16.wav"
+}
+
+"NPC_Scifemale.answer_pre17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre17.wav"
+}
+
+"NPC_Scifemale.answer_pre18"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre18b.wav"
+}
+
+"NPC_Scifemale.answer_pre19"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre19.wav"
+}
+
+"NPC_Scifemale.answer_pre20"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre20.wav"
+}
+
+"NPC_Scifemale.answer_pre32"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre32.wav"
+}
+
+"NPC_Scifemale.answer_pre65"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/answer_pre65.wav"
+}
+
+"NPC_Scifemale.behindyou01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/behindyou01.wav"
+}
+
+"NPC_Scifemale.behindyou02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/behindyou02.wav"
+}
+
+"NPC_Scifemale.behindyou03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/behindyou03.wav"
+}
+
+"NPC_Scifemale.behindyou04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/behindyou04.wav"
+}
+
+"NPC_Scifemale.bullsquid01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/bullsquid01.wav"
+}
+
+"NPC_Scifemale.bullsquid02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/bullsquid02.wav"
+}
+
+"NPC_Scifemale.bullsquid03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/bullsquid03.wav"
+}
+
+"NPC_Scifemale.bullsquid04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/bullsquid04.wav"
+}
+
+"NPC_Scifemale.busy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy01.wav"
+}
+
+"NPC_Scifemale.busy02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy02.wav"
+}
+
+"NPC_Scifemale.busy03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy03.wav"
+}
+
+"NPC_Scifemale.busy04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy04.wav"
+}
+
+"NPC_Scifemale.busy05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy05.wav"
+}
+
+"NPC_Scifemale.busy06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy06.wav"
+}
+
+"NPC_Scifemale.busy07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy07.wav"
+}
+
+"NPC_Scifemale.busy08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy08.wav"
+}
+
+"NPC_Scifemale.busy09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy09.wav"
+}
+
+"NPC_Scifemale.busy10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy10.wav"
+}
+
+"NPC_Scifemale.busy11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy11.wav"
+}
+
+"NPC_Scifemale.busy12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy12.wav"
+}
+
+"NPC_Scifemale.busy17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy17.wav"
+}
+
+"NPC_Scifemale.busy18"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy18.wav"
+}
+
+"NPC_Scifemale.busy19"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy19.wav"
+}
+
+"NPC_Scifemale.busy20"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy20.wav"
+}
+
+"NPC_Scifemale.busy21"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy21.wav"
+}
+
+"NPC_Scifemale.busy24"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy24.wav"
+}
+
+"NPC_Scifemale.busy25"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy25.wav"
+}
+
+"NPC_Scifemale.busy26"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/busy26.wav"
+}
+
+"NPC_Scifemale.docfreeman01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/docfreeman01.wav"
+}
+
+"NPC_Scifemale.docfreeman02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/docfreeman02.wav"
+}
+
+"NPC_Scifemale.doingsomething01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/doingsomething01.wav"
+}
+
+"NPC_Scifemale.doingsomething02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/doingsomething02.wav"
+}
+
+"NPC_Scifemale.doingsomething03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/doingsomething03.wav"
+}
+
+"NPC_Scifemale.doingsomething04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/doingsomething04.wav"
+}
+
+"NPC_Scifemale.doingsomething05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/doingsomething05.wav"
+}
+
+"NPC_Scifemale.doingsomething07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/doingsomething07.wav"
+}
+
+"NPC_Scifemale.doingsomething08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/doingsomething08.wav"
+}
+
+"NPC_Scifemale.dontforgettoreload01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/dontforgettoreload01.wav"
+}
+
+"NPC_Scifemale.dontforgettoreload02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/dontforgettoreload02.wav"
+}
+
+"NPC_Scifemale.dontforgettoreload03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/dontforgettoreload03.wav"
+}
+
+"NPC_Scifemale.excuseme01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.610"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/excuseme01.wav"
+}
+
+"NPC_Scifemale.excuseme02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/excuseme02a.wav"
+}
+
+"NPC_Scifemale.freeman01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/freeman01.wav"
+}
+
+"NPC_Scifemale.freeman02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/freeman02.wav"
+}
+
+"NPC_Scifemale.freeman03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/freeman03.wav"
+}
+
+"NPC_Scifemale.getgoingsoon01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.640"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/getgoingsoon01.wav"
+}
+
+"NPC_Scifemale.getgoingsoon02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.640"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/getgoingsoon02.wav"
+}
+
+"NPC_Scifemale.getgoingsoon03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.640"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/getgoingsoon03.wav"
+}
+
+"NPC_Scifemale.getgoingsoon04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.640"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/getgoingsoon04.wav"
+}
+
+"NPC_Scifemale.getgoingsoon05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.640"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/getgoingsoon05.wav"
+}
+
+"NPC_Scifemale.headcrab01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/headcrab01.wav"
+}
+
+"NPC_Scifemale.headcrab03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/headcrab03.wav"
+}
+
+"NPC_Scifemale.health08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/health08.wav"
+}
+
+"NPC_Scifemale.health10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/health10.wav"
+}
+
+"NPC_Scifemale.health11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/health11.wav"
+}
+
+"NPC_Scifemale.health12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/health12.wav"
+}
+
+"NPC_Scifemale.hellodrfm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/hellodrfm01.wav"
+}
+
+"NPC_Scifemale.hellodrfm01a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.640"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/hellodrfm01a.wav"
+}
+
+"NPC_Scifemale.hellodrfm02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.640"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/hellodrfm02.wav"
+}
+
+"NPC_Scifemale.hellodrfm03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.640"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/hellodrfm03.wav"
+}
+
+"NPC_Scifemale.hellodrfm04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/hellodrfm04.wav"
+}
+
+"NPC_Scifemale.hellodrfm05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/hellodrfm05a.wav"
+}
+
+"NPC_Scifemale.hellodrfm06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/hellodrfm06.wav"
+}
+
+"NPC_Scifemale.help01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/help01.wav"
+}
+
+"NPC_Scifemale.help02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/help02.wav"
+}
+
+"NPC_Scifemale.heretheycome01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/heretheycome01.wav"
+}
+
+"NPC_Scifemale.heretheycome01_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/heretheycome01_var01.wav"
+}
+
+"NPC_Scifemale.heretheycome02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/heretheycome02.wav"
+}
+
+"NPC_Scifemale.heretheycome03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/heretheycome03.wav"
+}
+
+"NPC_Scifemale.heretheycome04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/heretheycome04.wav"
+}
+
+"NPC_Scifemale.heretheycome05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/heretheycome05.wav"
+}
+
+"NPC_Scifemale.heretohelp06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/heretohelp06.wav"
+}
+
+"NPC_Scifemale.hitingut05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/hitingut05.wav"
+}
+
+"NPC_Scifemale.holddownspot02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/holddownspot02.wav"
+}
+
+"NPC_Scifemale.holddownspot03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/holddownspot03.wav"
+}
+
+"NPC_Scifemale.holddownspot04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/holddownspot04.wav"
+}
+
+"NPC_Scifemale.holddownspot05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/holddownspot05.wav"
+}
+
+"NPC_Scifemale.illstayhere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/illstayhere01.wav"
+}
+
+"NPC_Scifemale.illstayhere02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/illstayhere02.wav"
+}
+
+"NPC_Scifemale.illstayhere03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/illstayhere03.wav"
+}
+
+"NPC_Scifemale.illstayhere04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/illstayhere04.wav"
+}
+
+"NPC_Scifemale.illstayhere05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/illstayhere05.wav"
+}
+
+"NPC_Scifemale.imstickinghere03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/imstickinghere03.wav"
+}
+
+"NPC_Scifemale.imstickinghere04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/imstickinghere04.wav"
+}
+
+"NPC_Scifemale.leadtheway01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/leadtheway01.wav"
+}
+
+"NPC_Scifemale.leadtheway02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/leadtheway02.wav"
+}
+
+"NPC_Scifemale.leadtheway04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/leadtheway04.wav"
+}
+
+"NPC_Scifemale.letsgo02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/letsgo02.wav"
+}
+
+"NPC_Scifemale.letsgo03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/letsgo03.wav"
+}
+
+"NPC_Scifemale.letsgo04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/letsgo04.wav"
+}
+
+"NPC_Scifemale.littlecorner01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/littlecorner01.wav"
+}
+
+"NPC_Scifemale.littlecorner02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/littlecorner02.wav"
+}
+
+"NPC_Scifemale.littlecorner03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/littlecorner03.wav"
+}
+
+"NPC_Scifemale.lookoutfm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/lookoutfm01.wav"
+}
+
+"NPC_Scifemale.lookoutfm02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/lookoutfm02.wav"
+}
+
+"NPC_Scifemale.no01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/no01.wav"
+}
+
+"NPC_Scifemale.no01_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/no01_var01.wav"
+}
+
+"NPC_Scifemale.no02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/no02.wav"
+}
+
+"NPC_Scifemale.no03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/no03.wav"
+}
+
+"NPC_Scifemale.no04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/no04.wav"
+}
+
+"NPC_Scifemale.no04_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/no04_var01.wav"
+}
+
+"NPC_Scifemale.no05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/no05.wav"
+}
+
+"NPC_Scifemale.ow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ow01.wav"
+}
+
+"NPC_Scifemale.ow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ow02.wav"
+}
+
+"NPC_Scifemale.ow03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ow03.wav"
+}
+
+"NPC_Scifemale.ow04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ow04.wav"
+}
+
+"NPC_Scifemale.ow05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ow05.wav"
+}
+
+"NPC_Scifemale.ow06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ow06.wav"
+}
+
+"NPC_Scifemale.ow09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/ow09.wav"
+}
+
+"NPC_Scifemale.pardonme01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.630"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/pardonme01.wav"
+}
+
+"NPC_Scifemale.pardonme02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.630"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/pardonme02.wav"
+}
+
+"NPC_Scifemale.pardonme03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.630"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/pardonme03.wav"
+}
+
+"NPC_Scifemale.question_pre04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/question_pre04.wav"
+}
+
+"NPC_Scifemale.question_pre11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/question_pre11.wav"
+}
+
+"NPC_Scifemale.question_pre13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/question_pre13.wav"
+}
+
+"NPC_Scifemale.question_pre22"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/question_pre22.wav"
+}
+
+"NPC_Scifemale.question_pre40"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/question_pre40.wav"
+}
+
+"NPC_Scifemale.scream_generic01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.970"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/scream_generic01.wav"
+}
+
+"NPC_Scifemale.scream_generic02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.970"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/scream_generic02.wav"
+}
+
+"NPC_Scifemale.scream_generic03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.970"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/scream_generic03.wav"
+}
+
+"NPC_Scifemale.scream_generic04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.970"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/scream_generic04.wav"
+}
+
+"NPC_Scifemale.sorry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/sorry01.wav"
+}
+
+"NPC_Scifemale.sorry02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/sorry02.wav"
+}
+
+"NPC_Scifemale.sorry05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/sorry05.wav"
+}
+
+"NPC_Scifemale.sorrydoc03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/sorrydoc03.wav"
+}
+
+"NPC_Scifemale.startle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/startle01.wav"
+}
+
+"NPC_Scifemale.startle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/startle02.wav"
+}
+
+"NPC_Scifemale.startle02_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/startle02_var01.wav"
+}
+
+"NPC_Scifemale.startle02_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/startle02_var02.wav"
+}
+
+"NPC_Scifemale.startle02_var03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/startle02_var03.wav"
+}
+
+"NPC_Scifemale.startle03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/startle03.wav"
+}
+
+"NPC_Scifemale.stopitfm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/stopitfm01.wav"
+}
+
+"NPC_Scifemale.stopitfm02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/stopitfm02.wav"
+}
+
+"NPC_Scifemale.stopitfm03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/stopitfm03.wav"
+}
+
+"NPC_Scifemale.stopitfm04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/stopitfm04.wav"
+}
+
+"NPC_Scifemale.waitingforsomebody01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/waitingforsomebody01.wav"
+}
+
+"NPC_Scifemale.waitingforsomebody03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/waitingforsomebody03.wav"
+}
+
+"NPC_Scifemale.watchout01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/watchout01.wav"
+}
+
+"NPC_Scifemale.watchout02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/watchout02.wav"
+}
+
+"NPC_Scifemale.watchwhat01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/watchwhat01.wav"
+}
+
+"NPC_Scifemale.watchwhat05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/watchwhat05.wav"
+}
+
+"NPC_Scifemale.yeah01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/yeah01.wav"
+}
+
+"NPC_Scifemale.yeah02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/yeah02.wav"
+}
+
+"NPC_Scifemale.yeah03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/yeah03.wav"
+}
+
+"NPC_Scifemale.yeah04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/yeah04.wav"
+}
+
+"NPC_Scifemale.youbetterreload01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/youbetterreload01.wav"
+}
+
+"NPC_Scifemale.youbetterreload02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/youbetterreload02.wav"
+}
+
+"NPC_Scifemale.youbetterreload03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/youbetterreload03.wav"
+}
+
+"NPC_Scifemale.youbetterreload04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/youbetterreload04.wav"
+}
+
+"NPC_Scifemale.zombie01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/zombie01.wav"
+}
+
+"NPC_Scifemale.zombie02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/zombie02.wav"
+}
+
+"NPC_Scifemale.zombie03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/zombie03.wav"
+}
+
+"NPC_Scifemale.zombie04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/zombie04.wav"
+}
+
+"NPC_Scifemale.zombie05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/scientist_female01/zombie05.wav"
+}
+

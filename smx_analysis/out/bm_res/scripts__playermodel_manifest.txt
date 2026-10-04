@@ -1,0 +1,357 @@
+// ####### IMPORTANT NOTE
+// ####### Ensure all model names are lower case!
+"playermodel_manifest.txt"
+{	
+	// Default model goes first!
+	"mp_scientist_hev"
+	{
+		"label"			"#GameUI_HevSci"
+		"model"			"models/player/mp_scientist_hev.mdl"
+		"criteria"		"sci_male"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_crowbar.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_CROWBAR"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"0"
+			}
+			
+			"1"
+			{
+				"arms"	"0"
+			}
+		}
+	}
+	
+	"mp_scientist"
+	{
+		"label"			"#GameUI_Sci"
+		"model"			"models/player/mp_scientist.mdl"
+		"criteria"		"sci_male"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_egon.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_GLUON"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"2"
+			}
+			
+			"1"
+			{
+				"arms"	"2"
+			}
+		}
+	}
+	
+	"mp_scientist_02"
+	{
+		"label"			"#GameUI_Sci_Alt"
+		"model"			"models/player/mp_scientist_02.mdl"
+		"criteria"		"sci_male"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_egon.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_GLUON"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"2"
+			}
+			
+			"1"
+			{
+				"arms"	"2"
+			}
+		}
+	}
+	
+	"mp_scientist_female"
+	{
+		"label"			"#GameUI_FemSci"
+		"model"			"models/player/mp_scientist_female.mdl"
+		"criteria"		"sci_female"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_egon.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_GLUON"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		// Informs the character model system of which bodygroups are to be activated with what skin.
+		"bodygroup_overrides"
+		{
+			// Skin 0 wants bodygroup "hair" to be "0".
+			"0"
+			{
+				"hair"	"0"
+			}
+			
+			// Skin 1 wants bodygroup "hair" to be "2".
+			"1"
+			{
+				"hair"	"2"
+			}
+			
+			"2"
+			{
+				"hair"	"4"
+			}
+			
+			"3"
+			{
+				"hair"	"3"
+			}
+			
+			"4"
+			{
+				"hair"	"4"
+			}
+			
+			"5"
+			{
+				"hair"	"4"
+			}
+			
+			"6"
+			{
+				"hair"	"4"
+			}
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+			//this will be "5" when smds are added and qc is updated.
+				"arms"	"2"
+			}
+			
+			"1"
+			{
+			//this will be "5" when smds are added and qc is updated.
+				"arms"	"2"
+			}
+		}
+	}
+	
+	"mp_guard"
+	{
+		"label"			"#GameUI_Guard"
+		"model"			"models/player/mp_guard.mdl"
+		"criteria"		"guard"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_glock.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_GLOCK"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"3"
+			}
+			
+			"1"
+			{
+				"arms"	"3"
+			}
+		}
+	}
+	
+	"mp_guard_02"
+	{
+		"label"			"#GameUI_Guard_Alt"
+		"model"			"models/player/mp_guard_02.mdl"
+		"criteria"		"guard"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_glock.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_GLOCK"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"3"
+			}
+			
+			"1"
+			{
+				"arms"	"3"
+			}
+		}
+	}
+	
+	"mp_marine"
+	{
+		"label"			"#GameUI_Marine"
+		"model"			"models/player/mp_marine.mdl"
+		"criteria"		"marine"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_mp5.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_MP5"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"1"
+			}
+			
+			"1"
+			{
+				"arms"	"1"
+			}
+		}
+	}
+	
+	"mp_marine_02"
+	{
+		"label"			"#GameUI_Marine_Alt"
+		"model"			"models/player/mp_marine_02.mdl"
+		"criteria"		"marine"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_mp5.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_MP5"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"1"
+			}
+			
+			"1"
+			{
+				"arms"	"1"
+			}
+		}
+	}
+	
+	"mp_zombie_guard"
+	{
+		"label"			"#GameUI_ZombieGuard"
+		"model"			"models/player/mp_zombie_guard.mdl"
+		"criteria"		"zombie"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_hgun.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_HIVEHAND"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+			//This will be "6" once zombie guard smds are made and qc is edited
+				"arms"	"5"
+			}
+			
+			"1"
+			{
+			//This will be "6" once zombie guard smds are made and qc is edited
+				"arms"	"5"
+			}
+		}
+	}
+	
+	"mp_zombie_sci"
+	{
+		"label"			"#GameUI_ZombieSci"
+		"model"			"models/player/mp_zombie_sci.mdl"
+		"criteria"		"zombie"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_hgun.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_HIVEHAND"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"4"
+			}
+			
+			"1"
+			{
+				"arms"	"4"
+			}
+		}
+	}
+	"mp_gman"
+	{
+		"label"			"#GameUI_G-Man"
+		"model"			"models/player/mp_gman.mdl"
+		"criteria"		"none"
+		
+		"preview"
+		{
+			"weapon"	"models/weapons/w_hgun.mdl"
+			"body_activity"	"ACT_BMMP_IDLE_HIVEHAND"
+			"face_activity" "ACT_DIERAGDOLL"
+		}
+		
+		"vm_bodygroup_overrides"
+		{
+			//Viewmodel index. (we can have multiple viewmodels in source)
+			"0"
+			{
+				"arms"	"6"
+			}
+			
+			"1"
+			{
+				"arms"	"6"
+			}
+		}
+	}
+}

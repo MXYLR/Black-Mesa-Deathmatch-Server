@@ -1,0 +1,126 @@
+"npc_sounds_tentacle.Swoosh"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1.0"
+	"pitch"			"80,90"
+	"soundlevel"	"SNDLVL_150db"
+
+	"rndwave"
+	{
+		"wave"	"npc/tentacle/tent_swoosh1.wav"
+		"wave"	"npc/tentacle/tent_swoosh2.wav"
+		"wave"	"npc/tentacle/tent_swoosh3.wav"
+	}
+}
+
+"npc_sounds_tentacle.Hit"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"pitch"			"95,100"
+	"soundlevel"	"SNDLVL_150db"
+
+	"rndwave"
+	{
+		"wave"	"npc/tentacle/tent_strike1g.wav"
+	}
+}
+
+"npc_sounds_tentacle.Sing"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"	"SNDLVL_150db"
+
+	"rndwave"
+	{
+		"wave"	"npc/tentacle/tent_sing_close1.wav"
+		"wave"	"npc/tentacle/tent_sing_close2.wav"
+		"wave"	"npc/tentacle/tent_sing_close4.wav"
+		"wave"	"npc/tentacle/tent_sing_close5.wav"
+		"wave"	"npc/tentacle/tent_sing_close6.wav"
+		"wave"	"npc/tentacle/tent_sing_close7.wav"
+		"wave"	"npc/tentacle/tent_sing_close8.wav"
+		"wave"	"npc/tentacle/tent_sing_close9.wav"
+		"wave"	"npc/tentacle/tent_sing_close10.wav"
+	}
+}
+
+"npc_sounds_tentacle.Alert"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95db"
+	
+	"rndwave"
+	{
+		"wave"	"npc/tentacle/tent_sing_close1.wav"
+		"wave"	"npc/tentacle/tent_sing_close2.wav"
+		"wave"	"npc/tentacle/tent_sing_close4.wav"
+		"wave"	"npc/tentacle/tent_sing_close5.wav"
+		"wave"	"npc/tentacle/tent_sing_close6.wav"
+		"wave"	"npc/tentacle/tent_sing_close7.wav"
+		"wave"	"npc/tentacle/tent_sing_close8.wav"
+		"wave"	"npc/tentacle/tent_sing_close9.wav"
+		"wave"	"npc/tentacle/tent_sing_close10.wav"
+	}
+}
+
+"npc_sounds_xentacle.Sing"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"	"SNDLVL_80db"
+
+	"rndwave"
+	{
+		"wave"	"npc/tentacle/tent_sing_close1.wav"
+		"wave"	"npc/tentacle/tent_sing_close2.wav"
+		"wave"	"npc/tentacle/tent_sing_close4.wav"
+		"wave"	"npc/tentacle/tent_sing_close5.wav"
+		"wave"	"npc/tentacle/tent_sing_close6.wav"
+		"wave"	"npc/tentacle/tent_sing_close7.wav"
+		"wave"	"npc/tentacle/tent_sing_close8.wav"
+		"wave"	"npc/tentacle/tent_sing_close9.wav"
+		"wave"	"npc/tentacle/tent_sing_close10.wav"
+	}
+}
+
+"npc_sounds_xentacle.Alert"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65db"
+	
+	"rndwave"
+	{
+		"wave"	"npc/tentacle/tent_sing_close1.wav"
+		"wave"	"npc/tentacle/tent_sing_close2.wav"
+		"wave"	"npc/tentacle/tent_sing_close4.wav"
+		"wave"	"npc/tentacle/tent_sing_close5.wav"
+		"wave"	"npc/tentacle/tent_sing_close6.wav"
+		"wave"	"npc/tentacle/tent_sing_close7.wav"
+		"wave"	"npc/tentacle/tent_sing_close8.wav"
+		"wave"	"npc/tentacle/tent_sing_close9.wav"
+		"wave"	"npc/tentacle/tent_sing_close10.wav"
+	}
+}
+
+"npc_sounds_xentacle.Swoosh"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1.0"
+	"pitch"			"80,90"
+	"soundlevel"	"SNDLVL_60db"
+
+	"rndwave"
+	{
+		"wave"	"npc/tentacle/tent_swoosh1.wav"
+		"wave"	"npc/tentacle/tent_swoosh2.wav"
+		"wave"	"npc/tentacle/tent_swoosh3.wav"
+	}
+}

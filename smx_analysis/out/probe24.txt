@@ -1,0 +1,13 @@
+=== data (vtable/pointer) refs to CBlackMesaFireBullets penetration module ===
+  0x1034dd80: ['0x105d6ea0[.rdata]', '0x105eb354[.rdata]', '0x105f63c8[.rdata]', '0x10626244[.rdata]', '0x10626c8c[.rdata]', '0x1062774c[.rdata]', '0x1062825c[.rdata]', '0x10628d3c[.rdata]', '0x10629750[.rdata]', '0x1063e2c4[.rdata]', '0x106463bc[.rdata]', '0x1064c310[.rdata]', '0x1065eeb8[.rdata]', '0x1067c80c[.rdata]', '0x1067e63c[.rdata]', '0x1067ed10[.rdata]', '0x10680fe4[.rdata]', '0x10682f08[.rdata]', '0x106837b8[.rdata]', '0x106b9234[.rdata]', '0x106ba224[.rdata]', '0x106bac6c[.rdata]', '0x106bbcd4[.rdata]', '0x106bca00[.rdata]', '0x106bd624[.rdata]', '0x106c59ac[.rdata]', '0x106cc5f0[.rdata]', '0x106cd0b8[.rdata]', '0x106cea94[.rdata]', '0x106cf5b4[.rdata]', '0x106d05cc[.rdata]', '0x106d1908[.rdata]', '0x106d2454[.rdata]', '0x106d3170[.rdata]', '0x106d3d38[.rdata]', '0x106d4ab8[.rdata]', '0x106d57e8[.rdata]', '0x106d6384[.rdata]', '0x106d6f40[.rdata]', '0x106d7ae0[.rdata]', '0x106d8854[.rdata]', '0x106d988c[.rdata]', '0x106da984[.rdata]', '0x106dbad8[.rdata]', '0x106dc5d4[.rdata]', '0x106dd15c[.rdata]', '0x106de138[.rdata]', '0x106df208[.rdata]', '0x106dfde0[.rdata]', '0x106e1234[.rdata]', '0x106e1cf8[.rdata]', '0x106e3640[.rdata]', '0x106e4768[.rdata]', '0x106e5430[.rdata]', '0x106e6cb0[.rdata]', '0x106e872c[.rdata]', '0x106e9100[.rdata]', '0x106e9ad4[.rdata]', '0x106ea4a8[.rdata]', '0x106eae7c[.rdata]', '0x106edfd8[.rdata]', '0x106eeed4[.rdata]', '0x106efc18[.rdata]', '0x106f05f0[.rdata]', '0x106f1448[.rdata]', '0x106f1e90[.rdata]', '0x106f2fa0[.rdata]', '0x106f5b4c[.rdata]', '0x106fe670[.rdata]', '0x106ff458[.rdata]', '0x10700048[.rdata]', '0x107044c0[.rdata]', '0x1070d164[.rdata]', '0x1070dd90[.rdata]', '0x1070ec50[.rdata]', '0x1070fb98[.rdata]', '0x107106a0[.rdata]', '0x107116f4[.rdata]', '0x107121bc[.rdata]', '0x107133d8[.rdata]', '0x107147c8[.rdata]', '0x10715bc4[.rdata]', '0x10716610[.rdata]', '0x107191e8[.rdata]', '0x1071c718[.rdata]', '0x10720370[.rdata]', '0x10720e8c[.rdata]', '0x10721a10[.rdata]', '0x10722714[.rdata]', '0x10723208[.rdata]', '0x10723d9c[.rdata]', '0x10726824[.rdata]', '0x10739e28[.rdata]', '0x1073a928[.rdata]', '0x1073b2e4[.rdata]', '0x1073bcdc[.rdata]', '0x1073dbd8[.rdata]']
+  0x1034f250: []
+  0x1034fb10: []
+
+=== bullet_ff_through_walls ConVar object 0x108bc278: name ===
+  [+0x0c] m_pszName ERR unpack requires a buffer of 4 bytes
+  [+0x10] m_pszHelpString ERR unpack requires a buffer of 4 bytes
+
+=== same for sv_showdebugtracers-ish globals & the GlassImpact debug cvar near 0x108a8120 ===
+Traceback (most recent call last):
+  File "<stdin>", line 23, in <module>
+ValueError: not enough values to unpack (expected 2, got 1)

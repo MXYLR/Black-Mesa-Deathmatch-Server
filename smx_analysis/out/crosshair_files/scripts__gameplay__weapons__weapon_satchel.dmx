@@ -1,0 +1,29 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_SATCHEL"
+{
+	"id" "elementid" "eb6918c0-a81c-4f23-8a07-14dcacd9742b"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_satchel.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_satchel_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_satchel.mdl"
+	"printname" "string" "Satchels"
+	"primary_ammo" "string" "grenade_satchel"
+	"clip_size" "int" "-1"	
+	"default_clip" "int" "1"
+	"bucket" "int" "4"
+	"bucket_position" "int" "1"
+
+	"bucket_controller" "int" "2"
+	"bucket_position_controller" "int" "1"
+
+	"anim_prefix" "string" "satchel"
+	"item_flags" "int" "0"
+	"weight" "int" "50"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "c4dc18ea-f87c-46cd-9fd6-095ffb6c0509"
+		"double_shot" "string" "weapon_satchel.Double"
+		"single_shot" "string" "weapon_satchel.Single"
+		"single_shot_npc" "string" "weapon_satchel.Single_NPC"
+	}
+}

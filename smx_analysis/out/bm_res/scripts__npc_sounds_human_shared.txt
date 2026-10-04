@@ -1,0 +1,61 @@
+"NPC_Citizen.FootstepLeft"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"player/footsteps/concrete1.wav"
+		"wave"	"player/footsteps/concrete2.wav"
+	}
+}
+
+"NPC_Citizen.FootstepRight"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"player/footsteps/concrete3.wav"
+		"wave"	"player/footsteps/concrete4.wav"
+	}
+}
+
+"NPC_Citizen.RunFootstepLeft"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/footsteps/hardboot_generic1.wav"
+		"wave"	"npc/footsteps/hardboot_generic3.wav"
+		"wave"	"npc/footsteps/hardboot_generic5.wav"
+	}
+}
+
+"NPC_Citizen.RunFootstepRight"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/footsteps/hardboot_generic2.wav"
+		"wave"	"npc/footsteps/hardboot_generic4.wav"
+		"wave"	"npc/footsteps/hardboot_generic6.wav"
+	}
+}

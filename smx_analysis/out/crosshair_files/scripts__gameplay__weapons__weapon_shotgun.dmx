@@ -1,0 +1,105 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_SHOTGUN"
+{
+	"id" "elementid" "7c3a2373-7056-4aa9-9e93-9187ba7b5215"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_shotgun.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_shotgun_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_shotgun.mdl"
+	"printname" "string" "Shotgun"
+	"primary_ammo" "string" "buckshot"
+	"clip_size" "int" "8"
+	"bucket" "int" "2"
+	"bucket_position" "int" "1"
+
+	"bucket_controller" "int" "0"
+	"bucket_position_controller" "int" "1"
+
+	"anim_prefix" "string" "shotgun"
+	"item_flags" "int" "0"
+	"weight" "int" "90"
+	"fov_viewmodel" "float" "50"
+	"muzzleflash_firstperson" "string" "weapon_shotgun_muzzleflash"
+	"muzzleflash_thirdperson" "string" "world_weapon_shotgun_muzzleflash"
+	"brass_ejection_model" "string" "models/Weapons/Shotgun_shell.mdl"
+	"tracer" "string" "weapon_tracer"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "facca2fb-83ce-49a4-ba32-e2aae7e708c0"
+		"double_shot" "string" "weapon_shotgun.Double"
+		"double_shot_npc" "string" "weapon_shotgun.Double_NPC"
+		"reload" "string" "weapon_shotgun.Reload"
+		"reload_npc" "string" "weapon_shotgun.Reload_NPC"
+		"empty" "string" "weapon_shotgun.Empty"
+		"single_shot" "string" "weapon_shotgun.Single"
+		"single_shot_npc" "string" "weapon_shotgun.Single_NPC"
+		"special1" "string" "weapon_shotgun.Special1"
+	}
+	"primary_attack" "primary_attack"
+	{
+		"id" "elementid" "1b5c4dce-5523-41d4-8e8e-1a4c43fd301c"
+		"cycle" "float" "0.25"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "e9423b5f-562f-4ef5-9778-f142e82167be"
+			"spread" "vector3" "4 3 0"
+			"shot_count" "int" "8"
+			"damage" "float" "7"
+			"damage_multiplayer" "float" "10"	
+			"range_modifier" "float" "0.8"		
+			"range_min" "float" "256"	
+		}
+		"recoil" "recoil"
+		{
+			"id" "elementid" "5579b78b-25fe-4c6f-b8d9-eb9942b6ecad"
+			"min_snap_angles" "vector3" "-3 -0.15 0"
+			"max_snap_angles" "vector3" "-1.5 0.15 0"
+			"min_punch_angles" "vector3" "-6 -0.25 -0.25"
+			"max_punch_angles" "vector3" "-5 0.25 0.25"
+			"min_punch_offset" "vector3" "-1 1 -1"
+			"max_punch_offset" "vector3" "-1 1 -1"
+		}
+	}
+	"secondary_attack" "secondary_attack"
+	{
+		"id" "elementid" "d08a25e4-621d-4b7f-aa73-9324d5229f5b"
+		"cycle" "float" "0.65"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "3603e841-8ebb-4a60-b65b-941f59974ce2"
+			"spread" "vector3" "8 6 0"
+			"shot_count" "int" "16"
+			"damage" "float" "7"
+			"damage_multiplayer" "float" "10"	
+			"range_modifier" "float" "0.8"		
+			"range_min" "float" "256"		
+		}
+		"recoil" "recoil"
+		{
+			"id" "elementid" "c4473b75-b898-4bd8-bc92-c7a58989c2df"
+			"min_snap_angles" "vector3" "-3 -0.15 0"
+			"max_snap_angles" "vector3" "-1.5 0.15 0"
+			"min_punch_angles" "vector3" "-6 -0.25 -0.25"
+			"max_punch_angles" "vector3" "-5 0.25 0.25"
+			"min_punch_offset" "vector3" "-1 1 -1"
+			"max_punch_offset" "vector3" "-1 1 -1"
+		}
+	}	
+	"npc_attack" "npc_attack"
+	{
+		"id" "elementid" "3cfbebc2-c4de-44b4-95b5-114ae954daf6"
+		"cycle" "float" "1.25"
+		"burst_count_min" "int" "1"
+		"burst_count_max" "int" "1"
+		"rest_time_min" "float" "0.875"
+		"rest_time_max" "float" "1.3125"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "1a8615f2-ff94-43bb-b047-ccc82b79d754"
+			"spread" "vector3" "5.0 3.75 0.0"
+			"damage" "float" "2.5"
+			"shot_count" "int" "8"
+		}
+	}
+}
+

@@ -1,0 +1,1911 @@
+
+// Unforeseen Consequences: This is what happens when you 'force' a computer to divide by zero.
+
+// MAPS A AND B ONLY!!!//
+
+"c1a1.util_indoorboom1"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"6.0, 11.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"bms_ambience\soundscape\soundscape_indoorboom2.wav"
+			"wave"	"bms_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"bms_ambience\soundscape\soundscape_indoorboom4.wav"
+			"wave"	"bms_ambience\soundscape\soundscape_indoorboom6.wav"
+		}
+	}
+}
+
+"c1a1.util_metalcreak1"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"9, 15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\soundscape_metalcreak1.wav"
+			"wave"	"bms_ambience\soundscape\soundscape_metalcreak2.wav"
+			"wave"	"bms_ambience\soundscape\soundscape_metalcreak3.wav"
+			"wave"	"bms_ambience\soundscape\soundscape_metalcreak4.wav"
+		}
+	}
+}
+
+"c1a1.util_bighit1"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"17, 22"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\bighit_far3.wav"
+			"wave"	"bms_ambience\soundscape\bighit_far4.wav"
+			"wave"	"bms_ambience\soundscape\bighit_far7.wav"
+			"wave"	"bms_ambience\soundscape\bighit_far18.wav"
+		}
+	}
+}
+
+"c1a1.util_indamb"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"11.0, 20.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\ind_amb1.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb2.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb3.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb4.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb5.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb6.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb7.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb8.wav"
+		}
+	}
+}
+
+//========================================================================================================================================================
+// 								MAP c1a1A STARTS HERE!!!
+//========================================================================================================================================================
+// Base Utility Soundscapes
+//
+// These .base soundscapes are basic building blocks, meant for insertion into the proper main use soundscapes. They are NOT meant for actual .vmf consumption.
+// for the soundscapes proper, please scroll down to  "Main Map Soundscapes - Map A"
+
+"c1a1a.testchamber.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_foreboding1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_debris1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_fire1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1a.airlock.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_foreboding2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1a.hallway.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_foreboding2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1a.hallway2.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1a.hallway3.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble4.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1a.tuberoom.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble5.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_foreboding1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1a.controlroom.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble7.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_fire1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1a.ionroom.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_foreboding1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1a.shaft.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_foreboding1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility Soundscapes
+//
+// These soundscapes are utilities for positional sounds, meant for insertion into the proper main use soundscapes. 
+// They are NOT meant for actual .vmf consumption.
+//
+// For the soundscapes proper, please scroll down to  "Main Map Soundscapes - Map A"
+
+
+// positional utility, c1a1a.testchamber (a_tc, for shorthand)
+
+///////// info_targets ///////////
+// a_tc_pos3_ehum1
+// a_tc_pos5_fire3
+// a_tc_pos6_fire7
+// a_tc_pos7_fire4
+
+"c1a1a.tc.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.6"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire3.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire7.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire4.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"7"
+	}
+}
+
+// positional utility, c1a1a.airlock (positions 0,1,4)
+
+///////// info_targets ///////////
+// a_tc_pos0_fan1
+// a_tc_pos1_ehum1
+// a_tc_pos4_fire2
+
+"c1a1a.airlock.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience/room_ambience/r_ambience_fan1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"	"1.6"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire2.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"4"
+	}
+}
+
+// positional utility, c1a1a.hallway1 (a_h1, for shorthand)
+
+///////// info_targets ///////////
+// a_h1_pos5_fire5
+// a_h1_pos6_lc23
+// a_h1_pos7_hiss
+
+"c1a1a.h1.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.65"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire2.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_lc23.wav"
+		"attenuation"	"1.2"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_hiss1.wav"
+		"attenuation"	"1.6"
+		"position"	"7"
+	}
+
+}
+
+// positional utility, c1a1a.tuberoom1 (a_t1, for shorthand)
+
+///////// info_targets ///////////
+// a_t1_pos1_fire8
+// a_t1_pos2_eloop  (eli server)
+// a_t1_pos3_lc9
+
+"c1a1a.t1.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire8.wav"
+		"attenuation"	"1.2"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"ambient/energy/electric_loop.wav"
+		"attenuation"	"1.4"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.65"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_lc9.wav"
+		"soundlevel"	"SNDLVL_80dB"
+		"position"	"3"
+	}
+}
+
+// positional utility, c1a1a.ionroom (a_ion, for shorthand)
+
+///////// info_targets ///////////
+// a_ion_pos7_ehum
+// a_ion_pos6_lc11
+// a_ion_pos5_electrical8
+// a_ion_pos4_firesm1		(ambient/fire/fire_small1.wav)	(hl2 sound)
+
+"c1a1a.ionroom.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.6"
+		"position"	"7"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_lc11.wav"
+		"attenuation"	"1.4"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrical8.wav"
+		"attenuation"	"1.6"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"ambient/fire/fire_small1.wav"
+		"attenuation"	"1.2"
+		"position"	"4"
+	}
+}
+
+// positional utility, c1a1a.hallway2 (a_h2, for shorthand)
+
+///////// info_targets ///////////
+// a_h2_pos0_lc17
+// a_h2_pos1_lc17a
+// a_h2_pos2_fire2
+// a_h2_pos3_fire8
+
+
+"c1a1a.h2.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.95"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_lc17.wav"
+		"soundlevel"	"SNDLVL_80dB"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.95"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_lc17a.wav"
+		"soundlevel"	"SNDLVL_80dB"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire2.wav"
+		"attenuation"	"1.2"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire8.wav"
+		"attenuation"	"1.2"
+		"position"	"3"
+	}
+}
+
+// main positional utilities, c1a1a.hallway3 (a_h3, for shorthand)
+
+///////// info_targets ///////////
+// a_h3_pos0////////NOTUSED
+// a_h3_pos1_comp2
+// a_h3_pos2_comp3
+// a_h3_pos3_ehum1a
+
+
+// a_h3_pos4_ehum1
+// a_h3_pos5_hiss1a
+// a_h3_pos6_hiss1
+// a_h3_pos7_labdrone
+
+"c1a1a.h3.util_pos0-3"
+
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp2.wav"
+		"attenuation"	"1.8"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp3.wav"
+		"attenuation"	"1.8"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.10"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"	"1.2"
+		"position"	"3"
+	}
+}
+
+"c1a1a.h3.util_pos4-7"
+
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.10"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.2"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_hiss1a.wav"
+		"attenuation"	"1.8"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_hiss1.wav"
+		"attenuation"	"1.8"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.95"
+		"pitch"		"100"
+		"wave"		"hl1/ambience/labdrone2.wav"
+		"attenuation"	"1.5"
+		"position"	"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//================================================================
+//			Main Soundscapes - Map A
+//================================================================
+
+// Map A - Test Chamber - The player wakes up in the aftermath of the resonance cascade. (a_tc,for positional shorthand)
+
+"c1a1a.testchamber"
+{
+	"dsp"	"10"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.testchamber.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.tc.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.airlock.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"1.0"
+	}
+}
+
+// Map A - Test Chamber Foyer - Airlock
+
+"c1a1a.airlock"
+{
+	"dsp"	"0"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.airlock.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.airlock.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.tc.util_pos"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.9"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.9"
+	}
+}
+
+// Map A - Hallway 1
+
+"c1a1a.hallway1"
+{
+	"dsp"	"3"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.h1.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.t1.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"1.0"
+	}
+}
+
+// Map A - TubeRoom
+
+"c1a1a.tuberoom"
+{
+	"dsp"	"3"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.tuberoom.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.h1.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.t1.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.9"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.9"
+	}
+}
+
+// Map A - Test Chamber Control Room
+
+"c1a1a.controlroom"
+{
+	"dsp"	"0"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.controlroom.base"
+		"volume"	"1.0"
+	}
+}
+
+// Map A - Ion Chamber Room
+
+"c1a1a.ionroom"
+{
+	"dsp"	"3"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.ionroom.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.ionroom.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.h2.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.8"
+	}
+}
+
+// Map A - Hallway 2 (and 2_2)
+
+"c1a1a.hallway2"
+{
+	"dsp"	"3"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.hallway2.base"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.h2.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.ionroom.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.7"
+	}
+}
+
+// Hallway 2_2 sets up some of the hallway 3 positionals, before you reach the doorway.
+
+"c1a1a.hallway2_2"
+{
+	"dsp"	"3"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.hallway2.base"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.h2.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.h3.util_pos4-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.7"
+	}
+}
+
+// Map A - Hallway 3
+
+"c1a1a.hallway3"
+{
+	"dsp"	"3"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.hallway3.base"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.h3.util_pos0-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.h3.util_pos4-7"
+		"volume"	"1.0"
+	}
+}
+
+// Map A - Elevator Shaft - end of map a - transition to map b.
+
+"c1a1a.shaft"
+{
+	"dsp"	"1"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.shaft.base"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.9"
+	}
+}
+
+//================================================================
+// 			MAP c1a1b STARTS HERE!!!
+//================================================================
+
+
+"c1a1b.hallway.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"bms_ambience\room_ambience\r_ambience_disaster_rumble1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1b.plaza.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble6.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1b.lab.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble4.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1b.tram_stop.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_foreboding1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c1a1b.lobby.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+//								Positional Utility Soundscapes
+//
+// These soundscapes are utilities for positional sounds, meant for insertion into the proper main use soundscapes. 
+// They are NOT meant for actual .vmf consumption.
+//
+// For the soundscapes proper, please scroll down to  "Main Map Soundscapes - Map B"
+
+// positional utility for c1a1b.plaza (b_plz, for shorthand.)
+
+///////// info_targets ///////////
+// b_plz_pos0_ehum1
+// b_plz_pos1_ehum1a
+// b_plz_pos2_fire1
+
+"c1a1b.plza.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"pitch"			"100"
+		"attenuation"		"1.8"
+
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"pitch"			"100"
+		"attenuation"		"1.8"
+
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_fire1.wav"
+		"pitch"			"100"
+		"attenuation"		"1.0"
+
+		"position"		"2"
+	}
+}
+
+// positional utility for hallway_ret (b_hret, for shorthand.)
+
+///////// info_targets ///////////
+// b_hret_pos7_alarm5a
+// b_plz_pos6_alarm5   (copied from "c1a1b.plza.util_pos" - make sure they always match!!!)
+
+"c1a1b.hret.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.47"
+		"wave"			"bms_objects\alarms\alarm5a.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.47"
+		"wave"			"bms_objects\alarms\alarm5.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"		"7"
+	}
+}
+
+// positional utility for hallway_dev (b_hdev, for shorthand.)
+
+///////// info_targets ///////////
+
+// b_hdev_pos0_ehum1a
+// b_hdev_pos1_alarm5c
+// b_hdev_pos2_
+// b_hdev_pos3_wnoise
+// b_hdev_pos4_alarm5b
+// b_hdev_pos5_hiss1
+
+"c1a1b.hdev.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"pitch"			"100"
+		"attenuation"		"1.8"
+
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"wave"			"bms_objects\alarms\alarm5c.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"bms_objects\white_noise2.wav"
+		"attenuation"		"1.1"
+
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_objects\white_noise.wav"
+		"attenuation"		"1.0"
+
+		"position"		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"wave"			"bms_objects\alarms\alarm5b.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_hiss1.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"		"5"
+	}
+}
+
+// positional utility for hallway_brk (b_hbrk, for shorthand.)
+// positions 2 and 6 only, all the rest will still be in use by c1a1b.hdev.util_pos
+
+///////// info_targets ///////////
+//
+// b_hbrk_pos2_alarm5
+
+"c1a1b.hbrk.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"wave"			"bms_objects\alarms\alarm5.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"		"2"
+	}
+}
+
+// positional utility for network room hallway (b_hnet, for shorthand.)
+
+///////// info_targets ///////////
+
+// b_hnet_pos6_fire4
+// b_hnet_pos2_ehum
+
+"c1a1b.hnet.util_pos"
+{
+	"dsp"	"3"
+
+	"playlooping"
+	{
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_fire4.wav"
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_75dB"
+
+		"position"		"6"
+
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"pitch"			"100"
+		"attenuation"		"1.5"
+
+		"position"		"2"
+	}
+}
+
+// positional utility for front lobby (b_lob, for shorthand.)
+
+///////// info_targets ///////////
+
+// b_lob_pos0_ehum1
+// b_lob_pos1_fire2
+// b_lob_pos2_wnoise
+
+"c1a1b.lob.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"pitch"			"100"
+		"attenuation"		"1.5"
+
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_fire2.wav"
+		"pitch"			"100"
+		"attenuation"		"1.5"
+
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"wave"			"bms_objects\white_noise.wav"
+		"attenuation"		"1.0"
+
+		"position"		"2"
+	}
+}
+
+// positional utility for lobby front airlock (b_air, for shorthand.)
+
+///////// info_targets ///////////
+
+// b_air_pos5_energy1
+// b_air_pos6_misc7
+// b_air_pos7_misc10
+
+"c1a1b.airlock.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_brokenenergy1.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_70dB"
+
+		"position"		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_misc7.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_NORM"
+
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_misc10.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_NORM"
+
+		"position"		"7"
+	}
+}
+
+//================================================================
+//			Main Soundscapes - Map B
+//================================================================
+
+"c1a1a.shaft.bversion"
+{
+	"dsp"	"1"
+	"dsp_volume"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1a.shaft.base"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.plza.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.9"
+	}
+}
+
+"c1a1b.plaza"
+{
+	"dsp"	"2"
+	"playsoundscape"
+	{
+		"name"		"c1a1b.plaza.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.plza.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hret.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+}
+
+// Map B - Retinal Scanner Hallway
+
+"c1a1b.hallway_ret"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hret.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+// Map B - Retinal Scanner Hallway - Laboratory  -- NOT GONNA USE THIS -----
+
+"c1a1b.lab_ret_NOTUSINGTHIS"
+{
+	"dsp"	"2"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.lab.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hret.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+"c1a1b.hallway_dev"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hret.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hdev.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+"c1a1b.lab_dev"
+{
+	"dsp"	"2"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.lab.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+"c1a1b.hallway_brk"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hdev.util_pos"
+		"volume"	"0.75"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hbrk.util_pos"
+		"volume"	"0.75"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+"c1a1b.breakroom"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hbrk.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+"c1a1b.hallway_net"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hdev.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hnet.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+"c1a1b.lockerroom"
+{
+	"dsp"	"2"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble5.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med3.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.3"
+	}
+}
+
+"c1a1b.lobby"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.lobby.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.lob.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.airlock.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.7"
+	}
+}
+
+"c1a1b.hallway_wb"
+{
+	"dsp"	"3"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.hallway.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+"c1a1b.hwb.util_pos"
+{
+
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"wave"			"bms_objects\alarms\alarm5.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"wave"			"bms_objects\alarms\alarm5a.wav"
+		"pitch"			"100"
+		"soundlevel"		"SNDLVL_80dB"
+
+		"position"		"1"
+	}
+}
+
+"c1a1b.tram_stop"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.tram_stop.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1b.airlock.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_bighit1"
+		"volume"	"0.8"
+	}
+}
+
+"c1a1b.vent"
+{
+	"dsp"	"2"
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_foreboding2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.5"
+	}
+}
+
+"c1a1b.disasterlab"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble4.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.4"
+	}
+}
+
+"c1a1b.frozenlab"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med6.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble6.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.3"
+	}
+}
+
+"c1a1b.maintenance"
+{
+	"dsp"	"17"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_disaster_rumble6.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med8.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.2"
+	}
+}
+
+"c1a1b.shaft"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_eleshaft1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_indoorboom1"
+		"volume"	"0.1"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_metalcreak1"
+		"volume"	"0.7"
+	}
+}

@@ -1,0 +1,344 @@
+"npc_sounds_gargantua.Footstep"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_140db"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"		"npc/garg/garg_closestep1.wav"
+		"wave"		"npc/garg/garg_closestep2.wav"
+		"wave"		"npc/garg/garg_closestep3.wav"
+	}
+}
+
+"npc_sounds_gargantua.Idle"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140db"
+
+	"rndwave"
+	{
+		"wave"	"npc/garg/garg_idle1.wav"
+		"wave"	"npc/garg/garg_idle2.wav"
+	}
+
+}
+
+"npc_sounds_gargantua.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140db"
+
+	"rndwave"
+	{
+		"wave"	"npc/garg/garg_roar3_short.wav"
+	}
+}
+
+"npc_sounds_gargantua.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140db"
+
+	"rndwave"
+	{
+		"wave"	"npc/garg/garg_die1.wav"
+	}
+
+}
+
+"npc_sounds_gargantua.Pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_130db"
+
+	"rndwave"
+	{
+		"wave"	"npc/garg/garg_pain1.wav"
+		"wave"	"npc/garg/garg_pain2.wav"
+		"wave"	"npc/garg/garg_pain3.wav"
+	}
+
+}
+
+"npc_sounds_gargantua.AnnounceAttack"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_130db"
+
+	"rndwave"
+	{
+		"wave"	"npc/garg/garg_attack1.wav"
+	}
+
+}
+
+"npc_sounds_gargantua.FlameOff"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"attenuation"	"0.55"
+
+	"wave"		"npc/garg/garg_beam_stop.wav"
+}
+
+
+"npc_sounds_gargantua.FlameRun"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"attenuation"	"0.55"
+
+	"wave"		"npc/garg/garg_beam_start.wav"
+}
+
+"npc_sounds_gargantua.Roar"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"attenuation"	"0.30"
+
+	"rndwave"
+	{
+		"wave"		"npc/garg/garg_roar1.wav"
+		"wave"		"npc/garg/garg_roar2.wav"
+		"wave"		"npc/garg/garg_roar3.wav"
+		"wave"		"npc/garg/garg_roar4.wav"
+	}
+}
+
+"npc_sounds_gargantua.Roar_Short"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"attenuation"	"0.30"
+
+	"rndwave"
+	{
+		"wave"		"npc/garg/garg_roar1_short.wav"
+		"wave"		"npc/garg/garg_roar2_short.wav"
+		"wave"		"npc/garg/garg_roar3_short.wav"
+		"wave"		"npc/garg/garg_roar4_short.wav"
+	}
+}
+
+"npc_sounds_gargantua.Breath"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"attenuation"	"0.6"
+
+	"rndwave"
+	{
+		"wave"		"npc/garg/garg_breathe.wav"
+	}
+}
+
+"npc_sounds_gargantua.Hit"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_140db"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"		"npc/garg/garg_hit1.wav"
+		"wave"		"npc/garg/garg_hit2.wav"
+		"wave"		"npc/garg/garg_hit3.wav"
+	}
+}
+
+"npc_sounds_gargantua.Claw"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_140db"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"		"npc/garg/garg_claw3.wav"
+		"wave"		"npc/garg/garg_claw4.wav"
+	}
+}
+
+"npc_sounds_gargantua.SmashBarrier"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"0"
+	"pitch"			"PITCH_NORM"
+
+	"wave"		"BMS_scripted/pu/garg_smash.wav" 
+}
+
+
+"npc_sounds_gargantua.SmashWall"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"0"
+	"pitch"			"PITCH_NORM"
+
+	"wave"		"BMS_objects/crashes_hits/rock_hit3.wav"
+}
+
+"npc_sounds_gargantua.st_gatesmash_crash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"attenuation"	"0.55"
+
+	"wave"		"BMS_objects/crashes_hits/metal_crash1.wav"
+}
+
+"npc_sounds_gargantua.st_gatesmash_bang"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"attenuation"	"0.25"
+
+	"wave"		"BMS_ambience\object_physics\metal_creak14.wav"
+}
+
+"npc_sounds_gargantua.st_blastdoordent_loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"90,120"
+	"soundlevel"	"SNDLVL_NORM"
+	"attenuation"	"0.05"
+
+	"rndwave"
+	{
+		"wave"		"BMS_ambience\object_physics\big_hit1.wav"
+		"wave"		"BMS_ambience\object_physics\big_hit2.wav"
+	}
+}
+
+"npc_sounds_gargantua.st_blastdoor_creak"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"attenuation"	"0.25"
+
+	"rndwave"
+	{
+		"wave"		"BMS_ambience\object_physics\metal_creak7.wav"
+	}
+}
+
+"npc_sounds_gargantua.st_blastdoor_break"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"attenuation"	"0.25"
+
+	"rndwave"
+	{
+		"wave"		"BMS_ambience\object_physics\metal_break6.wav"
+	}
+}
+
+"npc_sounds_gargantua.st_metaldoor_smash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"attenuation"	"0.25"
+
+	"rndwave"
+	{
+		"wave"		"bms_ambience/object_physics/metal_break3.wav"
+	}
+}
+
+"npc_sounds_gargantua.st_metaldoor_thud"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"attenuation"	"0.25"
+
+	"rndwave"
+	{
+		"wave"		"bms_ambience/object_physics/metal_break1.wav"
+	}
+}
+
+// POWER GARG FAR AWAY ROARS, with ambient echo
+
+// map a roars
+
+"pu.garg_roarAMB"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"1.0"
+	"soundlevel"		"SNDLVL_100dB"
+	"pitch"				"PITCH_NORM"
+
+	"wave"				"npc/garg/pu_amb/garg_pu_amb.wav"
+}
+
+"pu.garg_roarAMB2"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"1.0"
+	"soundlevel"		"SNDLVL_100dB"
+	"pitch"				"PITCH_NORM"
+
+	"wave"				"npc/garg/pu_amb/garg_pu_amb2.wav"
+}
+
+"pu.garg_roarAMB3"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"1.0"
+	"soundlevel"		"SNDLVL_100dB"
+	"pitch"				"PITCH_NORM"
+
+	"wave"				"npc/garg/pu_amb/garg_pu_amb3.wav"
+}
+
+"pu.b.garg_roarAMB"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"1.0"
+	"soundlevel"		"SNDLVL_100dB"
+	"pitch"				"PITCH_NORM"
+
+	"wave"				"npc/garg/pu_amb/garg_pu_amb.wav"
+}

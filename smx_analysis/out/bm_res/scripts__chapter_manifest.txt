@@ -1,0 +1,28 @@
+"chapter_manifest.txt"
+{
+  bm_c0a0 1
+  bm_c1a0 2
+  bm_c1a1 3
+  bm_c1a2 4
+  bm_c1a3 5
+  bm_c1a4 6
+  bm_c2a1 7
+  bm_c2a2 8
+  bm_c2a3 9
+  bm_c2a4a 10
+  bm_c2a4b 10
+  bm_c2a4c 10
+  bm_c2a4e 11
+  bm_c2a4f 11
+  bm_c2a4g 11
+  bm_c2a4h 11
+  bm_c2a5 12
+  bm_c3a1 13
+  bm_c3a2 14
+  bm_c4a1a 15
+  bm_c4a2a 16
+  bm_c4a3a 17
+  bm_c4a4a 18
+  bm_c5a1a 19
+  credits 20
+}

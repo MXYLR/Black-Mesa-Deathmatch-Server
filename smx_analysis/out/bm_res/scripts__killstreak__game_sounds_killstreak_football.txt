@@ -1,0 +1,384 @@
+"football.KillStreak.FirstBlood"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\firstblood.wav"
+}
+
+"football.KillStreak.DoubleKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\doublekill.wav"
+}
+
+"football.KillStreak.MultiKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\multikill.wav"
+}
+
+"football.KillStreak.MegaKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\megakill.wav"
+}
+
+"football.KillStreak.UltraKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\ultrakill.wav"
+}
+
+"football.KillStreak.LudicrousKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\Ludicrouskill.wav"
+}
+
+"football.KillStreak.MonsterKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\monsterkill.wav"
+}
+
+"football.KillStreak.HolyShit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\holyshit.wav"
+}
+
+"football.KillStreak.KillingSpree"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\killingspree.wav"
+}
+
+"football.KillStreak.Rampage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\rampage.wav"
+}
+
+"football.KillStreak.Dominating"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\dominating.wav"
+}
+
+"football.KillStreak.Unstoppable"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\unstoppable.wav"
+}
+
+"football.KillStreak.Godlike"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\godlike.wav"
+}
+
+"football.KillStreak.WickedSick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\wickedsick.wav"
+}
+
+"football.KillStreak.CornetTheory"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\cornettheory.wav"
+}
+
+"football.Time.15Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_15minutes.wav"
+}
+
+"football.Time.10Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_10minutes.wav"
+}
+
+"football.Time.5Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_5minutes.wav"
+}
+
+"football.Time.1Minute"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_1minute.wav"
+}
+
+"football.Time.30Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_30seconds.wav"
+}
+
+"football.Time.10Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_10seconds.wav"
+}
+
+"football.Time.5Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_5seconds.wav"
+}
+
+"football.Time.4Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_4seconds.wav"
+}
+
+"football.Time.3Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_3seconds.wav"
+}
+
+"football.Time.2Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_2seconds.wav"
+}
+
+"football.Time.1Second"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\time_1second.wav"
+}
+
+"football.Game.TimeUp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\game_timeup.wav"
+}
+
+"football.Game.Over"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\game_over.wav"
+}
+
+"football.Game.Draw"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\game_draw.wav"
+}
+
+"football.Team.GainedLead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\team_gainedlead.wav"
+}
+
+"football.Team.Tied"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\team_tied.wav"
+}
+
+"football.Team.LostLead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\team_lostlead.wav"
+}
+
+"football.Team.Win"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\team_win.wav"
+}
+
+"football.Team.Lose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\team_lose.wav"
+}
+
+"football.Team.Draw"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"0"
+
+	"wave"			"killstreak\football\team_draw.wav"
+}

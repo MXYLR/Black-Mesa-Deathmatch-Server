@@ -1,0 +1,122 @@
+"NPC_Ichthyosaur.Idle"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/ichthyosaur/growl1.wav"
+		"wave"	"npc/ichthyosaur/growl2.wav"
+	}
+}
+
+"NPC_Ichthyosaur.Alert"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"	"npc/ichthyosaur/detect1.wav"
+}
+
+"NPC_Ichthyosaur.Death"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"npc/ichthyosaur/die1.wav"
+
+}
+
+"NPC_Ichthyosaur.Pain"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"npc/ichthyosaur/pain1.wav"
+}
+
+"NPC_Ichthyosaur.AttackGrowl"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/ichthyosaur/attack1.wav"
+		"wave"	"npc/ichthyosaur/attack2.wav"
+		"wave"	"npc/ichthyosaur/attack3.wav"
+	}
+}
+
+"NPC_Ichthyosaur.Bite"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_HIGH"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"npc/ichthyosaur/bite1.wav"
+}
+
+"NPC_Ichthyosaur.BiteMiss"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_HIGH"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"npc/ichthyosaur/bite1.wav"
+}
+
+"NPC_Ichthyosaur.SwimLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"pitch"			"PITCH_NORM"
+	"volume"		"VOL_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"npc/ichthyosaur/swimloop.wav"
+}
+
+"NPC_Ichthyosaur.Splash"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/ichthyosaur/watermove1.wav"
+		"wave"	"npc/ichthyosaur/watermove2.wav"
+		"wave"	"npc/ichthyosaur/watermove3.wav"
+	}
+}
+
+"NPC_Ichthyosaur.Swoosh"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"VOL_NORM"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/ichthyosaur/underwatermove1.wav"
+		"wave"	"npc/ichthyosaur/underwatermove2.wav"
+		"wave"	"npc/ichthyosaur/underwatermove3.wav"
+	}
+}
+
+
+

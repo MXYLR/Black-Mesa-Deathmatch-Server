@@ -1,0 +1,3009 @@
+// Chapter 14 Gonarch:
+
+//////////////////// Level Soundscapes ////////////////////
+
+// c4a2
+
+//================================================================
+//		Utility Soundscapes - Chapter Specific
+//================================================================
+// PLEASE NOTE:
+// All generic XEN utility soundscapes for can be found in "soundscapes_c4a1.txt"
+// ONLY Chapter Specific Utilities are listed in this section.
+
+"util_gonarch_outdoorwind_light"
+{
+	"playrandom"
+	{
+		"volume"	"0.2,0.6"
+		"pitch"		"100"
+		"time"		"15.0, 30.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient\wind\wind_snippet3.wav"
+			"wave"	"ambient\wind\wind_snippet4.wav"
+		}
+	}
+}
+
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 							MAP c4a2a STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+//
+//================================================================================================================================
+//						Positional Utility SoundScapes -  Map A
+//================================================================================================================================
+//
+// Starting Cave Waters Utility - Positional assignments
+//
+//-----Info_Targets in the map--//
+// pos0 = Waterfall_Sound_inner
+// pos1 = Waterfall_Sound2
+// pos2 = Waterfall_Sound3
+// pos3 = water_flow1
+// pos4 = water_flow2
+// pos5 = water_flow3
+// pos6 = water_flow4
+// pos7 = NOTUSED FOR POSITIONALS
+
+"util.c4a2a.cavestart_waters"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"		"xen\object\xen_water13.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"		"xen\object\xen_water3.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"		"xen\object\xen_water5.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"		"xen\object\xen_water6.wav"
+		"position"	"3"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"		"xen\object\xen_water1.wav"
+		"position"	"4"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"		"xen\object\xen_water6.wav"
+		"position"	"5"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"		"xen\object\xen_water8.wav"
+		"position"	"6"
+	}	
+}
+
+// Outdoor Arena Waters Utility - Positional assignments
+//
+//-----Info_Targets in the map--//
+//
+// pos0 = Waterfall_Sound3
+// pos1 = big_waterfall1
+// pos2 = big_waterfall2
+// pos3 = small_waterfall
+// pos4 = small_islandwaterfall1
+// pos5 = small_islandwaterfall2
+// pos6 = pond
+// pos7 = water_flow5
+//
+//-----------------------------
+
+"Util.c4a2a.outdoor01_waters"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"	"SNDLVL_80db"
+		"wave"			"xen\object\xen_water3.wav"
+		"pitch"			"100"
+		"position"		"0"
+	}
+
+		"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"bms_ambience\object_ambience\o_ambience_waterfall1.wav"
+		"pitch"			"100"
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water21.wav"
+		"pitch"			"100"
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1"
+		"soundlevel"	"SNDLVL_80db"
+		"wave"			"bms_ambience/object_ambience/o_ambience_water2.wav"
+		"pitch"			"100"
+		"position"		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_80db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water10.wav"
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_80db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water7.wav"
+		"position"		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_80db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_80db"
+		"wave"			"bms_ambience/room_ambience/r_ambience_water6.wav"
+		"position"		"7"
+	}
+}
+
+//================================================================
+//	//END OF// Positional Utility SoundScapes -  Map A
+//================================================================
+//
+//
+//
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map A
+//================================================================================================================================
+//================================================================================================================================
+//
+//
+//
+
+"c4a2a.cavestart.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.30"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb32.wav"
+		"attenuation"	"1.0"
+	}
+	"playlooping"
+	{
+		"volume"		"0.40"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb37a.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map A
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Map A - Gonarch Starting Cave 		//
+
+"c4a2a.cavestart"
+{
+	"dsp"			"5"
+	"dsp_volume"	"0.25"
+	"fadetime"		"3.0"
+
+	"playsoundscape"
+	{
+		"name"		"c4a2a.cavestart.base"
+		"volume"	"1.0"
+	}
+	"playsoundscape"
+	{
+		"name"		"util.c4a2a.cavestart_waters"
+		"volume"	"1.0"
+	}
+	"playsoundscape"
+	{
+		"name"		"util_xen_cavedrips.fast"
+		"volume"	"1.0"
+	}
+
+//	BLENDSCAPEs
+//	info_target is	"blendscape_to_outdoor01"
+
+	"playlooping"
+	{
+		"volume"				"0.8"
+		"pitch"					"100"
+		"wave"					"@xen\ambience\xen_amb36b.wav"
+		"position"				"7"
+		"attenuation"			"1.0"
+	}
+	"playsoundscape"
+	{
+		"name"					"util_gonarch_outdoorwind_light"
+		"volume"				"1.0"
+		"positionoverride"		"7"
+	}
+}
+
+// DEV NOTE : the garg utility listed is borrowed from soundscapes_c4a3a.txt
+
+//---------------------------------------------------------------------------------------
+// Map A - Gonarch Arena Outdoors 		//
+
+"c4a2a.outdoor01"
+{
+	"dsp"			"0"
+	"dsp_volume"	"0.25"
+	"fadetime"		"3.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb36b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"util_gonarch_outdoorwind_light"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"util.c4a2a.outdoor01_waters"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Cave Tunnel 		//
+
+"c4a2a.cave.tunnel"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.25"
+	"fadetime"			"4"
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb37a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.02"
+		"pitch"			"70"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_xen_crickets01.wav"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.2,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+
+//	BLENDSCAPE 
+//	info_target is	"blendscape_to_outdoor01_2"
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb36b.wav"
+		"position"		"7"
+		"attenuation"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Cave Tunnel 2		//
+
+"c4a2a.cave.tunnel2"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.5"
+	"fadetime"			"3.0"
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb37a.wav"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.2,0.5"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP c4a2b STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+"util.boids_cave"
+{
+	"playrandom"
+	{
+		"volume"		"0.3, 0.6"
+		"pitch"			"80,110"
+		"time"			"0.7, 4"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_80db"
+		"rndwave"
+		{
+			"wave"		"xen\soundscape\boid_xen_medium01.wav"
+			"wave"		"xen\soundscape\boid_xen_medium02.wav"
+			"wave"		"xen\soundscape\boid_xen_medium03.wav"
+			"wave"		"xen\soundscape\boid_xen_medium04.wav"
+			"wave"		"xen\soundscape\boid_xen_medium05.wav"
+			"wave"		"xen\soundscape\boid_xen_medium06.wav"
+			"wave"		"xen\soundscape\boid_xen_medium07.wav"
+			"wave"		"xen\soundscape\boid_xen_medium08.wav"
+			"wave"		"xen\soundscape\boid_xen_medium09.wav"
+			"wave"		"xen\soundscape\boid_xen_medium10.wav"
+			"wave"		"xen\soundscape\boid_xen_medium11.wav"
+			"wave"		"xen\soundscape\boid_xen_medium12.wav"
+		}
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map B
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map B" for the soundscapes proper.
+
+
+"c4a2b.cavestart.base"
+{
+	"dsp"				"0"
+
+	"playlooping"
+	{
+		"volume"		"0.50"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb37b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.12"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb38.wav"
+	}
+}
+
+"c4a2b.cave.tunnel_a.base"
+{	
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb37a.wav"
+	}
+}	
+
+"c4a2b.cave_tunnel.base"
+{	
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb35a.wav"
+		"attenuation" 	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb40a.wav"
+		"attenuation" 	"1.0"
+	}
+}	
+
+"c4a2b.cave_tunnel_large.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb35b.wav"
+		"attenuation" 	"0.9"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb41.wav"
+		"attenuation" 	"0.9"
+	}
+}
+
+"c4a2b_ledge.base"
+{	
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb37b.wav"
+		"attenuation"	"0.8"
+	}
+}
+
+"c4a2b_ledge.base.part2"
+{	
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb39c.wav"
+		"attenuation"	"0.8"
+	}
+}
+
+"c4a2b.ledge.cavern.base"
+{	
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb39c.wav"
+		"attenuation" 	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb43b.wav"
+		"attenuation" 	"1.0"
+	}
+}
+
+"c4a2b.bullsquid.cave.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb35b.wav"
+		"attenuation" 	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb41.wav"
+		"attenuation" 	"1.0"		
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb33a.wav"
+		"attenuation" 	"1.0"
+	}
+}
+
+"c4a2b.crystal.cave.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb41.wav"
+		"attenuation"	"0.87"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb30.wav"
+		"attenuation"	"0.87"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb32.wav"
+		"attenuation"	"0.87"
+	}
+}
+
+"c4a2b.swamp.cave.base"
+{	
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb33b.wav"
+		"attenuation"	"0.87"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb37b.wav"
+		"attenuation"	"0.87"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb38.wav"
+		"attenuation"	"0.87"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"@xen\ambience\xen_amb43b.wav"
+		"attenuation"	"0.87"
+	}
+}
+
+//================================================================
+//	//END OF// Positional Utility SoundScapes -  Map A
+//================================================================
+
+//================================================================================================================================
+//								Main Map Soundscapes -	Map B
+//================================================================================================================================
+
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Start			//
+//								// Starting Cave, after you've dropped down from Map A's end transition.
+//								// The player must solve how to access Cave Tunnel 1.
+
+"c4a2b.cavestart"
+{
+	"dsp"				"5"
+	"dsp_volume"		"0.25"
+	"fadetime"			"5.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cavestart.base"
+		"volume"		"1.0"
+	}
+	
+		"playsoundscape"
+	{
+		"name"			"util_xen_cavedrips.slow"
+		"volume"		"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavewind"
+		"volume"		"0.3"
+	}
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"		"1"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel	1	//
+//							// Exiting the Cave Start Area, and entering Cave Tunnel 1
+//							// Cave Tunnel 1 will lead the player into the backend 
+//							// section of the Cave Start Area.
+
+"c4a2b.cave.tunnel1"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.5"
+	"fadetime"			"5.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave_tunnel.base"
+		"volume"		"1.0"
+	}
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.1,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel 2	//
+//							// Leaving the Backend Section of the Cave Start Area
+//							// the player enters Cave Tunnel 2, which leads out into
+//							//
+
+"c4a2b.cave.tunnel2"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.5"
+	"fadetime"			"5.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave_tunnel.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"c4a2b.cave_tunnel_large.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}	
+	
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.1,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel Large 1		//
+//									// Exiting Cave Tunnel 2
+//									// The Player enters Cave Tunnel Large 1, thus 
+//									// approaching The First Ledge
+
+"c4a2b.cave.tunnel.large1"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.40"
+	"fadetime"			"3.0"
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave_tunnel_large.base"
+		"volume"		"1.0"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.2,0.5"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+	
+//	BLENDSCAPE						info_target is: blendscape_to_ledge_1
+	
+	"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+	
+		"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base.part2"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Ledge				//
+//								// First Ledge Section
+
+"c4a2b.ledge"
+{
+	"dsp"				"25"
+	"dsp_volume"		"0.45"
+	"fadetime"			"5.0"
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b_ledge.base"
+		"volume"		"1.0"
+	}
+	
+		"playsoundscape"
+	{
+		"name"			"c4a2b_ledge.base.part2"
+		"volume"		"1.0"
+	}
+
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.3,0.4"
+		"pitch"			"100"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_80db"
+		"rndwave"
+		{
+			"wave"		"xen\object\rockfall_small1.wav"
+			"wave"		"xen\object\rockfall_small2.wav"
+			"wave"		"xen\object\rockfall_small3.wav"
+			"wave"		"xen\object\rockfall_small4.wav"
+			"wave"		"xen\object\rockfall_small5.wav"
+		}
+	}
+
+//  map b distant_waterfall, postiton 0 slot.
+//  info_target is "distant_waterfall"
+
+//  used only with soundscape entities 	"sscape_b_ledge1a"
+//										"sscape_b_ledge2"
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b.ledge.cavern.util_pos0"
+		"volume"		"0.65"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel B		//
+//								// Leaving the first ledge section, and entering
+//								// Cave Tunnel B, which leads to the Ledge Cavern
+
+"c4a2b.cave.tunnel_b"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.25"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave.tunnel_a.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b_ledge.base.part2"
+		"volume"		"0.25"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.02"
+		"pitch"			"70"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_xen_crickets01.wav"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.2,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+
+//  map b distant_waterfall , set to position 0
+	
+	"playsoundscape"
+	{
+		"name"						"c4a2b.ledge.cavern.util_pos0"
+		"volume"					"0.35"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"						"c4a2b.ledge.cavern.base"
+		"volume"					"0.5"
+		"ambientpositionoverride"	"6"
+	}
+}	
+
+//---------------------------------------------------------------------------------------
+// Map B - Ledge Cavern			//
+//								// Ledge Cavern Leads the player to 
+//								// Cave Tunnel A
+
+"c4a2b.ledge.cavern"
+{
+	"dsp"				"25"
+	"dsp_volume"		"0.4"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b_ledge.base"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b.ledge.cavern.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"util.boids_cave"
+		"volume"		"1.0"
+	}
+
+//	POSITIONAL(S)	
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b.ledge.cavern.util_pos0"
+		"volume"		"1.0"
+	}	
+	
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.3,0.6"
+		"pitch"			"100"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_80db"
+		"rndwave"
+		{
+			"wave"		"xen\object\rockfall_small1.wav"
+			"wave"		"xen\object\rockfall_small2.wav"
+			"wave"		"xen\object\rockfall_small3.wav"
+			"wave"		"xen\object\rockfall_small4.wav"
+			"wave"		"xen\object\rockfall_small5.wav"
+		}
+	}
+}
+
+// waterfall utility for the cavern
+
+"c4a2b.ledge.cavern.util_pos0"
+{
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_100db"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"		"0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel A		//
+//								//
+
+"c4a2b.cave.tunnel_a"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.25"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave.tunnel_a.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b_ledge.base.part2"
+		"volume"		"0.25"
+	}
+	"playlooping"
+	{
+		"volume"		"0.02"
+		"pitch"			"70"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_xen_crickets01.wav"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.2,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+	
+//  map b distant_waterfall
+	
+	"playsoundscape"
+	{
+		"name"						"c4a2b.ledge.cavern.util_pos0"
+		"volume"					"0.35"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base.part2"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"5"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"c4a2b.ledge.cavern.base"
+		"volume"					"0.5"
+		"ambientpositionoverride"	"6"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel 3	//
+//							//
+
+"c4a2b.cave.tunnel3"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.5"
+	"fadetime"			"5.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave_tunnel.base"
+		"volume"		"1.0"
+	}
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.1,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+	
+//	blendscape
+
+//	info_target is 					"blendscape_to_ledge3"		(position 7)
+
+	"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base"
+		"volume"					"0.5"
+		
+		"ambientpositionoverride"	"7"
+	}
+	
+		"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base.part2"
+		"volume"					"0.5"
+		
+		"ambientpositionoverride"	"7"		
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel 4		//
+//								//
+
+"c4a2b.cave.tunnel4"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.5"
+	"fadetime"			"5.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave_tunnel.base"
+		"volume"		"1.0"
+	}
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.1,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+
+// BLENDSCAPE	
+// 									info_target is:								"blendscape_to_swampcave"
+//									used exclusively with soundscape entity 	"sscape_b_cavetunnel4"	
+	"playsoundscape"
+	{
+		"name"						"c4a2b.swamp.cave.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+
+// BLENDSCAPE	
+// 									info_target is:								"blendscape_to_crystalcave"
+//									used exclusively with soundscape entity 	"sscape_b_cavetunnel4"	
+	"playsoundscape"
+	{
+		"name"						"c4a2b.crystal.cave.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"6"
+	}
+}
+
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel Large 	// Generic Version for End of Map B
+
+"c4a2b.cave.tunnel.large"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.40"
+	"fadetime"			"3.0"
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave_tunnel_large.base"
+		"volume"		"1.0"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.2,0.5"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel Large	//
+
+"c4a2b.cave.tunnel.large2"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.40"
+	"fadetime"			"3.0"
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave_tunnel_large.base"
+		"volume"		"1.0"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.2,0.5"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+
+//	BLENDSCAPE  					set to position 7
+//	INFO_TARGET is 					"blendscape_to_ledge2"
+//  								used only in the first section, before the _s2 version placements
+	"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base"
+		"volume"					"0.75"
+		"ambientpositionoverride"	"7"
+	}
+	
+	"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base.part2"
+		"volume"					"0.75"
+		"ambientpositionoverride"	"7"		
+	}
+
+//	BLENDSCAPE  					set to position 6
+//	INFO_TARGET is 					"blendscape_to_bullsquidcave"
+//  								used only for _s2 placements
+	"playsoundscape"
+	{
+		"name"						"c4a2b.bullsquid.cave.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"6"			
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Tunnel Large 3	//
+//								//
+
+"c4a2b.cave.tunnel.large3"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.40"
+	"fadetime"			"3.0"
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2b.cave_tunnel_large.base"
+		"volume"		"1.0"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.2,0.5"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+	
+//	blendscapes
+
+//	info_target is 					"blendscape_to_crystalcave_01"		(position 6)
+//	info_target is 					"blendscape_to_ledge3"				(position 7)
+
+	"playsoundscape"
+	{
+		"name"						"c4a2b.crystal.cave.base"
+		"volume"					"0.8"
+		
+		"ambientpositionoverride"	"6"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base"
+		"volume"					"0.75"
+		
+		"ambientpositionoverride"	"7"
+	}
+	
+	"playsoundscape"
+	{
+		"name"						"c4a2b_ledge.base.part2"
+		"volume"					"0.75"
+		
+		"ambientpositionoverride"	"7"		
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Bullsquid Cave		//
+//								//
+
+"c4a2b.bullsquid.cave"
+{
+	"dsp"				"5"
+	"dsp_volume"		"0.4"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2b.bullsquid.cave.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavedrips.slow"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavewind"
+		"volume"		"1.0"
+	}
+
+//	POSITIONAL(S)
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_95db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water1.wav"
+		"position"		"1"
+	}		
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave (Orange Crystals)	//
+//									//
+
+"c4a2b.cave.orangecrystal"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.4"
+	"fadetime"			"3.0"
+	
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb40a.wav"
+	}
+
+	"playrandom"
+	{
+		"time"			"10,20"
+		"volume"		"0.1,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet2.wav"
+		}
+	}
+	
+//	BLENDSCAPE  					set to position 6
+//	INFO_TARGET is 					"blendscape_to_bullsquidcave"
+//  								used only with the entity placements in the small tunnel section leading into 
+//									the actual orangecrystal cave, then we drop the position once inside.
+	"playsoundscape"
+	{
+		"name"						"c4a2b.bullsquid.cave.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"6"			
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Stab Tunnel			//
+//								//
+
+"c4a2b.stab.tunnel"
+{
+	"dsp"				"25"
+	"dsp_volume"		"0.4"
+	"fadetime"			"3.0"
+	
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1c.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb17b.wav"
+		"wave"			"xen\ambience\xen_amb17b.wav"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Swamp Cave			//
+//								//
+
+"c4a2b.swamp.cave"
+{
+	"dsp"			"10"
+	"dsp_volume"	"0.4"
+	"fadetime"		"3.0"
+
+	"playsoundscape"
+	{
+		"name"		"c4a2b.swamp.cave.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"util_xen_cavedrips.slow"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"util_xen_cavewind"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"util.boids_cave"
+		"volume"	"0.9"
+	}
+
+// POSITIONALS
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience\object_ambience\o_ambience_water1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience\object_ambience\o_ambience_water3.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"xen\object\xen_water4.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_water5.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_water6.wav"
+		"position"	"4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Crystal Cave			//
+//								//
+
+"c4a2b.crystal.cave"
+{
+	"dsp"			"10"
+	"dsp_volume"	"0.4"
+	"fadetime"		"3.0"
+
+	"playsoundscape"
+	{
+		"name"		"c4a2b.crystal.cave.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"util_xen_cavewind"
+		"volume"	"1.0"
+	}
+
+// POSITIONAL(S)
+	
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"bms_ambience\object_ambience\o_ambience_water1.wav"
+		
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"bms_ambience\object_ambience\o_ambience_water3.wav"
+		
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"xen\object\xen_water4.wav"
+		
+		"position"	"2"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c4a2c STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map C
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//							DO NOT USE IN THE ACTUAL VMFs.
+//
+//							They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//							for the overall environments being portrayed.
+//
+//							Scroll down to "Main Map Soundscapes - Map C" for the soundscapes proper.
+
+"c4a2c.cavestart.base"
+{
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb44.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb42.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb15b.wav"
+		"attenuation"		"1.0"		
+	}
+}
+
+"c4a2c.cave.tunnel.small.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb9a.wav"
+		"attenuation"		"1.0"		
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.35"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb37a.wav"
+		"attenuation"		"1.0"		
+	}
+}
+
+"c4a2c.cave.tunnel.large.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb48.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb1c.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb5b.wav"
+		"attenuation"		"1.0"
+	}
+}
+
+"c4a2c.waterfall.ledge.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb37b.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb15b.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb19.wav"
+		"attenuation"		"1.0"
+	}
+}
+
+"c4a2c.waterpuzzle.cave.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.15"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb32b.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb44b.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.1"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb15b.wav"
+		"attenuation"		"1.0"
+	}
+}
+
+"c4a2c.waterpuzzle.main.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb32b.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb44b.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb15b.wav"
+		"attenuation"		"1.0"
+	}
+}
+
+"c4a2c.waterpuzzle.main2.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb32b.wav"
+		"attenuation"		"0.7"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb44b.wav"
+		"attenuation"		"0.7"	
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb15b.wav"
+		"attenuation"		"0.7"		
+	}
+}
+
+"c4a2c.ledge.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb37b.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb15b.wav"
+		"attenuation"		"1.0"		
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb19.wav"
+		"attenuation"		"1.0"		
+	}
+}
+
+//	DEV NOTE:
+//	This .base is not used in map c whatsoever.
+
+"c4a2c.firetunnel1.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb48.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb1c.wav"
+		"attenuation"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"@xen\ambience\xen_amb5b.wav"
+		"attenuation"		"1.0"
+	}
+}
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map C
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 									DO NOT USE IN THE ACTUAL VMFs.
+//
+//									They are Building Blocks only, meant for insertion into the main soundscapes,
+//									in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//									via the info_target entity.
+//
+//									Scroll down to "Main Map Soundscapes - Map C" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map C - Cave Tunnel Small
+//
+// utility used in _s1, _s2, and _s3 versions of "c4a2c.cave.tunnel.small01"
+
+///////// info_targets ///////////
+//
+// pos0 = NO TARGET LISTED
+// pos1 = cs_pos1				
+// pos2 = cs_pos2
+// pos3 = cs_pos3
+
+"c4a2c.cave.tunnel.small.util_pos0-3"
+{
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"xen\ambience\wind1.wav"
+		
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"xen\ambience\wind2.wav"
+		
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"xen\ambience\wind3.wav"
+		
+		"position"		"3"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map C - WaterFall Ledge
+//
+
+///////// info_targets ///////////
+//
+// pos6 = waterfall
+
+"c4a2c.waterfall.ledge.util_pos6only"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_125db"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		
+		"position"		"6"
+	}	
+}
+
+// Tapered Attenuation Version //
+//
+// this version of the utility is for cave tunnel small - section 3, 
+// so that we can fake some sound dampening within the walls before you round the corner.
+
+"c4a2c.waterfall.ledge.util_pos6only_taperedversion"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"0.65"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		
+		"position"		"6"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map C - WaterFall Ledge // Outdated Version //
+
+// DEV NOTE: 						I can only surmise that this set of positionals were intended for an earlier version 
+// 									of the waterfall ledge area that used up to 7 sounds, however the current version in game 
+// 									only references only 1 sound, which would be position 6 on this list.
+//									Therefore, we have a "pos6only" version of this utility, listed above.
+
+
+///////// info_targets ///////////
+//	????????			(position 0)
+//	????????			(position 1)
+//	????????			(position 2)
+//	????????			(position 3)
+//	????????			(position 4)
+//	????????			(position 5)
+//	waterfall			(position 6)
+	
+"c4a2c.waterfall.ledge.util_pos0-6"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water21.wav"
+		"pitch"			"100"
+		
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water10.wav"
+		"pitch"			"100"
+		
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water17.wav"
+		"pitch"			"100"
+		
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water18.wav"
+		"pitch"			"100"
+		
+		"position"		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water7.wav"
+		
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water7.wav"
+		
+		"position"		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_125db"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		
+		"position"		"6"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map C - Water Puzzle Cave 
+//
+
+///////// info_targets ///////////
+//
+//	ws2					(position 0)
+
+"c4a2c.waterpuzzle.cave.util_pos0"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\object_ambience\o_ambience_water1.wav"
+		
+		"position"		"0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map C - Water Puzzle Cave Exit 
+//
+
+///////// info_targets ///////////
+//
+//	ws4					(position 5)
+
+"c4a2c.waterpuzzle.caveexit.util_pos5"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience\object_ambience\o_ambience_water3.wav"
+		
+		"position"		"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map C - Water Puzzle Main
+//									
+
+///////// info_targets ///////////
+//
+//	ws3		(position 0)	
+
+"c4a2c.waterpuzzle.main.util_pos0-2"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		
+		"position"		"0"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map C - Water Puzzle Main 2
+//	
+
+///////// info_targets ///////////
+//
+//	ws3		(position 0)
+			
+//	wss01	(position 1)
+//	wss02	(position 2)
+//	wss04	(position 3)			(This position is listed in soundscape entity, but for whatever reason, not actually used in the positional utility)
+
+
+"c4a2c.waterpuzzle.main2.util_pos0"
+{	
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		
+		"position"		"0"
+	}
+}
+
+"c4a2c.waterpuzzle.main2.util_pos1-2"
+{	
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water6.wav"
+		
+		"position"		"1"
+	}	
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90db"
+		"wave"			"xen\object\xen_water4.wav"
+		
+		"position"		"2"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map C - Fire Tunnel 1
+//	
+// DEV NOTE: This positional utility is
+// not used whatsoever in map, or in-game.
+// Treat it as a legacy/obsolete entry.
+	
+"c4a2c.firetunnel1.util_pos0-7"
+{	
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\ambience\fire1.wav"
+		
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\ambience\fire2.wav"
+		
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\ambience\fire3.wav"
+		
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\ambience\fire4.wav"
+		
+		"position"		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\ambience\fire5.wav"
+		
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\ambience\fire6.wav"
+		
+		"position"		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\ambience\fire7.wav"
+		
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_85db"
+		"wave"			"xen\ambience\fire8.wav"
+		
+		"position"		"7"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map C
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Start		//
+//							//
+
+"c4a2c.cavestart"
+{
+	"dsp"					"5"
+	"dsp_volume"			"0.4"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cavestart.base"
+		"volume"			"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"				"util_xen_cavewind"
+		"volume"			"1.0"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"soundlevel"		"SNDLVL_85db"
+		"wave"				"bms_ambience\room_ambience\r_ambience_water5.wav"
+		
+		"position"			"0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Small 01		//
+//									//
+
+"c4a2c.cave.tunnel.small01_s1"
+{
+	"dsp"					"6"
+	"dsp_volume"			"0.35"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.base"
+		"volume"			"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.util_pos0-3"
+		"volume"			"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Small 1		//
+//					 Section 2		//
+
+"c4a2c.cave.tunnel.small01_s1"
+{
+	"dsp"					"6"
+	"dsp_volume"			"0.35"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.base"
+		"volume"			"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.util_pos0-3"
+		"volume"			"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Small 1		//
+//					 Section 2		//
+
+"c4a2c.cave.tunnel.small01_s2"
+{
+	"dsp"					"6"
+	"dsp_volume"			"0.35"
+	"fadetime"				"2.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.base"
+		"volume"			"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.util_pos0-3"
+		"volume"			"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Small		//
+//									//
+
+"c4a2c.cave.tunnel.small"
+{
+	"dsp"					"6"
+	"dsp_volume"			"0.35"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.base"
+		"volume"			"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Small 1		//			
+//					 Section 3		//
+
+"c4a2c.cave.tunnel.small01_s3"
+{
+	"dsp"					"6"
+	"dsp_volume"			"0.35"
+	"fadetime"				"4.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.base"
+		"volume"			"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"				"c4a2c.waterfall.ledge.util_pos6only_taperedversion"
+		"volume"			"0.5"
+	}		
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Large 1		//
+//									//
+
+"c4a2c.cave.tunnel.large1"
+{
+	"dsp"					"7"
+	"dsp_volume"			"0.5"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.large.base"
+		"volume"			"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.waterfall.ledge.util_pos6only"
+		"volume"			"0.30"
+	}
+	
+// BLENDSCAPE
+// info_target is: 					"blendscape_to_ledge_1"
+	
+	"playsoundscape"
+	{
+		"name"						"c4a2c.ledge.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+"c4a2c.cave.tunnel.large.util_pos0-1"
+{	
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_water5.wav"
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_water6.wav"
+		"position"			"1"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Large 	//
+//								//
+
+"c4a2c.cave.tunnel.large"
+{
+	"dsp"					"7"
+	"dsp_volume"			"0.35"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.large.base"
+		"volume"			"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Large 1	//
+
+"c4a2c.cave.tunnel.large1"
+{
+	"dsp"					"7"
+	"dsp_volume"			"0.35"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.large.base"
+		"volume"			"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Large 2	//
+
+"c4a2c.cave.tunnel.large2"
+{
+	"dsp"					"7"
+	"dsp_volume"			"0.35"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.large.base"
+		"volume"			"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Large 3	//
+
+"c4a2c.cave.tunnel.large3"
+{
+	"dsp"					"7"
+	"dsp_volume"			"0.35"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.large.base"
+		"volume"			"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Waterfall Ledge		//
+//								//
+
+"c4a2c.waterfall.ledge"
+{
+	"dsp"					"25"
+	"dsp_volume"			"0.5"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.waterfall.ledge.base"
+		"volume"			"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.waterfall.ledge.util_pos6only"
+		"volume"			"1.0"
+	}	
+	
+	"playrandom"
+	{
+		"time"				"15,30"
+		"volume"			"0.5,0.9"
+		"pitch"				"100"
+		"position"			"random"
+		"soundlevel"		"SNDLVL_90db"
+		"rndwave"
+		{
+			"wave"			"xen\object\rockfall_small1.wav"
+			"wave"			"xen\object\rockfall_small2.wav"
+			"wave"			"xen\object\rockfall_small3.wav"
+			"wave"			"xen\object\rockfall_small4.wav"
+			"wave"			"xen\object\rockfall_small5.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Small 2	//
+//								//
+
+"c4a2c.cave.tunnel.small2"
+{
+	"dsp"					"6"
+	"dsp_volume"			"0.35"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"c4a2c.cave.tunnel.small.base"
+		"volume"			"1.0"
+	}
+
+// BLENDSCAPE
+// info_target is:			"blendscape_to_ledge_2"
+
+	"playsoundscape"
+	{
+		"name"						"c4a2c.ledge.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Water Puzzle Cave 1	//
+//								// Cave 1,		Leads to 
+//								// 				Water Puzzle Main
+
+"c4a2c.waterpuzzle.cave1"
+{
+	"dsp"				"5"
+	"dsp_volume"		"0.5"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.cave.base"
+		"volume"		"1.0"
+	}
+
+	//	Main Positional Sounds
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.cave.util_pos0"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavedrips.slow"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Water Puzzle Main	//
+//								// Introductory Room for the Water Puzzle
+//								// Gameplay Mechanics
+//								// Shoot the Water Crystal, and the water will rise.
+
+"c4a2c.waterpuzzle.main"
+{
+	"dsp"				"5"
+	"dsp_volume"		"0.35"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.main.base"
+		"volume"		"1.0"
+	}
+
+	// Positional Sounds
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.main.util_pos0-2"
+		"volume"		"1.0"
+	}
+
+	// Misc Utilities
+	
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavedrips.slow"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Water Puzzle Main 2			//
+//										// 
+
+"c4a2c.waterpuzzle.main2"
+{
+	"dsp"				"5"
+	"dsp_volume"		"0.35"
+	"fadetime"			"3.0"
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.main2.base"
+		"volume"		"1.0"
+	}
+
+	//	Positional Sounds	
+	//	DEV NOTE:  position 0 is separated out, in order to necessitate a sound swap when entering cave 1 of the water puzzle.
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.main2.util_pos0"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.main2.util_pos1-2"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.caveexit.util_pos5"
+		"volume"		"1.0"
+	}	
+
+	// Misc Utilities	
+	
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavedrips.slow"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Water Puzzle Cave 2			//
+//										// Cave 2,			Nested inside 
+//										// 					Water Puzzle Main 2
+
+"c4a2c.waterpuzzle.cave2"
+{
+	"dsp"				"5"
+	"dsp_volume"		"0.5"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.cave.base"
+		"volume"		"1.0"
+	}
+
+	//	Positional Sounds, Water Puzzle Main 2
+	//	(we dip the volume down when inside the caves)	
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.main2.util_pos1-2"
+		"volume"		"0.25"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavedrips.slow"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Water Puzzle Cave 3			//
+//										// Cave 3,			Nested inside 
+//										// 					Water Puzzle Main 2
+
+"c4a2c.waterpuzzle.cave3"
+{
+	"dsp"				"5"
+	"dsp_volume"		"0.5"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.cave.base"
+		"volume"		"1.0"
+	}
+
+	//	Positional Sounds, Water Puzzle Main 2
+	//	(we dip the volume down when inside the caves)	
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.main2.util_pos1-2"
+		"volume"		"0.65"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavedrips.slow"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Water Puzzle	Cave Exit		//
+//										// Exiting	 		Water Puzzle Main 2
+//										// Leading into 	Cave Tunnel Small 3
+
+"c4a2c.waterpuzzle.cave_exit"
+{
+	"dsp"				"5"
+	"dsp_volume"		"0.5"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.cave.tunnel.small.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"c4a2c.waterpuzzle.caveexit.util_pos5"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"util_xen_cavedrips.slow"
+		"volume"		"1.0"
+	}
+
+//	BLENDSCAPE
+//	info_target is:	"blendscape_to_wtpz_main2"
+	
+	"playsoundscape"
+	{
+		"name"								"c4a2c.waterpuzzle.main2.base"
+		"volume"							"1.0"
+		"ambientpositionoverride"			"7"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cave Tunnel Small 3		//
+//									//
+
+"c4a2c.cave.tunnel.small3"
+{
+	"dsp"							"6"
+	"dsp_volume"					"0.35"
+	"fadetime"						"3.0"
+
+	"playsoundscape"
+	{
+		"name"						"c4a2c.cave.tunnel.small.base"
+		"volume"					"1.0"
+	}
+
+// BLENDSCAPE
+// info_target is:					"blendscape_to_wtpz_cave"
+
+	"playsoundscape"
+	{
+		"name"						"c4a2c.waterpuzzle.cave.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Ledge1				//
+//								//
+
+"c4a2c.ledge1"
+{
+	"dsp"				"25"
+	"dsp_volume"		"0.5"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.ledge.base"
+		"volume"		"1.0"
+	}
+	
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.1,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_80dB"
+		"rndwave"
+		{
+			"wave"		"xen\object\rockfall_small1.wav"
+			"wave"		"xen\object\rockfall_small2.wav"
+			"wave"		"xen\object\rockfall_small3.wav"
+			"wave"		"xen\object\rockfall_small4.wav"
+			"wave"		"xen\object\rockfall_small5.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Ledge2		//
+
+"c4a2c.ledge2"
+{
+	"dsp"				"25"
+	"dsp_volume"		"1.0"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.ledge.base"
+		"volume"		"1.0"
+	}
+	
+	"playrandom"
+	{
+		"time"			"15,30"
+		"volume"		"0.1,0.3"
+		"pitch"			"100"
+		"position"		"random"
+		"soundlevel"	"SNDLVL_80dB"
+		"rndwave"
+		{
+			"wave"		"xen\object\rockfall_small1.wav"
+			"wave"		"xen\object\rockfall_small2.wav"
+			"wave"		"xen\object\rockfall_small3.wav"
+			"wave"		"xen\object\rockfall_small4.wav"
+			"wave"		"xen\object\rockfall_small5.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Fire Tunnel		//
+//							// DEV NOTE: This entry is not actually used in map c at all.
+//							// Consider this a legacy listing.		
+
+"c4a2c.firetunnel1"
+{
+	"dsp"				"7"
+	"dsp_volume"		"1.0"
+	"fadetime"			"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.firetunnel1.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c4a2c.firetunnel1.util_pos0-7"
+		"volume"		"1.0"
+	}	
+}
+	
+//---------------------------------------------------------------------------------------
+// Map C - Boss Arena (Upper)	//
+
+"c4a2c.boss.arena.upper"
+{
+	"dsp"			"9"
+	"dsp_volume"	"1.0"
+	"fadetime"		"3.0"
+	
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb48.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb1c.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb5b.wav"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Boss Arena (Lower)	//
+
+"c4a2c.boss.arena.lower"
+{
+	"dsp"			"10"
+	"dsp_volume"	"1.0"
+	"fadetime"		"3.0"
+	
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb48.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb1c.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb5b.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.1,0.3"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_80db"
+		"rndwave"
+		{
+			"wave"	"xen\object\rockfall_small1.wav"
+			"wave"	"xen\object\rockfall_small2.wav"
+			"wave"	"xen\object\rockfall_small3.wav"
+			"wave"	"xen\object\rockfall_small4.wav"
+			"wave"	"xen\object\rockfall_small5.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Final Cave Exit		//
+//								// IMPORTANT NOTE: this soundscape is essentially the same as
+//								// "c4a3a.int.reveal.pre", found in soundscapes_c4a3a.txt
+//								// with the exception of the additional utilities used for outdoor ambiences
+//								// not being referenced				
+
+"c4a2c.caveexit"
+{
+	"dsp"			"6"
+	"dsp_volume"	"1.0"
+	"fadetime"		"3.0"
+	
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb9a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb37a.wav"
+	}
+}

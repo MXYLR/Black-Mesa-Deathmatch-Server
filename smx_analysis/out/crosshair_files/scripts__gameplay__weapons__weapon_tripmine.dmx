@@ -1,0 +1,23 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_TRIPMINE"
+{
+	"id" "elementid" "7a811a5d-1089-4aa1-bd1f-b9e559d89885"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_tripmine.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_tripmine_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_tripmine.mdl"
+	"printname" "string" "Tripmines"
+	"primary_ammo" "string" "grenade_tripmine"
+	"clip_size" "int" "-1"	
+	"default_clip" "int" "1"
+	"bucket" "int" "4"
+	"bucket_position" "int" "2"
+
+	"bucket_controller" "int" "2"
+	"bucket_position_controller" "int" "2"
+
+	"anim_prefix" "string" "tripmine"
+	"item_flags" "int" "0"
+	"weight" "int" "10"
+}
+

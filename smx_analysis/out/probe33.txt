@@ -1,0 +1,191 @@
+=== ConVar registration block @0x10016a60..0x10016b00 ===
+   0x10016a60  call      0x102b1f50
+   0x10016a65  push      0x106611b4
+   0x10016a6a  push      0x107f97b8
+   0x10016a6f  mov       ecx, eax
+   0x10016a71  mov       edx, dword ptr [eax]
+   0x10016a73  call      dword ptr [edx]
+   0x10016a75  ret       
+   0x10016a76  int3      
+   0x10016a77  int3      
+   0x10016a78  int3      
+   0x10016a79  int3      
+   0x10016a7a  int3      
+   0x10016a7b  int3      
+   0x10016a7c  int3      
+   0x10016a7d  int3      
+   0x10016a7e  int3      
+   0x10016a7f  int3      
+   0x10016a80  push      0x2000
+   0x10016a85  push      0x105c89cc
+   0x10016a8a  push      0x106a904c
+   0x10016a8f  mov       ecx, 0x108bc278
+   0x10016a94  call      0x1052ec80
+   0x10016a99  push      0x105b7e10
+   0x10016a9e  call      0x1059036a
+   0x10016aa3  pop       ecx
+   0x10016aa4  ret       
+   0x10016aa5  int3      
+   0x10016aa6  int3      
+   0x10016aa7  int3      
+   0x10016aa8  int3      
+   0x10016aa9  int3      
+   0x10016aaa  int3      
+   0x10016aab  int3      
+   0x10016aac  int3      
+   0x10016aad  int3      
+   0x10016aae  int3      
+   0x10016aaf  int3      
+   0x10016ab0  push      0x108bc304
+   0x10016ab5  push      0x106a90c8
+   0x10016aba  mov       ecx, 0x108bc2f0
+   0x10016abf  call      0x1005ac00
+   0x10016ac4  ret       
+   0x10016ac5  int3      
+   0x10016ac6  int3      
+   0x10016ac7  int3      
+   0x10016ac8  int3      
+   0x10016ac9  int3      
+   0x10016aca  int3      
+   0x10016acb  int3      
+   0x10016acc  int3      
+   0x10016acd  int3      
+   0x10016ace  int3      
+   0x10016acf  int3      
+   0x10016ad0  mov       ecx, 0x108bc304
+   0x10016ad5  call      0x1015d910
+   0x10016ada  push      0x105b7e40
+   0x10016adf  call      0x1059036a
+   0x10016ae4  pop       ecx
+   0x10016ae5  ret       
+   0x10016ae6  int3      
+   0x10016ae7  int3      
+   0x10016ae8  int3      
+   0x10016ae9  int3      
+   0x10016aea  int3      
+   0x10016aeb  int3      
+   0x10016aec  int3      
+   0x10016aed  int3      
+   0x10016aee  int3      
+   0x10016aef  int3      
+   0x10016af0  push      0
+   0x10016af2  call      0x1034d6a0
+   0x10016af7  add       esp, 4
+   0x10016afa  mov       dword ptr [0x108bc318], eax
+   0x10016aff  ret       
+   0x10016b00  push      0x106a9130
+   0x10016b05  mov       ecx, 0x108bc31c
+   0x10016b0a  call      0x104f4ce0
+
+  str/obj 0x106a904c = "bullet_ff_through_walls"
+  str/obj 0x105c89cc = ""
+  str/obj 0x106a90c8 = "CTEWeaponBullets"
+  str/obj 0x108bc278 = ""
+  str/obj 0x108bc304 = ""
+
+=== imm32 0x108bc278 (bullet_ff_through_walls object) occurrences ===
+   0x10016a90 [.text]
+   0x1034fbf9 [.text]
+   0x1034fbfe [.text]
+   0x105b7e11 [.text]
+
+=== who reads CSniperBullet variant fields (0x380/0x384) ===
+   m_AmmoType mov eax,[esi+..] @0x1016548a
+   m_AmmoType mov eax,[esi+..] @0x101717ba
+   m_AmmoType mov eax,[esi+..] @0x1026e665
+   m_AmmoType mov eax,[esi+..] @0x10281f9a
+   m_AmmoType mov eax,[esi+..] @0x103196e7
+   m_AmmoType mov ecx,[esi+..] @0x102434a8
+   m_AmmoType mov ecx,[esi+..] @0x102435c8
+   m_AmmoType mov ecx,[esi+..] @0x1024365b
+   m_AmmoType mov ecx,[esi+..] @0x102449a3
+   m_AmmoType mov ecx,[esi+..] @0x102449ec
+   m_AmmoType mov eax,[edi+..] @0x10270d01
+   m_AmmoType mov eax,[edi+..] @0x1028238f
+   m_AmmoType mov eax,[edi+..] @0x102823aa
+   m_AmmoType mov edx,[edi+..] @0x1009f7c3
+   m_PenetratedAmmoType mov eax,[esi+..] @0x100839f3
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1008a3f6
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1008ebff
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1009bc61
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1009bd11
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1009c6ce
+   m_PenetratedAmmoType mov eax,[esi+..] @0x100ecfaf
+   m_PenetratedAmmoType mov eax,[esi+..] @0x101717c3
+   m_PenetratedAmmoType mov eax,[esi+..] @0x10243c7d
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1024473f
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1026e6e7
+   m_PenetratedAmmoType mov eax,[esi+..] @0x10282944
+   m_PenetratedAmmoType mov eax,[esi+..] @0x102829c6
+   m_PenetratedAmmoType mov eax,[esi+..] @0x102af93a
+   m_PenetratedAmmoType mov eax,[esi+..] @0x102c4b3c
+   m_PenetratedAmmoType mov eax,[esi+..] @0x103a8f70
+   m_PenetratedAmmoType mov eax,[esi+..] @0x103a8fa1
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1049ebbd
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1049ef00
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1049ef31
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1049f610
+   m_PenetratedAmmoType mov eax,[esi+..] @0x1049f63d
+   m_PenetratedAmmoType mov eax,[esi+..] @0x104b2cd5
+   m_PenetratedAmmoType mov eax,[esi+..] @0x104b3ad5
+   m_PenetratedAmmoType mov eax,[esi+..] @0x104b3b28
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x1009b96c
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243445
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243721
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243899
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x102438f0
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243935
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243984
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x102439b7
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x102439e8
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243a70
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243b3d
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243ca9
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10243f83
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x1024414b
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x1024417b
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x102441af
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x102441e0
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10244217
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x1024429f
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x10244a1d
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x103aa3e3
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x103aa4d4
+   m_PenetratedAmmoType mov ecx,[esi+..] @0x103aaef1
+   m_PenetratedAmmoType mov eax,[edi+..] @0x10162991
+   m_PenetratedAmmoType mov eax,[edi+..] @0x1031c085
+   m_PenetratedAmmoType mov edx,[edi+..] @0x103aa214
+
+=== 50cal ref site 0x1031fa36 context ===
+   0x1031fa00  cli       
+   0x1031fa01  push      dword ptr [ecx + ebx - 0x75]
+   0x1031fa05  retf      0xeac1
+   0x1031fa08  or        eax, 0x1fffe181
+   0x1031fa0d  add       byte ptr [eax], al
+   0x1031fa0f  add       ecx, ecx
+   0x1031fa11  cmp       dword ptr [eax + ecx*8 + 8], edx
+   0x1031fa15  jne       0x1031fa1d
+   0x1031fa17  mov       ecx, dword ptr [eax + ecx*8 + 4]
+   0x1031fa1b  jmp       0x1031fa1f
+   0x1031fa1d  xor       ecx, ecx
+   0x1031fa1f  call      0x100ed3e0
+   0x1031fa24  lea       ecx, [ebp - 0xc8]
+   0x1031fa2a  call      0x1005aaf0
+   0x1031fa2f  mov       eax, dword ptr [ebp - 0x64]
+   0x1031fa32  mov       edi, dword ptr [ebx + 8]
+   0x1031fa35  push      0x10678028
+   0x1031fa3a  mov       dword ptr [ebp - 0xc8], edi
+   0x1031fa40  movss     xmm0, dword ptr [eax]
+   0x1031fa44  movss     dword ptr [ebp - 0xc4], xmm0
+   0x1031fa4c  movss     xmm0, dword ptr [eax + 4]
+   0x1031fa51  movss     dword ptr [ebp - 0xc0], xmm0
+   0x1031fa59  movss     xmm0, dword ptr [eax + 8]
+   0x1031fa5e  mov       eax, dword ptr [ebp - 0x68]
+   0x1031fa61  movss     dword ptr [ebp - 0xbc], xmm0
+   0x1031fa69  mov       dword ptr [ebp - 0xa0], 0x45800000
+   0x1031fa73  movss     xmm0, dword ptr [eax]
+   0x1031fa77  movss     dword ptr [ebp - 0xb8], xmm0
+
+=== scan 0x1034dd80..+0x2100 for imm 0x108bc278 / 0x108bc27c ===
+   imm 0x108bc278 @0x1034fbf9
+   imm 0x108bc278 @0x1034fbfe

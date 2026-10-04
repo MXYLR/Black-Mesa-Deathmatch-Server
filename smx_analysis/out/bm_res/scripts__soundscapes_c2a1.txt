@@ -1,0 +1,2156 @@
+// Power Up: The tunnel system smelled like fried chicken for months afterward.
+
+
+// generic ambience utilities // Garg Roars and Steps //
+
+"c1a1.util_gargfar1"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"95,105"
+		"time"		"3.0, 6.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"npc\garg\garg_farstep1.wav"
+			"wave"	"npc\garg\garg_farstep2.wav"
+			"wave"	"npc\garg\garg_farstep3.wav"
+		}
+	}
+}
+
+"c1a1.util_gargroarfar1"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"95,105"
+		"time"		"10, 15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"npc\garg\Garggrowl_far1.wav"
+		}
+	}
+}
+
+"c1a1.util_gargroarfar2"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"95,105"
+		"time"		"10, 15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"npc\garg\Garggrowl2.wav"
+		}
+	}
+}
+
+//================================================================
+// 			MAP c2a1a STARTS HERE!!!
+//================================================================
+
+//============================================================================
+//			Base Utility Soundscapes
+//============================================================================
+
+// These .base soundscape are building blocks, for insertion into the proper main use soundscapes. They are not meant for actual .vmf consumption.
+// for the soundscapes proper, please scroll down to  "Main Map Soundscapes - Map A"
+
+
+"c2a1a.generic_corridor.base"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+}
+
+"c2a1b.generic_corridor.base"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+}
+
+"c2a1a.collapse_room.base"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med12.wav"
+	}
+}
+
+"c2a1a.collapse_room2.base"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med12.wav"
+	}
+}
+
+"c2a1a.turntable_room.base"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_large6.wav"
+		"attenuation"	"1.0"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_med13.wav"
+		"attenuation"	"1.0"		
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_med14.wav"
+		"attenuation"	"1.0"		
+	}
+}
+
+"c2a1a.train_tunnel.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med12.wav"
+	}
+}
+
+"c2a1a.gargdeathroom.base"  
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large6.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med13.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med14.wav"
+	}
+}
+
+"c2a1a.slime_shaft.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_industrial34.wav"
+	}
+}
+
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map A
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for insertion into the main soundscapes,
+//						in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//						via the info_target entity.
+//
+//						Scroll down to "Main Map Soundscapes - Map A" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				//	Map A - Entrance Room and Entrance Corridor
+
+// 									//	we split them between two utilities, for soundscape mitigation management.
+//
+//
+
+///////// info_targets ///////////
+// positions 0 - 2
+
+// a_entrm_pos0 			(pipe2.wav)
+// a_entrm_pos1_plow1
+// a_entrm_pos2_hum1
+
+
+"c2a1a.entnceroom.util_pos0-2"
+{
+	"dsp"					"0"
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"		"1.5"
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"		"1.5"
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"bms_objects/hum/hum1.wav"
+		"attenuation"		"2.0"
+		"position"			"2"
+	}
+}
+
+///////// info_targets ///////////
+// positions 3 - 6
+
+// a_entrm_pos3_fan2
+// a_entrm_pos4_pflow2
+// a_entrm_pos5_driploop  (hl2 driploop sound)
+// a_entrm_pos6_fan2a
+
+
+"c2a1a.entnceroom.util_pos3-6"
+{	
+	"dsp"					"0"
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan2.wav"
+		"attenuation"		"1.5"
+		"position"			"3"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"		"1.5"
+		"position"			"4"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"ambient/water/drip_loop1.wav"
+		"attenuation"		"1.5"
+		"position"			"5"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan2a.wav"
+		"attenuation"		"1.5"
+		"position"			"6"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				//	Map A - TurnTable Room
+//
+//
+
+
+///////// info_targets ///////////
+// positions 0 - 3
+
+// a_tntble_pos0_fan6
+// a_tntble_pos1_ind5
+// a_tntble_pos2_fan3
+
+"c2a1a.tntblerm.util_pos0-2"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan6.wav"
+		"attenuation"		"1.0"
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_ind5.wav"
+		"attenuation"		"1.3"
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan3.wav"
+		"attenuation"		"1.5"
+		"position"			"2"
+	}
+}
+
+///////// info_targets ///////////
+// positions 4 - 5
+
+// a_tntble_pos4_fan2
+// a_tntble_pos5_pipe2
+
+"c2a1a.tntblerm.util4and5"
+{
+	"dsp"					"0"
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan2.wav"
+		"attenuation"		"1.5"
+		"position"			"4"
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"		"1.5"
+		"position"			"5"
+	}
+}
+
+//============================================================================
+//			Main Map Soundscapes - Map A
+//============================================================================
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - Entrance Room - just after the bp e pipe drops you in.
+
+"c2a1a.entrance_room"
+{
+	"dsp"					"1"
+	"dsp_volume"			"0.4"
+
+	// baseline enviromental sound
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+	// positional sound utilities
+
+	"playsoundscape"
+	{
+		"name"				"c2a1a.entnceroom.util_pos0-2"
+		"volume"			"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a1a.entnceroom.util_pos3-6"
+		"volume"			"1.0"
+	}
+
+	// generic utility sounds
+	
+	"playsoundscape"
+	{
+		"name"				"c1a1.util_gargfar1"
+		"volume"			"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c1a1.util_gargroarfar1"
+		"volume"			"0.8"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - Entrance Corridor 
+
+// NOTE: we continue to employ utilities 
+//												"c2a1a.entnceroom.util_pos0-2" 
+//												"c2a1a.entnceroom.util_pos3-6"
+//												for this section
+
+"c2a1a.entrance_corridor"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.6"
+
+	// baseline enviromental sound
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	// positional sound utilities
+	
+	"playsoundscape"
+	{
+		"name"		"c2a1a.entnceroom.util_pos0-2"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.entnceroom.util_pos3-6"
+		"volume"	"1.0"
+	}
+
+	// generic utility sounds
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_gargfar1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_gargroarfar2"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - Entrance Corridor - Version 2 - 
+
+// NOTE: when we get a little further down the corridor, this version drops the position utility "c2a1a.entnceroom.util_pos0-2"  (as those sound_targets will be convincingly out of earshot)
+//
+// swapping it out for utility "c2a1a.tntblerm.util_pos0-2" , setting up positional sounds that are just outside the door the player will take to enter the train turntable room.
+
+
+"c2a1a.entrance_corridor.v2"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.6"
+
+	// baseline enviromental sound
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.turntable_room.base"
+		"volume"	"0.3"
+	}
+
+	// positional sound utilities
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.entnceroom.util_pos3-6"
+		"volume"	"1.0"
+	}
+
+// if there are problems, use 0-2 below
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.tntblerm.util_pos0-2"
+		"volume"	"1.0"
+	}
+
+	// generic utility sounds
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_gargfar1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c1a1.util_gargroarfar2"
+		"volume"	"1.0"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+"c2a1a.turntable_room"
+{
+	"dsp"				"1"
+	"dsp_volume" 		"0.8"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.turntable_room.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.tntblerm.util_pos0-2"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.tntblerm.util4and5"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - GRDRM // Access1
+//
+// a side maintenance tunnel which leads the player back into corridor 1 by droping down a ventilation duct.
+
+"c2a1a.gdrm.access1"  
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.gargdeathroom.base"
+		"volume"	"0.65"
+	}
+
+// info_target is "a_acc_pos7_driploop"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"ambient\water\drip_loop1.wav"
+		"attenuation"	"1.0"
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+"c2a1a.train_tunnel.exit"
+{
+	"dsp"			"7"
+	"dsp_volume"	"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.train_tunnel.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"c2a1a.turntable_room.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	 "7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.tntblerm.util_pos0-2"
+		"volume"	"1.0"
+	}
+}
+
+// version 2 includes the fan position for the guard's train office.
+
+"c2a1a.train_tunnel.exit.v2"
+{
+	"dsp"				"7"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c2a1a.train_tunnel.base"
+		"volume"		"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.35"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan2.wav"
+		"attenuation"		"1.0"
+		"position"			"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+"c2a1a.corridor1"
+{
+	"dsp"				"1"
+	"dsp_volume" 		"0.55"
+
+	"playsoundscape"
+	{
+		"name"			"c2a1a.generic_corridor.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"c2a1a.turntable_room.base"
+		"volume"	"0.5"
+		"ambientpositionoverride" "0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"c2a1a.corridor.util_pos"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a1a.crm01.util_pos6-7"
+		"volume"		"1.0"
+	}
+}
+
+// positional utility, corridor 1
+
+// blendscape_0_turntable_rm
+// a_cor1_pos1_ind5			(using 5a for this one)
+// a_cor1_pos2_pipe2
+
+//
+
+// a_cor1_pos3_fan2
+// a_cor1_pos4_pipe2
+
+"c2a1a.corridor.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_ind5a.wav"
+		"attenuation"		"1.2"
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"		"1.5"
+		"position"			"2"
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"bms_objects/fans/fan2.wav"
+		"attenuation"		"1.5"
+		"position"			"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"	"1.5"
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"bms_objects/hum/hum1.wav"
+		"attenuation"	"1.8"
+		"position"		"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - Collaspe Room 1 - Catwalk Area to Control Room
+
+"c2a1a.collapse_room1"
+{
+	"dsp"			"1"
+	"dsp_volume" 	"0.3"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.collapse_room.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.crm01.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.cntlrm1.util_pos0-1"
+		"volume"	"1.0"
+	}
+}
+
+// positional utility, collaspe room 1. positions 0 and 1 are not used at all
+
+//---------------//
+// info_targets //
+//---------------//
+
+//
+
+// a_crm1_pos2_hum1c
+// a_crm1_pos3_pflow1
+// a_crm1_pos4_pflow2
+// a_crm1_pos5_hum1b
+// a_crm1_pos6_fan2
+// a_crm1_pos7_fan6
+
+"c2a1a.crm01.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects/hum/hum1c.wav"
+		"attenuation"	"1.5"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"	"1.0"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"	"1.0"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects/hum/hum1b.wav"
+		"attenuation"	"1.5"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2.wav"
+		"attenuation"	"1.5"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan6b.wav"
+		"attenuation"	"1.0"
+		"position"		"7"
+	}
+}
+
+// Copy of positional utility, but are positions 4 and 6 only. used with main soundscape "c2a1a.control_room1"
+
+"c2a1a.crm01.util_pos4and7"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"	"1.0"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan6.wav"
+		"attenuation"	"2.0"
+		"position"	"7"
+	}
+}
+
+// Copy of positional utility, but are positions 6 and 7 only. used with main soundscape "c2a1a.corridor1" 
+
+"c2a1a.crm01.util_pos6-7"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2.wav"
+		"attenuation"	"2.0"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan6.wav"
+		"attenuation"	"2.0"
+		"position"	"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - Control Room, with wounded guard.
+
+// NOTE: position 4 and positions 6 are reserved for pipe and fan just outside the door, in collapse room 1 // all the rest are free.
+
+"c2a1a.control_room"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.2"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med8.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.turntable_room.base"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.cntlrm1.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.crm01.util_pos4and7"
+		"volume"	"1.0"
+	}
+}
+
+// a_cntrm_pos0_data1
+// a_cntrm_pos1_comp1
+// a_cntrm_pos2_comp3
+// a_cntrm_pos3_comp1
+//////////////////////		(position 4 reserved, collapse room 1)
+// a_cntrm_pos5_comp1a
+//				(position 6 not used) 
+//////////////////////		(position 7 reserved, collapse room 1)
+
+"c2a1a.cntlrm1.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_data1.wav"
+		"attenuation"	"2.0"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"attenuation"	"1.8"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp3.wav"
+		"attenuation"	"1.8"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp1a.wav"
+		"attenuation"	"1.8"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_data1a.wav"
+		"attenuation"	"2.0"
+		"position"	"5"
+	}
+}
+
+"c2a1a.cntlrm1.util_pos0-1"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_data1.wav"
+		"attenuation"	"1.8"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"attenuation"	"1.8"
+		"position"	"1"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - "Corridor2"	
+
+"c2a1a.corridor2"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.4"
+	"playsoundscape"
+	{
+		"name"		"c2a1a.generic_corridor.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.corridor2.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+// positional utility for both corridor2 and 2a.
+
+"c2a1a.corridor2.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2.wav"
+		"attenuation"	"1.5"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience\object_ambience\o_ambience_disaster_hiss2.wav"
+		"attenuation"	"2.0"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_ambience\machine_ambience\m_ambience_pipe2a.wav"
+		"attenuation"	"1.8"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects\fans\fan2a.wav"
+		"attenuation"	"1.5"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"bms_objects\hum\hum1a.wav"
+		"attenuation"	"1.2"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_ambience\machine_ambience\m_ambience_pipe2b.wav"
+		"attenuation"	"1.8"
+		"position"	"5"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects\hum\hum1.wav"
+		"attenuation"	"1.5"
+		"position"	"7"	
+	}
+}
+
+// side room to corridor2, with gurney setup.
+
+"c2a1a.corridor2a"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.generic_corridor.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.corridor2.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - "Collapse Room2" - 	Wedged between Corridors 2 and 3, this section would normally grant access upstairs via staircase, 
+//				but this section's ceiling had collapsed earlier due to structural damage.
+
+"c2a1a.collapse_room2"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.collapse_room2.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.corridor2.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - "Corridor3" -	Essentially Corridor 2 continued (once past "collapse Room 2") however we choose to differentiate here
+//				as we start to incorporate the barrel positionals, getting them ready for handing over for when
+//				we cross over into the barrel room's proper soundscape, "c2a1a.barrel_room"
+
+"c2a1a.corridor3"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.generic_corridor.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.brlroom.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - Barrel Room -	Reaching the barrel storage room, vortiguants teleport in and accidentally
+//				cause a chain reaction explosion. Fun times were had by all.
+
+"c2a1a.barrel_room"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.2"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.brlroom.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+// positional utility, map a - barrel explosion room  // NOTE: adding position targets 3 and 4 from "c2a1a.corridor2.util_pos" here into this utility to save time. settings are the same.
+
+//--------------//
+// info_targets//
+//-------------//
+
+// a_cor2_pos3_fan2a
+// a_cor2_pos4_hum1a
+
+// a_bar_pos5_pipe2
+// a_bar_pos6_driploop
+// a_bar_pos7_hum1
+
+"c2a1a.brlroom.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects\fans\fan2a.wav"
+		"attenuation"	"1.5"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"bms_objects\hum\hum1a.wav"
+		"attenuation"	"1.2"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_ambience\machine_ambience\m_ambience_pipe2.wav"
+		"attenuation"	"1.0"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"ambient\water\drip_loop1.wav"
+		"attenuation"	"1.0"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_objects\hum\hum1c.wav"
+		"attenuation"	"1.0"
+		"position"	"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+"c2a1a.corridor.postbar"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.generic_corridor.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.brlroom.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.slime_shaft.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map A - Toxic Waste Shaft - Map A to Map B transition point.
+
+// NOTE: using "c2a1a.brlroom.util_pos" to let the pipe sound in the barrel room linger when the shaft door is open.
+
+"c2a1a.slime_shaft"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.6"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.slime_shaft.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.slime_shaft.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.brlroom.util_pos"
+		"volume"	"0.5"
+	}
+}
+
+// positonal utility , toxic waste shaft.
+
+// a_sh_pos0_toxw
+// a_sh_pos1_fan6
+// a_sh_pos2_plow2
+
+// a_sh_pos3_plow1
+// a_sh_pos4_hum1
+
+"c2a1a.slime_shaft.util_pos"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience/room_ambience/r_ambience_toxicwaste.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan6.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience\machine_ambience\m_ambience_pipeflow2.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience\machine_ambience\m_ambience_pipeflow1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_objects/hum/hum1a.wav"
+		"attenuation"	"2.2"
+		"position"	"4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+"c2a1a.bullsquidroom"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.generic_corridor.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.slime_shaft"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.slime_shaft.util_pos"
+		"volume"	"0.8"
+	}
+}
+
+//============================================================================
+// 			MAP c2a1b STARTS HERE!!!
+//============================================================================
+
+//============================================================================
+//			Base Utility Soundscapes
+//============================================================================
+
+// These .base soundscape are building blocks, for insertion into the proper main use soundscapes. They are not meant for actual .vmf consumption.
+// for the soundscapes proper, please scroll down to  "Main Map Soundscapes - Map B"
+//
+
+//============================================================================
+//			"Main Map Soundscapes - Map B"
+//============================================================================
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map B  -	Corridor 1 - (b_cor1, for shorthand)
+//
+// NOTE:	Position 1 is the top fan in the slime room. Settings are copied from "c2a1a.slime_shaft.util_pos"
+// 		The remaining sound positions are found in utility "c2a1b.cor1.util_pos"
+//
+//
+
+"c2a1b.corridor1"
+{
+	"dsp"		"1"
+	"dsp_volume"	"0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.generic_corridor.base"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.slime_shaft.base"
+		"volume"	"0.5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan6.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"1"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor1.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+// positional utility, b corridor 1.
+
+//--------------//
+// info_targets //
+//--------------//
+
+// b_cor1_pos2_hum1
+// b_cor1_pos3_fan2
+// b_cor1_pos4_flow1
+// b_cor1_pos5_flow2
+// b_cor1_pos6_flow1a
+// b_cor1_pos7_hum1b
+
+"c2a1b.cor1.util_pos"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_objects/hum/hum1.wav"
+		"attenuation"	"1.2"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2.wav"
+		"attenuation"	"1.5"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"	"1.0"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"	"1.0"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow1a.wav"
+		"attenuation"	"1.0"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_objects/hum/hum1b.wav"
+		"attenuation"	"1.2"
+		"position"	"7"
+	}
+}
+
+// v2 drops the slime shaft base from the list when we move further down the corridor.
+
+"c2a1b.corridor1.v2"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.generic_corridor.base"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1a.slime_shaft.base"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+"c2a1b.corridor.medicbooth"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.generic_corridor.base"		
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map B - Corridor 2 - basically when the player first enters into corridor 2, this soundscape handles the entrance/center point.
+
+"c2a1b.corridor2"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.generic_corridor.base"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2.util_pos"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2L.util_pos3only"		
+		"volume"	"1.0"
+	}
+}
+
+// position utility for corridor2, center.
+//
+// b_cor2_pos0_plow2
+// b_cor2_pos1_fan2
+
+"c2a1b.cor2.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"	"1.25"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2.wav"
+		"attenuation"	"1.25"
+		"position"	"1"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map B - Corridor 2L, sections 1 and 2
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// corridor 2_L and corridor2_L2 assumes the player took a Left when entering corridor 2.
+// it is split into 2 soundscapes in order to accommodate the amount of sound positions 
+// spread thoughout that section.
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+"c2a1b.corridor2_L"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.generic_corridor.base"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2.util_pos"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2L.util_pos3only"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2L.util_pos"		
+		"volume"	"1.0"
+	}
+}
+
+"c2a1b.corridor2_L2"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.generic_corridor.base"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2L.util_pos"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2L.util_pos3only"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2L2.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+// positional utilities for corridor_2L and *_2L2
+
+
+// b_cor2l_pos2_fan2c
+// b_cor2l_pos3_hiss2  // PLEASE NOTE // position 3 settings are also used "in c2a1b.cor2.util_pos" for handoff purposes ---  Make sure these match!!!
+// b_cor2l_pos4_comp1
+// b_cor2l_pos5_comp2
+// b_cor2l_pos6_fan2b
+
+"c2a1b.cor2L.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2c.wav"
+		"attenuation"	"1.25"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"attenuation"	"1.35"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp2.wav"
+		"attenuation"	"1.2"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2b.wav"
+		"attenuation"	"1.25"
+		"position"	"6"
+	}
+}
+
+// cor_2L, position 3 only. Things got a little complicated with the handoffs, so this was necessary.
+
+"c2a1b.cor2L.util_pos3only"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_hiss2a.wav"
+		"attenuation"	"1.2"
+		"position"	"3"
+	}
+}
+
+// b_cor2l2_pos0_pflow1
+// b_cor2l2_pos1_drip
+
+"c2a1b.cor2L2.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2c.wav"
+		"attenuation"	"1.25"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"ambient/water/drip_loop1.wav"
+		"attenuation"	"1.0"
+		"position"	"1"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map B - Corridor 2r, sections 1 and 2
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// corridor 2_r and corridor2_r2 assumes the player took a right when entering corridor 2.
+// it is split into 2 soundscapes in order to accommodate the amount of sound positions 
+// spread thoughout that section.
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+"c2a1b.corridor2_r"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.generic_corridor.base"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2.util_pos"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2r.util_pos"		
+		"volume"	"1.0"
+	}
+}
+
+"c2a1b.corridor2_r2"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.4"
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.generic_corridor.base"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2r.util_pos"		
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2r2.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+// position utilities for both corridor2r, and corridor2r2
+
+// b_cor2r_pos2_drip
+// b_cor2r_pos3_pipe2
+// b_cor2r_pos4_fan2a
+// b_cor2r_pos5_comp1
+// b_cor2r_pos6_comp2
+// b_cor2r_pos7_fan2b
+
+"c2a1b.cor2r.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"ambient/water/drip_loop1.wav"
+		"attenuation"	"1.0"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"	"1.0"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2a.wav"
+		"attenuation"	"1.25"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"attenuation"	"1.35"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp2.wav"
+		"attenuation"	"1.2"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2b.wav"
+		"attenuation"	"1.25"
+		"position"	"7"
+	}
+}
+
+// b_cor2r2_pos0 // a HL2 steam sound. hurr hurr.
+
+"c2a1b.cor2r2.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.65"
+		"pitch"		"100"
+		"wave"		"ambient/gas/steam2.wav"
+		"attenuation"	"1.5"
+		"position"	"0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+"c2a1b.upper_room"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.2"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+"c2a1b.flooded_stairwell"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.2"
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_water2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map B  - Flooded Corridor - (b_fcor, for positionals shorthand) - This corridor leads you into the B Middle Section.
+
+"c2a1b.flooded_corridor"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.2"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_water2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_water3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.fcor.util_pos"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.cor2L.util_pos3only"		
+		"volume"	"1.0"
+	}
+}
+
+// positional utility, flooded corridor
+
+//---------------//
+// info_targets //
+//--------------// 
+//
+//
+// b_fcor_pos0_pflow2
+// b_fcor_pos1_hiss2
+
+"c2a1b.fcor.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"	"1.5"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_hiss2.wav"
+		"attenuation"	"1.5"
+		"position"	"1"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map B  - Middle Section - (b_mid, for shorthand)
+
+"c2a1b.middle_room"
+{
+	"dsp"	"1"
+	"dsp_volume"	"0.2"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a1b.midrm.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+// b_mid_pos7_hum1
+
+"c2a1b.midrm.util_pos"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"attenuation"	"1.5"
+		"position"	"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+// Map B  - Lower Section - (b_low, for shorthand) - You will find the jammed generator in here, roundabouts.
+
+"c2a1b.lower_room"
+{
+	"dsp"	"18"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_water2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_water3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large5.wav"
+	}
+}

@@ -1,0 +1,6761 @@
+// Surface Tension: Look carefully for the hang gliding mini game in the cliffside level!
+
+// generic utilities for the chapter
+
+"c2a5.util_fardrips"	
+{	
+	"playrandom"
+	{
+		"volume"	"0.4,0.6"
+		"pitch"		"90,120"
+		"time"		"0.5,5.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"ambient/water/distant_drip1.wav"
+			"wave"	"ambient/water/distant_drip2.wav"
+			"wave"	"ambient/water/distant_drip3.wav"
+			"wave"	"ambient/water/distant_drip4.wav"
+		}
+	}
+}
+
+"c2a5.util_distantnoise1"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"95,105"
+		"time"		"15, 20"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_150dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\bighit_far1.wav"
+			"wave"	"BMS_ambience\soundscape\bighit_far3.wav"
+			"wave"	"BMS_ambience\soundscape\bighit_far4.wav"
+			"wave"	"BMS_ambience\soundscape\bighit_far5.wav"
+			"wave"	"BMS_ambience\soundscape\bighit_far9.wav"
+			"wave"	"BMS_ambience\soundscape\bighit_far10.wav"
+		}
+	}
+}
+
+"c2a5.util_rockfalls"	
+{	
+	"playrandom"
+	{
+		"volume"	"0.8"
+		"pitch"		"90,110"
+		"time"		"5,16"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\object_physics\rock_hit7.wav"
+			"wave"	"BMS_ambience\object_physics\rock_hit9.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall2.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall3.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall1.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall5.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall6.wav"
+		}
+	}
+}
+
+"c2a5.util_birdlife"	
+{	
+	"playrandom"
+	{
+		"volume"	"0.3"
+		"pitch"		"90,110"
+		"time"		"30,60"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\hawk1.wav"	
+			"wave"	"BMS_ambience\soundscape\hawk4.wav"	
+			"wave"	"BMS_ambience\soundscape\eagle3.wav"	
+		}
+	}
+}
+
+"c2a5.util_stressmetal"
+{
+	
+	"playrandom"
+	{
+		"time"		"8,12"
+		"volume"	"0.4"
+		"pitch"		"80,95"
+
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\object_physics\metal_creak10.wav"
+			"wave"	"BMS_ambience\object_physics\metal_creak12.wav"
+			"wave"	"BMS_ambience\object_physics\metal_creak13.wav"
+			"wave"	"BMS_ambience\object_physics\metal_creak6.wav"
+		}
+	}
+}
+
+"c2a5.util_stresswood"
+{
+	
+	"playrandom"
+	{
+		"time"		"2,3"
+		"volume"	"0.4"
+		"pitch"		"90,105"
+
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"ambient\materials\wood_creak1.wav"
+			"wave"	"ambient\materials\wood_creak2.wav"
+			"wave"	"ambient\materials\wood_creak3.wav"
+			"wave"	"ambient\materials\wood_creak4.wav"
+			"wave"	"ambient\materials\wood_creak5.wav"
+			"wave"	"ambient\materials\wood_creak6.wav"
+		}
+	}
+}
+
+"c2a5.util_miscamb"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"11.0, 20.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\misc_amb1.wav"
+			"wave"	"BMS_ambience\soundscape\misc_amb2.wav"
+			"wave"	"BMS_ambience\soundscape\misc_amb3.wav"
+			"wave"	"BMS_ambience\soundscape\misc_amb4.wav"
+			"wave"	"BMS_ambience\soundscape\misc_amb5.wav"
+			"wave"	"BMS_ambience\soundscape\misc_amb6.wav"
+			"wave"	"BMS_ambience\soundscape\misc_amb7.wav"
+			"wave"	"BMS_ambience\soundscape\misc_amb8.wav"
+		}
+	}
+}
+
+"c2a5.outdoorbattle.randombooms"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.6"
+		"pitch"		"95,105"
+
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_boom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_boom2.wav"
+			
+		}
+	}
+}
+
+// This utility has random positions. Wind bursts.
+
+"c2a5.util.outside_wind"
+{
+	"dsp"	"0"
+
+	"playrandom"
+	{
+		"time"		"5,10"
+		"volume"	"0.45"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_75db"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_med1.wav"
+			"wave"		"ambient\wind\wind_med2.wav"
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet3.wav"
+			"wave"		"ambient\wind\wind_snippet4.wav"
+			"wave"		"ambient\wind\wind_snippet5.wav"
+		}
+	}
+}
+
+// generic utility for map b, for the apache that'll show up in map c
+// probably not gonna use this.
+
+"c2a5.outdoors.farheli"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"45,90"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_150dB"
+		"rndwave"
+		{
+			"wave"		"ambient/machines/heli_pass_distant1.wav"
+			"wave"		"ambient/machines/heli_pass_quick1.wav"
+			"wave"		"ambient/machines/heli_pass_quick2.wav"
+		}
+	}
+}
+
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5a STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map A
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map A" for the soundscapes proper.
+
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map X
+//================================================================================================================================
+
+
+"c2a5a.cliffside_road.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle2.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5a.canyon_river.water_util"
+{
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		")bms_ambience\room_ambience\r_ambience_water_room_st.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5a.cliffside_road.base2"
+{
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle2.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5a.damwall_road.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5a.turbine_building.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle2.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind5.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5a.intake_tower.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_small2.wav"
+	}
+}
+
+"c2a5a.intake_tunnel.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_underwater1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_water7.wav"
+	}
+}
+
+"c2a5a.canyon_river.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+		"attenuation"	"1.4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind3.wav"
+		"attenuation"	"1.4"
+	}
+}
+
+"c2a5a.canyon_exit_pipe.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_wind1.wav"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Cliffside Road	//
+
+"c2a5a.cliffside_road_s1"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.15"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.cliffside_road.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.outdoorbattle.randombooms"
+		"volume"	"1.0"
+	}
+
+	// info_target is "a_clrd_pos0_generator"
+
+	"playlooping"
+	{
+		"wave"		"@bms_ambience/room_ambience/r_ambience_med3.wav"
+		"volume"	"0.75"
+		"pitch"		"100"
+		"attenuation"	"0.80"
+		"position"	"0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Cliffside Road	//
+
+"c2a5a.cliffside_road_s2"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.15"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.cliffside_road.base2"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.outdoorbattle.randombooms"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Dam Wall Road	//
+
+"c2a5a.damwall_road"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.15"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.damwall_road.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.outdoorbattle.randombooms"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Turbine Building	// 
+
+
+"c2a5a.turbine_building"
+{
+	"dsp"			"4"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.turbine_building.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.damwall_road.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Intake Tower	//
+
+
+"c2a5a.intake_tower"
+{
+	"dsp"			"2"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.intake_tower.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.damwall_road.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Intake Tunnel	//
+
+
+"c2a5a.intake_tunnel"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.intake_tunnel.base"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Canyon River	// 
+
+"c2a5a.canyon_river"
+{
+	"dsp"			"25"
+	"dsp_volume"		"0.25"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.canyon_river.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.canyon_river.water_util"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map A - Canyon Exit Pipe	//
+
+
+"c2a5a.canyon_exit_pipe"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.canyon_exit_pipe.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.canyon_river.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5a.canyon_river.water_util"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"7"
+	}
+
+	// this one is used it map b to blend into the next area.
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.canal_bottom.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"6"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5b STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map B
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map B" for the soundscapes proper.
+
+
+"c2a5b.canal_bottom.base"
+{
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+		"attenuation"			"1.25"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind3.wav"
+		"attenuation"			"1.25"
+	}
+
+}
+
+"c2a5b.canal_bottom.wind_util"
+{
+
+//	wind for area above player's head when on the ladder 	
+//	info target is "blendscape_wind1"
+
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind2.wav"
+		"attenuation"			"0.47"
+	}
+}
+
+"c2a5b.desert_outdoor.base"
+{
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind2.wav"
+		"attenuation"			"1.2"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+		"attenuation"			"1.2"
+	}
+}
+
+// version 2. for use in the cave 
+
+"c2a5b.desert_outdoor.base_v2"
+{
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind2.wav"
+		"attenuation"			"0.8"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+		"attenuation"			"0.8"
+	}
+}
+
+"c2a5b.cave_valley.base"
+{
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.25"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.35"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+	}
+}
+
+"c2a5b.canal_tower_interior.base"
+{
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.25"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+	}
+}
+
+"c2a5b.desert_cave.base"
+{
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"100"
+		"wave"				"BMS_ambience\room_ambience\r_ambience_wind1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.2"
+		"pitch"				"100"
+		"wave"				"BMS_ambience\room_ambience\r_ambience_desertday1.wav"
+	}
+}
+
+"c2a5b.building_indoors.base"
+{
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.3"
+		"pitch"				"100"
+		"wave"				"BMS_ambience\room_ambience\r_ambience_dam1.wav"
+	}
+}
+
+"c2a5b.sewer_tunnel.base"
+{
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"100"
+		"wave"				"BMS_ambience\room_ambience\r_ambience_wind4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"BMS_ambience\room_ambience\r_ambience_water2.wav"
+	}
+}
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map B
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for insertion into the main soundscapes,
+//						in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//						via the info_target entity.
+//
+//						Scroll down to "Main Map Soundscapes - Map B" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map B - Canal Bottom Section
+
+///////// info_targets ///////////
+//
+// b_cnbt_pos2_water11
+// b_cnbt_pos3_water2
+
+"c2a5b.cnbt_util_pos2-3"
+{
+	"dsp"					"24"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"wave"				"bms_ambience/room_ambience/r_ambience_water11.wav"
+		"attenuation"			"1.0"
+
+		"position"			"2"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.75"
+		"pitch"				"100"
+		"wave"				"@bms_ambience/room_ambience/r_ambience_water2.wav"
+		"attenuation"			"1.5"
+
+		"position"			"3"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map B - Canal Tower HEV Station
+
+///////// info_targets ///////////
+//
+// b_hevstat_pos0_pflow1
+// b_hevstat_pos1_comp3
+// b_hevstat_pos4_pflow1a
+
+"c2a5b.hevstation_util_pos0-1"
+{
+	"dsp"					"24"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.55"
+		"pitch"				"100"
+		"wave"				"BMS_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"			"1.25"
+
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.55"
+		"pitch"				"100"
+		"wave"				"BMS_ambience/machine_ambience/m_ambience_comp3.wav"
+		"attenuation"			"1.25"
+
+		"position"			"1"
+	}
+}
+
+"c2a5b.hevstation_util_pos4"
+{
+	"dsp"					"24"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.55"
+		"pitch"				"100"
+		"wave"				"BMS_ambience/machine_ambience/m_ambience_pipeflow1a.wav"
+		"attenuation"			"1.25"
+
+		"position"			"4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map B - Canal Tower - Interior 1
+
+
+///////// info_targets ///////////
+// 			(NOTES HERE)
+// b_cti1_pos2_pflow1
+// b_cti1_pos1_comp3
+
+"c2a5b.cti_util_pos2-3"
+{
+	"dsp"					"24"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"0.35"
+		"pitch"				"100"
+		"wave"				"BMS_ambience/machine_ambience/m_ambience_pipeflow1a.wav"
+		"attenuation"			"1.25"
+
+		"position"			"2"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map B - Sewer Tunnel to Map c
+
+
+///////// info_targets ///////////
+// 			
+// b_swtn_pos6_driploop		(classic HL2 Sound)
+// b_swtn_pos7_waterleak	(classic HL2 Sound)
+
+"c2a5b.swtn_util_pos6-7"
+{
+	"dsp"					"24"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"ambient/water/drip_loop1.wav"
+		"attenuation"			"1.25"
+
+		"position"			"6"
+	}
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"ambient/levels/canals/waterleak_loop1.wav"
+		"attenuation"			"1.25"
+
+		"position"			"7"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map B
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Map B - Canal Bottom 	// Exiting the Canyon Pipe into map B
+// 
+
+"c2a5b.canal_bottom"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.canal_bottom.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"c2a5b.cnbt_util_pos2-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.hevstation_util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.hevstation_util_pos4"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util.outside_wind"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5b.canal_bottom.wind_util"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Desert Outdoors	//
+//		Section 1	//
+
+"c2a5b.desert_outdoor_s1"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.desert_outdoor.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.hevstation_util_pos0-1"
+		"volume"	"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Desert Outdoors	//
+//		Section 1sc	// s1c is the tunnel segment with the cranks
+//				// we lower the base soundscape to simulate the concrete walls
+//				// dampening the sound
+
+"c2a5b.desert_outdoor_s1c"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.desert_outdoor.base"
+		"volume"	"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Desert Outdoors	//
+//		Section 1a	//
+
+"c2a5b.desert_outdoor_s1a"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.desert_outdoor.base"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Cave Valley 		// Leads to the Map B Minefield
+
+
+"c2a5b.cave_valley"
+{
+	"dsp"				"129"
+	"dsp_volume"			"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c2a5b.cave_valley.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5.util.outside_wind"
+		"volume"		"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Canal Tower		//
+//	   interior 1		//
+
+
+"c2a5b.canal_tower_interior1"
+{
+	"dsp"			"17"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.canal_tower_interior.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.cti_util_pos2-3"
+		"volume"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.45"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind2a.wav"
+		"attenuation"			"0.95"
+
+		"position"			"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Canal Tower		//
+//	   Interior 2		//
+
+"c2a5b.canal_tower_interior2"
+{
+	"dsp"			"17"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.canal_tower_interior.base"
+		"volume"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.45"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind2a.wav"
+		"attenuation"			"0.85"
+
+		"position"			"0"
+	}
+
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util.outside_wind"
+		"volume"	"0.15"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Canal Tower		// 
+//	   HEV STATION
+
+"c2a5b.canal_tower_hev"
+{
+	"dsp"			"17"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.canal_tower_interior.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.hevstation_util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5b.cnbt_util_pos2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5b.hevstation_util_pos4"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5b.canal_bottom.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Desert Outdoors	//
+//		Section 2	//
+
+
+"c2a5b.desert_outdoor_s2"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.desert_outdoor.base"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Desert Outdoors	//
+//		Section 3	//
+
+"c2a5b.desert_outdoor_s3"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.desert_outdoor.base"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Desert Cave		// 
+
+"c2a5b.desert_cave"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.desert_cave.base"
+		"volume"	"1.0"
+	}
+
+	// info_target for blendscape entrance point 	// blendscape_cavertunnel_battleamb1
+	// info_target for blendscape exit point	// blendscape_cavertunnel_battleamb1a
+
+	"playsoundscape"
+	{
+		"name"				"c2a5b.desert_outdoor.base_v2"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.outdoorbattle.randombooms"
+		"volume"	"0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util.outside_wind"
+		"volume"	"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Desert Cave		// deeper into the cave, we remove the outdoor base
+
+"c2a5b.desert_cave_v2"
+{
+	"dsp"			"6"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.desert_cave.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.outdoorbattle.randombooms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Building Indoors	//
+
+"c2a5b.building_indoor"
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.building_indoors.base"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map B - Sewer Tunnel		// 
+
+
+"c2a5b.sewer_tunnel"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.sewer_tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5b.desert_outdoor.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.45"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_wind2a.wav"
+		"attenuation"			"1.2"
+
+		"position"			"1"
+	}
+
+	// Positional utility, sewer tunnel drains
+
+	"playsoundscape"
+	{
+		"name"		"c2a5b.swtn_util_pos6-7"
+		"volume"	"1.0"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5c STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map C
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map C" for the soundscapes proper.
+
+
+
+"c2a5c.sewer_tunnel.base"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_wind4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_water2.wav"
+	}
+}
+
+"c2a5c.cliffside_outdoors_battle.base"
+{	
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+		"attenuation"			"0.85"
+	}
+}
+
+"c2a5c.cliffside_outdoors_battle.base_v2"
+{	
+	"dsp"					"0"
+	"dsp_volume"				"1.0"
+
+	"playlooping"
+	{
+		"volume"			"1.0"
+		"pitch"				"100"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_outdoorbattle3.wav"
+		"attenuation"			"0.55"
+	}
+}
+
+"c2a5c.cliffside_wind4.base"
+{	
+	"dsp"				"0"
+	"dsp_volume"			"1.0"
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_wind4.wav"
+		"attenuation"		"0.8"
+	}
+}
+
+"c2a5c.cliffside_wind5.base"
+{	
+	"dsp"				"0"
+	"dsp_volume"			"1.0"
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_wind5.wav"
+		"attenuation"		"0.8"
+	}
+}
+
+"c2a5c.cliffside_indoors.base"
+{
+	"dsp"				"0"
+	"dsp_volume"			"1.0"
+	
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_med3.wav"
+		"attenuation"		"0.8"
+	}		
+	
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"		"0.8"
+	}	
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map C
+//================================================================================================================================
+
+
+//---------------------------------------------------------------------------------------
+// Map C - Cliffside - OutDoors		//
+
+"c2a5c.cliffside_outdoors"
+{	
+	"dsp"				"129"
+	"dsp_volume"			"0.2"
+
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_outdoors_battle.base"
+		"volume"		"0.9"		
+	}
+		
+	"playsoundscape"
+	{
+		"name"			"c2a5.util_rockfalls"
+		"volume"		"1.0"		
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5.util_birdlife"
+		"volume"		"1.0"		
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cliffside - Cave 1		//
+
+
+"c2a5c.cliffside_cave1"
+{	
+	"dsp"				"17"
+	"dsp_volume"			"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_outdoors_battle.base"
+		"volume"		"0.2"		
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_wind4.base"
+		"volume"		"1.0"		
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cliffside - Cave 2		//
+
+
+"c2a5c.cliffside_cave2"
+{	
+	"dsp"				"17"
+	"dsp_volume"			"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_outdoors_battle.base"
+		"volume"		"1.0"
+
+		"ambientpositionoverride"	"0"		
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_wind4.base"
+		"volume"		"1.0"		
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\machine_ambience\m_ambience_electrichum1a.wav"
+		"attenuation"		"1.3"
+
+		"position"		"7"		
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cliffside - Cave 3		//
+
+
+"c2a5c.cliffside_cave3"
+{	
+	"dsp"				"17"
+	"dsp_volume"			"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_outdoors_battle.base_v2"
+		"volume"		"1.0"
+
+		"ambientpositionoverride"	"0"		
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_wind4.base"
+		"volume"		"1.0"		
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cliffside 			//
+// Cave 3 Storage Facility		//
+//					// Hey look, a Rocket Launcher!
+
+"c2a5c.cliffside_storage"
+{
+	"dsp"				"1"
+	"dsp_volume"			"0.5"
+	
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_indoors.base"
+		"volume"		"1.0"
+	}	
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_wind4.base"
+		"volume"		"0.3"		
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_outdoors_battle.base"
+		"volume"		"1.0"
+
+		"ambientpositionoverride"	"0"		
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\machine_ambience\m_ambience_electrichum1a.wav"
+		"attenuation"		"1.3"
+
+		"position"		"7"		
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map C - Cliffside - Shack		//
+
+"c2a5c.cliffside_shack"
+{
+	"dsp"				"2"
+	"dsp_volume"			"0.4"
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_outdoors_battle.base"
+		"volume"		"0.3"		
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_wind5.base"
+		"volume"		"0.8"		
+	}
+}
+
+"c2a5c.cliffside_walkway" 
+{	
+	"dsp"				"129"
+	"dsp_volume"			"0.2"
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_outdoors_battle.base"
+		"volume"		"0.85"		
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_wind5.base"
+		"volume"		"0.5"		
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"c2a5.util_rockfalls"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"c2a5.util_stressmetal"
+		"volume"		"1.0"
+	}
+}
+
+"c2a5c.cliffside_woodbridge"
+{	
+	"dsp"				"129"
+	"dsp_volume"			"0.2"
+
+
+	"playsoundscape"
+	{
+		"name"			"c2a5c.cliffside_outdoors_battle.base"
+		"volume"		"0.85"		
+	}		
+	
+	"playsoundscape"
+	{
+		"name"			"c2a5.util_rockfalls"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"c2a5.util_stresswood"
+		"volume"		"1.0"		
+	}
+}
+
+"c2a5c.sewer_tunnel1"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5c.sewer_tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5c.cliffside_outdoors_battle.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"1"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5c.swtn_util_pos7"
+		"volume"	"1.0"
+	}
+}
+
+"c2a5c.sewer_tunnel2"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5c.sewer_tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5c.cliffside_outdoors_battle.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5c.swtn_util_pos7"
+		"volume"	"1.0"
+	}
+}
+
+"c2a5c.swtn_util_pos7"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"ambient/water/drip_loop1.wav"
+		"attenuation"		"1.25"
+
+		"position"		"7"		
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5d STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+// General Utilities for Map D
+
+
+"c2a5d.amb_indoorbooms"
+{
+	"playrandom"
+	{
+		"volume"	"0.2"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom2.wav"
+		}
+	}
+}
+
+// used for the road section as a .base, 
+// used for the bunker as a positional override.
+
+"c2a5d.amb_outdoorbattle2_util"
+{
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle2.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind2.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map D
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map D" for the soundscapes proper.
+
+
+"c2a5d.sewer_tunnel.base"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind4.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_water2.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5d.sewer_pipe.base"
+{
+	"dsp"			"1"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind4.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_water2.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5d.sewer_canal.base"
+{
+	"dsp"			"9"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind1.wav"
+		"attenuation"	"1.2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind3a.wav"
+		"attenuation"	"1.2"
+	}
+}
+
+"c2a5d.outdoor_garage.base"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind5.wav"
+		"attenuation"	"1.2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"	"1.2"
+	}
+}
+
+"c2a5d.outdoor_courtyard.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind3.wav"
+		"attenuation"	"1.4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+		"attenuation"	"1.4"
+	}
+}
+
+// larger attenuation, used for the garage blendscape
+
+"c2a5d.outdoor_courtyard.base_v2"
+{
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind3.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+		"attenuation"	"0.9"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map D
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Map D - Sewer Pipe 1		//
+
+"c2a5d.sewer_pipe1"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.sewer_pipe.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5c.cliffside_outdoors_battle.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5d.sewer_canal.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"1"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5c.swtn_util_pos7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_indoorbooms"
+		"volume"	"0.2"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - Sewer Pipe 1		//
+//	   Section2
+
+"c2a5d.sewer_pipe1_s2"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.sewer_pipe.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5c.cliffside_outdoors_battle.base"
+		"volume"			"0.45"
+		"ambientpositionoverride"	"0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5d.sewer_canal.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"1"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5c.swtn_util_pos7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_indoorbooms"
+		"volume"	"0.2"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - Sewer Pipe 2		//
+
+"c2a5d.sewer_pipe2"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.sewer_pipe.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_indoorbooms"
+		"volume"	"0.2"
+	}
+
+	
+//	// info_target is "blendscape_canals_entrance1"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.sewer_canal.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.outdoor_courtyard.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - Sewer Pipe 3		//
+
+"c2a5d.sewer_pipe3"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.sewer_pipe.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_indoorbooms"
+		"volume"	"0.2"
+	}
+
+//	// info_target is "blendscape_canals_entrance1"
+
+	"playsoundscape"
+	{
+		"name"				"c2a5d.sewer_canal.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"6"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5d.outdoor_courtyard.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - Sewer Pipe 4		// 
+
+"c2a5d.sewer_pipe4"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.sewer_pipe.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_indoorbooms"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5d.outdoor_courtyard.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - Sewer Canal 		// 
+
+"c2a5d.sewer_canal"
+{
+	"dsp"			"9"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.sewer_canal.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_indoorbooms"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util.outside_wind"
+		"volume"	"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - Sewer Canal2		//
+
+"c2a5d.sewer_canal2"
+{
+	"dsp"			"9"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.sewer_canal.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_indoorbooms"
+		"volume"	"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - OutDoor Courtyard	//
+
+"c2a5d.outdoor_courtyard"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.outdoor_courtyard.base"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - OutDoor Courtyard	//
+
+"c2a5d.outdoor_courtyard_exit"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.outdoor_courtyard.base"
+		"volume"	"0.50"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - OutDoor Garage	//
+
+"c2a5d.outdoor_garage"
+{
+	"playsoundscape"
+	{
+		"name"		"c2a5d.outdoor_garage.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5d.outdoor_courtyard.base_v2"
+		"volume"			"1"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - OutDoor Road		//
+
+"c2a5d.outdoor_road"
+{
+	"dsp"			"0"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_outdoorbattle2_util"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - Bunker		//
+
+"c2a5d.bunker"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.35"
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"110"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+//	// being sneaky and position this into a position for the office room bit.
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"	"0.7"
+
+		"position"	"1"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5d.amb_outdoorbattle2_util"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map D - Bunker		//
+
+"c2a5d.bunker_v2"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.35"
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"110"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"	"0.7"
+
+		"position"	"1"
+	}
+}
+
+
+//---------------------------------------------------------------------------------------
+// Map D - Bunker		//
+
+"c2a5d.bunker_v3"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.35"
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"110"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"	"0.7"
+
+		"position"	"1"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5d.amb_outdoorbattle2_util"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"0"
+	}
+}
+
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5e STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+
+// General Utilities for Map E
+
+//---------------------------
+// battle ambience, indoors
+
+"c2a5e.amb_indoorbooms"
+{
+	"playrandom"
+	{
+		"volume"	"0.2"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom2.wav"
+		}
+	}
+}
+
+//---------------------------
+// battle ambience, outdoors
+
+"c2a5e.amb_outdoorbattle2_util"
+{
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle2.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_wind2.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5e.amb_outdoorbattle2_util_nowind"
+{
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle2.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map E
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map E" for the soundscapes proper.
+
+
+"c2a5e.bunker.base"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.35"
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"110"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+}
+
+"c2a5e.ordnance_hallways.base" 
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.10"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med9.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5e.ordnance_warehouse.base"
+{
+	"dsp"			"4"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med11.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5e.ordnance_collapse.base" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_wind3.wav"
+	}
+}
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map E
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for insertion into the main soundscapes,
+//						in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//						via the info_target entity.
+//
+//						Scroll down to "Main Map Soundscapes - Map E" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map E - Outdoors Minefield
+//						e_mine, for position shorthand.
+
+// e_mine_pos2_fan2
+// e_mine_pos3_ehum1
+// e_mine_pos4_ind17
+// e_mine_pos5_watercontainer
+// e_mine_pos6_pflow2
+// e_mine_pos7_ind17a
+
+"c2a5e.minefield.util_pos" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2.wav"
+		"attenuation"	"1.25"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.22"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_ind17.wav"
+		"attenuation"	"1.0"
+
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_watercontainer.wav"
+		"attenuation"	"1.0"
+
+		"position"	"5"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"	"1.3"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_ind17a.wav"
+		"attenuation"	"1.0"
+
+		"position"	"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map E - Ordinance Hallway 1
+//									e_ordhw1, for position shorthand.
+
+"c2a5e.ordhw1.util_pos6-7" 
+{
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"attenuation"	"1.1"
+
+		"position"		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5a.wav"
+		"attenuation"	"1.1"
+
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"wave"			"BMS_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.15"
+
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map E - Ordinance Tunnel Section 1
+//						e_otns1, for position shorthand.
+
+// truck positionals
+
+// e_otns1_pos6_truck
+// e_otns1_pos7_truck
+
+"c2a5e.otn_s1.util_pos6-7" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_objects/vehicles/truck_idle2.wav"
+		"attenuation"	"1.0"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_objects/vehicles/truck_idle3.wav"
+		"attenuation"	"1.0"
+
+		"position"	"7"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map E
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Map E - Outdoor Minefield		//
+
+"c2a5e.outdoor_minefield"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_outdoorbattle2_util"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.minefield.util_pos" 
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Bunker1		//
+//				// Small bunker
+
+"c2a5e.bunker1"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.35"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.bunker.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_outdoorbattle2_util"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Bunker2		//
+//				// Small bunker
+
+"c2a5e.bunker2"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.35"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.bunker.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5d.amb_outdoorbattle2_util"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Ordinance Collapsed Room	//
+//					//
+//					// Player drops down into a blown out room of
+//					// the ordinance storage area.
+
+"c2a5e.ordnance_collapse" 
+{
+	"dsp"			"18"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.ordnance_collapse.base" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.amb_outdoorbattle2_util_nowind"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Ordinance Hallway1	//
+//				// 
+
+"c2a5e.ordnance_hallway1" 
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.ordnance_hallways.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5e.ordnance_warehouse.base"
+		"volume"			"1.0"
+
+		"ambientpositionoverride"	"0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.ordhw1.util_pos6-7" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.amb_indoorbooms"
+		"volume"	"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Ordinance Hallway 1a	//
+//				//
+
+"c2a5e.ordnance_hallway1a" 
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"				"c2a5e.ordnance_hallways.base"
+		"volume"			"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5e.ordnance_warehouse.base"
+		"volume"			"1.0"
+
+		"ambientpositionoverride"	"0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.amb_outdoorbattle2_util_nowind"
+		"volume"	"0.05"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.ordhw1.util_pos6-7" 
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.amb_indoorbooms"
+		"volume"	"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Ordinance WareHouse	//
+//				//
+//				// I hope you did your stretching exercises, Doctor Freeman.
+
+"c2a5e.ordnance_warehouse"
+{
+	"dsp"			"4"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.ordnance_warehouse.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.amb_outdoorbattle2_util_nowind"
+		"volume"	"0.15"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Ordinance Elevator	//
+//				// 
+
+"c2a5e.ordnance_elevator"
+{
+	"dsp"			"5"
+	"dsp_volume"		"0.5"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_elev_shaft2.wav"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Ordinance Tunnel	//
+//	   Section 1		//
+
+"c2a5e.ordnance_tunnel1_s1"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.otn_s1.util_pos6-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.2"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Ordinance Tunnel	//
+//	   Section 2		//
+
+"c2a5e.ordnance_tunnel1_s2"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5e.otn_s1.util_pos6-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.2"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map E - Ordinance Tunnel	//
+//	   Section 3		//
+
+"c2a5e.ordnance_tunnel1_s3"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.2"
+	}
+
+//	// used in map f version, for tunnel to outdoors blending
+//	// as you get closer to the tunnel exit.
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5f STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+// Generic utilities for Map F
+
+"c2a5f.outdoors.amb_boom"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"8,16"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"		"BMS_ambience\soundscape\soundscape_boom1.wav"
+			"wave"		"BMS_ambience\soundscape\soundscape_boom2.wav"
+		}
+	}
+}
+
+"c2a5f.outdoors.farjet"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"30,50"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_150dB"
+		"rndwave"
+		{
+			"wave"		"BMS_ambience\soundscape\soundscape_farjet3.wav"
+		}
+	}
+}
+
+"c2a5f.indoors.amb_booms"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+}
+
+///////////////////////////
+// used in the armoury ruins
+
+"c2a5f.util_randomdebris" 
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"12,20"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\object_physics\rocks_fall1.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall2.wav"
+			"wave"	"BMS_ambience\object_physics\rocks_fall3.wav"
+			"wave"	"BMS_ambience\object_physics\small_debris9.wav"
+		}
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map F
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map F" for the soundscapes proper.
+
+"c2a5f.outdoors.base"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle2.wav"
+		"attenuation"	"0.9"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"110"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_ob_mortars.wav"
+		"attenuation"	"0.9"
+	}
+}
+
+"c2a5f.indoors.base"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_wind4.wav"
+	}
+}
+
+"c2a5f.armoury_ruins.base"
+{
+	"dsp"			"9"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_wind5.wav"
+	}
+}
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map F
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for insertion into the main soundscapes,
+//						in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//						via the info_target entity.
+//
+//						Scroll down to "Main Map Soundscapes - Map F" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map F - Armoury Outdoors
+//						f_armout , for positional shorthand.
+
+///////// info_targets ///////////
+
+// f_armout_pos2_fan2
+// f_armout_pos3_fan3
+
+// f_armout_pos4_fan2a
+// f_armout_pos5_fan3a
+// f_armout_pos6_fan10a
+// f_armout_pos7_pipe2
+
+"c2a5f.armout.util_pos2-3" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2.wav"
+		"attenuation"	"1.0"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan3.wav"
+		"attenuation"	"1.0"
+
+		"position"	"3"
+	}
+}
+
+"c2a5f.armout.util_pos4-7" 
+{
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan2a.wav"
+		"attenuation"	"1.0"
+
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan3a.wav"
+		"attenuation"	"1.0"
+
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"	"1.25"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"	"1.25"
+
+		"position"	"7"
+	}
+
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map F - Ordinance Section 2
+//						f_ords2 , for positional shorthand.
+
+///////// info_targets ///////////
+// f_ords2_pos0_fan3
+// f_ords2_pos1_ehum1
+// f_ords2_pos2_driploop
+
+// f_ords3_pos3_ehum
+
+"c2a5f.ords2.util_pos0-1" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan3.wav"
+		"attenuation"	"1.25"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.25"
+
+		"position"	"1"
+	}
+}
+
+"c2a5f.ords2.util_pos2" 
+{
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"ambient/water/drip_loop1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"2"
+	}
+}
+
+"c2a5f.ords3.util_pos3" 
+{
+	"playlooping"
+	{
+		"volume"	"0.33"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med3.wav"
+		"attenuation"	"1.45"
+
+		"position"	"3"
+	}
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map F - Ruins S1
+//						f_ruins_s1 , for positional shorthand.
+
+///////// info_targets ///////////
+// f_ruins_s1_pos4_waterleak	(toilet)
+// f_ruins_s1_pos5_vent2a
+// f_ruins_s1_pos6_vent2
+// f_ruins_s1_pos7_ehum1
+
+"c2a5f.ruins_s1.util_pos4-7" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"ambient/levels/canals/waterleak_loop1.wav"
+		"attenuation"	"1.15"
+
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_vent2a.wav"
+		"attenuation"	"1.25"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_vent2.wav"
+		"attenuation"	"1.25"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.2"
+
+		"position"	"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map F - Ruins S2
+//						f_ruins_s2 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// f_ruins_s2_pos0_fire5
+// f_ruins_s2_pos1_fire2
+// f_ruins_s2_pos2_fire6
+// f_ruins_s2_pos3_driploop
+
+"c2a5f.ruins_s2.util_pos0-1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/object_ambience/o_ambience_disaster_fire5.wav"
+		"attenuation"	"1.0"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/object_ambience/o_ambience_disaster_fire2.wav"
+		"attenuation"	"1.0"
+
+		"position"	"1"
+	}
+
+}
+
+"c2a5f.ruins_s2.util_pos2-3" 
+{
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/object_ambience/o_ambience_disaster_fire6.wav"
+		"attenuation"	"1.0"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"ambient/water/drip_loop1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"3"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map F - Ruins Exit
+//						f_rexit, for positional shorthand.
+
+///////// info_targets ///////////
+// f_rexit_pos4_fan10
+// f_rexit_pos5_pipe2
+
+"c2a5f.ruins_exit.util_pos4-5" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_objects/fans/fan10.wav"
+		"attenuation"	"1.0"
+
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"attenuation"	"1.0"
+
+		"position"	"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map F - Helipdad
+//						f_heli, for positional shorthand.
+
+///////// info_targets ///////////
+
+// f_heli_pos0_ehum1
+// f_heli_pos1_pipe1a
+
+"c2a5f.helipad.util_pos0-1" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.65"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe1a.wav"
+		"attenuation"	"1.0"
+
+		"position"	"1"
+	}
+
+}
+
+// f_heli_pos2_pipe1a 		(using pipe1, despite nomenclature)
+// f_heli_pos3_fire1
+
+"c2a5f.helipad.util_pos2-3" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"ambient/fire/fire_small1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"3"
+	}
+
+}
+
+// f_heli_pos6_fan10a
+// f_heli_pos7_pipe1b
+
+"c2a5f.helipad.util_pos6-7" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan10a.wav"
+		"attenuation"	"1.0"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe1b.wav"
+		"attenuation"	"1.0"
+
+		"position"	"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map F - A3A3 
+//						f_heli, for positional shorthand.
+
+///////// info_targets ///////////
+// f_A3A4_pos4_pipe1c
+// f_A3A4_pos5_pipe1d
+
+"c2a5f.A3A4.util_pos4-5" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe1c.wav"
+		"attenuation"	"1.0"
+
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"50"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"attenuation"	"1.0"
+
+		"position"	"5"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map F
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Map F - Armoury Outdoors		//
+
+"c2a5f.armoury_outdoors"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.armout.util_pos2-3" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.armout.util_pos4-7" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.amb_boom"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.farjet"
+		"volume"	"0.9"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Armoury Outdoors s2		//
+
+"c2a5f.armoury_outdoors_s2"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s2.util_pos0-1" 
+		"volume"	"0.55"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.armout.util_pos4-7" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.amb_boom"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.farjet"
+		"volume"	"0.9"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Ordinance Storage	//
+//	   Section 1		// Indoors, First Floor.
+
+"c2a5f.ordinancestorage_s1"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.armout.util_pos4-7" 
+		"volume"	"0.35"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Ordinance Storage	// 
+//	   Section 2		// Indoors, Second Floor.
+//				// Weapons Locker Hallway. "c2a5f.ords3.util_pos3" 
+
+"c2a5f.ordinancestorage_s2"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ords2.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ords2.util_pos2"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.armout.util_pos4-7" 
+		"volume"	"0.15"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Ordinance Storage	//
+//	   Section 3		// Indoors, Second Floor.
+//				// Weapons Locker Proper.
+
+"c2a5f.ordinancestorage_s3"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ords2.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ords2.util_pos2"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ords3.util_pos3" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Armoury Ruins	// 
+
+"c2a5f.armoury_ruins" 
+{
+	"dsp"			"9"
+	"dsp_volume"		"1.0"
+
+//	
+	"playsoundscape"
+	{
+		"name"		"c2a5f.armoury_ruins.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s2.util_pos0-1" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s2.util_pos2-3" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s1.util_pos4-7"
+		"volume"	"1.0"
+	}
+	
+//
+	
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.farjet"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.util_randomdebris" 
+		"volume"	"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Armoury Ruins	// 
+//	   section 1			// player enters from the fire escape
+
+"c2a5f.armoury_ruins_s1" 
+{
+	"dsp"			"9"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.armoury_ruins.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s2.util_pos0-1" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s2.util_pos2-3" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s1.util_pos4-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.farjet"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.util_randomdebris" 
+		"volume"	"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Armoury Ruins	// 
+//	   section 2		// Main Area Ruins
+
+"c2a5f.armoury_ruins_s2" 
+{
+	"dsp"			"9"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.armoury_ruins.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s2.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s2.util_pos2-3" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_s1.util_pos4-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.farjet"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.util_randomdebris" 
+		"volume"	"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Armoury Ruins Exit	// 
+
+
+"c2a5f.armoury_ruins.exit" 
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_exit.util_pos4-5"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - HELIPAD		// 
+
+"c2a5f.outdoors_helipad"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.2"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.ruins_exit.util_pos4-5" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.helipad.util_pos2-3" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.helipad.util_pos0-1" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.helipad.util_pos6-7" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.amb_boom"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.farjet"
+		"volume"	"0.9"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Armoury Ruins A3A4	// 
+//	   Interior
+
+"c2a5f.A3A4_ruins_indoors"
+{
+	"dsp"			"3"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.A3A4.util_pos4-5" 
+		"volume"	"0.68"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.helipad.util_pos0-1" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.helipad.util_pos6-7" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map F - Armoury Ruins A3A4	//
+//	   tunnel		//
+
+"c2a5f.A3A4_tunnel"
+{
+	"dsp"			"3"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.A3A4.util_pos4-5" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.helipad.util_pos0-1" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.helipad.util_pos6-7" 
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.indoors.amb_booms"
+		"volume"	"0.25"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5g STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+// generic battle utilities for Map G
+
+"c2a5g.farjet_random.util"
+{
+	"playrandom"
+	{
+		"volume"	"0.7"
+		"pitch"		"90,110"
+		"time"		"30,50"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_150dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_farjet3.wav"
+		}
+	}
+}
+
+"c2a5g.battlebooms_random.util"
+{
+	"playrandom"
+	{
+		"volume"	"0.7"
+		"pitch"		"90,110"
+		"time"		"8,20"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_boom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_boom2.wav"
+		}
+	}
+}
+
+"c2a5g.carpark_battleamb.util"
+{
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"@bms_ambience/room_ambience/r_ambience_ob_farboom2.wav"
+		"soundlevel"	"SNDLVL_85dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"@bms_ambience/room_ambience/r_ambience_wind5.wav"
+		"soundlevel"	"SNDLVL_85dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"@bms_ambience/room_ambience/r_ambience_wind2.wav"
+		"soundlevel"	"SNDLVL_85dB"
+	}
+}
+
+"c2a5g.battleamb.indooramb_util"
+{
+        "dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playrandom"
+	{
+		"volume"	"0.5"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+}
+
+"c2a5g.amb_ob_fargunsandboom"
+{
+        "dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"90"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_fargunfire.wav"
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map G
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map G" for the soundscapes proper.
+
+"c2a5g.tunnel.base"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+}
+
+"c2a5g.carpark.base"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+	}
+}
+
+"c2a5g.carpark_stairs.base"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med9.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+	}
+}
+
+"c2a5g.outside.base"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle4.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+// tighter attenuation
+
+"c2a5g.outside.base_v2"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle4.wav"
+		"attenuation"	"1.3"
+	}
+}
+
+"c2a5g.tunnel2.base"
+{
+	"dsp"			"6"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large6.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_mortars.wav"
+	}
+}
+
+"c2a5g.vent.base"
+{
+	"dsp"			"1"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_vent1.wav"
+		"pitch"		"100"
+		"attenuation"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"c2a5g.garage.base"
+{
+        "dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_small2.wav"
+	}
+}
+
+"c2a5g.securitystations.base"
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+}
+
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map G
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for insertion into the main soundscapes,
+//						in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//						via the info_target entity.
+//
+//						Scroll down to "Main Map Soundscapes - Map X" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map G - CarPark L2 Pipes
+
+"c2a5g.carpark.util_pos0-1" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"0.5"
+
+
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"attenuation"	"1.0"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe4a.wav"
+		"attenuation"	"1.0"
+
+		"position"	"1"
+	}
+}
+
+// for staircase section
+// g_carpark_pos2_pipe
+// g_carpark_pos3_pipe
+
+"c2a5g.carpark.util_pos2-3" 
+{
+	"dsp"			"0"
+	"dsp_volume"		"0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"attenuation"	"1.25"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipe5a.wav"
+		"attenuation"	"1.25"
+
+		"position"	"3"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
+// Positional Utilities, Map G, Security Station Area
+
+/////info_targets/////
+// g_secstat_pos4_comp1
+// g_secstat_pos5_driploop
+
+"c2a5g.secstat.util_pos4-5"
+{
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"attenuation"	"1.25"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"170"
+		"wave"		"ambient/water/drip_loop1.wav"
+//		"wave"		"bms_ambience/room_ambience/r_ambience_water3.wav"
+		"attenuation"	"1.25"
+		"position"	"5"
+	}
+}
+
+/////info_targets/////
+// g_secstat_pos0_hum1
+// g_secstat_pos6_pipe1
+// g_secstat_pos7_pipe1a
+
+"c2a5g.secstat.util_pos0-6-7"
+{
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_objects\hum\hum1.wav"
+		"attenuation"	"1.25"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"attenuation"	"1.25"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe1a.wav"
+		"attenuation"	"1.25"
+		"position"	"7"
+	}
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map G - Tunnel 2
+//						
+
+/////info_targets/////
+// g_tunnel2_pos1_ehum1a
+
+/////info_targets/////
+// g_tunnel2_pos2_fire5
+// g_tunnel2_pos3_fire5a
+
+/////info_targets/////
+// g_tunnel2_pos4_waterleak
+// g_tunnel2_pos5_pipe5
+
+"c2a5g.tunnel2.util_pos1"
+{
+	"dsp"			"6"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"	"1.0"
+		"position"	"1"
+	}
+}
+
+"c2a5g.tunnel2.util_pos2-3"
+{
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire5.wav"
+		"attenuation"	"1.25"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience/object_ambience/o_ambience_disaster_fire5a.wav"
+		"attenuation"	"1.25"
+		"position"	"3"
+	}
+
+}
+
+"c2a5g.tunnel2.util_pos4-5"
+{
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"ambient/levels/canals/waterleak_loop1.wav"
+		"attenuation"	"1.25"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"attenuation"	"1.25"
+		"position"	"5"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map G
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Map G - Tunnel 1		//
+
+"c2a5g.tunnel1"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5f.outdoors.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Car Park		// 
+//	   Level 1 and 2
+
+"c2a5g.carpark_L1L2"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.25"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.carpark.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5g.carpark_battleamb.util"
+		"volume"			"1.0"
+		"ambientpositionoverride" 	"7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.carpark.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_stressmetal"
+		"volume"	"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Car Park		//
+//	   Level 3		// will blend into outside 1
+
+"c2a5g.carpark_L3"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.25"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.carpark.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5g.outside.base_v2"
+		"volume"			"0.75"
+		"ambientpositionoverride" 	"6"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5g.carpark_battleamb.util"
+		"volume"			"1.0"
+		"ambientpositionoverride" 	"7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.carpark.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_stressmetal"
+		"volume"	"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Outside 1		//
+
+"c2a5g.outside1"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.25"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.outside.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.farjet_random.util"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.battlebooms_random.util"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Outside 2		//
+
+"c2a5g.outside2"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.25"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.outside.base"
+		"volume"	"0.85"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.farjet_random.util"
+		"volume"	"0.85"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.battlebooms_random.util"
+		"volume"	"0.85"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Outside 3		//
+
+"c2a5g.outside3"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.25"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.outside.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.farjet_random.util"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.battlebooms_random.util"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Car Park		// 
+//	   Stairs
+
+"c2a5g.carpark_stairs"
+{
+	"dsp"			"17"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.carpark_stairs.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.carpark.util_pos2-3"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Vent			//
+
+"c2a5g.vent"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"				"c2a5g.vent.base"
+		"volume"			"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5g.outside.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Garage	//
+
+"c2a5g.garage"
+{
+        "dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.garage.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.battleamb.indooramb_util"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.amb_ob_fargunsandboom"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Garage v2		// Blown out window version
+//				// 
+
+"c2a5g.garage_v2"
+{
+        "dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.garage.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.battleamb.indooramb_util"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.amb_ob_fargunsandboom"
+		"volume"	"1.0"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_ambience/room_ambience/r_ambience_outdoorbattle3_mono.wav"
+		"attenuation"	"1.0"
+
+		"position"	"7"
+	}
+}
+
+
+//---------------------------------------------------------------------------------------
+// Map G - Tunnel 2		//
+
+"c2a5g.tunnel2"
+{
+	"dsp"			"6"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.tunnel2.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.tunnel2.util_pos1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.tunnel2.util_pos2-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.tunnel2.util_pos4-5"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"					"c2a5g.outside.base"
+		"volume"				"0.85"
+		"ambientpositionoverride"		"0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Office		//
+
+"c2a5g.securitystations"
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.securitystations.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"					"c2a5g.tunnel2.base"
+		"volume"				"1.0"
+		"ambientpositionoverride"		"1"
+	}
+
+//	Positional Utilities
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.tunnel2.util_pos2-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.secstat.util_pos4-5"
+		"volume"	"1.0"
+	}
+
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.secstat.util_pos0-6-7"
+		"volume"	"1.0"
+	}
+
+//	additional battle ambience, more muffled.
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_mortars_ug.wav"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map G - Office	//
+
+"c2a5g.securitystations_s2"
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.securitystations.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.tunnel2.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"		"1"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.tunnel.base"
+		"volume"	"1.0"
+		"ambientpositionoverride"		"2"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.secstat.util_pos4-5"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5g.secstat.util_pos0-6-7"
+		"volume"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_mortars_ug.wav"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5h STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+// generic outside battle ambience utility
+
+"c2a5h.outdoor.battleamb_util"
+{
+	"playrandom"
+	{
+		"volume"	"0.7"
+		"pitch"		"90,110"
+		"time"		"30,50"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_150dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_farjet3.wav"
+		}
+	}
+
+	"playrandom"
+	{
+		"volume"	"0.7"
+		"pitch"		"90,110"
+		"time"		"8,20"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_boom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_boom2.wav"
+		}
+	}
+}
+
+// generic indoors battle ambience utility
+
+"c2a5h.indoor.battleamb_util"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom2.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom4.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom5.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom6.wav"
+		}
+	}
+}
+
+// c2a5h.indoors.amb_booms
+
+"c2a5h.amb_indoorbooms"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom2.wav"
+		}
+	}
+}
+
+"c2a5h.amb_indoorbooms_furnaceroom"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+}
+
+
+//================================================================================================================================
+//================================================================================================================================
+//						Base Utility Soundscapes - Map H
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//						for the overall environments being portrayed.
+//
+//						Scroll down to "Main Map Soundscapes - Map H" for the soundscapes proper.
+
+
+"c2a5h.tunnel.base"
+{
+	"dsp"			"6"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_large7.wav"
+		"attenuation"	"1.1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med10.wav"
+		"attenuation"	"1.1"
+	}
+}
+
+"c2a5h.indoors.base"
+{
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_small2.wav"
+	}
+}
+
+"c2a5h.hallways.base"
+{
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med9.wav"
+	}
+}
+
+"c2a5h.vents.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_vent1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"c2a5h.outside.base"
+{
+	"playlooping"
+	{
+		"volume"	"1.00"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle4.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+// outside base, version 2.
+// used primarily as soundscape blend for h hallway 1's staircase
+
+"c2a5h.outside.base_v2"
+{
+	"playlooping"
+	{
+		"volume"	"1.00"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_outdoorbattle4.wav"
+		"attenuation"	"0.95"
+	}
+}
+
+"c2a5h.sewer_pipe.base"
+{
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_wind4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_water2.wav"
+	}
+}
+
+"c2a5h.furnace.base"
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"110"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large2.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"110"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_industrial15.wav"
+	}
+}
+
+//================================================================================================================================
+//						Positional Utility Soundscapes - Map H
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 						DO NOT USE IN THE ACTUAL VMFs.
+//
+//						They are Building Blocks only, meant for insertion into the main soundscapes,
+//						in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//						via the info_target entity.
+//
+//						Scroll down to "Main Map Soundscapes - Map H" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Map H - Tunnel 1
+//		
+
+///////// info_targets ///////////
+//
+//
+//
+
+"c2a5h.tn1.util_pos0-3-4"
+{
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"		"bms_objects\hum\hum2.wav"
+		"attenuation"	"1.25"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.25"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"ambient/levels/canals/waterleak_loop1.wav"
+		"attenuation"	"1.25"
+		"position"	"4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities			Map H - Outside Main and Rooftop
+//		
+
+///////// info_targets ///////////
+// h_outside_pos_fan1
+// h_outside_pos_fan1a
+
+"c2a5h.outside.util_pos6-7"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan1.wav"
+		"attenuation"	"1.1"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan1a.wav"
+		"attenuation"	"1.1"
+
+		"position"	"7"
+	}
+}
+
+//h_outside_pos3_fan10
+
+"c2a5h.outside.util_pos3"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan10.wav"
+		"attenuation"	"1.2"
+
+		"position"	"3"
+	}
+}
+
+///////// info_targets ///////////
+// h_rooftop_pos_fixture
+// h_rooftop_pos_fan8
+
+"c2a5h.outside.util_pos4-5"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"attenuation"	"1.0"
+
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.78"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan8.wav"
+		"attenuation"	"1.0"
+
+		"position"	"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities			Map H - Rooftop Indoors
+//		
+
+///////// info_targets ///////////
+// h_rtind_pos0_water12
+// h_rtind_pos1_water12a
+
+"c2a5h.rtind.util_pos0-1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.18"
+		"pitch"		"150"
+		"wave"		"bms_ambience/room_ambience/r_ambience_water12.wav"
+		"attenuation"	"1.25"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.18"
+		"pitch"		"150"
+		"wave"		"bms_ambience/room_ambience/r_ambience_water12a.wav"
+		"attenuation"	"1.25"
+
+		"position"	"1"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities			Map H - Maintenance 1
+//		
+
+///////// info_targets /////////// 
+
+// h_mt1_pos0_pflow2a
+// h_mt1_pos1_pipe5
+
+"c2a5h.mt1.util_pos0-1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"125"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe3a.wav"
+		"attenuation"	"1.0"
+
+		"position"	"1"
+	}
+}
+
+// h_hgwy_pos2_fan8
+// h_hgwy_pos3_fan8a
+
+"c2a5h.hgwy.util_pos2-3"
+{
+
+	"playlooping"
+	{
+		"volume"	"0.33"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan8.wav"
+		"attenuation"	"1.1"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.33"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan8a.wav"
+		"attenuation"	"1.1"
+
+		"position"	"3"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities			Map H - Hangar
+//		
+
+///////// info_targets /////////// 
+// h_hangar_pos_ehum1
+// h_hangar_pos_pflow2
+// h_hangar_pos_ehum1a
+// h_hangar_pos_truck
+
+"c2a5h.hangar.util_pos4-7"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"	"1.0"
+
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.78"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		"attenuation"	"1.0"
+
+		"position"	"6"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"bms_objects/vehicles/truck_idle3.wav"
+		"attenuation"	"1.0"
+
+		"position"	"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities			Map H - Furnace Room Area
+//		
+
+///////// info_targets /////////// 
+// h_furnacerm_pos_comp1
+// h_furnacerm_pos_ehum1b
+// h_furnacerm_pos_pipe1
+// h_furnacerm_pos_misc8
+// h_furnacerm_pos_misc8a
+
+"c2a5h.furnacerm.util_pos0-4"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		"attenuation"	"1.25"
+
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"attenuation"	"1.25"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"attenuation"	"1.18"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_misc8.wav"
+		"attenuation"	"1.15"
+
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.85"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_misc8a.wav"
+		"attenuation"	"1.15"
+
+		"position"	"4"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	Map H
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Map H - Tunnel 1		//
+//				//
+
+"c2a5h.tunnel1"
+{
+	"dsp"			"6"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.tn1.util_pos0-3-4"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Hallway 1	//
+//	   Staircase	//
+
+"c2a5h.hallway1_staircase"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.amb_indoorbooms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Indoors 1	//
+//			//
+
+"c2a5h.indoors_1"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.amb_indoorbooms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Bathroom ruins	// update the baseline stuff be more appropiate
+//				// 
+
+"c2a5h.bathroom_ruins"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outside.base"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hallways.base"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outdoor.battleamb_util"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Offices1		//
+//				//
+
+"c2a5h.offices1"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.amb_indoorbooms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Hallway 1		//
+//				//
+
+"c2a5h.hallway1"
+{
+	"dsp"			"17"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hallways.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.amb_indoorbooms"
+		"volume"	"0.2"
+	}
+
+//	blendscape. outside v2 is same as normal, except for larger attenuation.	
+
+	"playsoundscape"
+	{
+		"name"				"c2a5h.outside.base_v2"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Vent 1		//
+//				//
+
+"c2a5h.vent"
+{
+	"dsp"			"1"
+	"dsp_volume"		"1.0"
+
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.vents.base"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Outside 1		//
+//				// 
+
+"c2a5h.outside"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outside.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.rtind.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outside.util_pos4-5"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outside.util_pos6-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outdoor.battleamb_util"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Outside 1		// update the baseline stuff be more appropiate
+//				// 
+
+"c2a5h.rooftop_indoors"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outside.base"
+		"volume"	"0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hallways.base"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outdoor.battleamb_util"
+		"volume"	"0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.rtind.util_pos0-1"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Sewer Pipe1		//
+//				// 
+
+
+"c2a5h.sewer_pipe1"
+{
+	"dsp"			"1"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.sewer_pipe.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5h.furnace.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"6"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5h.outside.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.amb_indoorbooms"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Furnace Room		//
+//				// 
+
+"c2a5h.furnace_room"
+{
+	"dsp"			"17"
+	"dsp_volume"		"0.25"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.furnace.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.furnacerm.util_pos0-4"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.amb_indoorbooms_furnaceroom"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Furnace Pipe		//
+//				//
+
+"c2a5h.furnace_pipe"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5h.furnace.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.mt1.util_pos0-1"
+		"volume"	"0.68"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.amb_indoorbooms"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Maintenance 1	//
+//	   			//
+
+"c2a5h.maintenance1"
+{
+	"dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.indoors.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.amb_indoorbooms"
+		"volume"	"0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.mt1.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hgwy.util_pos2-3"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Walkway		//
+//				//
+
+"c2a5h.walkway"
+{
+        "dsp"			"3"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"90"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_fargunfire.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.indoor.battleamb_util"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.mt1.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hgwy.util_pos2-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hangar.util_pos4-7"
+		"volume"	"0.68"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Hangar		// 
+//				//
+
+"c2a5h.hangar"
+{
+        "dsp"			"3"
+	"dsp_volume"		"1.0"
+
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_wind3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_farboom.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"90"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_gunfire3.wav"
+	}
+
+	"playrandom"
+	{
+		"volume"	"0.7"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom5.wav"
+		}
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hangar.util_pos4-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hgwy.util_pos2-3"
+		"volume"	"0.68"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - securitybooth	//
+//				// 
+
+"c2a5h.securitybooth"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outside.base"
+		"volume"	"0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.hallways.base"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outdoor.battleamb_util"
+		"volume"	"0.25"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Tunnel 2		//
+
+"c2a5h.tunnel2"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.3"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c2a5i STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+// generic outside battle ambience utility
+
+"c2a5i.outdoor.battleamb_util"
+{
+	"playrandom"
+	{
+		"volume"	"0.7"
+		"pitch"		"90,110"
+		"time"		"30,50"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_150dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_farjet3.wav"
+		}
+	}
+
+	"playrandom"
+	{
+		"volume"	"0.7"
+		"pitch"		"90,110"
+		"time"		"8,20"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_boom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_boom2.wav"
+		}
+	}
+}
+
+// generic indoors battle ambience utility
+
+"c2a5i.indoor.battleamb_util"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom2.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom4.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom5.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom6.wav"
+		}
+	}
+}
+
+"c2a5i.amb_indoorbooms"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"8,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom1.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom3.wav"
+			"wave"	"BMS_ambience\soundscape\soundscape_indoorboom2.wav"
+		}
+	}
+}
+
+"c2a5i.tunnel.base"
+{
+	"dsp"			"6"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.65"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_large7.wav"
+		"attenuation"	"1.1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_med10.wav"
+		"attenuation"	"1.1"
+	}
+}
+
+"c2a5i.tunnel.base2"
+{
+	"dsp"			"6"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.65"
+		"pitch"		"100"
+		"wave"		"@BMS_ambience\room_ambience\r_ambience_large7.wav"
+		"attenuation"	"1.1"
+	}
+}
+
+"c2a5i.tunnel1"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.amb_indoorbooms"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tn1.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tn1.util_pos2-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_distantnoise1"
+		"volume"	"0.6"
+	}
+}
+
+"c2a5i.tunnel1a"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tn1.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tn1.util_pos2-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.amb_indoorbooms"
+		"volume"	"0.35"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_distantnoise1"
+		"volume"	"0.6"
+	}
+}
+
+"c2a5i.tunnel1b"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.amb_indoorbooms"
+		"volume"	"0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_distantnoise1"
+		"volume"	"0.6"
+	}
+}
+
+"c2a5i.tunnel_junction"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+	
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large3.wav"
+	}		
+	
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_mortars.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ob_fargunfire.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_wind3.wav"
+	}	
+}
+
+"c2a5i.tunnel2"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_distantnoise1"
+		"volume"	"0.6"
+	}
+}
+
+"c2a5i.tunnel2a"
+{
+	"dsp"			"6"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.tunnel.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"				"c2a5h.outside.base"
+		"volume"			"1.0"
+		"ambientpositionoverride"	"7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_miscamb"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5.util_distantnoise1"
+		"volume"	"0.6"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Map H - Outside 1		//
+//				//
+
+"c2a5i.outside"
+{
+	"dsp"			"129"
+	"dsp_volume"		"0.22"
+
+	"playsoundscape"
+	{
+		"name"		"c2a5h.outside.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.outside.util_pos0-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.outside.util_pos4"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c2a5i.outdoor.battleamb_util"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities			Map I - Tunnel1
+//		
+
+///////// info_targets /////////// 
+// i_tn1_pos0_pipes5
+// i_tn1_pos1_pipes5a
+
+"c2a5i.tn1.util_pos0-1"
+{
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"attenuation"	"1.18"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe5a.wav"
+		"attenuation"	"1.18"
+
+		"position"	"1"
+	}
+}
+
+///////// info_targets /////////// 
+// i_tn1_pos2_ehum1
+// i_tn1_pos3_ambmed3
+
+"c2a5i.tn1.util_pos2-3"
+{
+	"playlooping"
+	{
+		"volume"	"0.10"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.0"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"@bms_ambience/room_ambience/r_ambience_med3.wav"
+		"attenuation"	"1.0"
+
+		"position"	"3"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities			Map I - Outside Area
+//		
+
+///////// info_targets /////////// 
+// i_out_pos0_fan7
+// i_out_pos1_fan7a
+// i_out_pos2_fan7b
+
+// i_out_pos3_ehum1
+// i_out_pos4_ehum2
+
+"c2a5i.outside.util_pos0-3"
+{
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_objects/fans/fan7.wav"
+		"attenuation"	"1.18"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_objects/fans/fan7a.wav"
+		"attenuation"	"1.18"
+
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_objects/fans/fan7b.wav"
+		"attenuation"	"1.18"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.18"
+
+		"position"	"3"
+	}
+}
+
+"c2a5i.outside.util_pos4"
+{
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum2.wav"
+		"attenuation"	"1.18"
+
+		"position"	"4"
+	}
+}

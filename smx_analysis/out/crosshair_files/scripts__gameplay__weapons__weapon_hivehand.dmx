@@ -1,0 +1,67 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_HIVEHAND"
+{
+	"id" "elementid" "3240f285-6677-43a0-b8c7-2ea2b630b403"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_hgun.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_hgun_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_hgun.mdl"
+	"printname" "string" "Hivehand"
+	"primary_ammo" "string" "grenade_hornet"
+	"clip_size" "int" "-1"
+	"default_clip" "int" "8"
+	"weight" "int" "40"
+	"weight_multiplayer" "int" "40"
+	"bucket" "int" "3"
+	"bucket_position" "int" "3"
+
+	"bucket_controller" "int" "1"
+	"bucket_position_controller" "int" "2"
+
+	"anim_prefix" "string" "glock"
+	"item_flags" "int" "0"
+	"fov_viewmodel" "float" "65"
+	"muzzleflash_firstperson" "string" "weapon_hgun_muzzleflash"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "01129568-1123-41da-8eb0-84b99f4160b3"
+		"double_shot" "string" "weapon_hivehand.Double"
+		"double_shot_npc" "string" "weapon_hivehand.Double_NPC"
+		"empty" "string" "weapon_hivehand.Empty"
+		"single_shot" "string" "weapon_hivehand.Single"
+		"single_shot_npc" "string" "weapon_hivehand.Single_NPC"
+		"special1" "string" "weapon_hivehand.BackgroundLoop"
+	}
+	"primary_attack" "primary_attack"
+	{
+		"id" "elementid" "3e6b0045-d10f-4630-80c1-2de6d2b812cd"
+		"cycle" "float" "0.25"
+		"recoil" "recoil"
+		{
+			"id" "elementid" "ce55cf5a-6f2a-4b77-b81b-3846baa3f33d"
+			"min_snap_angles" "vector3" "-0.25 -0.15 0"
+			"max_snap_angles" "vector3" "-0.15 0.15 0"
+			"min_punch_angles" "vector3" "-0.5 -0.6 0"
+			"max_punch_angles" "vector3" "-0.25 0.6 0"
+			"min_punch_offset" "vector3" "0 0 0"
+			"max_punch_offset" "vector3" "0 0 0"
+		}
+	}
+	"secondary_attack" "secondary_attack"
+	{
+		"id" "elementid" "94b358aa-6575-4fc4-aa74-ca0ea3af5276"
+		"cycle" "float" "0.1"
+		"recoil" "recoil"
+		{
+			"id" "elementid" "7f0ac04b-64b0-488d-ab98-95f0e3965588"
+			"min_snap_angles" "vector3" "-0.25 -0.15 0"
+			"max_snap_angles" "vector3" "-0.15 0.15 0"
+			"min_punch_angles" "vector3" "-0.5 -0.6 0"
+			"max_punch_angles" "vector3" "-0.25 0.6 0"
+			"min_punch_offset" "vector3" "0 0 0"
+			"max_punch_offset" "vector3" "0 0 0"
+		}
+	}	
+}
+
+

@@ -1,0 +1,86 @@
+"npc_sounds_abrams.Load"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"100, 110"
+	"attenuation"	"0.4"
+	"wave"			"npc/abrams/abrams_reload.wav"
+	
+}
+
+"npc_sounds_abrams.Fire"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+
+	"rndwave"
+	{
+		"wave"	"npc/abrams/abrams_fire1.wav"
+		"wave"	"npc/abrams/abrams_fire2.wav"
+		"wave"	"npc/abrams/abrams_fire3.wav"
+		"wave"	"npc/abrams/abrams_fire4.wav"
+	}
+	
+}
+
+"npc_sounds_abrams.Idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"soundlevel"		"SNDLVL_80dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"npc/abrams/abrams_idle.wav"
+	
+}
+
+
+"npc_sounds_abrams.Turret"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"		"SNDLVL_120db"
+	"pitch"			"PITCH_NORM"
+	"wave"			"npc/abrams/abrams_turret.wav"
+	
+}
+
+"npc_sounds_abrams.MiniFire"
+{
+	"channel"		"CHAN_ITEM"
+	"pitch"			"95, 105"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_150dB"
+
+	"rndwave"
+	{
+		"wave"	"npc\lav\lav_fire1.wav"
+		"wave"	"npc\lav\lav_fire2.wav"
+		"wave"	"npc\lav\lav_fire3.wav"
+	}	
+}
+
+"npc_sounds_abrams.Treads"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"npc/abrams/abrams_Treads.wav"
+}
+
+"Bullets.AbramsNearmiss"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"			"75"
+
+	"rndwave"
+	{
+		"wave"	">weapons/fx/nearmiss/bulletLtoR11.wav"
+		"wave"	">weapons/fx/nearmiss/bulletLtoR13.wav"
+		"wave"	">weapons/fx/nearmiss/bulletLtoR14.wav"
+	}
+}

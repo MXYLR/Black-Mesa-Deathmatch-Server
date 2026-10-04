@@ -1,0 +1,200 @@
+=== CBlackMesaPlayer::FireBullets override @0x1047ea30 ===
+   0x1047ea30  push      ebp
+   0x1047ea31  mov       ebp, esp
+   0x1047ea33  push      esi
+   0x1047ea34  mov       esi, ecx
+   0x1047ea36  call      0x10475e00
+   0x1047ea3b  mov       ecx, dword ptr [0x107d9968]
+   0x1047ea41  fldz      
+   0x1047ea43  push      ecx
+   0x1047ea44  fstp      dword ptr [esp]
+   0x1047ea47  mov       eax, dword ptr [ecx]
+   0x1047ea49  push      0x1110c738
+   0x1047ea4e  push      0x1110c72c
+   0x1047ea53  push      1
+   0x1047ea55  push      esi
+   0x1047ea56  call      dword ptr [eax]
+   0x1047ea58  push      dword ptr [ebp + 8]
+   0x1047ea5b  mov       ecx, esi
+   0x1047ea5d  call      0x1011e530
+   0x1047ea62  mov       ecx, dword ptr [0x107d9968]
+   0x1047ea68  push      esi
+   0x1047ea69  mov       eax, dword ptr [ecx]
+   0x1047ea6b  call      dword ptr [eax + 4]
+   0x1047ea6e  pop       esi
+   0x1047ea6f  pop       ebp
+   0x1047ea70  ret       4
+   0x1047ea73  int3      
+   0x1047ea74  int3      
+   0x1047ea75  int3      
+   0x1047ea76  int3      
+   0x1047ea77  int3      
+   0x1047ea78  int3      
+   0x1047ea79  int3      
+   0x1047ea7a  int3      
+   0x1047ea7b  int3      
+   0x1047ea7c  int3      
+   0x1047ea7d  int3      
+   0x1047ea7e  int3      
+   0x1047ea7f  int3      
+   0x1047ea80  mov       eax, dword ptr [ecx + 0xc4]
+   0x1047ea86  shr       eax, 2
+   0x1047ea89  and       eax, 1
+   0x1047ea8c  ret       
+   0x1047ea8d  int3      
+   0x1047ea8e  int3      
+   0x1047ea8f  int3      
+   0x1047ea90  push      ebp
+   0x1047ea91  mov       ebp, esp
+   0x1047ea93  sub       esp, 0x20
+   0x1047ea96  push      ebx
+   0x1047ea97  push      esi
+   0x1047ea98  mov       esi, ecx
+   0x1047ea9a  mov       eax, dword ptr [esi + 0xc4]
+   0x1047eaa0  push      edi
+   0x1047eaa1  lea       edi, [esi + 0xc4]
+   0x1047eaa7  shr       eax, 2
+   0x1047eaaa  test      al, 1
+   0x1047eaac  je        0x1047eb61
+   0x1047eab2  mov       ebx, dword ptr [edi]
+   0x1047eab4  and       ebx, 0xfffffffb
+   0x1047eab7  cmp       dword ptr [edi], ebx
+   0x1047eab9  je        0x1047eae3
+   0x1047eabb  mov       al, byte ptr [edi - 0x70]
+   0x1047eabe  lea       ecx, [edi - 0xc4]
+   0x1047eac4  test      al, al
+   0x1047eac6  je        0x1047eace
+   0x1047eac8  or        byte ptr [ecx + 0x58], 1
+   0x1047eacc  jmp       0x1047eae1
+   0x1047eace  mov       edx, dword ptr [ecx + 0x18]
+   0x1047ead1  test      edx, edx
+   0x1047ead3  je        0x1047eae1
+   0x1047ead5  mov       eax, edi
+   0x1047ead7  sub       eax, ecx
+   0x1047ead9  mov       ecx, edx
+   0x1047eadb  push      eax
+   0x1047eadc  call      0x10054a30
+   0x1047eae1  mov       dword ptr [edi], ebx
+   0x1047eae3  mov       eax, dword ptr [esi]
+   0x1047eae5  mov       ecx, esi
+   0x1047eae7  mov       eax, dword ptr [eax + 0x11c]
+   0x1047eaed  call      eax
+   0x1047eaef  test      al, al
+   0x1047eaf1  je        0x1047eb61
+   0x1047eaf3  cmp       byte ptr [ebp + 8], 0
+   0x1047eaf7  je        0x1047eb61
+   0x1047eaf9  push      0x10725cd0
+   0x1047eafe  push      esi
+   0x1047eaff  lea       ecx, [ebp - 0x20]
+   0x1047eb02  call      0x101b3d80
+   0x1047eb07  mov       eax, dword ptr [esi + 0x18]
+   0x1047eb0a  test      eax, eax
+   0x1047eb0c  je        0x1047eb14
+   0x1047eb0e  movsx     eax, word ptr [eax + 6]
+   0x1047eb12  jmp       0x1047eb16
+   0x1047eb14  xor       eax, eax
+   0x1047eb16  fldz      
+   0x1047eb18  push      0
+   0x1047eb1a  push      ecx
+   0x1047eb1b  fstp      dword ptr [esp]
+   0x1047eb1e  push      0
+   0x1047eb20  push      0x10725cd0
+   0x1047eb25  push      eax
+   0x1047eb26  lea       eax, [ebp - 0x20]
+   0x1047eb29  push      eax
+   0x1047eb2a  call      0x10284760
+   0x1047eb2f  add       esp, 0x18
+   0x1047eb32  mov       ecx, esi
+   0x1047eb34  push      esi
+   0x1047eb35  push      esi
+   0x1047eb36  sub       esp, 0x14
+   0x1047eb39  mov       eax, esp
+   0x1047eb3b  push      0x1069acf4
+   0x1047eb40  mov       dword ptr [eax], 0
+   0x1047eb46  mov       dword ptr [eax + 0xc], 0xffffffff
+   0x1047eb4d  mov       dword ptr [eax + 0x10], 0
+   0x1047eb54  call      0x10474700
+   0x1047eb59  lea       ecx, [ebp - 0x20]
+   0x1047eb5c  call      0x102610b0
+   0x1047eb61  pop       edi
+   0x1047eb62  pop       esi
+   0x1047eb63  pop       ebx
+   0x1047eb64  mov       esp, ebp
+   0x1047eb66  pop       ebp
+   0x1047eb67  ret       4
+   0x1047eb6a  int3      
+   0x1047eb6b  int3      
+   0x1047eb6c  int3      
+   0x1047eb6d  int3      
+   0x1047eb6e  int3      
+   0x1047eb6f  int3      
+   0x1047eb70  push      ebp
+   0x1047eb71  mov       ebp, esp
+   0x1047eb73  sub       esp, 0x20
+   0x1047eb76  push      esi
+   0x1047eb77  mov       esi, ecx
+   0x1047eb79  cmp       byte ptr [esi + 0x1375], 0
+   0x1047eb80  je        0x1047ec49
+   0x1047eb86  cmp       byte ptr [esi + 0xe8], 0
+   0x1047eb8d  jne       0x1047ec49
+   0x1047eb93  cmp       byte ptr [esi + 0x94d], 0
+   0x1047eb9a  je        0x1047ec49
+   0x1047eba0  mov       ecx, dword ptr [0x1086c5cc]
+   0x1047eba6  mov       eax, dword ptr [ecx]
+   0x1047eba8  mov       eax, dword ptr [eax + 0xe0]
+   0x1047ebae  call      eax
+   0x1047ebb0  test      al, al
+   0x1047ebb2  je        0x1047ec49
+   0x1047ebb8  mov       eax, dword ptr [esi + 0xc4]
+   0x1047ebbe  shr       eax, 2
+   0x1047ebc1  test      al, 1
+   0x1047ebc3  jne       0x1047ec49
+   0x1047ebc9  push      4
+   0x1047ebcb  mov       ecx, esi
+   0x1047ebcd  call      0x1011d730
+   0x1047ebd2  cmp       byte ptr [ebp + 8], 0
+   0x1047ebd6  je        0x1047ec19
+   0x1047ebd8  push      0x10727174
+   0x1047ebdd  push      esi
+   0x1047ebde  lea       ecx, [ebp - 0x20]
+   0x1047ebe1  call      0x101b3d80
+   0x1047ebe6  mov       eax, dword ptr [esi + 0x18]
+   0x1047ebe9  test      eax, eax
+   0x1047ebeb  je        0x1047ebf3
+   0x1047ebed  movsx     eax, word ptr [eax + 6]
+   0x1047ebf1  jmp       0x1047ebf5
+   0x1047ebf3  xor       eax, eax
+   0x1047ebf5  fldz      
+   0x1047ebf7  push      0
+   0x1047ebf9  push      ecx
+   0x1047ebfa  fstp      dword ptr [esp]
+   0x1047ebfd  push      0
+   0x1047ebff  push      0x10727174
+   0x1047ec04  push      eax
+   0x1047ec05  lea       eax, [ebp - 0x20]
+   0x1047ec08  push      eax
+   0x1047ec09  call      0x10284760
+   0x1047ec0e  add       esp, 0x18
+   0x1047ec11  lea       ecx, [ebp - 0x20]
+   0x1047ec14  call      0x102610b0
+   0x1047ec19  push      esi
+   0x1047ec1a  push      esi
+   0x1047ec1b  sub       esp, 0x14
+   0x1047ec1e  mov       ecx, esi
+   0x1047ec20  mov       eax, esp
+   0x1047ec22  push      0x1069acd0
+   0x1047ec27  mov       dword ptr [eax], 0
+   0x1047ec2d  mov       dword ptr [eax + 0xc], 0xffffffff
+   0x1047ec34  mov       dword ptr [eax + 0x10], 0
+   0x1047ec3b  call      0x10474700
+   0x1047ec40  mov       al, 1
+   0x1047ec42  pop       esi
+   0x1047ec43  mov       esp, ebp
+   0x1047ec45  pop       ebp
+   0x1047ec46  ret       4
+   0x1047ec49  xor       al, al
+   0x1047ec4b  pop       esi
+   0x1047ec4c  mov       esp, ebp
+   0x1047ec4e  pop       ebp
+
+=== callers of 0x1047ea30 ===

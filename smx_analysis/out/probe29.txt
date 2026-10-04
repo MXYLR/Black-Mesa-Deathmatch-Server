@@ -1,0 +1,12 @@
+  vtable base 0x105d69d4  (COL 0x1076ff50)  slot[0x1034dd80] = 307  (0x4cc)
+     slots: 0x1011e530(FireBullets?) None ; 0x10067c00(HandleShotImpactingGlass) None
+     window [301..313]: ['301:100f93b0', '302:100f7e20', '303:100f9e20', '304:100f9dc0', '305:10073db0', '306:100fc410', '307:1034dd80', '308:1006c870', '309:100f8180', '310:100f8150', '311:100f8140', '312:100f6d80', '313:100f9270']
+  vtable base 0x105eae88  (COL 0x1077121c)  slot[0x1034dd80] = 307  (0x4cc)
+     slots: 0x1011e530(FireBullets?) None ; 0x10067c00(HandleShotImpactingGlass) None
+     window [301..313]: ['301:100f93b0', '302:100f7e20', '303:100f9e20', '304:100f9dc0', '305:10073db0', '306:100fc410', '307:1034dd80', '308:1006c870', '309:100f8180', '310:100f8150', '311:100f8140', '312:100f6d80', '313:100f9270']
+  vtable base 0x10625d78  (COL 0x10779c4c)  slot[0x1034dd80] = 307  (0x4cc)
+     slots: 0x1011e530(FireBullets?) None ; 0x10067c00(HandleShotImpactingGlass) None
+     window [301..313]: ['301:100f93b0', '302:100f7e20', '303:100f9e20', '304:100f9dc0', '305:10073db0', '306:100fc410', '307:1034dd80', '308:1006c870', '309:100f8180', '310:100f8150', '311:100f8140', '312:100f6d80', '313:100f9270']
+  vtable base 0x1073d70c  (COL 0x1079bf0c)  slot[0x1034dd80] = 307  (0x4cc)
+     slots: 0x1011e530(FireBullets?) None ; 0x10067c00(HandleShotImpactingGlass) None
+     window [301..313]: ['301:100f93b0', '302:100f7e20', '303:100f9e20', '304:100f9dc0', '305:10073db0', '306:100fc410', '307:1034dd80', '308:1006c870', '309:100f8180', '310:100f8150', '311:100f8140', '312:100f6d80', '313:100f9270']

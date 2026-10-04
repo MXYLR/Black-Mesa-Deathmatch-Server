@@ -1,0 +1,140 @@
+=== strings 0x1044a280..0x1044a300 (around xbox_reticle) ===
+  0x1044a280  "HUDAutoAim"
+  0x1044a28c  "vgui/hud/autoaim"
+  0x1044a2a0  "vgui/hud/xbox_reticle"
+  0x1044a2bc  "Panel"
+  0x1044a2c4  "TextEntry"
+  0x1044a2d0  "RichText"
+  0x1044a2dc  "panel"
+  0x1044a2e4  "CheckButtonChecked"
+
+=== "vgui/hud/" prefix 0x10493e74 refs ===
+  ref @0x10280e58 [.text]
+     0x10280e08  add       byte ptr [ecx + 0x10571d60], ah
+     0x10280e0e  xor       eax, ebp
+     0x10280e10  mov       dword ptr [ebp - 4], eax
+     0x10280e13  push      ebx
+     0x10280e14  push      esi
+     0x10280e15  mov       esi, dword ptr [ebp + 0xc]
+     0x10280e18  mov       ebx, ecx
+     0x10280e1a  push      edi
+     0x10280e1b  mov       edi, dword ptr [ebp + 8]
+     0x10280e1e  push      esi
+     0x10280e1f  push      edi
+     0x10280e20  call      0x10281340
+     0x10280e25  test      eax, eax
+     0x10280e27  je        0x1028101e
+     0x10280e2d  cmp       byte ptr [eax], 0
+     0x10280e30  je        0x1028101e
+     0x10280e36  mov       dword ptr [ebp - 0x110], 0x1040ccec
+     0x10280e40  mov       word ptr [ebp - 0x10c], 0
+     0x10280e49  mov       dword ptr [ebp - 8], 0
+     0x10280e50  push      eax
+     0x10280e51  lea       eax, [ebp - 0x110]
+     0x10280e57  push      0x10493e74
+     0x10280e5c  cmp       edi, 1
+     0x10280e5f  jne       0x10280e68
+     0x10280e61  push      0x10493e80
+     0x10280e66  jmp       0x10280e6d
+     0x10280e68  push      0x1044d76c
+     0x10280e6d  push      eax
+     0x10280e6e  call      0x102814c0
+     0x10280e73  mov       eax, dword ptr [0x106ec2b8]
+     0x10280e78  add       esp, 0x10
+     0x10280e7b  mov       ecx, 0x106ec2b8
+     0x10280e80  call      dword ptr [eax + 0x2c]
+     0x10280e83  test      eax, eax
+     0x10280e85  je        0x10280e9c
+     0x10280e87  lea       eax, [ebp - 0x10b]
+     0x10280e8d  push      eax
+     0x10280e8e  push      0x10493e8c
+     0x10280e93  call      dword ptr [0x104092ac]
+     0x10280e99  add       esp, 8
+     0x10280e9c  mov       ecx, dword ptr [0x1070508c]
+     0x10280ea2  lea       edx, [ebp - 0x10b]
+     0x10280ea8  push      edx
+     0x10280ea9  mov       eax, dword ptr [ecx]
+     0x10280eab  call      dword ptr [eax + 0x7c]
+     0x10280eae  mov       ecx, dword ptr [ebx + edi*4 + 0xc]
+     0x10280eb2  lea       edx, [ebp - 0x10b]
+     0x10280eb8  push      0
+     0x10280eba  push      0
+     0x10280ebc  push      0x104371d4
+     0x10280ec1  mov       dword ptr [ecx + esi*4], eax
+
+=== RTTI names containing "Weapon" (client classes) ===
+  0x10574778  .?AVC_BaseCombatWeapon@@
+  0x1057a140  .?AVCBaseHudWeaponSelection@@
+  0x1057aa08  .?AVC_BlackMesaBaseWeapon@@
+  0x1057aa7c  .?AVC_TEWeaponBullets@@
+  0x1057b488  .?AVCFlashyWeapon@@
+  0x1057b4a4  .?AVCProxyAnimatedWeaponSheen@@
+  0x1057c564  .?AVCHudWeaponPrimaryAmmo@@
+  0x1057c5b0  .?AVCHudWeaponSelection@@
+  0x1057c79c  .?AVC_Weapon_357@@
+  0x1057c7b8  .?AVC_BlackMesaBaseWeaponIronSights@@
+  0x1057c7e8  .?AVC_Weapon_Crossbow@@
+  0x1057c808  .?AVC_Weapon_Crowbar@@
+  0x1057c828  .?AVC_BlackMesaBaseWeaponMelee@@
+  0x1057c854  .?AVC_Weapon_Frag@@
+  0x1057c870  .?AVC_BlackMesaBaseWeaponThrown@@
+  0x1057c89c  .?AVC_Weapon_Glock@@
+  0x1057c8bc  .?AVC_WeaponAssassinGlock@@
+  0x1057c8e0  .?AVC_Weapon_Headcrab@@
+  0x1057c92c  .?AVC_Weapon_HiveHand@@
+  0x1057c94c  .?AVC_Weapon_MP5@@
+  0x1057c968  .?AVC_Weapon_RPG@@
+  0x1057c9a8  .?AVC_Weapon_Satchel@@
+  0x1057c9c8  .?AVC_Weapon_Shotgun@@
+  0x1057c9e8  .?AVC_Weapon_Snark@@
+  0x1057ca08  .?AVC_Weapon_Tau@@
+  0x1057ca24  .?AVC_Weapon_Tripmine@@
+  0x1057ca68  .?AVNetworkVar_m_IronsightTransitionTimer@C_BlackMesaBaseWeaponIronSights@@
+  0x1057cad8  .?AVC_Weapon_Gluon@@
+  (28 distinct)
+
+=== all vgui/ material-ish strings (broader) ===
+  0x10436ae4  vgui/hud/icon_commentary
+  0x1043a450  materials/vgui/%s/*.vmt
+  0x1043a468  vgui/%s/%s
+  0x1043a474  materials/vgui/%s/%s
+  0x10440ed8  vgui/inworldui
+  0x10440ee8  vgui/inworldui_opaque
+  0x10440f00  vgui/black
+  0x1044a28c  vgui/hud/autoaim
+  0x1044a2a0  vgui/hud/xbox_reticle
+  0x1044f668  vgui/icons/icon_voice_chat
+  0x104638c4  vgui/white
+  0x10472370  vgui\multiplayer\map_backgrounds
+  0x1048d79c  vgui/icons/icon_developer
+  0x1048d7b8  vgui/icons/icon_dominated
+  0x1048d7d4  vgui/icons/icon_nemesis
+  0x1048d7ec  vgui/icons/icon_placement_first
+  0x1048d80c  vgui/icons/icon_placement_second
+  0x1048d830  vgui/icons/icon_placement_third
+  0x1048e188  vgui/hud/damage_drown
+  0x1048e79c  vgui/hud/hud_hev
+  0x1048f9ac  vgui/hud/hud_widget01
+  0x10491030  vgui/white_additive
+  0x10491788  vgui/hud/hud_health
+  0x1049179c  vgui/hud/item_battery
+  0x104917b4  vgui/hud/damage_radiation
+  0x104917d0  vgui/hud/damage_%s
+  0x10492d58  vgui/hud/damage_fall
+  0x10493550  vgui/hud/hud_healpool
+  0x104939d8  vgui/hud/hud_dot
+  0x10493e74  vgui/hud/
+  0x104950e0  vgui/hud/item_longjump
+  0x10495e5c  vgui/hud/hud_widget_long_jump_seq
+  0x1049894c  vgui/screens/mortar/vgui_mortar_grid
+  0x10498974  vgui/screens/mortar/icon_mortar_ping
+  0x1049899c  vgui/screens/mortar/xhair
+  0x104989b8  vgui/screens/mortar/border
+  0x10499780  vgui/screens/mouse
+  0x104997b4  vgui/screens/tram/standby
+  0x104fdfc4  vgui/thumbnails_safezone
+  0x10506080  vgui/hud/800corner1
+  0x105060b0  vgui/hud/800corner2
+  0x105060e0  vgui/hud/800corner3
+  0x10506110  vgui/hud/800corner4
+  0x10512444  vgui/

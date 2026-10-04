@@ -1,0 +1,103 @@
+"detailmodelfx.txt"
+{
+	"MODELFX_BLOOD_RED"
+	{
+		"decals/bms_bloodsplatterFloor_001.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "2"
+			"blendfactor" "0.75"
+		}
+
+		"decals/bms_bloodsplatterFloor_002.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "2"
+			"blendfactor" "0.75"
+		}
+
+		"decals/bms_bloodsplatterFloor_003.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "2"
+			"blendfactor" "0.75"
+		}
+	}
+
+	"MODELFX_BLOOD_GREEN"
+	{
+		"decals/bms_bloodsplatterFloor_001b.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "2"
+			"blendfactor" "0.75"
+		}
+
+		"decals/bms_bloodsplatterFloor_002b.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "2"
+			"blendfactor" "0.75"
+		}
+
+		"decals/bms_bloodsplatterFloor_003b.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "2"
+			"blendfactor" "0.75"
+		}
+	}
+
+	"MODELFX_BULLSQUID_SLIME"
+	{
+		"decals/slime_splat_02.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "6"
+			"blendfactor" "1"
+		}
+
+		"decals/slime_splat_03.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "6"
+			"blendfactor" "1"
+		}
+
+		"decals/slime_splat_04.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "6"
+			"blendfactor" "1"
+		}
+
+		"decals/slime_splat_04.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "6"
+			"blendfactor" "1"
+		}
+	}
+
+	"MODELFX_SHOCK"
+	{
+		"effects/model_Shock.vtf"
+		{
+			"scale_min"	"0.75"
+			"scale_max"	"1.75"
+			"blendmode" "6"
+			"blendfactor" "0.75"
+			"pulse"		"4"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+=== who reaches the CBlackMesaFireBullets penetration module? ===
+  shot-loop entry 0x1034dd80 callers:
+     (none in code)
+  record loop 0x1034f250 callers:
+     @0x1034e2af  (fn ~0x1034dd80)
+  multi-trace bullet 0x1034fb10 callers:
+     @0x1034f7f7  (fn ~0x1034f250)
+
+=== 0x800 (SF_BREAK_NO_BULLET_PENETRATION) immediates in bullet fn 0x1011e530..0x1011f500 ===
+   (scan done)
+
+=== who references spawnflags & 0x800 style anywhere? (test/and imm 0x800 near 0x1011exx/0x10067xxx) ===
+   bullet fn: 0 hits
+   GlassImpact disp: 0 hits
+
+=== ammo id immediates in 0x1034fb10 (0x4d/0x57/0x59 = 77/87/89) ===
+   hits: 0

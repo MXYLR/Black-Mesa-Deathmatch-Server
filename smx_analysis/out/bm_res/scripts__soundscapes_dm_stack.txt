@@ -1,0 +1,150 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP DM_STACK STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+"stack.outside.battleamb"
+{
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.6"
+		"pitch"		"95,105"
+
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\soundscape_boom1.wav"
+			"wave"	"bms_ambience\soundscape\soundscape_boom2.wav"
+		}
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// DM_STACK	//
+
+"stack.outside.main"
+{
+	"dsp"				"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_outdoorbattle2.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"stack.outside.battleamb"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"stk.out1.util_pos0-7"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Stack - Outside 
+//									stk_out1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// stk_out1_pos0_truckidle3	
+// stk_out1_pos1_ehum1
+
+// stk_out1_pos2_industrialamb
+// stk_out1_pos3
+
+// stk_out1_pos4
+// stk_out1_pos5_ind22
+
+// stk_out1_pos6_pflow2
+// stk_out1_pos7_pflow2a
+
+"stk.out1.util_pos0-7"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_objects/vehicles/truck_idle3.wav"
+		"volume"		"0.7"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"0"
+	}
+
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"volume"		"0.25"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+
+		"position"		"1"
+	}
+
+	"playlooping"		
+	{
+		"wave"			"@bms_ambience/room_ambience/r_ambience_industrial2.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"0.7"
+
+		"position"		"2"
+	}
+	
+	// assigning 2 sounds to position 5, to achieve layering
+	// this is not a mistake
+	
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.1"
+
+		"position"		"5"
+	}
+	
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_ind22.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"0.9"
+
+		"position"		"5"
+	}
+
+	"playlooping"		
+	{
+		"wave"			")bms_ambience/room_ambience/r_ambience_pipes1.wav"
+		"volume"		"0.45"
+		"pitch"			"55"
+		"attenuation"	"1.1"
+
+		"position"		"6"
+	}
+
+	"playlooping"		
+	{
+		"wave"			")bms_ambience/room_ambience/r_ambience_pipes1a.wav"
+		"volume"		"0.45"
+		"pitch"			"55"
+		"attenuation"	"1.1"
+
+		"position"		"7"
+	}		
+}

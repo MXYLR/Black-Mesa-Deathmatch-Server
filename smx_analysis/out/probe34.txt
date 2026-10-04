@@ -1,0 +1,23 @@
+=== "CSniperBullet": ['0x1073d014', '0x1082e834', '0x1082e892']
+=== "StriderTracer": ['0x1073f3b0']
+=== "CBlackMesaFireBullets": ['0x1072764c', '0x1082d9ec']
+=== "CBullet": ['0x1081b53c']
+=== "npc_sniper": ['0x1073e528']
+=== RTTI ".?AVCSniperBullet": ['0x1082e830']
+   COL 0x1079bec0 -> ptrs []
+   COL 0x1079bef0 -> ptrs ['0x1079bed8']
+      vtable @0x1079bedc
+        slots in sniper module range: []
+=== RTTI ".?AVCProtoSniper": ['0x1082e814']
+   COL 0x1079bf18 -> ptrs []
+   COL 0x1079bf64 -> ptrs ['0x1079bf30']
+      vtable @0x1079bf34
+        slots in sniper module range: []
+   COL 0x1079bf8c -> ptrs []
+
+=== "StriderTracer" refs ===
+  str @0x1073f3b0 "StriderTracer"
+     dword ref @0x104b9807 [.text]
+     dword ref @0x104beb82 [.text]
+     CODE imm @0x104b9807
+     CODE imm @0x104beb82

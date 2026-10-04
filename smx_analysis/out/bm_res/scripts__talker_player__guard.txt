@@ -1,0 +1,117 @@
+
+// ============================================================================================
+// ============================================================================================
+response GuardHurt
+{
+	scene "scenes/npc/security/pain01.vcd"
+//	scene "scenes/npc/security/pain02.vcd"
+//	scene "scenes/npc/security/pain03.vcd"
+//	scene "scenes/npc/security/pain04.vcd"
+//	scene "scenes/npc/security/pain05.vcd"
+	scene "scenes/npc/security/pain06.vcd"
+//	scene "scenes/npc/security/pain07.vcd"
+	scene "scenes/npc/security/pain08.vcd"
+	scene "scenes/npc/security/pain09.vcd"
+//	scene "scenes/npc/security/pain10.vcd"
+	scene "scenes/npc/security/pain11.vcd"
+	scene "scenes/npc/security/pain12.vcd"
+	scene "scenes/npc/security/pain13.vcd"
+	scene "scenes/npc/security/pain14.vcd"
+	scene "scenes/npc/security/pain15.vcd"
+	scene "scenes/npc/security/pain16.vcd"
+//	scene "scenes/npc/security/ow01.vcd"
+//	scene "scenes/npc/security/ow02.vcd"
+	scene "scenes/npc/security/ow03.vcd"
+//	scene "scenes/npc/security/ow04.vcd"
+	scene "scenes/npc/security/ow05.vcd"
+//	scene "scenes/npc/security/ow06.vcd"
+//	scene "scenes/npc/security/ow07.vcd"
+}
+
+rule GuardHurt
+{
+	criteria ConceptHurt IsGuard IsNotDrowning
+	response GuardHurt
+}
+
+Rule GuardHurt
+{
+	criteria ConceptDeath IsGuard
+	Response GuardHurt
+}
+
+// ============================================================================================
+// ============================================================================================
+response GuardDominatedPlayer
+{
+
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate01.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate02.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate03.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate04.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate05.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate06.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate07.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate08.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate09.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate10.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate11.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_dominate12.vcd"
+	scene "scenes/npc/security/gotone05.vcd" 
+	scene "scenes/npc/security/gotone06.vcd" 
+	scene "scenes/npc/security/gotone08.vcd" 
+	scene "scenes/npc/security/gotone10.vcd"
+//	scene "scenes/npc/security/gotone11.vcd" 
+//	scene "scenes/npc/security/gotone13.vcd" 
+	scene "scenes/npc/security/fantastic01.vcd" 
+//	scene "scenes/npc/security/fantastic02.vcd" 
+	scene "scenes/npc/security/fantastic03.vcd" 
+//	scene "scenes/npc/security/fantastic04.vcd" 
+	scene "scenes/npc/security/fantastic05.vcd" 
+	scene "scenes/npc/security/niceshot01.vcd" 
+	scene "scenes/npc/security/niceshot02.vcd"
+	scene "scenes/npc/security/niceshot03.vcd" 
+	scene "scenes/npc/security/niceshot04.vcd" 
+	scene "scenes/npc/security/niceshot05.vcd"
+	scene "scenes/npc/security/niceshot06.vcd" 
+	scene "scenes/npc/security/niceshot07.vcd" 
+}
+
+rule GuardDominatedPlayer
+{
+	criteria ConceptKilledPlayer IsGuard IsNotSpeaking IsDominated
+	response GuardDominatedPlayer
+}
+
+response GuardRevengedPlayer
+{
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge01.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge02.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge03.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge04.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge05.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge06.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge07.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge08.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge09.vcd"
+	scene "scenes/player_deathmatch/security_guard/guard_mp_revenge10.vcd"
+}
+
+rule GuardRevengedPlayer
+{
+	criteria ConceptKilledPlayer IsGuard IsNotSpeaking IsRevenge
+	response  GuardRevengedPlayer
+}
+
+// ============================================================================================
+// ============================================================================================
+Response GuardIdleExpression
+{
+	scene "scenes/Expressions/colleague_angry_combat_01.vcd"
+}
+
+Rule GuardIdleExpression
+{
+	criteria ConceptExpression IsGuard
+	Response GuardIdleExpression
+}

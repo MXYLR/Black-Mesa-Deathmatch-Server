@@ -1,0 +1,138 @@
+image base 0x10000000
+
+######################################################################
+## string: bullet_ff_through_walls
+######################################################################
+
+-- string VA 0x106a904c  (section .rdata)
+   dword refs: 1
+     ref @0x10016a8b  [.text]
+     --- context ---
+       0x10016a2b  fcomp     dword ptr [ebx - 0x463cef75]
+     --- data-addr operands in window ---
+
+
+######################################################################
+## string: GlassImpact
+######################################################################
+
+-- string VA 0x105d78e8  (section .rdata)
+   dword refs: 3
+     ref @0x10067ce2  [.text]
+     --- context ---
+       0x10067c82  inc       esi
+       0x10067c83  or        bl, dh
+       0x10067c85  addps     xmm0, xmm1
+       0x10067c88  movss     dword ptr [ebp - 0x70], xmm0
+       0x10067c8d  call      0x1005a9b0
+       0x10067c92  mov       eax, dword ptr [ebp - 0x6c]
+       0x10067c95  movss     xmm0, dword ptr [eax + 0x18]
+       0x10067c9a  movss     dword ptr [ebp - 0x148], xmm0
+       0x10067ca2  movss     xmm0, dword ptr [eax + 0x1c]
+       0x10067ca7  movss     dword ptr [ebp - 0x144], xmm0
+       0x10067caf  movss     xmm0, dword ptr [eax + 0x20]
+       0x10067cb4  lea       eax, [ebp - 0x160]
+       0x10067cba  movss     dword ptr [ebp - 0x140], xmm0
+       0x10067cc2  movss     xmm0, dword ptr [esi]
+       0x10067cc6  movss     dword ptr [ebp - 0x160], xmm0
+       0x10067cce  movss     xmm0, dword ptr [esi + 4]
+       0x10067cd3  movss     dword ptr [ebp - 0x15c], xmm0
+       0x10067cdb  movss     xmm0, dword ptr [esi + 8]
+       0x10067ce0  push      eax
+       0x10067ce1  push      0x105d78e8
+       0x10067ce6  movss     dword ptr [ebp - 0x158], xmm0
+     --- data-addr operands in window ---
+     ref @0x10067e1a  [.text]
+     --- context ---
+       0x10067dba  dec       ebp
+       0x10067dbb  pushfd    
+       0x10067dbc  fld       dword ptr [eax + 0x34]
+       0x10067dbf  lea       eax, [ebp - 0x60]
+       0x10067dc2  fstp      dword ptr [esp]
+       0x10067dc5  push      eax
+       0x10067dc6  call      dword ptr [esi + 0x1ec]
+       0x10067dcc  movss     xmm0, dword ptr [ebp - 0x48]
+       0x10067dd1  lea       eax, [ebp - 0x160]
+       0x10067dd7  movss     dword ptr [ebp - 0x148], xmm0
+       0x10067ddf  movss     xmm0, dword ptr [ebp - 0x44]
+       0x10067de4  movss     dword ptr [ebp - 0x144], xmm0
+       0x10067dec  movss     xmm0, dword ptr [ebp - 0x40]
+       0x10067df1  movss     dword ptr [ebp - 0x140], xmm0
+       0x10067df9  movss     xmm0, dword ptr [ebp - 0x54]
+       0x10067dfe  movss     dword ptr [ebp - 0x160], xmm0
+       0x10067e06  movss     xmm0, dword ptr [ebp - 0x50]
+       0x10067e0b  movss     dword ptr [ebp - 0x15c], xmm0
+       0x10067e13  movss     xmm0, dword ptr [ebp - 0x4c]
+       0x10067e18  push      eax
+       0x10067e19  push      0x105d78e8
+       0x10067e1e  movss     dword ptr [ebp - 0x158], xmm0
+     --- data-addr operands in window ---
+     ref @0x10192da6  [.text]
+     --- context ---
+       0x10192d46  sbb       bh, bh
+     --- data-addr operands in window ---
+
+
+######################################################################
+## string: func_breakdmg_bullet
+######################################################################
+
+-- string VA 0x106554c8  (section .rdata)
+   dword refs: 1
+     ref @0x1000e388  [.text]
+     --- context ---
+       0x1000e328  int3      
+       0x1000e329  int3      
+       0x1000e32a  int3      
+       0x1000e32b  int3      
+       0x1000e32c  int3      
+       0x1000e32d  int3      
+       0x1000e32e  int3      
+       0x1000e32f  int3      
+       0x1000e330  call      0x102b1f50
+       0x1000e335  push      0x10655f88
+       0x1000e33a  push      0x107de054
+       0x1000e33f  mov       ecx, eax
+       0x1000e341  mov       edx, dword ptr [eax]
+       0x1000e343  call      dword ptr [edx]
+       0x1000e345  ret       
+       0x1000e346  int3      
+       0x1000e347  int3      
+       0x1000e348  int3      
+       0x1000e349  int3      
+       0x1000e34a  int3      
+       0x1000e34b  int3      
+       0x1000e34c  int3      
+       0x1000e34d  int3      
+       0x1000e34e  int3      
+       0x1000e34f  int3      
+       0x1000e350  push      0
+       0x1000e352  push      0x4000
+       0x1000e357  push      0x10658a08
+       0x1000e35c  push      0x102502a0
+       0x1000e361  push      0x10658a38
+       0x1000e366  mov       ecx, 0x1087ec38
+       0x1000e36b  call      0x1052e860
+       0x1000e370  push      0x105b4810
+       0x1000e375  call      0x1059036a
+       0x1000e37a  pop       ecx
+       0x1000e37b  ret       
+       0x1000e37c  int3      
+       0x1000e37d  int3      
+       0x1000e37e  int3      
+       0x1000e37f  int3      
+       0x1000e380  push      0
+       0x1000e382  push      0x105d5e80
+       0x1000e387  push      0x106554c8
+       0x1000e38c  mov       ecx, 0x1087e880
+       0x1000e391  call      0x1052ec80
+     --- data-addr operands in window ---
+       1000e335 push     0x10655f88   -> data 0x10655f88 .rdata
+       1000e33a push     0x107de054   -> data 0x107de054 .data
+       1000e357 push     0x10658a08   -> data 0x10658a08 .rdata
+       1000e361 push     0x10658a38   -> data 0x10658a38 .rdata
+       1000e366 mov      ecx, 0x1087ec38   -> data 0x1087ec38 .data
+       1000e382 push     0x105d5e80   -> data 0x105d5e80 .rdata
+       1000e38c mov      ecx, 0x1087e880   -> data 0x1087e880 .data
+
+

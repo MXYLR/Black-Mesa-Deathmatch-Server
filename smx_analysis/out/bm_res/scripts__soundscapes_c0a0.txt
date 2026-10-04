@@ -1,0 +1,1091 @@
+//Inbound: Welcome to Black Mesa! Where hazardous chemical spills are a daily occurance!
+
+//================================================================================================================================
+//						Base Utility Soundscapes - GENERAL USE
+//================================================================================================================================
+//
+// These .base soundscapes are building blocks to establish the baseline environmental ambience for the entire chapter, and
+// are meant for insertion into the proper main use soundscapes. They are NOT meant for actual .vmf soundscape entity consumption.
+// For the main soundscapes proper, please scroll down to  "Main Map Soundscapes - Map A"
+
+"ib.a.huge_tunnels"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.huge_tunnel.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.station.base"
+{
+	"dsp"	"0"
+	
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_station1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_ppl1.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience\soundscape\soundscape_station1.wav"
+	}
+}
+
+"ib.area9hub.base"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large6.wav"
+	}
+}
+
+"ib.huge_tunnel.base"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large6.wav"
+	}
+}
+
+"ib.tunnel_small.base"
+{
+	"dsp"	"5"
+	"dsp_volume" "1.0"
+	
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+}
+
+"ib.factoryarea.base"
+{
+	"dsp" "10"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large5.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_tramIndustrial1.wav"
+	}
+}
+
+"ib.outsidevista.base"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_desertday1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_wind2.wav"
+	}
+}
+
+"ib.cave.base"
+{
+	"dsp"	"24"
+	"dsp_volume" "1.0"	
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_wind1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_wind5.wav"
+	}
+}
+
+"ib.tunnels_door.base"
+{
+	"dsp"	"9"
+	"dsp_volume" "1.0"
+	
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large4.wav"
+	}
+}
+
+"ib.bridge_room.base"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large2.wav"
+	}
+}
+
+"ib.reactor_room.base"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large6.wav"
+	}
+}
+
+"ib.vat_room.base"
+{
+	"dsp"	"19"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_industrial5.wav"
+	}
+}
+
+"ib.am.catwalk.base"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c0a0a STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+
+//Positional Utility, Tunnel 1 - Section1 (a_t1s1, for shorthand)
+
+"a_t1s1.util_pos0-1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"1"
+	}
+}
+
+//Positional Utility, Tunnel 1 - Section2 (a_t1s2, for shorthand)
+
+"a_t1s2.util_pos6-7"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"7"
+	}
+}
+
+//Positional Utility, Tunnel 1 - Section3 (a_t1s3, for shorthand)
+
+"a_t1s3.util_pos0-1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"1"
+	}
+}
+
+"a_t1s3.util_pos2-3"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.23"
+		"pitch"		"100"
+		"wave"		"ambient/levels/labs/equipment_beep_loop1.wav"
+		"soundlevel"	"SNDLVL_70dB"
+		"position"	"3"
+	}
+}
+
+"a_t1s3.util_pos5only"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"soundlevel"	"SNDLVL_NORM"
+
+		"position"	"5"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes - Map A
+//================================================================================================================================
+
+"ib.a.station_start"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.station.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"a_t1s1.util_pos0-1"
+		"volume"	"0.85"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// A Tunnel 1 - Section 1
+
+"ib.a.tunnel1_section1"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"a_t1s1.util_pos0-1"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// A Tunnel 1 - Section 2
+
+"ib.a.tunnel1_section2"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"a_t1s2.util_pos6-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"a_t1s3.util_pos5only"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// A Tunnel 1 - Section 3
+
+"ib.a.tunnel1_section3"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"a_t1s3.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"a_t1s3.util_pos2-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"a_t1s3.util_pos5only"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// A - Area 9 Hub Vista
+
+"ib.a.area9hub"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.area9hub.base"
+		"volume"	"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// A Tunnel 1 - Section 3
+
+"ib.a.tunnel2"
+{
+	"dsp"	"5"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c0a0b STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+
+// Map B Positional Utilities
+
+"b_t1.util_pos0only"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe4a.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"0"
+	}
+}
+
+"b_t2.util_pos0-1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrical1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_misc10.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"1"
+	}
+}
+
+// Factory Area Positionals
+
+"b_fct.util_pos2-3"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.45"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"3"
+	}
+}
+
+// B - Tunnel 3 Positionals
+
+"b_t3.util_pos6-7"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"7"
+	}
+}
+
+// B - Vista 1 Positionals
+
+"b_vsta1.util_pos7only"
+{
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"7"
+	}
+}  
+
+// B - Cave 1 Positionals
+
+"b_cave1.util_pos0-1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"ambient/gas/steam_loop1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"1"
+	}
+}
+
+// B - Tunnel Doors
+
+"b_tdoors.util_pos0-1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"BMS_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"pitch"		"100"
+		"wave"		"bms_objects/vmachine/vending_hum.wav"
+		"soundlevel"	"SNDLVL_85dB"
+
+		"position"	"1"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes - Map B
+//================================================================================================================================
+
+"ib.b.tunnel1"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_t1.util_pos0only"
+		"volume"	"1.0"
+	}
+}
+
+"ib.b.factoryarea_s1"
+{
+	"dsp" "10"
+	"dsp_volume" "1.0"
+
+	"playsoundscape"
+	{
+		"name"		"ib.factoryarea.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.b.tunnel2"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_t2.util_pos0-1"
+		"volume"	"1.0"
+	}
+}
+
+"ib.b.factoryarea_s2"
+{
+	"dsp" "10"
+	"dsp_volume" "1.0"
+
+	"playsoundscape"
+	{
+		"name"		"ib.factoryarea.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_fct.util_pos2-3"
+		"volume"	"1.0"
+	}
+}
+
+"ib.b.tunnel3"
+{
+	"dsp"	"7"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_t3.util_pos6-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_fct.util_pos2-3"
+		"volume"	"1.0"
+	}
+}
+
+// FIRST VISTA - BEAUTIFUL SCENERY AND ALL SORTS OF SUCH OTHER CRAP. MUSIC!!!
+
+"ib.b.outsidevista1"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.outsidevista.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_vsta1.util_pos7only"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_cave1.util_pos0-1"
+		"volume"	"1.0"
+	}
+}
+
+// FIRST B CAVE
+
+"ib.b.cave1"
+{
+	"dsp"	"24"
+	"dsp_volume" "1.0"	
+
+	"playsoundscape"
+	{
+		"name"		"ib.cave.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_cave1.util_pos0-1"
+		"volume"	"1.0"
+	}
+}
+
+// FIRST VISTA - BEAUTIFUL SCENERY AND ALL SORTS OF SUCH OTHER CRAP. HELICOPTER!!!
+
+"ib.b.outsidevista2"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.outsidevista.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.b.cave2"
+{
+	"dsp"	"24"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.cave.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_tdoors.util_pos0-1"
+		"volume"	"1.0"
+	}
+}
+
+"ib.b.tunnels_door"
+{
+	"dsp"	"9"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnels_door.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"b_tdoors.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c_t1.util_pos6-7"
+		"volume"	"1.0"
+	}
+}
+
+"ib.b.tunnels_door2"
+{
+	"dsp"	"9"
+	"dsp_volume" "1.0"	
+
+	"playsoundscape"
+	{
+		"name"		"ib.tunnels_door.base"
+		"volume"	"1.0"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 						MAP c0a0c STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+// C - Tunnel 1 Positionals
+
+"c_t1.util_pos6-7"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"7"
+	}
+}
+
+"c_t1.util_pos3-5"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.22"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.22"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.22"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe4a.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"5"
+	}
+}
+
+// C - Tunnel 3 Positionals
+
+"c_t3.util_pos5-7"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe4a.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"bms_objects/fans/fan4.wav"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"	"7"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes - Map C
+//================================================================================================================================
+
+// NOT USED 
+
+"ib.c.tunnels_door"
+{
+	"dsp"	"9"
+	"dsp_volume" "1.0"	
+
+	"playsoundscape"
+	{
+		"name"		"ib.tunnels_door.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.c.tunnel1"
+{
+	"dsp"	"5"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c_t1.util_pos6-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c_t1.util_pos3-5"
+		"volume"	"1.0"
+	}
+}
+
+"ib.c.reactor_room"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+
+	"playsoundscape"
+	{
+		"name"		"ib.reactor_room.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.c.tunnel2"
+{
+	"dsp"	"5"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.c.bridge_room"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+
+	"playsoundscape"
+	{
+		"name"		"ib.bridge_room.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.c.tunnel3" 
+{
+	"dsp"	"5"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c_t3.util_pos5-7"
+		"volume"	"1.0"
+	}
+}
+
+"ib.c.vat_room"
+{
+	"dsp"	"19"
+	"dsp_volume" "1.0"
+
+	"playsoundscape"
+	{
+		"name"		"ib.vat_room.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.c.tunnel4"
+{
+	"dsp"	"5"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"ib.tunnel_small.base"
+		"volume"	"1.0"
+	}
+}
+
+"ib.am_entrance"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+
+	"playsoundscape"
+	{
+		"name"		"ib.am.catwalk.base"
+		"volume"	"1.0"
+	}
+}

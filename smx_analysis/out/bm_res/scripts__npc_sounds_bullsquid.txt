@@ -1,0 +1,172 @@
+"grenade_spit.Hit"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/splat1.wav"
+		"wave"	"npc/bullsquid/splat2.wav"
+	}
+}
+
+"npc_bullsquid.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+	"wave"			"npc/bullsquid/detect1.wav"
+	"wave"			"npc/bullsquid/detect2.wav"
+	"wave"			"npc/bullsquid/detect3.wav"
+	}
+}
+
+"npc_bullsquid.Bite"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/attack1.wav"
+		"wave"	"npc/bullsquid/attack2.wav"
+	}
+}
+
+"npc_bullsquid.Eat"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/eat1.wav"
+		"wave"	"npc/bullsquid/eat2.wav"
+	}
+}
+
+"npc_bullsquid.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"npc/bullsquid/die.wav"
+		"wave"			"npc/bullsquid/die2.wav"
+		"wave"  		"npc/bullsquid/pain2.wav"
+		"wave"  		"npc/bullsquid/pain4.wav"
+	}
+}
+
+"npc_bullsquid.Idle"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/idle1.wav"
+		"wave"	"npc/bullsquid/idle2.wav"
+		"wave"	"npc/bullsquid/idle3.wav"
+		"wave"	"npc/bullsquid/idle4.wav"
+	}
+}
+
+"npc_bullsquid.Pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/pain1.wav"
+		"wave"  "npc/bullsquid/pain2.wav"
+		"wave"  "npc/bullsquid/pain3.wav"
+		"wave"  "npc/bullsquid/pain4.wav"
+		"wave"  "npc/bullsquid/pain5.wav"
+	}
+}
+
+"npc_bullsquid.Spit"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/goo_attack1.wav"
+		"wave"	"npc/bullsquid/goo_attack2.wav"
+		"wave"	"npc/bullsquid/goo_attack3.wav"
+	}
+}
+
+"npc_bullsquid.Whip"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/tailswing1.wav"
+		"wave"	"npc/bullsquid/tailswing2.wav"
+	}
+}
+
+// xen death sequence // intro to hacker tree in map b.
+
+"sfx.bullsquid.xenb.stab01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/bullsquid/death_agony01.wav"
+}
+
+"sfx.bullsquid.xenb.stab02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"npc/bullsquid/death_agony02.wav"
+}
+
+"sfx.bullsquid.xenb.bodybreak"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_80dB"
+	"wave"			"physics\body\body_medium_break3.wav"
+}
+
+"sfx.bullsquid.xenb.thud01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"physics\body\body_medium_impact_hard5.wav"
+}
+
+"sfx.bullsquid.xenb.thud02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"physics\body\body_medium_impact_hard4.wav"
+}

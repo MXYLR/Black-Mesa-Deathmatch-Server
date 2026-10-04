@@ -1,0 +1,87 @@
+
+// ============================================================================================
+// ============================================================================================
+response ScientistFemaleHurt
+{
+	scene "scenes/npc/scientist_female01/scifemale_ow01.vcd"
+	scene "scenes/npc/scientist_female01/scifemale_ow02.vcd"
+	scene "scenes/npc/scientist_female01/scifemale_ow03.vcd"
+	scene "scenes/npc/scientist_female01/scifemale_ow04.vcd"
+	scene "scenes/npc/scientist_female01/scifemale_ow05.vcd"
+	scene "scenes/npc/scientist_female01/scifemale_ow06.vcd"
+	scene "scenes/npc/scientist_female01/scifemale_ow09.vcd"
+}
+
+rule ScientistFemaleHurt
+{
+	criteria ConceptHurt IsScientistFemale IsNotDrowning
+	response ScientistFemaleHurt
+}
+
+Rule ScientistFemaleDeath
+{
+	criteria ConceptDeath IsScientistFemale
+	Response ScientistFemaleHurt
+}
+
+// ============================================================================================
+// ============================================================================================
+response ScientistFemaleDominatedPlayer
+{
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate01.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate02.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate03.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate04.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate06.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate12.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate13.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate15.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate16.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_dominate17.vcd"
+	scene "scenes/npc/scientist_female01/scifemale_yeah01.vcd" 
+	scene "scenes/npc/scientist_female01/scifemale_yeah02.vcd" 
+	scene "scenes/npc/scientist_female01/scifemale_yeah03.vcd" 
+	scene "scenes/npc/scientist_female01/scifemale_yeah04.vcd"
+}
+
+rule ScientistFemaleDominatedPlayer
+{
+	criteria ConceptKilledPlayer IsScientistFemale IsNotSpeaking IsDominated
+	response ScientistFemaleDominatedPlayer
+}
+
+response ScientistFemaleRevengedPlayer
+{
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge01.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge02.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge03.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge04.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge05.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge06.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge08.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge09.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge10.vcd"
+	scene "scenes/player_deathmatch/female_scientist/scifem_mp_revenge11.vcd"
+	scene "scenes/npc/scientist_female01/scifemale_yeah01.vcd" 
+	scene "scenes/npc/scientist_female01/scifemale_yeah02.vcd" 
+	scene "scenes/npc/scientist_female01/scifemale_yeah03.vcd" 
+	scene "scenes/npc/scientist_female01/scifemale_yeah04.vcd"
+}
+
+rule ScientistFemaleRevengedPlayer
+{
+	criteria ConceptKilledPlayer IsScientistFemale IsNotSpeaking IsRevenge
+	response ScientistFemaleRevengedPlayer
+}
+
+// ============================================================================================
+// ============================================================================================
+Response ScientistFemaleIdleExpression
+{
+	scene "scenes/Expressions/colleague_angry_combat_01.vcd"
+}
+Rule ScientistFemaleIdleExpression
+{
+	criteria ConceptExpression IsScientistFemale
+	Response ScientistFemaleIdleExpression
+}

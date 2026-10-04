@@ -1,0 +1,2 @@
+=== indirect references to vtable slot +0x4CC in .text: 0 ===
+

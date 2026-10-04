@@ -1,0 +1,327 @@
+//////////////////// Level TEST Soundscapes ////////////////////
+
+"Nothing"
+{
+	"dsp"	"0"
+}
+
+"test.lab.outside"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_NORM"
+
+		"position"	"0"
+
+		"wave"		"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_NORM"
+
+		"position"	"1"
+
+		"wave"		"bms_ambience\machine_ambience\m_ambience_print1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_80dB"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med12.wav"
+	}
+}
+
+"test.lab.inside"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"	"0"
+
+		"wave"		"bms_ambience\machine_ambience\m_ambience_comp3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"	"1"
+
+		"wave"		"bms_ambience\machine_ambience\m_ambience_motor3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med12.wav"
+	}
+}
+
+"test.positional01"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"	"1"
+
+		"wave"		"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+	}
+}
+
+"test.positional02"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"	"3"
+
+		"wave"		"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+	}
+}
+
+"test.max01"
+{
+	"dsp"	"9"
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_xen_boids01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_xen1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_xen4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_xen5.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_large9.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"1.0"
+	}
+}
+
+// Soundscape Utilities for TowerTop Portal
+
+"c4a3d.spire_voices_amb.util"
+{
+	"playrandom"
+	{
+		"time"			"4,12"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_75dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"			"xen\nil_towertop\towertop_horror1.wav"
+			"wave"			"xen\nil_towertop\towertop_horror2.wav"
+			"wave"			"xen\nil_towertop\towertop_horror3.wav"	
+		}
+	}
+}
+"c4a3d.spire_voices.random_pos.util"
+{
+	"playrandom"
+	{
+		"time"			"1,7"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90dB"
+		"position"		"random"
+		"rndwave"
+		{
+			"wave"			")xen\nil_towertop\towertop_vo_app.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_bdtf2.wav"	
+			"wave"			"<xen\nil_towertop\towertop_vo_depot1.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_depot2.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_depot3.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_ev1.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_ev2.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_groundzero.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_lc_tele1.wav"
+			"wave"			")xen\nil_towertop\towertop_vo_tc_shutdown.wav"
+			"wave"			")xen\nil_towertop\towertop_vo_tcfyr1.wav"
+			"wave"			")xen\nil_towertop\towertop_vo_tcfyr2.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_thankgod.wav"
+		}
+		
+	}
+}
+
+"c4a3d.spire_voices.util"
+{
+	"playrandom"
+	{
+		"time"			"1,7"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_90dB"
+		"rndwave"
+		{
+			"wave"			")xen\nil_towertop\towertop_vo_app.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_bdtf2.wav"	
+			"wave"			"<xen\nil_towertop\towertop_vo_depot1.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_depot2.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_depot3.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_ev1.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_ev2.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_groundzero.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_lc_tele1.wav"
+			"wave"			")xen\nil_towertop\towertop_vo_tc_shutdown.wav"
+			"wave"			")xen\nil_towertop\towertop_vo_tcfyr1.wav"
+			"wave"			")xen\nil_towertop\towertop_vo_tcfyr2.wav"
+			"wave"			"<xen\nil_towertop\towertop_vo_thankgod.wav"
+		}
+		
+	}
+}
+
+// version of "c4a3d.spire" that employs the random tower top vo sounds
+
+"c4a3d.spire.v1"
+{
+	"dsp"				"21"
+	"dsp_volume"		"1.0"
+	"fadetime"			"3.0"
+
+//  Utility For Disembodied Voices of the Past	
+	
+	"playsoundscape"
+	{
+		"name"					"c4a3d.spire_voices_amb.util"
+		"volume"				"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"					"c4a3d.spire_voices.util"
+		"volume"				"0.75"
+		"positionoverride"		"7"
+	}	
+
+//  Main Mix Portion of the Soundscape	
+	
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_outdoor1_mix.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb5a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb7a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c4a3d.util.boids_medium"
+		"volume"		"0.9"
+	}
+
+//  Positional Sounds	
+	
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"soundlevel"	"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire1.wav"
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"soundlevel"	"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire2.wav"
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire3.wav"
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire4.wav"
+		"position"		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach40.wav"
+		"position"		"4"
+	}
+}

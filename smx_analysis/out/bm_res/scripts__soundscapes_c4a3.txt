@@ -1,0 +1,6407 @@
+// Chapter 17 INTERLOPER:
+//
+// c4a3
+//
+//////////////////// Level Soundscapes ////////////////////
+//
+//================================================================
+// 			MAP c4a3a STARTS HERE!!!
+//================================================================
+//
+//================================================================
+//		Baseline Utility Soundscapes - Map A
+//================================================================
+//
+// The following utilities below provide the building blocks for the sound aesthetic in Interloper A , aka the tower's exterior areas, and where needed, any enclosed structures.
+//
+// They are are used repeatedly throughout the MAIN soundscapes (listed below), mixed at different volumes depending on the need.
+//
+// PLEASE NOTE:
+// All generic XEN utility soundscapes for will be found in "soundscapes_c4a1.txt"
+//
+
+"c4a3a.util.base"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_xen1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_disaster_rumble5.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb37b.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+"c4a3a.util.base02"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_xen1.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_disaster_rumble5.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49b.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+
+//--------boid ambience utility ------------
+
+"c4a3a.util.boids_far01"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_xen_boids01.wav"
+		"attenuation"		"ATTN_IDLE"
+	}
+}
+
+//-------- garg utilities ------------
+
+"c4a3a.util.garg_far01"
+{
+	"dsp"	"0"
+
+	"playrandom"
+	{
+		"time"		"8,20"
+		"volume"	"0.45"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_80db"
+
+		"rndwave"
+		{
+			"wave"	"xen/soundscape/garg_xen_far01.wav"
+			"wave"	"xen/soundscape/garg_xen_far02.wav"
+			"wave"	"xen/soundscape/garg_xen_far03.wav"
+			"wave"	"xen/soundscape/garg_xen_far04.wav"
+			"wave"	"xen/soundscape/garg_xen_far05.wav"
+			"wave"	"xen/soundscape/garg_xen_far06.wav"
+			"wave"	"xen/soundscape/garg_xen_far07.wav"
+		}
+	}
+}
+
+// faster, more talky gargs.
+
+"c4a3a.util.garg_far01a"
+{
+	"dsp"	"0"
+
+	"playrandom"
+	{
+		"time"		"6,14"
+		"volume"	"0.65"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_80db"
+
+		"rndwave"
+		{
+			"wave"	"xen/soundscape/garg_xen_far01.wav"
+			"wave"	"xen/soundscape/garg_xen_far02.wav"
+			"wave"	"xen/soundscape/garg_xen_far03.wav"
+			"wave"	"xen/soundscape/garg_xen_far04.wav"
+			"wave"	"xen/soundscape/garg_xen_far05.wav"
+			"wave"	"xen/soundscape/garg_xen_far06.wav"
+			"wave"	"xen/soundscape/garg_xen_far07.wav"
+		}
+	}
+}
+
+// The Gargs are Pissed they didn't get you during the chase.
+
+"c4a3a.util.garg_far01b"
+{
+	"dsp"	"0"
+
+	"playrandom"
+	{
+		"time"		"1.5,8"
+		"volume"	"1.00"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_90db"
+
+		"rndwave"
+		{
+			"wave"	"xen/soundscape/garg_xen_far01.wav"
+			"wave"	"xen/soundscape/garg_xen_far02.wav"
+			"wave"	"xen/soundscape/garg_xen_far03.wav"
+			"wave"	"xen/soundscape/garg_xen_far04.wav"
+			"wave"	"xen/soundscape/garg_xen_far05.wav"
+			"wave"	"xen/soundscape/garg_xen_far06.wav"
+			"wave"	"xen/soundscape/garg_xen_far07.wav"
+		}
+	}
+}
+
+//-------- Tower Top ambience utilities ------------
+
+"c4a3.util.towermantas_far01"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.75"
+		"pitch"		"100"
+		"wave"		"@xen/soundscape/towermantas_far01.wav"
+	}
+}
+
+"c4a3.util.towerenergyexp"
+{
+	"dsp"	"0"
+
+	"playrandom"
+	{
+		"time"		"6,14"
+		"volume"	"0.5, 0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80db"
+
+		"rndwave"
+		{
+			"wave"	"@ambient/explosions/exp1.wav"
+			"wave"	"@ambient/explosions/exp2.wav"
+			"wave"	"@ambient/atmosphere/thunder1.wav"
+			"wave"	"@ambient/atmosphere/thunder2.wav"
+			"wave"	"@ambient/atmosphere/thunder3.wav"
+			"wave"	"@ambient/atmosphere/thunder4.wav"
+		}
+	}
+}
+
+//================================================================
+//     //END OF// Baseline Utility Soundscapes - Map A
+//================================================================
+//
+//
+//
+//
+//
+//================================================================
+//		Positional Utility SoundScapes -  Map A
+//================================================================
+//---------------------------------------------------------------------
+
+
+// This utility has random positions. Wind bursts.
+
+"c4a3a.util.valleywinds"
+{
+	"dsp"	"0"
+
+	"playrandom"
+	{
+		"time"		"5,10"
+		"volume"	"0.45"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_75db"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"		"ambient\wind\wind_med1.wav"
+			"wave"		"ambient\wind\wind_med2.wav"
+			"wave"		"ambient\wind\wind_snippet1.wav"
+			"wave"		"ambient\wind\wind_snippet3.wav"
+			"wave"		"ambient\wind\wind_snippet4.wav"
+			"wave"		"ambient\wind\wind_snippet5.wav"
+		}
+	}
+}
+
+//================================================================
+//	     //END OF// Positional Utility SoundScapes - Map A
+//================================================================
+//
+//
+//================================================================================================================================
+//	     C4A3A - MAIN USE SOUNDSCAPES
+//================================================================================================================================
+// DEV NOTE:
+//  
+// The soundscapes listed below are listed in chonological order for the most part.
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Coming out of the tunnel, we are greeted with our ultimate object, The INTERLOPER TOWER. 
+
+// We start utilizing the first waterfall utility here.
+
+"c4a3a.int.reveal.pre"
+{
+	"dsp"	"6"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb9a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb37a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.base"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.boids_far01"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.1"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.1"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.1"
+	}
+}
+
+"c4a3a.int.reveal"
+{
+	"dsp"	"0"
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.boids_far01"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"1.0"
+	}
+
+// right most waterfall (far sound)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"0"
+	}
+
+// middle waterfall (far sound)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"1"
+	}
+
+// left waterfall (far sound)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l2.wav"
+		"position"	"2"
+	}
+
+// right most waterfall (close sound)
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19.wav"
+		"position"	"3"
+	}
+
+// middle waterfall (close sound)
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"4"
+	}
+
+// left waterfall (close sound)
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19b.wav"
+		"position"	"5"
+	}
+}
+
+"c4a3a.int.coneledge"
+{
+	"dsp"	"0"
+
+	"playsoundscape"
+	{
+		"name"		"c4a3a.util.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c4a3a.util.boids_far01"
+		"volume"	"0.1"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c4a3a.util.garg_far01"
+		"volume"	"0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c4a3.util.towerenergyexp"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c4a3.util.towermantas_far01"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c4a3a.int.coneledge.util_pos"
+		"volume"	"1.0"
+	}
+}
+
+"c4a3a.int.coneledge.util_pos"
+{
+	"dsp"	"0"
+
+//waterfall close sound
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19b.wav"
+		"position"	"0"
+	}
+
+//waterfall far sound
+	"playlooping"
+	{
+		"volume"		"0.46"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"1"
+	}
+
+//fan sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fan1.wav"
+		"position"	"2"
+	}
+
+//waterfall sound at the back of the room
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"3"
+	}
+}
+
+"c4a3a.int.plugroom"
+{
+	"dsp"	"0"
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.base02"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.boids_far01"
+		"volume"	"0.05"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.15"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.10"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"c4a3a.int.coneledge.util_pos"
+		"volume"	"0.25"
+	}
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Now entering "VortVille"
+//
+// With these next few soundscapes,
+//
+// We stop utilizing the first waterfall positional utility, and switch over to the second waterfall positional utility. 
+// The next few soundscapes carefully hand over the info_targets to each other, as we transition indoor to outdoor, and vice-versa.
+// The volume of the second waterfall utility is adjusted on a case by case basis.
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// "Vortville interiors, we dampen things out a bit, except for the lowend base rumbles
+
+"c4a3a.village_indoors"
+{
+	"dsp"	"0"
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.base02"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.20"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.15"
+	}
+
+//waterfall far sound
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water7.wav"
+		"position"	"1"
+	}
+}
+
+"c4a3a.village"
+{
+	"dsp"	"0"
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.boids_far01"
+		"volume"	"0.15"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.20"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.5"
+	}
+}
+
+"c4a3a.village_vent"
+{
+	"dsp"	"0"
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.base02"
+		"volume"	"0.1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb70b.wav"
+	}
+
+}
+
+// We exit "Vortville" thru the lift, now we get the second waterfall positional utility in full force.
+
+"c4a3a.village_exodus"
+{
+	"dsp"	"0"
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.boids_far01"
+		"volume"	"0.12"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.20"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"1.0"
+	}
+
+//waterfall close sound from top of falls behind player
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19.wav"
+		"position"	"0"
+	}
+
+//waterfall far sound from behind player
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"1"
+	}
+
+//water sound coming from point of rock
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"2"
+	}
+
+//waterfall sound coming from under grate
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"3"
+	}
+
+//water sound at top of incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water17.wav"
+		"position"	"4"
+	}
+
+//waterfall sound coming from large metal dam
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"5"
+	}
+}
+
+
+
+"c4a3a.valleycave1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.08"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb13a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.valleywinds"
+		"volume"	"0.8"
+	}
+
+//waterfall sound coming from large metal dam (from previous soundscape)
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"0"
+	}
+
+//water sound at top of incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water17.wav"
+		"position"	"1"
+	}
+
+//water sound top of next incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water15.wav"
+		"position"	"2"
+	}
+
+//water sound top of next incline, start of flats
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water12.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water18.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"7"
+	}
+}
+
+
+"c4a3a.valleycave2"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.08"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb13a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.valleywinds"
+		"volume"	"0.6"
+	}
+
+//water sound position 6 from previous
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water18.wav"
+		"position"	"0"
+	}
+
+//water sound position 7 from previous
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"1"
+	}
+
+//waterfall sound bottom of falls
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"2"
+	}
+
+//waterfall sound top of falls
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"3"
+	}
+
+//water sound at top of incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"4"
+	}
+
+//water fall sound near end of map
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"5"
+	}
+}
+
+
+//================================================================
+// 		MAP c4a3a1 STARTS HERE!!!
+//================================================================
+
+
+//0-water top of slope behind player start
+//1-water bottom of first falls
+//2-water top of first falls
+//3-water at root/tunnel
+//4-water at Y 
+//5-water at small falls next to root you climb
+//6-water bottom of larger falls
+//7-water top of larger falls
+
+"c4a3a1.prechasecanyon"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb13a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.valleywinds"
+		"volume"	"0.4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water10.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_r.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"7"
+	}
+}
+
+
+"c4a3a1.gargchase1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01b"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.4"
+	}
+
+
+// water behind player drop down point
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water2.wav"
+		"position"	"0"
+	}
+
+// water top of first incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"1"
+	}
+
+// water under the root
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"2"
+	}
+
+// water bottom of falls
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"3"
+	}
+
+// water top of falls on the right passing by
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"4"
+	}
+
+// water bottom of incline at root
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"5"
+	}
+
+// water middle of incline around root
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water11.wav"
+		"position"	"6"
+	}
+
+// water top of incline at root
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water1.wav"
+		"position"	"7"
+	}
+}
+
+
+"c4a3a1.gargchase2"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01b"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.5"
+	}
+
+// water behind player drop down point position 7 of last
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water1.wav"
+		"position"	"0"
+	}
+
+// water where the player drop down point is
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"1"
+	}
+
+// wind sound in open pit
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"ambient\wind\wind1.wav"
+		"position"	"2"
+	}
+}
+
+// in preparation for the jump, we start using the last waterfall utility here.
+
+"c4a3a1.garg2tunnel1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01b"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.3"
+	}
+
+// wind sound in open pit same as previous soundscape
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"ambient\wind\wind1.wav"
+		"position"	"0"
+	}
+}
+
+
+"c4a3a1.gargcliff1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb13a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01b"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.valleywinds"
+		"volume"	"0.6"
+	}
+}
+
+
+
+"c4a3a1.gargchase3"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01b"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.4"
+	}
+
+// water on corner near root on left side of player
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"0"
+	}
+
+// water at bottom of incline first root
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water2.wav"
+		"position"	"1"
+	}
+
+// water at mid point vine you jump through
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"2"
+	}
+
+// water at point you climb up on vine
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water18.wav"
+		"position"	"3"
+	}
+
+// water at point you land after jump (bottom of incline)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"4"
+	}
+
+// water at top of incline where roots are
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water12.wav"
+		"position"	"5"
+	}
+
+// water at large bend to right
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water16.wav"
+		"position"	"6"
+	}
+
+// water point in front of horizontal slot jump
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water17.wav"
+		"position"	"7"
+	}
+}
+
+
+"c4a3a1.gargchase4"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01b"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.5"
+	}
+
+//water on bend location behind player after jumping through horizontal slot
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water16.wav"
+		"position"	"0"
+	}
+
+// water in front of horizontal jump slot
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water17.wav"
+		"position"	"1"
+	}
+
+// waterfall on left side (facing direction of proper travel)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"2"
+	}
+
+// waterfall on right side (facing direction of proper travel)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"3"
+	}
+
+// water at mid point of pool
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water12.wav"
+		"position"	"4"
+	}
+}
+
+
+"c4a3a1.gargend1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01b"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.5"
+	}
+
+//waterfall on right (top of falls, that would go down to death)
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"0"
+	}
+
+//waterfall on left (top of falls, that would go down to death)
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_r.wav"
+		"position"	"1"
+	}
+
+//waterfall bottom on right
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"2"
+	}
+
+//waterfall top on right
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"3"
+	}
+
+//waterfall bottom on left
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"4"
+	}
+
+//waterfall top on left
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19.wav"
+		"position"	"5"
+	}
+
+//water at mid section crossing to jump pad
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"6"
+	}
+
+//water at mid section of upper ledge heading to caveish area
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water2.wav"
+		"position"	"7"
+	}
+}
+
+
+"c4a3a1.gargrivertunnel"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3a.util.garg_far01b"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.5"
+	}
+
+// water behind you from previous soundscape
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water2.wav"
+		"position"	"0"
+	}
+
+// water at top of first incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water2.wav"
+		"position"	"1"
+	}
+
+// water at middle of second incline around corner
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"2"
+	}
+
+// water at top of second incline near corner
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"3"
+	}
+
+//water a bottom of third incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water10.wav"
+		"position"	"4"
+	}
+
+//water a top of third incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"5"
+	}
+}
+
+
+
+"c4a3a1.towerentrance1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.9"
+	}
+
+
+//water a top of third incline from previous soundscape
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"0"
+	}
+
+//waterfall right facing tower
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_r.wav"
+		"position"	"1"
+	}
+
+//waterfall middle facing tower
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"2"
+	}
+
+//waterfall left facing tower
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"3"
+	}
+
+//water sound for middle of pool
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water17.wav"
+		"position"	"4"
+	}
+
+//up top on left side
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19.wav"
+		"position"	"5"
+	}
+
+
+}
+
+
+// left side soundscape facing tower
+"c4a3a1.towerentranceleft"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.8"
+	}
+
+
+//waterfall t1-left 
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_r.wav"
+		"position"	"0"
+	}
+
+//waterfall t1-mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"1"
+	}
+
+//waterfall t2-left
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"2"
+	}
+
+//waterfall t2-middle
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"3"
+	}
+
+//waterfall t3-far left (leftmost)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"4"
+	}
+
+//waterfall t3-left-mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19.wav"
+		"position"	"5"
+	}
+
+//waterfall t3-mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r2.wav"
+		"position"	"6"
+	}
+
+//waterfall for rightside t2 
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water16.wav"
+		"position"	"7"
+	}
+}
+
+
+// right side soundscape facing tower
+"c4a3a1.towerentranceright"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.8"
+	}
+
+
+//waterfall t1-right
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_r.wav"
+		"position"	"0"
+	}
+
+//waterfall t1-mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"1"
+	}
+
+//waterfall t2-far right (right most)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water16.wav"
+		"position"	"2"
+	}
+
+//waterfall t2-right mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water12.wav"
+		"position"	"3"
+	}
+
+//waterfall t2-mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"4"
+	}
+
+//waterfall t3-far right
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"5"
+	}
+
+//waterfall t3-right mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"6"
+	}
+
+//waterfall t3-mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r2.wav"
+		"position"	"7"
+	}
+}
+
+
+"c4a3a1.towerentrancetop"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb1b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb35b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towerenergyexp"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.8"
+	}
+
+
+//waterfall t3-mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"0"
+	}
+
+//waterfall t2-mid
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"1"
+	}
+
+//waterfall t3-right
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_r.wav"
+		"position"	"2"
+	}
+
+//waterfall t3-left
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"3"
+	}
+
+//water sound coming from tunnel
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"4"
+	}
+
+}
+
+
+"c4a3a1.towertunnel1"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb56b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb49b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"c4a3.util.towermantas_far01"
+		"volume"	"0.1"
+	}
+
+
+//waterfall t3-mid (previous soundscape)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"0"
+	}
+
+//water sound coming from tunnel (previous soundscape)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"1"
+	}
+
+//water sound plateau in cave
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"2"
+	}
+
+//water sound further up in area not accessible
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water12.wav"
+		"position"	"3"
+	}
+
+//waterfall sound coming from outside the other opening
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"4"
+	}
+
+//water sound in second tube on bottom of incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water2.wav"
+		"position"	"5"
+	}
+
+//water sound at top of incline heading to level change
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water15.wav"
+		"position"	"6"
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//================================================================
+// 		MAP c4a3b STARTS HERE!!!
+//================================================================
+
+
+
+
+
+"c4a3.suckyvent"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb39c.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb33c.wav"
+	}
+}
+
+"c4a3b.entrance"
+{
+	"dsp"				"0"
+	"dsp_volume"			"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb56b.wav"
+	}
+
+//water sound in second tube on bottom of incline (previous soundscape)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water15.wav"
+		"position"	"0"
+	}
+
+//water sound mid point incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"1"
+	}
+
+//water sound top incline before soundscape change
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"2"
+	}
+
+//water sound of waterfalls coming from next room
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"3"
+	}
+}
+
+"c4a3b.entrance2"
+{
+	"dsp"				"0"
+	"dsp_volume"			"1.0"
+
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb56b.wav"
+	}
+
+//water sound from previous soundscape on top of incline
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"0"
+	}
+
+//water sound in middle of room
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"1"
+	}
+
+//water sound of left waterfall
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"2"
+	}
+
+//water sound of right waterfall
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"3"
+	}
+
+//water sound top of ramp near explody barrels
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water16.wav"
+		"position"	"4"
+	}
+
+//water sound at back of room behind player near the 2 bars
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"5"
+	}
+
+//water fall near vent exit
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"6"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3b.ventway"
+{
+	"dsp"				"0"
+	"dsp_volume"			"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb56a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water9.wav"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"0"
+	}
+
+//waterfall sound from previous soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_l.wav"
+		"position"	"1"
+	}
+
+//vent sucky sound 2
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent2.wav"
+		"position"	"2"
+	}
+
+//waterfall underplayer 
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_r.wav"
+		"position"	"3"
+	}
+
+//console with vorts in viewing room
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine4.wav"
+		"position"	"4"
+	}
+}
+
+
+"c4a3b.chamber.btm"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//waterfall underplayer (previous soundscape from behind player)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_medium_r.wav"
+		"position"	"0"
+	}
+
+//water sound center of room
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water4.wav"
+		"position"	"1"
+	}
+
+//waterfall sound on side of map
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"2"
+	}
+
+//water standing sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water2.wav"
+		"position"	"3"
+	}
+
+//water standing sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water1.wav"
+		"position"	"4"
+	}
+
+//big red machine in middle (direction facing when entering chamber)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_110dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"5"
+	}
+
+//left side room machinery sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_110dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach02.wav"
+		"position"	"6"
+	}
+
+//right side room machinery sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_110dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach18.wav"
+		"position"	"7"
+	}
+}
+
+
+
+"c4a3b.chamber.puz1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//waterfall sound on side of map (from previous soundscape)
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"0"
+	}
+
+//alien console - main console (grab from xen c)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine1.wav"
+		"position"	"1"
+	}
+
+//alien console ledge 1 (grab from xen c)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine2.wav"
+		"position"	"2"
+	}
+
+//green churning vat sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach15.wav"
+		"position"	"3"
+	}
+
+//big red machine (center) (pos 5 from btm)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"4"
+	}
+
+//sound coming from right side (pos 7 from btm)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach18.wav"
+		"position"	"5"
+	}
+
+//console ledge 2
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine3.wav"
+		"position"	"6"
+	}
+
+//console ledge 3
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine4.wav"
+		"position"	"7"
+	}
+
+}
+
+
+"c4a3b.chamber.puz2"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//waterfall sound on side of map (from previous soundscape)
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"0"
+	}
+
+//lower left side console
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine2.wav"
+		"position"	"1"
+	}
+
+//main console
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine1.wav"
+		"position"	"2"
+	}
+
+//green vat sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach15.wav"
+		"position"	"3"
+	}
+
+//big red machine (center) (pos 5 from btm)
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"4"
+	}
+
+//sound coming from left side (pos 6 from btm)
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach02.wav"
+		"position"	"5"
+	}
+}
+
+
+"c4a3b.chamber.puz3"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//main console
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine1.wav"
+		"position"	"0"
+	}
+
+//upper console
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine2.wav"
+		"position"	"1"
+	}
+
+//lower console
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine3.wav"
+		"position"	"2"
+	}
+
+//vat previous
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach15.wav"
+		"position"	"3"
+	}
+
+//vat sound current
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach15b.wav"
+		"position"	"4"
+	}
+
+//big red machine (center) (pos 5 from btm)
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"5"
+	}
+
+//puzzle 4 sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach02.wav"
+		"position"	"6"
+	}
+
+}
+
+"c4a3b.tunnel"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb56a.wav"
+	}
+
+//waterfall in drop down tunnel (later in map)
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"0"
+	}
+
+//water in drop down tunnel (later in map)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water2.wav"
+		"position"	"1"
+	}
+
+//vent sound in drop down tunnel (later in map)
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"6"
+	}
+}
+
+
+"c4a3b.chamber.puz4"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//main console
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine1.wav"
+		"position"	"0"
+	}
+
+//energy tower 1
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach24.wav"
+		"position"	"1"
+	}
+
+//energy tower 2
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach40.wav"
+		"position"	"2"
+	}
+
+//right machine (one you climb through)
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach53.wav"
+		"position"	"3"
+	}
+
+//left machine
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach22.wav"
+		"position"	"4"
+	}
+
+//big red machine (center) (pos 5 from btm)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"5"
+	}
+
+//left side room machinery sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach02.wav"
+		"position"	"6"
+	}
+
+//right side room machinery sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach18.wav"
+		"position"	"7"
+	}
+}
+
+
+
+"c4a3b.chamber.puz5"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//vat sound close - the one changed to green by popping
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach15.wav"
+		"position"	"0"
+	}
+
+//vat sound far - the one that stays red
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach15b.wav"
+		"position"	"1"
+	}
+
+//energy towers 1/2 from previous soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach40.wav"
+		"position"	"3"
+	}
+
+//big red machine (center) (pos 5 from btm)
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"4"
+	}
+}
+
+
+"c4a3b.chamber.puz6"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//fan1 sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fan1b.wav"
+		"position"	"0"
+	}
+
+//fan2 sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fan1.wav"
+		"position"	"1"
+	}
+
+//vat sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach15.wav"
+		"position"	"2"
+	}
+
+//air vent sound
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"3"
+	}
+
+//big red machine (center) (pos 5 from btm)
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"4"
+	}
+
+//waterfall sound coming out of hole
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"5"
+	}
+
+//second sound on big red machine
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach59.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach61.wav"
+		"position"	"7"
+	}
+}
+
+
+
+"c4a3b.tunnel.exit"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb56a.wav"
+	}
+
+
+}
+
+
+
+
+
+
+//================================================================
+// 		MAP c4a3b1 STARTS HERE!!!
+//================================================================
+
+
+
+
+
+"c4a3b1.canyon"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb56d.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb60.wav"
+	}
+
+//water sound still
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water4.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water6.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water12.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water13.wav"
+		"position"	"4"
+	}
+}
+
+"c4a3b1.chamber1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb59.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb65.wav"
+	}
+
+//water still from previous soundscape
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water13.wav"
+		"position"	"0"
+	}
+
+//water still at next grate across room
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water12.wav"
+		"position"	"1"
+	}
+
+//water move sound at bottom of incline from tunnel1
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water7.wav"
+		"position"	"2"
+	}
+
+//console sound near fans
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine3.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water5.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water6.wav"
+		"position"	"5"
+	}
+
+//fan sounds was water: "bms_ambience\room_ambience\r_ambience_water15.wav"
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fan1.wav"
+		"position"	"6"
+	}
+
+//fan sounds  was water: "bms_ambience\room_ambience\r_ambience_water14.wav"
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fan1b.wav"
+		"position"	"7"
+	}
+}
+
+
+"c4a3b1.chamber1b"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb59.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb65.wav"
+	}
+
+//water slight move sound from previous soundscape (pos7)
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water14.wav"
+		"position"	"0"
+	}
+
+//water slight move
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"1"
+	}
+
+//water slight move at base of up/down machine
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"2"
+	}
+
+//waterfall base
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19.wav"
+		"position"	"3"
+	}
+
+//waterfall upper
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"4"
+	}
+
+//water sound across the room on opposite grate leading to tunnel
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water17.wav"
+		"position"	"5"
+	}
+
+//console sound above elevator
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine2.wav"
+		"position"	"6"
+	}
+
+//fan sound
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fan1b.wav"
+		"position"	"7"
+	}
+
+}
+
+
+"c4a3b1.tunnel1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb70a.wav"
+	}
+
+//water move sound at bottom of incline 
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water7.wav"
+		"position"	"0"
+	}
+
+//water sound at back end of map
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water16.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine3.wav"
+		"position"	"2"
+	}
+}
+
+"c4a3b1.chamber2"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb59.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb65.wav"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fan1b.wav"
+		"position"	"3"
+	}
+
+//console main sound
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine1.wav"
+		"position"	"4"
+	}
+
+//sludge pool above control room
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water4.wav"
+		"position"	"5"
+	}
+}
+
+"c4a3b1.tunnel2"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb70a.wav"
+	}
+}
+
+
+"c4a3b1.chamber1c"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb59.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb65.wav"
+	}
+
+//water from room
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water17.wav"
+		"position"	"0"
+	}
+
+//waterfall sound
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water5.wav"
+		"position"	"1"
+	}
+
+//suckyvent sound
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"2"
+	}
+
+}
+
+
+"c4a3b1.insidecapsule"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb74.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb65.wav"
+	}
+
+//suckyvent sound
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"0"
+	}
+}
+
+
+"c4a3b1.chamber2b"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb59.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb65.wav"
+	}
+
+//energy coil at top of room
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"0"
+	}
+
+//fire
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\object_ambience\o_ambience_disaster_fire4.wav"
+		"position"	"1"
+	}
+
+//water flow left
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water6.wav"
+		"position"	"2"
+	}
+
+//waterfall right
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"3"
+	}
+
+}
+
+
+
+
+
+"c4a3b1.waterchamber"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water3.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water16.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"4"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water18.wav"
+		"position"	"6"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================================================================
+// 		MAP c4a3b2 STARTS HERE!!!
+//================================================================
+
+
+
+
+"c4a3b2.waterway"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water13.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water16.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water18.wav"
+		"position"	"2"
+	}
+}
+
+
+"c4a3b2.cavern1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//water sound from previous soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water13.wav"
+		"position"	"0"
+	}
+
+//water sound middle flow
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water15.wav"
+		"position"	"1"
+	}
+
+//waterfall sound
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"2"
+	}
+
+//upper tier water flow
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water17.wav"
+		"position"	"3"
+	}
+
+//upper waterfall
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"4"
+	}
+}
+
+"c4a3b2.tunnelsmall"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//waterfall sound pos2 from cavern1
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"0"
+	}
+}
+
+"c4a3b2.tunnelmedium"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+//upper tier water flow pos3 from cavern1
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water17.wav"
+		"position"	"0"
+	}
+
+//upper waterfall pos4 from cavern1
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_r.wav"
+		"position"	"1"
+	}
+
+//waterfall sound pos2 from cavern1
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_waterfall01_hard_l.wav"
+		"position"	"2"
+	}
+}
+
+"c4a3b2.chamber1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb62.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb64.wav"
+	}
+
+//grate at back of room
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water19.wav"
+		"position"	"0"
+	}
+
+//water sound coming from rocks under pipes
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water18.wav"
+		"position"	"1"
+	}
+
+//waterfall sound up above 
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water14.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water15.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water13.wav"
+		"position"	"4"
+	}
+
+//big red machine
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"5"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.95"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"6"
+	}
+
+}
+
+
+"c4a3b2.chamber1b"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb62.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb64.wav"
+	}
+
+//big red machine
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach58.wav"
+		"position"	"0"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.95"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"1"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.95"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"2"
+	}
+
+//hose machine
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach55.wav"
+		"position"	"3"
+	}
+
+//big machine
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach56.wav"
+		"position"	"4"
+	}
+
+
+}
+
+"c4a3b2.pipetunnel"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb62.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb64.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb66.wav"
+	}
+}
+
+"c4a3b2.greenroom"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb62.wav"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.95"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"0"
+	}
+}
+
+"c4a3b2.garbageroom"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb62.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb64.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb66.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_grinder.wav"
+		"position"	"0"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1b.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach56.wav"
+		"position"	"2"
+	}
+
+//vent sucky sound above
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"3"
+	}
+
+//vent sucky sound above
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent2.wav"
+		"position"	"4"
+	}
+
+//vent sucky sound above
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent3.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_grinderb.wav"
+		"position"	"6"
+	}
+}
+
+"c4a3b2.chamber1top"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb62.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb64.wav"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_grinder.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach56.wav"
+		"position"	"2"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+//================================================================
+// 		MAP c4a3c STARTS HERE!!!
+//================================================================
+
+"c4a3c.tunnelmedium"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor7.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach49.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor1.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"4"
+	}
+}
+
+"c4a3c.chamber1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb66.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb63.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb72a.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor4.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor5.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor6.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor7.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor8.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3c.vent"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor8.wav"
+		"position"	"0"
+	}
+
+}
+
+"c4a3c.laserhall"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser1b.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2b.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2c.wav"
+		"position"	"4"
+	}
+}
+
+"c4a3c.crusherhall"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb67.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach60.wav"
+		"position"	"0"
+	}
+
+}
+
+"c4a3c.disposalhall"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb72a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb52.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser1b.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2b.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2c.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2d.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2e.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2f.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3c.viewingroom"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor8.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine1.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine2.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine3.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach54.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach60.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor8.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3c.longhall"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor4.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor5.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor6.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor7.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor8.wav"
+		"position"	"7"
+	}
+
+}
+
+
+
+
+//================================================================
+// 		MAP c4a3c1 STARTS HERE!!!
+//================================================================
+
+
+"c4a3c1.entrance"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb58.wav"
+	}
+}
+
+"c4a3c1.verticalroom1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb75.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb76.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor4.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor5.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor6.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor7.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor8.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3c1.smalltunnel1_laser"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb61.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser1b.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2b.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2c.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2d.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2e.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_laser2f.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3c1.hallway1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb64.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb61.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor4.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor5.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor6.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor7.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor8.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3c1.verticalroom2"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb59.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb74.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor4.wav"
+		"position"	"3"
+	}
+}
+
+"c4a3c1.sideroom1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb65.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb64.wav"
+	}
+}
+
+"c4a3c1.smalltunnel1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb61.wav"
+	}
+}
+
+"c4a3c1.verticalroomtop"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb72b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb70a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor4.wav"
+		"position"	"3"
+	}
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor5.wav"
+		"position"	"4"
+	}
+}
+
+"c4a3c1.multijumpchamber"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb73a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb73b.wav"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor4.wav"
+		"position"	"3"
+	}
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor5.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor6.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor7.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_conveyor8.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3c1.vent"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb70b.wav"
+	}
+}
+
+
+
+
+//================================================================
+// 		MAP c4a3d STARTS HERE!!!
+//================================================================
+
+
+"c4a3d.garbageroom"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb74.wav"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"0"
+	}
+}
+
+
+"c4a3d.suckyvent"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb39c.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb33c.wav"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"0"
+	}
+}
+
+"c4a3d.preliftroom"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb76.wav"
+	}
+
+//vent sucky sound
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach19.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach14.wav"
+		"position"	"2"
+	}
+}
+
+"c4a3d.elevator"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb75.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\lift1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\lift2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\lift3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\lift4.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\lift5.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\lift6.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\lift7.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"xen\object\lift8.wav"
+		"position"	"7"
+	}
+}
+
+"c4a3d.elevatorbottom"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb67.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb66.wav"
+	}
+
+//laser machine 1
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach35.wav"
+		"position"	"0"
+	}
+
+//laser machine 2
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach39.wav"
+		"position"	"1"
+	}
+
+//laser machine 3
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach27.wav"
+		"position"	"2"
+	}
+}
+
+
+"c4a3d.elevator.mid"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb75.wav"
+	}
+
+//laser machine 1
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach35.wav"
+		"position"	"0"
+	}
+
+//laser machine 2
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach39.wav"
+		"position"	"1"
+	}
+
+//laser machine 3
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach27.wav"
+		"position"	"2"
+	}
+
+//laser machine 4
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach43.wav"
+		"position"	"3"
+	}
+}
+
+"c4a3d.elevator.upper"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb75.wav"
+	}
+
+
+//laser machine 1
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach35.wav"
+		"position"	"0"
+	}
+
+//laser machine 2
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach39.wav"
+		"position"	"1"
+	}
+
+//laser machine 3
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach33.wav"
+		"position"	"2"
+	}
+
+//laser machine 4
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach43.wav"
+		"position"	"3"
+	}
+
+//laser machine 5
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach45.wav"
+		"position"	"4"
+	}
+
+//laser machine 6
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach55.wav"
+		"position"	"5"
+	}
+}
+
+"c4a3d.elevatortopmain"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb59.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach45.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach46.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach47.wav"
+		"position"	"2"
+	}
+
+//machine at top of room
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach63.wav"
+		"position"	"3"
+	}
+
+//main portal sound
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach42.wav"
+		"position"	"4"
+	}
+}
+
+
+// ---use int_mach45-48 for all the different machines in these rooms---
+"c4a3d.controlroom1"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb65.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach45.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach46.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach47.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine1.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine2.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine3.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\hub_machine4.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"xen\object\vent1.wav"
+		"position"	"7"
+	}
+}
+
+
+"c4a3d.controlroom2"
+{
+	"dsp"			"0"
+	"dsp_volume"		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb61.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach47.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach55.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach56.wav"
+		"position"	"2"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach60.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach48.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_water4.wav"
+		"position"	"5"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_cliffs1_mix_mono.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_outdoor1_mix_mono.wav"
+		"position"	"7"
+	}
+
+
+}
+
+"c4a3d.spire"
+{
+	"dsp"			"21"
+	"dsp_volume"	"1.0"
+	"fadetime"		"3.0"
+
+	"playsoundscape"
+	{
+		"name"					"c4a3d.spire_voices_amb.util"
+		"volume"				"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"					"c4a3d.spire_voices.random_pos.util"
+		"volume"				"0.7"
+	}	
+
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_outdoor1_mix.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb5a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb7a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c4a3d.util.boids_medium"
+		"volume"		"0.9"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire1.wav"
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire2.wav"
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire3.wav"
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"	"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire4.wav"
+		"position"		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"	"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach40.wav"
+		"position"		"4"
+	}
+}
+
+"c4a3d.util.boids_medium"
+{
+	"playrandom"
+	{
+		"volume"	"0.35, 0.45"
+		"pitch"		"70, 100"
+		"time"		"0.7, 3.2"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_90db"
+		"rndwave"
+		{
+			"wave"	"xen\soundscape\boid_xen_medium01.wav"
+			"wave"	"xen\soundscape\boid_xen_medium02.wav"
+			"wave"	"xen\soundscape\boid_xen_medium03.wav"
+			"wave"	"xen\soundscape\boid_xen_medium04.wav"
+			"wave"	"xen\soundscape\boid_xen_medium05.wav"
+			"wave"	"xen\soundscape\boid_xen_medium06.wav"
+			"wave"	"xen\soundscape\boid_xen_medium07.wav"
+			"wave"	"xen\soundscape\boid_xen_medium08.wav"
+			"wave"	"xen\soundscape\boid_xen_medium09.wav"
+			"wave"	"xen\soundscape\boid_xen_medium10.wav"
+			"wave"	"xen\soundscape\boid_xen_medium11.wav"
+			"wave"	"xen\soundscape\boid_xen_medium12.wav"
+		}
+	}
+}
+
+"c4a3d.spirenovoices"
+{
+	"dsp"			"21"
+	"dsp_volume"	"1.0"
+	"fadetime"		"3.0"
+
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_outdoor1_mix.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb5a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"xen\ambience\xen_amb7a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"c4a3d.util.boids_medium"
+		"volume"		"0.9"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire1.wav"
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire2.wav"
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire3.wav"
+		"position"		"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"soundlevel"	"SNDLVL_95dB"
+		"pitch"			"100"
+		"wave"			"xen\object\xen_fire4.wav"
+		"position"		"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"soundlevel"	"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"xen\object\int_mach40.wav"
+		"position"		"4"
+	}
+}
+

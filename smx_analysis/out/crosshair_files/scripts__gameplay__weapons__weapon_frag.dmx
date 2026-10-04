@@ -1,0 +1,30 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_FRAG"
+{
+	"id" "elementid" "1837ecdc-701d-4a98-b822-0ad5c176f64c"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_grenade.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_grenade_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_grenade.mdl"
+	"printname" "string" "Grenades"
+	"primary_ammo" "string" "grenade_frag"
+	"clip_size" "int" "-1"	
+	"default_clip" "int" "1"
+	"bucket" "int" "4"
+	"bucket_position" "int" "0"
+
+	"bucket_controller" "int" "2"
+	"bucket_position_controller" "int" "0"
+
+	"anim_prefix" "string" "frag"
+	"item_flags" "int" "0"
+	"weight" "int" "60"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "20c41e8b-e306-4d4a-a34e-a6950db89637"
+		"single_shot" "string" "weapon_frag.Single"
+		"single_shot_npc" "string" "weapon_frag.Single"
+		"special1" "string" "weapon_frag.Special1"
+	}
+}
+

@@ -1,0 +1,8 @@
+=== class names owning the vtables where 0x1034dd80 sits at slot 307 ===
+  COL 0x1076ff50 sig=0 off=0 td=0x10819814  name=".?AVCAI_BaseNPC@@"
+  COL 0x1077121c sig=0 off=0 td=0x1081a334  name=".?AVCAI_TestHull@@"
+  COL 0x10779c4c sig=0 off=0 td=0x1081e6e0  name=".?AV?$CAI_BehaviorHost@VCAI_BaseNPC@@@@"
+  COL 0x1079bf0c sig=0 off=0 td=0x1082e80c  name=".?AVCProtoSniper@@"
+
+=== all classes whose vtable has 0x1034dd80 at slot 307 (scan COLs) ===
+   total: 0

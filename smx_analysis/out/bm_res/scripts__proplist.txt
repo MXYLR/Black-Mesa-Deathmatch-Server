@@ -1,0 +1,230 @@
+"proplist.txt"
+{
+	"canteen"
+	{
+		"model" "models/props_canteen/spork.mdl"
+			"model" "models/props_canteen/spork.mdl"
+			"model" "models/props_canteen/spork.mdl"
+			"model" "models/props_junk/handtowel.mdl"
+			"model" "models/props_junk/styrofoamcup01a.mdl"
+			"model" "models/props_junk/styrofoamcup01a.mdl"
+			"model" "models/props_junk/styrofoamcup01a.mdl"
+			"model" "models/props_junk/plate01.mdl"
+			"model" "models/props_junk/plate01.mdl"
+	}
+
+	"joke"
+	{
+		"model" "models/props_blackmesa/octodog.mdl"
+			"model" "models/props_sewer/turd.mdl"
+			"model" "models/props_sewer/turd.mdl"
+			"model" "models/props_sewer/turd.mdl"
+			"model" "models/props_junk/watermelon01.mdl"
+			"model" "models/props_junk/watermelon01.mdl"
+			"model" "models/gibs/humans/eye_gib.mdl"
+			"model" "models/gibs/humans/eye_gib.mdl"
+			"model" "models/gibs/humans/eye_gib.mdl"
+			"model" "models/gibs/humans/eye_gib.mdl"
+			"model" "models/gibs/humans/eye_gib.mdl"
+	}
+
+	"junk"
+	{
+		"model" "models/props_blackmesa/bms_vent_break_piece1.mdl"
+			"model" "models/props_blackmesa/bms_vent_break_piece3.mdl"
+			"model" "models/props_blackmesa/bms_vent_break_piece5.mdl"
+			"model" "models/gibs/metal_gib1.mdl"
+			"model" "models/gibs/metal_gib2.mdl"
+			"model" "models/gibs/metal_gib3.mdl"
+			"model" "models/props_c17/tools_pliers01a.mdl"
+			"model" "models/props_c17/tools_wrench01a.mdl"
+			"model" "models/props_junk/garbage_metalcan001a.mdl"
+			"model" "models/props_junk/garbage_metalcan002a.mdl"
+			"model" "models/props_wasteland/prison_padlock001b.mdl"
+			"model" "models/props_trainstation/payphone_reciever001a.mdl"
+	}
+
+	"lab"
+	{
+		"model" "models/props_am/scale.mdl"
+			"model" "models/props_blackmesa/supercomputer01a_break08.mdl"
+			"model" "models/props_lab/chemjar01.mdl"
+			"model" "models/props_lab/sterilizer.mdl"
+			"model" "models/props_junk/cardboard_box004a.mdl"
+			"model" "models/props_lab/bindergreen.mdl"
+			"model" "models/props_lab/bindergreen.mdl"
+			"model" "models/props_lab/reciever01d.mdl"
+			"model" "models/props_lab/reciever01c.mdl"
+			"model" "models/props_lab/substance_tray.mdl"
+	}
+
+	"lab2"
+	{
+		"model" "models/props_blackmesa/supercomputer01a_break08.mdl"
+			"model" "models/props_blackmesa/supercomputer01a_break08.mdl"
+			"model" "models/props_generic/geigercounter.mdl"
+			"model" "models/props_junk/battery.mdl"
+			"model" "models/props_junk/cd_drive.mdl"
+			"model" "models/props_lab/binderredlabel.mdl"
+			"model" "models/props_lab/binderredlabel.mdl"
+			"model" "models/props_junk/goggles.mdl"
+			"model" "models/props_junk/funnel.mdl"
+	}
+
+	"military"
+	{
+		"model" "models/props_marines/alicepack.mdl"
+			"model" "models/props_marines/alicepack.mdl"
+			"model" "models/props_marines/bayonet.mdl"
+			"model" "models/props_marines/etool.mdl"
+			"model" "models/props_marines/mil_flashlight.mdl"
+			"model" "models/props_marines/mil_flashlight.mdl"
+			"model" "models/props_marines/prc77_radio.mdl"
+			"model" "models/props_generic/walkietalkie.mdl"
+	}
+
+	"military_big"
+	{
+		"model" "models/props_marines/ammobox01.mdl" 
+			"model" "models/props_marines/ammobox01.mdl" 
+			"model" "models/props_marines/ammobox01.mdl"
+			"model" "models/props_marines/mil_flashlight.mdl"
+			"model" "models/props_marines/prc77_radio.mdl"
+			"model" "models/props_marines/alicepack.mdl"
+			"model" "models/props_marines/alicepack.mdl"
+	}
+
+	"office"
+	{
+		"model" "models/gibs/props_office/books_1_gib3.mdl"
+			"model" "models/gibs/props_office/books_1_gib7.mdl"
+			"model" "models/props_office/stapler.mdl"
+			"model" "models/props_office/calculator.mdl"
+			"model" "models/props_junk/handtowel.mdl"
+			"model" "models/props_office/videocassette.mdl"
+			"model" "models/props_office/pencil.mdl"
+			"model" "models/props_office/paper_box.mdl"
+			"model" "models/props_office/paper_box.mdl"
+			"model" "models/props_office/holepunch.mdl"
+	}
+
+	"tech"
+	{
+		"model" "models/props_junk/wirespool01a.mdl"
+			"model" "models/items/car_battery01.mdl"
+			"model" "models/props_blackmesa/supercomputer01a_break08.mdl"
+			"model" "models/props_blackmesa/supercomputer01a_break08.mdl"
+			"model" "models/props_junk/plasticcontainer01.mdl"
+			"model" "models/props_office/cd_music.mdl"
+			"model" "models/props_industrial/welder.mdl"
+			"model" "models/props_junk/junk_screwdriver.mdl"
+			"model" "models/props_junk/junk_spanner.mdl"
+	}
+
+	"tech2"
+	{
+		"model" "models/props_junk/cd_drive.mdl"
+			"model" "models/props_junk/capacitor.mdl"
+			"model" "models/props_blackmesa/supercomputer01a_break08.mdl"
+			"model" "models/props_blackmesa/supercomputer01a_break08.mdl"
+			"model" "models/props_junk/soldering_iron.mdl"
+			"model" "models/props_office/cd_music.mdl"
+			"model" "models/props_junk/junk_6vbattery.mdl"
+			"model" "models/props_junk/junk_screwdriver.mdl"
+			"model" "models/props_junk/junk_spanner.mdl"
+	}
+
+	"cleaning_products"
+	{
+		"model" "models/props_junk/bogroll.mdl"
+			"model" "models/props_junk/bogroll.mdl"
+			"model" "models/props_junk/handtowel.mdl"
+			"model" "models/props_junk/cleanerbottle01.mdl"
+			"model" "models/props_junk/plasticcontainer01.mdl"
+			"model" "models/props_junk/plasticcontainer02.mdl"
+			"model" "models/props_junk/plasticcontainer03.mdl"
+			"model" "models/props_junk/plasticcontainer04.mdl"
+	}
+
+	"paint_supplies"
+	{
+		"model" "models/props_junk/metalcontainer01.mdl"
+			"model" "models/props_junk/metalcontainer02.mdl"
+			"model" "models/props_junk/metalcontainer03.mdl"
+			"model" "models/props_junk/metalcontainer04.mdl"
+			"model" "models/props_junk/spraycan.mdl"
+			"model" "models/props_junk/spraycan.mdl"
+	}
+
+	"books_small"
+	{
+		"model" "models/gibs/props_office/books_1_gib1.mdl"
+			"model" "models/gibs/props_office/books_1_gib2.mdl"
+			"model" "models/gibs/props_office/books_1_gib3.mdl"
+			"model" "models/gibs/props_office/books_1_gib4.mdl"
+			"model" "models/gibs/props_office/books_1_gib5.mdl"
+			"model" "models/gibs/props_office/books_1_gib6.mdl"
+	}
+
+	"books_large"
+	{
+		"model" "models/gibs/props_office/books_2_gib1.mdl"
+			"model" "models/gibs/props_office/books_2_gib2.mdl"
+			"model" "models/gibs/props_office/books_2_gib3.mdl"
+			"model" "models/gibs/props_office/books_2_gib4.mdl"
+			"model" "models/gibs/props_office/books_2_gib5.mdl"
+			"model" "models/gibs/props_office/books_2_gib6.mdl"
+			"model" "models/gibs/props_office/books_2_gib7.mdl"
+			"model" "models/props_lab/bindergreen.mdl"
+			"model" "models/props_lab/bindergreen.mdl"
+			"model" "models/props_lab/bindergraylabel01a.mdl"
+			"model" "models/props_lab/binderredlabel.mdl"
+			"model" "models/props_lab/binderredlabel.mdl"
+	}
+
+	"snacks"
+	{
+		"model" "models/gibs/props_canteen/vm_snack01.mdl"
+			"model" "models/gibs/props_canteen/vm_snack02.mdl"
+			"model" "models/gibs/props_canteen/vm_snack03.mdl"
+			"model" "models/gibs/props_canteen/vm_snack04.mdl"
+			"model" "models/gibs/props_canteen/vm_snack05.mdl"
+			"model" "models/gibs/props_canteen/vm_snack10.mdl"
+			"model" "models/gibs/props_canteen/vm_snack11.mdl"
+			"model" "models/gibs/props_canteen/vm_snack12.mdl"
+			"model" "models/gibs/props_canteen/vm_snack13.mdl"
+			"model" "models/gibs/props_canteen/vm_snack18.mdl"
+			"model" "models/gibs/props_canteen/vm_snack20.mdl"
+			"model" "models/gibs/props_canteen/vm_snack23.mdl"
+			"model" "models/props_junk/drinkcan01.mdl"
+			"model" "models/props_junk/drinkcan01.mdl"
+	}
+
+	"computer_supplies"
+	{
+		"model" "models/props_office/computer_keyboard01.mdl"
+			"model" "models/props_office/computer_mouse01.mdl"
+			"model" "models/props_office/computer_monitor01.mdl"
+			"model" "models/props_office/computer_desktop01.mdl"
+			"model" "models/props_office/office_phone.mdl"
+			"model" "models/props_office/cd_music.mdl"
+			"model" "models/props_office/cd_music.mdl"
+	}
+
+	"tools"
+	{
+		"model" "models/props_junk/duct_tape.mdl"
+			"model" "models/props_junk/dust_mask.mdl"
+			"model" "models/props_junk/gluegun.mdl"
+			"model" "models/props_junk/goggles.mdl"
+			"model" "models/props_junk/hardhat.mdl"
+			"model" "models/props_junk/junk_6vbattery.mdl"
+			"model" "models/props_junk/drill.mdl"
+			"model" "models/props_junk/junk_caulkgun.mdl"
+			"model" "models/props_junk/junk_caulktube.mdl"
+			"model" "models/props_junk/junk_earmuffs.mdl"
+			"model" "models/props_junk/junk_wd43.mdl"
+			"model" "models/props_junk/oil_can.mdl"
+			"model" "models/props_junk/soldering_iron.mdl"
+	}
+}

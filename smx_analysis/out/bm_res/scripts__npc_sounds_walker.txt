@@ -1,0 +1,26 @@
+"npc_walker.StepL"
+{
+	"channel"		"136"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_105dB"
+	"wave"			"npc/walker/walker_stepleft1.wav"
+}
+
+"npc_walker.StepR"
+{
+	"channel"		"127"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_105dB"
+	"wave"			"npc/walker/walker_stepright1.wav"
+}
+
+"npc_walker.SlimeWalk"
+{
+	"channel"		"127"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_105dB"
+	"wave"			"npc/walker/walker_slimewalk1.wav"
+}

@@ -1,0 +1,91 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_MP5"
+{
+	"id" "elementid" "6953de60-e0bb-494f-80d3-787e4450fc5b"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_mp5.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_mp5_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_mp5.mdl"
+	"printname" "string" "Mp5"
+	"primary_ammo" "string" "9mm"
+	"clip_size" "int" "30"
+	"clip_size_multiplayer" "int" "45"
+	"secondary_ammo" "string" "grenade_mp5"
+	"clip2_size" "int" "-1"
+	"bucket" "int" "2"
+	"bucket_position" "int" "0"
+
+	"bucket_controller" "int" "0"
+	"bucket_position_controller" "int" "0"
+
+	"anim_prefix" "string" "mp5"
+	"item_flags" "int" "0"
+	"weight" "int" "100"
+	"muzzleflash_firstperson" "string" "weapon_mp5_muzzleflash"
+	"muzzleflash_thirdperson" "string" "world_weapon_mp5_muzzleflash"
+	"brass_ejection_model" "string" "models/Weapons/shell.mdl"
+	"tracer" "string" "weapon_tracer"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "d439965d-57de-4ffd-94d0-995350c9d4c0"
+		"double_shot" "string" "weapon_mp5.Double"
+		"reload_npc" "string" "weapon_mp5.Reload_NPC"
+		"empty" "string" "weapon_mp5.Empty"
+		"single_shot" "string" "weapon_mp5.Single"
+		"single_shot_npc" "string" "weapon_mp5.Single_NPC"
+	}
+	"primary_attack" "primary_attack"
+	{
+		"id" "elementid" "7f2d2f70-0966-4be8-8b85-fdf23e69af5a"
+		"cycle" "float" "0.1"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "d8f8f687-70d9-4ac9-b10f-dc0a679cf23b"
+			"spread" "vector3" "1.75 1.75 0"
+			"damage" "float" "8"
+
+			"damage_multiplayer" "float" "12"
+		}
+		"recoil" "recoil"
+		{
+			"id" "elementid" "d9965ae3-0990-4865-a86d-2b4c518daa8a"
+			"min_snap_angles" "vector3" "-0.15 -0.4 0"
+			"max_snap_angles" "vector3" "0.45 0.4 0"
+			"min_punch_angles" "vector3" "-1 -0.4 -0.15"
+			"max_punch_angles" "vector3" "-0.5 0.4 0.15"
+			"min_punch_offset" "vector3" "-0.1 -0.15 -0.1"
+			"max_punch_offset" "vector3" "0.1 0.15 0.1"
+		}
+	}
+	"secondary_attack" "secondary_attack"
+	{
+		"id" "elementid" "46eada80-dfa0-4dec-b790-88f93fa84898"
+		"cycle" "float" "0.75"
+		"recoil" "recoil"
+		{
+			"id" "elementid" "067ed3dc-c2b0-4344-a419-53a8efd15365"
+			"min_snap_angles" "vector3" "0 0 0"
+			"max_snap_angles" "vector3" "0 0 0"
+			"min_punch_angles" "vector3" "-2 0 0"
+			"max_punch_angles" "vector3" "-2 0 0"
+			"min_punch_offset" "vector3" "0 0 0"
+			"max_punch_offset" "vector3" "0 0 0"
+		}
+	}
+	"npc_attack" "npc_attack"
+	{
+		"id" "elementid" "b786a699-6137-4684-9788-ab2edc850d3a"
+		"cycle" "float" "0.1"
+		"burst_count_min" "int" "3"
+		"burst_count_max" "int" "6"
+		"rest_time_min" "float" "0.375"
+		"rest_time_max" "float" "0.75"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "fe4126d4-5274-41dd-92c7-6787c6a4d840"
+			"spread" "vector3" "5.25 5.25 0.0"
+			"damage" "float" "4"
+			"npcmovementinaccuracypenaltymultiplier" "float" "1.75"
+		}
+	}
+}

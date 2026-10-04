@@ -1,0 +1,1162 @@
+slot offsets: 5a0 5a4 5a8 5ac 5b0 5b4 5b8 5bc 5c0 5c4 5c8 5cc 5d0 5d4 5d8 5dc 5e0 5e4 5e8 5ec 5f0 5f4 5f8 5fc 600 604 608 60c
+
+C_BaseCombatWeapon               VT 0x1041a83c
+   100726a0 10072690 10071440 10071430 100736a0 10073690 10074670 10073630 10073f40 100a48d0 100a4a90 100a44d0 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+                               
+C_BlackMesaBaseWeapon            VT 0x104a17c0
+   100726a0 10072690 10071440 10071430 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+          ^   ^                
+C_BlackMesaBaseWeaponIronSights  VT 0x104a22bc
+   100726a0 10072690 10071440 10071430 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+          ^   ^                
+C_BlackMesaBaseWeaponMelee       VT 0x104a2b24
+   100726a0 10072690 10071440 10071430 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+          ^   ^                
+C_BlackMesaBaseWeaponThrown      VT 0x104a3334
+   100726a0 10072690 10071440 10071430 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+          ^   ^                
+C_Weapon_357                     VT 0x104999b0
+   100726a0 10072690 10071440 1028e410 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 1028e490 1028e930 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_Weapon_Crossbow                VT 0x1049a1d0
+   100726a0 10072690 10071440 1028eb80 100736a0 10073690 10074670 1028f260 10073f40 100a48d0 100a4a90 10297000 1028f540 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_Weapon_Crowbar                 VT 0x1049aa54
+   100726a0 10072690 10071440 1028f7b0 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^                
+C_Weapon_Frag                    VT 0x1049b244
+   100726a0 10072690 10071440 1028fae0 100736a0 10073690 10074670 1028fcd0 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^                
+C_Weapon_Glock                   VT 0x1049bb4c
+   100726a0 10072690 10071440 10290120 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10290220 10290750 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_WeaponAssassinGlock            VT 0x1049c320
+   100726a0 10072690 10071440 10290120 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10290220 10290750 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_Weapon_Headcrab                VT 0x1049cb18
+   100726a0 10072690 10071440 10071430 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+          ^   ^                
+C_Weapon_HiveHand                VT 0x1049d418
+   100726a0 10072690 10071440 10290ff0 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 102910d0 10291510 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_Weapon_MP5                     VT 0x1049dc6c
+   100726a0 10072690 10071440 102916c0 100736a0 10073690 10074670 10291c10 10073f40 100a48d0 100a4a90 10291740 10291c90 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_Weapon_RPG                     VT 0x1049e44c
+   100726a0 10072690 10071440 10291ef0 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10291f80 10292900 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_Weapon_Satchel                 VT 0x1049ec8c
+   100726a0 10072690 10071440 10292be0 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^                
+C_Weapon_Shotgun                 VT 0x1049f4d4
+   100726a0 10072690 10071440 102933f0 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10293430 102939f0 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_Weapon_Snark                   VT 0x1049fcc0
+   100726a0 10072690 10071440 10293c50 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^                
+C_Weapon_Tau                     VT 0x104a0718
+   100726a0 10072690 10071440 102941c0 100736a0 10073690 10074670 10294fb0 10073f40 100a48d0 100a4a90 10294610 102956c0 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+C_Weapon_Tripmine                VT 0x104a0fc4
+   100726a0 10072690 10071440 10295970 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 10297000 10074630 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^                
+C_Weapon_Gluon                   VT 0x104a3c1c
+   100726a0 10072690 10071440 1029ccd0 100736a0 10073690 10074670 10297c90 10073f40 100a48d0 100a4a90 1029b100 1029c600 100a4700 100a4a70 100a46d0 100a4a40 100728e0 10073680 10073470 10071490 100726f0 100a4670 10072710 10074a10 10074a20 10072f10 10071cd0
+      ^   ^   ^^               
+
+=== slot values differing from C_BaseCombatWeapon ===
+C_BaseCombatWeapon               
+C_BlackMesaBaseWeapon            +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_BlackMesaBaseWeaponIronSights  +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_BlackMesaBaseWeaponMelee       +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_BlackMesaBaseWeaponThrown      +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_Weapon_357                     +0x5ac=0x1028e410, +0x5bc=0x10297c90, +0x5cc=0x1028e490, +0x5d0=0x1028e930
+C_Weapon_Crossbow                +0x5ac=0x1028eb80, +0x5bc=0x1028f260, +0x5cc=0x10297000, +0x5d0=0x1028f540
+C_Weapon_Crowbar                 +0x5ac=0x1028f7b0, +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_Weapon_Frag                    +0x5ac=0x1028fae0, +0x5bc=0x1028fcd0, +0x5cc=0x10297000
+C_Weapon_Glock                   +0x5ac=0x10290120, +0x5bc=0x10297c90, +0x5cc=0x10290220, +0x5d0=0x10290750
+C_WeaponAssassinGlock            +0x5ac=0x10290120, +0x5bc=0x10297c90, +0x5cc=0x10290220, +0x5d0=0x10290750
+C_Weapon_Headcrab                +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_Weapon_HiveHand                +0x5ac=0x10290ff0, +0x5bc=0x10297c90, +0x5cc=0x102910d0, +0x5d0=0x10291510
+C_Weapon_MP5                     +0x5ac=0x102916c0, +0x5bc=0x10291c10, +0x5cc=0x10291740, +0x5d0=0x10291c90
+C_Weapon_RPG                     +0x5ac=0x10291ef0, +0x5bc=0x10297c90, +0x5cc=0x10291f80, +0x5d0=0x10292900
+C_Weapon_Satchel                 +0x5ac=0x10292be0, +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_Weapon_Shotgun                 +0x5ac=0x102933f0, +0x5bc=0x10297c90, +0x5cc=0x10293430, +0x5d0=0x102939f0
+C_Weapon_Snark                   +0x5ac=0x10293c50, +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_Weapon_Tau                     +0x5ac=0x102941c0, +0x5bc=0x10294fb0, +0x5cc=0x10294610, +0x5d0=0x102956c0
+C_Weapon_Tripmine                +0x5ac=0x10295970, +0x5bc=0x10297c90, +0x5cc=0x10297000
+C_Weapon_Gluon                   +0x5ac=0x1029ccd0, +0x5bc=0x10297c90, +0x5cc=0x1029b100, +0x5d0=0x1029c600
+
+=== disasm slot +0x5c4 / +0x5cc / +0x5d0 for a few concrete weapons ===
+  --- C_Weapon_Glock slot+0x5c4 -> 0x100a48d0 ---
+    0x100a48d0  push      esi
+    0x100a48d1  mov       esi, ecx
+    0x100a48d3  mov       ecx, dword ptr [0x106d96b0]
+    0x100a48d9  mov       eax, dword ptr [ecx]
+    0x100a48db  mov       eax, dword ptr [eax + 0x64]
+    0x100a48de  call      eax
+    0x100a48e0  test      al, al
+    0x100a48e2  je        0x100a48ef
+    0x100a48e4  mov       eax, dword ptr [esi]
+    0x100a48e6  mov       ecx, esi
+    0x100a48e8  pop       esi
+    0x100a48e9  jmp       dword ptr [eax + 0x5cc]
+    0x100a48ef  pop       esi
+    0x100a48f0  ret       
+    0x100a48f1  int3      
+    0x100a48f2  int3      
+    0x100a48f3  int3      
+    0x100a48f4  int3      
+    0x100a48f5  int3      
+    0x100a48f6  int3      
+    0x100a48f7  int3      
+    0x100a48f8  int3      
+    0x100a48f9  int3      
+    0x100a48fa  int3      
+    0x100a48fb  int3      
+    0x100a48fc  int3      
+    0x100a48fd  int3      
+    0x100a48fe  int3      
+    0x100a48ff  int3      
+    0x100a4900  push      ebp
+    0x100a4901  mov       ebp, esp
+    0x100a4903  push      esi
+    0x100a4904  mov       esi, ecx
+    0x100a4906  mov       eax, dword ptr [esi + 8]
+    0x100a4909  lea       ecx, [esi + 8]
+    0x100a490c  mov       eax, dword ptr [eax + 0x20]
+    0x100a490f  call      eax
+    0x100a4911  test      al, al
+    0x100a4913  jne       0x100a4941
+    0x100a4915  cmp       byte ptr [ebp + 8], al
+    0x100a4918  je        0x100a4941
+    0x100a491a  mov       ecx, esi
+    0x100a491c  call      0x100723f0
+    0x100a4921  test      eax, eax
+    0x100a4923  je        0x100a4941
+    0x100a4925  mov       eax, dword ptr [esi]
+    0x100a4927  mov       ecx, esi
+    0x100a4929  mov       eax, dword ptr [eax + 0x5d4]
+    0x100a492f  call      eax
+    0x100a4931  test      al, al
+    0x100a4933  jne       0x100a4941
+    0x100a4935  mov       eax, dword ptr [esi]
+    0x100a4937  mov       ecx, esi
+    0x100a4939  push      0
+    0x100a493b  call      dword ptr [eax + 0x414]
+    0x100a4941  push      dword ptr [ebp + 8]
+    0x100a4944  mov       ecx, esi
+    0x100a4946  call      0x100af560
+    0x100a494b  pop       esi
+    0x100a494c  pop       ebp
+    0x100a494d  ret       4
+    0x100a4950  push      esi
+    0x100a4951  mov       esi, ecx
+    0x100a4953  mov       eax, dword ptr [esi + 0x7c]
+    0x100a4956  shr       eax, 4
+    0x100a4959  test      al, 1
+    0x100a495b  je        0x100a4961
+    0x100a495d  xor       eax, eax
+    0x100a495f  pop       esi
+    0x100a4960  ret       
+    0x100a4961  mov       edx, dword ptr [esi + 0xa14]
+    0x100a4967  cmp       edx, -1
+    0x100a496a  je        0x100a49a6
+    0x100a496c  mov       eax, dword ptr [0x10553d08]
+    0x100a4971  mov       ecx, edx
+    0x100a4973  and       ecx, 0x1fff
+    0x100a4979  shr       edx, 0xd
+    0x100a497c  add       ecx, ecx
+    0x100a497e  cmp       dword ptr [eax + ecx*8 + 8], edx
+    0x100a4982  jne       0x100a49a6
+    0x100a4984  cmp       dword ptr [eax + ecx*8 + 4], 0
+    0x100a4989  je        0x100a49a6
+    0x100a498b  mov       eax, dword ptr [esi - 4]
+    0x100a498e  lea       ecx, [esi - 4]
+    0x100a4991  mov       eax, dword ptr [eax + 0x5d4]
+    0x100a4997  call      eax
+    0x100a4999  test      al, al
+    0x100a499b  je        0x100a49a6
+    0x100a499d  call      0x100bc240
+    0x100a49a2  test      al, al
+    0x100a49a4  je        0x100a495d
+    0x100a49a6  mov       eax, 2
+    0x100a49ab  pop       esi
+    0x100a49ac  ret       
+    0x100a49ad  int3      
+    0x100a49ae  int3      
+    0x100a49af  int3      
+    0x100a49b0  push      esi
+    0x100a49b1  mov       esi, ecx
+    0x100a49b3  cmp       dword ptr [esi + 0xa30], 0
+    0x100a49ba  jne       0x100a49c0
+    0x100a49bc  xor       al, al
+    0x100a49be  pop       esi
+    0x100a49bf  ret       
+    0x100a49c0  mov       eax, dword ptr [esi + 0x7c]
+    0x100a49c3  shr       eax, 5
+    0x100a49c6  test      al, 1
+    0x100a49c8  jne       0x100a49bc
+    0x100a49ca  push      edi
+    0x100a49cb  lea       ecx, [esi - 4]
+  --- C_Weapon_Glock slot+0x5cc -> 0x10290220 ---
+    0x10290220  push      ebp
+    0x10290221  mov       ebp, esp
+    0x10290223  sub       esp, 0x1c
+    0x10290226  push      esi
+    0x10290227  push      edi
+    0x10290228  mov       esi, ecx
+    0x1029022a  call      0x102976b0
+    0x1029022f  mov       edi, eax
+    0x10290231  test      edi, edi
+    0x10290233  je        0x10290602
+    0x10290239  mov       edx, dword ptr [esi]
+    0x1029023b  mov       ecx, esi
+    0x1029023d  call      dword ptr [edx + 0x4a0]
+    0x10290243  mov       edx, dword ptr [esi]
+    0x10290245  mov       ecx, esi
+    0x10290247  push      eax
+    0x10290248  call      dword ptr [edx + 0x4a8]
+    0x1029024e  mov       esi, eax
+    0x10290250  fld       dword ptr [esi]
+    0x10290252  fstp      dword ptr [ebp - 0xc]
+    0x10290255  call      0x10102360
+    0x1029025a  mov       dword ptr [ebp - 0x10], eax
+    0x1029025d  fild      dword ptr [ebp - 0x10]
+    0x10290260  fstp      dword ptr [ebp - 0x10]
+    0x10290263  fld       dword ptr [ebp - 0xc]
+    0x10290266  call      0x103d9290
+    0x1029026b  fmul      dword ptr [0x1041a64c]
+    0x10290271  mov       ecx, edi
+    0x10290273  fmul      dword ptr [ebp - 0x10]
+    0x10290276  fstp      dword ptr [ebp - 0x10]
+    0x10290279  call      0x1007a510
+    0x1029027e  movss     xmm4, dword ptr [ebp - 0x10]
+    0x10290283  movss     xmm3, dword ptr [0x1041dc84]
+    0x1029028b  movss     xmm1, dword ptr [0x1041da44]
+    0x10290293  cvtsi2ss  xmm0, eax
+    0x10290297  fld       dword ptr [esi + 4]
+    0x1029029a  divss     xmm4, xmm0
+    0x1029029e  fstp      dword ptr [ebp - 0xc]
+    0x102902a1  addss     xmm4, dword ptr [0x1041a640]
+    0x102902a9  andps     xmm3, xmm4
+    0x102902ac  movaps    xmm0, xmm4
+    0x102902af  xorps     xmm0, xmm3
+    0x102902b2  movaps    xmm2, xmm4
+    0x102902b5  cmpltss   xmm0, xmm1
+    0x102902ba  andps     xmm1, xmm0
+    0x102902bd  orps      xmm1, xmm3
+    0x102902c0  addss     xmm2, xmm1
+    0x102902c4  subss     xmm2, xmm1
+    0x102902c8  movss     xmm1, dword ptr [0x1040d210]
+    0x102902d0  movaps    xmm0, xmm2
+    0x102902d3  subss     xmm0, xmm4
+    0x102902d7  cmpnless  xmm0, xmm3
+    0x102902dc  andps     xmm0, xmm1
+    0x102902df  subss     xmm2, xmm0
+    0x102902e3  cvttss2si eax, xmm2
+    0x102902e7  mov       dword ptr [ebp - 4], eax
+    0x102902ea  call      0x10102360
+    0x102902ef  mov       dword ptr [ebp - 0x10], eax
+    0x102902f2  fild      dword ptr [ebp - 0x10]
+    0x102902f5  fstp      dword ptr [ebp - 0x10]
+    0x102902f8  fld       dword ptr [ebp - 0xc]
+    0x102902fb  call      0x103d9290
+    0x10290300  fmul      dword ptr [0x1041a64c]
+    0x10290306  mov       ecx, edi
+    0x10290308  fmul      dword ptr [ebp - 0x10]
+    0x1029030b  fstp      dword ptr [ebp - 0x10]
+    0x1029030e  call      0x1007a510
+    0x10290313  movss     xmm4, dword ptr [ebp - 0x10]
+    0x10290318  movss     xmm3, dword ptr [0x1041dc84]
+  --- C_Weapon_Glock slot+0x5d0 -> 0x10290750 ---
+    0x10290750  mov       al, 1
+    0x10290752  ret       
+    0x10290753  int3      
+    0x10290754  int3      
+    0x10290755  int3      
+    0x10290756  int3      
+    0x10290757  int3      
+    0x10290758  int3      
+    0x10290759  int3      
+    0x1029075a  int3      
+    0x1029075b  int3      
+    0x1029075c  int3      
+    0x1029075d  int3      
+    0x1029075e  int3      
+    0x1029075f  int3      
+    0x10290760  xor       eax, eax
+    0x10290762  ret       
+    0x10290763  int3      
+    0x10290764  int3      
+    0x10290765  int3      
+    0x10290766  int3      
+    0x10290767  int3      
+    0x10290768  int3      
+    0x10290769  int3      
+    0x1029076a  int3      
+    0x1029076b  int3      
+    0x1029076c  int3      
+    0x1029076d  int3      
+    0x1029076e  int3      
+    0x1029076f  int3      
+    0x10290770  xor       eax, eax
+    0x10290772  ret       
+    0x10290773  int3      
+    0x10290774  int3      
+    0x10290775  int3      
+    0x10290776  int3      
+    0x10290777  int3      
+    0x10290778  int3      
+    0x10290779  int3      
+    0x1029077a  int3      
+    0x1029077b  int3      
+    0x1029077c  int3      
+    0x1029077d  int3      
+    0x1029077e  int3      
+    0x1029077f  int3      
+    0x10290780  push      ebp
+    0x10290781  mov       ebp, esp
+    0x10290783  push      edi
+    0x10290784  push      0xad8
+    0x10290789  call      0x100a6340
+    0x1029078e  mov       edi, eax
+    0x10290790  add       esp, 4
+    0x10290793  test      edi, edi
+    0x10290795  je        0x102907f6
+    0x10290797  push      esi
+    0x10290798  mov       ecx, edi
+    0x1029079a  call      0x10295f60
+    0x1029079f  push      dword ptr [ebp + 0xc]
+    0x102907a2  mov       ecx, edi
+    0x102907a4  mov       dword ptr [edi + 0xa70], 0x42c00000
+    0x102907ae  push      dword ptr [ebp + 8]
+    0x102907b1  mov       dword ptr [edi + 0xa78], 0x45000000
+    0x102907bb  mov       word ptr [edi + 0xa6c], 0x101
+    0x102907c4  mov       dword ptr [edi], 0x1049c320
+    0x102907ca  mov       dword ptr [edi + 4], 0x1049c9b8
+    0x102907d1  mov       dword ptr [edi + 8], 0x1049ca78
+    0x102907d8  mov       dword ptr [edi + 0xc], 0x1049cab4
+    0x102907df  mov       dword ptr [edi + 0x6a0], 0x1049cacc
+    0x102907e9  call      dword ptr [0x1049c3c0]
+    0x102907ef  pop       esi
+    0x102907f0  lea       eax, [edi + 8]
+    0x102907f3  pop       edi
+    0x102907f4  pop       ebp
+    0x102907f5  ret       
+    0x102907f6  xor       eax, eax
+    0x102907f8  pop       edi
+    0x102907f9  pop       ebp
+    0x102907fa  ret       
+    0x102907fb  int3      
+    0x102907fc  int3      
+    0x102907fd  int3      
+    0x102907fe  int3      
+    0x102907ff  int3      
+    0x10290800  push      ebp
+    0x10290801  mov       ebp, esp
+    0x10290803  push      edi
+    0x10290804  push      0xad8
+    0x10290809  call      0x100a6340
+    0x1029080e  mov       edi, eax
+    0x10290810  add       esp, 4
+    0x10290813  test      edi, edi
+    0x10290815  je        0x10290876
+    0x10290817  push      esi
+    0x10290818  mov       ecx, edi
+    0x1029081a  call      0x10295f60
+    0x1029081f  push      dword ptr [ebp + 0xc]
+    0x10290822  mov       ecx, edi
+    0x10290824  mov       dword ptr [edi], 0x1049bb4c
+    0x1029082a  push      dword ptr [ebp + 8]
+    0x1029082d  mov       dword ptr [edi + 4], 0x1049c1e4
+    0x10290834  mov       dword ptr [edi + 8], 0x1049c2a4
+    0x1029083b  mov       dword ptr [edi + 0xc], 0x1049c2e0
+    0x10290842  mov       dword ptr [edi + 0x6a0], 0x1049c2f8
+  --- C_Weapon_Shotgun slot+0x5cc -> 0x10293430 ---
+    0x10293430  push      ebp
+    0x10293431  mov       ebp, esp
+    0x10293433  sub       esp, 8
+    0x10293436  push      esi
+    0x10293437  push      edi
+    0x10293438  mov       esi, ecx
+    0x1029343a  call      0x102976b0
+    0x1029343f  mov       edi, eax
+    0x10293441  test      edi, edi
+    0x10293443  je        0x102935b3
+    0x10293449  mov       edx, dword ptr [esi]
+    0x1029344b  mov       ecx, esi
+    0x1029344d  push      ebx
+    0x1029344e  call      dword ptr [edx + 0x4a0]
+    0x10293454  mov       edx, dword ptr [esi]
+    0x10293456  mov       ecx, esi
+    0x10293458  push      eax
+    0x10293459  call      dword ptr [edx + 0x4a8]
+    0x1029345f  mov       esi, eax
+    0x10293461  fld       dword ptr [esi]
+    0x10293463  fstp      dword ptr [ebp - 8]
+    0x10293466  call      0x10102360
+    0x1029346b  mov       dword ptr [ebp - 4], eax
+    0x1029346e  fild      dword ptr [ebp - 4]
+    0x10293471  fstp      dword ptr [ebp - 4]
+    0x10293474  fld       dword ptr [ebp - 8]
+    0x10293477  call      0x103d9290
+    0x1029347c  fmul      dword ptr [0x1041a64c]
+    0x10293482  mov       ecx, edi
+    0x10293484  fmul      dword ptr [ebp - 4]
+    0x10293487  fstp      dword ptr [ebp - 8]
+    0x1029348a  call      0x1007a510
+    0x1029348f  movss     xmm4, dword ptr [ebp - 8]
+    0x10293494  movss     xmm3, dword ptr [0x1041dc84]
+    0x1029349c  movss     xmm1, dword ptr [0x1041da44]
+    0x102934a4  cvtsi2ss  xmm0, eax
+    0x102934a8  fld       dword ptr [esi + 4]
+    0x102934ab  divss     xmm4, xmm0
+    0x102934af  fstp      dword ptr [ebp - 4]
+    0x102934b2  addss     xmm4, dword ptr [0x1041a640]
+    0x102934ba  andps     xmm3, xmm4
+    0x102934bd  movaps    xmm0, xmm4
+    0x102934c0  xorps     xmm0, xmm3
+    0x102934c3  movaps    xmm2, xmm4
+    0x102934c6  cmpltss   xmm0, xmm1
+    0x102934cb  andps     xmm1, xmm0
+    0x102934ce  orps      xmm1, xmm3
+    0x102934d1  addss     xmm2, xmm1
+    0x102934d5  subss     xmm2, xmm1
+    0x102934d9  movss     xmm1, dword ptr [0x1040d210]
+    0x102934e1  movaps    xmm0, xmm2
+    0x102934e4  subss     xmm0, xmm4
+    0x102934e8  cmpnless  xmm0, xmm3
+    0x102934ed  andps     xmm0, xmm1
+    0x102934f0  subss     xmm2, xmm0
+    0x102934f4  cvttss2si ebx, xmm2
+    0x102934f8  call      0x10102360
+    0x102934fd  mov       dword ptr [ebp - 8], eax
+    0x10293500  fild      dword ptr [ebp - 8]
+    0x10293503  fstp      dword ptr [ebp - 8]
+    0x10293506  fld       dword ptr [ebp - 4]
+    0x10293509  call      0x103d9290
+    0x1029350e  fmul      dword ptr [0x1041a64c]
+    0x10293514  mov       ecx, edi
+    0x10293516  fmul      dword ptr [ebp - 8]
+    0x10293519  fstp      dword ptr [ebp - 8]
+    0x1029351c  call      0x1007a510
+    0x10293521  movss     xmm2, dword ptr [ebp - 8]
+    0x10293526  movss     xmm4, dword ptr [0x1041dc84]
+  --- C_Weapon_Shotgun slot+0x5d0 -> 0x102939f0 ---
+    0x102939f0  mov       al, 1
+    0x102939f2  ret       
+    0x102939f3  int3      
+    0x102939f4  int3      
+    0x102939f5  int3      
+    0x102939f6  int3      
+    0x102939f7  int3      
+    0x102939f8  int3      
+    0x102939f9  int3      
+    0x102939fa  int3      
+    0x102939fb  int3      
+    0x102939fc  int3      
+    0x102939fd  int3      
+    0x102939fe  int3      
+    0x102939ff  int3      
+    0x10293a00  push      esi
+    0x10293a01  push      edi
+    0x10293a02  mov       esi, ecx
+    0x10293a04  call      0x102976b0
+    0x10293a09  mov       edi, eax
+    0x10293a0b  test      edi, edi
+    0x10293a0d  je        0x10293ac8
+    0x10293a13  mov       edx, dword ptr [esi]
+    0x10293a15  mov       ecx, esi
+    0x10293a17  call      dword ptr [edx + 0x520]
+    0x10293a1d  cmp       dword ptr [esi + 0xa64], eax
+    0x10293a23  jge       0x10293a77
+    0x10293a25  mov       eax, dword ptr [esi]
+    0x10293a27  mov       ecx, esi
+    0x10293a29  call      dword ptr [eax + 0x578]
+    0x10293a2f  push      eax
+    0x10293a30  mov       ecx, edi
+    0x10293a32  call      0x1006f5c0
+    0x10293a37  test      eax, eax
+    0x10293a39  je        0x10293a77
+    0x10293a3b  fldz      
+    0x10293a3d  push      ecx
+    0x10293a3e  fstp      dword ptr [esp]
+    0x10293a41  push      0x10a
+    0x10293a46  mov       ecx, esi
+    0x10293a48  call      0x10298220
+    0x10293a4d  cmp       dword ptr [esi + 0xa64], 0
+    0x10293a54  mov       byte ptr [esi + 0xa2c], 1
+    0x10293a5b  jne       0x10293a98
+    0x10293a5d  mov       eax, dword ptr [esi + 0xad8]
+    0x10293a63  mov       ecx, eax
+    0x10293a65  or        ecx, 0x100000
+    0x10293a6b  cmp       eax, ecx
+    0x10293a6d  je        0x10293a98
+    0x10293a6f  mov       dword ptr [esi + 0xad8], ecx
+    0x10293a75  jmp       0x10293a98
+    0x10293a77  cmp       dword ptr [esi + 0xa64], 0
+    0x10293a7e  jne       0x10293a98
+    0x10293a80  push      0
+    0x10293a82  push      0
+    0x10293a84  push      0x1041b0c4
+    0x10293a89  mov       ecx, edi
+    0x10293a8b  call      0x100bc150
+    0x10293a90  push      esi
+    0x10293a91  mov       ecx, edi
+    0x10293a93  call      0x10070680
+    0x10293a98  mov       eax, dword ptr [esi + 0xad8]
+    0x10293a9e  mov       ecx, eax
+    0x10293aa0  and       ecx, 0xffffdfff
+    0x10293aa6  cmp       eax, ecx
+    0x10293aa8  je        0x10293ab0
+    0x10293aaa  mov       dword ptr [esi + 0xad8], ecx
+    0x10293ab0  mov       eax, dword ptr [esi + 0xad8]
+    0x10293ab6  mov       ecx, eax
+    0x10293ab8  and       ecx, 0xfffff7fe
+    0x10293abe  cmp       eax, ecx
+    0x10293ac0  je        0x10293ac8
+    0x10293ac2  mov       dword ptr [esi + 0xad8], ecx
+    0x10293ac8  pop       edi
+    0x10293ac9  pop       esi
+    0x10293aca  ret       
+    0x10293acb  int3      
+    0x10293acc  int3      
+    0x10293acd  int3      
+    0x10293ace  int3      
+    0x10293acf  int3      
+    0x10293ad0  xor       eax, eax
+    0x10293ad2  ret       
+    0x10293ad3  int3      
+    0x10293ad4  int3      
+    0x10293ad5  int3      
+    0x10293ad6  int3      
+    0x10293ad7  int3      
+    0x10293ad8  int3      
+    0x10293ad9  int3      
+    0x10293ada  int3      
+    0x10293adb  int3      
+    0x10293adc  int3      
+    0x10293add  int3      
+    0x10293ade  int3      
+    0x10293adf  int3      
+    0x10293ae0  push      ebp
+    0x10293ae1  mov       ebp, esp
+    0x10293ae3  push      esi
+    0x10293ae4  push      0xae0
+    0x10293ae9  call      0x100a6340
+  --- C_Weapon_357 slot+0x5cc -> 0x1028e490 ---
+    0x1028e490  push      ebp
+    0x1028e491  mov       ebp, esp
+    0x1028e493  sub       esp, 0x1c
+    0x1028e496  push      esi
+    0x1028e497  push      edi
+    0x1028e498  mov       esi, ecx
+    0x1028e49a  call      0x102976b0
+    0x1028e49f  mov       edi, eax
+    0x1028e4a1  test      edi, edi
+    0x1028e4a3  je        0x1028e872
+    0x1028e4a9  mov       edx, dword ptr [esi]
+    0x1028e4ab  mov       ecx, esi
+    0x1028e4ad  call      dword ptr [edx + 0x4a0]
+    0x1028e4b3  mov       edx, dword ptr [esi]
+    0x1028e4b5  mov       ecx, esi
+    0x1028e4b7  push      eax
+    0x1028e4b8  call      dword ptr [edx + 0x4a8]
+    0x1028e4be  mov       esi, eax
+    0x1028e4c0  fld       dword ptr [esi]
+    0x1028e4c2  fstp      dword ptr [ebp - 0xc]
+    0x1028e4c5  call      0x10102360
+    0x1028e4ca  mov       dword ptr [ebp - 0x10], eax
+    0x1028e4cd  fild      dword ptr [ebp - 0x10]
+    0x1028e4d0  fstp      dword ptr [ebp - 0x10]
+    0x1028e4d3  fld       dword ptr [ebp - 0xc]
+    0x1028e4d6  call      0x103d9290
+    0x1028e4db  fmul      dword ptr [0x1041a64c]
+    0x1028e4e1  mov       ecx, edi
+    0x1028e4e3  fmul      dword ptr [ebp - 0x10]
+    0x1028e4e6  fstp      dword ptr [ebp - 0x10]
+    0x1028e4e9  call      0x1007a510
+    0x1028e4ee  movss     xmm4, dword ptr [ebp - 0x10]
+    0x1028e4f3  movss     xmm3, dword ptr [0x1041dc84]
+    0x1028e4fb  movss     xmm1, dword ptr [0x1041da44]
+    0x1028e503  cvtsi2ss  xmm0, eax
+    0x1028e507  fld       dword ptr [esi + 4]
+    0x1028e50a  divss     xmm4, xmm0
+    0x1028e50e  fstp      dword ptr [ebp - 0xc]
+    0x1028e511  addss     xmm4, dword ptr [0x1041a640]
+    0x1028e519  andps     xmm3, xmm4
+    0x1028e51c  movaps    xmm0, xmm4
+    0x1028e51f  xorps     xmm0, xmm3
+    0x1028e522  movaps    xmm2, xmm4
+    0x1028e525  cmpltss   xmm0, xmm1
+    0x1028e52a  andps     xmm1, xmm0
+    0x1028e52d  orps      xmm1, xmm3
+    0x1028e530  addss     xmm2, xmm1
+    0x1028e534  subss     xmm2, xmm1
+    0x1028e538  movss     xmm1, dword ptr [0x1040d210]
+    0x1028e540  movaps    xmm0, xmm2
+    0x1028e543  subss     xmm0, xmm4
+    0x1028e547  cmpnless  xmm0, xmm3
+    0x1028e54c  andps     xmm0, xmm1
+    0x1028e54f  subss     xmm2, xmm0
+    0x1028e553  cvttss2si eax, xmm2
+    0x1028e557  mov       dword ptr [ebp - 4], eax
+    0x1028e55a  call      0x10102360
+    0x1028e55f  mov       dword ptr [ebp - 0x10], eax
+    0x1028e562  fild      dword ptr [ebp - 0x10]
+    0x1028e565  fstp      dword ptr [ebp - 0x10]
+    0x1028e568  fld       dword ptr [ebp - 0xc]
+    0x1028e56b  call      0x103d9290
+    0x1028e570  fmul      dword ptr [0x1041a64c]
+    0x1028e576  mov       ecx, edi
+    0x1028e578  fmul      dword ptr [ebp - 0x10]
+    0x1028e57b  fstp      dword ptr [ebp - 0x10]
+    0x1028e57e  call      0x1007a510
+    0x1028e583  movss     xmm4, dword ptr [ebp - 0x10]
+    0x1028e588  movss     xmm3, dword ptr [0x1041dc84]
+  --- C_Weapon_357 slot+0x5d0 -> 0x1028e930 ---
+    0x1028e930  mov       al, 1
+    0x1028e932  ret       
+    0x1028e933  int3      
+    0x1028e934  int3      
+    0x1028e935  int3      
+    0x1028e936  int3      
+    0x1028e937  int3      
+    0x1028e938  int3      
+    0x1028e939  int3      
+    0x1028e93a  int3      
+    0x1028e93b  int3      
+    0x1028e93c  int3      
+    0x1028e93d  int3      
+    0x1028e93e  int3      
+    0x1028e93f  int3      
+    0x1028e940  xor       al, al
+    0x1028e942  ret       
+    0x1028e943  int3      
+    0x1028e944  int3      
+    0x1028e945  int3      
+    0x1028e946  int3      
+    0x1028e947  int3      
+    0x1028e948  int3      
+    0x1028e949  int3      
+    0x1028e94a  int3      
+    0x1028e94b  int3      
+    0x1028e94c  int3      
+    0x1028e94d  int3      
+    0x1028e94e  int3      
+    0x1028e94f  int3      
+    0x1028e950  xor       al, al
+    0x1028e952  ret       
+    0x1028e953  int3      
+    0x1028e954  int3      
+    0x1028e955  int3      
+    0x1028e956  int3      
+    0x1028e957  int3      
+    0x1028e958  int3      
+    0x1028e959  int3      
+    0x1028e95a  int3      
+    0x1028e95b  int3      
+    0x1028e95c  int3      
+    0x1028e95d  int3      
+    0x1028e95e  int3      
+    0x1028e95f  int3      
+    0x1028e960  xor       eax, eax
+    0x1028e962  ret       
+    0x1028e963  int3      
+    0x1028e964  int3      
+    0x1028e965  int3      
+    0x1028e966  int3      
+    0x1028e967  int3      
+    0x1028e968  int3      
+    0x1028e969  int3      
+    0x1028e96a  int3      
+    0x1028e96b  int3      
+    0x1028e96c  int3      
+    0x1028e96d  int3      
+    0x1028e96e  int3      
+    0x1028e96f  int3      
+    0x1028e970  push      ebp
+    0x1028e971  mov       ebp, esp
+    0x1028e973  push      edi
+    0x1028e974  push      0xae8
+    0x1028e979  call      0x100a6340
+    0x1028e97e  mov       edi, eax
+    0x1028e980  add       esp, 4
+    0x1028e983  test      edi, edi
+    0x1028e985  je        0x1028e9dd
+    0x1028e987  push      esi
+    0x1028e988  mov       ecx, edi
+    0x1028e98a  call      0x10298aa0
+    0x1028e98f  push      dword ptr [ebp + 0xc]
+    0x1028e992  mov       ecx, edi
+    0x1028e994  mov       dword ptr [edi], 0x104999b0
+    0x1028e99a  push      dword ptr [ebp + 8]
+    0x1028e99d  mov       dword ptr [edi + 4], 0x1049a058
+    0x1028e9a4  mov       dword ptr [edi + 8], 0x1049a118
+    0x1028e9ab  mov       dword ptr [edi + 0xc], 0x1049a154
+    0x1028e9b2  mov       dword ptr [edi + 0x6a0], 0x1049a16c
+    0x1028e9bc  mov       dword ptr [edi + 0xa70], 0
+    0x1028e9c6  mov       dword ptr [edi + 0xa78], 0x45000000
+    0x1028e9d0  call      dword ptr [0x10499a50]
+    0x1028e9d6  pop       esi
+    0x1028e9d7  lea       eax, [edi + 8]
+    0x1028e9da  pop       edi
+    0x1028e9db  pop       ebp
+    0x1028e9dc  ret       
+    0x1028e9dd  xor       eax, eax
+    0x1028e9df  pop       edi
+    0x1028e9e0  pop       ebp
+    0x1028e9e1  ret       
+    0x1028e9e2  int3      
+    0x1028e9e3  int3      
+    0x1028e9e4  int3      
+    0x1028e9e5  int3      
+    0x1028e9e6  int3      
+    0x1028e9e7  int3      
+    0x1028e9e8  int3      
+    0x1028e9e9  int3      
+    0x1028e9ea  int3      
+    0x1028e9eb  int3      
+    0x1028e9ec  int3      
+    0x1028e9ed  int3      
+    0x1028e9ee  int3      
+    0x1028e9ef  int3      
+    0x1028e9f0  mov       eax, dword ptr [0x106ecf74]
+    0x1028e9f5  test      al, 1
+    0x1028e9f7  jne       0x1028ea8a
+    0x1028e9fd  push      0
+    0x1028e9ff  push      0
+    0x1028ea01  push      4
+    0x1028ea03  push      0
+    0x1028ea05  or        eax, 1
+    0x1028ea08  push      0x1041b314
+    0x1028ea0d  push      0x106ece48
+    0x1028ea12  mov       dword ptr [0x106ecf74], eax
+    0x1028ea17  call      0x10132a50
+    0x1028ea1c  push      0x10132790
+    0x1028ea21  push      dword ptr [0x10560d60]
+    0x1028ea27  push      0
+    0x1028ea29  push      0
+    0x1028ea2b  push      0x1041b368
+  --- C_Weapon_Tau slot+0x5cc -> 0x10294610 ---
+    0x10294610  push      esi
+    0x10294611  mov       esi, dword ptr [0x1070508c]
+    0x10294617  push      edi
+    0x10294618  push      0x10
+    0x1029461a  mov       edi, dword ptr [esi]
+    0x1029461c  call      0x10102360
+    0x10294621  cvtsi2ss  xmm0, eax
+    0x10294625  mulss     xmm0, dword ptr [0x1040cf30]
+    0x1029462d  mulss     xmm0, dword ptr [0x1041b790]
+    0x10294635  cvttss2si eax, xmm0
+    0x10294639  push      eax
+    0x1029463a  call      0x10102340
+    0x1029463f  cdq       
+    0x10294640  sub       eax, edx
+    0x10294642  sar       eax, 1
+    0x10294644  push      eax
+    0x10294645  call      0x10102360
+    0x1029464a  cdq       
+    0x1029464b  mov       ecx, esi
+    0x1029464d  sub       eax, edx
+    0x1029464f  sar       eax, 1
+    0x10294651  push      eax
+    0x10294652  call      dword ptr [edi + 0x1a0]
+    0x10294658  pop       edi
+    0x10294659  pop       esi
+    0x1029465a  ret       
+    0x1029465b  int3      
+    0x1029465c  int3      
+    0x1029465d  int3      
+    0x1029465e  int3      
+    0x1029465f  int3      
+    0x10294660  push      ebp
+    0x10294661  mov       ebp, esp
+    0x10294663  sub       esp, 0x5c
+    0x10294666  push      edi
+    0x10294667  mov       edi, ecx
+    0x10294669  mov       ecx, dword ptr [0x1055dca4]
+    0x1029466f  mov       eax, dword ptr [ecx]
+    0x10294671  mov       eax, dword ptr [eax + 0x38]
+    0x10294674  call      eax
+    0x10294676  test      al, al
+    0x10294678  je        0x1029468f
+    0x1029467a  mov       ecx, dword ptr [0x1055dca4]
+    0x10294680  mov       eax, dword ptr [ecx]
+    0x10294682  mov       eax, dword ptr [eax + 0x3c]
+    0x10294685  call      eax
+    0x10294687  test      al, al
+    0x10294689  je        0x10294973
+    0x1029468f  push      esi
+    0x10294690  mov       ecx, edi
+    0x10294692  call      0x102976b0
+    0x10294697  mov       esi, eax
+    0x10294699  mov       dword ptr [ebp - 4], esi
+    0x1029469c  test      esi, esi
+    0x1029469e  je        0x10294972
+    0x102946a4  mov       eax, dword ptr [ebp + 8]
+    0x102946a7  movss     xmm1, dword ptr [0x1041b770]
+    0x102946af  movss     xmm0, dword ptr [eax]
+    0x102946b3  comiss    xmm1, xmm0
+    0x102946b6  ja        0x102946bb
+    0x102946b8  movaps    xmm1, xmm0
+    0x102946bb  movss     xmm0, dword ptr [edi + 0xae0]
+    0x102946c3  ucomiss   xmm0, xmm1
+    0x102946c6  lahf      
+    0x102946c7  test      ah, 0x44
+    0x102946ca  jnp       0x102946d4
+    0x102946cc  movss     dword ptr [edi + 0xae0], xmm1
+    0x102946d4  lea       eax, [edi + 0xae4]
+    0x102946da  mov       ecx, edi
+    0x102946dc  push      eax
+    0x102946dd  call      0x10295780
+    0x102946e2  cmp       byte ptr [ebp + 0xc], 0
+    0x102946e6  mov       ecx, 0x104a0ef0
+    0x102946eb  mov       eax, 0x104a0ee0
+    0x102946f0  cmove     eax, ecx
+    0x102946f3  mov       ecx, edi
+    0x102946f5  push      eax
+    0x102946f6  lea       eax, [edi + 0xaec]
+    0x102946fc  push      eax
+    0x102946fd  call      0x102956f0
+    0x10294702  mov       eax, dword ptr [esi]
+    0x10294704  lea       ecx, [ebp - 0x2c]
+    0x10294707  push      ecx
+    0x10294708  mov       ecx, esi
+    0x1029470a  call      dword ptr [eax + 0x274]
+  --- C_Weapon_Tau slot+0x5d0 -> 0x102956c0 ---
+    0x102956c0  mov       al, 1
+    0x102956c2  ret       
+    0x102956c3  int3      
+    0x102956c4  int3      
+    0x102956c5  int3      
+    0x102956c6  int3      
+    0x102956c7  int3      
+    0x102956c8  int3      
+    0x102956c9  int3      
+    0x102956ca  int3      
+    0x102956cb  int3      
+    0x102956cc  int3      
+    0x102956cd  int3      
+    0x102956ce  int3      
+    0x102956cf  int3      
+    0x102956d0  mov       eax, dword ptr [ecx + 0xa3c]
+    0x102956d6  cmp       eax, 0x1e9
+    0x102956db  je        0x102956e8
+    0x102956dd  cmp       eax, 0x1ea
+    0x102956e2  jne       0x102984f0
+    0x102956e8  xor       al, al
+    0x102956ea  ret       
+    0x102956eb  int3      
+    0x102956ec  int3      
+    0x102956ed  int3      
+    0x102956ee  int3      
+    0x102956ef  int3      
+    0x102956f0  push      ebp
+    0x102956f1  mov       ebp, esp
+    0x102956f3  push      esi
+    0x102956f4  push      edi
+    0x102956f5  mov       esi, ecx
+    0x102956f7  call      0x100723f0
+    0x102956fc  push      eax
+    0x102956fd  call      0x100bb0c0
+    0x10295702  add       esp, 4
+    0x10295705  test      al, al
+    0x10295707  je        0x10295746
+    0x10295709  mov       ecx, dword ptr [0x1055cc28]
+    0x1029570f  mov       eax, dword ptr [ecx]
+    0x10295711  call      dword ptr [eax + 0x60]
+    0x10295714  test      eax, eax
+    0x10295716  jne       0x10295746
+    0x10295718  push      eax
+    0x10295719  mov       ecx, esi
+    0x1029571b  call      0x102976e0
+    0x10295720  mov       esi, eax
+    0x10295722  test      esi, esi
+    0x10295724  je        0x10295776
+    0x10295726  mov       edi, dword ptr [ebp + 8]
+    0x10295729  mov       eax, dword ptr [edi]
+    0x1029572b  test      eax, eax
+    0x1029572d  je        0x1029573f
+    0x1029572f  push      0
+    0x10295731  push      0
+    0x10295733  push      eax
+    0x10295734  lea       ecx, [esi + 0x22c]
+    0x1029573a  call      0x1019bcd0
+    0x1029573f  push      0x104a0f10
+    0x10295744  jmp       0x10295764
+    0x10295746  mov       edi, dword ptr [ebp + 8]
+    0x10295749  mov       eax, dword ptr [edi]
+    0x1029574b  test      eax, eax
+    0x1029574d  je        0x1029575f
+    0x1029574f  push      0
+    0x10295751  push      0
+    0x10295753  push      eax
+    0x10295754  lea       ecx, [esi + 0x22c]
+    0x1029575a  call      0x1019bcd0
+    0x1029575f  push      0x104213e8
+    0x10295764  push      4
+    0x10295766  push      dword ptr [ebp + 0xc]
+    0x10295769  lea       ecx, [esi + 0x22c]
+    0x1029576f  call      0x1019b600
+    0x10295774  mov       dword ptr [edi], eax
+    0x10295776  pop       edi
+    0x10295777  pop       esi
+    0x10295778  pop       ebp
+    0x10295779  ret       8
+    0x1029577c  int3      
+    0x1029577d  int3      
+    0x1029577e  int3      
+    0x1029577f  int3      
+    0x10295780  push      ebp
+    0x10295781  mov       ebp, esp
+    0x10295783  push      esi
+    0x10295784  mov       esi, dword ptr [ebp + 8]
+    0x10295787  push      edi
+    0x10295788  mov       edi, ecx
+    0x1029578a  cmp       dword ptr [esi], 0
+    0x1029578d  je        0x102957e4
+    0x1029578f  call      0x100723f0
+    0x10295794  push      eax
+    0x10295795  call      0x100bb0c0
+    0x1029579a  add       esp, 4
+    0x1029579d  test      al, al
+    0x1029579f  je        0x102957d3
+    0x102957a1  mov       ecx, dword ptr [0x1055cc28]
+    0x102957a7  mov       eax, dword ptr [ecx]
+    0x102957a9  call      dword ptr [eax + 0x60]
+    0x102957ac  test      eax, eax
+    0x102957ae  jne       0x102957d3
+    0x102957b0  push      eax
+    0x102957b1  mov       ecx, edi
+    0x102957b3  call      0x102976e0
+    0x102957b8  test      eax, eax
+    0x102957ba  je        0x102957e4
+    0x102957bc  push      0
+    0x102957be  push      0
+  --- C_BaseCombatWeapon slot+0x5cc -> 0x100a44d0 ---
+    0x100a44d0  jmp       0x100ba690
+    0x100a44d5  int3      
+    0x100a44d6  int3      
+    0x100a44d7  int3      
+    0x100a44d8  int3      
+    0x100a44d9  int3      
+    0x100a44da  int3      
+    0x100a44db  int3      
+    0x100a44dc  int3      
+    0x100a44dd  int3      
+    0x100a44de  int3      
+    0x100a44df  int3      
+    0x100a44e0  push      ebp
+    0x100a44e1  mov       ebp, esp
+    0x100a44e3  push      ecx
+    0x100a44e4  push      ebx
+    0x100a44e5  push      esi
+    0x100a44e6  push      edi
+    0x100a44e7  mov       edi, ecx
+    0x100a44e9  mov       ecx, dword ptr [0x1040926c]
+    0x100a44ef  call      dword ptr [0x10409284]
+    0x100a44f5  mov       byte ptr [ebp - 1], al
+    0x100a44f8  test      al, al
+    0x100a44fa  je        0x100a4518
+    0x100a44fc  mov       ecx, dword ptr [0x1040926c]
+    0x100a4502  push      4
+    0x100a4504  push      0
+    0x100a4506  push      0x1041fbd8
+    0x100a450b  push      0
+    0x100a450d  push      0x104213f0
+    0x100a4512  call      dword ptr [0x1040928c]
+    0x100a4518  cmp       byte ptr [edi + 0x84], 0
+    0x100a451f  je        0x100a4589
+    0x100a4521  mov       eax, 0xffff
+    0x100a4526  cmp       word ptr [edi + 0x82], ax
+    0x100a452d  je        0x100a4589
+    0x100a452f  call      0x100ba690
+    0x100a4534  mov       esi, eax
+    0x100a4536  test      esi, esi
+    0x100a4538  je        0x100a457b
+    0x100a453a  mov       edx, dword ptr [esi]
+    0x100a453c  mov       ecx, esi
+    0x100a453e  call      dword ptr [edx + 0x430]
+    0x100a4544  test      eax, eax
+    0x100a4546  je        0x100a457b
+    0x100a4548  lea       ecx, [edi - 4]
+    0x100a454b  call      0x100723f0
+    0x100a4550  test      eax, eax
+    0x100a4552  je        0x100a457b
+    0x100a4554  mov       eax, dword ptr [esi]
+    0x100a4556  mov       ecx, esi
+    0x100a4558  call      dword ptr [eax + 0x430]
+    0x100a455e  cmp       eax, 4
+    0x100a4561  jne       0x100a457b
+    0x100a4563  mov       eax, dword ptr [esi]
+    0x100a4565  mov       ecx, esi
+    0x100a4567  call      dword ptr [eax + 0x434]
+    0x100a456d  lea       ecx, [edi - 4]
+    0x100a4570  mov       esi, eax
+    0x100a4572  call      0x100723f0
+    0x100a4577  cmp       esi, eax
+    0x100a4579  je        0x100a4589
+    0x100a457b  push      dword ptr [ebp + 8]
+    0x100a457e  mov       ecx, edi
+    0x100a4580  call      0x10095b80
+    0x100a4585  mov       esi, eax
+    0x100a4587  jmp       0x100a458b
+    0x100a4589  xor       esi, esi
+    0x100a458b  cmp       byte ptr [ebp - 1], 0
+    0x100a458f  je        0x100a459d
+    0x100a4591  mov       ecx, dword ptr [0x1040926c]
+    0x100a4597  call      dword ptr [0x10409288]
+    0x100a459d  pop       edi
+    0x100a459e  mov       eax, esi
+    0x100a45a0  pop       esi
+    0x100a45a1  pop       ebx
+    0x100a45a2  mov       esp, ebp
+    0x100a45a4  pop       ebp
+    0x100a45a5  ret       4
+    0x100a45a8  int3      
+    0x100a45a9  int3      
+    0x100a45aa  int3      
+    0x100a45ab  int3      
+    0x100a45ac  int3      
+    0x100a45ad  int3      
+    0x100a45ae  int3      
+    0x100a45af  int3      
+    0x100a45b0  call      0x100ba690
+    0x100a45b5  mov       ecx, eax
+    0x100a45b7  test      ecx, ecx
+    0x100a45b9  jne       0x100a45bc
+    0x100a45bb  ret       
+    0x100a45bc  mov       eax, dword ptr [ecx]
+    0x100a45be  jmp       dword ptr [eax + 0x3d8]
+    0x100a45c4  int3      
+    0x100a45c5  int3      
+    0x100a45c6  int3      
+    0x100a45c7  int3      
+    0x100a45c8  int3      
+    0x100a45c9  int3      
+    0x100a45ca  int3      
+    0x100a45cb  int3      
+    0x100a45cc  int3      
+    0x100a45cd  int3      
+    0x100a45ce  int3      
+    0x100a45cf  int3      
+  --- C_BaseCombatWeapon slot+0x5d0 -> 0x10074630 ---
+    0x10074630  mov       al, 1
+    0x10074632  ret       
+    0x10074633  int3      
+    0x10074634  int3      
+    0x10074635  int3      
+    0x10074636  int3      
+    0x10074637  int3      
+    0x10074638  int3      
+    0x10074639  int3      
+    0x1007463a  int3      
+    0x1007463b  int3      
+    0x1007463c  int3      
+    0x1007463d  int3      
+    0x1007463e  int3      
+    0x1007463f  int3      
+    0x10074640  mov       al, 1
+    0x10074642  ret       
+    0x10074643  int3      
+    0x10074644  int3      
+    0x10074645  int3      
+    0x10074646  int3      
+    0x10074647  int3      
+    0x10074648  int3      
+    0x10074649  int3      
+    0x1007464a  int3      
+    0x1007464b  int3      
+    0x1007464c  int3      
+    0x1007464d  int3      
+    0x1007464e  int3      
+    0x1007464f  int3      
+    0x10074650  xor       al, al
+    0x10074652  ret       
+    0x10074653  int3      
+    0x10074654  int3      
+    0x10074655  int3      
+    0x10074656  int3      
+    0x10074657  int3      
+    0x10074658  int3      
+    0x10074659  int3      
+    0x1007465a  int3      
+    0x1007465b  int3      
+    0x1007465c  int3      
+    0x1007465d  int3      
+    0x1007465e  int3      
+    0x1007465f  int3      
+    0x10074660  mov       al, 1
+    0x10074662  ret       
+    0x10074663  int3      
+    0x10074664  int3      
+    0x10074665  int3      
+    0x10074666  int3      
+    0x10074667  int3      
+    0x10074668  int3      
+    0x10074669  int3      
+    0x1007466a  int3      
+    0x1007466b  int3      
+    0x1007466c  int3      
+    0x1007466d  int3      
+    0x1007466e  int3      
+    0x1007466f  int3      
+    0x10074670  xor       al, al
+    0x10074672  ret       
+    0x10074673  int3      
+    0x10074674  int3      
+    0x10074675  int3      
+    0x10074676  int3      
+    0x10074677  int3      
+    0x10074678  int3      
+    0x10074679  int3      
+    0x1007467a  int3      
+    0x1007467b  int3      
+    0x1007467c  int3      
+    0x1007467d  int3      
+    0x1007467e  int3      
+    0x1007467f  int3      
+    0x10074680  push      esi
+    0x10074681  push      edi
+    0x10074682  mov       esi, ecx
+    0x10074684  call      0x10077460
+    0x10074689  mov       eax, dword ptr [esi]
+    0x1007468b  mov       ecx, esi
+    0x1007468d  call      dword ptr [eax + 0x80]
+    0x10074693  mov       ecx, esi
+    0x10074695  call      0x100b0490
+    0x1007469a  push      2
+    0x1007469c  lea       ecx, [esi + 0x1a0]
+    0x100746a2  call      0x101201a0
+    0x100746a7  and       dword ptr [esi + 0x178], 0xfffbffff
+    0x100746b1  mov       dword ptr [esi + 0xa38], 0
+    0x100746bb  cmp       dword ptr [esi + 0xa54], 0
+    0x100746c2  je        0x100746ce
+    0x100746c4  mov       dword ptr [esi + 0xa54], 0
+    0x100746ce  cmp       dword ptr [esi + 0xa1c], 0
+    0x100746d5  je        0x100746e1
+    0x100746d7  mov       dword ptr [esi + 0xa1c], 0
+    0x100746e1  mov       eax, dword ptr [esi]
+    0x100746e3  mov       ecx, esi
+    0x100746e5  call      dword ptr [eax + 0x518]
+    0x100746eb  test      eax, eax
+    0x100746ed  je        0x10074701
+    0x100746ef  mov       eax, dword ptr [esi]
+    0x100746f1  mov       ecx, esi
+    0x100746f3  call      dword ptr [eax + 0x518]
+    0x100746f9  push      eax
+    0x100746fa  mov       ecx, esi
+    0x100746fc  call      0x100af980
+    0x10074701  fld       dword ptr [0x1041b3cc]
+    0x10074707  push      ecx
+    0x10074708  fstp      dword ptr [esp]
+    0x1007470b  push      1
+    0x1007470d  lea       ecx, [esi + 0x1a0]
+    0x10074713  call      0x10120790
+    0x10074718  push      0x80
+    0x1007471d  mov       ecx, esi
+    0x1007471f  call      0x10074e40
+    0x10074724  pop       edi
+    0x10074725  mov       dword ptr [esi + 0xaa0], 0

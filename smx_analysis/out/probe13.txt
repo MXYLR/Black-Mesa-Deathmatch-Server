@@ -1,0 +1,201 @@
+=== float constants used by the penetration loop ===
+  0x105daa74 = 12.000000        STEP (dir scaled)            | ""
+  0x105db264 = 24.000000        MAX penetration distance cap | ""
+  0x105d6624 = 1.000000         range compare / 1.0f?        | ""
+  0x105d668c = 4.000000         float used as arg (1.0f?)    | ""
+  0x105c8f00 = 0.000000         float zero?                  | ""
+  0x105d6678 = 3.000000         z offset                     | ""
+  0x105d6614 = 0.400000         float                        | ""
+  0x105d6618 = 0.500000         float                        | ""
+  0x105ece60 = 576.000000       entry epsilon (squared)      | ""
+  0x105d6660 = 2.000000         damage scale for 0x57/0x4d   | ""
+  0x105fb1ec = 4.600000         range scale                  | ""
+  0x105d6934 = 0.000000         string?                      | ""
+  0x106a8de8 = 0.000000         string?                      | ""
+  0x106a9070 = 74936596747214365486254496153600.000000   multitrace error str         | "Multi-trace error: encountered a recycled entity"
+
+=== 0x1034d9f0 (called with hit distance) ===
+  0x1034d9f0  push      ebp
+  0x1034d9f1  mov       ebp, esp
+  0x1034d9f3  sub       esp, 0xc
+  0x1034d9f6  push      esi
+  0x1034d9f7  mov       esi, dword ptr [ebp + 8]
+  0x1034d9fa  movss     xmm0, dword ptr [esi + 4]
+  0x1034d9ff  movss     dword ptr [ebp - 4], xmm0
+  0x1034da04  movss     dword ptr [ebp + 8], xmm0
+  0x1034da09  movss     xmm0, dword ptr [ebp + 0xc]
+  0x1034da0e  ucomiss   xmm0, dword ptr [0x105c8f00]
+  0x1034da15  lahf      
+  0x1034da16  test      ah, 0x44
+  0x1034da19  jnp       0x1034daa3
+  0x1034da1f  fld       dword ptr [esi + 0x10]
+  0x1034da22  fld       dword ptr [ebp + 0xc]
+  0x1034da25  fmul      dword ptr [0x10642ac0]
+  0x1034da2b  call      0x10593ac0
+  0x1034da30  movss     xmm3, dword ptr [esi + 8]
+  0x1034da35  movss     xmm0, dword ptr [0x105c8f00]
+  0x1034da3d  comiss    xmm3, xmm0
+  0x1034da40  movss     xmm2, dword ptr [esi + 0xc]
+  0x1034da45  fst       qword ptr [ebp - 0xc]
+  0x1034da48  fstp      dword ptr [ebp + 8]
+  0x1034da4b  jbe       0x1034da94
+  0x1034da4d  movss     xmm1, dword ptr [ebp + 0xc]
+  0x1034da52  comiss    xmm1, xmm3
+  0x1034da55  jbe       0x1034da94
+  0x1034da57  comiss    xmm1, xmm2
+  0x1034da5a  ja        0x1034da99
+  0x1034da5c  subss     xmm1, xmm3
+  0x1034da60  movss     xmm0, dword ptr [0x105d6624]
+  0x1034da68  subss     xmm2, xmm3
+  0x1034da6c  fld       dword ptr [0x105d6620]
+  0x1034da72  sub       esp, 8
+  0x1034da75  divss     xmm1, xmm2
+  0x1034da79  fstp      dword ptr [esp + 4]
+  0x1034da7d  subss     xmm0, xmm1
+  0x1034da81  movss     dword ptr [esp], xmm0
+  0x1034da86  call      0x10521f90
+  0x1034da8b  fmul      qword ptr [ebp - 0xc]
+  0x1034da8e  add       esp, 8
+  0x1034da91  fstp      dword ptr [ebp + 8]
+  0x1034da94  movss     xmm0, dword ptr [ebp + 8]
+  0x1034da99  mulss     xmm0, dword ptr [ebp - 4]
+  0x1034da9e  movss     dword ptr [ebp + 8], xmm0
+  0x1034daa3  fld       dword ptr [ebp + 8]
+  0x1034daa6  pop       esi
+  0x1034daa7  mov       esp, ebp
+  0x1034daa9  pop       ebp
+  0x1034daaa  ret       
+  0x1034daab  int3      
+  0x1034daac  int3      
+  0x1034daad  int3      
+  0x1034daae  int3      
+  0x1034daaf  int3      
+  0x1034dab0  push      ebp
+  0x1034dab1  mov       ebp, esp
+  0x1034dab3  mov       eax, dword ptr [0x108bc200]
+  0x1034dab8  sub       esp, 0x8c
+  0x1034dabe  mov       ecx, 0x108bc200
+  0x1034dac3  push      edi
+  0x1034dac4  call      dword ptr [eax + 0x2c]
+  0x1034dac7  mov       edi, dword ptr [ebp + 8]
+  0x1034daca  test      eax, eax
+  0x1034dacc  je        0x1034db05
+  0x1034dace  fld       dword ptr [0x105daa70]
+  0x1034dad4  mov       eax, dword ptr [ebp + 0x10]
+  0x1034dad7  push      ecx
+  0x1034dad8  fstp      dword ptr [esp]
+  0x1034dadb  fld       dword ptr [0x105d660c]
+  0x1034dae1  add       eax, 0xc
+  0x1034dae4  push      1
+  0x1034dae6  push      0xff
+  0x1034daeb  push      0
+  0x1034daed  push      0
+  0x1034daef  push      0xff
+  0x1034daf4  push      ecx
+  0x1034daf5  fstp      dword ptr [esp]
+  0x1034daf8  push      eax
+  0x1034daf9  lea       eax, [edi + 0x18]
+  0x1034dafc  push      eax
+  0x1034dafd  call      0x10159150
+  0x1034db02  add       esp, 0x24
+  0x1034db05  cmp       byte ptr [edi + 0x38], 0
+  0x1034db09  je        0x1034dbf2
+  0x1034db0f  mov       eax, dword ptr [edi]
+  0x1034db11  cmp       byte ptr [eax + 0x1fb], 3
+  0x1034db18  jb        0x1034dbf2
+  0x1034db1e  movss     xmm0, dword ptr [0x105c8f00]
+  0x1034db26  push      esi
+  0x1034db27  mov       esi, dword ptr [ebp + 0xc]
+  0x1034db2a  comiss    xmm0, dword ptr [esi + 0x64]
+
+=== penetration keyvalue parser 0x1046d870: ref sites ===
+  --- @0x1046da07 ---
+     0x1046d9c7  and       byte ptr [ecx + 0x31080], bh
+     0x1046d9cd  add       byte ptr [eax], al
+     0x1046d9cf  mov       dword ptr [0x1080b924], 0x10
+     0x1046d9d9  mov       dword ptr [0x1080b928], 4
+     0x1046d9e3  mov       dword ptr [0x1080b92c], 0
+     0x1046d9ed  mov       dword ptr [0x1080b930], 0
+     0x1046d9f7  mov       dword ptr [0x1080b934], 0
+     0x1046da01  mov       dword ptr [0x1080b938], 0x10724704
+     0x1046da0b  mov       dword ptr [0x1080b93c], 0x105d5dec
+     0x1046da15  mov       dword ptr [0x1080b940], 3
+  --- @0x1046da57 ---
+     0x1046da17  inc       eax
+     0x1046da18  mov       ecx, 0x31080
+     0x1046da1d  add       byte ptr [eax], al
+     0x1046da1f  mov       dword ptr [0x1080b944], 0x14
+     0x1046da29  mov       dword ptr [0x1080b948], 4
+     0x1046da33  mov       dword ptr [0x1080b94c], 0
+     0x1046da3d  mov       dword ptr [0x1080b950], 0
+     0x1046da47  mov       dword ptr [0x1080b954], 0
+     0x1046da51  mov       dword ptr [0x1080b958], 0x1072471c
+     0x1046da5b  mov       dword ptr [0x1080b95c], 0x105c89cc
+     0x1046da65  mov       dword ptr [0x1080b960], 3
+  --- @0x1046daa7 ---
+     0x1046da67  pushal    
+     0x1046da68  mov       ecx, 0x31080
+     0x1046da6d  add       byte ptr [eax], al
+     0x1046da6f  mov       dword ptr [0x1080b964], 0x18
+     0x1046da79  mov       dword ptr [0x1080b968], 4
+     0x1046da83  mov       dword ptr [0x1080b96c], 0
+     0x1046da8d  mov       dword ptr [0x1080b970], 0
+     0x1046da97  mov       dword ptr [0x1080b974], 0
+     0x1046daa1  mov       dword ptr [0x1080b978], 0x10724730
+     0x1046daab  mov       dword ptr [0x1080b97c], 0x105c89cc
+     0x1046dab5  mov       dword ptr [0x1080b980], 3
+  --- @0x1046daf7 ---
+     0x1046dab7  cmp       byte ptr [ecx + 0x31080], 0
+     0x1046dabe  add       bh, al
+     0x1046dac0  add       eax, 0x1080b984
+     0x1046dac5  sbb       al, 0
+     0x1046dac7  add       byte ptr [eax], al
+     0x1046dac9  mov       dword ptr [0x1080b988], 4
+     0x1046dad3  mov       dword ptr [0x1080b98c], 0
+     0x1046dadd  mov       dword ptr [0x1080b990], 0
+     0x1046dae7  mov       dword ptr [0x1080b994], 0
+     0x1046daf1  mov       dword ptr [0x1080b998], 0x1072474c
+     0x1046dafb  mov       dword ptr [0x1080b99c], 0x105c89cc
+     0x1046db05  mov       dword ptr [0x1080b9a0], 3
+
+=== ascii blobs around Penetrated* strings ===
+  --- 0x10677ff0-0x10678100 ---
+     0x10677ff0  ade_satchel
+     0x10677ffc  grenade_tripmine
+     0x10678010  grenade_hornet
+     0x10678020  snark
+     0x10678028  50cal
+     0x10678030  sentry
+     0x10678038  SniperRound
+     0x10678044  SniperPenetratedRound
+     0x10678060  CRITICAL ERROR: AmmoDef ammo count %i does not match up with BMAmmoID::AMMO_MAX %i
+     0x106780bb  Dt\
+     0x106780bf  E($&F
+     0x106780c5  f*F.R
+     0x106780cb  F<unconnected>
+     0x106780dc  #Game_connected
+     0x106780ec  Black Mesa
+  --- 0x106a9640-0x106a9760 ---
+     0x106a96c8  m_SoundTime
+     0x106a96d4  m_AmmoType
+     0x106a96e0  m_PenetratedAmmoType
+     0x106a96f8  m_iImpacts
+     0x106a9704  m_vecDir
+     0x106a9710  m_flLastThink
+     0x106a9720  m_Speed
+     0x106a9728  m_vecStart
+     0x106a9744  tracerbullet
+  --- 0x10645380-0x10645470 ---
+     0x10645380  sicsCollision007
+     0x10645394  VPhysicsSurfaceProps001
+     0x106453ac  vehicle_sounds
+     0x106453bc  Physics
+     0x106453c4  CPhysicsHook::FrameUpdatePostEntityThink
+     0x106453f0  VPhysics Penetration Error (%s)!
+     0x10645414  Controls the duration of vphysics penetration error boxes.
+     0x10645450  phys_penetration_error_time
+
+=== who references those blob starts ===
+  str 0x1067804a refs:
+  str 0x106a96e2 refs:
+  str 0x106453f9 refs:

@@ -1,0 +1,88 @@
+=== consumers of the penetration schema singleton 0x1080b8a0 ===
+  0x1080b8a0 refs: ['0x1046d882']
+  0x1080b8a4 refs: ['0x1046d891']
+  0x1080b8b8 refs: ['0x1046d8c3']
+  0x1080b8bc refs: ['0x1046d8cd']
+  0x1080b8c4 refs: ['0x1046d8e1']
+  0x1080b914 refs: ['0x1046d9a9']
+  0x1080b918 refs: ['0x1046d9b3']
+  0x1080b91c refs: ['0x1046d9bd']
+  0x1080b924 refs: ['0x1046d9d1']
+
+=== who calls the schema builder 0x1046d870 ===
+  raw rel refs: ['0x1002bb02']
+
+=== first schema field name 0x105fe5bc ===
+  "damage"
+    ref @0x102a22fd
+    ref @0x1046d8c7
+    ref @0x1046dd87
+    ref @0x107b50ec
+    ref @0x107dfc70
+    ref @0x107f1d40
+
+=== DT_BlackMesaFireBullets datamap name refs ===
+  0x1072764c "CBlackMesaFireBullets" refs: ['0x1002c696']
+      0x1002c666  int3      
+      0x1002c667  int3      
+      0x1002c668  int3      
+      0x1002c669  int3      
+      0x1002c66a  int3      
+      0x1002c66b  int3      
+      0x1002c66c  int3      
+      0x1002c66d  int3      
+      0x1002c66e  int3      
+      0x1002c66f  int3      
+      0x1002c670  push      0x107276e4
+      0x1002c675  mov       ecx, 0x110f7ee0
+      0x1002c67a  call      0x10484250
+      0x1002c67f  push      0x105bf360
+      0x1002c684  call      0x1059036a
+      0x1002c689  pop       ecx
+      0x1002c68a  ret       
+      0x1002c68b  int3      
+      0x1002c68c  int3      
+      0x1002c68d  int3      
+      0x1002c68e  int3      
+      0x1002c68f  int3      
+      0x1002c690  push      0x110f7ec4
+      0x1002c695  push      0x1072764c
+      0x1002c69a  mov       ecx, 0x110f7eb0
+      0x1002c69f  call      0x1005ac00
+      0x1002c6a4  ret       
+      0x1002c6a5  int3      
+      0x1002c6a6  int3      
+      0x1002c6a7  int3      
+      0x1002c6a8  int3      
+      0x1002c6a9  int3      
+      0x1002c6aa  int3      
+      0x1002c6ab  int3      
+      0x1002c6ac  int3      
+      0x1002c6ad  int3      
+      0x1002c6ae  int3      
+      0x1002c6af  int3      
+      0x1002c6b0  mov       ecx, 0x110f7ec4
+  0x10727667 "BlackMesaFireBullets" refs: []
+
+=== CTEWeaponBullets effect: what builds the shot struct? fn 0x1034f250 callers ===
+  caller @0x1034e2af [.text]
+
+=== shot struct field writers: immediate stores to +0x18/+0x1c/+0x2c (float) ===
+  mov dword [esi+0x2c]     VA 0x1005b0b2 [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x2c]     VA 0x1005b0d9 [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x2c]     VA 0x1008138a [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x2c]     VA 0x1009d991 [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x2c]     VA 0x100a4bd5 [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x2c]     VA 0x100a8dcb [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x18]     VA 0x10037888 [.text] imm=0xffffffff (nan)
+  mov dword [esi+0x18]     VA 0x10052d5b [.text] imm=0x3e4ccccd (0.2000)
+  mov dword [esi+0x18]     VA 0x100531e8 [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x18]     VA 0x1005b104 [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x18]     VA 0x1005b12b [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x18]     VA 0x100784c1 [.text] imm=0xffffffff (nan)
+  mov dword [esi+0x1c]     VA 0x100378b3 [.text] imm=0xffffffff (nan)
+  mov dword [esi+0x1c]     VA 0x1005b10b [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x1c]     VA 0x1005b132 [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x1c]     VA 0x100784c8 [.text] imm=0xffffffff (nan)
+  mov dword [esi+0x1c]     VA 0x1008139f [.text] imm=0x00000000 (0.0000)
+  mov dword [esi+0x1c]     VA 0x1008d77e [.text] imm=0x00000000 (0.0000)

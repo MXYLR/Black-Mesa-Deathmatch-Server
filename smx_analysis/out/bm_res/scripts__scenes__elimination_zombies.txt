@@ -1,0 +1,15 @@
+"Scene"
+{
+	"SceneId" "Elimination"
+	"SceneData"
+	{
+		"TotalCount"	"32"
+		"MaxActive"		"8"
+		"SpawnRate"		"1"
+		
+		"AIBot"
+		{
+			"Class"	"bot_zombie"
+		}
+	}
+}

@@ -1,0 +1,169 @@
+=== RTTI / class-name strings ===
+  -- ".?AVCBlackMesaFireBullets"
+     VAs: ['0x1082d9e8']
+  -- "BlackMesaFireBullets"
+     VAs: ['0x1072764d', '0x10727667', '0x1082d9ed']
+  -- "FireBullets"
+     VAs: ['0x10727656', '0x10727670', '0x1082d9f6']
+  -- "CBaseEntity@@"
+     VAs: ['0x1081931c', '0x1081ac6a', '0x1081ac93', '0x1081b2fb', '0x108205c6', '0x1082081c', '0x10821909', '0x10821927', '0x10821fda', '0x1082874c']
+  -- "WeaponBullets"
+     VAs: ['0x106a90cb', '0x106a90e1', '0x106a9130', '0x10829577']
+        ref @0x10016b01
+  -- "CTEWeaponBullets"
+     VAs: ['0x106a90c8', '0x10829574']
+        ref @0x10016ab6
+
+=== module entry: fn containing 0x1034e2af ===
+   fn start 0x1034dd80
+   prologue: 53 8b dc 83 ec 08 83 e4 f0 83 c4 04
+      dword @0x105d6ea0
+      dword @0x105eb354
+      dword @0x105f63c8
+      dword @0x10626244
+      dword @0x10626c8c
+      dword @0x1062774c
+      dword @0x1062825c
+      dword @0x10628d3c
+      dword @0x10629750
+      dword @0x1063e2c4
+      dword @0x106463bc
+      dword @0x1064c310
+      dword @0x1065eeb8
+      dword @0x1067c80c
+      dword @0x1067e63c
+      dword @0x1067ed10
+      dword @0x10680fe4
+      dword @0x10682f08
+      dword @0x106837b8
+      dword @0x106b9234
+      dword @0x106ba224
+      dword @0x106bac6c
+      dword @0x106bbcd4
+      dword @0x106bca00
+      dword @0x106bd624
+      dword @0x106c59ac
+      dword @0x106cc5f0
+      dword @0x106cd0b8
+      dword @0x106cea94
+      dword @0x106cf5b4
+      dword @0x106d05cc
+      dword @0x106d1908
+      dword @0x106d2454
+      dword @0x106d3170
+      dword @0x106d3d38
+      dword @0x106d4ab8
+      dword @0x106d57e8
+      dword @0x106d6384
+      dword @0x106d6f40
+      dword @0x106d7ae0
+      dword @0x106d8854
+      dword @0x106d988c
+      dword @0x106da984
+      dword @0x106dbad8
+      dword @0x106dc5d4
+      dword @0x106dd15c
+      dword @0x106de138
+      dword @0x106df208
+      dword @0x106dfde0
+      dword @0x106e1234
+      dword @0x106e1cf8
+      dword @0x106e3640
+      dword @0x106e4768
+      dword @0x106e5430
+      dword @0x106e6cb0
+      dword @0x106e872c
+      dword @0x106e9100
+      dword @0x106e9ad4
+      dword @0x106ea4a8
+      dword @0x106eae7c
+      dword @0x106edfd8
+      dword @0x106eeed4
+      dword @0x106efc18
+      dword @0x106f05f0
+      dword @0x106f1448
+      dword @0x106f1e90
+      dword @0x106f2fa0
+      dword @0x106f5b4c
+      dword @0x106fe670
+      dword @0x106ff458
+      dword @0x10700048
+      dword @0x107044c0
+      dword @0x1070d164
+      dword @0x1070dd90
+      dword @0x1070ec50
+      dword @0x1070fb98
+      dword @0x107106a0
+      dword @0x107116f4
+      dword @0x107121bc
+      dword @0x107133d8
+      dword @0x107147c8
+      dword @0x10715bc4
+      dword @0x10716610
+      dword @0x107191e8
+      dword @0x1071c718
+      dword @0x10720370
+      dword @0x10720e8c
+      dword @0x10721a10
+      dword @0x10722714
+      dword @0x10723208
+      dword @0x10723d9c
+      dword @0x10726824
+      dword @0x10739e28
+      dword @0x1073a928
+      dword @0x1073b2e4
+      dword @0x1073bcdc
+      dword @0x1073dbd8
+
+=== strings referenced near the bullet module (0x1034d000-0x1034e000 code) ===
+   [.rdata] 0x105f6d61  bullet.mdl
+   [.rdata] 0x105fb011  bullet
+   [.rdata] 0x106554d6  bullet
+   [.rdata] 0x10659308  bullets
+   [.rdata] 0x1067b529  bullethell_zap_pre_phase3
+   [.rdata] 0x1067b555  bullethell_zap_pre
+   [.rdata] 0x1067b5b5  bullethell_zap_explode_phase3
+   [.rdata] 0x1067b5e5  bullethell_zap_explode
+   [.rdata] 0x105faeb0  BulletProof
+   [.rdata] 0x1060c793  BulletImpact
+   [.rdata] 0x1061cc2e  Bullet
+   [.rdata] 0x1064d2ee  BulletImpact
+   [.rdata] 0x106540cc  BulletSounds
+   [.rdata] 0x10675646  Bullet
+   [.rdata] 0x10675a08  BulletThink
+   [.rdata] 0x10675a2c  Bullet
+   [.rdata] 0x105f29da  shoot position
+   [.rdata] 0x105fadc1  shoot_positions
+   [.rdata] 0x106090cc  shooter
+   [.rdata] 0x106090d4  shootmodel
+   [.rdata] 0x106090e8  shootsounds
+   [.rdata] 0x10609449  shooter
+   [.rdata] 0x1060c60c  shootsound
+   [.rdata] 0x1061a057  shoot
+   [.rdata] 0x105d94ad  ShootOverlay
+   [.rdata] 0x105ec21f  ShootOverlay
+   [.rdata] 0x105ec24c  Shooting
+   [.rdata] 0x105ec25d  ShootWhileMove
+   [.rdata] 0x10607fba  Shooter
+   [.rdata] 0x10608038  Shooter
+   [.rdata] 0x10608078  Shooter
+   [.rdata] 0x10608c81  Shoot
+   [.rdata] 0x10608b18  tracer
+   [.rdata] 0x10608b3c  tracer: unknown entity "%s"
+   [.rdata] 0x1060c628  tracertype
+   [.rdata] 0x1068aca0  tracer_fade_duration
+   [.rdata] 0x1068acf7  tracer
+   [.rdata] 0x1068cba7  tracer_50cal
+   [.rdata] 0x106a9044  tracers
+   [.rdata] 0x106a9744  tracerbullet
+   [.rdata] 0x105fb018  TracerSound
+   [.rdata] 0x10608004  Tracer
+   [.rdata] 0x10608b2c  TracerThink
+   [.rdata] 0x1060c61d  TracerType
+   [.rdata] 0x10672f20  Tracer
+   [.rdata] 0x10672f28  Tracer
+   [.rdata] 0x1068acc4  TracerEffect
+   [.rdata] 0x1068ad0e  TracerEffect
+   [.rdata] 0x106453f9  Penetration Error (%s)!
+   [.rdata] 0x1067804a  PenetratedRound
+   [.rdata] 0x106a96e2  PenetratedAmmoType

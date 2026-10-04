@@ -1,0 +1,20 @@
+UnlitGeneric
+{
+	$basetexture	vgui\hud\hud_widget01
+	$translucent	1
+	$distancealpha	1
+
+	$softedges		1
+	$edgesoftnessstart	.25
+	$edgesoftnessend	.15
+	$scaleedgesoftnessbasedonscreenres 1
+
+	$horizontal_scale 0.56
+	$vertical_scale   0.75
+	
+	$vertexcolor	1
+	$vertexalpha	1
+	$no_fullbright	1
+	$ignorez	1
+}
+

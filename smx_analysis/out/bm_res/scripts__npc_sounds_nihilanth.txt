@@ -1,0 +1,735 @@
+//*****************************************************************
+//   NOTE: This script file is a Work- In- Progress
+//*****************************************************************
+//
+//
+// 	This script file contains soundscript entries listing sounds from the following folders and subfolders within:
+//
+//
+//
+//
+//
+//****************************************************************************
+//           NPC  ///  NIHILANTH  ///  STARTS HERE !!!!
+//****************************************************************************	
+//            		sound/npc/nihilanth/
+//****************************************************************************
+//
+//		NPC NIHILANTH VO
+//
+//******************************************************************************************
+//
+//////////////////////////////////////////////////////
+//////////////////// Chapter XEN ////////////////////
+// Used during the Cold Open sectiopn.
+
+"nihilanth.coldopen"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.95"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_coldopen01.wav"
+}
+
+// used when Gordon arrives on the Xen teleporter pad.
+
+"nihilanth.comesanother01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_comesanother01.wav"
+}
+////////////////////////////////////////////////////////////////
+//////////////////// CHAPTER Gonarch's Lair ////////////////////
+// played when Gordon arrives on the Gonarch teleporter pad.
+
+"nihilanth.cannotwin01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_cannotwin01.wav"
+}
+
+/////////////////////////////////////////////////////////////
+//////////////////// CHAPTER Interloper  ////////////////////
+
+// played in Map A, after Freeman defeats the Gonarch.
+
+"nihilanth.whathavedone01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_whathavedone01.wav"
+}
+
+// Played when Freeman approaches the Int map A1 Tower Reveal, before entering the tower's bowels.
+
+"nihilanth.alone01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_alone01.wav"
+}
+
+// originally used in HL1 before "nihilanth.alone01" after you ride the manta to the teloporter island thus transitioning to the next map.
+// this gameplay sequence doesn't exist in black mesa. 
+
+"nihilanth.youalldie01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_youalldie01.wav"
+}
+
+
+// used in HL, but I think we can use it somewhere, the question is where?
+
+"nihilanth.foryouhewaits01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_foryouhewaits01.wav"
+}
+
+"nihilanth.breath"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.6"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+	"rndwave"
+	{
+	"wave"		"/npc/nihilanth/breath1.wav"
+	"wave"		"/npc/nihilanth/breath2.wav"
+	}
+}
+
+// Played when Freeman approaches the final Portal that leads to the Nihilanth's Chamber.
+
+"nihilanth.iamthelast01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_iamthelast01.wav"
+}
+
+/////////////////////////////////////////////////////////////
+//////////////////// CHAPTER - NIHILANTH ////////////////////
+//used in Nihilanth's Chamber - Opening line to fight
+
+"nihilanth.chamber.freeeemmaan01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.90"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_freeeemmaan01.wav"
+}
+
+"nihilanth.chamber.alone01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_alone01.wav"
+}
+
+// Used to Open the Second? Phase of the Fight
+
+"nihilanth.chamber.deceiveyou01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_deceiveyou01.wav"
+}
+
+// These two play lines randomly during the first phase of the fight
+
+"nihilanth.chamber.dienowdie01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"		"/npc/nihilanth/nihilanth_dienowdie01.wav"
+}
+
+"nihilanth.chamber.youalldie01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_youalldie01.wav"
+}
+
+"nihilanth.chamber.thetruth01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_thetruth01.wav"
+}
+ 
+// NIHILANTH- NPC VO FOR AI
+
+// Random Sounds, for when the nihilanth attacks with his energy powers, and other sorts of things.
+// creepy grunts and yells
+
+"nihilanth.attack"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+	"rndwave"
+	{
+	"wave"		"/npc/nihilanth/nihilanth_attack01.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack02.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack03.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack04.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack05.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack06.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack07.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack08.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack09.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack10.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack11.wav"
+	"wave"		"/npc/nihilanth/nihilanth_attack12.wav"
+	}
+}
+
+// attack sounds, listed individually, in case we want to use a specific one during a specific moment.
+
+"nihilanth.attack01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_attack01.wav"
+
+}
+
+"nihilanth.attack02"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_attack02.wav"
+
+}
+
+"nihilanth.attack03"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_attack03.wav"
+}
+
+// Chuckling,laughing at freeman
+
+"nihilanth.chuckle" 
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+	"rndwave"
+	{
+	"wave"		"/npc/nihilanth/nihilanth_chuckle01.wav"
+	"wave"		"/npc/nihilanth/nihilanth_chuckle02.wav"
+	"wave"		"/npc/nihilanth/nihilanth_chuckle03.wav"
+	"wave"		"/npc/nihilanth/nihilanth_chuckle04.wav"
+	"wave"		"/npc/nihilanth/nihilanth_laughter01.wav"
+	"wave"		"/npc/nihilanth/nihilanth_laughter02.wav"
+	}
+}
+
+// Chuckling,laughing at freeman
+// listed individually, in case we want to use a specific one during a specific moment.
+
+"nihilanth.chuckle01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_chuckle01.wav"
+}
+
+"nihilanth.chuckle02"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_chuckle02.wav"
+}
+
+"nihilanth.chuckle03"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_chuckle03.wav"
+}
+
+"nihilanth.chuckle04"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_chuckle04.wav"
+}
+
+"nihilanth.laughter" 
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+	"rndwave"
+	{
+	"wave"		"/npc/nihilanth/nihilanth_laughter01.wav"
+	"wave"		"/npc/nihilanth/nihilanth_laughter02.wav"
+	}
+}
+
+// listed individually, in case we want to use a specific one during a specific moment.
+
+"nihilanth.laughter01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_laughter01.wav"
+}
+
+"nihilanth.laughter02"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_laughter02.wav"
+}
+
+// When the crystals in the chamber are being destoyed, signalling the nihilanth's power weakening
+
+"nihilanth.hurt"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+	"rndwave"
+	{
+	"wave"		"/npc/nihilanth/nihilanth_hurt01.wav"
+	"wave"		"/npc/nihilanth/nihilanth_hurt02.wav"
+	"wave"		"/npc/nihilanth/nihilanth_hurt03.wav"
+	"wave"		"/npc/nihilanth/nihilanth_hurt04.wav"
+	}
+}
+
+"nihilanth.hurt02"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_hurt02.wav"
+}
+
+// Random pain sounds.
+
+"nihilanth.pain"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+	"rndwave"
+	{
+	"wave"		"/npc/nihilanth/nihilanth_pain01.wav"
+	"wave"		"/npc/nihilanth/nihilanth_hurt01.wav"
+	"wave"		"/npc/nihilanth/nihilanth_hurt02.wav"
+	"wave"		"/npc/nihilanth/nihilanth_hurt03.wav"
+	"wave"		"/npc/nihilanth/nihilanth_hurt04.wav"
+	}
+}
+
+"nihilanth.death01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_death01.wav"
+}
+
+"nihilanth.death.endgame01"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.85"
+	"pitch"		"100"
+
+	"soundlevel"  "SNDLVL_NONE"
+
+	"wave"		"/npc/nihilanth/nihilanth_death_endgame01.wav"
+}
+
+//****************************************************************************
+//           NPC  ///  NIHILANTH  ///  SFX///  STARTS HERE !!!!
+//****************************************************************************	
+//            		sound/npc/nihilanth/sfx
+//****************************************************************************
+//
+//		NPC NIHILANTH SOUND EFFECTS
+//
+//******************************************************************************************
+
+// Nihilanth opens a random portal at random position.
+
+"npc.nihilanth.pportal_spawn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"npc\nihilanth\sfx\pportal_spawn01.wav"
+}
+
+// Nihilanch Portal will stay for 2-3 secs and this sound will loop/play as long as portalFX is present.
+
+"npc.nihilanth.pportal_hangloop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_80dB"
+	"wave"			"npc\nihilanth\sfx\pportal_hangloop.wav"
+}
+
+// nihilanth throws the Prop. Lots of energy expelled in effort.
+
+"npc.nihilanth.pportal.throw_attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"npc\nihilanth\sfx\pportal_throw_attack01.wav"
+}
+
+// nihilanth conjures flaming balls from his hands 
+"npc.nihilanth.fire_orb_attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"xen\nihilbattle\fire_orb_attack.wav"
+}
+
+// tie this to the position of each ball as it flies through the air
+"npc.nihilanth.fire_orb_attack_main"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"xen\nihilbattle\fire_orb_attack_main.wav"
+}
+
+// alternate in case the ball speed is drastically slowed
+"npc.nihilanth.fire_orb_attack_main_slow"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"xen\nihilbattle\fire_orb_attack_main_slow.wav"
+}
+
+// use when the energy ball impacts the ground 
+"npc.nihilanth.fire_orb_impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"xen\nihilbattle\fire_orb_impact.wav"
+}
+
+// nihilanth telekenetically lifts a rock
+"npc.nihilanth.mind_lift"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"			"xen\nihilbattle\mind_lift.wav"
+		"wave"			"xen\nihilbattle\mind_lift_2.wav"
+	}
+}
+
+// nihilanth throws a rock
+"npc.nihilanth.mind_throw"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"xen\nihilbattle\mind_throw.wav"
+}
+
+// a bullet hell mortar attack charges up 
+"npc.nihilanth.mortar_charge"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.95"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_85dB"
+	"rndwave"
+	{
+		"wave"			"xen\nihilbattle\mortar_charge2.wav"
+		"wave"			"xen\nihilbattle\mortar_charge3.wav"
+	}
+}
+
+// a bullet hell mortar attack executes
+"npc.nihilanth.mortar_explode"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"xen\nihilbattle\mortar_explode.wav"
+}
+
+"npc.nihilanth.rock_attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_120dB"
+	"wave"			"xen\nihilbattle\loud\rock_attack1.wav"
+}
+
+"npc.nihilanth.rocks_down"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"xen\nihilbattle\loud\rocks_down1.wav"
+}
+
+"npc.nihilanth.shield_hit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_120dB"
+	"rndwave"
+	{
+		"wave"			"xen\nihilbattle\loud\shield_hit1.wav"
+		"wave"			"xen\nihilbattle\loud\shield_hit2.wav"
+		"wave"			"xen\nihilbattle\loud\shield_hit3.wav"
+		"wave"			"xen\nihilbattle\loud\shield_hit4.wav"
+	}
+}
+
+"npc.nihilanth.beam_attack_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\beam_attack_start.wav"
+}
+
+"npc.nihilanth.beam_attack_stop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\beam_attack_end.wav"
+}
+
+"npc.nihilanth.thinbeam_attack_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\beam_attack_start.wav"
+}
+
+"npc.nihilanth.thinbeam_attack_stop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\beam_attack_end.wav"
+}
+
+"npc.nihilanth.shockwave_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\shockwave_start.wav"
+}
+
+"npc.nihilanth.shockwave_attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\shockwave_attack.wav"
+}
+
+"npc.nihilanth.shockwave_attack2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\shockwave_attack.wav"
+}
+
+"npc.nihilanth.final_flash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\final_flash.wav"
+}
+
+"npc.nihilanth.head_open"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"			"xen\nihilbattle\head_open.wav"
+}
+
+"xen.energy_hit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_120dB"
+	"rndwave"
+	{
+		"wave"			"xen\object\loud\hub_energyburst01.wav"
+		"wave"			"xen\object\loud\hub_energyburst02.wav"
+		"wave"			"xen\object\loud\hub_energyburst03.wav"
+		"wave"			"xen\object\loud\hub_energyburst04.wav"
+	}
+}
+
+"xen.shield_hit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"100"
+	"soundlevel"		"SNDLVL_120dB"
+	"rndwave"
+	{
+		"wave"			"xen\nihilbattle\shield_hit1.wav"
+		"wave"			"xen\nihilbattle\shield_hit2.wav"
+		"wave"			"xen\nihilbattle\shield_hit3.wav"
+		"wave"			"xen\nihilbattle\shield_hit4.wav"
+	}
+}

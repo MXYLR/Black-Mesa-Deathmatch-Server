@@ -1,0 +1,113 @@
+=== RTTI: CBlackMesaFireBullets ===
+  name "CBlackMesaFireBullets@@"
+  TypeDescriptor @0x1082d9e4 : 00 00 00 00 2e 3f 41 56 43 42 6c 61 63 6b 4d 65 73 61 46 69 72 65 42 75 6c 6c 65 74 73 40 40 00
+  td[0](vftable?) = 0x00000000  td[1](spare) = 0x56413f2e
+  COLs: []
+
+=== datadesc-ish table at 0x1080b8f0-0x1080b9d0 ===
+  0x1080b8f0  00000000
+  0x1080b8f4  00000000
+  0x1080b8f8  00000000
+  0x1080b8fc  00000000
+  0x1080b900  00000000
+  0x1080b904  00000000
+  0x1080b908  00000000
+  0x1080b90c  00000000
+  0x1080b910  00000000
+  0x1080b914  00000000
+  0x1080b918  00000000
+  0x1080b91c  00000000
+  0x1080b920  00000000
+  0x1080b924  00000000
+  0x1080b928  00000000
+  0x1080b92c  00000000
+  0x1080b930  00000000
+  0x1080b934  00000000
+  0x1080b938  00000000
+  0x1080b93c  00000000
+  0x1080b940  00000000
+  0x1080b944  00000000
+  0x1080b948  00000000
+  0x1080b94c  00000000
+  0x1080b950  00000000
+  0x1080b954  00000000
+  0x1080b958  00000000
+  0x1080b95c  00000000
+  0x1080b960  00000000
+  0x1080b964  00000000
+  0x1080b968  00000000
+  0x1080b96c  00000000
+  0x1080b970  00000000
+  0x1080b974  00000000
+  0x1080b978  00000000
+  0x1080b97c  00000000
+  0x1080b980  00000000
+  0x1080b984  00000000
+  0x1080b988  00000000
+  0x1080b98c  00000000
+  0x1080b990  00000000
+  0x1080b994  00000000
+  0x1080b998  00000000
+  0x1080b99c  00000000
+  0x1080b9a0  00000000
+  0x1080b9a4  00000000
+  0x1080b9a8  00000000
+  0x1080b9ac  00000000
+  0x1080b9b0  00000000
+  0x1080b9b4  00000000
+  0x1080b9b8  00000000
+  0x1080b9bc  00000000
+  0x1080b9c0  00000000
+  0x1080b9c4  00000000
+  0x1080b9c8  00000000
+  0x1080b9cc  00000000
+
+=== who references the table region (datamap_t owner) ===
+  dword refs to 0x1080b8f0: ['0x1046d94f']
+  dword refs to 0x1080b900: ['0x1046d977']
+  dword refs to 0x1080b924: ['0x1046d9d1']
+  dword refs to 0x1080b938: ['0x1046da03']
+
+=== default value pointers ===
+  0x105d5dec: raw=31 00 00 00  float=0.0000  int=49  str=""
+  0x105c89cc: raw=30 00 00 00  float=0.0000  int=48  str=""
+
+=== function 0x1046d870 head (table builder) ===
+  0x1046d870  mov       eax, dword ptr [0x110f5028]
+  0x1046d875  test      al, 1
+  0x1046d877  jne       0x1046dc81
+  0x1046d87d  or        eax, 1
+  0x1046d880  mov       dword ptr [0x1080b8a0], 2
+  0x1046d88a  mov       dword ptr [0x110f5028], eax
+  0x1046d88f  mov       dword ptr [0x1080b8a4], 0
+  0x1046d899  mov       dword ptr [0x1080b8a8], 4
+  0x1046d8a3  mov       dword ptr [0x1080b8ac], 0
+  0x1046d8ad  mov       dword ptr [0x1080b8b0], 0
+  0x1046d8b7  mov       dword ptr [0x1080b8b4], 0
+  0x1046d8c1  mov       dword ptr [0x1080b8b8], 0x105fe5bc
+  0x1046d8cb  mov       dword ptr [0x1080b8bc], 0x105c89cc
+  0x1046d8d5  mov       dword ptr [0x1080b8c0], 3
+  0x1046d8df  mov       dword ptr [0x1080b8c4], 4
+  0x1046d8e9  mov       dword ptr [0x1080b8c8], 4
+  0x1046d8f3  mov       dword ptr [0x1080b8cc], 0
+  0x1046d8fd  mov       dword ptr [0x1080b8d0], 0
+  0x1046d907  mov       dword ptr [0x1080b8d4], 0
+  0x1046d911  mov       dword ptr [0x1080b8d8], 0x107246dc
+  0x1046d91b  mov       dword ptr [0x1080b8dc], 0x106378d0
+  0x1046d925  mov       dword ptr [0x1080b8e0], 3
+  0x1046d92f  mov       dword ptr [0x1080b8e4], 0xc
+  0x1046d939  mov       dword ptr [0x1080b8e8], 4
+  0x1046d943  mov       dword ptr [0x1080b8ec], 0
+  0x1046d94d  mov       dword ptr [0x1080b8f0], 0
+  0x1046d957  mov       dword ptr [0x1080b8f4], 0
+  0x1046d961  mov       dword ptr [0x1080b8f8], 0x107246e8
+  0x1046d96b  mov       dword ptr [0x1080b8fc], 0x105c89cc
+  0x1046d975  mov       dword ptr [0x1080b900], 3
+  0x1046d97f  mov       dword ptr [0x1080b904], 8
+  0x1046d989  mov       dword ptr [0x1080b908], 4
+  0x1046d993  mov       dword ptr [0x1080b90c], 0
+  0x1046d99d  mov       dword ptr [0x1080b910], 0
+  0x1046d9a7  mov       dword ptr [0x1080b914], 0
+  0x1046d9b1  mov       dword ptr [0x1080b918], 0x107246f4
+  0x1046d9bb  mov       dword ptr [0x1080b91c], 0x105d5dec
+  0x1046d9c5  mov       dword ptr [0x1080b920], 3

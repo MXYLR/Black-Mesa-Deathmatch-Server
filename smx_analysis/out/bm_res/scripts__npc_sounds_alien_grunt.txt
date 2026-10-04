@@ -1,0 +1,248 @@
+"npc_sounds_alien_grunt.Idle"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/IDLE_1.wav"
+		"wave"		"npc/alien_grunt/IDLE_2.wav"
+		"wave"		"npc/alien_grunt/IDLE_3.wav"
+		"wave"		"npc/alien_grunt/IDLE_4.wav"
+		"wave"		"npc/alien_grunt/IDLE_5.wav"
+		"wave"		"npc/alien_grunt/IDLE_6.wav"
+		"wave"		"npc/alien_grunt/IDLE_7.wav"
+		"wave"		"npc/alien_grunt/IDLE_8.wav"
+		"wave"		"npc/alien_grunt/IDLE_9.wav"
+		"wave"		"npc/alien_grunt/IDLE_ANGRY_1.wav"
+		"wave"		"npc/alien_grunt/IDLE_ANGRY_2.wav"
+		"wave"		"npc/alien_grunt/IDLE_ANGRY_3.wav"
+		"wave"		"npc/alien_grunt/IDLE_ANGRY_4.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/IDLE_ANGRY_1.wav"
+		"wave"		"npc/alien_grunt/IDLE_ANGRY_2.wav"
+		"wave"		"npc/alien_grunt/IDLE_ANGRY_3.wav"
+		"wave"		"npc/alien_grunt/IDLE_ANGRY_4.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.Pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/pain_1.wav"
+		"wave"		"npc/alien_grunt/pain_2.wav"
+		"wave"		"npc/alien_grunt/pain_3.wav"
+		"wave"		"npc/alien_grunt/pain_4.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/DIE_1.wav"
+		"wave"		"npc/alien_grunt/DIE_2.wav"
+		"wave"		"npc/alien_grunt/DIE_3.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.AnnounceAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/HORNET_ATTACK_1.wav"
+		"wave"		"npc/alien_grunt/HORNET_ATTACK_2.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.ShoveHit"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"90,100"
+
+	"soundlevel"		"SNDLVL_90db"
+
+	"wave"			"npc/antlion_guard/shove1.wav"
+}
+
+"npc_sounds_alien_grunt.ChargeStart"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/CHARGE_START_1.wav"
+		"wave"		"npc/alien_grunt/CHARGE_START_2.wav"
+		"wave"		"npc/alien_grunt/CHARGE_START_3.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.ChargeCrash"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/CHARGE_CRASH_1.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.ChargeStop"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/CHARGE_STOP_1.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.ChargeSmack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/CHARGE_SMACK_1.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.Jump"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/JUMP_1.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.Land"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/LAND_1.wav"
+	}
+}
+"npc_sounds_alien_grunt.LandThud"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/body/body_medium_impact_hard1.wav"
+		"wave"	"physics/body/body_medium_impact_hard3.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.Door"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"BMS_scripted/lc/LC-agrunt_door.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.MeleeHigh"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/MELEE_ATTACK_HIGH_1.wav"
+		"wave"		"npc/alien_grunt/MELEE_ATTACK_HIGH_2.wav"
+		"wave"		"npc/alien_grunt/MELEE_ATTACK_HIGH_3.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.MeleeLow"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/MELEE_ATTACK_LOW_1.wav"
+		"wave"		"npc/alien_grunt/MELEE_ATTACK_LOW_2.wav"
+		"wave"		"npc/alien_grunt/MELEE_ATTACK_LOW_3.wav"
+		"wave"		"npc/alien_grunt/MELEE_ATTACK_LOW_4.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.StepL"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_75dB"
+	"pitch"			"90,110"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/STEP_6_new.wav"
+		"wave"		"npc/alien_grunt/STEP_7_new.wav"
+		"wave"		"npc/alien_grunt/STEP_8_new.wav"
+		"wave"		"npc/alien_grunt/STEP_9_new.wav"
+		"wave"		"npc/alien_grunt/STEP_10_new.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.StepR"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_75dB"
+	"pitch"			"90,110"
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/STEP_6_new.wav"
+		"wave"		"npc/alien_grunt/STEP_7_new.wav"
+		"wave"		"npc/alien_grunt/STEP_8_new.wav"
+		"wave"		"npc/alien_grunt/STEP_9_new.wav"
+		"wave"		"npc/alien_grunt/STEP_10_new.wav"
+	}
+}
+
+"npc_sounds_alien_grunt.Breath"
+{
+	"channel"		"CHAN_STATIC"
+	"pitch"			"PITCH_NORM"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_60dB"
+
+	"rndwave"
+	{
+		"wave"		"npc/alien_grunt/BREATH_1.wav"
+	}
+}

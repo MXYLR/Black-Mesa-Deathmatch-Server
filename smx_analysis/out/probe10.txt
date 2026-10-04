@@ -1,0 +1,54 @@
+=== prologue check ===
+  0x1011e4d0 glass caller fn    55 8b ec 56 8b f1 8b 86
+  0x1034f250 shot loop fn       53 8b dc 83 ec 08 83 e4
+  0x1034e2af caller of shot loop e8 9c 0f 00 00 83 c4 0c
+  0x1034fb10 multi-trace fn     53 8b dc 83 ec 08 83 e4
+
+=== glass caller fn upstream ===
+  raw rel refs to 0x1011e4d0:
+     @0x1006358e   ['0x10063586  ret       4', '0x10063589  push      dword ptr [ebp + 8]', '0x1006358c  mov       ecx, edi', '0x1006358e  call      0x1011e4d0']
+     @0x1012bece   ['0x1012bec6  pop       edi', '0x1012bec7  pop       ebp', '0x1012bec8  ret       4', '0x1012becb  push      dword ptr [ebp + 8]']
+     @0x1012bf40   ['0x1012bf38  pop       ebp', '0x1012bf39  ret       0x10', '0x1012bf3c  lea       eax, [ebp - 0xc]', '0x1012bf3f  push      eax']
+     @0x102f13da   ['0x102f13d2  add       al, 0', '0x102f13d4  mov       esi, dword ptr [ebp + 8]', '0x102f13d7  mov       ecx, edi', '0x102f13d9  push      esi']
+
+=== shot-loop fn upstream (who calls 0x1034f250) ===
+     @0x1034e2af
+        0x1034e26f  ret       0xff3
+        0x1034e272  pop       ecx
+        0x1034e273  ret       0xff3
+        0x1034e276  pop       ecx
+        0x1034e277  ror       dword ptr [edi], 0x28
+        0x1034e27a  lea       esi, [eax]
+
+=== context of 0x1034e2af ===
+  0x1034e270  mulss     xmm0, xmm2
+  0x1034e274  mulss     xmm0, xmm1
+  0x1034e278  movaps    xmm1, xmmword ptr [ebp - 0xd0]
+  0x1034e27f  subss     xmm1, xmm0
+  0x1034e283  movss     xmm0, dword ptr [ebp - 0x10]
+  0x1034e288  mulss     xmm1, dword ptr [ebp - 0xe0]
+  0x1034e290  mulss     xmm2, xmm1
+  0x1034e294  mulss     xmm6, xmm2
+  0x1034e298  mulss     xmm7, xmm2
+  0x1034e29c  mulss     xmm0, xmm2
+  0x1034e2a0  movss     dword ptr [ebp - 0x70], xmm6
+  0x1034e2a5  movss     dword ptr [ebp - 0x6c], xmm7
+  0x1034e2aa  movss     dword ptr [ebp - 0x68], xmm0
+  0x1034e2af  call      0x1034f250
+  0x1034e2b4  add       esp, 0xc
+  0x1034e2b7  dec       dword ptr [ebp - 0xc]
+  0x1034e2ba  jne       0x1034e0f0
+  0x1034e2c0  mov       ecx, dword ptr [ebp - 0xa0]
+  0x1034e2c6  mov       eax, dword ptr [ebp - 0xa8]
+  0x1034e2cc  mov       dword ptr [ebp - 0x9c], 0
+  0x1034e2d6  test      ecx, ecx
+  0x1034e2d8  js        0x1034e2ff
+  0x1034e2da  test      eax, eax
+  0x1034e2dc  je        0x1034e2f5
+  0x1034e2de  push      eax
+  0x1034e2df  call      0x101cd610
+  0x1034e2e4  mov       ecx, dword ptr [ebp - 0xa0]
+  0x1034e2ea  add       esp, 4
+  0x1034e2ed  xor       eax, eax
+
+=== raw rel refs to 0x1034f250 / 0x1034e2xx fn ===

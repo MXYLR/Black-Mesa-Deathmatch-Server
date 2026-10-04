@@ -1,0 +1,531 @@
+"Scientist.KillStreak.FirstBlood"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\firstblood01.wav"
+}
+
+"Scientist.KillStreak.DoubleKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\doublekill01.wav"
+}
+
+
+"Scientist.KillStreak.MultiKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\multikill01.wav"
+}
+
+"Scientist.KillStreak.MegaKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\megakill01.wav"
+}
+
+"Scientist.KillStreak.UltraKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\ultrakill01.wav"
+}
+
+"Scientist.KillStreak.LudicrousKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\ludicrouskill01.wav"
+}
+
+"Scientist.KillStreak.MonsterKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\monsterkill01.wav"
+}
+
+"Scientist.KillStreak.HolyShit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\holyshit01.wav"
+}
+
+"Scientist.KillStreak.KillingSpree"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\killingspree01.wav"
+}
+
+"Scientist.KillStreak.Rampage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\dscientist\rampage01.wav"
+}
+
+"Scientist.KillStreak.Dominating"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\dominating01.wav"
+}
+
+"Scientist.KillStreak.Unstoppable"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\unstoppable01.wav"
+}
+
+"Scientist.KillStreak.Godlike"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\godlike01.wav"
+}
+
+"Scientist.KillStreak.WickedSick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\wickedsick01.wav"
+}
+
+"Scientist.KillStreak.CornetTheory"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\cornettheory01.wav"
+}
+
+"Scientist.Time.15Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\time_fifteen_minutes01.wav"
+		"wave"			"killstreak\scientist\time_fifteen_minutes02.wav"
+	}
+}
+
+"Scientist.Time.10Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\time_ten_minutes01.wav"
+		"wave"			"killstreak\scientist\time_ten_minutes02.wav"
+	}
+}
+
+"Scientist.Time.5Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\time_five_minutes01.wav"
+		"wave"			"killstreak\scientist\time_five_minutes02.wav"
+	}
+}
+
+"Scientist.Time.1Minute"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\time_one_minute01.wav"
+		"wave"			"killstreak\scientist\time_one_minute02.wav"
+	}
+}
+
+"Scientist.Time.30Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\time_thirty_seconds01.wav"
+		"wave"			"killstreak\scientist\time_thirty_seconds02.wav"
+	}
+}
+
+"Scientist.Time.10Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\time_ten_seconds01.wav"
+		"wave"			"killstreak\scientist\time_ten_seconds02.wav"
+	}
+}
+
+"Scientist.Time.5Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\time_five_seconds.wav"
+}
+
+"Scientist.Time.4Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\time_four_seconds.wav"
+}
+
+"Scientist.Time.3Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\time_three_seconds.wav"
+}
+
+"Scientist.Time.2Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\time_two_seconds.wav"
+}
+
+"Scientist.Time.1Second"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\time_one_seconds.wav"
+}
+
+"Scientist.Game.TimeUp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\timeup01.wav"
+		"wave"			"killstreak\scientist\timeup02.wav"
+		"wave"			"killstreak\scientist\timeup03.wav"
+	}
+}
+
+"Scientist.Game.Over"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\gameover01.wav"
+		"wave"			"killstreak\scientist\gameover02.wav"
+		"wave"			"killstreak\scientist\gameover02_var01.wav"
+		"wave"			"killstreak\scientist\gameover03.wav"
+		"wave"			"killstreak\scientist\gameover03_var01.wav"
+		"wave"			"killstreak\scientist\gameover04.wav"
+		"wave"			"killstreak\scientist\gameover05.wav"
+		"wave"			"killstreak\scientist\gameover06.wav"
+		"wave"			"killstreak\scientist\gameover06_var01.wav"
+		"wave"			"killstreak\scientist\gameover07.wav"
+		"wave"			"killstreak\scientist\gameover08.wav"
+		"wave"			"killstreak\scientist\gameover09.wav"
+		"wave"			"killstreak\scientist\gameover10.wav"
+		"wave"			"killstreak\scientist\gameover11.wav"
+		"wave"			"killstreak\scientist\gameover12.wav"
+		"wave"			"killstreak\scientist\gameover12_var01.wav"
+	}
+}
+
+"Scientist.Team.GainedLead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\teamleading01.wav"
+		"wave"			"killstreak\scientist\teamleading01_var01.wav"
+		"wave"			"killstreak\scientist\teamleading02.wav"
+		"wave"			"killstreak\scientist\teamleading03.wav"
+		"wave"			"killstreak\scientist\teamleading04.wav"
+		"wave"			"killstreak\scientist\teamleading04_var01.wav"
+		"wave"			"killstreak\scientist\teamleading05.wav"
+	}
+}
+
+"Scientist.Team.Tied"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\teamsaretied01.wav"
+		"wave"			"killstreak\scientist\teamsaretied01_var01.wav"
+		"wave"			"killstreak\scientist\teamsaretied02.wav"
+		"wave"			"killstreak\scientist\teamsaretied02_var01.wav"
+		"wave"			"killstreak\scientist\teamsaretied03.wav"
+		"wave"			"killstreak\scientist\teamsaretied04.wav"
+		"wave"			"killstreak\scientist\teamsaretied05.wav"
+		"wave"			"killstreak\scientist\teamsaretied05_var01.wav"
+		"wave"			"killstreak\scientist\teamsaretied05_var02.wav"
+	}
+}
+
+"Scientist.Team.LostLead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\teamleadlost01.wav"
+		"wave"			"killstreak\scientist\teamleadlost01_var01.wav"
+		"wave"			"killstreak\scientist\teamleadlost01_var02.wav"
+		"wave"			"killstreak\scientist\teamleadlost02.wav"
+		"wave"			"killstreak\scientist\teamleadlost02_var01.wav"
+		"wave"			"killstreak\scientist\teamleadlost03.wav"
+		"wave"			"killstreak\scientist\teamleadlost03_var01.wav"
+		"wave"			"killstreak\scientist\teamleadlost04.wav"
+		"wave"			"killstreak\scientist\teamleadlost04_var01.wav"
+		"wave"			"killstreak\scientist\teamleadlost05.wav"
+		"wave"			"killstreak\scientist\teamleadlost05_var01.wav"
+	}
+}
+
+"Scientist.Game.Win"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\gamewon01.wav"
+		"wave"			"killstreak\scientist\gamewon01_var01.wav"
+		"wave"			"killstreak\scientist\gamewon02.wav"
+		"wave"			"killstreak\scientist\gamewon03.wav"
+		"wave"			"killstreak\scientist\gamewon03_var01.wav"
+		"wave"			"killstreak\scientist\gamewon04.wav"
+		"wave"			"killstreak\scientist\gamewon05.wav"
+		"wave"			"killstreak\scientist\gamewon05_var01.wav"
+		"wave"			"killstreak\scientist\gamewon06.wav"
+		"wave"			"killstreak\scientist\gamewon07.wav"
+		"wave"			"killstreak\scientist\gamewon07_var02.wav"
+		"wave"			"killstreak\scientist\gamewon08.wav"
+	}
+}
+
+"Scientist.Game.Lose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\gamelost01.wav"
+		"wave"			"killstreak\scientist\gamelost01_var01.wav"
+		"wave"			"killstreak\scientist\gamelost02.wav"
+		"wave"			"killstreak\scientist\gamelost02_var01.wav"
+		"wave"			"killstreak\scientist\gamelost03.wav"
+		"wave"			"killstreak\scientist\gamelost04.wav"
+		"wave"			"killstreak\scientist\gamelost05.wav"
+		"wave"			"killstreak\scientist\gamelost06.wav"
+		"wave"			"killstreak\scientist\gamelost07.wav"
+		"wave"			"killstreak\scientist\gamelost08.wav"
+		"wave"			"killstreak\scientist\gamelost09.wav"
+		"wave"			"killstreak\scientist\gamelost10.wav"
+	}
+}
+
+"Scientist.Game.Draw"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\scientist\gamedraw01.wav"
+		"wave"			"killstreak\scientist\gamedraw02.wav"
+		"wave"			"killstreak\scientist\gamedraw03.wav"
+		"wave"			"killstreak\scientist\gamedraw04.wav"
+		"wave"			"killstreak\scientist\gamedraw04_var01.wav"
+		"wave"			"killstreak\scientist\gamedraw05.wav"
+		"wave"			"killstreak\scientist\gamedraw06.wav"
+		"wave"			"killstreak\scientist\gamedraw06_var01.wav"
+	}
+}
+
+"Scientist.KillStreak.OverKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+	"wave"			"killstreak\scientist\overkill01.wav"
+	"wave"			"killstreak\scientist\overkill02.wav"
+	}
+}
+
+"Scientist.Placement.First"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\time_one_seconds.wav"
+}
+
+
+"Scientist.Placement.Second"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\time_two_seconds.wav"
+}
+
+
+"Scientist.Placement.Third"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\scientist\time_three_seconds.wav"
+}

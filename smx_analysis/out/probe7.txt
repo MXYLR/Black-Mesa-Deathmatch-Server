@@ -1,0 +1,38 @@
+=== sanity: xrefs_rel(0x1034b210) expect 0x10016a22 ===
+   ['0x10016a22']
+
+=== xrefs_rel(0x1034fb10) ===
+   []
+   dword refs:
+
+=== xrefs_rel(0x1034fc1c) ===
+   []
+   dword refs:
+
+=== byte-pattern search: mov byte [reg+0x9d/0x9f], imm ===
+   c6869f000000  base=modrm86 off=0x9f -> VA 0x1034fe9a [.text] imm=1
+
+=== default-value strings ===
+--- ascii near bullet_ff_through_walls default 0x105c8960-0x105c8a00
+   0x105c8960  ent
+   0x105c8964  Achievements
+   0x105c8974  SteamClient020
+   0x105c8984  STEAMREMOTESTORAGE_INTERFACE_VERSION016
+   0x105c89b0  0F
+   0x105c89b8  unnamed
+--- ascii tau dmg_radius default 0x10677dc0-0x10677e00
+   0x10677dc0  mmo_9mm_max
+   0x10677dcc  sk_ammo_357_max
+   0x10677ddc  64
+   0x10677de0  sk_ammo_buckshot_max
+--- ascii tau bias default 0x1063b7b0-0x1063b7e0
+   0x1063b7b0  dius_inner_perc
+   0x1063b7c0  le_gr_col_outer
+   0x1063b7d0  0.9
+--- ascii tau convar name block 0x1072d4c0-0x1072d560
+   0x1072d4c0  ged_dmg
+   0x1072d4c8  sk_weapon_tau_beam_charged_dmg
+   0x1072d4e8  sk_weapon_tau_beam_dmg_radius
+   0x1072d508  sk_weapon_tau_beam_penetration_bias
+   0x1072d52c  48
+   0x1072d530  sk_weapon_tau_beam_penetration_depth

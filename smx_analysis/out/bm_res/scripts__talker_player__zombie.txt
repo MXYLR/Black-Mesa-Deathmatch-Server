@@ -1,0 +1,45 @@
+
+// ============================================================================================
+// ============================================================================================
+response ZombieHurt
+{
+	speak "npc_zombie.Pain"
+}
+
+rule ZombieHurt
+{
+	criteria ConceptHurt IsZombie IsNotDrowning
+	response ZombieHurt
+}
+
+// ============================================================================================
+// ============================================================================================
+response ZombieDeath
+{
+	speak "npc_zombie.Die"
+}
+
+Rule ZombieDeath
+{
+	criteria ConceptDeath IsZombie
+	Response ZombieDeath
+}
+
+// ============================================================================================
+// ============================================================================================
+response ZombieDominatedPlayer
+{
+	speak "npc_zombie.Alert" 
+}
+
+rule ZombieDominatedPlayer
+{
+	criteria ConceptKilledPlayer IsZombie IsNotSpeaking IsDominated
+	response ZombieDominatedPlayer
+}
+
+rule ZombieRevengedPlayer
+{
+	criteria ConceptKilledPlayer IsZombie IsNotSpeaking IsRevenge
+	response ZombieDominatedPlayer
+}

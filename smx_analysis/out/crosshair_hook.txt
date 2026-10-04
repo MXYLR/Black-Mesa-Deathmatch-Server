@@ -1,0 +1,352 @@
+image base 0x10000000
+
+=== raw bytes 0x100a48d0 .. +0x40 ===
+  56 8B F1 8B 0D B0 96 6D 10 8B 01 8B 40 64 FF D0 84 C0 74 0B 8B 06 8B CE 5E FF A0 CC 05 00 00 5E C3 CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 55 8B EC 56 8B F1 8B 46 08 8D 4E 08 8B 40 20 FF
+
+=== helper 0x10102360 [.text] ===
+   0x10102360  push      ebp
+   0x10102361  mov       ebp, esp
+   0x10102363  sub       esp, 8
+   0x10102366  lea       eax, [ebp - 8]
+   0x10102369  push      eax
+   0x1010236a  lea       eax, [ebp - 4]
+   0x1010236d  push      eax
+   0x1010236e  call      0x101eb130
+   0x10102373  mov       eax, dword ptr [ebp - 4]
+   0x10102376  add       esp, 8
+   0x10102379  mov       esp, ebp
+   0x1010237b  pop       ebp
+   0x1010237c  ret       
+   0x1010237d  int3      
+   0x1010237e  int3      
+   0x1010237f  int3      
+   0x10102380  push      ebp
+   0x10102381  mov       ebp, esp
+   0x10102383  mov       ecx, dword ptr [0x105a48ac]
+   0x10102389  push      dword ptr [ebp + 8]
+   0x1010238c  mov       eax, dword ptr [ecx]
+   0x1010238e  call      dword ptr [eax + 0x28]
+   0x10102391  pop       ebp
+   0x10102392  ret       
+   0x10102393  int3      
+   0x10102394  int3      
+   0x10102395  int3      
+   0x10102396  int3      
+   0x10102397  int3      
+   0x10102398  int3      
+   0x10102399  int3      
+   0x1010239a  int3      
+   0x1010239b  int3      
+   0x1010239c  int3      
+   0x1010239d  int3      
+   0x1010239e  int3      
+   0x1010239f  int3      
+   0x101023a0  push      ebp
+   0x101023a1  mov       ebp, esp
+   0x101023a3  movss     xmm1, dword ptr [ebp + 8]
+   0x101023a8  movss     xmm0, dword ptr [ebp + 0xc]
+   0x101023ad  movaps    xmm2, xmm1
+   0x101023b0  comiss    xmm1, xmm0
+   0x101023b3  subss     xmm2, xmm0
+   0x101023b7  movss     dword ptr [ebp + 8], xmm2
+   0x101023bc  jbe       0x101023e6
+   0x101023be  movss     xmm0, dword ptr [0x1041a658]
+   0x101023c6  comiss    xmm2, xmm0
+   0x101023c9  jb        0x1010240e
+   0x101023cb  movss     xmm1, dword ptr [0x1041a65c]
+   0x101023d3  subss     xmm2, xmm1
+   0x101023d7  comiss    xmm2, xmm0
+   0x101023da  jae       0x101023d3
+   0x101023dc  movss     dword ptr [ebp + 8], xmm2
+   0x101023e1  fld       dword ptr [ebp + 8]
+   0x101023e4  pop       ebp
+   0x101023e5  ret       
+   0x101023e6  movss     xmm0, dword ptr [0x1041a664]
+
+=== helper 0x10102340 [.text] ===
+   0x10102340  push      ebp
+   0x10102341  mov       ebp, esp
+   0x10102343  sub       esp, 8
+   0x10102346  lea       eax, [ebp - 4]
+   0x10102349  push      eax
+   0x1010234a  lea       eax, [ebp - 8]
+   0x1010234d  push      eax
+   0x1010234e  call      0x101eb130
+   0x10102353  mov       eax, dword ptr [ebp - 4]
+   0x10102356  add       esp, 8
+   0x10102359  mov       esp, ebp
+   0x1010235b  pop       ebp
+   0x1010235c  ret       
+   0x1010235d  int3      
+   0x1010235e  int3      
+   0x1010235f  int3      
+   0x10102360  push      ebp
+   0x10102361  mov       ebp, esp
+   0x10102363  sub       esp, 8
+   0x10102366  lea       eax, [ebp - 8]
+   0x10102369  push      eax
+   0x1010236a  lea       eax, [ebp - 4]
+   0x1010236d  push      eax
+   0x1010236e  call      0x101eb130
+   0x10102373  mov       eax, dword ptr [ebp - 4]
+   0x10102376  add       esp, 8
+   0x10102379  mov       esp, ebp
+   0x1010237b  pop       ebp
+   0x1010237c  ret       
+   0x1010237d  int3      
+   0x1010237e  int3      
+   0x1010237f  int3      
+   0x10102380  push      ebp
+   0x10102381  mov       ebp, esp
+   0x10102383  mov       ecx, dword ptr [0x105a48ac]
+   0x10102389  push      dword ptr [ebp + 8]
+   0x1010238c  mov       eax, dword ptr [ecx]
+   0x1010238e  call      dword ptr [eax + 0x28]
+   0x10102391  pop       ebp
+   0x10102392  ret       
+   0x10102393  int3      
+   0x10102394  int3      
+   0x10102395  int3      
+   0x10102396  int3      
+   0x10102397  int3      
+   0x10102398  int3      
+   0x10102399  int3      
+   0x1010239a  int3      
+   0x1010239b  int3      
+   0x1010239c  int3      
+   0x1010239d  int3      
+   0x1010239e  int3      
+   0x1010239f  int3      
+   0x101023a0  push      ebp
+   0x101023a1  mov       ebp, esp
+   0x101023a3  movss     xmm1, dword ptr [ebp + 8]
+   0x101023a8  movss     xmm0, dword ptr [ebp + 0xc]
+   0x101023ad  movaps    xmm2, xmm1
+   0x101023b0  comiss    xmm1, xmm0
+   0x101023b3  subss     xmm2, xmm0
+   0x101023b7  movss     dword ptr [ebp + 8], xmm2
+   0x101023bc  jbe       0x101023e6
+   0x101023be  movss     xmm0, dword ptr [0x1041a658]
+   0x101023c6  comiss    xmm2, xmm0
+   0x101023c9  jb        0x1010240e
+
+=== helper 0x103d3c70 [.text] ===
+   0x103d3c70  cmp       dword ptr [0x107302e8], 0
+   0x103d3c77  je        0x103d3ca6
+   0x103d3c79  push      ebp
+   0x103d3c7a  mov       ebp, esp
+   0x103d3c7c  sub       esp, 8
+   0x103d3c7f  and       esp, 0xfffffff8
+   0x103d3c82  fstp      qword ptr [esp]
+   0x103d3c85  cvttsd2si eax, qword ptr [esp]
+   0x103d3c8a  leave     
+   0x103d3c8b  ret       
+   0x103d3c8c  cmp       dword ptr [0x107302e8], 0
+   0x103d3c93  je        0x103d3ca6
+   0x103d3c95  sub       esp, 4
+   0x103d3c98  fnstcw    word ptr [esp]
+   0x103d3c9b  pop       eax
+   0x103d3c9c  and       ax, 0x7f
+   0x103d3ca0  cmp       ax, 0x7f
+   0x103d3ca4  je        0x103d3c79
+   0x103d3ca6  push      ebp
+   0x103d3ca7  mov       ebp, esp
+   0x103d3ca9  sub       esp, 0x20
+   0x103d3cac  and       esp, 0xfffffff0
+   0x103d3caf  fld       st(0)
+   0x103d3cb1  fst       dword ptr [esp + 0x18]
+   0x103d3cb5  fistp     qword ptr [esp + 0x10]
+   0x103d3cb9  fild      qword ptr [esp + 0x10]
+   0x103d3cbd  mov       edx, dword ptr [esp + 0x18]
+   0x103d3cc1  mov       eax, dword ptr [esp + 0x10]
+   0x103d3cc5  test      eax, eax
+   0x103d3cc7  je        0x103d3d05
+   0x103d3cc9  fsubp     st(1)
+   0x103d3ccb  test      edx, edx
+   0x103d3ccd  jns       0x103d3ced
+   0x103d3ccf  fstp      dword ptr [esp]
+   0x103d3cd2  mov       ecx, dword ptr [esp]
+   0x103d3cd5  xor       ecx, 0x80000000
+   0x103d3cdb  add       ecx, 0x7fffffff
+   0x103d3ce1  adc       eax, 0
+   0x103d3ce4  mov       edx, dword ptr [esp + 0x14]
+   0x103d3ce8  adc       edx, 0
+   0x103d3ceb  jmp       0x103d3d19
+   0x103d3ced  fstp      dword ptr [esp]
+   0x103d3cf0  mov       ecx, dword ptr [esp]
+   0x103d3cf3  add       ecx, 0x7fffffff
+   0x103d3cf9  sbb       eax, 0
+   0x103d3cfc  mov       edx, dword ptr [esp + 0x14]
+
+=== helper 0x1007a510 [.text] ===
+   0x1007a510  push      edi
+   0x1007a511  mov       edi, ecx
+   0x1007a513  mov       eax, dword ptr [edi]
+   0x1007a515  call      dword ptr [eax + 0x430]
+   0x1007a51b  cmp       eax, 4
+   0x1007a51e  jne       0x1007a568
+   0x1007a520  push      esi
+   0x1007a521  mov       eax, dword ptr [edi]
+   0x1007a523  mov       ecx, edi
+   0x1007a525  push      0
+   0x1007a527  push      0x105748d8
+   0x1007a52c  push      0x105742b0
+   0x1007a531  push      0
+   0x1007a533  call      dword ptr [eax + 0x434]
+   0x1007a539  push      eax
+   0x1007a53a  call      0x103d49a8
+   0x1007a53f  mov       esi, eax
+   0x1007a541  add       esp, 0x14
+   0x1007a544  test      esi, esi
+   0x1007a546  je        0x1007a567
+   0x1007a548  mov       edx, dword ptr [esi]
+   0x1007a54a  mov       ecx, esi
+   0x1007a54c  call      dword ptr [edx + 0x430]
+   0x1007a552  test      eax, eax
+   0x1007a554  jne       0x1007a567
+   0x1007a556  mov       eax, dword ptr [esi]
+   0x1007a558  mov       ecx, esi
+   0x1007a55a  mov       edi, esi
+   0x1007a55c  call      dword ptr [eax + 0x430]
+   0x1007a562  cmp       eax, 4
+   0x1007a565  je        0x1007a521
+   0x1007a567  pop       esi
+   0x1007a568  mov       eax, dword ptr [edi + 0x1248]
+   0x1007a56e  pop       edi
+   0x1007a56f  test      eax, eax
+   0x1007a571  jne       0x1007a57e
+   0x1007a573  mov       ecx, dword ptr [0x105a42e8]
+   0x1007a579  mov       eax, dword ptr [ecx]
+   0x1007a57b  call      dword ptr [eax + 0x78]
+   0x1007a57e  cvtsi2ss  xmm0, eax
+   0x1007a582  comiss    xmm0, dword ptr [0x1041c494]
+   0x1007a589  jbe       0x1007a590
+   0x1007a58b  mov       eax, 0x78
+   0x1007a590  ret       
+   0x1007a591  int3      
+   0x1007a592  int3      
+   0x1007a593  int3      
+   0x1007a594  int3      
+   0x1007a595  int3      
+   0x1007a596  int3      
+   0x1007a597  int3      
+   0x1007a598  int3      
+   0x1007a599  int3      
+   0x1007a59a  int3      
+   0x1007a59b  int3      
+   0x1007a59c  int3      
+   0x1007a59d  int3      
+   0x1007a59e  int3      
+   0x1007a59f  int3      
+
+=== helper 0x103d9290 [.text] ===
+   0x103d9290  cmp       dword ptr [0x10737d70], 0
+   0x103d9297  je        0x103d92cb
+   0x103d9299  sub       esp, 8
+   0x103d929c  stmxcsr   dword ptr [esp + 4]
+   0x103d92a1  mov       eax, dword ptr [esp + 4]
+   0x103d92a5  and       eax, 0x7f80
+   0x103d92aa  cmp       eax, 0x1f80
+   0x103d92af  jne       0x103d92c0
+   0x103d92b1  fnstcw    word ptr [esp]
+   0x103d92b4  mov       ax, word ptr [esp]
+   0x103d92b8  and       ax, 0x7f
+   0x103d92bc  cmp       ax, 0x7f
+   0x103d92c0  lea       esp, [esp + 8]
+   0x103d92c4  jne       0x103d92cb
+   0x103d92c6  jmp       0x103eca50
+   0x103d92cb  sub       esp, 0xc
+   0x103d92ce  fst       qword ptr [esp]
+   0x103d92d1  call      0x103e4608
+   0x103d92d6  call      0x103d92e8
+   0x103d92db  add       esp, 0xc
+   0x103d92de  ret       
+   0x103d92df  lea       edx, [esp + 4]
+   0x103d92e3  call      0x103e45c5
+   0x103d92e8  push      edx
+   0x103d92e9  wait      
+   0x103d92ea  fnstcw    word ptr [esp]
+   0x103d92ed  je        0x103d935c
+   0x103d92ef  cmp       word ptr [esp], 0x27f
+   0x103d92f5  je        0x103d92fc
+   0x103d92f7  call      0x103e4595
+   0x103d92fc  cmp       eax, 0x3ff00000
+   0x103d9301  jae       0x103d932e
+   0x103d9303  fld1      
+   0x103d9305  fadd      st(1)
+   0x103d9307  fld1      
+   0x103d9309  fsub      st(2)
+   0x103d930b  fmulp     st(1)
+   0x103d930d  fsqrt     
+   0x103d930f  fpatan    
+   0x103d9311  cmp       dword ptr [0x1072fdf0], 0
+   0x103d9318  jne       0x103e461e
+
+=== Glock DrawFilledRect call site 0x10290490..0x102904e5 ===
+   0x10290490  or        eax, 0x1040d210
+   0x10290495  movaps    xmm0, xmm2
+   0x10290498  subss     xmm0, xmm4
+   0x1029049c  movaps    xmm4, xmm5
+   0x1029049f  mulss     xmm4, dword ptr [ebp - 4]
+   0x102904a4  cmpnless  xmm0, xmm3
+   0x102904a9  movss     xmm3, dword ptr [0x1041dc84]
+   0x102904b1  andps     xmm0, xmm1
+   0x102904b4  movaps    xmm1, xmm7
+   0x102904b7  subss     xmm2, xmm0
+   0x102904bb  cvtsi2ss  xmm0, edi
+   0x102904bf  cvttss2si eax, xmm2
+   0x102904c3  addss     xmm4, xmm0
+   0x102904c7  push      eax
+   0x102904c8  addss     xmm4, dword ptr [0x1041a640]
+   0x102904d0  andps     xmm3, xmm4
+   0x102904d3  movaps    xmm0, xmm4
+   0x102904d6  xorps     xmm0, xmm3
+   0x102904d9  movaps    xmm2, xmm4
+   0x102904dc  cmpltss   xmm0, xmm7
+   0x102904e1  andps     xmm1, xmm0
+   0x102904e4  orps      xmm1, xmm3
+   0x102904e7  addss     xmm2, xmm1
+   0x102904eb  subss     xmm2, xmm1
+
+=== vtable slots called on the surface global 0x1070508c ===
+
+=== per-class vt+0x5CC (draw) / vt+0x5D0 (shouldDraw) / vt+0x5C4 (wrapper) ===
+  C_BlackMesaBaseWeapon(base)  vt=0x104a17c0  draw=0x10297000 [.text] 55 8B EC 83 EC 1C 56 57 8B F1 E8 E1
+                                            gate=0x10074630  wrapper=0x100a48d0
+  C_WeaponAssassinGlock        vt=0x1049c320  draw=0x10290220 [.text] 55 8B EC 83 EC 1C 56 57 8B F1 E8 81
+                                            gate=0x10290750  wrapper=0x100a48d0
+  C_Weapon_357                 vt=0x104999b0  draw=0x1028e490 [.text] 55 8B EC 83 EC 1C 56 57 8B F1 E8 11
+                                            gate=0x1028e930  wrapper=0x100a48d0
+  C_Weapon_Crossbow            vt=0x1049a1d0  draw=0x10297000 [.text] 55 8B EC 83 EC 1C 56 57 8B F1 E8 E1
+                                            gate=0x1028f540  wrapper=0x100a48d0
+  C_Weapon_Crowbar             vt=0x1049aa54  draw=0x10297000 [.text] 55 8B EC 83 EC 1C 56 57 8B F1 E8 E1
+                                            gate=0x10074630  wrapper=0x100a48d0
+  C_Weapon_Frag                vt=0x1049b244  draw=0x10297000 [.text] 55 8B EC 83 EC 1C 56 57 8B F1 E8 E1
+                                            gate=0x10074630  wrapper=0x100a48d0
+  C_Weapon_Glock               vt=0x1049bb4c  draw=0x10290220 [.text] 55 8B EC 83 EC 1C 56 57 8B F1 E8 81
+                                            gate=0x10290750  wrapper=0x100a48d0
+  C_Weapon_Gluon               vt=0x1057cad8  draw=0x6f6d5343 [?] (non-text)
+                                            gate=0x6150656b  wrapper=0x00000000
+  C_Weapon_Headcrab            vt=0x1049cb18  draw=0x10297000 [.text] 55 8B EC 83 EC 1C 56 57 8B F1 E8 E1
+                                            gate=0x10074630  wrapper=0x100a48d0
+  C_Weapon_HiveHand            vt=0x1049d418  draw=0x102910d0 [.text] 55 8B EC 83 EC 0C 56 57 E8 83 12 E7
+                                            gate=0x10291510  wrapper=0x100a48d0
+  C_Weapon_MP5                 vt=0x1049dc6c  draw=0x10291740 [.text] 55 8B EC 83 EC 24 56 57 8B F1 E8 61
+                                            gate=0x10291c90  wrapper=0x100a48d0
+  C_Weapon_RPG                 vt=0x1057c968  draw=0x00000000 [?] (non-text)
+                                            gate=0x1051df84  wrapper=0x65666645
+  C_Weapon_Satchel             vt=0x1057c9a8  draw=0x1051df84 [.rdata] (non-text)
+                                            gate=0x00000000  wrapper=0x40407374
+  C_Weapon_Shotgun             vt=0x1057c9c8  draw=0x00000000 [?] (non-text)
+                                            gate=0x1051df84  wrapper=0x69736f6c
+  C_Weapon_Snark               vt=0x1057c9e8  draw=0x00004040 [?] (non-text)
+                                            gate=0x1051df84  wrapper=0x6f6c7078
+  C_Weapon_Tau                 vt=0x1057ca08  draw=0x00000000 [?] (non-text)
+                                            gate=0x1051df84  wrapper=0x6946656c
+  C_Weapon_Tripmine            vt=0x1057ca24  draw=0x47656b6f [?] (non-text)
+                                            gate=0x616e6572  wrapper=0x63697472
+
+=== vgui2.dll : NOT PRESENT ===
+=== vguimatsurface.dll : NOT PRESENT ===
+=== engine.dll : NOT PRESENT ===
+=== materialsystem.dll : NOT PRESENT ===

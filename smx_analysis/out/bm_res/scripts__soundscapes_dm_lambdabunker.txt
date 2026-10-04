@@ -1,0 +1,751 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP DM_LAMBDABUNKER STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+// Generic Utilities for the chapter.
+
+"LB.util_indamb"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"11.0, 20.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\ind_amb1.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb2.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb3.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb4.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb5.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb6.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb7.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb8.wav"
+
+		}
+	}
+}
+
+
+//================================================================================================================================
+//================================================================================================================================
+//================================================================================================================================
+//										Base Utility Soundscapes - Undertow
+//================================================================================================================================
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//							DO NOT USE IN THE ACTUAL VMFs.
+//
+//							They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//							for the overall environments being portrayed.
+//
+//							Scroll down to "Main Map Soundscapes - Subtransit" for the soundscapes proper.
+
+
+
+"LB.garage_s3.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+"LB.garage_s2.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_med12.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+}
+
+"LB.garage_s1.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med12.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_ob_mortars_ug.wav"
+	}
+}
+
+"LB.hallway.base"
+{
+	"dsp"				"0"
+	"dsp_volume" 		"1.0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_med9.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_ob_mortars_ug.wav"
+	}
+}
+
+"LB.garage.seweraccess.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.9"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_rumble1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_med12.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.1"
+		"pitch"			"100"
+		"wave"			"BMS_ambience\room_ambience\r_ambience_med10.wav"
+	}
+}
+
+"LB.sewer.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_large8.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_water1.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"LB.util_indamb"
+		"volume"		"0.2"
+	}
+}
+
+"LB.ventilation.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_vent1.wav"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//								Positional Utility Soundscapes - Undertow
+//================================================================================================================================
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 									DO NOT USE IN THE ACTUAL VMFs.
+//
+//									They are Building Blocks only, meant for insertion into the main soundscapes,
+//									in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//									via the info_target entity.
+//
+//									Scroll down to "Main Map Soundscapes - Subtransit" for the soundscapes list proper.
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities	
+//
+
+// positional utility, garage section 1 (a_gs1, for shorthand)
+
+///////// info_targets ///////////
+//
+
+// LB_gs1_pos2_water14
+// LB_gs1_pos3_water21
+
+// LB_gs1_pos4_fan5
+// LB_gs1_pos5_pipe1
+
+// LB_gs1_pos7_fan8	
+// LB_gs1_pos6_truckidle
+
+"lb.garage_s1.util_pos2-3"
+{	
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"pitch"			"100"
+		"wave"			"bms_ambience/room_ambience/r_ambience_water14.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"		"2"
+	}	
+
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"pitch"			"100"
+		"wave"			"bms_ambience/room_ambience/r_ambience_water21.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"		"3"
+	}
+}
+
+"lb.garage_s1.util_pos4-5"
+{	
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan5.wav"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"		"5"
+	}	
+}
+
+"lb.garage_s1.util_pos6-7"
+{	
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan8.wav"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"		"7"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"bms_objects/vehicles/truck_idle1.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"		"6"
+	}
+}
+
+// positional utility, garage section 2 (a_gs2, for shorthand)
+
+///////// info_targets ///////////
+//
+// lb_gs2_pos1_pipe1
+// lb_gs2_pos2_ehum1
+
+
+// lb_gs2mt_pos0_pipe4
+
+// lb_gs2mt_pos6_ehum1a
+// lb_gs2mt_pos7_ehum1b
+
+
+
+"lb.garage_s2mt.util_pos0only"
+{
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"attenuation"	"1.4"
+
+		"position"		"0"
+	}
+}
+
+"lb.garage_s2.util_pos1-2"
+{
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1a.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.20"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"attenuation"	"1.0"
+
+		"position"		"2"
+	}
+}
+
+"lb.garage_s2mt.util_pos6-7"
+{
+	"playlooping"
+	{
+		"volume"		"0.20"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"attenuation"	"1.0"
+
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.20"
+		"pitch"			"100"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		"attenuation"	"1.0"
+
+		"position"		"7"
+	}
+}
+
+// lb_gs3_pos2_water
+
+// lb_gs3_pos3_water12
+// lb_gs3_pos4_water21
+
+// lb_gs3_pos5_fan8
+// lb_gs3_pos6_truckidle1	(DEV NOTE: changed this sound to the "open door" chime", despite nomenclature.)
+// lb_gs3_pos7_truckidle3
+
+"lb.garage_s3.util_pos3-4"
+{	
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"pitch"			"100"
+		"wave"			"bms_ambience/room_ambience/r_ambience_water12.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"		"3"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			"bms_ambience/room_ambience/r_ambience_water21.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"		"4"
+	}
+}
+
+"lb.garage_s3.util_pos5-7"
+{	
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"wave"			"bms_objects/fans/fan8.wav"
+		"soundlevel"	"SNDLVL_80dB"
+
+		"position"		"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"pitch"			"100"
+		"wave"			")bms_objects/vehicles/car_chime.wav"
+		"soundlevel"	"SNDLVL_70dB"
+
+		"position"		"6"
+	}	
+	
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"wave"			"bms_objects/vehicles/truck_idle3.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"		"7"
+	}
+}
+
+//lb_swa_pos0_water12a
+//lb_swa_pos1_water12b
+
+"lb.garage_seweraccess.util_pos0-1"
+{	
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"pitch"			"100"
+		"wave"			"bms_ambience/room_ambience/r_ambience_water12a.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.85"
+		"pitch"			"100"
+		"wave"			"bms_ambience/room_ambience/r_ambience_water12b.wav"
+		"soundlevel"	"SNDLVL_75dB"
+
+		"position"		"1"
+	}
+}
+
+//================================================================================================================================
+//									Main Map Soundscapes -	Undertow
+//================================================================================================================================
+
+"LB.hallway1"
+{
+	"dsp"				"17"
+	"dsp_volume" 		"0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.hallway.base"
+	}
+		
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s1.util_pos2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s1.util_pos4-5"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s1.util_pos6-7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// First Garage, Section 1 
+// Small garage area just outside Security Station 
+
+"LB.garage_s1"
+{
+	"dsp"				"19"
+	"dsp_volume" 		"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"LB.garage_s1.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s1.util_pos2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s1.util_pos4-5"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s1.util_pos6-7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// First Garage, Section 1 
+// small garage area just outside Security Station
+
+"LB.garage_s1_garbagio"
+{
+	"dsp"				"19"
+	"dsp_volume" 		"0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.garage_s1.base"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// First Garage, Section 2   
+// T Junction section // player can choose to go either left or right.
+//
+
+"LB.garage_s2"
+{
+	"dsp"					"19"
+	"dsp_volume" 			"0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.garage_s2.base"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s2mt.util_pos0only"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s2.util_pos1-2"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s2mt.util_pos6-7"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// First Garage, Section 2 (Ventilation)	//
+// 											// Leads into Garage, Section 3
+
+"LB.garage_s2_vent"
+{
+	"dsp"				"19"
+	"dsp_volume" 		"0.5"
+	"fadetime"			"2.0"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.ventilation.base"
+	}
+	
+	"playsoundscape"
+	{
+		"volume"		"0.35"
+		"name"			"LB.garage_s2.base"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// First Garage, Section 3			//
+//									// (IN SP) Would be the Large Garage Area with Agrunts
+
+"LB.garage_s3"
+{
+	"dsp"					"19"
+	"dsp_volume" 			"0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.garage_s3.base"
+	}
+	
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"lb.garage_s3.util_pos3-4"
+	}	
+	
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"lb.garage_s3.util_pos5-7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// First Garage, Section 3			//
+//									// (IN SP) Would be the Large Garage Area with Agrunts
+
+"LB.garage_s3_staircase"
+{
+	"dsp"					"19"
+	"dsp_volume" 			"0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.garage_s3.base"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"lb.garage_s2mt.util_pos0only"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"lb.garage_s3.util_pos3-4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// First Garage, Section 3			//
+//				(pre section) 		//
+
+"LB.garage_s3_pre"
+{
+	"dsp"					"19"
+	"dsp_volume" 			"0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.garage_s3.base"
+	}
+	
+		"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"lb.garage_s3.util_pos3-4"
+	}
+	
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"lb.garage_s3.util_pos5-7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// LamdbaBunker TUNNEL 1A			//
+//									// Leads out of SewerTunnel Access, and into Garage, Section 3
+//									// This is section is unique to LamdbaBunker, and not accessible in it's SP counterpart.
+
+"LB.tunnel_1a"
+{
+	"dsp"	"19"
+	"dsp_volume" "0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.garage_s2.base"
+	}
+		"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"lb.garage_s3.util_pos3-4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Garage Sewer Access 			// 
+//								// 
+
+"LB.garage.seweraccess"
+{
+	"dsp"				"25"
+	"dsp_volume" 		"0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.garage.seweraccess.base"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"lb.garage_seweraccess.util_pos0-1"
+		"volume"		"1.0"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// Map A - Garage Sewers Actual // 
+//
+
+"LB.sewer"
+{
+	"dsp"				"1"
+	"dsp_volume" 		"0.5"
+
+	"playsoundscape"
+	{
+		"volume"		"1.0"
+		"name"			"LB.sewer.base"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"lb.garage_seweraccess.util_pos0-1"
+		"volume"		"1.0"
+	}
+}

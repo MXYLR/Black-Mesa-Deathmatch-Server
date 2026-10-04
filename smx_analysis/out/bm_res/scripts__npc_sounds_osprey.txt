@@ -1,0 +1,16 @@
+"npc_sounds_osprey.HoverLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"pitch"			"PITCH_NORM"
+	"volume"		"VOL_NORM"
+	"soundlevel"	"SNDLVL_105dB"
+
+	"rndwave"
+	{
+		"wave"		"^npc/osprey/osprey_hover.wav"
+	}
+}
+
+
+
+

@@ -1,0 +1,33 @@
+=== .?AVCBlackMesaPlayer@@ @td=0x10824bc4 : 2 vtables
+   vtable 0x10726358  hits: [('module', '0x4cc')]
+      slot0x1E0=0x10100390 slot0x1E8=0x1047ea30 slot0x1EC=0x1022aba0
+      slot 0x4cc (idx 307) = module
+   vtable 0x10726b70  hits: []
+=== .?AVCBlackMesaPlayerMove@@ @td=0x108298dc : 2 vtables
+   vtable 0x106abac4  hits: [('0x1E8?', '0x5a8'), ('0x1E8?', '0x90c')]
+      slot0x1E0=0x6c207962 slot0x1E8=0x7520676e slot0x1EC=0x74692070
+      slot 0x5a8 (idx 362) = 0x1E8?
+      slot 0x90c (idx 579) = 0x1E8?
+   vtable 0x10790a5c  hits: []
+=== .?AVCBlackMesaPlayerAnimState@@ @td=0x1082d944 : 1 vtables
+   vtable 0x107271b0  hits: [('0x1E8?', '0x730')]
+      slot0x1E0=0x2d2d2d2d slot0x1E8=0x0a2d2d2d slot0x1EC=0x00000000
+      slot 0x730 (idx 460) = 0x1E8?
+=== .?AVCBasePlayer@@ @td=0x10819c84 : 1 vtables
+   vtable 0x1064be44  hits: [('0x1E8?', '0x1e8'), ('module', '0x4cc')]
+      slot0x1E0=0x10100390 slot0x1E8=0x1011e530 slot0x1EC=0x1022aba0
+      slot 0x1e8 (idx 122) = 0x1E8?
+      slot 0x4cc (idx 307) = module
+=== .?AVCBaseMultiplayerPlayer@@ @td=0x1081b764 : 0 vtables
+=== .?AVCAI_BaseNPC@@ @td=0x10819814 : 2 vtables
+   vtable 0x105d69d4  hits: [('bullseye', '0x1e8'), ('module', '0x4cc')]
+      slot0x1E0=0x1006b1f0 slot0x1E8=0x10063db0 slot0x1EC=0x10060b80
+      slot 0x1e8 (idx 122) = bullseye
+      slot 0x4cc (idx 307) = module
+   vtable 0x105d7364  hits: []
+=== .?AVCProtoSniper@@ @td=0x1082e80c : 2 vtables
+   vtable 0x1073d70c  hits: [('bullseye', '0x1e8'), ('module', '0x4cc')]
+      slot0x1E0=0x1006b1f0 slot0x1E8=0x10063db0 slot0x1EC=0x10060b80
+      slot 0x1e8 (idx 122) = bullseye
+      slot 0x4cc (idx 307) = module
+   vtable 0x1073e09c  hits: []

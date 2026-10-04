@@ -1,0 +1,36 @@
+DLL: F:\BMServer\bms\bin\server.dll  size=9509376 (0x911a00)
+IMAGE_BASE=0x10000000
+
+=== sanity: are the "dword refs" to 0x1034dd80 real? ===
+   [0x105d6ea0] = 0x1034dd80  MATCH
+   [0x105eb354] = 0x1034dd80  MATCH
+   [0x105f63c8] = 0x1034dd80  MATCH
+   [0x10626244] = 0x1034dd80  MATCH
+   [0x1073dbd8] = 0x1034dd80  MATCH
+
+=== context: what is at 0x105d6e80..0x105d6ec0 (is it a vtable?) ===
+   0x105d6e80: 0x100f9980
+   0x105d6e84: 0x1006cde0
+   0x105d6e88: 0x100f93b0
+   0x105d6e8c: 0x100f7e20
+   0x105d6e90: 0x100f9e20
+   0x105d6e94: 0x100f9dc0
+   0x105d6e98: 0x10073db0
+   0x105d6e9c: 0x100fc410
+   0x105d6ea0: 0x1034dd80
+   0x105d6ea4: 0x1006c870
+   0x105d6ea8: 0x100f8180
+   0x105d6eac: 0x100f8150
+   0x105d6eb0: 0x100f8140
+   0x105d6eb4: 0x100f6d80
+   0x105d6eb8: 0x100f9270
+   0x105d6ebc: 0x100f6e40
+
+=== can we read .data at 0x108a8120 / 0x108bc278? ===
+   0x108a8120: 
+   0x108bc278: 
+   0x1089e23c: 
+
+=== cvar object names (ConVar layout: vtable, m_pNext?, ..., m_pszName at +0xc) ===
+   0x108bc278 ERR unpack requires a buffer of 4 bytes
+   0x108a8120 ERR unpack requires a buffer of 4 bytes

@@ -1,0 +1,13 @@
+  -- CAI_BaseNPC vtable slot 307 fn + helpers (0x1034dd80..) --
+     0x1034dd9d: 0x1073ff57 "set of the nav drag volume top from center"
+     0x1034de5c: 0x1074a07d "::GetUserMessageSize( %i ) out of range!!!"
+     0x1034e05d: 0x10624660 "skill"
+     0x1034e5f2: 0x105f3b66 "ding"
+     0x1034e9b2: 0x105c8ee8 "CUtlRBTree overflow!"
+     0x1034ec4a: 0x1075ff50 "r saving file"
+     0x1034f276: 0x10738b56 "ankphyscannister"
+     0x1034fb91: 0x106a9070 "Multi-trace error: encountered a recycled entity %p (%s)!"
+
+  -- multi-trace fn (0x1034fb10..) --
+     0x1034fb91: 0x106a9070 "Multi-trace error: encountered a recycled entity %p (%s)!"
+     0x103500a6: 0x10740010 "show_compass"

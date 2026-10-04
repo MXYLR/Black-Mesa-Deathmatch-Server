@@ -1,0 +1,78 @@
+=== MASK immediates inside BM CBaseEntity::FireBullets (0x1011e530..0x1011f500) ===
+   0x1011e9c3 : 0x46004003
+       0x1011e9ab  adc       byte ptr [ebp - 0x1176b], cl
+       0x1011e9b1  call      dword ptr [edx - 0x73]
+       0x1011e9b4  xchg      ebp, eax
+       0x1011e9b5  dec       eax
+   0x1011eae1 : 0x46004003
+       0x1011eac9  popfd     
+       0x1011eaca  push      eax
+
+=== what calls 0x10158610 (candidate trace helper)? is it IEngineTrace::TraceRay? ===
+   0x10158610  push      ebp
+   0x10158611  mov       ebp, esp
+   0x10158613  sub       esp, 0x18
+   0x10158616  push      esi
+   0x10158617  call      0x102b4310
+   0x1015861c  mov       esi, eax
+   0x1015861e  test      esi, esi
+   0x10158620  je        0x101587f2
+   0x10158626  mov       ecx, dword ptr [esi + 0x104]
+   0x1015862c  shr       ecx, 0xb
+   0x1015862f  test      cl, 1
+   0x10158632  je        0x1015863b
+   0x10158634  mov       ecx, esi
+   0x10158636  call      0x1010ee90
+   0x1015863b  movss     xmm2, dword ptr [esi + 0x280]
+   0x10158643  movss     xmm1, dword ptr [esi + 0x284]
+   0x1015864b  movss     xmm0, dword ptr [esi + 0x288]
+   0x10158653  push      ebx
+   0x10158654  mov       ebx, dword ptr [ebp + 0xc]
+   0x10158657  push      edi
+   0x10158658  mov       edi, dword ptr [ebp + 8]
+   0x1015865b  subss     xmm2, dword ptr [edi]
+   0x1015865f  subss     xmm1, dword ptr [edi + 4]
+   0x10158664  subss     xmm0, dword ptr [edi + 8]
+   0x10158669  mulss     xmm2, xmm2
+
+=== context of .rdata sites referencing 0x1034dd80 (are they vtables?) ===
+  --- around 0x105d6ea0 ---
+     0x105d6e90: 0x100f9e20 <code>
+     0x105d6e94: 0x100f9dc0 <code>
+     0x105d6e98: 0x10073db0 <code>
+     0x105d6e9c: 0x100fc410 <code>
+     0x105d6ea0: 0x1034dd80 <code>
+     0x105d6ea4: 0x1006c870 <code>
+     0x105d6ea8: 0x100f8180 <code>
+     0x105d6eac: 0x100f8150 <code>
+     0x105d6eb0: 0x100f8140 <code>
+  --- around 0x105eb354 ---
+     0x105eb344: 0x100f9e20 <code>
+     0x105eb348: 0x100f9dc0 <code>
+     0x105eb34c: 0x10073db0 <code>
+     0x105eb350: 0x100fc410 <code>
+     0x105eb354: 0x1034dd80 <code>
+     0x105eb358: 0x1006c870 <code>
+     0x105eb35c: 0x100f8180 <code>
+     0x105eb360: 0x100f8150 <code>
+     0x105eb364: 0x100f8140 <code>
+  --- around 0x10626244 ---
+     0x10626234: 0x100f9e20 <code>
+     0x10626238: 0x100f9dc0 <code>
+     0x1062623c: 0x10073db0 <code>
+     0x10626240: 0x100fc410 <code>
+     0x10626244: 0x1034dd80 <code>
+     0x10626248: 0x1006c870 <code>
+     0x1062624c: 0x100f8180 <code>
+     0x10626250: 0x100f8150 <code>
+     0x10626254: 0x100f8140 <code>
+  --- around 0x1073dbd8 ---
+     0x1073dbc8: 0x100f9e20 <code>
+     0x1073dbcc: 0x100f9dc0 <code>
+     0x1073dbd0: 0x10073db0 <code>
+     0x1073dbd4: 0x100fc410 <code>
+     0x1073dbd8: 0x1034dd80 <code>
+     0x1073dbdc: 0x1006c870 <code>
+     0x1073dbe0: 0x100f8180 <code>
+     0x1073dbe4: 0x100f8150 <code>
+     0x1073dbe8: 0x100f8140 <code>

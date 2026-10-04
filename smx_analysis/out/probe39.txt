@@ -1,0 +1,6 @@
+=== CBaseEntity::FireBullets (stock) @0x1011e530 : 593 slot-0x1E8 hits, 0 resolvable classes
+
+=== CAI_BaseNPC::FireBullets (bullseye wrapper) @0x10063db0 : 86 slot-0x1E8 hits, 0 resolvable classes
+
+=== no-op @0x10062d20 : 678 slot-0x1E8 hits, 0 resolvable classes
+

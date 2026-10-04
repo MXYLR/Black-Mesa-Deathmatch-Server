@@ -1,22 +1,21 @@
 # Black Mesa 死亡竞赛服务器
 
-Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
+Black Mesa(黑山起源)SourceMod 插件与配置集合 —— 主体是**死亡竞赛专用服务器**,
+另含单人战役(单机剧情)用的两个独立小项目。
 
 服务器启用的 **35 个 SourceMod 模块被合并编译成单个 `BMAG.smx`**(SourceMod 官方插件 + 社区插件 + 自研 `bms_match` 比赛插件),
 另有若干**独立插件**单独加载(仓库内保留 `spawn_marker`,默认停用)。
 
 源码、合并器与逆向笔记全部在本仓库内,可直接重建。
 
-**不在本仓库内的东西**:单人战役(单机剧情)专用的两个插件是各自独立的小项目,
-放在本机 `campaign/` 下(整目录已被 `.gitignore` 排除,不随本仓库分发):
+单人战役(单机剧情)专用的两个插件是各自独立的小项目,放在 `campaign/` 下,同样在本仓库内:
 
 | 项目 | 内容 |
 |---|---|
 | `campaign/tau_mp/` | `plugins/tau_mp.smx`、`tau_mp.sp`、`gamedata/tau_mp.games.txt`、`REVERSE_TAU.md` |
 | `campaign/hl1tau/` | `plugins/hl1tau.smx`、`hl1tau.sp` |
 
-本文件中提到这两个插件时,路径都指上面这张表。另:`client_mod/`(自定义准星客户端 mod,已搁置)
-与 `bms_match_delivery/`(旧交付包归档)同样只在本地、不入库。
+本文件中提到这两个插件时,路径都指上面这张表。**唯一不入库**的是 `client_mod/`(自定义准星客户端 mod,已搁置)。
 
 ---
 
@@ -95,6 +94,10 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 │       ├── configs/              插件配置(bms_match.cfg、bms_webpanel.html)
 │       ├── cfg/                  地图池(mapcycle_*.txt)与比赛用 cfg
 │       └── translations/         各插件短语文件(**运行时读取,不编进 BMAG.smx**)
+├── campaign/                     单人战役(SP)专用的两个独立小项目
+│   ├── tau_mp/                   高斯跳 + 右键无冷却 + 跌落伤害封顶(含 REVERSE_TAU.md)
+│   └── hl1tau/                   高斯炮溅射半径还原 HL1
+├── bms_match_delivery/           2026-08-23 的旧交付包归档(留档)
 ├── cfg/                          服务器 cfg/ 备份(server.cfg、autoexec、listenserver、
 │                                 banned_*、chapter*.cfg 等)
 ├── configs/                      SourceMod configs/ 备份(admins、advertisements、
@@ -103,10 +106,11 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 └── README.md
 ```
 
-`.gitignore` 排除:交付包归档 `bms_match_delivery/`、`smx_analysis/dl/` 与 `smx_analysis/out/`(下载的工具与证据 dump,
-体积大且可重新获取)、`merge.py` 生成的 `BMAG/BMAG.sp`、已被 `BMAG.smx` 取代的旧版平铺产物
-(`smx_analysis/plugins/`、`partial.sp`、`bctest.smx`)、暂时搁置的自定义准星客户端 mod `client_mod/`
-与 `REVERSE_CROSSHAIR.md`,以及单人战役两个独立项目所在的 `campaign/`。
+`.gitignore` 现在只排除两类东西:`merge.py` 生成的中间产物 `smx_analysis/src/scripting/BMAG/BMAG.sp`
+(可由 `merge.py` 重组),以及暂时搁置的自定义准星客户端 mod `client_mod/` 与 `REVERSE_CROSSHAIR.md`。
+下载的工具链与证据 dump(`smx_analysis/dl/`、`smx_analysis/out/`)、旧交付包归档 `bms_match_delivery/`、
+已被 `BMAG.smx` 取代的旧版平铺产物(`smx_analysis/plugins/`、`partial.sp`、`bctest.smx`)与单人战役的
+`campaign/` 均已入库留档。
 
 ### 逆向笔记(`smx_analysis/REVERSE_*.md`)
 
@@ -159,7 +163,7 @@ copy /Y smx_analysis\src\scripting\cfg\*.cfg             %SRV%\bms\cfg\
 
 单人战役环境是另一套 `addons/sourcemod`(Steam 客户端目录下的 Black Mesa),
 需要的是 `tau_mp.smx` + `hl1tau.smx` + `tau_mp.games.txt` —— 这三样属单人战役专用,
-**不在本仓库内**(本机存放在 `campaign/`,见 `.gitignore`)。
+放在本仓库 `campaign/` 下。
 
 复制后重启服务器,或在服务器控制台执行 `sm plugins reload BMAG`。
 **新增**的独立插件(如 `is_bms_fix_timelimit`)SourceMod 只在地图切换时才自动加载,
@@ -700,11 +704,11 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 
 ## 四、独立插件
 
-### 单人战役插件(**已移出本仓库**)
+### 单人战役插件(独立小项目)
 
 tau 炮在单人战役里是"阉割版":没有高斯跳、副攻有硬直 —— 这两条分支写死在 `server.dll` 里
 (按 `IsMultiplayer()` 判),纯 ConVar 改不出来。两个插件各自独立,只服务单机剧情,
-放在本机 `campaign/` 下,**不在本仓库内**:
+放在本仓库 `campaign/` 下:
 
 | 项目 | 做什么 |
 |---|---|
@@ -773,7 +777,7 @@ cd smx_analysis
 python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(35 模块合并)
 ```
 
-然后用 spcomp 编译(编译器不入库,放在被忽略的 `dl/sm-win/` 下):
+然后用 spcomp 编译(编译器随仓库放在 `dl/sm-win/` 下):
 
 ```bash
 ./dl/sm-win/addons/sourcemod/scripting/spcomp.exe \
@@ -791,8 +795,8 @@ python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(35 模块合并)
 
 - spcomp 输出**不是字节可复现的**(内嵌路径/时间戳/哈希表序),判断新旧请以功能验证或日志为准,不要比对 MD5
 - 编译用的 `include/` 必须与生产服务器一致:旧版 `sourcemod.inc` 的 `StoreToAddress` 只有 3 个参数,会编译报错
-- **签名必须抗重定位** —— `GameConfGetAddress` 扫的是已加载内存,含绝对地址(`imm32`)的签名会因 base relocation 在运行时失配(磁盘命中、内存不命中,静默不生效)。用 `smx_analysis/sig_check.py` 校验(结论出自单人战役 `tau_mp` 的签名,该插件已移到 `campaign/tau_mp/`)
-- 单人战役那两个插件的源码**不在** `src/scripting/plugins/`(已移出仓库),因此 `merge.py` 和上面的编译命令都不涉及它们;单独编译见 `campaign/` 里各自的源码
+- **签名必须抗重定位** —— `GameConfGetAddress` 扫的是已加载内存,含绝对地址(`imm32`)的签名会因 base relocation 在运行时失配(磁盘命中、内存不命中,静默不生效)。用 `smx_analysis/sig_check.py` 校验(结论出自单人战役 `tau_mp` 的签名,该插件在 `campaign/tau_mp/`)
+- 单人战役那两个插件的源码在 `campaign/` 里(不在 `src/scripting/plugins/`),因此 `merge.py` 和上面的编译命令都不涉及它们;单独编译见 `campaign/` 里各自的源码
 
 ---
 

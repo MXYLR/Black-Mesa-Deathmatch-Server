@@ -1,0 +1,89 @@
+"NPC_Apache.FireGun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"			"npc\apache\apache_single1_looped.wav"
+}
+
+"NPC_Apache.FireRockets"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,105"
+
+	"soundlevel"	"SNDLVL_120dB"
+
+	"rndwave"
+	{
+		"wave"			"npc\apache\apatche_firerockets.wav"
+	}
+}
+
+"NPC_Apache.ChargeGun"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.85"
+	"pitch"			"115"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"rndwave"
+	{
+		"wave"			"npc\apache\apache_warn.wav"
+	}
+}
+
+"NPC_Apache.ChargeRockets"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.5"
+	"pitch"			"95,105"
+
+	"soundlevel"	"SNDLVL_120dB"
+
+	"rndwave"
+	{
+		"wave"			"npc\apache\apache_warn_rocket.wav"
+	}
+}
+
+"NPC_Apache.ChargeRockets_Barrage"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.5"
+	"pitch"			"95,105"
+
+	"soundlevel"	"SNDLVL_120dB"
+
+	"rndwave"
+	{
+		"wave"			"npc\apache\apache_warn_rocket.wav"
+	}
+}
+
+"NPC_Apache.BadlyDamagedAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_100dB"
+	"pitch"			"100"
+	"wave"			"npc\apache\apache_damage_alarm.wav"
+}
+
+"NPC_Apache.HoverLoop"
+{
+	"channel"	"CHAN_STATIC"
+	"pitch"		"PITCH_NORM"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_140dB"
+
+	"wave"			"npc\apache\apache_hover.wav"
+}
+
+
+
+

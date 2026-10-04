@@ -1,0 +1,79 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_CROSSBOW"
+{
+	"id" "elementid" "97be3461-9bd9-46f7-8bbb-d1f7da1f855d"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_crossbow.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_crossbow_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_crossbow.mdl"
+	"printname" "string" "Crossbow"
+	"primary_ammo" "string" "bolt"
+	"clip_size" "int" "5"
+	"bucket" "int" "2"
+	"bucket_position" "int" "2"
+
+	"bucket_controller" "int" "0"
+	"bucket_position_controller" "int" "2"
+
+	"anim_prefix" "string" "crossbow"
+	"item_flags" "int" "0"
+	"weight" "int" "110"
+	"fov_zoom_classic" "float" "20"
+	"fov_zoom_ironsight" "float" "10"
+	"fov_zoom_speed" "float" "0.5"
+	"tracer" "string" "weapon_tracer"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "b337d1af-b32d-49c1-8761-b962ace6c24d"
+		"double_shot" "string" "weapon_crossbow.Single"
+		"double_shot_npc" "string" "weapon_crossbow.Single_NPC"
+		"reload" "string" "weapon_crossbow.Reload"
+		"reload_npc" "string" "weapon_crossbow.Reload_NPC"
+		"empty" "string" "weapon_crossbow.Empty"
+		"single_shot" "string" "weapon_crossbow.Single"
+		"single_shot_npc" "string" "weapon_crossbow.Single_NPC"
+		"special1" "string" "weapon_crossbow.Special1"
+	}
+	"primary_attack" "primary_attack"
+	{
+		"id" "elementid" "3f585b4e-039f-46fb-abcf-c5f8ca0956ef"
+		"cycle" "float" "0.75"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "37a527f8-0105-4fbb-8052-e148afc71863"
+			"spread" "vector3" "0.5 0.5 0"
+		}
+		"recoil" "recoil"
+		{
+			"id" "elementid" "b1fe7dae-c767-4547-a51e-0074862e1fbd"
+			"min_snap_angles" "vector3" "0 0 0"
+			"max_snap_angles" "vector3" "0 0 0"
+			"min_punch_angles" "vector3" "-3 0 0"
+			"max_punch_angles" "vector3" "-3 0 0"
+			"min_punch_offset" "vector3" "0 0 0"
+			"max_punch_offset" "vector3" "0 0 0"
+		}
+	}
+	"secondary_attack" "secondary_attack"
+	{
+		"id" "elementid" "ce1fb42d-fb55-4f51-85ec-87fb087b7166"
+		"cycle" "float" "0.75"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "49bd59ae-105d-48ae-bab4-ab335a91df54"
+			"spread" "vector3" "0 0 0"
+			"damage" "float" "125"
+		}
+		"recoil" "recoil"
+		{
+			"id" "elementid" "6d4da0b5-1940-4fe2-a0e6-b733954b063e"
+			"min_snap_angles" "vector3" "0 0 0"
+			"max_snap_angles" "vector3" "0 0 0"
+			"min_punch_angles" "vector3" "-1 0 0"
+			"max_punch_angles" "vector3" "-1 0 0"
+			"min_punch_offset" "vector3" "0 0 0"
+			"max_punch_offset" "vector3" "0 0 0"
+		}
+	}	
+}
+

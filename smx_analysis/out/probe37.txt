@@ -1,0 +1,118 @@
+=== full function 0x10063db0 ===
+   0x10063db0  push      ebp
+   0x10063db1  mov       ebp, esp
+   0x10063db3  sub       esp, 0x58
+   0x10063db6  push      ebx
+   0x10063db7  mov       ebx, ecx
+   0x10063db9  mov       eax, dword ptr [ebx]
+   0x10063dbb  call      dword ptr [eax + 0x1a4]
+   0x10063dc1  test      eax, eax
+   0x10063dc3  je        0x10063e5a
+   0x10063dc9  mov       eax, dword ptr [ebx]
+   0x10063dcb  mov       ecx, ebx
+   0x10063dcd  call      dword ptr [eax + 0x1a4]
+   0x10063dd3  mov       ecx, eax
+   0x10063dd5  mov       edx, dword ptr [eax]
+   0x10063dd7  call      dword ptr [edx + 0xec]
+   0x10063ddd  cmp       eax, 2
+   0x10063de0  jne       0x10063e5a
+   0x10063de2  mov       eax, dword ptr [ebx]
+   0x10063de4  mov       ecx, ebx
+   0x10063de6  push      0
+   0x10063de8  push      0x10819830
+   0x10063ded  push      0x10819310
+   0x10063df2  push      0
+   0x10063df4  call      dword ptr [eax + 0x1a4]
+   0x10063dfa  push      eax
+   0x10063dfb  call      0x10590163
+   0x10063e00  add       esp, 0x14
+   0x10063e03  test      eax, eax
+   0x10063e05  je        0x10063e5a
+   0x10063e07  cmp       byte ptr [eax + 0xe58], 0
+   0x10063e0e  je        0x10063e5a
+   0x10063e10  movss     xmm0, dword ptr [0x1110c72c]
+   0x10063e18  lea       eax, [ebp - 0x58]
+   0x10063e1b  push      esi
+   0x10063e1c  mov       esi, dword ptr [ebp + 8]
+   0x10063e1f  mov       ecx, 0x16
+   0x10063e24  push      edi
+   0x10063e25  lea       edi, [ebp - 0x58]
+   0x10063e28  rep movsd dword ptr es:[edi], dword ptr [esi]
+   0x10063e2a  movss     dword ptr [ebp - 0x3c], xmm0
+   0x10063e2f  mov       ecx, ebx
+   0x10063e31  movss     xmm0, dword ptr [0x1110c730]
+   0x10063e39  movss     dword ptr [ebp - 0x38], xmm0
+   0x10063e3e  movss     xmm0, dword ptr [0x1110c734]
+   0x10063e46  push      eax
+   0x10063e47  movss     dword ptr [ebp - 0x34], xmm0
+   0x10063e4c  call      0x1011e530
+   0x10063e51  pop       edi
+   0x10063e52  pop       esi
+   0x10063e53  pop       ebx
+   0x10063e54  mov       esp, ebp
+   0x10063e56  pop       ebp
+   0x10063e57  ret       4
+   0x10063e5a  push      dword ptr [ebp + 8]
+   0x10063e5d  mov       ecx, ebx
+   0x10063e5f  call      0x1011e530
+   0x10063e64  pop       ebx
+   0x10063e65  mov       esp, ebp
+   0x10063e67  pop       ebp
+   0x10063e68  ret       4
+   0x10063e6b  int3      
+   0x10063e6c  int3      
+   0x10063e6d  int3      
+   0x10063e6e  int3      
+   0x10063e6f  int3      
+
+=== globals pushed by it ===
+  0x10819830: d4 31 76 10 00 00 00 00 2e 3f 41 56 43 4e 50 43
+       as floats: 0.000 0.000 53119274713088.000 208.306
+       as dwords: ['0x107631d4', '0x0', '0x56413f2e', '0x43504e43']
+       str: ""
+  0x10819310: d4 31 76 10 00 00 00 00 2e 3f 41 56 43 42 61 73
+       as floats: 0.000 0.000 53119274713088.000 17846843574387598913237929689088.000
+       as dwords: ['0x107631d4', '0x0', '0x56413f2e', '0x73614243']
+       str: ""
+
+=== helper 0x10590163 (called by wrapper) ===
+   0x10590163  push      0x18
+   0x10590165  push      0x107a0768
+   0x1059016a  call      0x105962f0
+   0x1059016f  mov       edi, dword ptr [ebp + 8]
+   0x10590172  test      edi, edi
+   0x10590174  jne       0x1059017e
+   0x10590176  xor       eax, eax
+   0x10590178  call      0x10596335
+   0x1059017d  ret       
+   0x1059017e  xor       esi, esi
+   0x10590180  mov       dword ptr [ebp - 4], esi
+   0x10590183  push      edi
+   0x10590184  call      0x1058fe06
+   0x10590189  pop       ecx
+   0x1059018a  mov       ebx, eax
+   0x1059018c  mov       ecx, dword ptr [edi]
+   0x1059018e  mov       eax, dword ptr [ecx - 4]
+   0x10590191  sub       edi, dword ptr [ebp + 0xc]
+   0x10590194  sub       edi, ebx
+   0x10590196  mov       ecx, dword ptr [eax + 0x10]
+   0x10590199  mov       ecx, dword ptr [ecx + 4]
+   0x1059019c  push      dword ptr [ebp + 0x14]
+   0x1059019f  test      cl, 1
+   0x105901a2  jne       0x105901b2
+   0x105901a4  push      dword ptr [ebp + 0x10]
+   0x105901a7  push      eax
+   0x105901a8  call      0x1058ff38
+   0x105901ad  add       esp, 0xc
+   0x105901b0  jmp       0x105901cc
+   0x105901b2  push      edi
+   0x105901b3  push      dword ptr [ebp + 0x10]
+   0x105901b6  push      eax
+   0x105901b7  push      ebx
+   0x105901b8  test      cl, 2
+   0x105901bb  jne       0x105901c4
+   0x105901bd  call      0x1058fe23
+
+=== .rdata dword refs to 0x10063db0 -> which vtables / COL names ===
+  86 refs
+  class names (0):

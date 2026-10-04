@@ -1,0 +1,16 @@
+=== sanity raw_rel_refs(0x1034b210) expect 0x10016a22 ===
+   [('0x10016a22', '.text')]
+
+=== raw rel refs to bullet fn 0x1034fb10 ===
+   call/jmp @0x1034f7f7 [.text]
+
+=== raw rel refs to 0x1034fc1c (interior) ===
+
+=== GlassImpact dispatcher: fn start 0x10067c00 ===
+   raw rel refs:
+      @0x1011f3af [.text]
+
+=== raw rel refs to 0x1034fbb3 / 0x1034fb91 ===
+   target 0x1034fbb3:
+   target 0x1034f900:
+   target 0x1034fa00:

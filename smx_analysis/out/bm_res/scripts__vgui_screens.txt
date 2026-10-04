@@ -1,0 +1,45 @@
+"VGUI_Screens"
+{
+	"vgui_test_screen"
+	{
+		// The type indicates which type of panel to create
+		// Coders will add new types as time goes by. 
+		// "vgui_screen_panel" is a generic panel type which can
+		// read in .res files that have been built by VGUI's build mode dialog.
+		"type"			"vgui_screen_panel"
+
+		// These describe the dimensions of the screen *in pixels*
+		"pixelswide"	480
+		"pixelshigh"	240
+
+		// This is the name of the .res file to load up and apply to the vgui panel
+		"resfile"		"scripts/screens/vgui_test_screen.res"
+	}
+
+	"slideshow_display_screen"
+	{
+		"type"		"slideshow_display_screen"
+		"pixelswide"	256
+		"pixelshigh"	128
+		"acceptsinput"  0
+		"resfile"	"scripts/screens/slideshow_display_screen.res"
+	}
+
+	"mortar_control_screen"
+	{
+		"type"	"mortar_control_screen"
+		"pixelswide"	480
+		"pixelshigh"	620
+		"resfile"  "resource/screens/vgui_mortar_screen.res"
+		"acceptsinput"	1
+	}
+	
+	"tram_control_screen"
+	{
+		"type"	"tram_control_screen"
+		"pixelswide"	480
+		"pixelshigh"	620
+		"resfile"  "resource/screens/vgui_tram_screen.res"
+		"acceptsinput"	1
+	}
+}

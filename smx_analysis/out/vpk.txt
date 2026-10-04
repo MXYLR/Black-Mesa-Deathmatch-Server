@@ -1,0 +1,301 @@
+== bms_maps_dir.vpk : 302 entries
+== bms_materials_dir.vpk : 8989 entries
+== bms_misc_dir.vpk : 3433 entries
+== bms_models_dir.vpk : 80837 entries
+== bms_sound_vo_english_dir.vpk : 4225 entries
+== bms_sounds_misc_dir.vpk : 3423 entries
+== bms_textures_dir.vpk : 10627 entries
+
+=== scripts/*.txt found: 171 ===
+   scripts/actbusy
+   scripts/actremap
+   scripts/animevents/readme
+   scripts/animevents/weapon_glock
+   scripts/animevents/weapon_mp5
+   scripts/animevents/weapon_shotgun
+   scripts/chapter_manifest
+   scripts/chapterbackgrounds
+   scripts/character_manifest
+   scripts/credits
+   scripts/decals_subrect
+   scripts/detailmodelfx
+   scripts/dm_sounds_guard
+   scripts/dm_sounds_scifem
+   scripts/dm_sounds_scimale
+   scripts/dsp_presets
+   scripts/game_sounds_ambient_generic
+   scripts/game_sounds_announcement
+   scripts/game_sounds_bm_ambience
+   scripts/game_sounds_bm_objects
+   scripts/game_sounds_bm_scripted
+   scripts/game_sounds_exp
+   scripts/game_sounds_interloper
+   scripts/game_sounds_items
+   scripts/game_sounds_manifest
+   scripts/game_sounds_music
+   scripts/game_sounds_oartram
+   scripts/game_sounds_physics
+   scripts/game_sounds_player
+   scripts/game_sounds_scenes
+   scripts/game_sounds_scenes_am
+   scripts/game_sounds_scenes_app
+   scripts/game_sounds_scenes_bp
+   scripts/game_sounds_scenes_endgame
+   scripts/game_sounds_scenes_faf
+   scripts/game_sounds_scenes_gonarch
+   scripts/game_sounds_scenes_ib
+   scripts/game_sounds_scenes_interloper
+   scripts/game_sounds_scenes_lc
+   scripts/game_sounds_scenes_oar
+   scripts/game_sounds_scenes_oc
+   scripts/game_sounds_scenes_pu
+   scripts/game_sounds_scenes_qe
+   scripts/game_sounds_scenes_st
+   scripts/game_sounds_scenes_uc
+   scripts/game_sounds_scenes_wgh
+   scripts/game_sounds_weapons
+   scripts/game_sounds_world
+   scripts/game_sounds_xen
+   scripts/game_sounds_xen2
+   scripts/game_sounds_xen_music
+   scripts/gib_manifest
+   scripts/global_actors
+   scripts/hud_textures
+   scripts/hudanimations
+   scripts/hudanimations_manifest
+   scripts/killstreak/game_sounds_killstreak_football
+   scripts/killstreak/game_sounds_killstreak_marine
+   scripts/killstreak/game_sounds_killstreak_scientist
+   scripts/launcher
+   scripts/misc_sounds_dead_hev
+   scripts/mod_textures
+   scripts/npc_sounds_abrams
+   scripts/npc_sounds_alien_controller
+   scripts/npc_sounds_alien_grunt
+   scripts/npc_sounds_apache
+   scripts/npc_sounds_assassin
+   scripts/npc_sounds_beneathacle
+   scripts/npc_sounds_blackheadcrab
+   scripts/npc_sounds_bullsquid
+   scripts/npc_sounds_fastheadcrab
+   scripts/npc_sounds_gargantua
+   scripts/npc_sounds_gonarch
+   scripts/npc_sounds_hecu
+   scripts/npc_sounds_houndeye
+   scripts/npc_sounds_human_shared
+   scripts/npc_sounds_ichthyosaur
+   scripts/npc_sounds_lav
+   scripts/npc_sounds_nihilanth
+   scripts/npc_sounds_osprey
+   scripts/npc_sounds_scifemale
+   scripts/npc_sounds_scimale
+   scripts/npc_sounds_securitygaurd
+   scripts/npc_sounds_sentry
+   scripts/npc_sounds_snark
+   scripts/npc_sounds_sniper
+   scripts/npc_sounds_surgerybot
+   scripts/npc_sounds_tentacle
+   scripts/npc_sounds_vortigaunt
+   scripts/npc_sounds_walker
+   scripts/npc_sounds_xen_boid
+   scripts/npc_sounds_zombie
+   scripts/npc_sounds_zombiehev
+   scripts/playermodel_manifest
+   scripts/propdata
+   scripts/proplist
+   scripts/scenes/elimination_zombies
+   scripts/sentences
+   scripts/soundmixers
+   scripts/soundscapes_c0a0
+   scripts/soundscapes_c1a0
+   scripts/soundscapes_c1a1
+   scripts/soundscapes_c1a1_ab
+   scripts/soundscapes_c1a2
+   scripts/soundscapes_c1a3
+   scripts/soundscapes_c1a4
+   scripts/soundscapes_c2a1
+   scripts/soundscapes_c2a2
+   scripts/soundscapes_c2a3
+   scripts/soundscapes_c2a4q
+   scripts/soundscapes_c2a4r
+   scripts/soundscapes_c2a5
+   scripts/soundscapes_c3a1
+   scripts/soundscapes_c3a2
+   scripts/soundscapes_c4a1
+   scripts/soundscapes_c4a2
+   scripts/soundscapes_c4a3
+   scripts/soundscapes_c4a4
+   scripts/soundscapes_c5a1
+   scripts/soundscapes_dm_bounce
+   scripts/soundscapes_dm_crossfire
+   scripts/soundscapes_dm_gasworks
+   scripts/soundscapes_dm_lambdabunker
+   scripts/soundscapes_dm_rail
+   scripts/soundscapes_dm_rapidcore
+   scripts/soundscapes_dm_stack
+   scripts/soundscapes_dm_stalkyard
+   scripts/soundscapes_dm_subtransit
+   scripts/soundscapes_dm_undertow
+   scripts/soundscapes_manifest
+   scripts/soundscapes_test
+   scripts/surfaceproperties
+   scripts/surfaceproperties_c2a3
+   scripts/surfaceproperties_hl2
+   scripts/surfaceproperties_manifest
+   scripts/talker/announcements_am
+   scripts/talker/announcements_blastpit
+   scripts/talker/announcements_blastpit_vox
+   scripts/talker/announcements_oar
+   scripts/talker/announcements_powerup
+   scripts/talker/announcements_uc
+   scripts/talker/announcements_wgh
+   scripts/talker/c1a0a_scenes
+   scripts/talker/c1a0b_scenes
+   scripts/talker/c1a1_scenes
+   scripts/talker/c1a2_scenes
+   scripts/talker/c1a3_scenes
+   scripts/talker/c1a4_scenes
+   scripts/talker/c2a1_scenes
+   scripts/talker/c2a3_scenes
+   scripts/talker/c2a4_scenes
+   scripts/talker/c2a5_scenes
+   scripts/talker/c3a1_scenes
+   scripts/talker/c3a2_scenes
+   scripts/talker/npc_human_commander
+   scripts/talker/npc_human_grenadier
+   scripts/talker/npc_human_grunt
+   scripts/talker/npc_human_medic
+   scripts/talker/npc_human_scientist
+   scripts/talker/npc_human_scientist_female
+   scripts/talker/npc_human_security
+   scripts/talker/npc_xort
+   scripts/talker/response_rules
+   scripts/talker_player/guard
+   scripts/talker_player/marine
+   scripts/talker_player/response_rules
+   scripts/talker_player/sci_female
+   scripts/talker_player/sci_male
+   scripts/talker_player/zombie
+   scripts/titles
+   scripts/vgui_screens
+
+=== penetration strings in those scripts ===
+  --- scripts/actbusy
+        "LeanWall_Right"
+        "busy_sequence"		"leanwall_right_idle"
+        "exit_sequence"		"leanwall_right_exit"
+        "LeanWall_Corner_Right"
+        "busy_sequence"		"leanwall_Corner_right_idle"
+        "exit_sequence"		"leanwall_Corner_right_exit"
+        "LeanWall_Left"
+        "busy_sequence"		"leanwall_left_idle"
+        "exit_sequence"		"leanwall_left_exit"
+        "LeanWall_Left_B"
+        "busy_sequence"		"leanwall_left_b_idle"
+        "exit_sequence"		"leanwall_left_b_exit"
+        "LeanWall_CrouchLeft_A"
+        "busy_sequence"		"leanwall_CrouchLeft_A_idle"
+        "exit_sequence"		"leanwall_CrouchLeft_A_exit"
+        "LeanWall_CrouchLeft_B"
+        "busy_sequence"		"leanwall_CrouchLeft_B_idle"
+        "exit_sequence"		"leanwall_CrouchLeft_B_exit"
+        "LeanWall_CrouchLeft_C"
+        "busy_sequence"		"leanwall_CrouchLeft_C_idle"
+        "exit_sequence"		"leanwall_CrouchLeft_C_exit"
+        "LeanWall_CrouchLeft_D"
+        "busy_sequence"		"leanwall_CrouchLeft_D_idle"
+        "exit_sequence"		"leanwall_CrouchLeft_D_exit"
+  --- scripts/dsp_presets
+        // *** PLAYER SPATIAL (WALL) DELAY ***
+        //ConVar adsp_openwall_min("adsp_openwall_min", 130);
+        // medium drywall room
+  --- scripts/game_sounds_bm_scripted
+        "sfx.scripted.pu.guard_slide_down_wall"
+        "wave"	"bms_scripted/pu/pu_guard_slide_down_wall.wav"
+  --- scripts/game_sounds_physics
+        // BMS DIRECTORY VERSION of DryWall //
+        "drywall.StepLeft"
+        "drywall.StepRight"
+        "drywall.Jump"
+        "drywall.Land"
+        "drywall.ImpactSoft"
+        "wave"		"physics/plaster/drywall_impact_soft1.wav"
+        "wave"		"physics/plaster/drywall_impact_soft2.wav"
+        "wave"		"physics/plaster/drywall_impact_soft3.wav"
+        "drywall.ImpactHard"
+        "wave"		"physics/plaster/drywall_impact_hard1.wav"
+        "wave"		"physics/plaster/drywall_impact_hard2.wav"
+        "wave"		"physics/plaster/drywall_impact_hard3.wav"
+  --- scripts/game_sounds_scenes
+        "PU_GRD_Slide_Down_Wall"
+        "wave"			"BMS_scripted/pu/pu_guard_slide_down_wall.wav"
+  --- scripts/game_sounds_scenes_qe
+        //	// Freeman has emerged victorious. The scientist's take stock of the condition outside the laboratory walls.
+  --- scripts/game_sounds_scenes_st
+        //	// An agrunt throws a marine though the wall. OUCH.
+  --- scripts/game_sounds_world
+        "wave"		"ambient/machines/wall_move4.wav"
+        "wave"		"ambient/machines/wall_ambient1.wav"
+        "wave"		"ambient/machines/wall_move5.wav"
+  --- scripts/npc_sounds_blackheadcrab
+        "wave"	"npc/headcrab_poison/ph_wallhit1.wav"
+        "wave"	"npc/headcrab_poison/ph_wallhit2.wav"
+        "wave"	"npc/headcrab_poison/ph_wallpain1.wav"
+        "wave"	"npc/headcrab_poison/ph_wallpain2.wav"
+        "wave"	"npc/headcrab_poison/ph_wallpain3.wav"
+  --- scripts/npc_sounds_gargantua
+        "npc_sounds_gargantua.SmashWall"
+  --- scripts/propdata
+        // i.e. big chunks of wall plaster
+  --- scripts/soundscapes_c1a3
+        // sra1_pos0_ehum		(electrical box on the wall, up high, near doorway to cafeteria)
+        // h2_pos3_fan1				(industrial fan fixture in wall, next to the stairway for storage area 02)
+  --- scripts/soundscapes_c2a4q
+        // through the big 'ole hole in younder lab's wall.
+  --- scripts/soundscapes_c2a5
+        "c2a5a.damwall_road.base"
+        // Map A - Dam Wall Road	//
+        "c2a5a.damwall_road"
+        "name"		"c2a5a.damwall_road.base"
+        "name"		"c2a5a.damwall_road.base"
+        "name"		"c2a5a.damwall_road.base"
+        //				// we lower the base soundscape to simulate the concrete walls
+  --- scripts/soundscapes_c4a1
+        // v2 is for the c cave exit, we have tighter attenuation for the blend because of the narrow cave walls
+  --- scripts/soundscapes_c4a2
+        // so that we can fake some sound dampening within the walls before you round the corner.
+  --- scripts/soundscapes_dm_crossfire
+        //set to half-volume to simulate wall/floor dampening.
+  --- scripts/soundscapes_dm_subtransit
+        // cor1_pos6_fan2					(wall mounted fan, near opening to large area 1)
+        // cor2_pos4_fan2a					(wall mounted fan, above staircase which leads down)
+        // cor2_pos5_fan2b					(wall mounted fan, immediately visible in the door way to this corridor)
+        // cor3_S1R_pos2_med				(wall mounted electrical panel, with "480 volts" sign directly above placement)
+        // flrm1_pos4_fan5					(wall fan)
+        // flrm1_pos5_fan5a					(wall fan)
+        // lbc1_pos4_comp1					(wall computer)
+        // lbc1_pos5_comp2b					(wall computer)
+        // lbc2_s1_pos2_comp3					(wall computer)
+        // lbc2_s1_pos3_comp2					(wall computer)
+        // lbc2_s1_pos4_comp1					(wall computer)
+        // lbc2_s1_pos5_comp1a					(wall computer)
+        // lbc2_s2_pos0_printer					(wall computer)
+        // lbc2_s2_pos1_eqbeeps					(wall computer)
+        // lbc2_s2_pos2_eloop					(wall computer)
+        // lbc2_s2_pos3_med3					(wall computer)
+        // trtn2_pos0_fan5b					(wall mounted fan)
+        // trtn2_pos1_fan2					(wall mounted fan)
+        // trtn2_pos2_fan2a					(wall mounted fan)
+        //	computer equipment, wall placements
+        //	positions 2-3 		(wall fans)
+        //	positions 4-5 		(wall fans)
+  --- scripts/surfaceproperties
+        // thick solid steel panel - used for solid wall, floor, machine construction
+        // drywall, office wall material, sheetrock
+        "stepleft"		"drywall.StepLeft"
+        "stepright"		"drywall.StepRight"
+        "bulletimpact"	"drywall.ImpactHard"
+        "impacthard"	"drywall.ImpactHard"
+        "impactsoft"	"drywall.ImpactSoft"
+        "jump"			"drywall.Jump"
+        "land"			"drywall.Land"

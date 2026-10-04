@@ -1,0 +1,55 @@
+indexed 111836 entries
+
+=== all scripts/gameplay entries in VPK ===
+   scripts/gameplay/weapons/weapon_357.dmx
+   scripts/gameplay/weapons/weapon_assassin_glock.dmx
+   scripts/gameplay/weapons/weapon_crossbow.dmx
+   scripts/gameplay/weapons/weapon_crowbar.dmx
+   scripts/gameplay/weapons/weapon_frag.dmx
+   scripts/gameplay/weapons/weapon_glock.dmx
+   scripts/gameplay/weapons/weapon_gluon.dmx
+   scripts/gameplay/weapons/weapon_headcrab.dmx
+   scripts/gameplay/weapons/weapon_hivehand.dmx
+   scripts/gameplay/weapons/weapon_mp5.dmx
+   scripts/gameplay/weapons/weapon_rpg.dmx
+   scripts/gameplay/weapons/weapon_satchel.dmx
+   scripts/gameplay/weapons/weapon_shotgun.dmx
+   scripts/gameplay/weapons/weapon_snark.dmx
+   scripts/gameplay/weapons/weapon_tau.dmx
+   scripts/gameplay/weapons/weapon_tripmine.dmx
+
+=== dumping ===
+  wrote materials__vgui__hud__crosshair_357.vmt (265 bytes) from bms_materials_dir.vpk
+  wrote materials__vgui__hud__crosshair_357.vtf (5668 bytes) from bms_textures_dir.vpk
+  wrote materials__vgui__hud__crosshair_crossbow.vmt (270 bytes) from bms_materials_dir.vpk
+  wrote materials__vgui__hud__crosshair_crossbow.vtf (5668 bytes) from bms_textures_dir.vpk
+  wrote materials__vgui__hud__crosshair_gauss.vmt (267 bytes) from bms_materials_dir.vpk
+  wrote materials__vgui__hud__crosshair_gauss.vtf (5668 bytes) from bms_textures_dir.vpk
+  wrote materials__vgui__hud__crosshair_glock.vmt (267 bytes) from bms_materials_dir.vpk
+  wrote materials__vgui__hud__crosshair_glock.vtf (5668 bytes) from bms_textures_dir.vpk
+  wrote materials__vgui__hud__crosshair_gluon.vmt (267 bytes) from bms_materials_dir.vpk
+  wrote materials__vgui__hud__crosshair_gluon.vtf (5668 bytes) from bms_textures_dir.vpk
+  wrote materials__vgui__hud__crosshair_hivehand.vmt (270 bytes) from bms_materials_dir.vpk
+  wrote materials__vgui__hud__crosshair_hivehand.vtf (5668 bytes) from bms_textures_dir.vpk
+  wrote materials__vgui__hud__crosshair_mp5.vmt (265 bytes) from bms_materials_dir.vpk
+  wrote materials__vgui__hud__crosshair_mp5.vtf (5668 bytes) from bms_textures_dir.vpk
+  wrote materials__vgui__hud__crosshair_shotgun.vmt (269 bytes) from bms_materials_dir.vpk
+  wrote materials__vgui__hud__crosshair_shotgun.vtf (5668 bytes) from bms_textures_dir.vpk
+  wrote resource__clientscheme.res (31844 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_357.dmx (2366 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_assassin_glock.dmx (3024 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_crossbow.dmx (2512 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_crowbar.dmx (1624 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_frag.dmx (916 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_glock.dmx (3028 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_gluon.dmx (1015 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_headcrab.dmx (720 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_hivehand.dmx (2205 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_mp5.dmx (2918 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_rpg.dmx (795 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_satchel.dmx (935 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_shotgun.dmx (3420 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_snark.dmx (883 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_tau.dmx (1120 bytes) from bms_misc_dir.vpk
+  wrote scripts__gameplay__weapons__weapon_tripmine.dmx (701 bytes) from bms_misc_dir.vpk
+  wrote scripts__hudlayout.res (26192 bytes) from bms_misc_dir.vpk

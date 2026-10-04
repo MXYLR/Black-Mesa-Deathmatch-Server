@@ -1,0 +1,1602 @@
+//*****************************************************************
+//   NOTE: This script file is a Work- In- Progress
+//*****************************************************************
+//
+//
+// 	This script file contains soundscript entries listing sounds from the following folders and subfolders within:
+//
+//	sound/xen/alarm
+//	sound/xen/ambience
+//	sound/xen/barrelcactus
+//	sound/xen/hackertree
+//	sound/xen/healingpool
+//	sound/xen/lightplant
+//	sound/xen/lilypad
+// 	sound/xen/nihilbattle		(Sounds in this folder are not listed in this script file)
+//  sound/xen/nil_towertop		(Sounds in this folder are not listed in this script file) (sounds are used primarily in soundscapes instead)
+//	sound/xen/object
+//	sound/xen/protozoan
+//	sound/xen/scripted
+//	sound/xen/soundscape
+//	sound/xen/surveyscanner
+//	sound/xen/web
+//	sound/xen/workconsoles
+//	sound/xen/xen_crystal
+//	sound/xen/xen_crystalholder
+//	sound/xen/xen_elevators
+//	sound/xen/xen_moldcyst
+//	sound/xen/xen_turret
+//
+//
+//	Please be aware that in "scripted" I will also be listing some special soundscripts that borrow sounds from other directories listed here
+//	in which case I'll be sure to point some of these out out in my notes.
+//
+//
+//
+// 	THE FIRST INITIAL PASS OF CHANNEL and soundlevels on this soundscript file is complete.
+//
+// 	DO NOT CONSIDER THESE SETTINGS FINAL, BUT MERELY A STARTING POINT FOR ADJUSTMENTS
+// 	LATER ON WHEN STARTING TO CONVERT THE AMBIENT GENERICS INGAME TO USE THESE SCRIPTS.
+//
+//
+//
+//
+
+//******************************************************************************************
+//
+////****************************************************************************
+//           SOUND  ///  XEN (loose files)  ///  STARTS HERE !!!!
+//****************************************************************************	
+//        
+//****************************************************************************
+
+"sfx.scripted.vort_mindcontrol01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NORM"
+
+        "wave"			"xen/scripted/mind_control.wav"
+}
+
+"sfx.xen.homing_beacon_h01"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.20"
+	"pitch"		"100"
+	"soundlevel"	"SNDLVL_70dB"
+	"wave"		"xen/homing_beacon_h01.wav"
+}
+
+// PLZ NOTE: "DeadHEV.Shutdown", found in misc_sound_dead_hev.txt, references the same .wav file.
+// 
+
+"sfx.xen.hev_dead_shutdown01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"			"xen/hev_dead_shutdown01.wav"
+}
+
+"sfx.xen.portablebattery_poweron"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.80"
+	"pitch"		"100"
+	"soundlevel"	"SNDLVL_70dB"
+	"wave"		"xen/portablebattery_poweron.wav"
+}
+
+"sfx.xen_intro_playerbreathing"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.80"
+	"pitch"		"100"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"		"bms_scripted/app/player_breathing_knockout01_no_fx.wav"
+}
+
+//****************************************************************************
+//           SOUND  ///  XEN_AMBIENCE  ///  STARTS HERE !!!!
+//****************************************************************************	
+//             xen_alarm
+//****************************************************************************
+
+// These alarm sounds are for the INTERLOPER chapter.
+
+//used/looped for wide area alert?//
+
+"sfx.xen.alarm_int01"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_NONE"
+	"pitch"		"100"
+	"wave"	"@xen/alarm/alarm_int01.wav"
+}
+
+// used for local area// ex. interloper elevator console alerts.
+
+"sfx.xen.alarm_int01_oneshot"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"@xen/alarm/alarm_int01_oneshot.wav"
+}
+
+//****************************************************************************
+//           SOUND  ///  XEN_AMBIENCE  ///  STARTS HERE !!!!
+//****************************************************************************	
+//             xen_ambience 
+//****************************************************************************
+
+"sfx.xen_amb1a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb1a.wav"
+}
+
+"sfx.xen_amb1b"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb1b.wav"
+}
+
+"sfx.xen_amb1c"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb1c.wav"
+}
+
+"sfx.xen_amb2a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb2a.wav"
+}
+
+"sfx.xen_amb2b"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb2b.wav"
+}
+
+"sfx.xen_amb4a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb4a.wav"
+}
+
+"sfx.xen_amb5a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb5a.wav"
+}
+
+"sfx.xen_amb5b"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb5b.wav"
+}
+
+"sfx.xen_amb6a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb6a.wav"
+}
+
+"sfx.xen_amb7a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb7a.wav"
+}
+
+"sfx.xen_amb8a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb8a.wav"
+}
+
+"sfx.xen_amb9a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb9a.wav"
+}
+
+"sfx.xen_amb10a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb10a.wav"
+}
+
+"sfx.xen_amb11a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb11a.wav"
+}
+
+"sfx.xen_amb12a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb12a.wav"
+}
+
+"sfx.xen_amb12b"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb12b.wav"
+}
+
+"sfx.xen_amb13a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb13a.wav"
+}
+
+"sfx.xen_amb14a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb14a.wav"
+}
+
+"sfx.xen_amb15a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb15a.wav"
+}
+
+"sfx.xen_amb16a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb16a.wav"
+}
+
+"sfx.xen_amb17a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb17a.wav"
+}
+
+"sfx.xen_amb17b"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/ambience/xen_amb17b.wav"
+}
+
+//****************************************************************************
+//		SOUND  ///  BARRELCACTUS  ///  STARTS HERE !!!!
+//****************************************************************************	
+//					sound\xen\barrelcactus
+//****************************************************************************
+
+"xen.cactus_explode"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+		"wave"	"xen/barrelcactus/explode01.wav"
+		"wave"	"xen/barrelcactus/explode02.wav"
+		"wave"	"xen/barrelcactus/explode03.wav"
+		"wave"	"xen/barrelcactus/explode04.wav"
+	}
+}
+
+"xen.cactus_flinch"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.4"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"50"
+	"rndwave"
+	{
+		"wave"	"xen/barrelcactus/flinch01.wav"
+		"wave"	"xen/barrelcactus/flinch02.wav"
+		"wave"	"xen/barrelcactus/flinch03.wav"
+	}
+}
+
+"xen.cactus_flinch_mid"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.3"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"75"
+	"rndwave"
+	{
+		"wave"	"xen/barrelcactus/flinch01.wav"
+		"wave"	"xen/barrelcactus/flinch02.wav"
+		"wave"	"xen/barrelcactus/flinch03.wav"
+	}
+}
+
+"xen.cactus_flinch_tiny"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.3"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"rndwave"
+	{
+		"wave"	"xen/barrelcactus/flinch01.wav"
+		"wave"	"xen/barrelcactus/flinch02.wav"
+		"wave"	"xen/barrelcactus/flinch03.wav"
+	}
+}
+
+//****************************************************************************
+//           SOUND  /// HACKERTREE  ///  STARTS HERE !!!!
+//****************************************************************************	
+//****************************************************************************	
+//					sound/xen/hackertree
+//****************************************************************************
+
+"sfx.xen.hackertree.attack"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/hackertree/attack1.wav"
+}
+
+"sfx.xen.hackertree.annoyed01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/hackertree/annoyed01.wav"
+}
+
+"sfx.xen.hackertree.die"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/hackertree/die1.wav"
+}
+
+"sfx.xen.hackertree.die2"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/hackertree/die2.wav"
+}
+
+"sfx.xen.hackertree.retractidle01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.65"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/hackertree/retract_to_idle01.wav"
+}
+
+"sfx.xen.hackertree.retractidle02"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.65"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/hackertree/retract_to_idle02.wav"
+}
+
+"sfx.xen.hackertree.retractidle03"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.65"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/hackertree/retract_to_idle03.wav"
+}
+
+//****************************************************************************
+//		SOUND  ///  HEALINGPOOL  ///  STARTS HERE !!!!
+//****************************************************************************	
+//			sound\xen\healingpool
+//****************************************************************************
+
+"sfx.xen.healingpool"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.2"
+	"pitch"		"85"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"		"xen/healingpool/hum2.wav"
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////
+// Please be aware that this entries
+// are for pitch and volume reference only. in the .vmfs, we've opted to use the
+//
+// straight file path .wav and try to match soundscript settings as closely as possible, as
+// soundscripted ambient generics instructed to fade in/out tend to not cooperate, loudness wise.
+
+"sfx.xen.healingpool.active"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"5"
+	"pitch"		"85"
+	"soundlevel"	"SNDLVL_75dB"
+
+	"wave"	        "xen/healingpool/healingpool_active01.wav"
+}
+
+"sfx.xen.healingpool.idle"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"5"
+	"pitch"		"85"
+	"soundlevel"	"SNDLVL_75dB"
+
+	"wave"	        "xen/healingpool/healingpool_idle01.wav"
+}
+
+//****************************************************************************
+//           SOUND  ///  XEN_LIGHTPLANT  ///  STARTS HERE !!!!
+//****************************************************************************	
+//					sound\xen\lightplant
+//****************************************************************************
+
+"sfx.xen.lightplant_extend"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.3"
+	"soundlevel"  "SNDLVL_70dB"
+	"pitch"		"130"
+	"rndwave"
+	{
+		"wave"		"xen/lightplant/extend01.wav"
+		"wave"		"xen/lightplant/extend02.wav"
+	}
+}
+
+"sfx.xen.lightplant_retract"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_70dB"
+	"pitch"		"130"
+	"rndwave"
+	{
+		"wave"		"xen/lightplant/retract01.wav"
+		"wave"		"xen/lightplant/retract02.wav"
+	}
+}
+
+//****************************************************************************
+//           SOUND  ///  XEN_LILYPAD  ///  STARTS HERE !!!!
+//****************************************************************************	
+//					sound\xen\lilypad
+//****************************************************************************
+
+"sfx.xen.lilypad_hangtime"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.9"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"rndwave"
+	{
+		"wave"		"xen/lilypad/lilypad_hangtime01.wav"
+		"wave"		"xen/lilypad/lilypad_hangtime02.wav"
+	}
+}
+
+"sfx.xen.lilypad_sinking"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.9"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"100"
+	"rndwave"
+	{
+		"wave"		"xen/lilypad/lilypad_sinking01.wav"
+		"wave"		"xen/lilypad/lilypad_sinking01.wav"
+	}
+}
+
+"sfx.xen.lilypad_landing_soft"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.7"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"85,100"
+	"rndwave"
+	{
+		"wave"		"xen/lilypad/lilypad_landing_soft01.wav"
+		"wave"		"xen/lilypad/lilypad_landing_soft02.wav"
+	}
+}
+
+"sfx.xen.lilypad_landing_hard"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"85,100"
+	"rndwave"
+	{
+		"wave"		"xen/lilypad/lilypad_landing_hard01.wav"
+		"wave"		"xen/lilypad/lilypad_landing_hard02.wav"
+	}
+}
+
+//****************************************************************************
+//           SOUND  ///  XEN_OBJECT  ///  STARTS HERE !!!!
+//****************************************************************************	
+//					sound\xen\object
+//****************************************************************************
+
+"sfx.xen.object.boidcall2b"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"		"xen/object/boidcall2b.wav"
+}
+
+"sfx.xen.object.crystalbreak"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/crystalbreak1.wav"
+	"wave"		"xen/object/crystalbreak2.wav"
+	"wave"		"xen/object/crystalbreak3.wav"
+	}
+}
+
+"sfx.xen.object.crystaldamage"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/crystalbreak1.wav"
+	"wave"		"xen/object/crystalbreak2.wav"
+	"wave"		"xen/object/crystalbreak3.wav"
+	}
+}
+
+
+// Soundscript version of map a1 plug puzzle machine
+// not currently used in vmf, but keeping for reference.
+
+"sfx.xen.object.machine_energy1"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.8"
+	"soundlevel"	"SNDLVL_70dB"
+	"pitch"		"100"
+
+	"wave"		"xen/object/machine_energy1.wav"
+}
+
+// referenced as animation soundevent (models/props_xen/hub/teleport_body.mdl)
+
+"sfx.xen.object.hub_laser1"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"100"
+
+	"wave"		"xen/object/hub_laser1.wav"
+}
+
+// soundscript versions of hub_elevator1,2,3.
+
+"sfx.xen.object.hub_elevator1"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.9"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+
+	"wave"		"xen/object/hub_elevator1.wav"
+}
+
+"sfx.xen.object.hub_elevator2"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.9"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+
+	"wave"		"xen/object/hub_elevator2.wav"
+}
+
+"sfx.xen.object.hub_elevator3"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.9"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+
+	"wave"		"xen/object/hub_elevator3.wav"
+}
+
+// soundscript versions of xen_forcefield
+
+"sfx.xen.object.xen_forcefield"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.9"
+	"soundlevel"	"SNDLVL_80dB"
+	"pitch"		"100"
+
+	"wave"		"xen/object/hub_elevator3.wav"
+}
+
+"sfx.xen.object.bridge1a"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"		"xen/object/xen_bridge1a.wav"
+}
+
+"sfx.xen.object.bridge1b"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_bridge1b.wav"
+}
+
+"sfx.xen.object.xen_portal_in"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"@xen/object/xen_portal_in.wav"
+}
+
+"sfx.xen.object.handle1"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_handle1.wav"
+}
+
+"sfx.xen.object.water1"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water1.wav"
+}
+
+"sfx.xen.object.water2"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.4"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water2.wav"
+}
+
+"sfx.xen.object.water3"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.55"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water3.wav"
+}
+
+"sfx.xen.object.water4"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water4.wav"
+}
+
+// same as 4... but softer. lol.
+
+"sfx.xen.object.water4_soft"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.2"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water4.wav"
+}
+
+"sfx.xen.object.water5"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.65"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water5.wav"
+}
+
+"sfx.xen.object.water6"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.55"
+	"soundlevel"  "SNDLVL_80dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water6.wav"
+}
+
+"sfx.xen.object.water7"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_100dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water7.wav"
+}
+
+"sfx.xen.object.water8"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/object/xen_water8.wav"
+}
+
+"sfx.xen.object.water9"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.65"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"		"xen/object/xen_water9.wav"
+}
+
+//****************************************************************************
+//           SOUND  ///  VORT_VILLAGE_CINE_PHYS  ///  STARTS HERE !!!!
+//****************************************************************************
+
+"vortvill.smash"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/explovill_smash.wav"
+	}
+}
+
+"vortvill.smash2"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/explovill_smash2.wav"
+	}
+}
+
+//****************************************************************************
+//           SOUND  ///  B_CONTROL_ROOM_CINE_PHYS  ///  STARTS HERE !!!!
+//****************************************************************************
+
+"b.fence1"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalcrush1.wav"
+	}
+}
+
+"b.fence2"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalcrush2.wav"
+	}
+}
+
+"b.fence3"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalcrush3.wav"
+	}
+}
+
+"b1.control.glass"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/glasscanopy_break.wav"
+	}
+}
+
+"b.metal.break1"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalimpact_big1.wav"
+	}
+}
+
+"b.metal.crush1"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalcrush1.wav"
+	}
+}
+
+"b.metal.crush2"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalcrush2.wav"
+	}
+}
+
+"b.metal.crush3"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalcrush3.wav"
+	}
+}
+
+"b1.control2.metal"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalimpact_big2.wav"
+	}
+}
+
+"b1.control2.metal2"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/metalimpact_big3.wav"
+	}
+}
+
+"b1.control2.glass"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"xen/object/glassimpact1.wav"
+	}
+}
+
+//****************************************************************************
+//           SOUND  ///  Protozoan  ///  STARTS HERE !!!!  (NPC)
+//****************************************************************************	
+//			sound\xen\protozoan
+//****************************************************************************
+//Chirping type sounds (kinda like tribbles from Star Trek) are added to current animations via qc.
+
+"xen.protozoan_chirp"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"100"
+	"rndwave"
+	{
+		"wave"	"xen/protozoan/chirp03.wav"
+		"wave"	"xen/protozoan/chirp04.wav"
+		"wave"	"xen/protozoan/chirp05.wav"
+		"wave"	"xen/protozoan/chirp06.wav"
+		"wave"	"xen/protozoan/chirp07.wav"
+	}
+}
+
+//****************************************************************************
+//           SOUND  /// XEN_Scripted  ///  STARTS HERE !!!!
+//****************************************************************************	
+//			sound\xen\scripted
+//****************************************************************************
+// Sounds for scripted sequence, or misc. special case entries with an elsewhere established sounds are borrows
+
+"sfx.xen.boidmanta_sequence01"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.65"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_90dB"
+	"wave"	   "@xen/scripted/boidmanta_sequence.wav"
+}
+
+"xen.returnpad_winddown"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.2"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_NORM"
+	"wave"	   "@xen/scripted/returnpad_winddown.wav"
+}
+
+"sfx.scripted.rock_explode"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.85"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_120dB"
+	"wave"	   "xen/scripted/rock_explode.wav"
+}
+
+"sfx.scripted.station_poweroff"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.8"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_90dB"
+	"wave"	   "xen/scripted/station_poweroff.wav"
+}
+
+"sfx.scripted.xen_crowbar_pickup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_NORM"
+	"wave"	   "xen/scripted/xen_crowbar_pickup.wav"
+}
+
+"sfx.scripted.xen_crowbar_pickup_foley1"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_NORM"
+	"wave"	   "xen/scripted/xen_crowbar_pickup_foley1.wav"
+}
+
+"sfx.scripted.xen_crowbar_pickup_foley2"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_NORM"
+	"wave"	   "xen/scripted/xen_crowbar_pickup_foley1.wav"
+}
+
+//----------------------------------------------------------------
+// this entry is a special version of the mantis flying sound.
+
+"sfx.xen.mantis_fly01"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"npc/mantis/mantis_fly.wav"
+}
+
+//----------------------------------------------------------------
+// these 2 entries are a special versions of the HEV container door sound and Hl2 default door, using it for inteloper elevator shutters.
+
+"sfx.scripted.int.ele_shutters"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.8"
+	"soundlevel"	"SNDLVL_80db"
+	"pitch"		"100"
+	"wave"		"bms_objects/doors/suitdoor.wav"
+}
+
+"sfx.scripted.int.ele_shutterstop"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.9"
+	"soundlevel"	"SNDLVL_80db"
+	"pitch"		"100"
+	"wave"		"doors/default_stop.wav"
+}
+
+//****************************************************************************
+//           SOUND  /// XEN_SoundScape  ///  STARTS HERE !!!!
+//****************************************************************************
+//			sound\xen\soundscape
+//****************************************************************************	
+//             xen_soundscape (mostly listing them reference rather than actual use, but you never know :)
+//****************************************************************************
+
+"sfx.xen.soundscape.garg_xen_far01"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"		"xen/soundscape/garg_xen_far01.wav"
+}
+
+"sfx.xen.soundscape.garg_xen_far02"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"		"xen/soundscape/garg_xen_far02.wav"
+}
+
+"sfx.xen.soundscape.garg_xen_far03"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"		"xen/soundscape/garg_xen_far03.wav"
+}
+
+"sfx.xen.soundscape.garg_xen_far04"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/soundscape/garg_xen_far04.wav"
+}
+
+"sfx.xen.soundscape.garg_xen_far05"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/soundscape/garg_xen_far05.wav"
+}
+
+"sfx.xen.soundscape.garg_xen_far06"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"	"xen/soundscape/garg_xen_far06.wav"
+}
+
+"sfx.xen.soundscape.garg_xen_far07"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"100"
+	"wave"		"xen/soundscape/garg_xen_far07.wav"
+}
+
+//******************************************************************************************
+//
+////****************************************************************************
+//           SOUND  ///  SurveyScanner  ///  STARTS HERE !!!!
+//****************************************************************************	
+//			xen/surveyscanner/
+//****************************************************************************
+
+"sfx.surveyscanner.scan01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"100"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"		"xen/surveyscanner/scanning01.wav"
+}
+
+//******************************************************************************************
+//
+////****************************************************************************
+//           SOUND  ///  Web  ///  STARTS HERE !!!!
+//****************************************************************************	
+//			xen/web/
+//****************************************************************************
+
+// random playing.
+
+"sfx.xen.web_break"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.95"
+	"pitch"		"100"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	   "xen/web/web_break01.wav"
+		"wave"	   "xen/web/web_break02.wav"
+		"wave"	   "xen/web/web_break03.wav"
+		"wave"	   "xen/web/web_break04.wav"
+		"wave"	   "xen/web/web_break05.wav"
+	}
+}
+
+"sfx.xen.web_largebreak"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.95"
+	"pitch"		"100"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"		"xen/web/web_largebreak01.wav"
+}
+
+//******************************************************************************************
+//
+////****************************************************************************
+//           SOUND  ///  WorkConsoles  ///  STARTS HERE !!!!
+//****************************************************************************	
+//			xen\workconsoles
+//****************************************************************************
+
+"sfx.xen.workconsole_hum01"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.2"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"130"
+	"wave"		"xen/workconsoles/xen_workconsole_hum01.wav"
+}
+
+//****************************************************************************
+//           SOUND  /// XEN_HEV_CRYSTAL  ///  STARTS HERE !!!!
+//****************************************************************************	
+//****************************************************************************	
+//					sound/xen/xen_crystal
+//****************************************************************************
+
+"sfx.xen.crystal.hev_hum01"
+{
+	"channel"	    "CHAN_STATIC"
+	"volume"	    "0.75"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"		    "xen/xen_crystal/xen_crystal_hev_hum01.wav"
+}
+
+"sfx.xen.crystal.hev_charging01"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/xen_crystal/xen_crystal_hev_charging01.wav"
+}
+
+"sfx.xen.crystal.hev_charged01"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/xen_crystal/xen_crystal_hev_charged01.wav"
+}
+
+//****************************************************************************
+//           SOUND  /// XEN_HEV_CRYSTALHOLDER  ///  STARTS HERE !!!!
+//****************************************************************************	
+//****************************************************************************	
+//					sound/xen/xen_crystalholder
+//****************************************************************************
+
+"sfx.xen.crystalholder_insert01"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_NORM"
+	"wave"	   "xen/xen_crystalholder/insert01.wav"
+}
+
+//****************************************************************************
+//           SOUND  /// XEN_ELEVATORS. ///  STARTS HERE !!!!
+//****************************************************************************	
+//****************************************************************************	
+//					sound/xen/xen_elevators
+//****************************************************************************
+
+//----------------------------------------
+// open/close sounds for elevator doors.//
+
+"sfx.xen.elevator_int_open01"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_80dB"
+	"wave"	   "xen/xen_elevators/elevator_int_open01.wav"
+}
+
+// KS DEV NOTE: This sound is a heavily modified version of "default_stop.wav", from the HL2 directory, which I may come back to when the interloper elevators have a more finalized art style. 
+//
+///It's hard to tell what aesthetic to go with for this at the moment.
+
+"sfx.xen.elevator_int_opened01"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"pitch"		"100"
+	"soundlevel"	"SNDLVL_80dB"
+	"wave"		"xen/xen_elevators/elevator_int_opened01.wav"
+}
+
+//-----------------------------------------
+// start/stop sounds for elevator tracks.//
+
+"sfx.xen.elevator_int_moving01" 
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"		")xen/xen_elevators/elevator_int_moving01.wav"
+}
+
+"sfx.xen.elevator_int_stop01"
+{
+	"channel"	"CHAN_STATIC"
+	"pitch"		"150"
+	"volume"	"0.2"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"		")xen/xen_elevators/elevator_int_stop01.wav"
+}
+
+//****************************************************************************
+//           SOUND  /// XEN_RADIATION_CRYSTAL  ///  STARTS HERE !!!!
+//****************************************************************************	
+//****************************************************************************	
+//					sound/xen/xen_crystal
+//****************************************************************************
+
+"sfx.xen.crystal.radiation_hum01"
+{
+	"channel"	    "CHAN_STATIC"
+	"volume"	    "0.75"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"		    "xen/xen_crystal/xen_crystal_radiation_hum01.wav"
+}
+
+"sfx.xen.crystal.radiation_charging01"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/xen_crystal/xen_crystal_radiation_charging01.wav"
+}
+
+"sfx.xen.crystal.radiation_charged01"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/xen_crystal/xen_crystal_radiation_charged01.wav"
+}
+
+//****************************************************************************
+//           SOUND  /// XEN_TURRET  ///  STARTS HERE !!!!
+//****************************************************************************	
+//****************************************************************************	
+//					sound/xen/xen_turrent 
+//****************************************************************************
+
+"sfx.xen.turret_alert"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.75"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"200,250"
+	"wave"	"xen/xen_turret/alert01.wav"
+}
+
+"sfx.xen.turret_chargeup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_90dB"
+	"pitch"		"90,100"
+	"rndwave"
+	{
+		"wave"	"xen/xen_turret/chargeup01.wav"
+		"wave"	"xen/xen_turret/chargeup01.wav"
+	}
+}
+
+"sfx.xen.turret_fire"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_100dB"
+	"pitch"		"115"
+	"wave"	"xen/xen_turret/fire01a.wav"
+}
+
+"sfx.xen.turret_explode"
+{
+	"channel" 	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel" 	"SNDLVL_150dB"
+	"pitch" 	"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave" "weapons/weap_explode/explode3.wav"
+		"wave" "weapons/weap_explode/explode4.wav"
+		"wave" "weapons/weap_explode/explode5.wav"
+	}
+}
+
+//********************************************************************************************************************************************************
+//		Cyst Sounds STARTS HERE!  (NOTE: TEMP ALLOCATION FOR THESE BELOW)
+//********************************************************************************************************************************************************
+"sfx.xen_moldcyst.pop"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/xen_moldcyst/moldcyst_pop.wav"
+}
+
+//NOTE: the wav file doesn't exist for the leak sound.
+
+"sfx.xen_moldcyst.leak"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/xen_moldcyst/moldcyst_leak.wav"
+}
+
+"sfx.xen_moldcyst.idle"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.75"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"80"
+	"wave"		"xen/xen_moldcyst/moldcyst_idle.wav"
+}
+
+"sfx.xen_moldcyst.door_open"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"120"
+	"wave"		"xen/xen_moldcyst/moldcyst_door_open.wav"
+}
+
+"sfx.xen_cyst.flower_hum"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.6"
+	"soundlevel"	"SNDLVL_80dB"
+	"pitch"		"90,120"
+	"wave"		"xen/xen_moldcyst/moldcyst_flower_hum.wav"
+}
+
+"sfx.xen_leaf.land"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.75, 1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"pitch"		"70,90"
+	"wave"		"physics\footsteps\squish\squish_land2.wav"
+}
+
+"sfx.elevator_crash1"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_150dB"
+	"pitch"		"100"
+	"wave"	"bms_objects/elevator_crash/elevator_crash1_groundhit.wav"
+}
+
+"sfx.snarknest.break2"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"100"
+	"rndwave"
+	{
+	"wave"		"bms_objects/snarknest/break01.wav"
+	"wave"		"bms_objects/snarknest/break02.wav"
+	}
+}
+
+"sfx.gibbing2"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NONE"
+	"pitch"		"100"
+	"wave"	"physics/gibbing/gibbing2.wav"
+}
+
+"sfx.giblarge"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NONE"
+	"pitch"		"100"
+	"wave"	"bms_ambience/object_physics/gore_splat2.wav"
+}
+
+"sfx.watergib"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NONE"
+	"pitch"		"100"
+	"wave"	"bms_ambience/object_physics/watersplash_big1.wav"
+}
+
+"sfx.floorweb.break"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NONE"
+	"pitch"		"100"
+	"wave"	"xen/web/web_largebreak01.wav"
+}
+
+
+
+//****************************************************************************
+//           SOUND  /// XEN_SUCKYVENT  ///  STARTS HERE !!!!
+//****************************************************************************	
+//****************************************************************************	
+//					sound/xen/object
+//****************************************************************************
+
+"sfx.xen.suckyvent.start"
+{
+	"channel"	    "CHAN_BODY"
+	"volume"	    "1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		    "xen/object/ventsuck_start.wav"
+}
+
+"sfx.xen.suckyvent.stop"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_NORM"
+	"pitch"		"100"
+	"wave"		"xen/object/ventsuck_end.wav"
+}

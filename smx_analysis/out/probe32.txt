@@ -1,0 +1,279 @@
+=== tracerbullet ref @0x10484d9e [.text]  fn_start~0x10484c30
+   0x10484d5e  mov       edi, 0xcc0d8bff
+   0x10484d63  lds       eax, ptr [esi + 0x14c48310]
+   0x10484d69  mov       eax, dword ptr [ecx]
+   0x10484d6b  mov       eax, dword ptr [eax + 0x88]
+   0x10484d71  call      eax
+   0x10484d73  test      al, al
+   0x10484d75  jne       0x10484e15
+   0x10484d7b  mov       eax, dword ptr [0x110f8470]
+   0x10484d80  mov       ecx, 0x110f8470
+   0x10484d85  call      dword ptr [eax + 0x2c]
+   0x10484d88  test      eax, eax
+   0x10484d8a  je        0x10484e15
+   0x10484d90  push      0
+   0x10484d92  lea       eax, [ebp - 0x98]
+   0x10484d98  push      eax
+   0x10484d99  lea       eax, [ebp - 0x68]
+   0x10484d9c  push      eax
+   0x10484d9d  push      0x106a9744
+   0x10484da2  call      0x10110c30
+   0x10484da7  add       esp, 0x10
+   0x10484daa  lea       ecx, [ebp - 0x74]
+   0x10484dad  mov       ebx, eax
+   0x10484daf  push      0x106b0390
+   0x10484db4  call      0x1052ed40
+   0x10484db9  mov       ecx, dword ptr [ebp - 0x70]
+   0x10484dbc  mov       edx, dword ptr [ecx]
+   0x10484dbe  mov       edx, dword ptr [edx + 0x28]
+   0x10484dc1  call      edx
+   0x10484dc3  mov       ecx, dword ptr [0x110f8414]
+   0x10484dc9  fstp      dword ptr [ebp - 0x6c]
+   0x10484dcc  cmp       ecx, 0x110f83f8
+   0x10484dd2  jne       0x10484ded
+   0x10484dd4  movss     xmm0, dword ptr [0x110f8424]
+   0x10484ddc  movss     dword ptr [ebp - 0x5c], xmm0
+   0x10484de1  xor       dword ptr [ebp - 0x5c], 0x110f83f8
+   0x10484de8  fld       dword ptr [ebp - 0x5c]
+   0x10484deb  jmp       0x10484df4
+
+=== tracerbullet ref2 @0x10016cb6 [.text]  fn_start~0x1001622c
+   0x10016c76  and       dh, al
+   0x10016c78  mov       edx, dword ptr [eax]
+   0x10016c7a  dec       eax
+   0x10016c7b  xchg      ecx, eax
+   0x10016c7c  push      0x10
+   0x10016c7e  call      0x10350530
+   0x10016c83  mov       ecx, 0x108bc640
+   0x10016c88  call      0x10350520
+   0x10016c8d  push      0x105b7ed0
+   0x10016c92  call      0x1059036a
+   0x10016c97  pop       ecx
+   0x10016c98  ret       
+   0x10016c99  int3      
+   0x10016c9a  int3      
+   0x10016c9b  int3      
+   0x10016c9c  int3      
+   0x10016c9d  int3      
+   0x10016c9e  int3      
+   0x10016c9f  int3      
+   0x10016ca0  push      0
+   0x10016ca2  call      0x10351850
+   0x10016ca7  add       esp, 4
+   0x10016caa  mov       dword ptr [0x108bc84c], eax
+   0x10016caf  ret       
+   0x10016cb0  call      0x102b1f50
+   0x10016cb5  push      0x106a9744
+   0x10016cba  push      0x107f9a84
+   0x10016cbf  mov       ecx, eax
+   0x10016cc1  mov       edx, dword ptr [eax]
+   0x10016cc3  call      dword ptr [edx]
+   0x10016cc5  ret       
+   0x10016cc6  int3      
+   0x10016cc7  int3      
+   0x10016cc8  int3      
+   0x10016cc9  int3      
+   0x10016cca  int3      
+   0x10016ccb  int3      
+   0x10016ccc  int3      
+   0x10016ccd  int3      
+   0x10016cce  int3      
+   0x10016ccf  int3      
+   0x10016cd0  push      0
+   0x10016cd2  call      0x10352300
+   0x10016cd7  add       esp, 4
+   0x10016cda  mov       dword ptr [0x108bc874], eax
+   0x10016cdf  ret       
+   0x10016ce0  push      0
+   0x10016ce2  call      0x10352390
+   0x10016ce7  add       esp, 4
+   0x10016cea  mov       dword ptr [0x108bc870], eax
+   0x10016cef  ret       
+   0x10016cf0  call      0x102b1f50
+   0x10016cf5  push      0x106a9f00
+   0x10016cfa  push      0x107f9b28
+   0x10016cff  mov       ecx, eax
+   0x10016d01  mov       edx, dword ptr [eax]
+   0x10016d03  call      dword ptr [edx]
+   0x10016d05  ret       
+
+=== SniperRound ref @0x10351f78 [.text]  fn_start~0x10351f30
+   0x10351f38  add       byte ptr [ecx + 0x10817e30], ah
+   0x10351f3e  xor       eax, ebp
+   0x10351f40  mov       dword ptr [ebp - 4], eax
+   0x10351f43  mov       eax, dword ptr [0x1086b1c8]
+   0x10351f48  movss     xmm0, dword ptr [ebp + 0x18]
+   0x10351f4d  push      esi
+   0x10351f4e  mov       esi, ecx
+   0x10351f50  mov       ecx, dword ptr [ebp + 0x10]
+   0x10351f53  fld       dword ptr [eax + 0xc]
+   0x10351f56  push      edi
+   0x10351f57  mov       edi, dword ptr [ebp + 8]
+   0x10351f5a  cmp       dword ptr [esi + 0x380], -1
+   0x10351f61  fstp      dword ptr [esi + 0x378]
+   0x10351f67  mov       dword ptr [ebp - 0x60], edi
+   0x10351f6a  mov       dword ptr [ebp - 0x5c], ecx
+   0x10351f6d  movss     dword ptr [esi + 0x38c], xmm0
+   0x10351f75  jne       0x10351fa8
+   0x10351f77  push      0x10678038
+   0x10351f7c  call      0x102cd780
+   0x10351f81  mov       ecx, eax
+   0x10351f83  call      0x100e8360
+   0x10351f88  push      0x10678044
+   0x10351f8d  mov       dword ptr [esi + 0x380], eax
+   0x10351f93  call      0x102cd780
+   0x10351f98  mov       ecx, eax
+   0x10351f9a  call      0x100e8360
+   0x10351f9f  mov       ecx, dword ptr [ebp - 0x5c]
+   0x10351fa2  mov       dword ptr [esi + 0x384], eax
+   0x10351fa8  cmp       byte ptr [esi + 0x390], 0
+   0x10351faf  je        0x10351fc5
+   0x10351fb1  pop       edi
+   0x10351fb2  xor       al, al
+   0x10351fb4  pop       esi
+   0x10351fb5  mov       ecx, dword ptr [ebp - 4]
+   0x10351fb8  xor       ecx, ebp
+   0x10351fba  call      0x10590afb
+   0x10351fbf  mov       esp, ebp
+   0x10351fc1  pop       ebp
+   0x10351fc2  ret       0x14
+   0x10351fc5  mov       eax, dword ptr [esi]
+   0x10351fc7  push      ecx
+
+=== SniperPenetratedRound ref @0x10351f89 [.text]  fn_start~0x10351f30
+   0x10351f49  movups    xmm0, xmmword ptr [ebp + 0x18]
+   0x10351f4d  push      esi
+   0x10351f4e  mov       esi, ecx
+   0x10351f50  mov       ecx, dword ptr [ebp + 0x10]
+   0x10351f53  fld       dword ptr [eax + 0xc]
+   0x10351f56  push      edi
+   0x10351f57  mov       edi, dword ptr [ebp + 8]
+   0x10351f5a  cmp       dword ptr [esi + 0x380], -1
+   0x10351f61  fstp      dword ptr [esi + 0x378]
+   0x10351f67  mov       dword ptr [ebp - 0x60], edi
+   0x10351f6a  mov       dword ptr [ebp - 0x5c], ecx
+   0x10351f6d  movss     dword ptr [esi + 0x38c], xmm0
+   0x10351f75  jne       0x10351fa8
+   0x10351f77  push      0x10678038
+   0x10351f7c  call      0x102cd780
+   0x10351f81  mov       ecx, eax
+   0x10351f83  call      0x100e8360
+   0x10351f88  push      0x10678044
+   0x10351f8d  mov       dword ptr [esi + 0x380], eax
+   0x10351f93  call      0x102cd780
+   0x10351f98  mov       ecx, eax
+   0x10351f9a  call      0x100e8360
+   0x10351f9f  mov       ecx, dword ptr [ebp - 0x5c]
+   0x10351fa2  mov       dword ptr [esi + 0x384], eax
+   0x10351fa8  cmp       byte ptr [esi + 0x390], 0
+   0x10351faf  je        0x10351fc5
+   0x10351fb1  pop       edi
+   0x10351fb2  xor       al, al
+   0x10351fb4  pop       esi
+   0x10351fb5  mov       ecx, dword ptr [ebp - 4]
+   0x10351fb8  xor       ecx, ebp
+   0x10351fba  call      0x10590afb
+   0x10351fbf  mov       esp, ebp
+   0x10351fc1  pop       ebp
+   0x10351fc2  ret       0x14
+   0x10351fc5  mov       eax, dword ptr [esi]
+   0x10351fc7  push      ecx
+   0x10351fc8  mov       ecx, esi
+   0x10351fca  call      dword ptr [eax + 0x4c]
+   0x10351fcd  push      0
+   0x10351fcf  push      edi
+   0x10351fd0  push      esi
+   0x10351fd1  call      0x102b5a60
+   0x10351fd6  mov       eax, dword ptr [ebp + 0xc]
+
+=== SniperRound ref @0x102cda3d [.text]  fn_start~0x102cd730
+   0x102cd9fd  test      byte ptr [edi + 0x67], bh
+   0x102cda00  adc       byte ptr [eax - 0x7c], ch
+   0x102cda03  jg        0x102cda6c
+   0x102cda05  adc       byte ptr [edx + 4], ch
+   0x102cda08  push      2
+   0x102cda0a  push      0x10678030
+   0x102cda0f  mov       ecx, 0x108ab760
+   0x102cda14  call      0x100e8180
+   0x102cda19  fld       dword ptr [0x106780c0]
+   0x102cda1f  push      8
+   0x102cda21  push      4
+   0x102cda23  push      0
+   0x102cda25  push      ecx
+   0x102cda26  fstp      dword ptr [esp]
+   0x102cda29  push      0x10677f00
+   0x102cda2e  push      0x10677ee8
+   0x102cda33  push      0x10677ed0
+   0x102cda38  push      0
+   0x102cda3a  push      2
+   0x102cda3c  push      0x10678038
+   0x102cda41  mov       ecx, 0x108ab760
+   0x102cda46  call      0x100e8180
+   0x102cda4b  fld       dword ptr [0x106780bc]
+   0x102cda51  push      8
+   0x102cda53  push      4
+   0x102cda55  push      0
+   0x102cda57  push      ecx
+   0x102cda58  fstp      dword ptr [esp]
+   0x102cda5b  push      0x10677f00
+   0x102cda60  push      0x10677f68
+   0x102cda65  push      0x10677f4c
+   0x102cda6a  push      0
+   0x102cda6c  push      2
+   0x102cda6e  push      0x10678044
+   0x102cda73  mov       ecx, 0x108ab760
+   0x102cda78  call      0x100e8180
+   0x102cda7d  mov       eax, dword ptr [0x108ab764]
+   0x102cda82  cmp       eax, 0x11
+   0x102cda85  je        0x102cda95
+   0x102cda87  push      0x11
+   0x102cda89  push      eax
+
+=== SniperRound ref @0x104be938 [.text]  fn_start~0x104be900
+   0x104be8f8  pop       ebp
+   0x104be8f9  jmp       0x100abc30
+   0x104be8fe  int3      
+   0x104be8ff  int3      
+   0x104be900  push      ebp
+   0x104be901  mov       ebp, esp
+   0x104be903  sub       esp, 0x74
+   0x104be906  mov       eax, dword ptr [0x10817e30]
+   0x104be90b  xor       eax, ebp
+   0x104be90d  mov       dword ptr [ebp - 4], eax
+   0x104be910  mov       eax, dword ptr [0x1086b1c8]
+   0x104be915  push      esi
+   0x104be916  mov       esi, ecx
+   0x104be918  mov       ecx, dword ptr [ebp + 0x10]
+   0x104be91b  push      edi
+   0x104be91c  fld       dword ptr [eax + 0xc]
+   0x104be91f  mov       edi, dword ptr [ebp + 8]
+   0x104be922  cmp       dword ptr [esi + 0x380], -1
+   0x104be929  fstp      dword ptr [esi + 0x378]
+   0x104be92f  mov       dword ptr [ebp - 0x68], edi
+   0x104be932  mov       dword ptr [ebp - 0x5c], ecx
+   0x104be935  jne       0x104be968
+   0x104be937  push      0x10678038
+   0x104be93c  call      0x102cd780
+   0x104be941  mov       ecx, eax
+   0x104be943  call      0x100e8360
+   0x104be948  push      0x10678044
+   0x104be94d  mov       dword ptr [esi + 0x380], eax
+   0x104be953  call      0x102cd780
+   0x104be958  mov       ecx, eax
+   0x104be95a  call      0x100e8360
+   0x104be95f  mov       ecx, dword ptr [ebp - 0x5c]
+   0x104be962  mov       dword ptr [esi + 0x384], eax
+   0x104be968  cmp       byte ptr [esi + 0x38d], 0
+   0x104be96f  je        0x104be985
+   0x104be971  pop       edi
+   0x104be972  xor       al, al
+   0x104be974  pop       esi
+   0x104be975  mov       ecx, dword ptr [ebp - 4]
+   0x104be978  xor       ecx, ebp
+   0x104be97a  call      0x10590afb
+   0x104be97f  mov       esp, ebp
+   0x104be981  pop       ebp
+   0x104be982  ret       0x10
+   0x104be985  mov       eax, dword ptr [esi]
+   0x104be987  push      ecx
+

@@ -1,0 +1,95 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_GLOCK"
+{
+	"id" "elementid" "fd1911b2-9f60-4b7c-ac2e-0e8486a9eaef"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/weapons/w_glock.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_glock_mp.mdl"
+	"viewmodel" "string" "models/weapons/v_glock.mdl"
+	"printname" "string" "Glock"
+	"primary_ammo" "string" "9mm"
+	"clip_size" "int" "17"
+	"bucket" "int" "1"
+	"bucket_position" "int" "0"
+
+	"bucket_controller" "int" "3"
+	"bucket_position_controller" "int" "3"
+
+	"anim_prefix" "string" "glock"
+	"item_flags" "int" "0"
+	"weight" "int" "20"
+	"muzzleflash_firstperson" "string" "weapon_glock_muzzleflash"
+	"muzzleflash_thirdperson" "string" "world_weapon_glock_muzzleflash"
+	"brass_ejection_model" "string" "models/Weapons/shell.mdl"
+	"tracer" "string" "weapon_tracer_small"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "2a7c7238-a05d-424c-b52c-c6c46d1fb009"
+		"reload_npc" "string" "weapon_glock.Reload_NPC"
+		"empty" "string" "weapon_glock.Empty"
+		"single_shot" "string" "weapon_glock.Single"
+		"single_shot_npc" "string" "weapon_glock.Single_NPC"
+		"special1" "string" "weapon_glock.Single_Silent"
+	}
+	"primary_attack" "primary_attack"
+	{
+		"id" "elementid" "e4aee641-d973-4cb7-8cd3-ffaca521e076"
+		"cycle" "float" "0.32"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "43f269a6-61a4-4f44-9f91-6a8a084d4fb5"
+			"spread" "vector3" "1 1 0"
+			"damage" "float" "9"
+			"damage_multiplayer" "float" "16"
+		}
+		"recoil" "recoil"
+		{
+			"id" "elementid" "06cb2b60-2246-4b7f-b7fb-897bbab8fc99"
+			"min_snap_angles" "vector3" "-0.5 0 0"
+			"max_snap_angles" "vector3" "-0.25 0 0"
+			"min_punch_angles" "vector3" "-0.75 -0.5 0"
+			"max_punch_angles" "vector3" "-0.35 -0.5 0"
+			"min_punch_offset" "vector3" "-0.05 -0.05 0"
+			"max_punch_offset" "vector3" "0.05 0.05 0"
+		}
+	}
+	"secondary_attack" "secondary_attack"
+	{
+		"id" "elementid" "9d5bb36d-9be8-490d-b1a9-a5cddb643bed"
+		"cycle" "float" "0.18"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "8201100d-4994-4669-ab27-e5530add7135"
+			"spread" "vector3" "6 6 0"
+			"spread_multiplayer" "vector3" "12 12 0"
+			"damage" "float" "9"
+			"damage_multiplayer" "float" "16"
+		}
+		"recoil" "recoil"
+		{
+			"id" "elementid" "54ec87c3-f77a-48e5-af2d-f75cadf751bb"
+			"min_snap_angles" "vector3" "-0.5 0 0"
+			"max_snap_angles" "vector3" "-0.25 0 0"
+			"min_punch_angles" "vector3" "-0.75 -0.5 0"
+			"max_punch_angles" "vector3" "-0.35 -0.5 0"
+			"min_punch_offset" "vector3" "-0.05 -0.05 0"
+			"max_punch_offset" "vector3" "0.05 0.05 0"
+		}
+	}	
+	"npc_attack" "npc_attack"
+	{
+		"id" "elementid" "b96e9d80-aca2-423d-ab2b-7b7927991abb"
+		"cycle" "float" "1"
+		"burst_count_min" "int" "4"
+		"burst_count_max" "int" "6"
+		"rest_time_min" "float" "0.1"
+		"rest_time_max" "float" "0.1"
+		"bullet" "bullet"
+		{
+			"id" "elementid" "14c9e937-505d-4f86-b68c-995ef0854755"
+			"spread" "vector3" "1 1 0"
+			"damage" "float" "5"
+		}
+	}
+}
+

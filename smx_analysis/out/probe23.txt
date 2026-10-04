@@ -1,0 +1,109 @@
+sections:
+   .text      10001000-105c2200 raw=1024
+   .rdata     105c3000-107a2400 raw=6034944
+   .data      107a3000-1112b2e8 raw=7997952
+   .reloc     1112c000-1120fa00 raw=8577024
+0x108a8120 in: ('.data', 276443136, 286438120)
+   [+0x00] ERR unpack requires a buffer of 4 bytes
+   [+0x04] ERR unpack requires a buffer of 4 bytes
+   [+0x08] ERR unpack requires a buffer of 4 bytes
+   [+0x0c] ERR unpack requires a buffer of 4 bytes
+   [+0x10] ERR unpack requires a buffer of 4 bytes
+   [+0x2c] ERR unpack requires a buffer of 4 bytes
+
+=== glass-decision region 0x1011f230 .. 0x1011f3c0 ===
+  0x1011f230  in        al, dx
+  0x1011f231  popfd     
+  0x1011f232  xchg      dword ptr [eax], edx
+  0x1011f234  movsx     eax, word ptr [ebp - 0xd8]
+  0x1011f23b  push      eax
+  0x1011f23c  mov       edx, dword ptr [ecx]
+  0x1011f23e  mov       eax, dword ptr [edx + 0x14]
+  0x1011f241  call      eax
+  0x1011f243  test      eax, eax
+  0x1011f245  je        0x1011f295
+  0x1011f247  cmp       word ptr [eax + 0x4c], 0x59
+  0x1011f24c  jne       0x1011f295
+  0x1011f24e  mov       eax, dword ptr [ebp - 0xcc]
+  0x1011f254  cmp       dword ptr [eax + 0x5c], 0x105fafec
+  0x1011f25b  je        0x1011f273
+  0x1011f25d  push      0x105fafec
+  0x1011f262  mov       ecx, eax
+  0x1011f264  call      0x10034b00
+  0x1011f269  test      al, al
+  0x1011f26b  je        0x1011f295
+  0x1011f26d  mov       eax, dword ptr [ebp - 0xcc]
+  0x1011f273  mov       eax, dword ptr [eax + 0x100]
+  0x1011f279  mov       ecx, 1
+  0x1011f27e  shr       eax, 0xb
+  0x1011f281  test      al, 1
+  0x1011f283  mov       eax, dword ptr [ebp - 0x138]
+  0x1011f289  movzx     eax, al
+  0x1011f28c  cmove     eax, ecx
+  0x1011f28f  mov       dword ptr [ebp - 0x138], eax
+  0x1011f295  mov       eax, dword ptr [edi + 0x30]
+  0x1011f298  mov       dword ptr [ebp - 0x134], eax
+  0x1011f29e  test      eax, eax
+  0x1011f2a0  je        0x1011f38e
+  0x1011f2a6  mov       ecx, dword ptr [0x1083a3e0]
+  0x1011f2ac  mov       eax, ecx
+  0x1011f2ae  cdq       
+  0x1011f2af  inc       ecx
+  0x1011f2b0  idiv      dword ptr [ebp - 0x134]
+  0x1011f2b6  mov       dword ptr [0x1083a3e0], ecx
+  0x1011f2bc  test      edx, edx
+  0x1011f2be  jne       0x1011f38e
+  0x1011f2c4  cmp       byte ptr [ebp - 0x138], dl
+  0x1011f2ca  jne       0x1011f397
+  0x1011f2d0  cmp       byte ptr [ebp - 0x148], 1
+  0x1011f2d7  jne       0x1011f385
+  0x1011f2dd  mov       eax, dword ptr [0x1110c72c]
+  0x1011f2e2  mov       ecx, esi
+  0x1011f2e4  mov       dword ptr [ebp - 0x1c4], eax
+  0x1011f2ea  mov       eax, dword ptr [0x1110c730]
+  0x1011f2ef  mov       dword ptr [ebp - 0x1c0], eax
+  0x1011f2f5  mov       eax, dword ptr [0x1110c734]
+  0x1011f2fa  mov       dword ptr [ebp - 0x1bc], eax
+  0x1011f300  lea       eax, [ebp - 0x1c4]
+  0x1011f306  push      eax
+  0x1011f307  lea       eax, [edi + 4]
+  0x1011f30a  push      eax
+  0x1011f30b  call      0x1011e190
+  0x1011f310  lea       eax, [ebp - 0x118]
+  0x1011f316  push      eax
+  0x1011f317  lea       ecx, [ebp - 0xa8]
+  0x1011f31d  call      0x100a7370
+  0x1011f322  movss     xmm0, dword ptr [ebp - 0x18c]
+  0x1011f32a  push      dword ptr [edi + 0x2c]
+  0x1011f32d  mov       ecx, dword ptr [ebp - 0x158]
+  0x1011f333  mov       esi, dword ptr [esi]
+  0x1011f335  movss     dword ptr [ebp - 0x9c], xmm0
+  0x1011f33d  movss     xmm0, dword ptr [ebp - 0x188]
+  0x1011f345  movss     dword ptr [ebp - 0x98], xmm0
+  0x1011f34d  movss     xmm0, dword ptr [ebp - 0x184]
+  0x1011f355  movss     dword ptr [ebp - 0x94], xmm0
+  0x1011f35d  call      0x100e84e0
+  0x1011f362  mov       ecx, dword ptr [ebp - 0x170]
+  0x1011f368  push      eax
+  0x1011f369  lea       eax, [ebp - 0xa8]
+  0x1011f36f  push      eax
+  0x1011f370  lea       eax, [ebp - 0x1c4]
+  0x1011f376  push      eax
+  0x1011f377  call      dword ptr [esi + 0x1e0]
+  0x1011f37d  mov       esi, dword ptr [ebp - 0x170]
+  0x1011f383  jmp       0x1011f3b4
+  0x1011f385  mov       byte ptr [ebp - 0x16c], 1
+  0x1011f38c  jmp       0x1011f3b4
+  0x1011f38e  cmp       byte ptr [ebp - 0x138], 0
+  0x1011f395  je        0x1011f3b4
+  0x1011f397  lea       eax, [ebp - 0x1b8]
+  0x1011f39d  mov       ecx, esi
+  0x1011f39f  push      eax
+  0x1011f3a0  lea       eax, [ebp - 0x154]
+  0x1011f3a6  push      eax
+  0x1011f3a7  lea       eax, [ebp - 0x118]
+  0x1011f3ad  push      eax
+  0x1011f3ae  push      edi
+  0x1011f3af  call      0x10067c00
+  0x1011f3b4  mov       eax, dword ptr [ebp - 0x13c]
+  0x1011f3ba  inc       dword ptr [ebp - 0x130]

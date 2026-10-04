@@ -1,0 +1,115 @@
+"NPC_Assassin.SentenceParameters"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.80"
+	"pitch"			"95,103"
+	"soundlevel"	"SNDLVL_90dB"
+	"wave"			"common/null.wav"
+}
+
+"NPC_Assassin.jump"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"			"100, 110"
+	"wave"			"npc/assassin/woosh1.wav"
+}
+
+"NPC_Assassin.land"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"			"100, 110"
+
+	"rndwave"
+	{
+		"wave" "physics/cardboard/cardboard_box_impact_hard1.wav"
+		"wave" "physics/cardboard/cardboard_box_impact_hard2.wav"
+		"wave" "physics/cardboard/cardboard_box_impact_hard3.wav"
+		"wave" "physics/cardboard/cardboard_box_impact_hard4.wav"
+		"wave" "physics/cardboard/cardboard_box_impact_hard4.wav"
+		"wave" "physics/cardboard/cardboard_box_impact_hard6.wav"
+		"wave" "physics/cardboard/cardboard_box_impact_hard7.wav"
+	}
+}
+
+"NPC_Assassin.Die"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"pitch"			"100, 105"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/assassin/pain05.wav"
+		"wave"	"npc/assassin/pain06.wav"
+		"wave"	"npc/assassin/death01.wav"
+		"wave"	"npc/assassin/death02.wav"
+		"wave"	"npc/assassin/death03.wav"
+		"wave"	"npc/assassin/death04.wav"
+		"wave"	"npc/assassin/death05.wav"
+		"wave"	"npc/assassin/death06.wav"
+	}
+}
+
+"NPC_Assassin.Pain"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"pitch"			"100, 105"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/assassin/pain01.wav"
+		"wave"	"npc/assassin/pain02.wav"
+		"wave"	"npc/assassin/pain03.wav"
+		"wave"	"npc/assassin/pain04.wav"
+		"wave"	"npc/assassin/pain05.wav"
+		"wave"	"npc/assassin/pain06.wav"
+		"wave"	"npc/assassin/pain07.wav"
+		"wave"	"npc/assassin/pain08.wav"
+		"wave"	"npc/assassin/pain09.wav"
+		"wave"	"npc/assassin/pain10.wav"
+		"wave"	"npc/assassin/pain11.wav"
+		"wave"	"npc/assassin/pain12.wav"
+		"wave"	"npc/assassin/pain13.wav"
+		"wave"	"npc/assassin/pain14.wav"
+		"wave"	"npc/assassin/pain15.wav"
+		"wave"	"npc/assassin/pain16.wav"
+
+	}
+}
+
+"NPC_Assassin.FootstepLeft"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/assassin/step1.wav"
+		"wave"	"npc/assassin/step2.wav"
+	}
+}
+
+"NPC_Assassin.FootstepRight"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/assassin/step1.wav"
+		"wave"	"npc/assassin/step2.wav"
+	}
+}

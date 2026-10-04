@@ -1,0 +1,35 @@
+"npc_sounds_lav.Fire"
+{
+	"channel"		"CHAN_WEAPON"
+	"pitch"			"95, 105"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_90dB"
+
+	"rndwave"
+	{
+		"wave"	"npc\lav\lav_fire1.wav"
+		"wave"	"npc\lav\lav_fire2.wav"
+		"wave"	"npc\lav\lav_fire3.wav"
+	}	
+}
+
+"npc_sounds_lav.Idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"npc/lav/lav_idle.wav"
+}
+
+"npc_sounds_lav.Drive"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"npc/lav/lav_drivefast.wav"
+}
+
+
+

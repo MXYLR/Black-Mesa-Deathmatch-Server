@@ -1,0 +1,203 @@
+"c5a1.scene1.xen"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_outdoor1_mix.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_nih_wind1_mix.wav"
+	}
+}
+
+"c5a1.gman"
+{
+	"dsp"	"0"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb71b.wav"
+	}
+}
+
+"c5a1.silent"
+{
+	"dsp"	"0"
+}
+
+// This one is used for the good ending (classic)
+
+"c5a1.silent.goodend"
+{
+	"dsp"	"0"
+	"fadetime"		"6"
+}
+
+"c5a1.scene2.crossfire"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_night_battle1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_disaster_rumble2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_wind3.wav"
+	}
+}
+
+"c5a1.scene3.xen"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_cliffs1_mix.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb73a.wav"
+	}
+}
+
+"c5a1.scene4.tram"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_xen3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_xen2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb25a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb35a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_nih_wind1_mix.wav"
+	}
+}
+
+
+"c5a1.scene4.tram2"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_xen3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_xen2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb36b.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb39c.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_nih_wind1_mix.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"xen\object\int_mach52.wav"
+	}
+}
+
+"c5a1.scene5.badending"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_boidcave_mix.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb36.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb13a.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb73a.wav"
+	}
+}

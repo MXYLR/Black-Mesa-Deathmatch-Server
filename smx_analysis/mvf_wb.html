@@ -1,0 +1,3906 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=o9P2E1FK" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("http://web.archive.org/web");
+  __wm.wombat("https://forums.alliedmods.net/showthread.php?t=276432","20240611221837","http://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1718144317");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+	<meta http-equiv="x-ua-compatible" content="IE=9"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta name="generator" content="vBulletin"/>
+
+<meta name="keywords" content="[CS:GO] Missing ViewModel Fix v1.1 [2017-02-02], AMX Mod X,AMX Mod,Metamod,Half-Life Plugins,AMXX,AMX,Plugins,Counter-Strike,CSDM,Deathmatch,Servers,C++"/>
+<meta name="description" content="[CS:GO] Missing ViewModel Fix v1.1 [2017-02-02] Plugins"/>
+
+
+<!-- CSS Stylesheet -->
+<style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.8.7 CSS
+* Style: 'prideBB'; Style ID: 8
+*/
+body
+{
+	background: #E5E5E5;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 10px;
+	padding: 0px;
+}
+a:link, body_alink
+{
+	color: #006699;
+	text-decoration: none;
+}
+a:visited, body_avisited
+{
+	color: #006699;
+}
+a:hover, a:active, body_ahover
+{
+	color: #DD6900;
+}
+.page
+{
+	background: #FFFFFF;
+	color: #000000;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #FFFFFF;
+	color: #000000;
+	border: 2px solid #006699;
+	
+}
+.tcat
+{
+	background: #C7D0D7 url(/web/20240611221837im_/https://forums.alliedmods.net/images/gradients/gradient_tcat.gif) repeat-x top left;
+	color: #000000;
+	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tcat a:link, .tcat_alink
+{
+	color: #006699;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #006699;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #006699;
+	text-decoration: underline;
+}
+.thead
+{
+	background: #C7D0D7 url(/web/20240611221837im_/https://forums.alliedmods.net/images/gradients/gradient_thead.gif) repeat-x top left;
+	color: #FFFFFF;
+	font: bold 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.thead a:link, .thead_alink
+{
+	color: #EDE1DC;
+}
+.thead a:visited, .thead_avisited
+{
+	color: #EDE1DC;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	color: #EDE1DC;
+	text-decoration: underline;
+}
+.tfoot
+{
+	background: #C7D0D7;
+	color: #000000;
+}
+.tfoot a:link, .tfoot_alink
+{
+	color: #006699;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	color: #006699;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	color: #006699;
+}
+.alt1, .alt1Active
+{
+	background: #EFEFEF;
+	color: #000000;
+}
+.alt2, .alt2Active
+{
+	background: #EFEFEF;
+	color: #000000;
+}
+.inlinemod
+{
+	background: #D8D8D8;
+	color: #000000;
+}
+.wysiwyg
+{
+	background: #FFFFFF;
+	color: #000000;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+textarea, .bginput
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.bginput option, .bginput optgroup
+{
+	font-size: 10pt;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+select
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #666686;
+}
+.navbar
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background: #3E5C92;
+	color: #E0E0F6;
+}
+.fjdpth0
+{
+	background: #F7F7F7;
+	color: #000000;
+}
+.panel
+{
+	background: #EFEFEF url(/web/20240611221837im_/https://forums.alliedmods.net/images/gradients/gradient_panel.gif) repeat-x top left;
+	color: #000000;
+	padding: 10px;
+	border: 1px solid #b2b2b2;
+}
+.panelsurround
+{
+	background: #FFFFFF url(/web/20240611221837im_/https://forums.alliedmods.net/images/gradients/gradient_panelsurround.gif) repeat-x top left;
+	color: #000000;
+}
+legend
+{
+	color: #22229C;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background: #EFEFEF;
+	color: #006699;
+	font: bold 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+	color: #006699;
+	text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+	color: #006699;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+	color: #006699;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #0B198C;
+}
+.vbmenu_option
+{
+	background: #BBC7CE;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+	color: #006699;
+	text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+	color: #006699;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+	color: #006699;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #8A949E;
+	color: #FFFFFF;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 10pt; font-weight: bold; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+
+/* ***** don't change the following ***** */
+form { display: inline; }
+label { cursor: default; }
+.normal { font-weight: normal; }
+.inlineimg { vertical-align: middle; }
+.code 
+{
+ background-color: #DDDDDD;
+ color: #000000;
+}
+.main-page
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  border-left: 1px solid #98AAB1;
+  border-right: 1px solid #98AAB1;
+}
+
+.spacer-page
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  width: auto;
+  display: block;
+  border-right: 1px solid #98AAB1;
+  border-left: 1px solid #98AAB1;
+}
+
+.spacer-page-top
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  width: auto;
+  border-right: 1px solid #98AAB1;
+  border-left: 1px solid #98AAB1;
+  border-top: 1px solid #98AAB1;
+}
+
+.spacer-page-bottom
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  border-right: 1px solid #98AAB1;
+  border-left: 1px solid #98AAB1;
+  border-bottom: 1px solid #98AAB1;
+}
+
+.bpost { background-color: #D1D7DC; border: 1px solid #FFFFFF; padding: 3px; }
+
+.ttop 
+{ 
+  border-left: 2px solid #006699;
+  border-right: 2px solid #006699;
+  border-top: 2px solid #006699;
+}
+.tbottom 
+{ 
+  border-left: 2px solid #006699;
+  border-right: 2px solid #006699;
+  border-bottom: 2px solid #006699;
+}
+.tinside 
+{ 
+  border-left: 2px solid #006699;
+  border-right: 2px solid #006699;
+}
+
+.smalltext
+{
+  font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+  font-size: 11px;
+  height: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.bcrumbs
+{
+  font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+  font-size: 11px;
+  height: 12px;
+  padding: 0px;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+.bcrumbs a
+{
+  text-decoration: none;
+}
+.approve
+{
+  background: url(/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/approve.gif) no-repeat;
+  padding: 0px;
+  margin: 0px;
+  width: 75px;
+  height: 18px;
+  border: 0px;
+  cursor: pointer;
+  float: left;
+}
+.unapprove
+{
+  background: url(/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/unapprove.gif) no-repeat;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 2px;
+  width: 75px;
+  height: 18px;
+  border: 0px;
+  cursor: pointer;
+  float: right;
+}
+
+.home-links
+{
+  font-size: 10px;
+  text-decoration: none;
+  padding-right: 2px;
+}
+
+.home-links a
+{
+  font-size: 10px;
+  text-decoration: none;
+  padding-right: 2px;
+}
+
+
+.quote
+{
+  background-color: #FFF;
+  color: #000;
+}
+
+.alt3
+{
+  background-color: #DEE3E7;
+  color: #000;
+}
+.alt4
+{
+  background-color: #D1D7DC;
+  color: #000;
+}
+td, th, p, li, .smallfont { line-height: 1.2; }
+li { margin-bottom: 0.4em; }
+
+img.proxied-img { max-width: 100%; max-height: 400px; }
+</style>
+<link rel="stylesheet" type="text/css" href="/web/20240611221837cs_/https://forums.alliedmods.net/clientscript/vbulletin_important.css?v=387"/>
+
+
+<!-- / CSS Stylesheet -->
+
+<script type="text/javascript" src="/web/20240611221837js_/https://forums.alliedmods.net/clientscript/yui/yahoo-dom-event/yahoo-dom-event.js?v=3811"></script>
+<script type="text/javascript" src="/web/20240611221837js_/https://forums.alliedmods.net/clientscript/yui/connection/connection-min.js?v=3811"></script>
+<script type="text/javascript">
+<!--
+var SESSIONURL = "";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "images/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+
+<script type="text/javascript" src="/web/20240611221837js_/https://forums.alliedmods.net/clientscript/vbulletin_global.js?v=3811"></script>
+<script type="text/javascript" src="/web/20240611221837js_/https://forums.alliedmods.net/clientscript/vbulletin_menu.js?v=3811"></script>
+<script type="text/javascript" src="/web/20240611221837js_/https://forums.alliedmods.net/clientscript/am_plugin_sys.js"></script>
+
+<link rel="alternate" type="application/rss+xml" title="AlliedModders RSS Feed" href="external.php?type=RSS2"/>
+
+<link rel="alternate" type="application/rss+xml" title="AlliedModders - Plugins - RSS Feed" href="external.php?type=RSS2&amp;forumids=108"/>
+
+
+	<title> [CS:GO] Missing ViewModel Fix v1.1 [2017-02-02] - AlliedModders</title>
+	<script type="text/javascript" src="/web/20240611221837js_/https://forums.alliedmods.net/clientscript/vbulletin_post_loader.js?v=3811"></script>
+</head>
+<body onload="">
+
+<!-- content table -->
+
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+
+<!-- logo -->
+<br/>
+<a name="top"></a>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+<tr>
+	<td align="left"> <a href="index.php">
+	<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/am-banner-pride-4.svg" border="0" alt="AlliedModders" id="forum_logo"/>
+	</a></td>
+	<td align="right" style="padding-right: 10px; padding-top: 10px;">
+<!-- breadcrumb, login, pm info -->
+<div style="background-color: #EFEFEF; width: 425px; border: 1px solid #000000;" align="center">
+<!-- / breadcrumb, login, pm info -->
+
+<!-- nav buttons bar -->
+<div align="center">
+	<table cellpadding="6" cellspacing="0" border="0" width="425" align="center" style="border-top-width:0px">
+	<tr align="left">
+		<td class="vbmenu_control" width="125">
+			
+				<a href="misc.php?do=showrules">Rules</a>
+			
+		</td>
+		<td class="vbmenu_control" width="75"><a href="faq.php" accesskey="5">FAQ</a></td>
+		<td class="vbmenu_control" width="150"><a href="memberlist.php">Members List</a></td>
+				
+			
+			<td id="navbar_search" class="vbmenu_control" width="75"><a href="search.php" accesskey="4" rel="nofollow">Search</a> </td>
+			
+		
+	</tr>
+	<tr align="left">
+	
+		
+		
+			<td class="vbmenu_control" width="75"><a href="register.php" rel="nofollow">Register</a></td>
+<td class="vbmenu_control" width="125"><a href="login.php">Login</a></td>
+
+		
+
+						
+
+		
+		
+	</tr>
+	</table>
+</div>
+<!-- / nav buttons bar -->
+</div>
+
+
+<br/>
+
+<div style="background-color: #EFEFEF; width: 425px; border: 1px solid #000000;" align="center">
+  <div align="center">
+    <table cellpadding="0" cellspacing="0" border="0" width="425" align="center" style="border-top-width:0px">
+      <tr align="center">
+        <td class="vbmenu_control"><a href="http://web.archive.org/web/20240611221837/https://sourcemod.net/donate.php"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/btn_donate_SM.gif" border="0"/></a></td>
+        <td class="vbmenu_control"><a href="http://web.archive.org/web/20240611221837/https://sourcemod.net/halloffame.php">Raised This Month: $</a></td>
+        <td class="vbmenu_control">Target: $400</td>
+      </tr>
+      <tr align="left">
+        <td colspan="3">
+          <div style="border-top: 1px solid;">
+            <div style="background: #069; color: white; font-weight: bold; font-size: 9pt; text-align: right; width: 0%;">
+              &nbsp;0%&nbsp;
+
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+<!-- Sponsor links -->
+<div align="center">
+
+</div>
+<!-- / Sponsor links -->
+
+<br/>
+
+
+
+
+
+
+<!-- NAVBAR POPUP MENUS -->
+	
+	
+	<!-- header quick search form -->
+	<div class="vbmenu_popup" id="navbar_search_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead">Search Forums</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+				<form action="search.php?do=process" method="post">
+					<input type="hidden" name="do" value="process"/>
+					<input type="hidden" name="quicksearch" value="1"/>
+					<input type="hidden" name="childforums" value="1"/>
+					<input type="hidden" name="exactname" value="1"/>
+					<input type="hidden" name="s" value=""/>
+	<input type="hidden" name="securitytoken" value="guest"/>
+					<div><input type="text" class="bginput" name="query" size="25" tabindex="1001"/><input type="submit" class="button" value="Go" tabindex="1004"/></div>
+					<div style="margin-top:6px">
+						<label for="rb_nb_sp0"><input type="radio" name="showposts" value="0" id="rb_nb_sp0" tabindex="1002" checked="checked"/>Show Threads</label>
+						&nbsp;
+						<label for="rb_nb_sp1"><input type="radio" name="showposts" value="1" id="rb_nb_sp1" tabindex="1003"/>Show Posts</label>
+					</div>					
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option"><a href="search.php" accesskey="4" rel="nofollow">Advanced Search</a></td>
+		</tr>
+		
+		</table>
+	</div>
+	<!-- / header quick search form -->
+	
+
+	
+<!-- / NAVBAR POPUP MENUS -->
+
+<!-- PAGENAV POPUP -->
+
+	<div class="vbmenu_popup" id="pagenav_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tr>
+			<td class="thead" nowrap="nowrap">Go to Page...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="index.php" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4"/>
+				<input type="button" class="button" id="pagenav_ibtn" value="Go"/>
+			</form>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+<!-- / PAGENAV POPUP -->
+
+	</td>
+</tr>
+</table>
+<!-- /logo -->
+
+
+
+
+
+<div style="float: left;">
+<a name="poststop" id="poststop"></a>
+<div style="font-size: 14pt; width: auto;"> <b> <a href="showthread.php?t=276432">[CS:GO] Missing ViewModel Fix v1.1 [2017-02-02]</a></b> </div>
+</div>
+<br/>
+<br/>
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tr valign="middle">
+	
+		<td class="smallfont" width="185">
+<a href="newthread.php?do=newthread&amp;f=108" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/newthread.svg" alt="Post New Thread" border="0"/></a>
+<a href="newreply.php?do=newreply&amp;noquote=1&amp;p=2374792" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/reply.svg" alt="Reply" border="0"/></a>
+	
+&nbsp;&nbsp;
+</td><td>
+<!-- BreadCrumbs -->
+<div class="bcrumbs">
+<a href="index.php" accesskey="1"><strong>AlliedModders Forum Index</a>
+	<span class="navbar">&gt; <a href="forumdisplay.php?f=52">SourceMod</a></span>
+
+
+	<span class="navbar">&gt; <a href="forumdisplay.php?f=123">Plugins</a></span>
+
+
+	<span class="navbar">&gt; <a href="forumdisplay.php?f=108">Plugins</a></span>
+
+</strong> </div>
+<!-- / BreadCrumbs -->
+	<td align="right"><div class="pagenav" align="right">
+<table class="tborder" cellpadding="3" cellspacing="1" border="0">
+<tr>
+	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 2</td>
+	
+	
+		<td class="alt2"><span class="smallfont" title="Showing results 1 to 10 of 18"><strong>1</strong></span></td>
+ <td class="alt1"><a class="smallfont" href="showthread.php?p=2374792&amp;page=2" title="Show results 11 to 18 of 18">2</a></td>
+	<td class="alt1"><a rel="next" class="smallfont" href="showthread.php?p=2374792&amp;page=2" title="Next Page - Results 11 to 18 of 18">&gt;</a></td>
+	
+	<td class="vbmenu_control" title="showthread.php?p=2374792"><a name="PageNav"></a></td>
+</tr>
+</table>
+</div></td>
+</tr>
+</table>
+<!-- / controls above postbits -->
+
+<!-- toolbar -->
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
+		<a href="/web/20240611221837/https://forums.alliedmods.net/showthread.php?t=276432&amp;nojs=1#goto_threadtools">Thread Tools</a>
+		<script type="text/javascript"> vbmenu_register("threadtools"); </script>
+	</td>
+	
+	
+	
+	<td class="vbmenu_control" id="displaymodes" nowrap="nowrap">
+		<a href="/web/20240611221837/https://forums.alliedmods.net/showthread.php?t=276432&amp;nojs=1#goto_displaymodes">Display Modes</a>
+		<script type="text/javascript"> vbmenu_register("displaymodes"); </script>
+	</td>
+	
+	
+	
+	
+</tr>
+</table>
+<!-- / toolbar -->
+
+
+<!-- end content table -->
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- / end content table -->
+
+
+<!-- thread posts list -->
+<script type="text/javascript">
+<!--
+var imgdir_statusicon = "images/statusicon";
+var imgdir_misc = "images/misc";
+var cleargifurl = "clear.gif";
+var guestphrase = "Guest";
+var morephrase = "More replies below current depth...";
+var highlightwords = "";
+//-->
+</script>
+<script type="text/javascript" src="/web/20240611221837js_/https://forums.alliedmods.net/clientscript/vbulletin_thrdpostlist.js?v=3811"></script>
+<script type="text/javascript">
+<!--
+// initialize some variables
+var curpostid = 2374792;
+var quickreply = false;
+
+// cached posts (no page reload required to view)
+
+// next/previous post info
+
+// cached usernames
+pu[0] = guestphrase;
+pu[250443] = "ch4os";
+pu[260048] = "whtevrwt";
+pu[74431] = "zipcore";
+pu[250145] = "SHUFEN";
+pu[74234] = "Mitchell";
+pu[258715] = "sneaK";
+pu[240520] = "Neuro Toxin";
+pu[275218] = "B3none";
+pu[265019] = "Michauux";
+pu[237510] = "Allower";
+pu[288247] = "mr_cock";
+pu[276228] = "eliteroyal";
+
+// -->
+</script>
+
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px; margin-bottom:6px">
+<tr>
+	<td class="alt2">
+	<div style="height:150px;  overflow:auto; border:2px inset; padding: 0px; text-align:left;" class="alt1" id="links">
+		<div class="smallfont">
+		<!-- start post links -->
+<script type="text/javascript">
+<!--
+writeLink(2374792, 0, 1, 250443, "", "[CS:GO] Missing ViewModel Fix...", "12-21-2015", "10:07", 1);
+  writeLink(2374833, 0, 0, 260048, "T", "Re: [CS:GO] Missing ViewModel...", "12-21-2015", "13:38", 1);
+    writeLink(2374848, 0, 0, 250443, "I,L", "Re: [CS:GO] Missing ViewModel...", "12-21-2015", "14:14", 1);
+  writeLink(2375088, 0, 0, 74431, "T", "Re: [CS:GO] Missing ViewModel...", "12-22-2015", "07:11", 1);
+    writeLink(2492146, 0, 1, 250145, "I,L", "Re: [CS:GO] Missing ViewModel...", "02-02-2017", "11:00", 1);
+  writeLink(2492147, 0, 0, 74234, "T", "Re: [CS:GO] Missing ViewModel...", "02-02-2017", "11:02", 1);
+    writeLink(2492161, 0, 0, 258715, "I,L", "Re: [CS:GO] Missing ViewModel...", "02-02-2017", "12:26", 1);
+      writeLink(2492169, 0, 0, 74234, "I,1,L", "Re: [CS:GO] Missing ViewModel...", "02-02-2017", "12:53", 1);
+  writeLink(2511584, 0, 0, 250443, "T", "Re: [CS:GO] Missing ViewModel...", "04-12-2017", "14:32", 1);
+  writeLink(2511649, 0, 0, 240520, "T", "Re: [CS:GO] Missing ViewModel...", "04-12-2017", "18:10", 1);
+    writeLink(2511656, 0, 0, 275218, "I,T", "Re: [CS:GO] Missing ViewModel...", "04-12-2017", "18:39", 1);
+    writeLink(2513310, 0, 0, 250443, "I,T", "Re: [CS:GO] Missing ViewModel...", "04-18-2017", "13:31", 1);
+    writeLink(2598545, 0, 0, 237510, "I,T", "Re: [CS:GO] Missing ViewModel...", "06-21-2018", "16:45", 1);
+    writeLink(2618114, 0, 0, 288247, "I,L", "Re: [CS:GO] Missing ViewModel...", "10-04-2018", "14:46", 1);
+  writeLink(2511655, 0, 0, 275218, "T", "Re: [CS:GO] Missing ViewModel...", "04-12-2017", "18:29", 1);
+  writeLink(2511660, 0, 0, 240520, "T", "Re: [CS:GO] Missing ViewModel...", "04-12-2017", "18:47", 1);
+  writeLink(2576047, 0, 0, 265019, "T", "Re: [CS:GO] Missing ViewModel...", "02-03-2018", "05:26", 1);
+  writeLink(2688442, 0, 0, 276228, "L", "Re: [CS:GO] Missing ViewModel...", "03-25-2020", "04:51", 1);
+
+//-->
+</script>
+		<!-- end post links -->
+		</div>
+	</div>
+	</td>
+</tr>
+
+</table>
+
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- /thread posts list -->
+
+
+
+
+
+
+<div id="posts"><!-- post #2374792 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2374792" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2374792 -->
+
+
+	<table id="post2374792" class="ttop" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+				<td class="thead" style="font-weight:normal; color: #FFA34F; border-right: 1px solid #FFFFFF;" align="center">
+		                 	<strong>Author</strong>	
+				</td>
+				<td class="thead" style="font-weight:normal; color: #FFA34F;" align="center">
+			
+<strong></strong>
+
+				</td>
+			
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+		<td class="alt2" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top" rowspan="3">
+        
+			
+			<div id="postmenu_2374792">
+	                        
+				
+					<a class="bigusername" href="member.php?u=250443">ch4os</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2374792", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					Member
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=250443">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar250443_1.gif" alt="ch4os's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Jun 2014</div>
+
+
+
+				
+				
+				
+				<div>
+				<!--Posts: 41 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+              <!-- SourceMod plugin info box -->
+                <td width="100%" class="alt3">
+                        <table width="100%">
+                           <tr> <td> <table width="100%" class="panel">
+    <tr class="alt2">
+        <td width="15%">
+        <div style="font-size: 9pt; font-weight: bold;">Plugin ID:</div>
+        </td>
+        <td width="35%">
+        <div style="font-size: 9pt; font-weight: bold;">4962</div>
+        </td>
+        <td width="15%">
+        <div style="font-size: 9pt; font-weight: bold;">Plugin Version: </div>
+        </td>
+        <td width="35%">
+        <div style="font-size: 9pt; font-weight: bold;">1.1</div>
+        </td>
+    </tr>
+    <tr class="alt3">
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;">Plugin Category: </div> 
+        </td> 
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;">Gameplay</div>
+        </td>
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;">Plugin Game: </div> 
+        </td>
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;">Counter-Strike: GO</div>
+        </td>
+    </tr>
+    <tr class="alt2">
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;">Plugin Dependencies: </div>
+        </td>
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;"><ul></ul></div>
+        </td>
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;">Servers with this Plugin: </div>
+        </td>
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;">
+&nbsp;</div>
+        </td>
+<td></td><td></td>
+    </tr>
+    <tr class="alt3">
+        <td>
+        <div style="font-size: 9pt; font-weight: bold;">Plugin Description: </div>
+        </td>
+        <td colspan="3">
+        <div style="font-size: 9pt; font-weight: bold;">This plugin tries to prevent the annoying bug of sometimes losing your viewmodel after someone else joins spectator</div>
+        </td>
+    </tr>
+
+</table> </td> </tr>
+                        </table>
+                 </td>
+             </tr>
+             <tr>
+                 <!-- <td class="thead" style="font-weight:normal; color: #FFA34F;" align="center"> <strong>Message</strong> 
+                 </td> -->
+             </tr>
+          <tr>
+
+        
+        	<td class="alt2" style="margin-left: 175px;" id="td_post_2374792">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2374792"> </a> <a href="showthread.php?p=2374792#post2374792"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								12-21-2015
+								
+								
+									, 10:07
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 [CS:GO] Missing ViewModel Fix v1.1 [2017-02-02]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2374792" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2374792&amp;postcount=1" target="new" rel="nofollow" id="postcount2374792" name="1"><strong>1</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2374792" style="width: 100%; display: block;">
+                				<u><b>Description</b></u><br/>
+<br/>
+Did you ever experience this strange bug where your viewmodel suddenly disappears and you didn't do anything?<br/>
+This is actually an engine bug Valve should try to fix.<br/>
+<br/>
+This plugin tries to prevent this bug from happening on your server.<br/>
+<br/>
+<a class="proxied-img-link" href="http://web.archive.org/web/20240611221837/http://i.imgur.com/wy1aXrX.gif" rel="nofollow noopener"><img class="proxied-img" src="http://web.archive.org/web/20240611221837im_/https://forums.alliedmods.net/image-proxy/1a06fb4588425a58c9c8e19be5740ffd8991a480/687474703a2f2f692e696d6775722e636f6d2f777931615872582e676966" border="0" alt=""/></a><br/>
+<br/>
+<u><b>Installation</b></u><br/>
+<br/>
+- Drop missing_viewmodel_fix.smx into addons/sourcemod/plugins.<br/>
+- Restart server and you're good to go.<br/>
+<br/>
+<u><b>Explanation of the bug</b></u><br/>
+<br/>
+If someone joins spectator mode and watches someone else in first  person mode, the player still alive can't see their viewmodel (weapon  and hands) anymore. It looks like &quot;r_drawviewmodel 0&quot; was executed. This only happens if &quot;mp_death_drop_gun&quot; is set to 1.<br/>
+<br/>
+How can this be replicated exactly? <br/>
+1) Run your server with default competitive settings, with or without  MetaMod/SourceMod.<br/>
+2) Start up de_dust2.<br/>
+3) Join CT team together with a friend.<br/>
+4) You have to be apart enough for this to work (as this bug seems to  only happen when transition effect is not visible), so let your friend  walk all the way on A long until he reaches pit.<br/>
+5) You stay on CT spawn, make sure you've set &quot;cl_spec_mode&quot; to 4 (firstperson) - this is part of the bug.<br/>
+6) Join spectator mode - your friend's viewmodel is now gone.<br/>
+<br/>
+<u><b>What this plugin does</b></u><br/>
+<br/>
+This plugin intercepts teamjoins to spectator and forces the client to set &quot;cl_spec_mode&quot; to 6 (free look) first. As soon as the client has set freelook mode the teamjoin is performed. This causes the client to start in freelook mode and therefore prevents the bug.<br/>
+<br/>
+<u><b>Limitations</b></u><br/>
+<br/>
+This plugin may not work if you use other plugins that intercept teamjoins as well (like TeamChange Unlimited).<br/>
+<br/>
+Fix for TeamChange Unlimited:<br/>
+<br/>
+Change this:<br/>
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">PHP Code:</div>
+	<div class="alt2" dir="ltr" style="margin: 0px; padding: 6px; border: 1px inset; width: auto; height: 34px; text-align: left; overflow: auto">
+		<code style="white-space:nowrap">
+			<!-- php buffer start --><code><span style="color: #000000">
+<span style="color: #0000BB">TeamChangeActual</span><span style="color: #007700">(</span><span style="color: #0000BB">client</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">toteam</span><span style="color: #007700">);&nbsp;
+<br/></span><span style="color: #0000BB"></span>
+</span>
+</code><!-- php buffer end -->
+		</code>
+	</div>
+</div>To this:<br/>
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">PHP Code:</div>
+	<div class="alt2" dir="ltr" style="margin: 0px; padding: 6px; border: 1px inset; width: auto; height: 98px; text-align: left; overflow: auto">
+		<code style="white-space:nowrap">
+			<!-- php buffer start --><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">toteam&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">TEAM_SPECTATE</span><span style="color: #007700">)&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">Plugin_Continue</span><span style="color: #007700">;
+<br/>}&nbsp;else&nbsp;{
+<br/>&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">TeamChangeActual</span><span style="color: #007700">(</span><span style="color: #0000BB">client</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">toteam</span><span style="color: #007700">);
+<br/>}&nbsp;
+<br/></span><span style="color: #0000BB"></span>
+</span>
+</code><!-- php buffer end -->
+		</code>
+	</div>
+</div><u><b>Valve?</b></u><br/>
+<br/>
+Hopefully Valve will fix this bug so this plugin won't be needed anymore soon.<br/>
+<br/>
+<br/>
+<b><font color="Red">**EDIT** There's an updated version by SHUFEN.jp (thanks!) -&gt; see <a href="http://web.archive.org/web/20240611221837/https://forums.alliedmods.net/showpost.php?p=2492146&amp;postcount=5" target="_blank" rel="noopener">post #5</a> for download link</font></b><br/>
+<br/>
+<br/>
+<u><b>Old download</b></u>
+                				</div>
+						<!-- / message -->
+	
+						
+						<!-- attachments -->
+							<div style="padding:6px">
+							
+							
+						
+							
+							
+							
+							
+							
+								<fieldset class="fieldset">
+									<legend>Attached Files</legend>
+									<table cellpadding="0" cellspacing="3" border="0">
+									<tr>
+	<td><img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/attach/sp.gif" alt="File Type: sp" width="16" height="16" border="0" style="vertical-align:baseline"/></td>
+		<td>
+		
+			
+				<a href="http://web.archive.org/web/20240611221837/https://www.sourcemod.net/vbcompiler.php?file_id=150666"><strong>Get Plugin</strong></a> or
+				<a href="attachment.php?attachmentid=150666&amp;d=1450710416">Get Source</a> (missing_viewmodel_fix.sp - 2162 views - 1.9 KB)
+			
+		
+	</td>
+</tr>
+									</table>
+								</fieldset>
+							
+							
+							
+							
+							</div>
+						<!-- / attachments -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- edit note -->
+							<div class="smallfont">			<hr size="1" style="color:#FFFFFF"/>
+								<em>
+								
+									Last edited by ch4os; 04-12-2017 at <span class="time">14:34</span>.
+								
+								Reason: New version by SHUFEN.jp, see #5
+								</em>
+							</div>
+						<!-- / edit note -->
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+		<td class="alt2" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="ch4os is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+		<td class="alt2" align="left" style="border-top: 1px solid #FFFFFF;">
+        
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2374792 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2374792_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">ch4os</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=250443">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=250443" rel="nofollow">Send a private message to ch4os</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=250443" rel="nofollow">Find More Posts by ch4os</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2374792 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2374792 --><!-- post #2374833 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2374833" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2374833 -->
+
+
+
+	<table id="post2374833" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+        	<td class="alt3" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2374833">
+	                        
+				
+					<a class="bigusername" href="member.php?u=260048">whtevrwt</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2374833", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					AlliedModders Donor
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=260048">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar260048_3.gif" alt="whtevrwt's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Apr 2015</div>
+
+
+
+				
+				
+				
+				<div>
+				<!--Posts: 320 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+		<td class="alt3" style="margin-left: 175px;" id="td_post_2374833">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2374833"> </a> <a href="showthread.php?p=2374833#post2374833"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								12-21-2015
+								
+								
+									, 13:38
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.0.0 [2015-12-21]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2374833" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2374833&amp;postcount=2" target="new" rel="nofollow" id="postcount2374833" name="2"><strong>2</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2374833" style="width: 100%; display: block;">
+                				I've honestly never experienced this bug. But, I'm sorry for those who do.
+                				</div>
+						<!-- / message -->
+	
+						
+						
+						
+						
+						
+							<!-- sig -->
+		__________________<br/>					
+<div style="max-width: 600px; max-height: 131px; _width: 600px; _height: 131px; overflow: hidden;">
+								
+
+<a href="http://web.archive.org/web/20240611221837/https://valid.x86.fr/q79l83" target="_blank" rel="noopener"><img class="proxied-img" src="http://web.archive.org/web/20240611221837im_/https://forums.alliedmods.net/image-proxy/82c0614ddc7713e890b0bf2a1fea7972418efef3/68747470733a2f2f76616c69642e7838362e66722f63616368652f62616e6e65722f7137396c38332d362e706e67" border="0" alt=""/></a>
+							</div>
+							<!-- / sig -->
+						
+						
+						
+						
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+        	<td class="alt3" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="whtevrwt is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+        	<td class="alt3" align="left" style="border-top: 1px solid #FFFFFF;">
+	
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2374833 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2374833_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">whtevrwt</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=260048">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=260048" rel="nofollow">Send a private message to whtevrwt</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://web.archive.org/web/20240611221837/http://emdclan.com/" rel="nofollow noopener" target="_blank">Visit whtevrwt's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=260048" rel="nofollow">Find More Posts by whtevrwt</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2374833 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2374833 --><!-- post #2374848 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2374848" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2374848 -->
+
+
+
+	<table id="post2374848" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+		<td class="alt2" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2374848">
+	                        
+				
+					<a class="bigusername" href="member.php?u=250443">ch4os</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2374848", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					Member
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=250443">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar250443_1.gif" alt="ch4os's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Jun 2014</div>
+
+
+
+				
+				
+				
+				<div>
+				<!--Posts: 41 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+        	<td class="alt2" style="margin-left: 175px;" id="td_post_2374848">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2374848"> </a> <a href="showthread.php?p=2374848#post2374848"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								12-21-2015
+								
+								
+									, 14:14
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.0.0 [2015-12-21]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2374848" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2374848&amp;postcount=3" target="new" rel="nofollow" id="postcount2374848" name="3"><strong>3</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2374848" style="width: 100%; display: block;">
+                				Well, problem with this bug is:<br/>
+<br/>
+On normal match servers you probably won't see this as people usually join T or CT to play. So they won't join spectator to trigger the bug.<br/>
+<br/>
+And on bigger community servers where people more often join spectator mode, you still need a greater distance to not trigger the transition effect. Which is highly unlikely if there are many people on the server. So the bug won't be seen often there, too.<br/>
+<br/>
+You will probably most likely see this bug on private servers when you practice smoke grenades and tactics with your buddies. Or on servers with large maps like surf maps, where the transition effect is less likely to happen when joining spectator.<br/>
+<br/>
+That's probably why noone really knows this bug so far. Which makes it even harder for Valve to recognize <img src="/web/20240611221837im_/https://forums.alliedmods.net/images/smilies/confused.gif" border="0" alt="" title="Confused" class="inlineimg"/>
+                				</div>
+						<!-- / message -->
+	
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- edit note -->
+							<div class="smallfont">			<hr size="1" style="color:#FFFFFF"/>
+								<em>
+								
+									Last edited by ch4os; 12-21-2015 at <span class="time">14:19</span>.
+								
+								
+								</em>
+							</div>
+						<!-- / edit note -->
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+		<td class="alt2" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="ch4os is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+		<td class="alt2" align="left" style="border-top: 1px solid #FFFFFF;">
+        
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2374848 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2374848_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">ch4os</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=250443">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=250443" rel="nofollow">Send a private message to ch4os</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=250443" rel="nofollow">Find More Posts by ch4os</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2374848 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2374848 --><!-- post #2375088 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2375088" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2375088 -->
+
+
+
+	<table id="post2375088" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+        	<td class="alt3" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2375088">
+	                        
+				
+					<a class="bigusername" href="member.php?u=74431">zipcore</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2375088", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					Veteran Member
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=74431">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar74431_2.gif" alt="zipcore's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Mar 2010</div>
+
+
+
+				<div>Location: m_flZipcore</div>
+				
+				
+				<div>
+				<!--Posts: 1,192 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+		<td class="alt3" style="margin-left: 175px;" id="td_post_2375088">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2375088"> </a> <a href="showthread.php?p=2375088#post2375088"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								12-22-2015
+								
+								
+									, 07:11
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.0.0 [2015-12-21]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2375088" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2375088&amp;postcount=4" target="new" rel="nofollow" id="postcount2375088" name="4"><strong>4</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2375088" style="width: 100%; display: block;">
+                				Great!
+                				</div>
+						<!-- / message -->
+	
+						
+						
+						
+						
+						
+							<!-- sig -->
+		__________________<br/>					
+<div style="max-width: 600px; max-height: 131px; _width: 600px; _height: 131px; overflow: hidden;">
+								
+
+<a href="http://web.archive.org/web/20240611221837/http://steamcommunity.com/profiles/76561198035410392/" target="_blank" rel="nofollow noopener"><img class="proxied-img" src="http://web.archive.org/web/20240611221837im_/https://forums.alliedmods.net/image-proxy/c3ec62a0e5035e45378f495d1683c350fc59bf27/687474703a2f2f737465616d7369676e61747572652e636f6d2f7374617475732f656e676c6973682f37363536313139383033353431303339322e706e67" border="0" alt=""/></a><a href="http://web.archive.org/web/20240611221837/steam://friends/add/76561198035410392" target="_blank" rel="nofollow noopener"><img class="proxied-img" src="http://web.archive.org/web/20240611221837im_/https://forums.alliedmods.net/image-proxy/baa5de9d757204e9f6ba66f7758725be160c2e9b/687474703a2f2f737465616d7369676e61747572652e636f6d2f416464467269656e642e706e67" border="0" alt=""/></a>
+							</div>
+							<!-- / sig -->
+						
+						
+						
+						
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+        	<td class="alt3" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="zipcore is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+        	<td class="alt3" align="left" style="border-top: 1px solid #FFFFFF;">
+	
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2375088 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2375088_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">zipcore</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=74431">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=74431" rel="nofollow">Send a private message to zipcore</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=74431" rel="nofollow">Find More Posts by zipcore</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2375088 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2375088 --><!-- post #2492146 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2492146" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2492146 -->
+
+
+
+	<table id="post2492146" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+		<td class="alt2" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2492146">
+	                        
+				
+					<a class="bigusername" href="member.php?u=250145">SHUFEN</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2492146", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					Senior Member
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=250145">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar250145_1.gif" alt="SHUFEN's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Jun 2014</div>
+
+
+
+				<div>Location: Japan, Tokyo</div>
+				
+				
+				<div>
+				<!--Posts: 192 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+        	<td class="alt2" style="margin-left: 175px;" id="td_post_2492146">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2492146"> </a> <a href="showthread.php?p=2492146#post2492146"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								02-02-2017
+								
+								
+									, 11:00
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.0.0 [2015-12-21]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2492146" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2492146&amp;postcount=5" target="new" rel="nofollow" id="postcount2492146" name="5"><strong>5</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2492146" style="width: 100%; display: block;">
+                				I fixed some things of this, now working fine always.<br/>
+I publish it here.
+                				</div>
+						<!-- / message -->
+	
+						
+						<!-- attachments -->
+							<div style="padding:6px">
+							
+							
+						
+							
+							
+							
+							
+							
+								<fieldset class="fieldset">
+									<legend>Attached Files</legend>
+									<table cellpadding="0" cellspacing="3" border="0">
+									<tr>
+	<td><img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/attach/sp.gif" alt="File Type: sp" width="16" height="16" border="0" style="vertical-align:baseline"/></td>
+		<td>
+		
+			
+				<a href="http://web.archive.org/web/20240611221837/https://www.sourcemod.net/vbcompiler.php?file_id=160537"><strong>Get Plugin</strong></a> or
+				<a href="attachment.php?attachmentid=160537&amp;d=1486051154">Get Source</a> (missing_viewmodel_fix.sp - 1578 views - 2.4 KB)
+			
+		
+	</td>
+</tr>
+									</table>
+								</fieldset>
+							
+							
+							
+							
+							</div>
+						<!-- / attachments -->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+		<td class="alt2" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="SHUFEN is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+		<td class="alt2" align="left" style="border-top: 1px solid #FFFFFF;">
+        
+        		<table>
+        			<tr>
+        				<td>
+        					    <a href="#" onclick="imwindow('skype', '250145', 400, 285); return false;"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/im_skype.gif" alt="Send a message via Skype? to SHUFEN" border="0"/></a>
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2492146 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2492146_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">SHUFEN</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=250145">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=250145" rel="nofollow">Send a private message to SHUFEN</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://web.archive.org/web/20240611221837/https://possession.jp/" rel="nofollow noopener" target="_blank">Visit SHUFEN's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=250145" rel="nofollow">Find More Posts by SHUFEN</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2492146 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2492146 --><!-- post #2492147 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2492147" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2492147 -->
+
+
+
+	<table id="post2492147" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+        	<td class="alt3" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2492147">
+	                        
+				
+					<a class="bigusername" href="member.php?u=74234">Mitchell</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2492147", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					~lick~
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=74234">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar74234_9.gif" alt="Mitchell's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Mar 2010</div>
+
+
+
+				
+				
+				
+				<div>
+				<!--Posts: 7,028 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+		<td class="alt3" style="margin-left: 175px;" id="td_post_2492147">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2492147"> </a> <a href="showthread.php?p=2492147#post2492147"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								02-02-2017
+								
+								
+									, 11:02
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.0.0 [2015-12-21]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2492147" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2492147&amp;postcount=6" target="new" rel="nofollow" id="postcount2492147" name="6"><strong>6</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2492147" style="width: 100%; display: block;">
+                				has anybody tried sv_force_transmit_ents?
+                				</div>
+						<!-- / message -->
+	
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- edit note -->
+							<div class="smallfont">			<hr size="1" style="color:#FFFFFF"/>
+								<em>
+								
+									Last edited by Mitchell; 02-02-2017 at <span class="time">12:55</span>.
+								
+								
+								</em>
+							</div>
+						<!-- / edit note -->
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+        	<td class="alt3" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="Mitchell is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+        	<td class="alt3" align="left" style="border-top: 1px solid #FFFFFF;">
+	
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2492147 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2492147_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Mitchell</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=74234">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=74234" rel="nofollow">Send a private message to Mitchell</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://web.archive.org/web/20240611221837/http://mtch.tech/" rel="nofollow noopener" target="_blank">Visit Mitchell's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=74234" rel="nofollow">Find More Posts by Mitchell</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2492147 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2492147 --><!-- post #2492161 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2492161" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2492161 -->
+
+
+
+	<table id="post2492161" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+		<td class="alt2" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2492161">
+	                        
+				
+					<a class="bigusername" href="member.php?u=258715"><font color="#FF7F00"><b>sneaK</b></font></a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2492161", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					SourceMod Moderator
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=258715">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar258715_5.gif" alt="sneaK's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Feb 2015</div>
+
+
+
+				<div>Location: USA</div>
+				
+				
+				<div>
+				<!--Posts: 2,650 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+        	<td class="alt2" style="margin-left: 175px;" id="td_post_2492161">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2492161"> </a> <a href="showthread.php?p=2492161#post2492161"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								02-02-2017
+								
+								
+									, 12:26
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.0.0 [2015-12-21]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2492161" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2492161&amp;postcount=7" target="new" rel="nofollow" id="postcount2492161" name="7"><strong>7</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2492161" style="width: 100%; display: block;">
+                				<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%" style="table-layout: fixed;">
+	<tr>
+		<td class="quote" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>Mitchell</strong>
+					<a href="showthread.php?p=2492147#post2492147" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/viewpost.svg" border="0" alt="View Post"/></a>
+				</div>
+				<div style="font-style:italic">has anybody tried sv_force_transmit_entities?</div>
+			
+		</td>
+	</tr>
+	</table>
+</div><!-- Code block -->
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: 35px; text-align: left; overflow: auto">sv_force_transmit_ents - Will transmit all entities to client, regardless of PVS conditions (will still skip based on transmit flags, however).</pre>
+</div>
+<!-- /Code block -->Would this even fix the issue? Also seems like it would increase server load significantly.<br/>
+<br/>
+Thank you shufen for the changes, will check this out!!
+                				</div>
+						<!-- / message -->
+	
+						
+						
+						
+						
+						
+							<!-- sig -->
+		__________________<br/>					
+<div style="max-width: 600px; max-height: 131px; _width: 600px; _height: 131px; overflow: hidden;">
+								
+
+<a class="proxied-img-link" href="http://web.archive.org/web/20240611221837/https://i.imgur.com/7XiwfNG.png" rel="nofollow noopener"><img class="proxied-img" src="http://web.archive.org/web/20240611221837im_/https://forums.alliedmods.net/image-proxy/19670eaea8f6d2fe9bfffa28d609931745b5b6d5/68747470733a2f2f692e696d6775722e636f6d2f37586977664e472e706e67" border="0" alt=""/></a><br/>
+<font size="1"><a href="http://web.archive.org/web/20240611221837/https://www.sourcemod.net/donate.php" target="_blank" rel="nofollow noopener">Donate</a> - <a href="http://web.archive.org/web/20240611221837/https://github.com/sneak-it" target="_blank" rel="nofollow noopener">GitHub</a></font>
+							</div>
+							<!-- / sig -->
+						
+						
+						
+						
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+		<td class="alt2" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="sneaK is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+		<td class="alt2" align="left" style="border-top: 1px solid #FFFFFF;">
+        
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2492161 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2492161_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">sneaK</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=258715">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=258715" rel="nofollow">Send a private message to sneaK</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://web.archive.org/web/20240611221837/https://snksrv.com/" rel="nofollow noopener" target="_blank">Visit sneaK's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=258715" rel="nofollow">Find More Posts by sneaK</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2492161 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2492161 --><!-- post #2492169 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2492169" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2492169 -->
+
+
+
+	<table id="post2492169" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+        	<td class="alt3" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2492169">
+	                        
+				
+					<a class="bigusername" href="member.php?u=74234">Mitchell</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2492169", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					~lick~
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=74234">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar74234_9.gif" alt="Mitchell's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Mar 2010</div>
+
+
+
+				
+				
+				
+				<div>
+				<!--Posts: 7,028 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+		<td class="alt3" style="margin-left: 175px;" id="td_post_2492169">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2492169"> </a> <a href="showthread.php?p=2492169#post2492169"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								02-02-2017
+								
+								
+									, 12:53
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.0.0 [2015-12-21]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2492169" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2492169&amp;postcount=8" target="new" rel="nofollow" id="postcount2492169" name="8"><strong>8</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2492169" style="width: 100%; display: block;">
+                				<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%" style="table-layout: fixed;">
+	<tr>
+		<td class="quote" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>blackhawk74</strong>
+					<a href="showthread.php?p=2492161#post2492161" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/viewpost.svg" border="0" alt="View Post"/></a>
+				</div>
+				<div style="font-style:italic"><!-- Code block -->
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: 35px; text-align: left; overflow: auto">sv_force_transmit_ents - Will transmit all entities to client, regardless of PVS conditions (will still skip based on transmit flags, however).</pre>
+</div>
+<!-- /Code block -->Would this even fix the issue? Also seems like it would increase server load significantly.<br/>
+<br/>
+Thank you shufen for the changes, will check this out!!</div>
+			
+		</td>
+	</tr>
+	</table>
+</div>Yeah that's the one, this was introduced with the transmit players iirc. Could be issues with the predicted viewmodel and the player's position, a bug that you see some times with players that &quot;teleport&quot; into your view. Here's a quick reference what i'm talking about<b></b>: <a href="http://web.archive.org/web/20240611221837/https://www.youtube.com/watch?v=4Uw8VkxpDzg" target="_blank" rel="nofollow noopener">https://www.youtube.com/watch?v=4Uw8VkxpDzg</a><br/>
+Edit: also I have no idea if that convar will impact performance, especially since one would normally think that hiding things from a player and calculating if they can see it may take more resources, but it's valve and they may have not skipped this check if the convar is set to 1.
+                				</div>
+						<!-- / message -->
+	
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- edit note -->
+							<div class="smallfont">			<hr size="1" style="color:#FFFFFF"/>
+								<em>
+								
+									Last edited by Mitchell; 02-02-2017 at <span class="time">12:57</span>.
+								
+								
+								</em>
+							</div>
+						<!-- / edit note -->
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+        	<td class="alt3" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="Mitchell is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+        	<td class="alt3" align="left" style="border-top: 1px solid #FFFFFF;">
+	
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2492169 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2492169_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Mitchell</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=74234">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=74234" rel="nofollow">Send a private message to Mitchell</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://web.archive.org/web/20240611221837/http://mtch.tech/" rel="nofollow noopener" target="_blank">Visit Mitchell's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=74234" rel="nofollow">Find More Posts by Mitchell</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2492169 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2492169 --><!-- post #2511584 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2511584" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2511584 -->
+
+
+
+	<table id="post2511584" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+		<td class="alt2" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2511584">
+	                        
+				
+					<a class="bigusername" href="member.php?u=250443">ch4os</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2511584", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					Member
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=250443">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar250443_1.gif" alt="ch4os's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Jun 2014</div>
+
+
+
+				
+				
+				
+				<div>
+				<!--Posts: 41 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+        	<td class="alt2" style="margin-left: 175px;" id="td_post_2511584">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2511584"> </a> <a href="showthread.php?p=2511584#post2511584"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								04-12-2017
+								
+								
+									, 14:32
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.0.0 [2015-12-21]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2511584" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2511584&amp;postcount=9" target="new" rel="nofollow" id="postcount2511584" name="9"><strong>9</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2511584" style="width: 100%; display: block;">
+                				Thanks for the update, SHUFEN.jp! Just saw this today. I updated the description to use your version instead.
+                				</div>
+						<!-- / message -->
+	
+						
+						
+						
+						
+						
+						
+						
+						
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+		<td class="alt2" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="ch4os is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+		<td class="alt2" align="left" style="border-top: 1px solid #FFFFFF;">
+        
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2511584 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2511584_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">ch4os</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=250443">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=250443" rel="nofollow">Send a private message to ch4os</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=250443" rel="nofollow">Find More Posts by ch4os</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2511584 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2511584 --><!-- post #2511649 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+	<div id="edit2511649" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<!-- post #2511649 -->
+
+
+
+	<table id="post2511649" class="tinside" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+	<tr>
+	    	
+	        	
+	        		<td class="bpost" colspan="2"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif"></td>
+	        	
+	        
+	</tr>
+	<tr valign="top">
+	
+        
+        	<td class="alt3" style="width: 175px; border-right: 1px solid #FFFFFF;" valign="top">
+        
+			
+			<div id="postmenu_2511649">
+	                        
+				
+					<a class="bigusername" href="member.php?u=240520">Neuro Toxin</a>
+					<script type="text/javascript"> vbmenu_register("postmenu_2511649", true); </script>
+				
+			</div>
+				
+			
+				<div class="smallfont">
+					Veteran Member
+				</div>
+			
+			
+			
+
+			
+			
+			
+				<div class="smallfont" style="margin: 0.5em;"><a href="member.php?u=240520">
+					
+						<img src="/web/20240611221837im_/https://forums.alliedmods.net/customavatars/avatar240520_1.gif" alt="Neuro Toxin's Avatar" border="0"/></a>
+					
+				</div>
+			
+	
+			<div class="smallfont">
+					
+				<div>Join Date: Oct 2013</div>
+
+
+
+				<div>Location: { closing the void; }</div>
+				
+				
+				<div>
+				<!--Posts: 4,451 -->
+				</div>
+				
+					
+			</div>
+			
+			<img src="/web/20240611221837im_/https://forums.alliedmods.net/images/misc/post_spacer.gif" border="0" height="1" valign="top">
+		
+		</td>
+
+        
+		<td class="alt3" style="margin-left: 175px;" id="td_post_2511649">
+        
+			<!-- icon and title -->
+			<table width="100%" height="5" style="table-layout: fixed;">
+				<tr>
+					<td align="left">
+						<div class="smalltext" style="height: 15px; margin: 0px; padding-bottom: 3px; overflow: hidden; vertical-align: top; ">
+
+								
+								<!-- status icon and date -->
+								<a name="post2511649"> </a> <a href="showthread.php?p=2511649#post2511649"> <img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/post_old.svg" alt="Old" border="0"/></a>
+								 
+								04-12-2017
+								
+								
+									, 18:10
+								
+								
+								
+                        					&nbsp;
+                        					
+								
+									 Re: [CS:GO] Missing ViewModel Fix v1.1 [2017-02-02]
+								
+							
+						</div>
+					</td>
+					<td align="right">
+						<!-- controls -->
+						
+						
+						
+							<a href="newreply.php?do=newreply&amp;p=2511649" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/quote.gif" alt="Reply With Quote" border="0"/></a>
+						
+						
+						
+						
+		
+						
+						
+							
+						
+						 
+							#<a href="showpost.php?p=2511649&amp;postcount=10" target="new" rel="nofollow" id="postcount2511649" name="10"><strong>10</strong></a>
+						
+						
+
+						
+						<!-- / controls -->
+					</td>
+				</tr>
+				<tr>
+					<td align="left" colspan="2"> 
+						<hr size="1" style="color:#D1D7DC; background-color:#D1D7DC;" color="#D1D7DC"/>
+						<!-- / icon and title -->
+
+						
+						
+						<!-- message -->
+                					<div id="post_message_2511649" style="width: 100%; display: block;">
+                				Bad spectator plugins cause this.<br/>
+<br/>
+How to replicate.<br/>
+<br/>
+1. Join a server<br/>
+2. Join a team<br/>
+3. Make plugin change you to spec with the iteam netprop<br/>
+4. The person you are specing bugs out as per OP<br/>
+<br/>
+This is not a game bug. This is caused by bad plugins.
+                				</div>
+						<!-- / message -->
+	
+						
+						
+						
+						
+						
+							<!-- sig -->
+		__________________<br/>					
+<div style="max-width: 600px; max-height: 131px; _width: 600px; _height: 131px; overflow: hidden;">
+								
+
+<a href="http://web.archive.org/web/20240611221837/https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=CZBK6NHWZXGBA" target="_blank" rel="nofollow noopener"><br/>
+Donate</a> | <a href="http://web.archive.org/web/20240611221837/http://aus-tg.com/" target="_blank" rel="nofollow noopener">AUS-TG</a> | <a href="http://web.archive.org/web/20240611221837/http://console.aus-tg.com/" target="_blank" rel="nofollow noopener">Console</a> | <a href="http://web.archive.org/web/20240611221837/https://forums.alliedmods.net/showthread.php?t=270519" target="_blank" rel="noopener">Dynamic Objects</a>
+							</div>
+							<!-- / sig -->
+						
+						
+						
+						
+						
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+        
+        	<td class="alt3" style="border-right: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF;">
+        
+			<img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/statusicon/user_offline.svg" alt="Neuro Toxin is offline" border="0"/>
+
+
+			
+			
+				
+				
+				
+			
+			
+			
+
+                        
+                        
+                         
+		</td>
+	
+        	<td class="alt3" align="left" style="border-top: 1px solid #FFFFFF;">
+	
+        		<table>
+        			<tr>
+        				<td>
+        					    
+        				</td>
+        				<td align="right">
+        					
+                                                
+        				</td>
+        			</tr>
+        		</table>
+		</td>
+	</tr>
+</table>
+
+
+<!-- post 2511649 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2511649_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Neuro Toxin</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?u=240520">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?do=newpm&amp;u=240520" rel="nofollow">Send a private message to Neuro Toxin</a></td></tr>
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://web.archive.org/web/20240611221837/http://aus-tg.com/" rel="nofollow noopener" target="_blank">Visit Neuro Toxin's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?do=finduser&amp;u=240520" rel="nofollow">Find More Posts by Neuro Toxin</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2511649 popup menu -->
+
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2511649 --><div id="lastpost"></div></div>
+
+<!-- start content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+<!-- / start content table -->
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr valign="top">
+	
+		<td class="smallfont" style="padding-top: 4px; width: 90px;"><a href="newreply.php?do=newreply&amp;noquote=1&amp;p=2511649" rel="nofollow"><img src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/reply.svg" alt="Reply" border="0"/></a> 
+</td><td align="left" style="padding-top: 10px;">
+<!-- BreadCrumbs -->
+<div class="bcrumbs">
+<a href="index.php" accesskey="1"><strong>AlliedModders Forum Index</a>
+	<span class="navbar">&gt; <a href="forumdisplay.php?f=52">SourceMod</a></span>
+
+
+	<span class="navbar">&gt; <a href="forumdisplay.php?f=123">Plugins</a></span>
+
+
+	<span class="navbar">&gt; <a href="forumdisplay.php?f=108">Plugins</a></span>
+
+</strong> </div>
+<!-- / BreadCrumbs -->
+
+ </td>
+		
+	
+		<td align="right" style="border-width: 1px;"><div class="pagenav" align="right">
+<table class="tborder" cellpadding="3" cellspacing="1" border="0">
+<tr>
+	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 2</td>
+	
+	
+		<td class="alt2"><span class="smallfont" title="Showing results 1 to 10 of 18"><strong>1</strong></span></td>
+ <td class="alt1"><a class="smallfont" href="showthread.php?p=2374792&amp;page=2" title="Show results 11 to 18 of 18">2</a></td>
+	<td class="alt1"><a rel="next" class="smallfont" href="showthread.php?p=2374792&amp;page=2" title="Next Page - Results 11 to 18 of 18">&gt;</a></td>
+	
+	<td class="vbmenu_control" title="showthread.php?p=2374792"><a name="PageNav"></a></td>
+</tr>
+</table>
+</div>
+						
+		</td>
+	
+</tr>
+</table>
+
+<!-- / controls below postbits -->
+
+
+
+
+<br/>
+
+<div class="smallfont" align="center">
+	<strong>&laquo;</strong>
+		<a href="showthread.php?t=276432&amp;goto=nextoldest" rel="nofollow">Previous Thread</a>
+		|
+		<a href="showthread.php?t=276432&amp;goto=nextnewest" rel="nofollow">Next Thread</a>
+	<strong>&raquo;</strong>
+</div>
+
+
+<br/>
+
+
+
+
+
+
+
+
+<!-- currently active users -->
+
+<!-- end currently active users -->
+
+
+<!-- popup menu contents -->
+<br/>
+
+<!-- thread tools menu -->
+<div class="vbmenu_popup" id="threadtools_menu" style="display:none">
+<form action="postings.php?t=276432&amp;pollid=" method="post" name="threadadminform">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Thread Tools<a name="goto_threadtools"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/printer.gif" alt="Show Printable Version"/> <a href="printthread.php?t=276432" accesskey="3" rel="nofollow">Show Printable Version</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/sendtofriend.gif" alt="Email this Page"/> <a href="sendmessage.php?do=sendtofriend&amp;t=276432" rel="nofollow">Email this Page</a></td>
+	</tr>
+	
+	
+	
+	</table>
+</form>
+</div>
+<!-- / thread tools menu -->
+
+<!-- Plugin Approve / Unapprove Form -->
+<form name="plugin_a_u" method="post" action="showthread.php?t=276432">
+<input type="hidden" name="userid" value="">
+<input type="hidden" name="postid" value="">
+<input type="hidden" name="threadid" value="">
+<input type="hidden" name="pdo" value="">
+<input type="hidden" name="s" value=""/>
+<input type="hidden" name="securitytoken" value="guest"/>
+</form>
+<!-- / Plugin Approve / Unnaprove Form -->
+
+
+<!-- **************************************************** -->
+
+<!-- thread display mode menu -->
+<div class="vbmenu_popup" id="displaymodes_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Display Modes<a name="goto_displaymodes"></a></td>
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option"><img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/mode_linear.gif" alt="Linear Mode"/> <a href="showthread.php?p=2374792&amp;mode=linear#post2374792">Switch to Linear Mode</a></td>
+	
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option" title="nohilite"><img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/mode_hybrid.gif" alt="Hybrid Mode"/> <strong>Hybrid Mode</strong></td>
+	
+	</tr>
+	<tr>
+	
+		<td class="vbmenu_option"><img class="inlineimg" src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/mode_threaded.gif" alt="Threaded Mode"/> <a href="showthread.php?p=2374792&amp;mode=threaded#post2374792">Switch to Threaded Mode</a></td>
+	
+	</tr>
+	</table>
+</div>
+<!-- / thread display mode menu -->
+
+<!-- **************************************************** -->
+
+
+
+<!-- **************************************************** -->
+
+
+
+<!-- / popup menu contents -->
+
+
+<!-- forum rules and admin links -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="bottom">
+	<td class="smallfont" align="left">
+		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="210">
+<thead>
+<tr>
+	<td class="thead">
+		<a style="float:right" href="#top" onclick="return toggle_collapse('forumrules')"><img id="collapseimg_forumrules" src="/web/20240611221837im_/https://forums.alliedmods.net/images/buttons/collapse_thead.svg" alt="" border="0"/></a>
+		Posting Rules
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div>You <strong>may not</strong> post new threads</div>
+		<div>You <strong>may not</strong> post replies</div>
+		<div>You <strong>may not</strong> post attachments</div>
+		<div>You <strong>may not</strong> edit your posts</div>
+		<hr/>
+		
+		<div><a href="misc.php?do=bbcode" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="misc.php?do=showsmilies" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>On</strong></div>
+		<div>HTML code is <strong>Off</strong></div>
+		<hr/>
+		<div><a href="misc.php?do=showrules" target="_blank">Forum Rules</a></div>
+	</div></td>
+</tr>
+</tbody>
+</table>
+	</td>
+	<td class="smallfont" align="right">
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		<tr>
+			<td>
+			<div class="smallfont" style="text-align:left; white-space:nowrap">
+	<form action="forumdisplay.php" method="get">
+	<input type="hidden" name="s" value=""/>
+	<input type="hidden" name="daysprune" value=""/>
+	<strong>Forum Jump</strong><br/>
+	<select name="f" onchange="this.form.submit();">
+		<optgroup label="Site Areas">
+			<option value="cp">User Control Panel</option>
+			<option value="pm">Private Messages</option>
+			<option value="subs">Subscriptions</option>
+			<option value="wol">Who's Online</option>
+			<option value="search">Search Forums</option>
+			<option value="home">Forums Home</option>
+		</optgroup>
+		
+		<optgroup label="Forums">
+		<option value="129" class="fjdpth0"> Server Discussion</option>
+<option value="130" class="fjdpth1">&nbsp; &nbsp;  Source Servers (SRCDS)</option>
+<option value="131" class="fjdpth1">&nbsp; &nbsp;  HL1 Servers (HLDS)</option>
+<option value="3" class="fjdpth0"> AMX Mod X</option>
+<option value="16" class="fjdpth1">&nbsp; &nbsp;  News</option>
+<option value="105" class="fjdpth1">&nbsp; &nbsp;  Bug Reports</option>
+<option value="7" class="fjdpth1">&nbsp; &nbsp;  General</option>
+<option value="161" class="fjdpth1">&nbsp; &nbsp;  Off-Topic</option>
+<option value="79" class="fjdpth1">&nbsp; &nbsp;  Plugins</option>
+<option value="12" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Suggestions / Requests</option>
+<option value="8" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Approved Plugins</option>
+<option value="26" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  New Plugin Submissions</option>
+<option value="27" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Unapproved/Old Plugins</option>
+<option value="25" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Translation Request</option>
+<option value="85" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  High-Traffic Plugins</option>
+<option value="104" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  GunGame</option>
+<option value="95" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  UAIO (Ultimate All-In-One Plugin)</option>
+<option value="128" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  xREDIRECT</option>
+<option value="88" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  CSDM</option>
+<option value="111" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  AMX Super</option>
+<option value="113" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  RuneMod</option>
+<option value="126" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Zombie Plague Mod</option>
+<option value="30" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  SuperHero Mod</option>
+<option value="41" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  News</option>
+<option value="36" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Tech Support</option>
+<option value="43" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Scripting Help</option>
+<option value="38" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Off-Topic / General Chat</option>
+<option value="84" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Heroes</option>
+<option value="44" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Suggestions / Requests</option>
+<option value="51" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Approved Heroes</option>
+<option value="35" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  New Submissions</option>
+<option value="91" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Unapproved/Old Heroes</option>
+<option value="100" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Module Heroes</option>
+<option value="50" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  SuperHero Mod Stats - By 123</option>
+<option value="48" class="fjdpth4">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  (OLD) Bug Reports</option>
+<option value="78" class="fjdpth1">&nbsp; &nbsp;  Scripting</option>
+<option value="11" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Scripting Help</option>
+<option value="83" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Code Snippets/Tutorials</option>
+<option value="9" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Module Coding</option>
+<option value="160" class="fjdpth1">&nbsp; &nbsp;  Donor Access</option>
+<option value="52" class="fjdpth0"> SourceMod</option>
+<option value="59" class="fjdpth1">&nbsp; &nbsp;  News</option>
+<option value="58" class="fjdpth1">&nbsp; &nbsp;  General</option>
+<option value="123" class="fjdpth1">&nbsp; &nbsp;  Plugins</option>
+<option value="108" class="fjsel" selected="selected">&nbsp; &nbsp; &nbsp; &nbsp;  Plugins</option>
+<option value="109" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Unapproved Plugins</option>
+<option value="60" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Plugin/Gameplay Ideas and Requests</option>
+<option value="153" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  High-Traffic Plugins</option>
+<option value="133" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  SourceMod Anti-Cheat</option>
+<option value="132" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Zombie:Reloaded</option>
+<option value="152" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  SourceBans / SourceBans++</option>
+<option value="154" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  VSH / Freak Fortress</option>
+<option value="157" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Store</option>
+<option value="155" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  SM_Hosties</option>
+<option value="156" class="fjdpth3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  HLstatsX:CE</option>
+<option value="107" class="fjdpth1">&nbsp; &nbsp;  Scripting</option>
+<option value="134" class="fjdpth1">&nbsp; &nbsp;  Extensions</option>
+<option value="112" class="fjdpth1">&nbsp; &nbsp;  Snippets and Tutorials</option>
+<option value="125" class="fjdpth1">&nbsp; &nbsp;  Donor Access</option>
+<option value="56" class="fjdpth1">&nbsp; &nbsp;  Metamod: Source</option>
+<option value="76" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Metamod:Source Plugins</option>
+<option value="74" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Metamod:Source Questions</option>
+<option value="75" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  Coding MM:S Plugins &amp; SM Extensions</option>
+<option value="55" class="fjdpth0"> Hosted Stuff</option>
+<option value="144" class="fjdpth1">&nbsp; &nbsp;  Asherkin's Plugins</option>
+<option value="145" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  TFDodgeball</option>
+<option value="146" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  TF2Items</option>
+<option value="147" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  SteamTools</option>
+<option value="82" class="fjdpth1">&nbsp; &nbsp;  Bail's Plugins</option>
+<option value="87" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  CSDM</option>
+<option value="77" class="fjdpth2">&nbsp; &nbsp; &nbsp; &nbsp;  CS:S DM</option>
+<option value="162" class="fjdpth0"> Off-Topic &amp; Trash</option>
+<option value="15" class="fjdpth1">&nbsp; &nbsp;  Off-Topic</option>
+<option value="22" class="fjdpth1">&nbsp; &nbsp;  Trash</option>
+
+		</optgroup>
+		
+	</select><input type="submit" class="button" value="Go"/>
+	</form>
+</div>
+			</td>
+		</tr>		
+		</table>
+	</td>
+</tr>
+</table>
+<!-- /forum rules and admin links -->
+
+<br/>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 10px 0px 10px" align="left">
+
+<br/>
+<div class="smallfont" align="center">All times are GMT -4. The time now is <span class="time">18:18</span>.</div>
+<br/>
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- /content area table -->
+
+<form action="index.php" method="get">
+	
+<table cellpadding="6" cellspacing="0" border="0" width="100%" class="page" align="center">
+<tr>
+	
+	
+	<td class="tfoot" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+				
+				<a href="http://web.archive.org/web/20240611221837/https://alliedmods.net/dmca">DMCA</a> -
+				
+				
+				<a href="archive/index.php">Archive</a> -
+				
+				<a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+	<div class="smallfont" align="center">
+	<!-- Do not remove this copyright notice -->
+	Powered by vBulletin&reg;<br/>Copyright &copy;2000 - 2024, vBulletin Solutions, Inc.<br/>
+	<!-- Do not remove this copyright notice -->
+	Theme made by Freecode
+	</div>
+
+	<div class="smallfont" align="center">
+	<!-- Do not remove  or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove  or your scheduled tasks will cease to function -->
+	
+	
+	</div>
+</div>
+
+</form>
+
+
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+
+</script>
+
+
+<!-- temp -->
+<div style="display:none">
+	<!-- thread rate -->
+	
+		
+	
+	<!-- / thread rate -->
+</div>
+
+</body>
+</html><!--
+     FILE ARCHIVED ON 22:18:37 Jun 11, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:25:08 Aug 23, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.686
+  exclusion.robots: 0.074
+  exclusion.robots.policy: 0.06
+  esindex: 0.01
+  cdx.remote: 5.949
+  LoadShardBlock: 104.914 (3)
+  PetaboxLoader3.datanode: 61.201 (4)
+  PetaboxLoader3.resolve: 69.964 (2)
+  load_resource: 97.986
+-->

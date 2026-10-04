@@ -1,0 +1,578 @@
+//======================================================================================================================================
+//	Gonarch - Call/Bark/Roar Sounds
+//======================================================================================================================================
+
+"NPC_Gonarch.GrowlHigh"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140db"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_roar_hiss1.wav"
+		"wave"	"npc/gonarch/gon_roar_hiss2.wav"
+		"wave"	"npc/gonarch/gon_roar1.wav"
+	}
+}
+
+"NPC_Gonarch.Roar"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140db"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_roar1.wav"
+		"wave"	"npc/gonarch/gon_roar1.wav"
+	}
+}
+
+"NPC_Gonarch.Anger"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140db"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_attack1.wav"
+		"wave"	"npc/gonarch/gon_attack4.wav"
+		"wave"	"npc/gonarch/gon_attack5.wav"
+		"wave"	"npc/gonarch/gon_pain8.wav"
+		"wave"	"npc/gonarch/gon_pain3.wav"
+		"wave"	"npc/gonarch/gon_roar1.wav"
+	}
+}
+
+"NPC_Gonarch.BreathSound"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_chat1.wav"
+		"wave"	"npc/gonarch/gon_chat2.wav"
+		"wave"	"npc/gonarch/gon_chat3.wav"
+		"wave"	"npc/gonarch/gon_chat4.wav"
+		"wave"	"npc/gonarch/gon_chat5.wav"
+		"wave"	"npc/gonarch/gon_chat6.wav"
+	}
+}
+
+"NPC_Gonarch.GrowlIdle"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_breath1.wav"
+		"wave"	"npc/gonarch/gon_breath3.wav"
+		"wave"	"npc/gonarch/gon_breath4.wav"
+	}
+}
+
+"NPC_Gonarch.Grunt"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_attack1.wav"
+		"wave"	"npc/gonarch/gon_attack2.wav"
+		"wave"	"npc/gonarch/gon_moan6.wav"
+		"wave"	"npc/gonarch/gon_roar1.wav"
+	}
+}
+
+"npc_gonarch.click.med"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_chat2.wav"
+		"wave"	"npc/gonarch/gon_chat3.wav"
+		"wave"	"npc/gonarch/gon_chat4.wav"
+		"wave"	"npc/gonarch/gon_chat8.wav"
+		"wave"	"npc/gonarch/gon_chat9.wav"
+	}
+}
+
+"npc_gonarch.click.long"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_chat6.wav"
+		"wave"	"npc/gonarch/gon_chat7.wav"
+	}
+}
+
+"npc_gonarch.growl"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_growl1.wav"
+		"wave"	"npc/gonarch/gon_growl1.wav"
+	}
+}
+
+"npc_gonarch.pain"
+{ 
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"rndwave"
+	{
+		//"wave"	"npc/gonarch/gon_pain1.wav"
+		//"wave"	"npc/gonarch/gon_pain2.wav"
+		//"wave"	"npc/gonarch/gon_pain3.wav"
+		"wave"	"npc/gonarch/gon_pain4.wav"
+		"wave"	"npc/gonarch/gon_pain5.wav"
+		"wave"	"npc/gonarch/gon_pain6.wav"
+		//"wave"	"npc/gonarch/gon_pain7.wav"
+		"wave"	"npc/gonarch/gon_pain8.wav"
+		//"wave"	"npc/gonarch/gon_attack4.wav"
+		//"wave"	"npc/gonarch/gon_attack5.wav"
+		//"wave"	"npc/gonarch/gon_roar_hiss3.wav"
+		//"wave"	"npc/gonarch/gon_roar1.wav"
+	}
+}
+
+"npc_gonarch.moan.close"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_moan1.wav"
+		"wave"	"npc/gonarch/gon_moan3.wav"
+		"wave"	"npc/gonarch/gon_moan5.wav"
+	}
+}
+
+"npc_gonarch.moan.far"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_moan2.wav"
+		"wave"	"npc/gonarch/gon_moan4.wav"
+	}
+}
+
+"npc_gonarch.roar.charge"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_pain1.wav"
+		"wave"	"npc/gonarch/gon_pain2.wav"
+		"wave"	"npc/gonarch/gon_pain3.wav"
+		//"wave"	"npc/gonarch/gon_roar_hiss1.wav"
+		//"wave"	"npc/gonarch/gon_roar_hiss2.wav"
+		"wave"	"npc/gonarch/gon_roar1.wav"
+	}
+}
+
+"npc_gonarch.roar.charge.stop"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"rndwave"
+	{
+		//"wave"	"npc/gonarch/gon_pain6.wav"
+		//"wave"	"npc/gonarch/gon_pain8.wav"
+		//"wave"	"npc/gonarch/gon_roar1.wav"
+		"wave"	"npc/gonarch/gon_roar_hiss1.wav"
+		"wave"	"npc/gonarch/gon_roar_hiss2.wav"
+
+	}
+}
+
+
+"npc_gonarch.taunt"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		//"wave"	"npc/gonarch/gon_chat2.wav"
+		//"wave"	"npc/gonarch/gon_chat6.wav"
+		//"wave"	"npc/gonarch/gon_chat8.wav"
+		"wave"	"npc/gonarch/gon_roar_hiss1.wav"
+		"wave"	"npc/gonarch/gon_roar_hiss2.wav"
+		"wave"	"npc/gonarch/gon_roar_hiss3.wav"
+	}
+}
+
+"npc_gonarch.taunt2"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_chat2.wav"
+		"wave"	"npc/gonarch/gon_chat6.wav"
+	}
+}
+
+
+//======================================================================================================================================
+//	Gonarch - Body Sounds
+//======================================================================================================================================
+
+//------------------------------------------------------------------------------------------------------------------------
+//  Footsteps - General Set
+
+"NPC_Gonarch.NearStepLight"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_90db"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_step1.wav"
+		"wave"	"npc/gonarch/gon_step2.wav"
+		"wave"	"npc/gonarch/gon_step3.wav"
+	}
+}
+
+"NPC_Gonarch.FarStepLight"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_90db"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_step1.wav"
+		"wave"	"npc/gonarch/gon_step2.wav"
+		"wave"	"npc/gonarch/gon_step3.wav"
+	}
+}
+
+"NPC_Gonarch.NearStepHeavy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_140db"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_step4.wav"
+		"wave"	"npc/gonarch/gon_step5.wav"
+		"wave"	"npc/gonarch/gon_step6.wav"
+	}
+}
+
+"NPC_Gonarch.FarStepHeavy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_140db"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_step4.wav"
+		"wave"	"npc/gonarch/gon_step5.wav"
+		"wave"	"npc/gonarch/gon_step6.wav"
+	}
+}
+
+
+"npc_gonarch.crash"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140db"
+
+	"rndwave"
+	{
+		"wave"	"npc\gonarch\gon_impact1.wav"
+	}
+}
+
+"npc_gonarch.crash.land"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_1.0db"
+
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_thump1.wav"
+		"wave"	"npc/gonarch/gon_thump1.wav"
+	}
+}
+
+
+//======================================================================================================================================
+//	Gonarch - Attacks
+//======================================================================================================================================
+
+"gonarch.LaunchMortar"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"physics/flesh/flesh_strider_impact_bullet1.wav"
+		"wave"	"physics/flesh/flesh_strider_impact_bullet2.wav"
+		"wave"	"physics/flesh/flesh_strider_impact_bullet3.wav"
+	}
+}
+
+"npc_gonarch.mortar.charge"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/charge1.wav"
+		"wave"	"npc/houndeye/charge2.wav"
+		"wave"	"npc/houndeye/charge3.wav"
+	}
+}
+
+"npc_gonarch.mortar.spit"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_birth1.wav"
+		"wave"	"npc/gonarch/gon_birth2.wav"
+	}
+}
+
+"npc_gonarch.ball.spit"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/goo_attack1.wav"
+		"wave"	"npc/bullsquid/goo_attack2.wav"
+		"wave"	"npc/bullsquid/goo_attack3.wav"
+	}
+}
+
+"npc_gonarch.melee.stab"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/body/body_medium_impact_hard5.wav"
+		"wave"	"physics/body/body_medium_impact_hard1.wav"
+		"wave"	"physics/body/body_medium_impact_hard3.wav"
+		"wave"	"physics/body/body_medium_impact_hard4.wav"
+	}
+}
+
+"npc_gonarch.melee.sackwhack"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/antlion_guard/shove1.wav"
+		"wave"	"npc/antlion_guard/shove1.wav"
+	}
+}
+
+"NPC_Gonarch.HitHard"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_impact1.wav"
+		"wave"	"npc/gonarch/gon_impact1.wav"
+	}
+}
+
+"npc_gonarch.melee.teabag"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"	"npc/bullsquid/eat1.wav"
+		"wave"	"npc/bullsquid/eat2.wav"
+	}
+}
+
+"npc_gonarch.bebcrab"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"physics/gibbing/gibbing1.wav"
+		"wave"	"physics/gibbing/gibbing2.wav"
+		"wave"	"physics/gibbing/gibbing3.wav"
+	}
+}
+
+"npc_gonarch.bebcrab2"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_birth1.wav"
+		"wave"	"npc/gonarch/gon_birth2.wav"
+		"wave"	"npc/gonarch/gon_birth3.wav"
+	}
+}
+
+"npc_gonarch.die1"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_die1.wav"
+		"wave"	"npc/gonarch/gon_die1.wav"
+	}
+}
+
+"npc_gonarch.die2"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"rndwave"
+	{
+		"wave"	"npc/gonarch/gon_die2.wav"
+		"wave"	"npc/gonarch/gon_die2.wav"
+	}
+}
+
+"npc_gonarch.pain4"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"wave"	"npc/gonarch/gon_pain4.wav"
+}
+
+"npc_gonarch.death"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"wave"	"npc/gonarch/gon_death.wav"
+}
+
+"npc_gonarch.deathscreech"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"wave"	"npc/gonarch/gon_pain4.wav"
+}
+
+"npc_gonarch.explode"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"wave"	"npc/gonarch/gon_explode.wav"
+}
+
+"NPC_BigMomma.SpitTouch1"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"wave"	"physics/gibbing/gibbing1.wav"
+}
+
+"NPC_BigMomma.SpitHit1"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"wave"	"physics/gibbing/gibbing2.wav"
+}
+
+"NPC_BigMomma.SpitHit2"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_140dB"
+	"wave"	"physics/gibbing/gibbing3.wav"
+}
+

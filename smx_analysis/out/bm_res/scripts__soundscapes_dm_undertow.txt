@@ -1,0 +1,1063 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP DM_UNDERTOW STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+"ut.util_indamb"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"11.0, 20.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\ind_amb1.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb4.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb5.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb7.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb8.wav"
+
+		}
+	}
+}
+
+"ut.util_indamb2"
+{
+	"playrandom"
+	{
+		"volume"	"1.0"
+		"pitch"		"90,110"
+		"time"		"11.0, 20.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"BMS_ambience\soundscape\ind_amb1.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb2.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb3.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb4.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb5.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb6.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb7.wav"
+			"wave"	"BMS_ambience\soundscape\ind_amb8.wav"
+
+		}
+	}
+}
+
+"undertow.util_conveyorbelts_stereo" 
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_conveyor1stereo.wav"
+		"soundlevel"	"SNDLVL_85dB"
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//================================================================================================================================
+//										Base Utility Soundscapes - Undertow
+//================================================================================================================================
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//							DO NOT USE IN THE ACTUAL VMFs.
+//
+//							They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//							for the overall environments being portrayed.
+//
+//							Scroll down to "Main Map Soundscapes - Subtransit" for the soundscapes proper.
+
+
+
+"undertow.vat_room.base"
+{
+	"dsp"				"0"
+	"dsp_volume"		"0"
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+"undertow.warehouse.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large7.wav"
+		"attenuation"	"0.9"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_industrial4.wav"
+		"attenuation"	"0.9"
+	}
+}
+
+"undertow.outside.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_outdoorbattle1a.wav"
+		"attenuation"	"1.4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"100"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_wind3.wav"
+		"attenuation"	"1.4"
+	}
+}
+
+"undertow.outside.water_util"
+{
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"100"
+		"wave"			")bms_ambience\room_ambience\r_ambience_water_room_st.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"undertow.office.base"
+{
+	"dsp"				"3"
+	"dsp_volume"		"1.0"	
+	
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_industrial6.wav"
+		"attenuation"	"1.0"		
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_industrial8.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"undertow.control.base"			
+{
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"115"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_med6.wav"
+		"attenuation"		"1.0"	
+	}
+}	
+
+"undertow.water_silo.base"		
+{
+	"dsp"					"25"
+	"dsp_volume"			"0.5"
+
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"110"
+		"wave"				"@BMS_ambience\room_ambience\r_ambience_lowrumble.wav"
+		"attenuation"		"0.8"
+	}
+}
+
+"undertow.conveyors.base"
+{
+	"dsp"					"17"
+	"dsp_volume"			"0.5"
+	"fadetime"				"3.0"
+
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//								Positional Utility Soundscapes - Undertow
+//================================================================================================================================
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 									DO NOT USE IN THE ACTUAL VMFs.
+//
+//									They are Building Blocks only, meant for insertion into the main soundscapes,
+//									in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//									via the info_target entity.
+//
+//									Scroll down to "Main Map Soundscapes - Subtransit" for the soundscapes list proper.
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Undertow, Outside Secton 1 (the only section outside)
+//									ut_out1, for positional shorthand.
+
+
+///////// info_targets ///////////
+
+// ut_out1_pos2_waterloop2
+
+// ut_out1_pos3_water10
+// ut_out1_pos4_water21
+
+// ut_out1_pos5_water15
+// ut_out1_pos6_water15a
+
+"ut.out1.util_pos2"
+{
+	"playlooping"
+	{
+		"wave"			"xen/object/xen_waterfall01_medium_r.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"2"
+	}
+}
+
+"ut.out1.util_pos3-4"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_water10.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"0.8"
+		
+		"position"		"3"
+	}
+	
+		"playlooping"
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_water21.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"0.7"
+		
+		"position"		"4"
+	}
+}
+
+"ut.out1.util_pos5-6"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_water15.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"0.6"
+		
+		"position"		"5"
+	}
+	
+		"playlooping"
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_water15a.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"0.6"
+		
+		"position"		"6"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Undertow, Control 1
+//									ut_ct1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// ut_ct1_pos0_comp1
+// ut_ct1_pos1_pipe1 
+// ut_ct1_pos2_driploop1
+
+"ut.ct1.util_pos0-2"	
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+		
+		"position"		"1"
+	}
+	
+		"playlooping"
+	{
+		"wave"			"ambient/water/drip_loop1.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.5"
+		
+		"position"		"2"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Undertow, Control 2
+//									ut_ct2, for positional shorthand.
+
+///////// info_targets ///////////
+
+// ut_ct2_pos7_comp1a
+
+"ut.ct2.util_pos7only"	
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp1a.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+		
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Undertow, Conveyors Section 1
+//									ut_con1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// ut_con1_pos0_med3
+// ut_con1_pos1_pipeamb
+
+"ut.con1.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_med3.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"wave"			")BMS_ambience\room_ambience\r_ambience_pipes1.wav"
+		"volume"		"0.45"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"1"
+	}		
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Undertow, Office 1
+//									ut_of1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// ut_of1_pos3_fan7
+// ut_of1_pos4_ehum1 
+
+"ut.of1.util_pos3-4"
+{
+	"playlooping"
+	{
+		"wave"			"bms_objects/fans/fan7.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"3"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.25"
+		
+		"position"		"4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Undertow, WaterSilo1
+//									ut_wso1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// ut_wso1_pos0_water5
+// ut_wso1_pos1_water6
+
+// ut_wso1_pos6_waterloop2
+// ut_wso1_pos7_steamloop 
+
+"ut.wso1.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_water5.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_water6.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"1"
+	}
+}
+
+"ut.wso1.util_pos6-7"
+{
+	"playlooping"
+	{
+		"wave"			"xen/object/xen_waterfall01_medium_l.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		
+		"position"		"6"
+	}
+	
+	"playlooping"
+	{
+//		"wave"			"ambient/gas/steam_loop1.wav"
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_hiss2.wav"
+		"volume"		"0.35"
+		"pitch"			"60"
+		"attenuation"	"1.2"
+		
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Undertow, Warehouse1
+//									ut_wh1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// ut_wh1_pos0_fan7
+// ut_wh1_pos1_misc6 
+
+// ut_wh1_pos2_ind11
+// ut_wh1_pos3_ehum1b
+// ut_wh1_pos4_fan6
+
+// ut_wh1_pos5_pipe1
+// ut_wh1_pos6_pipe1a
+// ut_wh1_pos7_pipe1b
+
+"ut.wh1.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"bms_objects/fans/fan7.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_misc6.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+		
+		"position"		"1"
+	}
+}
+
+"ut.wh1.util_pos2-4"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_ind11.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"0.9"
+		
+		"position"		"2"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.25"
+		
+		"position"		"3"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_objects/fans/fan6.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"0.8"
+		
+		"position"		"4"
+	}
+}
+
+"ut.wh1.util_pos5-7"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"0.9"
+		
+		"position"		"5"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1a.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.25"
+		
+		"position"		"6"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1b.wav"
+		"volume"		"1.0"
+		"pitch"			"100"
+		"attenuation"	"0.8"
+		
+		"position"		"7"
+	}
+}
+
+//================================================================================================================================
+//									Main Map Soundscapes -	Undertow
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// Undertow - Vat Room			//
+
+// DEV NOTE: This is not being used whatsoever. disregard.
+// This is the deathmatch equivalent of "c2a4b.river_room2b" 
+
+"undertow.vat_room"
+{
+	"dsp"				"3"
+	"dsp_volume"		"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"undertow.vat_room.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"ut.util_indamb"
+		"volume"		"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Outside			//
+
+"undertow.outside"
+{
+	"dsp"				"129"
+	"dsp_volume"		"0.25"
+
+	"playsoundscape"
+	{
+		"name"			"undertow.outside.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"undertow.outside.water_util"
+		"volume"		"1.0"
+	}	
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Outside 1
+	//--------------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"ut.out1.util_pos2"
+		"volume"		"0.5"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"ut.out1.util_pos3-4"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"ut.out1.util_pos5-6"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Office 1		//
+
+"undertow.office1"
+{
+	"dsp"					"25"
+	"dsp_volume"			"0.5"
+
+	"playsoundscape"
+	{
+		"name"				"undertow.office.base"
+		"volume"			"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Control 1, nearby
+	//--------------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"				"ut.ct1.util_pos0-2" 
+		"volume"			"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Office 1, nearby
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"				"ut.of1.util_pos3-4" 
+		"volume"			"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Outside 1, nearby
+	//--------------------------------------------------	
+	
+		"playsoundscape"
+	{
+		"name"			"ut.out1.util_pos5-6"
+		"volume"		"0.55"
+	}
+	
+	//--------------------------------------------------
+	// BLENDSCAPE for WareHouse1, nearby
+	//--------------------------------------------------	
+	
+	// info_target is 	"blendscape1a_to_warehouse"
+	
+	"playsoundscape"
+	{
+		"name"							"undertow.warehouse.base"
+		"volume"						"1.0"
+		"ambientpositionoverride" 		"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Control 1			//
+//								//
+//								// 
+
+"undertow.control1"			
+{
+	"dsp"				"2"
+	"dsp_volume"		"0.5"
+	
+	"playsoundscape"
+	{
+		"name"				"undertow.control.base"	
+		"volume"			"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"				"undertow.office.base"	
+		"volume"			"0.75"
+	}	
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Control 1
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"				"ut.ct1.util_pos0-2" 
+		"volume"			"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Office 1, nearby
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"				"ut.of1.util_pos3-4" 
+		"volume"			"1.0"
+	}
+
+	//--------------------------------------------------
+	// BLENDSCAPE POSITIONAL for WareHouse1, nearby
+	//--------------------------------------------------	
+
+	// info_target is 	"blendscape1a_to_warehouse"
+
+	"playsoundscape"
+	{
+		"name"							"undertow.warehouse.base"
+		"volume"						"1.0"
+		"ambientpositionoverride" 		"7"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Warehouse1		// 
+
+"undertow.warehouse1"
+{
+	"dsp"					"24"
+	"dsp_volume"			"0.5"
+
+	"playsoundscape"
+	{
+		"name"			"undertow.warehouse.base"
+		"volume"		"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, WareHouse1
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"ut.wh1.util_pos0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"ut.wh1.util_pos2-4"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"ut.wh1.util_pos5-7"
+		"volume"		"1.0"
+	}		
+
+	//--------------------------------------------------
+	//	MISC AMBIENT SOUND
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"ut.util_indamb"
+		"volume"		"0.5"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Conveyors, Section 1		// 
+
+
+"undertow.conveyors1" 
+{
+	"dsp"					"17"
+	"dsp_volume"			"0.5"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"			"undertow.conveyors.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"ut.con1.util_pos0-1"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"ut.out1.util_pos2"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"ut.out1.util_pos3-4"
+		"volume"		"0.7"
+	}	
+
+	"playsoundscape"
+	{
+		"name"			"ut.out1.util_pos5-6"
+		"volume"		"0.7"
+	}
+
+	// blendscape
+	// info_target is 	"blendscape1_to_warehouse"
+	
+	"playsoundscape"
+	{
+		"name"							"undertow.warehouse.base"
+		"volume"						"1.0"
+		"ambientpositionoverride" 		"7"
+	}	
+		
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Conveyors, Section 2			/  "undertow.util_conveyorbelts_stereo" 
+
+"undertow.conveyors2"
+{
+	"dsp"					"17"
+	"dsp_volume"			"0.5"
+	"fadetime"				"3.0"
+
+	"playsoundscape"
+	{
+		"name"				"undertow.conveyors.base"
+		"volume"			"1.0"
+	}
+
+	// special utility to enhance conveyor belt ambient_generic placements.
+	// meant to be subtle addition, thus the lower volume.
+	
+	"playsoundscape"
+	{
+		"name"				"undertow.util_conveyorbelts_stereo" 
+		"volume"			"0.3"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Outside 1, nearby
+	//--------------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"				"ut.out1.util_pos5-6"
+		"volume"			"0.7"
+	}
+
+
+	//--------------------------------------------------
+	// BLENDSCAPE for Water Silo 1, nearby
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"							"undertow.water_silo.base"
+		"volume"						"1.0"
+		"ambientpositionoverride"		"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Water Silo Pre Tunnel			//
+//											//
+//											//   
+
+"undertow.water_silo_pretunnel"
+{
+	"dsp"					"17"
+	"dsp_volume"			"0.5"
+
+	"playsoundscape"
+	{
+		"name"				"undertow.conveyors.base"
+		"volume"			"1.0"
+	}
+	
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Outside 1, nearby
+	//--------------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"ut.out1.util_pos2"
+		"volume"		"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Water Silo 1, nearby
+	//--------------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"ut.wso1.util_pos6-7"
+		"volume"		"1.0"
+	}
+
+	//--------------------------------------------------
+	// BLENDSCAPE for Water Silo 1, nearby
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"							"undertow.water_silo.base"
+		"volume"						"1.0"
+		"ambientpositionoverride"		"7"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Water Silo1			//
+//									//
+//									// 
+
+"undertow.water_silo1"	
+{
+	"dsp"					"25"
+	"dsp_volume"			"0.5"
+
+	"playsoundscape"
+	{
+		"name"				"undertow.water_silo.base"
+		"volume"			"1.0"
+	}
+
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Water Silo 1
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"				"ut.wso1.util_pos0-1"
+		"volume"			"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"				"ut.wso1.util_pos6-7"
+		"volume"			"1.0"
+	}
+
+	//--------------------------------------------------
+	// MISC AMBIENT SOUND
+	//--------------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"				"ut.util_indamb2"
+		"volume"			"0.7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Undertow - Control 2				//
+//									//
+//									// 
+
+"undertow.control2"		
+{
+	"dsp"				"2"
+	"dsp_volume"		"0.25"
+	
+	// set to half volume on purpose
+	
+	"playsoundscape"
+	{
+		"name"				"undertow.control.base"	
+		"volume"			"0.5"
+	}
+
+	// set to 0.75 to simulate sound dampening.
+	
+	"playsoundscape"
+	{
+		"name"				"undertow.outside.base"	
+		"volume"			"0.75"
+	}	
+	
+	//--------------------------------------------------
+	// POSITIONAL SOUNDS, Control 1
+	//--------------------------------------------------	
+	
+		"playsoundscape"
+	{
+		"name"				"ut.ct2.util_pos7only"	
+		"volume"			"1.0"
+	}
+}

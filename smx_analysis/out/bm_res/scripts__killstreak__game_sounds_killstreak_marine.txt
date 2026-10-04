@@ -1,0 +1,535 @@
+"Marine.KillStreak.FirstBlood"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\firstblood01.wav"
+}
+
+"Marine.KillStreak.DoubleKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\doublekill01.wav"
+}
+
+
+"Marine.KillStreak.MultiKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\multikill01.wav"
+}
+
+"Marine.KillStreak.MegaKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\megakill01.wav"
+}
+
+"Marine.KillStreak.UltraKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\ultrakill01.wav"
+}
+
+"Marine.KillStreak.LudicrousKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\ludicrouskill01.wav"
+}
+
+"Marine.KillStreak.MonsterKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\monsterkill01.wav"
+		"wave"			"killstreak\marine\monsterkill01_var01.wav"
+	}
+}
+
+"Marine.KillStreak.HolyShit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\holyshit01.wav"
+}
+
+"Marine.KillStreak.KillingSpree"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\killingspree01.wav"
+}
+
+"Marine.KillStreak.Rampage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\rampage01.wav"
+		"wave"			"killstreak\marine\rampage01_var01.wav"	
+	}
+}
+
+"Marine.KillStreak.Dominating"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+	"wave"			"killstreak\marine\dominating01.wav"
+	"wave"			"killstreak\marine\dominating02.wav"
+	}
+}
+
+"Marine.KillStreak.Unstoppable"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\unstoppable01.wav"
+}
+
+"Marine.KillStreak.Godlike"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\godlike01.wav"
+}
+
+"Marine.KillStreak.WickedSick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\wickedsick01.wav"
+}
+
+"Marine.Time.15Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\time_fifteen_minutes01.wav"
+		"wave"			"killstreak\marine\time_fifteen_minutes02.wav"
+	}
+}
+
+"Marine.Time.10Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\time_ten_minutes01.wav"
+		"wave"			"killstreak\marine\time_ten_minutes02.wav"
+	}
+}
+
+"Marine.Time.5Minutes"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\time_five_minutes01.wav"
+		"wave"			"killstreak\marine\time_five_minutes02.wav"
+		"wave"			"killstreak\marine\time_five_minutes03.wav"
+	}
+}
+
+"Marine.Time.1Minute"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\time_one_minute01.wav"
+		"wave"			"killstreak\marine\time_one_minute02.wav"
+	}
+}
+
+"Marine.Time.30Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\time_thirty_seconds01.wav"
+		"wave"			"killstreak\marine\time_thirty_seconds02.wav"
+	}
+}
+
+"Marine.Time.10Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\time_ten_seconds01.wav"
+		"wave"			"killstreak\marine\time_ten_seconds02.wav"
+	}
+}
+
+"Marine.Time.5Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\time_five_seconds.wav"
+}
+
+"Marine.Time.4Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\time_four_seconds.wav"
+}
+
+"Marine.Time.3Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\time_three_seconds.wav"
+}
+
+"Marine.Time.2Seconds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\time_two_seconds.wav"
+}
+
+"Marine.Time.1Second"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\time_one_seconds.wav"
+}
+
+"Marine.Game.TimeUp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\timeup01.wav"
+		"wave"			"killstreak\marine\timeup02.wav"
+		"wave"			"killstreak\marine\timeup03.wav"
+	}
+}
+
+"Marine.Game.Over"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\gameover01.wav"
+		"wave"			"killstreak\marine\gameover02.wav"
+		"wave"			"killstreak\marine\gameover02_var01.wav"
+		"wave"			"killstreak\marine\gameover03.wav"
+		"wave"			"killstreak\marine\gameover03_var01.wav"
+		"wave"			"killstreak\marine\gameover04.wav"
+		"wave"			"killstreak\marine\gameover04_var01.wav"
+		"wave"			"killstreak\marine\gameover04_var02.wav"
+		"wave"			"killstreak\marine\gameover05.wav"
+		"wave"			"killstreak\marine\gameover05_var01.wav"
+		"wave"			"killstreak\marine\gameover06.wav"
+		"wave"			"killstreak\marine\gameover06_var01.wav"
+		"wave"			"killstreak\marine\gameover07.wav"
+		"wave"			"killstreak\marine\gameover07_var01.wav"
+		"wave"			"killstreak\marine\gameover08.wav"
+		"wave"			"killstreak\marine\gameover08_var01.wav"
+	}
+}
+
+"Marine.Team.GainedLead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\teamleading01.wav"
+		"wave"			"killstreak\marine\teamleading01_var01.wav"
+		"wave"			"killstreak\marine\teamleading02.wav"
+		"wave"			"killstreak\marine\teamleading02_var01.wav"
+		"wave"			"killstreak\marine\teamleading03.wav"
+		"wave"			"killstreak\marine\teamleading04.wav"
+		"wave"			"killstreak\marine\teamleading04_var01.wav"
+		"wave"			"killstreak\marine\teamleading05.wav"
+		"wave"			"killstreak\marine\teamleading05_var01.wav"
+		"wave"			"killstreak\marine\teamleading05_var02.wav"
+		"wave"			"killstreak\marine\teamleading05_var03.wav"
+		"wave"			"killstreak\marine\teamleading06.wav"
+	}
+}
+
+"Marine.Team.Tied"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\teamsaretied01.wav"
+		"wave"			"killstreak\marine\teamsaretied01_var01.wav"
+		"wave"			"killstreak\marine\teamsaretied02.wav"
+		"wave"			"killstreak\marine\teamsaretied02_var02.wav"
+		"wave"			"killstreak\marine\teamsaretied03.wav"
+		"wave"			"killstreak\marine\teamsaretied03_var01.wav"
+		"wave"			"killstreak\marine\teamsaretied03_var02.wav"
+	}
+}
+
+"Marine.Team.LostLead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\teamleadlost01.wav"
+		"wave"			"killstreak\marine\teamleadlost01_var01.wav"
+		"wave"			"killstreak\marine\teamleadlost02.wav"
+		"wave"			"killstreak\marine\teamleadlost02_var01.wav"
+		"wave"			"killstreak\marine\teamleadlost03.wav"
+		"wave"			"killstreak\marine\teamleadlost03_var01.wav"
+		"wave"			"killstreak\marine\teamleadlost04.wav"
+		"wave"			"killstreak\marine\teamleadlost04_var01.wav"
+		"wave"			"killstreak\marine\teamleadlost05.wav"
+		"wave"			"killstreak\marine\teamleadlost05_var01.wav"
+	}
+}
+
+"Marine.Game.Win"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\gamewon01.wav"
+		"wave"			"killstreak\marine\gamewon01_var01.wav"
+		"wave"			"killstreak\marine\gamewon02.wav"
+		"wave"			"killstreak\marine\gamewon02_var01.wav"
+		"wave"			"killstreak\marine\gamewon03.wav"
+		"wave"			"killstreak\marine\gamewon03_var01.wav"
+		"wave"			"killstreak\marine\gamewon04.wav"
+		"wave"			"killstreak\marine\gamewon05.wav"
+		"wave"			"killstreak\marine\gamewon05_var01.wav"
+		"wave"			"killstreak\marine\gamewon06.wav"
+	}
+}
+
+"Marine.Game.Lose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\gamelost01.wav"
+		"wave"			"killstreak\marine\gamelost01_var01.wav"
+		"wave"			"killstreak\marine\gamelost02_var01.wav"
+		"wave"			"killstreak\marine\gamelost03.wav"
+		"wave"			"killstreak\marine\gamelost03_var01.wav"
+		"wave"			"killstreak\marine\gamelost04.wav"
+		"wave"			"killstreak\marine\gamelost04_var01.wav"
+		"wave"			"killstreak\marine\gamelost05.wav"
+		"wave"			"killstreak\marine\gamelost05_var01.wav"
+		"wave"			"killstreak\marine\gamelost06.wav"
+		"wave"			"killstreak\marine\gamelost06_var01.wav"
+	}
+}
+
+"Marine.Game.Draw"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+	"rndwave"
+	{
+		"wave"			"killstreak\marine\gamedraw01.wav"
+		"wave"			"killstreak\marine\gamedraw01_var01.wav"
+		"wave"			"killstreak\marine\gamedraw02.wav"
+		"wave"			"killstreak\marine\gamedraw03.wav"
+		"wave"			"killstreak\marine\gamedraw03_var01.wav"
+		"wave"			"killstreak\marine\gamedraw04.wav"
+		"wave"			"killstreak\marine\gamedraw05.wav"
+		"wave"			"killstreak\marine\gamedraw05_var01.wav"
+		"wave"			"killstreak\marine\gamedraw05_var02.wav"
+		"wave"			"killstreak\marine\gamedraw06.wav"
+		"wave"			"killstreak\marine\gamedraw06_var01.wav"
+		"wave"			"killstreak\marine\gamedraw06_var02.wav"
+	}
+}
+
+"Marine.KillStreak.OverKill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+	"wave"			"killstreak\marine\overkill01.wav"
+	"wave"			"killstreak\marine\overkill02.wav"
+	}
+}
+
+"Marine.Placement.First"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\mp_announcer_1stpl01.wav"
+}
+
+
+"Marine.Placement.Second"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\mp_announcer_2ndpl01.wav"
+}
+
+
+"Marine.Placement.Third"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"killstreak\marine\mp_announcer_3rdpl01.wav"
+}

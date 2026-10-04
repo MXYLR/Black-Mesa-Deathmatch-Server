@@ -1,0 +1,15 @@
+; mapcycle_ffa.txt - FFA 模式地图列表(bms_match 比赛插件)
+; 每行一个地图名;以 ; 或 / 开头的行会被忽略
+; 服务器 bms/maps 目录的 12 张官方 DM 图,按喜好删减即可
+dm_boom
+dm_bounce
+dm_chopper
+dm_crossfire
+dm_gasworks
+dm_lambdabunker
+dm_power
+dm_rail
+dm_stack
+dm_stalkyard
+dm_subtransit
+dm_undertow

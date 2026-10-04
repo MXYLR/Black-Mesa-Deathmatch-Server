@@ -1,0 +1,52 @@
+
+event HintMessageShow
+{
+	// show the hints
+	Animate HudHintDisplay Alpha	255 Linear 0.0 0.5
+
+	// flash text
+	Animate HudHintDisplay FgColor	"FgColor" 	Linear 0.0 0.01
+	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 0.5 0.2
+	Animate HudHintDisplay FgColor	"FgColor" 	Linear 0.7 0.2
+	Animate HudHintDisplay FgColor	"255 220 0 255" Linear 1.5 0.2
+	Animate HudHintDisplay FgColor	"FgColor" 	Linear 1.7 0.2
+
+	// hide the panel after a while	
+	Animate HudHintDisplay Alpha	0 Linear 12.0 1.0
+}
+
+event HintMessageHide
+{
+	Animate HudHintDisplay Alpha	0 Linear 0.0 0.5
+}
+
+event KeyHintMessageShow
+{
+	// show the hints
+	Animate HudHintKeyDisplay HintSize	"0"	Linear  0.0	0.1
+	Animate HudHintKeyDisplay HintSize	"1"	Deaccel 0.1	2.0
+	Animate HudHintKeyDisplay Alpha	255 Linear 0.0 0.01
+
+	// Flash background
+	Animate HudHintKeyDisplay	BgColor		"250 220 0 80"	Linear	0.0	0.01
+	Animate HudHintKeyDisplay	BgColor		"BgColor"	Deaccel	0.1	1.0
+	
+	Animate HudHintKeyDisplay	BgColor		"250 220 0 80"	Linear	1.5	0.01
+	Animate HudHintKeyDisplay	BgColor		"BgColor"	Deaccel	1.6	1.0
+	
+	Animate HudHintKeyDisplay	BgColor		"250 220 0 80"	Linear	3.0	0.01
+	Animate HudHintKeyDisplay	BgColor		"BgColor"	Deaccel	3.1	1.0
+
+	Animate HudHintKeyDisplay	FgColor		"BrightFg"	Linear	0.0	0.01
+	Animate HudHintKeyDisplay	FgColor		"FgColor"	Deaccel	0.1	1.0
+
+	Animate HudHintKeyDisplay	FgColor		"BrightFg"	Linear	1.5	0.01
+	Animate HudHintKeyDisplay	FgColor		"FgColor"	Deaccel	1.6	1.0
+
+	Animate HudHintKeyDisplay	FgColor		"BrightFg"	Linear	3.0	0.01
+	Animate HudHintKeyDisplay	FgColor		"FgColor"	Deaccel	3.1	1.0
+
+	// hide the panel after a while	
+	Animate HudHintKeyDisplay Alpha	0 Accel 12.0 2.0
+}
+

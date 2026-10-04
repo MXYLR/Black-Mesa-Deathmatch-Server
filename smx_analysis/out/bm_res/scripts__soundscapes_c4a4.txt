@@ -1,0 +1,57 @@
+"c4a4a.chamber"
+{
+	"dsp"	"0"
+	
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_nih1_mix.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb52.wav"
+	}
+}
+
+"c4a4a.chamber.wind"
+{
+	"dsp"	"0"
+	
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb56d.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_amb33c.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_windrush2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"xen\ambience\xen_nih_wind1_mix.wav"
+	}
+}
+
+"c4a4a.chamber.silent"
+{
+	"dsp"	"0"
+
+}

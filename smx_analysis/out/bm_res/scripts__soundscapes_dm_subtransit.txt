@@ -1,0 +1,2143 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP DM_SUBTRANSIT STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+"subtransit.util_miscamb"
+{
+	"playrandom"
+	{
+		"volume"	"0.8"
+		"pitch"		"90,110"
+		"time"		"11.0, 20.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\misc_amb1.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb2.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb3.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb4.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb5.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb6.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb7.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb8.wav"
+		}
+	}
+}
+
+//================================================================================================================================
+//================================================================================================================================
+//================================================================================================================================
+//										Base Utility Soundscapes
+//================================================================================================================================
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//							DO NOT USE IN THE ACTUAL VMFs.
+//
+//							They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//							for the overall environments being portrayed.
+//
+//							Scroll down to "Main Map Soundscapes - Subtransit" for the soundscapes proper.
+
+
+
+"subtransit.largearea.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"110"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+}
+
+"subtransit.corridor.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"110"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+}
+
+"subtransit.lab_corridor.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.7"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_lab1.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.15"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}	
+}
+
+"subtransit.narrow_corridor.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"110"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"110"
+		"wave"				"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+}
+
+"subtransit.traintunnel.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"110"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.3"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.2"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med13.wav"
+	}
+}
+
+"subtransit.trainstation.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"110"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.3"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.2"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med13.wav"
+	}	
+}
+
+"subtransit.flooded_room.base"
+{
+	"playlooping"
+	{
+		"volume"			"0.5"
+		"pitch"				"110"
+		"wave"				"@bms_ambience\room_ambience\r_ambience_med11.wav"
+		"attenuation"		"1.0"		
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.4"
+		"pitch"				"100"
+		"wave"				"@bms_ambience\room_ambience\r_ambience_large8.wav"
+		"attenuation"		"1.0"	
+	}
+}
+
+// This handles the water aspect of the flooded room  Separated out from the base proper, so we can take advantage of ambientpositionoverride in the tunnel sections.
+//
+
+"subtransit.flooded_room.base_pt2"
+{
+	"playlooping"
+	{
+		"volume"			"0.55"
+		"wave"				"@bms_ambience\room_ambience\r_ambience_water_room_st.wav"
+		"pitch"				"100"
+		"attenuation"		"1.0"	
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.45"
+		"wave"				"@bms_ambience\room_ambience\r_ambience_water1.wav"
+		"pitch"				"100"
+		"attenuation"		"1.0"			
+	}
+}
+
+"subtransit.elevatorshaft.base"
+{
+	
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"110"
+		"wave"				"bms_ambience\room_ambience\r_ambience_eleshaft1.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.3"
+		"pitch"				"100"
+		"wave"				"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.3"
+		"pitch"				"110"
+		"wave"				"bms_ambience\room_ambience\r_ambience_med11.wav"
+	}
+}
+
+
+//================================================================================================================================
+//================================================================================================================================
+//								Positional Utility Soundscapes - Subtransit
+//================================================================================================================================
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 									DO NOT USE IN THE ACTUAL VMFs.
+//
+//									They are Building Blocks only, meant for insertion into the main soundscapes,
+//									in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//									via the info_target entity.
+//
+//									Scroll down to "Main Map Soundscapes - Subtransit" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Subtransit, Large Area 1
+//									lga1, for positional shorthand.
+
+///////// info_targets ///////////
+
+//		lga1_pos0_pflow2			(pipe)
+// 		lga1_pos1_pflow2a			(pipe)
+//
+// 		lga1_pos2_med3				(ceiling mounted generator)
+// 		lga1_pos3_med3a				(electrical panel mounted on concrete column)
+//
+// 		lga1_pos7_forklift			(forklift motor, idling)
+
+
+"subtransit.lga1.pos_util_0-1"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2a.wav"
+		
+		"position"		"1"
+	}
+}
+
+"subtransit.lga1.pos_util_2-3"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"@bms_ambience/room_ambience/r_ambience_med3.wav"
+		
+		"position"		"2"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"@bms_ambience/room_ambience/r_ambience_med3a.wav"
+		
+		"position"		"3"
+	}
+}
+
+"subtransit.lga1.pos_util_7only"
+{
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		"wave"			"vehicles/airboat/fan_motor_idle_loop1.wav"
+		
+		"position"		"7"
+	}
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Subtransit, Large Area 2
+//									lga2, for positional shorthand.
+
+///////// info_targets ///////////
+//		lga2_pos0_ehum1b		
+// 		lga2_pos1_med3
+
+//		lga2_pos2_fan2		
+// 		lga2_pos3_fan2a
+
+//		lga2_pos4_fan2b		
+// 		lga2_pos5_fan2c	
+
+"subtransit.lga2.pos_util_0-1"
+{
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1b.wav"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"@bms_ambience/room_ambience/r_ambience_med3b.wav"
+		
+		"position"		"1"
+	}
+}
+
+"subtransit.lga2.pos_util_2-3"
+{
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		"wave"			"bms_objects/fans/fan2.wav"
+		
+		"position"		"2"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		"wave"			"bms_objects/fans/fan2a.wav"
+		
+		"position"		"3"
+	}	
+}
+
+"subtransit.lga2.pos_util_4-5"
+{
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		"wave"			"bms_objects/fans/fan2b.wav"
+		
+		"position"		"4"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		"wave"			"bms_objects/fans/fan2c.wav"
+		
+		"position"		"5"
+	}	
+}
+
+"subtransit.lga2.pos_util_6-7"
+{
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_conveyor1a_left.wav"
+		
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_conveyor1a_right.wav"
+		
+		"position"		"7"
+	}	
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Narrow Corridor 1
+//									ncor1, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// ncor1_pos6_fan2					(fan)
+// ncor1_pos6_riveletloop2			(pipe)
+
+"subtransit.ncor1.pos_util_6-7"
+{
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.5"
+		"wave"			"bms_objects/fans/fan2.wav"
+		
+		"position"		"6"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"attenuation"	"1.5"
+		"wave"			"ambient/levels/canals/water_rivulet_loop2.wav"
+		
+		"position"		"7"
+	}	
+}	
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Corridor 1
+//									cor1, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// cor1_pos6_fan2					(wall mounted fan, near opening to large area 1)
+
+"subtransit.cor1.pos_util_6"
+{
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_objects/fans/fan2.wav"
+		
+		"position"		"6"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Corridor 2
+//									cor2, for positional shorthand. 
+
+///////// info_targets ///////////
+//
+// cor2_pos4_fan2a					(wall mounted fan, above staircase which leads down)
+// cor2_pos5_fan2b					(wall mounted fan, immediately visible in the door way to this corridor)
+
+"subtransit.cor2.pos_util_4-5"
+{
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_objects/fans/fan2a.wav"
+		
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_objects/fans/fan2b.wav"
+		
+		"position"		"5"
+	}	
+	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Corridor 3, Section 1 RIGHT
+//									cor3_S1R, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// cor3_S1R_pos2_med				(wall mounted electrical panel, with "480 volts" sign directly above placement)
+
+"subtransit.cor3.util_pos2only"
+{
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.35"
+		"wave"			")bms_ambience/room_ambience/r_ambience_med3.wav"
+		
+		"position"		"2"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, TrainStation 1
+//									trstn1, for positional shorthand.
+
+
+///////// info_targets ///////////
+//
+
+// trstn1_pos_med3				(generator placement, behind chainlinked fenced nook)			
+// trstn1_pos_med3a				(generator placement, behind chainlinked fenced nook)	
+
+"subtransit.trstn1.pos_util_0-1"
+{
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		"wave"			"bms_ambience/room_ambience/r_ambience_med3.wav"
+		
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		"wave"			"bms_ambience/room_ambience/r_ambience_med3a.wav"
+		
+		"position"		"1"
+	}		
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, TrainStation 2
+//									trstn2, for positional shorthand.
+
+
+///////// info_targets ///////////
+//
+
+// trstn2_pos7_med3c				(electrical panel hum ambience, omni stereo with attenuation)
+
+"subtransit.trstn2.pos_util_7"
+{
+	"playlooping"
+	{
+		"volume"		"0.45"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+		"wave"			"@bms_ambience/room_ambience/r_ambience_med3c.wav"
+		
+		"position"		"7"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Flooded Room 1
+//									flrm1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// flrm1_pos3_pipe1b				(pipe)
+// flrm1_pos4_fan5					(wall fan)
+// flrm1_pos5_fan5a					(wall fan)
+
+"subtransit.flrm1.pos_util_3-5"
+{
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_75dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1b.wav"
+		
+		"position"		"3"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_75dB"
+		"wave"			"bms_objects/fans/fan5.wav"
+		
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_75dB"
+		"wave"			"bms_objects/fans/fan5a.wav"
+		
+		"position"		"5"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Flooded Room 2
+//									flrm1, for positional shorthand.
+
+///////// info_targets ///////////
+
+// flrm2_pos4_pflow1a				(pipe)
+// flrm2_pos5_pflow1c				(pipe)
+
+"subtransit.flrm2.pos_util_4-5"
+{
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow1a.wav"
+		
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow1c.wav"
+		
+		"position"		"5"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utilities				Subtransit, Corridor 4
+//									cor4, for positional shorthand.
+
+///////// info_targets ///////////
+// cor4_pos0_fan2c
+
+// cor4_pos6_whitenoise				(pipe)
+// cor4_pos7_pipe1					(pipe)
+
+"subtransit.cor4.util_pos0only"
+{
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_75dB"
+		"wave"			"bms_objects/fans/fan2c.wav"
+		
+		"position"		"0"
+	}
+}
+
+"subtransit.cor4.pos_util_6-7"
+{
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_objects/white_noise.wav"
+		
+		"position"		"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		
+		"position"		"7"
+	}	
+	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Corridor 6
+//									cor6, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// cor6_pos0_pflow1					(pipe)
+// cor6_pos1_pflow2					(pipe)
+
+"subtransit.cor6.pos_util_0-1"
+{
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow1.wav"
+		
+		"position"		"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"pitch"			"100"
+		"soundlevel"	"SNDLVL_70dB"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2.wav"
+		
+		"position"		"1"
+	}	
+	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Lab Corridor 1
+//									lbc1, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// lbc1_pos4_comp1					(wall computer)
+// lbc1_pos5_comp2b					(wall computer)
+// lbc1_pos6_printer				(office printer)
+
+"subtransit.lbc1.pos_util4-6"
+{
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		
+		"position"		"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp2b.wav"
+		
+		"position"		"5"
+	}
+	
+	"playlooping"
+	{
+		"volume"		"0.15"
+		"pitch"			"100"
+		"attenuation"	"1.5"
+		"wave"			"ambient/levels/labs/equipment_printer_loop1.wav"
+		
+		"position"		"6"
+	}	
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Lab Corridor 2 Section 1
+//									lbc2_s1, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// lbc2_s1_pos2_comp3					(wall computer)
+// lbc2_s1_pos3_comp2					(wall computer)
+
+// lbc2_s1_pos4_comp1					(wall computer)
+// lbc2_s1_pos5_comp1a					(wall computer)
+
+// lbc2_s1_pos6_conveyor_left			(end of conveyor, which leads out into large area 2)
+// lbc2_s1_pos6_conveyor_right			(end of conveyor, which leads out into large area 2)
+
+
+"subtransit.lbc2_s1.pos_util_2-3"
+{
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"soundlevel"		"SNDLVL_70dB"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_comp3.wav"
+		
+		"position"			"2"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"soundlevel"		"SNDLVL_70dB"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_comp2.wav"
+		
+		"position"			"3"
+	}
+}
+
+"subtransit.lbc2_s1.pos_util_4-5"
+{
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"soundlevel"		"SNDLVL_70dB"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		
+		"position"			"4"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"soundlevel"		"SNDLVL_70dB"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_comp1a.wav"
+		
+		"position"			"5"
+	}	
+}
+
+"subtransit.lbc2_s1.pos_util_6-7"
+{
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"attenuation"		"1.0"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_conveyor1_left.wav"
+		
+		"position"			"6"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"attenuation"		"1.0"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_conveyor1_right.wav"
+		
+		"position"			"7"
+	}	
+}
+
+"subtransit.cor7.pos_util_6-7"
+{
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"attenuation"		"1.0"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_conveyor1_left.wav"
+		
+		"position"			"6"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.65"
+		"pitch"				"100"
+		"attenuation"		"1.0"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_conveyor1_right.wav"
+		
+		"position"			"7"
+	}	
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Lab Corridor 2 Section 2
+//									lbc2_s2, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// lbc2_s2_pos0_printer					(wall computer)
+// lbc2_s2_pos1_eqbeeps					(wall computer)
+
+// lbc2_s2_pos2_eloop					(wall computer)
+// lbc2_s2_pos3_med3					(wall computer)
+
+"subtransit.lbc2_s2.pos_util_0-3"
+{
+	"playlooping"
+	{
+		"volume"			"0.15"
+		"pitch"				"100"
+		"attenuation"		"1.5"
+		"wave"				"ambient/levels/labs/equipment_printer_loop1.wav"
+		
+		"position"			"0"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.10"
+		"pitch"				"100"
+		"attenuation"		"1.5"
+		"wave"				"ambient/levels/labs/equipment_beep_loop1.wav"
+		
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.05"
+		"pitch"				"100"
+		"attenuation"		"1.5"
+		"wave"				"ambient/energy/electric_loop.wav"
+		
+		"position"			"2"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.25"
+		"pitch"				"100"
+		"soundlevel"		"SNDLVL_75dB"
+		"wave"				"@bms_ambience/room_ambience/r_ambience_med6.wav"
+		
+		"position"			"3"
+	}	
+}
+
+// I may not actually use this. blarg.
+
+"subtransit.lbc2_s2.pos_util_4"
+{
+	"playlooping"
+	{
+		"volume"			"0.55"
+		"pitch"				"100"
+		"attenuation"		"1.3"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_comp1b.wav"
+		
+		"position"			"4"
+	}
+}	
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Corridor 3 Section 2
+//									cor3_s1, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// cor3_s2_pos6_ehum1					(electrical panel)
+// cor3_s2_pos7_pipe1
+
+"subtransit.cor3_s2.pos_util_6-7"
+{
+	"playlooping"
+	{
+		"volume"			"0.6"
+		"pitch"				"100"
+		"attenuation"		"1.25"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		
+		"position"			"6"
+	}
+	
+	"playlooping"
+	{
+		"volume"			"0.85"
+		"pitch"				"100"
+		"attenuation"		"1.0"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_pipe1.wav"
+		
+		"position"			"7"
+	}	
+}	
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Lab Corridor 3 Section 1
+//									cor3_s1, for positional shorthand.
+
+///////// info_targets ///////////
+//
+// cor3_s1_pos0_ehum1					(electrical panel)
+
+"subtransit.cor3_s1.pos_util_0-1"
+{
+	"playlooping"
+	{
+		"volume"			"0.15"
+		"pitch"				"100"
+		"attenuation"		"1.5"
+		"wave"				"ambient/levels/labs/equipment_printer_loop1.wav"
+		
+		"position"			"0"
+	}
+}	
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				Subtransit, Train Tunnel 2
+//									trtn2, for positional shorthand.
+
+///////// info_targets ///////////
+//
+
+///////// info_targets ///////////
+
+// trtn2_pos0_fan5b					(wall mounted fan)
+
+// trtn2_pos1_fan2					(wall mounted fan)
+// trtn2_pos2_fan2a					(wall mounted fan)
+
+// trtn2_pos6_ehum1					(electric panel hum)
+// trtn2_pos7_ehum1a				(electric panel hum)
+
+"subtransit.trtn2.pos0only"
+{
+	"playlooping"
+	{
+		"volume"			"0.8"
+		"pitch"				"100"
+		"attenuation"		"1.0"
+		"wave"				"bms_objects/fans/fan5b.wav"
+		
+		"position"			"0"
+	}
+}
+
+"subtransit.trtn2.pos_util_1-2"
+{
+	"playlooping"
+	{
+		"volume"			"0.55"
+		"pitch"				"100"
+		"attenuation"		"1.2"
+		"wave"				"bms_objects/fans/fan2.wav"
+		
+		"position"			"1"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.55"
+		"pitch"				"100"
+		"attenuation"		"1.2"
+		"wave"				"bms_objects/fans/fan2a.wav"
+		
+		"position"			"2"
+	}
+}
+
+"subtransit.trtn2.pos_util_6-7"
+{
+	"playlooping"
+	{
+		"volume"			"0.3"
+		"pitch"				"100"
+		"attenuation"		"1.2"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		
+		"position"			"6"
+	}
+
+	"playlooping"
+	{
+		"volume"			"0.3"
+		"pitch"				"100"
+		"attenuation"		"1.2"
+		"wave"				"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		
+		"position"			"7"
+	}
+}
+
+//================================================================================================================================
+//									Main Map Soundscapes -	Subtransit
+//================================================================================================================================
+
+// Starting with LARGE AREA 1
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Large Area 1			//
+//										//
+
+"subtransit.largearea1"
+{
+	"dsp"				"25"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.largearea.base"
+		"volume"		"1.0"
+	}
+
+	//---------------------------------------------
+	//	POSITIONAL SOUNDS native to largearea1
+	//---------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_7only"
+		"volume"		"1.0"
+	}	
+
+	//---------------------------------------------
+	//	POSITIONAL SOUNDS for corridor2, nearby
+	//---------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor2.pos_util_4-5"
+		"volume"		"1.0"
+	}
+
+	//---------------------------------------------
+	//	POSITIONAL SOUNDS for corridor1, nearby
+	//---------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor1.pos_util_6"
+		"volume"		"1.0"
+	}	
+
+	//---------------------------------------------
+	//	MISC AMBIENT SOUND
+	//---------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Corridor 1		//
+//								// 
+
+"subtransit.corridor1"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.corridor.base"
+		"volume"		"1.0"
+	}
+
+	//---------------------------------------------
+	//	POSITIONAL SOUNDS for largearea1, nearby
+	//---------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_7only"
+		"volume"		"0.75"
+	}
+
+	//---------------------------------------------
+	//	POSITIONAL SOUNDS for corridor 2, nearby
+	//---------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor2.pos_util_4-5"
+		"volume"		"1.0"
+	}
+
+	//---------------------------------------------
+	//	POSITIONAL SOUNDS for corridor 1, nearby
+	//---------------------------------------------		
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor1.pos_util_6"
+		"volume"		"1.0"
+	}		
+
+	//---------------------------------------------
+	//	MISC AMBIENT SOUND
+	//---------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Corridor 2		//
+//								// 
+
+"subtransit.corridor2"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.corridor.base"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_0-1"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor2.pos_util_4-5"
+		"volume"		"1.0"
+	}	
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_7only"
+		"volume"		"0.35"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Corridor 3		//
+//				Section 1		//
+
+"subtransit.corridor3_s1"
+{
+	"dsp"					"2"
+	"dsp_volume"			"1.0"
+
+	"playsoundscape"
+	{
+		"name"				"subtransit.corridor.base"
+		"volume"			"1.0"
+	}
+
+	//-------------------------------------------------------------------------------
+	//	POSITIONAL SOUNDS for "Corridor 3 Section 1", nearby
+	//	Electrical panel. Used only with entities named "sscape_corridor3_s1_R" in the vmf
+	//--------------------------------------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"				"subtransit.cor3.util_pos2only"
+		"volume"			"1.0"
+	}	
+
+	//---------------------------------------------
+	//	POSITIONAL SOUNDS for "Large Area 1", nearby
+	//	Sets up the pipe sounds 
+	//---------------------------------------------
+		
+	"playsoundscape"
+	{
+		"name"				"subtransit.lga1.pos_util_0-1"
+		"volume"			"1.0"
+	}
+
+	//-------------------------------------------------------
+	//	POSITIONAL SOUNDS for corridor 3 section 2, nearby
+	//	Used only with entities named "sscape_corridor3_s1_L" in vmf
+	//-------------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"				"subtransit.cor3_s2.pos_util_6-7"
+		"volume"			"0.65"
+	}		
+
+	//-------------------------------------------------------
+	//	MISC AMBIENT SOUND	
+	//-------------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"				"subtransit.util_miscamb"
+		"volume"			"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Corridor 3		//
+//				Section 2		//
+
+"subtransit.corridor3_s2"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.corridor.base"
+		"volume"		"1.0"
+	}
+
+	//-------------------------------------------------------
+	//	POSITIONAL SOUNDS, corridor 3 section 2
+	//-------------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor3_s2.pos_util_6-7"
+		"volume"		"1.0"
+	}	
+
+	//-------------------------------------------------------
+	//	MISC AMBIENT SOUND	
+	//-------------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Corridor 4		//
+//								//
+
+"subtransit.corridor4"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.corridor.base"
+		"volume"		"1.0"
+	}
+
+	//---------------------------------------------
+	//	POSITIONAL SOUNDS , Corridor 4
+	//---------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor4.pos_util_6-7"
+		"volume"		"1.0"
+	}	
+
+	//---------------------------------------------
+	//	MISC AMBIENT SOUND	
+	//---------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Flooded Room 1			//
+//										//
+
+"subtransit.flooded_room1"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.flooded_room.base"
+		"volume"		"1.0"
+	}
+
+//	Water Portion of .base	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.flooded_room.base_pt2"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS for Train Tunnel 2, nearby
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.trtn2.pos0only"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS , Flooded Room 1
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.flrm1.pos_util_3-5"
+		"volume"		"1.0"
+	}		
+
+	//-----------------------------------------------------------------------
+	//	POSITIONAL SOUNDS for Corridor 4, nearby
+	//
+	//	DEV NOTE: This utility is used only with soundscape entities 
+	//	named "sscape_flooded_room1___UPPER" in the vmf,
+	//
+	//	for when the player is on the upper catwalk (nearby to corridor 4) before choosing to jump
+	//	into the flooded section below, in which case the soundscape placement 
+	//	"sscape_flooded_room1___LOWER" will clear these sounds out.
+	//-----------------------------------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor4.pos_util_6-7"
+		"volume"		"1.0"
+	}
+	
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Narrow Corridor 1		//
+//										// 
+
+"subtransit.narrow_corridor1"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.narrow_corridor.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Narrow Corridor 1
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.ncor1.pos_util_6-7"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Flooded Room 2			//
+//										//
+
+"subtransit.flooded_room2"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.flooded_room.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.flooded_room.base_pt2"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Flooded Room 2
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.flrm2.pos_util_4-5"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Narrow Corridor 1, nearby
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.ncor1.pos_util_6-7"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Corridor 5		//
+//								// "subtransit.lga1.pos_util_7only"
+ 
+"subtransit.corridor5"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.corridor.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Large Area 1, nearby
+	//-----------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga1.pos_util_7only"
+		"volume"		"0.75"
+	}	
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Corridor 6		//
+//								//
+
+"subtransit.corridor6"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.corridor.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Corridor 6
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor6.pos_util_0-1"
+		"volume"		"1.0"
+	}		
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Corridor 7		//
+//								//
+
+"subtransit.corridor7"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+	"fadetime"			"2.0"
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.corridor.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Corridor 7
+	//	(conveyor belt endcaps)
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor7.pos_util_6-7"
+		"volume"		"1.0"
+	}	
+	
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Lab Corridor 1		//
+//									//
+
+"subtransit.lab_corridor1"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lab_corridor.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Lab Corridor 1
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lbc1.pos_util4-6"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Lab Corridor 2		//
+//				Section 2			//
+
+"subtransit.lab_corridor2_s1"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lab_corridor.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Corridor 6, nearby
+	// 	(pipeflow positionals)
+	//-----------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor6.pos_util_0-1"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Lab Corridor 2 Section 1
+	//-----------------------------------------------	
+
+//	computer equipment, wall placements
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lbc2_s1.pos_util_2-3"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lbc2_s1.pos_util_4-5"
+		"volume"		"1.0"
+	}
+	
+//	conveyor line endcaps
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lbc2_s1.pos_util_6-7"
+		"volume"		"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Lab Corridor 2		//
+//				Section 2			//
+
+"subtransit.lab_corridor2_s2"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lab_corridor.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Lab Corridor 2 Section 2
+	//-----------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lbc2_s2.pos_util_0-3"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Lab Corridor 2 Section 1
+	//-----------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lbc2_s1.pos_util_4-5"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Corridor 3 Section 2, nearby
+	//-----------------------------------------------	
+	
+//	electical panel hum and pipe placement
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.cor3_s2.pos_util_6-7" 
+		"volume"		"0.75"
+	}		
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Lab Corridor 3		//
+//									//
+
+"sub.lab_corridor3"
+{
+	"dsp"				"2"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lab_corridor.base"
+		"volume"		"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Train Tunnel 1			//
+//										//
+
+"subtransit.traintunnel1"
+{
+	"dsp"				"7"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.traintunnel.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Train Station 1, nearby
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.trstn1.pos_util_0-1"
+		"volume"		"1.0"
+	}		
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Train Station 1			//
+//										//
+
+"subtransit.trainstation1"
+{
+	"dsp"				"7"
+	"dsp_volume"		"1.0"
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.trainstation.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Train Station 1
+	//-----------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.trstn1.pos_util_0-1"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Train Station 2			//
+//										// 
+//										// 
+
+"subtransit.trainstation2"
+{
+	"dsp"								"7"
+	"dsp_volume"						"1.0"
+	
+	"playsoundscape"
+	{
+		"name"							"subtransit.trainstation.base"
+		"volume"						"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"							"subtransit.flooded_room.base_pt2"
+		"volume"						"1.0"
+		"ambientpositionoverride"		"2"
+	}		
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Train Station 2
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.trstn2.pos_util_7"
+		"volume"		"1.0"
+	}		
+	
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Train Tunnel 2, nearby
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.trtn2.pos0only"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Flooded Room 1, nearby
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.flrm1.pos_util_3-5"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.trstn2.pos_util_7"
+		"volume"		"1.0"
+	}	
+
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Train Tunnel 2			//
+//										//
+
+"subtransit.traintunnel2"
+{
+	"dsp"				"7"
+	"dsp_volume"		"1.0"
+	"fadetime"			"2.3"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.traintunnel.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Train Tunnel 2
+	//-----------------------------------------------	
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.trtn2.pos0only"
+		"volume"		"1.0"
+	}
+	"playsoundscape"
+	{
+		"name"			"subtransit.trtn2.pos_util_1-2"
+		"volume"		"1.0"
+	}
+	"playsoundscape"
+	{
+		"name"			"subtransit.trtn2.pos_util_6-7"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Flooded Room 1, nearby
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.flrm1.pos_util_3-5"
+		"volume"		"1.0"
+	}
+	
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Elevator Shaft			//
+//										//
+
+"subtransit.elevatorshaft1"
+{
+	"dsp"				"1"
+	"dsp_volume"		"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.elevatorshaft.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// Subtransit - Large Area 2			// 
+//										// 
+
+"subtransit.largearea2"
+{
+	"dsp"				"25"
+	"dsp_volume"		"1.0"
+	"fadetime"			"1.5"
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.largearea.base"
+		"volume"		"1.0"
+	}
+
+	//-----------------------------------------------
+	//	POSITIONAL SOUNDS, Large Area 2
+	//-----------------------------------------------	
+	
+	//	positions 0-1	 	(elecrical)
+	//	positions 2-3 		(wall fans)
+	//	positions 4-5 		(wall fans)
+	//	positions 6-7 		(conveyors)
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga2.pos_util_0-1"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga2.pos_util_2-3"
+		"volume"		"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga2.pos_util_4-5"
+		"volume"		"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.lga2.pos_util_6-7"
+		"volume"		"1.0"
+	}	
+
+	//-----------------------------------------------
+	//	MISC AMBIENT SOUND
+	//-----------------------------------------------	
+	
+	"playsoundscape"
+	{
+		"name"			"subtransit.util_miscamb"
+		"volume"		"0.4"
+	}
+}

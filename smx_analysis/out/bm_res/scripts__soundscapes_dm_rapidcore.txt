@@ -1,0 +1,145 @@
+"rc.utilitycorridor"
+{
+	"dsp"	"17"
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"wave"	"BMS_ambience\room_ambience\r_ambience_pipes1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"wave"	"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"wave"	"BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"rc.storageroom"
+{
+	"dsp"	"18"
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"	"BMS_ambience\room_ambience\r_ambience_med8.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"rc.halls"
+{
+	"dsp"	"3"
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+}
+
+"rc.lobby"
+{
+	"dsp"	"19"
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large3.wav"
+	}
+}
+
+"rc.utilityhole"
+{
+	"dsp"	"2"
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"wave"	"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"wave"	"BMS_ambience\room_ambience\r_ambience_med4.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}
+
+"rc.steelhallway"
+{
+	"dsp"	"3"
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"110"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"110"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med9.wav"
+	}
+}
+
+"rc.station"
+{
+	"dsp"	"10"
+
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_ppl1.wav"
+	}
+}
+
+"rc.freezer"
+{
+	"dsp"	"2"
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"wave"	"BMS_ambience\room_ambience\r_ambience_med14.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"	"BMS_ambience\room_ambience\r_ambience_large2.wav"
+		"pitch"		"100"
+		"attenuation"	"ATTN_IDLE"
+	}
+}

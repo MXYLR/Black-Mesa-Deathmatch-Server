@@ -1,0 +1,28 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"WEAPON_SNARK"
+{
+	"id" "elementid" "32dcc9f7-a7b9-41bb-92f3-aea74b8bd583"
+	"paramDef" "string" "WeaponParamDef"
+	"playermodel" "string" "models/xenians/snarknest.mdl"
+	"playermodel_multiplayer" "string" "models/weapons/w_snark_mp.mdl"
+    "playermodel_carried_multiplayer" "string" "models/weapons/w_snark.mdl"
+	"viewmodel" "string" "models/weapons/v_squeak.mdl"
+	"printname" "string" "Snarks"
+	"primary_ammo" "string" "snark"
+	"clip_size" "int" "-1"	
+	"default_clip" "int" "5"
+	"bucket" "int" "4"
+	"bucket_position" "int" "3"
+
+	"bucket_controller" "int" "2"
+	"bucket_position_controller" "int" "3"
+
+	"anim_prefix" "string" "snark"
+	"item_flags" "int" "0"
+	"weight" "int" "20"
+	"sounds" "sounds"
+	{
+		"id" "elementid" "da4452b3-ab62-49b3-99b3-34e6e28d73de"
+		"single_shot" "string" "weapon_snark.Single"
+	}
+}

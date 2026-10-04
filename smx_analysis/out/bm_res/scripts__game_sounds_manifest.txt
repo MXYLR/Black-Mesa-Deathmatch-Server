@@ -1,0 +1,117 @@
+game_sounds_manifest
+{
+	"precache_file"		"scripts/game_sounds_ambient_generic.txt"
+	"precache_file"		"scripts/game_sounds_announcement.txt"
+	"precache_file"		"scripts/game_sounds_bm_ambience.txt"
+	"precache_file"		"scripts/game_sounds_bm_objects.txt"
+	"precache_file"		"scripts/game_sounds_bm_scripted.txt"
+
+	"precache_file"		"scripts/game_sounds_exp.txt"
+	"precache_file"		"scripts/game_sounds_items.txt"
+	"precache_file"		"scripts/game_sounds.txt"
+
+	"precache_file"		"scripts/game_sounds_oartram.txt"
+	"precache_file"		"scripts/game_sounds_physics.txt"
+	"precache_file"		"scripts/game_sounds_player.txt"
+	"precache_file"		"scripts/game_sounds_scenes.txt"
+
+// Music
+
+	"precache_file"		"scripts/game_sounds_music.txt"
+
+// Scene Sounds for Black Mesa ( Important Note: these may also include some chapter specific sfx)
+
+	"precache_file"		"scripts/game_sounds_scenes_IB.txt"
+	"precache_file"		"scripts/game_sounds_scenes_AM.txt"
+	"precache_file"		"scripts/game_sounds_scenes_UC.txt"
+	"precache_file"		"scripts/game_sounds_scenes_OC.txt"
+	"precache_file"		"scripts/game_sounds_scenes_WGH.txt"
+	"precache_file"		"scripts/game_sounds_scenes_BP.txt"
+	"precache_file"		"scripts/game_sounds_scenes_PU.txt"
+	"precache_file"		"scripts/game_sounds_scenes_OAR.txt"
+	"precache_file"		"scripts/game_sounds_scenes_APP.txt"
+	"precache_file"		"scripts/game_sounds_scenes_QE.txt"
+	"precache_file"		"scripts/game_sounds_scenes_ST.txt"
+	"precache_file"		"scripts/game_sounds_scenes_FAF.txt"
+	"precache_file"		"scripts/game_sounds_scenes_LC.txt"
+
+	"precache_file"		"scripts/game_sounds_scenes_gonarch.txt"
+	"precache_file"		"scripts/game_sounds_scenes_interloper.txt"
+	"precache_file"		"scripts/game_sounds_scenes_ENDGAME.txt"
+
+//
+	"precache_file"		"scripts/game_sounds_weapons.txt"
+	"precache_file"		"scripts/game_sounds_oartram.txt"
+	"precache_file"		"scripts/game_sounds_world.txt"
+	"precache_file"		"scripts/game_sounds_xen.txt"
+
+//  NPC Sounds for Black Mesa
+
+	"precache_file"		"scripts/npc_sounds_abrams.txt"
+	"precache_file"		"scripts/npc_sounds_alien_controller.txt"
+	"precache_file"		"scripts/npc_sounds_alien_grunt.txt"
+	"precache_file"		"scripts/npc_sounds_apache.txt"
+	"precache_file"		"scripts/npc_sounds_assassin.txt"
+
+	"precache_file"		"scripts/npc_sounds_bullsquid.txt"
+	"precache_file"		"scripts/npc_sounds_gargantua.txt"
+	"precache_file"		"scripts/npc_sounds_gonarch.txt"
+	"precache_file"		"scripts/npc_sounds_hecu.txt"
+	"precache_file"		"scripts/npc_sounds_houndeye.txt"
+	"precache_file"		"scripts/npc_sounds_human_shared.txt"
+
+	"precache_file"		"scripts/npc_sounds_ichthyosaur.txt"
+	"precache_file"		"scripts/npc_sounds_lav.txt"
+	"precache_file"		"scripts/npc_sounds_nihilanth.txt"
+	"precache_file"		"scripts/npc_sounds_osprey.txt"
+	"precache_file"		"scripts/npc_sounds_securitygaurd.txt"
+	"precache_file"		"scripts/npc_sounds_sentry.txt"
+	"precache_file"		"scripts/npc_sounds_snark.txt"
+	"precache_file"		"scripts/npc_sounds_sniper.txt"
+	"precache_file"		"scripts/npc_sounds_SurgeryBot.txt"
+
+	"precache_file"		"scripts/npc_sounds_tentacle.txt"
+	"precache_file"		"scripts/npc_sounds_vortigaunt.txt"
+	"precache_file"		"scripts/npc_sounds_walker.txt"
+	"precache_file"		"scripts/npc_sounds_zombie.txt"
+
+	"precache_file"		"scripts/npc_sounds_scifemale.txt"
+	"precache_file"		"scripts/npc_sounds_scimale.txt"
+    
+//  Misc Sounds for Black Mesa
+
+	"precache_file"		"scripts/misc_sounds_dead_hev.txt"
+
+//  NPC Sounds for Black Mesa - Xen Chapters
+
+	"precache_file"		"scripts/npc_sounds_beneathacle.txt"
+	"precache_file"		"scripts/game_sounds_xen2.txt"
+	"precache_file"		"scripts/game_sounds_xen_music.txt"
+	"precache_file"		"scripts/game_sounds_interloper.txt"
+	"precache_file"		"scripts/npc_sounds_xen_boid.txt"
+	"precache_file"		"scripts/npc_sounds_zombiehev.txt"
+
+
+//BM_DM player VO
+
+	"precache_file"		"scripts/dm_sounds_scifem.txt"
+	"precache_file"		"scripts/dm_sounds_scimale.txt"
+	"precache_file"		"scripts/dm_sounds_guard.txt"
+
+//BM_DM Announcer VO
+
+	"precache_file"		"scripts/killstreak/game_sounds_killstreak_football.txt"
+	"precache_file"		"scripts/killstreak/game_sounds_killstreak_scientist.txt"
+	"precache_file"		"scripts/killstreak/game_sounds_killstreak_marine.txt"
+	
+// HL2 stuff
+
+	"precache_file"		"scripts/npc_sounds_barnacle.txt"
+	"precache_file"		"scripts/npc_sounds_birds.txt"
+
+	"precache_file"		"scripts/npc_sounds_blackheadcrab.txt"
+	"precache_file"		"scripts/npc_sounds_fastheadcrab.txt"
+	"precache_file"		"scripts/npc_sounds_headcrab.txt"
+
+	"precache_file"		"scripts/game_sounds_ui.txt"
+}

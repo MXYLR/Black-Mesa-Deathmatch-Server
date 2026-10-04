@@ -1,0 +1,1594 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 											MAP DM_GASWORKS STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+//================================================================================================================================
+//================================================================================================================================
+//										Base Utility Soundscapes - dm_gasworks
+//================================================================================================================================
+//================================================================================================================================
+
+// .base soundscapes 
+//							DO NOT USE IN THE ACTUAL VMFs.
+//
+//							They are Building Blocks only, meant for establishing the baseline sound aesthetic
+//							for the overall environments being portrayed.
+//	
+//							Scroll down to "Main Map Soundscapes - dm_gasworks" for the soundscapes proper.
+
+
+
+"gasworks.main_underground.base"
+{
+	"playlooping"
+	{
+		"volume"		"1.0"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large6.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"gasworks.small_corridor.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_small1.wav"
+		"attenuation"	"1.0"		
+	}
+}
+
+"gasworks.large_corridor.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"pitch"			"115"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med10.wav"
+		"attenuation"	"1.0"		
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.25"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_pipes1.wav"
+		"attenuation"	"1.0"
+	}
+}
+
+"gasworks.elevator_shaft.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"115"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large4.wav"
+		"attenuation"	"1.0"			
+	}
+}
+
+"gasworks.control_room.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med8.wav"
+		"attenuation"	"1.0"	
+	}
+}
+
+"gasworks.teleporter_room.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"95"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med12.wav"
+		"attenuation"	"1.0"		
+	}
+}
+
+"gasworks.teleporter_room_elevator.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"95"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med12.wav"
+		"attenuation"	"1.0"		
+	}
+}
+
+"gasworks.outside.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_night_battle1.wav"
+		"attenuation"	"1.0"			
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"pitch"			"115"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_wind3.wav"
+		"attenuation"	"1.4"	
+	}
+}
+
+"gasworks.metal_hut.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"100"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_med8.wav"
+		"attenuation"	"1.0"	
+	}
+}
+
+"gasworks.ladder_shaft.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"pitch"			"115"
+		"wave"			"@bms_ambience\room_ambience\r_ambience_large7.wav"
+		"attenuation"	"1.0"	
+	}
+}
+
+//================================================================================================================================
+//									Positional Utility Soundscapes - dm_gasworks
+//================================================================================================================================
+//
+// .util_pos soundscapes	
+// 							DO NOT USE IN THE ACTUAL VMFs.
+//
+//							They are Building Blocks only, meant for insertion into the main soundscapes,
+//							in order to provide up to 8 positional sounds, as well as their attenuation instructions 
+//							via the info_target entity.
+//
+//							Scroll down to "Main Map Soundscapes - Map X" for the soundscapes list proper.
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Outside 
+//									gs_out1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_out1_pos0_pipe5
+// gs_out1_pos1_fan1
+
+// gs_out1_pos2_pipe2
+// gs_out1_pos3_truckidle
+
+// gs_out1_pos4_pipe5a
+
+"gs.out1.util_pos0-1"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.1"
+
+		"position"		"0"
+	}
+
+	"playlooping"	
+	{
+		"wave"			"bms_objects/fans/fan1.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"1"
+	}		
+}
+
+"gs.out1.util_pos2-3"
+{
+	"playlooping"	
+	{
+		"wave"			"BMS_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"volume"		"0.7"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"2"
+	}
+
+	"playlooping"	
+	{
+		"wave"			"bms_objects/vehicles/truck_idle3.wav"
+		"volume"		"0.7"
+		"pitch"			"100"
+//		"soundlevel"	"SNDLVL_75dB"
+		"attenuation"	"1.0"
+
+		"position"		"3"
+	}	
+}
+
+"gs.out1.util_pos4only" 		
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5a.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+//		"soundlevel"	"SNDLVL_75dB"
+		"attenuation"	"1.2"
+
+		"position"		"4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Metal Hut 1
+//									gs_hut1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_hut1_pos5_water9
+
+"gs.hut1.util_pos5only"
+{
+	"playlooping"	
+	{
+//		"wave"			"bms_ambience/room_ambience/r_ambience_water9.wav"
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_water1.wav"
+		"volume"		"0.25"
+		"pitch"			"130"
+		"attenuation"	"1.4"
+
+		"position"		"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Metal Hut 2
+//									gs_hut1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_hut2_pos6_driploop		(classic HL2 drip loop)
+
+"gs.hut2.util_pos6only"
+{
+	"playlooping"	
+	{
+		"wave"			"ambient/water/drip_loop1.wav"
+		"volume"		"0.55"
+		"pitch"			"130"
+		"attenuation"	"1.4"
+
+		"position"		"6"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Large Corridor 3
+//									gs_Lcor3 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_Lcor3_pos5_conveyor1R		
+
+// gs_Lcor3_pos6_conveyor1aL
+// gs_Lcor3_pos7_conveyor1aR
+
+//----------
+// DEV NOTE:
+// position 5 is separated out from 6 and 7, so that metal hut1's pos 5 can be swapped out cleanly when the player
+// drops into Large Corridor3
+		
+"gs.Lcor3.util_pos5only"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_conveyor1_right.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"5"
+	}
+}
+	
+"gs.Lcor3.util_pos6-7"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_conveyor1a_left.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"6"
+	}
+
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_conveyor1a_right.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Control Room
+//									gs_crtl1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_ctrl1_pos0_comp3
+// gs_ctrl1_pos1_comp2
+// gs_ctrl1_pos2_comp1
+// gs_ctrl1_pos3_white
+// gs_ctrl1_pos4_driploop
+
+"gs.ctrl1.util_pos0-4"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp3.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"0"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp2.wav"
+		"volume"		"0.8"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"1"
+	}
+
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+
+		"position"		"2"
+	}
+	
+	"playlooping"		
+	{
+		"wave"			"bms_objects/white_noise.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+
+		"position"		"3"
+	}
+	
+		"playlooping"		
+	{
+		"wave"			"ambient/water/drip_loop1.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"4"
+	}
+}
+
+// special utility for underground, used as a blendscape for control room when dropping down.
+// the wav is normally was meant for control room position 2, but that spot is taken in the underground pos util, 
+// 3 is open, so we use that.
+// settings are the same. 
+
+"gs.ctrl1.blend.pos2is3"
+{
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_comp1.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+
+		"position"		"3"
+	}
+}	
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Large Corridor 2
+//									gs_Lcor2 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_Lcor2_pos6_pipe4
+// gs_Lcor2_pos7_ehum1
+
+// gs_Lcor2_pos4_pipe5b
+// gs_Lcor2_pos5_med3a
+
+"gs.Lcor2.util_pos6-7"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"6"
+	}
+	
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"volume"		"0.15"
+		"pitch"			"100"
+		"attenuation"	"1.3"
+
+		"position"		"7"
+	}
+}	
+
+"gs.Lcor2.util_pos4-5"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5b.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"4"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_med3a.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Small Corridor 2
+//									gs_Scor2 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_Scor2_pos0_pipe5
+// gs_Scor2_pos1_pipe5a
+
+// gs_Scor2_pos4_pipe4a
+// gs_Scor2_pos5_fire5
+
+
+"gs.Scor2.util_pos0-1"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"0"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5a.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"1"
+	}
+}
+
+"gs.Scor2.util_pos4-5"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4a.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"4"
+	}
+	
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_fire5.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Small Corridor 3
+//									gs_Scor3 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_Scor3_pos4_hiss2
+// gs_Scor3_pos5_hiss1
+// gs_Scor3_pos6_water1
+
+// gs_Scor2_pos7_electric
+
+
+"gs.Scor3.util_pos4-7"
+{
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_hiss2.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+
+		"position"		"4"
+	}
+	
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_hiss1.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+
+		"position"		"5"
+	}
+
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_water12a.wav"
+		"volume"		"0.15"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"6"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4a.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"7"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Small Corridor 1
+//									gs_Scor1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_Scor1_pos5_driploop
+
+// gs_Scor1_pos6_pipe5a
+// gs_Scor1_pos7_pipe4
+
+// probably not gonna use pos5 and leave as ambient_generic to
+
+"gs.Scor1.util_pos5only"
+{
+	"playlooping"	
+	{
+		"wave"			"ambient/water/drip_loop1.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"5"
+	}
+}
+
+"gs.Scor1.util_pos6-7"
+{	
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5a.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"6"
+	}
+
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"7"
+	}
+}	
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Large Corridor 1
+//									gs_Lcor1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_lcor1_pos0_fan1
+// gs_lcor1_pos1_pipe4b
+// gs_lcor1_pos2_pipe3
+// gs_lcor1_pos3_whitenoise
+
+"gs.Lcor1.util_pos0-3"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_objects/fans/fan1.wav"
+		"volume"		"0.5"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"0"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe4b.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"2"
+	}	
+	
+	"playlooping"		
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe3.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"1"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_objects/white_noise.wav"
+		"volume"		"0.7"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"3"
+	}
+}		
+
+// probably not gonna use this, as it's another drip_loop
+
+"gs.Lcor1.util_pos4only"
+{
+	"playlooping"	
+	{
+		"wave"			"ambient/water/drip_loop1.wav"
+		"volume"		"0.65"
+		"pitch"			"100"
+		"attenuation"	"1.2"
+
+		"position"		"4"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - UnderGround1
+//									gs_und1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_und1_pos0_plow2a
+// gs_und1_pos1_pflow2b
+// gs_und1_pos2_pipe1c
+
+"gs.und1.util_pos0-2"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2a.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"0"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow2b.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"1"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe1c.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"2"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - UnderGround1, Lower Section
+//									gs_und1a , for positional shorthand.
+
+///////// info_targets ///////////
+
+// info_target
+// info_target
+
+
+"gs.und1a.util_pos4-5"
+{
+
+	// DEV NOTE:
+	// No, your eyes don't deceive you. I'm feeding 2 sounds into one into_target for position 4
+	// It's one the few times I actually do this in soundscape
+
+	"playlooping"	
+	{
+		"wave"			"@bms_ambience/room_ambience/r_ambience_pipes1.wav"
+		"volume"		"0.15"
+		"pitch"			"100"
+		"attenuation"	"1.8"
+
+		"position"		"4"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe2.wav"
+		"volume"		"0.35"
+		"pitch"			"100"
+		"attenuation"	"1.4"
+
+		"position"		"4"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipeflow1c.wav"
+		"volume"		"0.55"
+		"pitch"			"100"
+		"attenuation"	"1.8"
+
+		"position"		"5"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"@bms_ambience/room_ambience/r_ambience_pipes1a.wav"
+		"volume"		"0.15"
+		"pitch"			"75"
+		"attenuation"	"1.3"
+
+		"position"		"5"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Teleporter Room 1
+//									gs_tp1 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_tp1_pos0_fire5
+// gs_tp1_pos1_pipe5
+// gs_tp1_pos2_waterRMst
+// gs_tp1_pos3_teleportIdle
+
+"gs.tp1.util_pos0-2"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/object_ambience/o_ambience_disaster_fire5.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"0"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"1"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"@bms_ambience/room_ambience/r_ambience_water_room_st.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"2"
+	}
+	
+		"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrical2slow.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"0.8"
+
+		"position"		"3"
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+// Positional Utility				GasWorks - Teleporter Room 2
+//									gs_tp2 , for positional shorthand.
+
+///////// info_targets ///////////
+
+// gs_tp2_pos0_teleportIdle
+// gs_tp2_pos1_pipe5
+// gs_tp2_pos2_waterRMst
+
+"gs.tp2.util_pos1-2"
+{
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrical2slow.wav"
+		"volume"		"0.85"
+		"pitch"			"100"
+		"attenuation"	"0.8"
+
+		"position"		"0"
+	}
+
+	"playlooping"	
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_pipe5.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"1"
+	}
+	
+	"playlooping"	
+	{
+		"wave"			"@bms_ambience/room_ambience/r_ambience_water_room_st.wav"
+		"volume"		"0.75"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+
+		"position"		"2"
+	}
+}
+
+//================================================================================================================================
+//						Main Map Soundscapes -	dm_gasworks
+//================================================================================================================================
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Outside	//  
+
+"gasworks.outside"
+{
+	"dsp"			"26"
+	"dsp_volume"	"0.15"
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.outside.base"
+		"volume"	"1.0"
+	}
+
+	//-----------------------------------------
+	//	POSITIONAL SOUNDS, Outside
+	//-----------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"		"gs.out1.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gs.out1.util_pos2-3"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gs.out1.util_pos4only"
+		"volume"	"1.0"
+	}
+
+	//------------------------------------------
+	//	POSITIONAL SOUNDS, Metal Hut 1, nearby
+	//------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"		"gs.hut1.util_pos5only"
+		"volume"	"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Metal Hut1	//
+//							//
+
+"gasworks.metal_hut1"
+{
+	"dsp"			"3"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.metal_hut.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.outside.base"
+		"volume"	"0.3"
+	}
+
+	//-----------------------------------------
+	//	POSITIONAL SOUNDS, Metal Hut 1
+	//-----------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"		"gs.hut1.util_pos5only"
+		"volume"	"1.0"
+	}
+	
+	//-----------------------------------------
+	//	POSITIONAL SOUNDS, Outside, nearby
+	//
+	//	setting these all to "0.65" so as
+	//	to simulate sound dampening
+	//-----------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"		"gs.out1.util_pos0-1"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gs.out1.util_pos2-3"
+		"volume"	"0.65"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gs.out1.util_pos4only"
+		"volume"	"0.65"
+	}
+
+	//---------------------------------------------------------
+	//	POSITIONAL SOUNDS, Corridor3 (conveyor sounds), nearby,
+	//	below Metal Hut1
+	//---------------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"		"gs.Lcor3.util_pos6-7"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Metal Hut2	//
+
+"gasworks.metal_hut2"
+{
+	"dsp"			"3"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.metal_hut.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.outside.base"
+		"volume"	"0.3"
+	}
+
+	//-----------------------------------------
+	//	POSITIONAL SOUNDS, Metal Hut 2
+	//-----------------------------------------
+	
+	"playsoundscape"
+	{
+		"name"		"gs.hut2.util_pos6only"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Main UnderGround 1		//  
+
+"gasworks.underground1"
+{
+	"dsp"			"25"
+	"dsp_volume"	"0.5"
+	"fadetime"		"3.0"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.main_underground.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.und1.util_pos0-2"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gs.Scor2.util_pos4-5"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gs.Scor1.util_pos6-7"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gs.ctrl1.blend.pos2is3"
+		"volume"	"0.75"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Main UnderGround 		//  
+//			  Lower Section			//
+//									//
+
+"gasworks.underground1_lower"
+{
+	"dsp"			"25"
+	"dsp_volume"	"0.5"
+	"fadetime"		"4.0"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.main_underground.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.und1.util_pos0-2"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.und1a.util_pos4-5"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Small Corridor 1		// 
+
+
+"gasworks.small_corridor1"
+{
+	"dsp"			"17"
+	"dsp_volume"	"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.small_corridor.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.large_corridor.base"
+		"volume"	"0.3"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.main_underground.base"
+		"volume"	"0.3"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.Scor1.util_pos6-7"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Small Corridor 2		// 
+
+"gasworks.small_corridor2"
+{
+	"dsp"			"17"
+	"dsp_volume"	"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.small_corridor.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.large_corridor.base"
+		"volume"	"0.3"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.main_underground.base"
+		"volume"	"0.3"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.Scor2.util_pos0-1"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.Scor2.util_pos4-5"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Small Corridor 3		// 
+
+"gasworks.small_corridor3"
+{
+	"dsp"			"17"
+	"dsp_volume"	"0.5"
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.small_corridor.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.large_corridor.base"
+		"volume"	"0.3"
+	}	
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.main_underground.base"
+		"volume"	"0.3"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.Scor3.util_pos4-7"
+		"volume"	"1.0"
+	}
+	
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Large Corridor 1	// 
+
+"gasworks.large_corridor1"
+{
+	"dsp"			"18"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.large_corridor.base"
+		"volume"	"1.0"
+	}
+	
+		"playsoundscape"
+	{
+		"name"		"gs.Lcor1.util_pos0-3"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Large Corridor 2	// 
+
+"gasworks.large_corridor2"
+{
+	"dsp"			"18"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.large_corridor.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.Lcor2.util_pos4-5"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.Lcor2.util_pos6-7"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Large Corridor 3	//
+
+"gasworks.large_corridor3"
+{
+	"dsp"			"18"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.large_corridor.base"
+		"volume"	"1.0"
+	}
+	
+	//---------------------------------------------------------
+	//	POSITIONAL SOUNDS, Corridor3 (conveyor sounds)
+	//---------------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"		"gs.Lcor3.util_pos5only"
+		"volume"	"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"gs.Lcor3.util_pos6-7"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Elevator Shaft 1	//
+
+"gasworks.elevator_shaft_top"
+{
+	"dsp"			"10"
+	"dsp_volume"	"0.5"
+	"fadetime"		"2.0"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.elevator_shaft.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.large_corridor.base"
+		"volume"	"0.3"
+	}	
+	
+	//---------------------------------------------------------
+	//	POSITIONAL SOUNDS, Corridor3 (conveyor sounds), nearby
+	//---------------------------------------------------------
+
+	"playsoundscape"
+	{
+		"name"		"gs.Lcor3.util_pos5only"
+		"volume"	"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"gs.Lcor3.util_pos6-7"
+		"volume"	"0.1"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Elevator Shaft 1	//
+
+"gasworks.elevator_shaft_mid"
+{
+	"dsp"			"10"
+	"dsp_volume"	"0.5"
+	"fadetime"		"2.0"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.elevator_shaft.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.large_corridor.base"
+		"volume"	"0.3"
+	}		
+	
+	"playsoundscape"
+	{
+		"name"		"gs.ctrl1.util_pos0-4"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gs.Lcor2.util_pos6-7"
+		"volume"	"1.0"
+	}	
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Elevator Shaft 1	// 
+
+"gasworks.elevator_shaft_bottom"
+{
+	"dsp"			"10"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.elevator_shaft.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.tp2.util_pos1-2"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Control Room 1	//
+
+"gasworks.control_room1"
+{
+	"dsp"			"4"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.control_room.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.main_underground.base"
+		"volume"	"0.10"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.ctrl1.util_pos0-4"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"						"gasworks.outside.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"6"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Teleporter Room 1	//
+
+"gasworks.teleporter_room"
+{
+	"dsp"			"2"
+	"dsp_volume"	"0.5"
+	"fadetime"		"4.0"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.teleporter_room.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.tp1.util_pos0-2"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Teleporter Room 2 - Elevator 	// 
+
+"gasworks.teleporter_room_elevator"
+{
+	"dsp"			"2"
+	"dsp_volume"	"0.5"
+	"fadetime"		"4.0"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.teleporter_room_elevator.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"gasworks.elevator_shaft.base"
+		"volume"	"0.3"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"gs.tp2.util_pos1-2"
+		"volume"	"1.0"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Ladder Shaft 2	//
+
+"gasworks.ladder_shaft2"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.25"
+	"fadetime"			"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"gasworks.ladder_shaft.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"gasworks.large_corridor.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"6"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"gasworks.outside.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Ladder Shaft 1	//
+
+"gasworks.ladder_shaft1"
+{
+	"dsp"				"6"
+	"dsp_volume"		"0.25"
+	"fadetime"			"1.0"
+	
+	"playsoundscape"
+	{
+		"name"			"gasworks.ladder_shaft.base"
+		"volume"		"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"gasworks.large_corridor.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"6"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"gasworks.outside.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}
+
+//---------------------------------------------------------------------------------------
+// GasWorks - Ladder Shaft 			//
+// 			  to Control Room 1		//
+//									//
+"gasworks.ladder_shaft_to_ctrl1"
+{
+	"dsp"			"6"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"gasworks.ladder_shaft.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"						"gasworks.outside.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"6"
+	}
+	
+	"playsoundscape"
+	{
+		"name"						"gasworks.control_room.base"
+		"volume"					"1.0"
+		"ambientpositionoverride"	"7"
+	}
+}

@@ -1,0 +1,584 @@
+// DEVELOPER'S NOTE:
+// Please open AND edit this file using Notepad ++ to ensure the formatting appears properly on your screen.
+
+"sy.warehouse.base"
+{
+	"dsp"			"19"
+	"dsp_volume"	"1.0"
+	
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_med11.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_large7.wav"
+	}
+}
+
+// Original c1a2a office_corridor soundscape, before the chapter soundscape overhaul took place. ("c1a2a.office_corridor")
+
+"sy.office_corridor.base"
+{
+	"dsp"			"0"
+	"dsp_volume"	"1.0"
+	
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"wave"		"BMS_ambience\room_ambience\r_ambience_small3.wav"
+	}
+}
+
+"sy.ventilation.base"
+{
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"wave"			"@BMS_ambience\room_ambience\r_ambience_vent1.wav"
+		"pitch"			"100"
+		"attenuation"	"1.0"
+	}
+}
+
+"sy.outdoor.util.randoncritters"
+{
+	"playrandom"
+	{
+		"time"		"5,25"
+		"volume"	"0.2,0.4"
+		"pitch"		"90,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/levels/canals/swamp_bird1.wav"
+			"wave"	"ambient/levels/canals/swamp_bird2.wav"
+			"wave"	"ambient/levels/canals/swamp_bird3.wav"
+			"wave"	"ambient/levels/canals/swamp_bird4.wav"
+			"wave"	"ambient/levels/canals/swamp_bird5.wav"
+			"wave"	"ambient/levels/canals/swamp_bird6.wav"
+			"wave"	"ambient/levels/canals/critter1.wav"
+			"wave"	"ambient/levels/canals/critter2.wav"
+			"wave"	"ambient/levels/canals/critter3.wav"
+			"wave"	"ambient/levels/canals/critter4.wav"
+			"wave"	"ambient/levels/canals/critter5.wav"
+			"wave"	"ambient/levels/canals/critter6.wav"
+			"wave"	"ambient/levels/canals/critter7.wav"
+			"wave"	"ambient/levels/canals/critter8.wav"
+		}
+	}
+}
+
+
+// positional utility
+
+// sy_out1_pos6_ehum4
+// sy_out1_pos7_ehum4a
+
+"sy.outdoors1.util_pos6-7"
+{
+	"dsp"			"19"
+	"dsp_volume"	"0.5"
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum4.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"1.0"
+		
+		"position"		"6"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum4a.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"1.0"
+		
+		"position"		"7"
+	}
+}
+
+// positional utility
+
+// sy_out2_pos6_ehum4
+// sy_out2_pos7_ehum4a
+
+"sy.outdoors2.util_pos6-7"
+{
+	"dsp"			"19"
+	"dsp_volume"	"0.5"
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum4.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"1.0"
+		
+		"position"		"6"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum4a.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"1.0"
+		
+		"position"		"7"
+	}
+}
+
+//sy_wh_pos2_ehum1
+//sy_wh_pos3_ehum1a
+//sy_wh_pos4_ehum1b
+//sy_wh_pos5_ehum1c
+
+"sy.wh.util_pos2-5"
+{
+	"dsp"			"19"
+	"dsp_volume"	"0.5"
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"pitch"			"100"
+		"volume"		"0.5"
+		"attenuation"	"2.0"
+		
+		"position"		"2"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"2.0"
+		
+		"position"		"3"
+	}
+	
+		"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1.wav"
+		"pitch"			"100"
+		"volume"		"0.5"
+		"attenuation"	"2.0"
+		
+		"position"		"4"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum1a.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"2.0"
+		
+		"position"		"5"
+	}
+}
+
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+// 												MAP DM_STALKYARD STARTS HERE!!!
+//================================================================================================================================
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//================================================================================================================================
+
+"sy.outdoors1"
+{
+	"dsp"			"129"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors1.util_pos6-7"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoor.util.randoncritters"
+		"volume"	"1.0"
+	}
+}
+
+"sy.outdoors1.taustorage"
+{
+	"dsp"			"19"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"0.4"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors1.util_pos6-7"
+		"volume"	"0.68"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoor.util.randoncritters"
+		"volume"	"0.2"
+	}
+}
+
+"sy.outdoors1_loadingbay"
+{
+	"dsp"			"19"
+	"dsp_volume"	"0.3"
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_wind5.wav"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"0.5"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors1.util_pos6-7"
+		"volume"	"0.45"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoor.util.randoncritters"
+		"volume"	"0.5"
+	}
+}
+
+"sy.outdoors2.taustorage" 
+{
+	"dsp"			"19"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"0.4"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors2.util_pos6-7"
+		"volume"	"0.68"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoor.util.randoncritters"
+		"volume"	"0.2"
+	}
+}
+
+"sy.warehouse.indoors" 
+{
+	"dsp"			"1"
+	"dsp_volume"	"0.25"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape" 
+	{
+		"name"		"sy.wh.util_pos0-1"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"sy.wh.util_pos2-5"
+		"volume"	"1.0"
+	}	
+}
+
+"sy.warehouse.indoors_sm" 
+{
+	"dsp"			"6"
+	"dsp_volume"	"0.25"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+}
+
+"sy.warehouse.indoors_sm_vent" 
+{
+	"dsp"			"6"
+	"dsp_volume"	"0.25"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"0.2"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.ventilation.base"
+		"volume"	"0.8"
+	}
+}
+
+"sy.warehouse.indoors_sm_vent2" 
+{
+	"dsp"			"6"
+	"dsp_volume"	"0.25"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"0.2"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.ventilation.base"
+		"volume"	"0.8"
+	}
+}
+
+// sy_wint_pos0_ind16
+
+"sy.wh.util_pos0-1"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/room_ambience/r_ambience_industrial16.wav"
+		"pitch"			"100"
+		"volume"		"1.0"
+		"attenuation"	"1.2"
+		
+		"position"		"0"
+	}	
+}
+
+"sy.outdoors1.corridor1"
+{
+	"dsp"			"129"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors1.c1.util_pos0-2"
+		"volume"	"1.0"
+	}	
+}
+
+// sy_out1c1_pos0_ehum2
+// sy_out1c1_pos1_ehum2a
+// sy_out1c1_pos2_ehum2b
+
+"sy.outdoors1.c1.util_pos0-2"
+{
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum2.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"1.0"
+		
+		"position"		"0"
+	}
+	
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum2a.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"1.0"
+		
+		"position"		"1"
+	}
+
+	"playlooping"
+	{
+		"wave"			"bms_ambience/machine_ambience/m_ambience_electrichum2b.wav"
+		"pitch"			"100"
+		"volume"		"0.75"
+		"attenuation"	"1.0"
+		
+		"position"		"2"
+	}	
+}
+
+"sy.outdoors1.corridor2"
+{
+	"dsp"			"129"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors1.util_pos6-7"
+		"volume"	"1.0"
+	}	
+}
+
+"sy.outdoors2"
+{
+	"dsp"			"129"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors2.util_pos6-7"
+		"volume"	"1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoor.util.randoncritters"
+		"volume"	"1.0"
+	}
+}
+
+"sy.outdoors2_loadingbay"
+{
+	"dsp"			"19"
+	"dsp_volume"	"0.3"
+
+	"playlooping"
+	{
+		"volume"	"0.9"
+		"pitch"		"100"
+		"wave"		"bms_ambience\room_ambience\r_ambience_wind5.wav"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"0.5"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors2.util_pos6-7"
+		"volume"	"0.45"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoor.util.randoncritters"
+		"volume"	"0.5"
+	}
+}
+
+"sy.outdoors2.corridor1"
+{
+	"dsp"			"129"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors2.util_pos6-7"
+		"volume"	"0.45"
+	}	
+}
+
+"sy.outdoors2.corridor2"
+{
+	"dsp"			"129"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"sy.outdoors2.util_pos6-7"
+		"volume"	"0.45"
+	}	
+}
+
+"sy.outdoors3.corridor1"
+{
+	"dsp"			"19"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.warehouse.base"
+		"volume"	"1.0"
+	}
+}
+
+"sy.office_corridor"
+{
+	"dsp"			"2"
+	"dsp_volume"	"0.5"
+	
+	"playsoundscape"
+	{
+		"name"		"sy.office_corridor.base"
+		"volume"	"1.0"
+	}
+}

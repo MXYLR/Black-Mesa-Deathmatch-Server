@@ -1,0 +1,50 @@
+"MedicalRobot.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_160db"
+	"pitch"			"PITCH_NORM"
+	"attenuation"		"1.4"
+	"wave"			"BMS_scripted/qe/autopsy_loop.wav"
+}
+
+"MedicalRobot.StopLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"soundlevel"		"SNDLVL_160db"
+	"attenuation"		"1.4"
+	"pitch"			"PITCH_NORM"
+	"wave"			"BMS_scripted/qe/autopsy_stop.wav"
+}
+
+"MedicalRobot.Slice"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"		"SNDLVL_160db"
+	"volume"		"0.8"
+	"attenuation"		"1.4"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/flesh/flesh_impact_bullet1.wav"
+		"wave"	"physics/flesh/flesh_impact_bullet2.wav"
+		"wave"	"physics/flesh/flesh_impact_bullet3.wav"
+		"wave"	"physics/flesh/flesh_impact_bullet4.wav"
+		"wave"	"physics/flesh/flesh_impact_bullet5.wav"
+	}
+}
+
+"MedicalRobot.Spark"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.6"
+	"soundlevel"		"SNDLVL_160db"
+	"pitch"			"PITCH_NORM"
+	"attenuation"		"1.4"
+	"rndwave"
+	{
+		"wave"	"ambient/energy/spark5.wav"
+		"wave"	"ambient/energy/spark6.wav"
+	}
+}
