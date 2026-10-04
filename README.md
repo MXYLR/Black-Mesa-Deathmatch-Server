@@ -132,11 +132,20 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 ```bat
 set SRV=<你的 srcds 根目录>
 copy /Y plugins\BMAG.smx            %SRV%\bms\addons\sourcemod\plugins\
+copy /Y plugins\bms_rpgReloadFix.smx       %SRV%\bms\addons\sourcemod\plugins\
+copy /Y plugins\bms_weapon_tauStuckFix.smx %SRV%\bms\addons\sourcemod\plugins\
+copy /Y plugins\is_weaponfx.smx            %SRV%\bms\addons\sourcemod\plugins\
+copy /Y plugins\is_bms_fix_timelimit.smx   %SRV%\bms\addons\sourcemod\plugins\
 copy /Y smx_analysis\src\scripting\translations\*.txt %SRV%\bms\addons\sourcemod\translations\
 copy /Y smx_analysis\src\scripting\configs\bms_match.cfg %SRV%\bms\addons\sourcemod\configs\
 copy /Y smx_analysis\src\scripting\cfg\*.txt             %SRV%\bms\cfg\
 copy /Y smx_analysis\src\scripting\cfg\*.cfg             %SRV%\bms\cfg\
 ```
+
+> 除 `BMAG.smx` 外的四个 `.smx` 是**独立第三方插件,不在 BMAG 里,必须单独拷**(清单见
+> [四、独立插件](#四独立插件))。其中 `is_weaponfx.smx` 还需在 `server.cfg` 里显式设
+> `is_weaponfix_saddr`(默认值会被当成"未配置"而自我禁用);`is_bms_fix_timelimit.smx`
+> 负责让 `mp_timelimit` 在新地图加载后仍能生效 —— 漏了它,非比赛期间的回合时限就不对。
 
 > `translations\*.txt` 那行别漏:**这三份短语文件是运行时读取的,不编进 `BMAG.smx`**。
 > 漏了的话聊天框里所有 `[比赛]` 提示都会显示成短语键名。改文案(不动代码)
@@ -147,6 +156,8 @@ copy /Y smx_analysis\src\scripting\cfg\*.cfg             %SRV%\bms\cfg\
 **不在本仓库内**(本机存放在 `campaign/`,见 `.gitignore`)。
 
 复制后重启服务器,或在服务器控制台执行 `sm plugins reload BMAG`。
+**新增**的独立插件(如 `is_bms_fix_timelimit`)SourceMod 只在地图切换时才自动加载,
+要么换一次图,要么控制台 `sm plugins load is_bms_fix_timelimit`。
 
 ### 启动
 
