@@ -75,7 +75,6 @@ Black Mesa(黑山起源)SourceMod 插件与配置集合 —— 主体是**死亡
 │   ├── bms_weapon_tauStuckFix.smx 第三方:tau 低弹药卡枪修复
 │   ├── is_weaponfx.smx           第三方:武器动画预热
 │   ├── is_bms_fix_timelimit.smx  第三方:回合时限/倒计时修复(bms_match 的计时器沿用同一机制)
-│   ├── <模块名>.smx              2022 年上传的原始逐插件版本(已被 BMAG 取代,留作参照)
 │   └── disabled/                 停用插件(basebans、nextmap、randomcycle、spawn_marker、
 │                                 classicmovement、sm_realbhop、xms、admin-sql-* 等)
 ├── smx_analysis/                 构建流水线与源码
@@ -108,9 +107,15 @@ Black Mesa(黑山起源)SourceMod 插件与配置集合 —— 主体是**死亡
 
 `.gitignore` 现在只排除两类东西:`merge.py` 生成的中间产物 `smx_analysis/src/scripting/BMAG/BMAG.sp`
 (可由 `merge.py` 重组),以及暂时搁置的自定义准星客户端 mod `client_mod/` 与 `REVERSE_CROSSHAIR.md`。
-下载的工具链与证据 dump(`smx_analysis/dl/`、`smx_analysis/out/`)、旧交付包归档 `bms_match_delivery/`、
-已被 `BMAG.smx` 取代的旧版平铺产物(`smx_analysis/plugins/`、`partial.sp`、`bctest.smx`)与单人战役的
-`campaign/` 均已入库留档。
+下载的工具链与证据 dump(`smx_analysis/dl/`、`smx_analysis/out/`)、旧交付包归档 `bms_match_delivery/`
+与单人战役的 `campaign/` 均已入库留档。
+
+> **2026-10-04 清理**:2022 年上传的原始逐插件 smx(`plugins/<模块名>.smx`)、已被 `BMAG.smx` 取代的
+> 旧版平铺产物(`smx_analysis/plugins/`、`partial.sp`、`bctest.smx`)以及与本目录内容重复的
+> `bms_match_delivery.7z` 已从仓库移除(共 87 个文件 / 约 1.2 MB)。
+> 当前构建与部署都不依赖它们:`merge.py` 合并的是 `src/scripting/plugins/` 下的源码,
+> `bisect_compile.py` 的 `partial.sp` 是运行时生成而非读取仓库里那份。
+> 需要查旧版逐插件产物时,翻 `2026-10-04` 之前的提交历史即可。
 
 ### 逆向笔记(`smx_analysis/REVERSE_*.md`)
 
@@ -805,5 +810,4 @@ python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(35 模块合并)
 - **启动间歇卡死**:Steam 客户端注入的 `crashhandler.dll` 与加载器竞态,约一半概率卡在进程早期(35MB、无端口)。**没有稳的根治办法,用外部脚本兜底** —— 检测 27015 端口,没起来就杀掉进程重启;退出 Steam 后启动大概率一次成功。
 - **关窗时退出码 -1073740791**:服务器已走完干净关机(日志已落盘),随后 Steam 的 crashhandler 在清理阶段 fail-fast —— 无害,可忽略。
 - **`Unknown command heartbeat`**:Black Mesa 引擎在 `mp_restartgame` 时自发执行 GoldSrc 遗留命令产生的噪音,无害。
-- **`plugins/` 中 2022 年的逐插件 smx 已过时**:当前部署的是合并后的 `BMAG.smx`,旧文件仅作参照,不要同时加载。
 - **`configs/admins.cfg` 里的 SteamID 是占位值**,部署前必须换成真实 SteamID。
