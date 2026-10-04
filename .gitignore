@@ -19,6 +19,9 @@ smx_analysis/bctest.smx
 client_mod/
 smx_analysis/REVERSE_CROSSHAIR.md
 
+# 单人战役(SP)专用内容:只服务单机剧情,不属于死亡竞赛交付,不入库
+campaign/
+
 __pycache__/
 *.pyc
 

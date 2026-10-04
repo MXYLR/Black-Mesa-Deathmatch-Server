@@ -3,7 +3,11 @@
 Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 
 服务器启用的 **35 个 SourceMod 模块被合并编译成单个 `BMAG.smx`**(SourceMod 官方插件 + 社区插件 + 自研 `bms_match` 比赛插件),
-另有若干**独立插件**(`tau_mp`、`hl1tau`、`spawn_marker` 等)单独加载。
+另有若干**独立插件**单独加载(仓库内保留 `spawn_marker`,默认停用)。
+
+单人战役(单机剧情)专用的 tau 改造插件 `tau_mp` / `hl1tau` 不属于死亡竞赛交付,
+已连同其签名文件与逆向笔记移到本地目录 `campaign/`(`.gitignore` 已排除,不随本仓库分发)。
+仓库里提到它们的旧位置时,都按"已移出"理解。
 
 源码、合并器与逆向笔记全部在本仓库内,可直接重建。
 
@@ -46,8 +50,6 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 ```
 ├── plugins/                      服务器 plugins/ 目录的备份(部署产物)
 │   ├── BMAG.smx                  35 模块合一插件 = 本仓库的主要产物
-│   ├── tau_mp.smx                单人战役 tau 改造(独立插件)
-│   ├── hl1tau.smx                HL1 高斯枪还原(独立插件)
 │   ├── bms_rpgReloadFix.smx      第三方:RPG 换弹修复
 │   ├── bms_weapon_tauStuckFix.smx 第三方:tau 低弹药卡枪修复
 │   ├── is_weaponfx.smx           第三方:武器动画预热
@@ -65,16 +67,14 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 │       ├── include/              编译用 SourceMod include(与生产服务器版本一致)
 │       ├── BMAG/                 merge.py 产物(BMAG.sp 为生成物不入库,BMAG.smx 入库)
 │       ├── configs/              插件配置(bms_match.cfg、bms_webpanel.html)
-│       ├── cfg/                  地图池与比赛用 cfg
-│       └── gamedata/             插件 gamedata
+│       └── cfg/                  地图池与比赛用 cfg
 ├── cfg/ configs/ motd/           服务器其它配置备份
-├── gamedata/tau_mp.games.txt     tau_mp 的签名文件(部署用)
 └── README.md
 ```
 
 `.gitignore` 排除:交付包归档 `bms_match_delivery/`、`smx_analysis/dl/` 与 `smx_analysis/out/`(下载的工具与证据 dump,
-体积大且可重新获取)、`merge.py` 生成的 `BMAG/BMAG.sp`、已被 `BMAG.smx` 取代的旧版平铺产物,
-以及暂时搁置的自定义准星客户端 mod `client_mod/`。
+体积大且可重新获取)、`merge.py` 生成的 `BMAG/BMAG.sp`、已被 `BMAG.smx` 取代的旧版平铺产物、
+暂时搁置的自定义准星客户端 mod `client_mod/`,以及单人战役专用的 `campaign/`。
 
 ### 逆向笔记(`smx_analysis/REVERSE_*.md`)
 
@@ -82,11 +82,13 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 
 | 文件 | 内容 |
 |---|---|
-| `REVERSE_TAU.md` | tau 炮单人/多人分支、高斯跳、跌落伤害链路 |
 | `REVERSE_RESPAWN.md` | 死亡竞赛重生机制、复活点选择为何失效 |
 | `REVERSE_TIMER.md` | 回合计时器与 `mp_restartgame` 通道 |
 | `REVERSE_VGUI.md` | VGUIMenu 面板与无线电菜单 |
 | `REVERSE_WALLPEN.md` | 弹道穿墙与玻璃穿透 |
+
+> `REVERSE_TAU.md`(tau 炮单人/多人分支、高斯跳、跌落伤害链路)属单人战役部分,
+> 已随 `tau_mp` / `hl1tau` 一起移到 `campaign/`。
 
 ---
 
@@ -98,9 +100,6 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 ```bat
 set SRV=<你的 srcds 根目录>
 copy /Y plugins\BMAG.smx            %SRV%\bms\addons\sourcemod\plugins\
-copy /Y plugins\tau_mp.smx          %SRV%\bms\addons\sourcemod\plugins\
-copy /Y plugins\hl1tau.smx          %SRV%\bms\addons\sourcemod\plugins\
-copy /Y gamedata\tau_mp.games.txt   %SRV%\bms\addons\sourcemod\gamedata\
 copy /Y smx_analysis\src\scripting\translations\*.txt %SRV%\bms\addons\sourcemod\translations\
 copy /Y smx_analysis\src\scripting\configs\bms_match.cfg %SRV%\bms\addons\sourcemod\configs\
 copy /Y smx_analysis\src\scripting\cfg\*.txt             %SRV%\bms\cfg\
@@ -112,7 +111,8 @@ copy /Y smx_analysis\src\scripting\cfg\*.cfg             %SRV%\bms\cfg\
 > 只需重传这三个文件 + 换图或 `sm plugins reload BMAG`,不必重新编译。
 
 单人战役环境是另一套 `addons/sourcemod`(Steam 客户端目录下的 Black Mesa),
-只部署 `tau_mp.smx` + `hl1tau.smx` + `tau_mp.games.txt`。
+需要的是 `tau_mp.smx` + `hl1tau.smx` + `tau_mp.games.txt` —— 这三样属单人战役专用,
+**不在本仓库内**(本机存放在 `campaign/`,见 `.gitignore`)。
 
 复制后重启服务器,或在服务器控制台执行 `sm plugins reload BMAG`。
 
@@ -588,35 +588,12 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 
 ## 四、独立插件
 
-### `tau_mp.smx` — 单人战役 tau 改造
+### `tau_mp.smx` / `hl1tau.smx` — 单人战役(**已移出本仓库**)
 
-让单人战役里的 tau 炮拥有多人模式的**高斯跳**与**右键无冷却**,并把**跌落伤害封顶**。
-做法是在 gamedata 签名定位到的两处 `je` 指令上就地改内存(`NOP`),让引擎自己走多人代码路径 ——
-不重写物理,不改 cfg,插件卸载时还原原字节。
-
-| ConVar | 默认 | 说明 |
-|---|---|---|
-| `tau_mp_enable` | 1 | 总开关 |
-| `tau_mp_hook` | 1 | 两条代码补丁的总开关 |
-| `tau_mp_gaussjump` | 1 | 补 `FireBeam`:保留垂直击退 = 高斯跳 |
-| `tau_mp_nocooldown` | 1 | 补 `ChargeFire`:副攻无冷却 |
-| `tau_mp_values` | 1 | 把 tau 参数 ConVar 钉成多人数值 |
-| `tau_mp_falldamage` | 1 | 启用跌落伤害封顶 |
-| `tau_mp_falldamage_hp` | 10.0 | 跌落伤害上限:一次摔落**最多**扣这么多血(轻摔不会被抬到该值) |
-| `tau_mp_damagelog` | 0 | 诊断开关:把摔伤与致死伤害写进 SM 日志 |
-
-改动 ConVar 会立即生效(还原/重打补丁),无需重启或改 cfg。
-相关逆向见 `smx_analysis/REVERSE_TAU.md`。
-
-### `hl1tau.smx` — HL1 高斯枪还原
-
-把 tau 炮的溅射半径还原成 HL1 的值。
-
-| ConVar | 默认 | 说明 |
-|---|---|---|
-| `hl1tau_enable` | 1 | 启用溅射半径还原(0 = 用 BM 原生的固定半径) |
-| `hl1tau_penetration` | 1 | 还原 HL1 穿墙阈值(穿透深度 = 当前蓄力伤害) |
-| `hl1tau_splash_scale` | 2.5 | 溅射半径 = 蓄力伤害 × 该倍率(HL1 单人 2.5,多人 1.75) |
+让单人战役里的 tau 炮拥有多人模式的**高斯跳**与**右键无冷却**,并把**跌落伤害封顶**
+(`tau_mp`,在两处 `je` 指令上就地 `NOP`、卸载时还原原字节);把 tau 溅射半径还原成
+HL1 的值(`hl1tau`)。两者只服务单机剧情,连同签名文件 `tau_mp.games.txt` 与逆向笔记
+`REVERSE_TAU.md` 一起移到了本地目录 `campaign/`,不随本仓库分发。
 
 ### `spawn_marker.smx` — 复活点标记(**默认停用**)
 
@@ -682,7 +659,7 @@ python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(35 模块合并)
 
 - spcomp 输出**不是字节可复现的**(内嵌路径/时间戳/哈希表序),判断新旧请以功能验证或日志为准,不要比对 MD5
 - 编译用的 `include/` 必须与生产服务器一致:旧版 `sourcemod.inc` 的 `StoreToAddress` 只有 3 个参数,会编译报错
-- `tau_mp` 的签名**必须抗重定位** —— `GameConfGetAddress` 扫的是已加载内存,含绝对地址(`imm32`)的签名会因 base relocation 在运行时失配(磁盘命中、内存不命中,静默不生效)。用 `smx_analysis/sig_check.py` 校验
+- **签名必须抗重定位** —— `GameConfGetAddress` 扫的是已加载内存,含绝对地址(`imm32`)的签名会因 base relocation 在运行时失配(磁盘命中、内存不命中,静默不生效)。用 `smx_analysis/sig_check.py` 校验(结论出自单人战役 `tau_mp` 的签名,该插件已移到 `campaign/`)
 
 ---
 

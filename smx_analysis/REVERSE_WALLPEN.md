@@ -116,7 +116,7 @@ MASK_SHOT = 0x46004003
 - **爆炸**（frag / handgrenade / satchel / tripmine / RPG 爆炸）：走 `IsExplosionTraceBlocked` / `UTIL_TraceLine` 做 LOS 判定。视线被挡就完全无伤害；只有爆炸球半径边缘会有"绕过薄墙角"的溢出（几何近似，非穿透）。
 - **实体弹丸**（弩箭 `crossbow_bolt`、RPG 火箭、手雷本体、snark）：都是 `CBaseGrenade`/实体自身飞行 + `Touch` 触发，撞到即停，**没有多段 trace**。
 - **egon / gluon**：射线直伤，同 hitscan 规则（含玻璃分支）。
-- **tau**：唯一有专门 `CTauBeam::ProgressBeam` 穿透逻辑的武器（见 `REVERSE_TAU.md`），这正是问题里"除了高斯枪"的对照物。
+- **tau**：唯一有专门 `CTauBeam::ProgressBeam` 穿透逻辑的武器（见 `REVERSE_TAU.md`，该笔记属单人战役部分、已移出本仓库到 `campaign/`），这正是问题里"除了高斯枪"的对照物。
 
 ---
 
