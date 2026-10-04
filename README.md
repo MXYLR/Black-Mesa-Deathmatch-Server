@@ -39,8 +39,9 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 `configs/admin_levels.cfg`、`configs/admin_groups.cfg`、`configs/maplists.cfg`、
 `configs/core.cfg`、`configs/player_models.cfg`、`configs/banreasons.txt` 等。
 
-> `configs/core.cfg` 的 `ServerLang` 请保持 `"en"`:BMAG 各插件的
-> `translations/*.phrases.txt` 把中文写在 `"en"` 这个 key 下,改成 `chi` 反而会变回英文。
+> `configs/core.cfg` 的 `ServerLang` 保持默认 `"en"` 即可,不用改 ——
+> 各插件 `translations/*.phrases.txt` 的语言键写法不统一(`schinese` / `zh` / `en` 混用),
+> `en` 是三份都有的一份,也是兜底档。
 
 ---
 
@@ -218,7 +219,7 @@ RCON_HOST=127.0.0.1 RCON_PORT=27015 RCON_PASSWORD='<你的rcon密码>' python sm
 4. 平分 → 自动加时(Overtime,每分钟续时直到分出胜负)
 5. 结束:广播胜利与比分 → `exec server_match_post` 恢复公服参数 → 自动发起下一张图投票 → 引擎自然换图
 
-比赛自动开启 SourceTV 录像到 `demos\`,结束后广播下载链接。
+比赛自动开启 SourceTV 录像,文件落在服务器本机的 `demos\` 目录(不提供下载)。
 
 **单人战役地图会被自动跳过**:判据是地图名前缀 `bm_c<数字>`(78 张战役图全部命中,与 DM 图无冲突)。
 命中时跳过队伍枚举、静默 1Hz 定时器、并关闭 `fast_spawn`。
