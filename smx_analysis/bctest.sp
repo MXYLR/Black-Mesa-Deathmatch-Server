@@ -11,8 +11,6 @@
 #include <geoip>
 #include <mapchooser>
 #include <nextmap>
-#include <sourcebanspp>
-#include <sourcecomms>
 
 public Plugin myinfo = {
 	name = "T",

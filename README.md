@@ -2,7 +2,7 @@
 
 Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 
-服务器启用的 **41 个 SourceMod 模块被合并编译成单个 `BMAG.smx`**(SourceMod 官方插件 + 社区插件 + 自研 `bms_match` 比赛插件),
+服务器启用的 **35 个 SourceMod 模块被合并编译成单个 `BMAG.smx`**(SourceMod 官方插件 + 社区插件 + 自研 `bms_match` 比赛插件),
 另有若干**独立插件**(`tau_mp`、`hl1tau`、`spawn_marker` 等)单独加载。
 
 源码、合并器与逆向笔记全部在本仓库内,可直接重建。
@@ -25,11 +25,7 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 | `cfg/server.cfg` | `is_weaponfix_saddr` | 填**外网玩家能连到的**公网 `IP:端口`,不能留 `127.0.0.1`,否则武器动画修复静默失效 |
 | `cfg/server.cfg` | `rcon_password` | **该文件里没有这一行**,需自行在启动参数加 `+rcon_password "你的密码"`,且**绝不要提交进 git** |
 | `configs/admins.cfg` | `identity`(两条 `STEAM_0:x:1000000xx`) | 换成真实 SteamID,否则你没有任何管理员权限 |
-| `configs/sourcebans/sb_admins.cfg` | 同上,4 条占位 SteamID | 与上一份**保持同一批人的同一组 ID** |
-| `configs/sourcebans/sourcebans.cfg` | `Website`、`ServerID` | 你的申诉网站、你后台里的服务器 ID |
-| `configs/sourcebans/sourcecomms.cfg` | `ServersWhiteList` 的 `id` | 多台服共享封禁库时,把各服 `ServerID` 加进去 |
-| `configs/sourcebans/sourcesleuth_whitelist.cfg` | 全文件 | 占位值,换成你要豁免的 SteamID(格式 `STEAM_1:x:y`) |
-| `configs/databases.cfg` | **本仓库没有这个文件** | 装 SourceBans++ 的话必须自建(里面是数据库密码,故意不入库);模板见 `sourcebans.cfg` 顶部注释 |
+| `configs/databases.cfg` | **本仓库没有这个文件** | 只有 `clientprefs`、SQL 管理员等用到数据库时才需要自建(里面是数据库密码,故意不入库) |
 | `configs/advertisements.txt` | 两条 `chat` 文案 | 原服的群号和 B 站账号,换成你的 |
 | `smx_analysis/src/scripting/configs/bms_match.cfg` | `SourceTV` → `DownloadBase` | 改成你的地址,或留空 `""`(录像仍会录,只是下载链接不可用) |
 | `smx_analysis/src/scripting/cfg/mapcycle_*.txt` | 地图名单 | 删掉你服务器上**没有**的地图,否则换图失败 |
@@ -49,7 +45,7 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 
 ```
 ├── plugins/                      服务器 plugins/ 目录的备份(部署产物)
-│   ├── BMAG.smx                  41 模块合一插件 = 本仓库的主要产物
+│   ├── BMAG.smx                  35 模块合一插件 = 本仓库的主要产物
 │   ├── tau_mp.smx                单人战役 tau 改造(独立插件)
 │   ├── hl1tau.smx                HL1 高斯枪还原(独立插件)
 │   ├── bms_rpgReloadFix.smx      第三方:RPG 换弹修复
@@ -58,14 +54,14 @@ Black Mesa(黑山起源)死亡竞赛专用服务器的插件与配置集合。
 │   ├── <官方插件>.smx            2022 年上传的原始逐插件版本(已被 BMAG 取代,留作参照)
 │   └── disabled/                 停用插件(spawn_marker、nextmap、basebans、randomcycle 等)
 ├── smx_analysis/                 构建流水线与源码
-│   ├── merge.py                  把 41 个模块源码合并成 BMAG.sp
+│   ├── merge.py                  把 35 个模块源码合并成 BMAG.sp
 │   ├── fix_merge.py              merge.py 的补丁工具
 │   ├── sig_check.py              签名抗重定位校验(见"从源码构建")
 │   ├── rcon.py                   RCON 调试客户端(凭据走环境变量)
 │   ├── bisect_compile.py         二分定位编译失败的模块
 │   ├── REVERSE_*.md              引擎逆向笔记(见下)
 │   └── src/scripting/
-│       ├── plugins/              **41 个模块源码 + 独立插件源码**
+│       ├── plugins/              **35 个模块源码 + 独立插件源码**
 │       ├── include/              编译用 SourceMod include(与生产服务器版本一致)
 │       ├── BMAG/                 merge.py 产物(BMAG.sp 为生成物不入库,BMAG.smx 入库)
 │       ├── configs/              插件配置(bms_match.cfg、bms_webpanel.html)
@@ -589,69 +585,8 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 
 ---
 
-## 四、SourceBans++ 模块
 
-未配置 MySQL 时优雅降级,启动日志中的数据库连接失败属正常。
-
-### `sbpp_main`
-| 命令 | 权限 | 说明 |
-|---|---|---|
-| `sm_ban <玩家> <分钟> [原因]` | d | 封禁玩家(0 = 永久) |
-| `sm_banip <IP> <分钟> [原因]` | d | 封禁 IP |
-| `sm_addban <分钟> <SteamID> [原因]` | m | 按 SteamID 添加封禁 |
-| `sm_unban <SteamID\|IP>` | e | 解除封禁 |
-| `sb_reload` | m | 重新加载 SourceBans 数据 |
-| `sm_rehash` | d | 重新加载 SQL 管理员 |
-
-挂 `say` / `say_team` 监听,处理 SourceBans 的聊天拦截(禁言状态)。
-
-### `sbpp_checker`
-| 命令 | 权限 | 说明 |
-|---|---|---|
-| `sm_listbans [SteamID]` | d | 列出封禁记录 |
-| `sm_listcomms [SteamID]` | d | 列出禁言/禁麦记录 |
-| `sb_reload` | m | 重新加载 |
-
-### `sbpp_comms`
-| 命令 | 权限 | 说明 |
-|---|---|---|
-| `sm_comms <玩家>` | j | 显示玩家当前的禁言/禁麦状态 |
-| `sc_fw_block <...>` | 控制台 | 由 SourceBans 网页端下发:封禁通讯 |
-| `sc_fw_ungag <...>` | 控制台 | 网页端下发:解除文字禁言 |
-| `sc_fw_unmute <...>` | 控制台 | 网页端下发:解除语音禁麦 |
-
-同时监听 `sm_gag` / `sm_mute` / `sm_silence` / `sm_ungag` / `sm_unmute` / `sm_unsilence`,把 `basecomm` 的处罚同步进数据库。
-
-### `sbpp_report`
-| 命令 | 说明 |
-|---|---|
-| `sm_report <玩家> <原因>` | 举报玩家 |
-
-| ConVar | 默认 | 说明 |
-|---|---|---|
-| `sbpp_report_cooldown` | 60.0 | 每名玩家两次举报之间的冷却(秒) |
-| `sbpp_report_minlen` | 10 | 举报原因的最短长度 |
-
-### `sbpp_sleuth` — 小号检测
-
-| 命令 | 权限 | 说明 |
-|---|---|---|
-| `sm_sleuth_reloadlist` | z | 重新加载白名单 |
-
-| ConVar | 默认 | 说明 |
-|---|---|---|
-| `sm_sleuth_actions` | 3 | 封禁类型:1 = 原始时长,2 = 自定义时长,3 = 双倍时长 |
-| `sm_sleuth_bantype` | 0 | 0 = 所有时长,1 = 仅永久封禁 |
-| `sm_sleuth_duration` | 0 | `sm_sleuth_actions = 1` 时使用的封禁时长 |
-| `sm_sleuth_bansallowed` | 0 | 允许存在的关联封禁数 |
-| `sm_sleuth_adminbypass` | 0 | 是否允许拥有封禁权限的管理员通过检查 |
-| `sm_sleuth_excludeold` | 0 | 是否排除旧封禁 |
-| `sm_sleuth_excludetime` | 31536000 | 判定为"旧封禁"的秒数阈值(默认 1 年) |
-| `sm_sleuth_prefix` | sb | 数据表前缀 |
-
----
-
-## 五、独立插件
+## 四、独立插件
 
 ### `tau_mp.smx` — 单人战役 tau 改造
 
@@ -710,12 +645,19 @@ BM 引擎原生的复活点选择链已损坏(`IsSpawnPointValid` 不读标旗�
 ### 未编入 BMAG 的模块
 
 `basebans`、`nextmap`、`randomcycle`、`spawn_cap` 的源码保留在 `smx_analysis/src/scripting/plugins/`,
-但**不在 `merge.py` 的 MODULES 列表中,不会编译进 `BMAG.smx`**(功能已被 `sbpp_*` / `bms_match` / `spawn_distribute` 取代)。
+但**不在 `merge.py` 的 MODULES 列表中,不会编译进 `BMAG.smx`**(功能已被 `bms_match` / `spawn_distribute` 取代)。
 对应 smx 放在 `plugins/disabled/`。
+
+> **SourceBans++ 已移除(2026-10-04)**:`sbpp_*` 六个模块连同 `configs/sourcebans/` 和 `sourcebanspp.inc`
+> / `sourcecomms.inc` 一起从仓库删除,`BMAG.smx` 已重编译。**因此 BMAG 现在不再提供任何封禁命令**
+> (`sm_ban` / `sm_addban` / `sm_unban` / `sm_banip` 全部消失);禁言禁麦不受影响,仍由 `basecomm` 提供。
+> `basevotes` 的 `sm_voteban` 也还在,但它改走 SourceMod 核心的本地封禁(写进服务器自己的封禁名单),
+> 不再进 SourceBans 数据库。
+> 需要本地封禁命令的话,启用 `plugins/disabled/basebans.smx` 即可 —— 它是独立插件,不需要数据库。
 
 ---
 
-## 六、从源码构建
+## 五、从源码构建
 
 ```bash
 cd smx_analysis
@@ -744,10 +686,10 @@ python merge.py          # 生成 src/scripting/BMAG/BMAG.sp(41 模块合并)
 
 ---
 
-## 七、已知问题
+## 六、已知问题
 
 - **启动间歇卡死**:Steam 客户端注入的 `crashhandler.dll` 与加载器竞态,约一半概率卡在进程早期(35MB、无端口)。**没有稳的根治办法,用外部脚本兜底** —— 检测 27015 端口,没起来就杀掉进程重启;退出 Steam 后启动大概率一次成功。
 - **关窗时退出码 -1073740791**:服务器已走完干净关机(日志已落盘),随后 Steam 的 crashhandler 在清理阶段 fail-fast —— 无害,可忽略。
 - **`Unknown command heartbeat`**:Black Mesa 引擎在 `mp_restartgame` 时自发执行 GoldSrc 遗留命令产生的噪音,无害。
 - **`plugins/` 中 2022 年的逐插件 smx 已过时**:当前部署的是合并后的 `BMAG.smx`,旧文件仅作参照,不要同时加载。
-- **`configs/admins.cfg`、`configs/sourcebans/sb_admins.cfg` 里的 SteamID 是占位值**,部署前必须换成真实 SteamID。
+- **`configs/admins.cfg` 里的 SteamID 是占位值**,部署前必须换成真实 SteamID。

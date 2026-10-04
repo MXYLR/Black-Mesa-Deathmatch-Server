@@ -20,7 +20,7 @@ def build_partial(n, path):
         "#include <sourcemod>\n#include <sdktools>\n#include <sdkhooks>\n"
         "#include <admin>\n#include <adminmenu>\n#include <topmenus>\n"
         "#include <clientprefs>\n#include <cstrike>\n#include <geoip>\n"
-        "#include <mapchooser>\n#include <nextmap>\n#include <sourcebanspp>\n#include <sourcecomms>\n"
+        "#include <mapchooser>\n#include <nextmap>\n"
         "\npublic Plugin myinfo =\n{\n\tname = \"T\",\n\tauthor = \"T\",\n\tdescription = \"T\",\n\tversion = \"1\",\n\turl = \"\"\n};\n"
     ]
     api_decls = []

@@ -57,8 +57,6 @@ run_body = '''def run():
         "#include <geoip>\\n"
         "#include <mapchooser>\\n"
         "#include <nextmap>\\n"
-        "#include <sourcebanspp>\\n"
-        "#include <sourcecomms>\\n"
         "\\n"
         "public Plugin myinfo =\\n"
         "{\\n"

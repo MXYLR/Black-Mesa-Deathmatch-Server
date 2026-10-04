@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Merge 38 enabled server plugins into a single .sp / .smx."""
+"""Merge 35 enabled server plugins into a single .sp / .smx."""
 import os
 import re
 
@@ -16,8 +16,7 @@ MODULES = [
     "basetriggers", "basevotes", "clientprefs", "connectmessage", "fast_spawn",
     "funcommands", "funvotes", "mapchooser", "missing_viewmodel_fix", "motd-fixer",
     "nominations", "pause", "playercommands", "reservedslots", "rockthevote",
-    "sbpp_admcfg", "sbpp_checker", "sbpp_comms", "sbpp_main", "sbpp_report",
-    "sbpp_sleuth", "showhealth", "sm_noearbleed", "sounds", "SpecDetails",
+    "showhealth", "sm_noearbleed", "sounds", "SpecDetails",
     "speclist", "sql-admin-manager", "teamjoinblocker",
     "bms_match", "textmsg_fix", "spawn_distribute",
 ]
@@ -28,10 +27,9 @@ API_INCLUDES = ["adminmenu", "topmenus", "mapchooser"]
 PLUGIN_FORWARDS = {
     "OnAdminMenuReady": "adminmenu",
     "OnNominationRemoved": "mapchooser",
-    "SBPP_OnReportPlayer": "sbpp_main",
 }
 
-SPECIAL_ORDER = ["adminmenu", "topmenus", "mapchooser", "sbpp_main"]
+SPECIAL_ORDER = ["adminmenu", "topmenus", "mapchooser"]
 
 # bms_match implements its SM lifecycle forwards with a Bms_ prefix (e.g.
 # Bms_OnClientSayCommand).  collect_public_funcs only matches exact forward
@@ -509,8 +507,6 @@ def run():
         "#include <geoip>\n"
         "#include <mapchooser>\n"
         "#include <nextmap>\n"
-        "#include <sourcebanspp>\n"
-        "#include <sourcecomms>\n"
         "\n"
         "#define AUTOLOAD_EXTENSIONS\n"
         "#include <socket>\n"
